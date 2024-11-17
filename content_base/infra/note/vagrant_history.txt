@@ -1,0 +1,236 @@
+    1  ls
+    2  ls /bin
+    3  cat ~/.bashrc
+    4  sudo curl -c "curl https://www.opscode.com/chef/install.sh | bash"
+    5  sudo curl -c "curl -L https://www.opscode.com/chef/install.sh | bash"
+    6  sudo bash -c "curl -L https://www.opscode.com/chef/install.sh | bash"
+    7  sudo chef-solo
+    8  ls
+    9  curl -L https://www.opscode.com/chef/install.sh
+   10  curl -L https://www.opscode.com/chef/install.sh > test.sh
+   11  ll
+   12  cat test.sh 
+   13  wc test.sh 
+   14  rm test.sh 
+   15  lkl
+   16  ll
+   17  ping
+   18  docker 
+   19  ll
+   20  pwd
+   21  ll
+   22  cd note/
+   23  ll
+   24  cd ..
+   25  ll
+   26  vi ~/.bashrc
+   27  vi ~/.vimrc
+   28  ll
+   29  docker
+   30  cat note/readme.md 
+   31  ll
+   32  vi
+   33  ls
+   34  cd note/
+   35  vi readme.md 
+   36  ls
+   37  vim
+   38  vi
+   39  cat ~/.vimrc
+   40  which vi
+   41  ls -l /usr/bin/vi
+   42  dnf
+   43  sudo dnf search vim
+   44  sudo dnf install vim
+   45  vim
+   46  vim ~/.bashrc
+   47  source ~/.bashrc
+   48  catrc
+   49  virc
+   50  vi ~/.vimrc
+   51  ll
+   52  cp ~/.bashrc .
+   53  cp ~/.vimrc .
+   54  ll
+   55  ls -al
+   56  ls
+   57  sudo dnf remove docker                   docker-client                   docker-client-latest                   docker-common                   docker-latest                   docker-latest-logrotate                   docker-logrotate                   docker-engine                   podman                   runc
+   58  vi
+   59  ll
+   60  ls
+   61  sudo dnf -y install dnf-plugins-core
+   62  sudo dnf config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
+   63  sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   64  sudo systemctl enable --now docker
+   65  sudo docker run hello-world
+   66  virc
+   67  brc
+   68  catreadme
+   69  docker network create elastic
+   70  sudo docker network create elastic
+   71  docker pull docker.elastic.co/elasticsearch/elasticsearch:8.16.0
+   72  sudo docker pull docker.elastic.co/elasticsearch/elasticsearch:8.16.0
+   73  wget https://artifacts.elastic.co/cosign.pub
+   74  sudo dnf install wget
+   75  history > ~/note/vagrant_history.txt
+   76  wget https://artifacts.elastic.co/cosign.pub
+   77  catreadme
+   78  cosign verify --key cosign.pub docker.elastic.co/elasticsearch/elasticsearch:8.16.0
+   79  dnf search cosign
+   80  catreadme
+   81  wget "https://github.com/sigstore/cosign/releases/download/v2.0.0/cosign-linux-amd64"
+   82  sudo mv cosign-linux-amd64 /usr/local/bin/cosign
+   83  <pre>sudo chmod +x /usr/local/bin/cosign</pre>
+   84  sudo chmod +x /usr/local/bin/cosign
+   85  cosign verify --key cosign.pub docker.elastic.co/elasticsearch/elasticsearch:8.16.0
+   86  docker run --name es01 --net elastic -p 9200:9200 -it -m 1GB docker.elastic.co/elasticsearch/elasticsearch:8.16.0
+   87  sudo docker run --name es01 --net elastic -p 9200:9200 -it -m 1GB docker.elastic.co/elasticsearch/elasticsearch:8.16.0
+   88  catreadme
+   89  docker run --name es01 --net elastic -p 9200:9200 -it -m 6GB -e "xpack.ml.use_auto_machine_memory_percent=true" docker.elastic.co/elasticsearch/elasticsearch:8.16.0
+   90  sudo docker run --name es01 --net elastic -p 9200:9200 -it -m 6GB -e "xpack.ml.use_auto_machine_memory_percent=true" docker.elastic.co/elasticsearch/elasticsearch:8.16.0
+   91  catreadme
+   92  docker rm es01
+   93  sudo docker rm es01
+   94  sudo docker run --name es01 --net elastic -p 9200:9200 -it -m 6GB -e "xpack.ml.use_auto_machine_memory_percent=true" docker.elastic.co/elasticsearch/elasticsearch:8.16.0
+   95  sudo sysctl -w vm.max_map_count=262144
+   96  sudo docker run --name es01 --net elastic -p 9200:9200 -it -m 6GB -e "xpack.ml.use_auto_machine_memory_percent=true" docker.elastic.co/elasticsearch/elasticsearch:8.16.0
+   97  sudo docker rm es01
+   98  sudo docker run --name es01 --net elastic -p 9200:9200 -it -m 6GB -e "xpack.ml.use_auto_machine_memory_percent=true" docker.elastic.co/elasticsearch/elasticsearch:8.16.0
+   99  docker exec -it es01 /usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic
+  100  sudo docker exec -it es01 /usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic
+  101  sudo docker run --name es01 --net elastic -p 9200:9200 -it -m 6GB -e "xpack.ml.use_auto_machine_memory_percent=true" -d docker.elastic.co/elasticsearch/elasticsearch:8.16.0
+  102  docker ps
+  103  sudo docker ps
+  104  id
+  105  groups
+  106  groups root
+  107  groups docker
+  108  sudo groupadd docker
+  109  sudo usermod -aG vagrant docker
+  110  sudo usermod -aG docker
+  111  sudo usermod -aG docker vagrant
+  112  groups
+  113  virc
+  114  brc
+  115  catrc
+  116  vireadme
+  117  docker ps
+  118  docker ps -a
+  119  docker up es01 -d
+  120  docker start es01 -d
+  121  docker start es01
+  122  docker ps -a
+  123  docker logs -f --tail 200 es01
+  124  docker ps -a
+  125  catreadme
+  126  docker exec -it es01 /usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic
+  127  catreadme
+  128  docker exec -it es01 /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
+  129  ls
+  130  mkdir ELK
+  131  cd ELK/
+  132  mkdir elasticsearch
+  133  cd elasticsearch/
+  134  docker cp es01:/usr/share/elasticsearch/config/certs/http_ca.crt .
+  135  ll
+  136  curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200
+  137  virc
+  138  brc
+  139  catreadme
+  140  ls
+  141  cd ELK/
+  142  ls
+  143  cd elasticsearch/
+  144  curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200
+  145  virc
+  146  brc
+  147  docker exec -it es01 /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s node
+  148  virc
+  149  brc
+  150  docker run -e ENROLLMENT_TOKEN="$ENROLLMENT_TOKEN" --name es02 --net elastic -it -m 1GB docker.elastic.co/elasticsearch/elasticsearch:8.16.0
+  151  catreadme
+  152  docker ps -a
+  153  docker start es02
+  154  cd ELK/elasticsearch/
+  155  ls
+  156  curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200/_cat/nodes
+  157  ll
+  158  vi elasticsearch_success_private_message.txt
+  159  ls
+  160  vi elasticseach_success_private_message.txt
+  161  ll
+  162  groups
+  163  vireadme
+  164  lsof
+  165  ss
+  166  ss -t
+  167  ss -tn
+  168  netstat
+  169  ss
+  170  man ss
+  171  ss -anl
+  172  ss -anlt
+  173  ss -anltp
+  174  sudo ss -anltp
+  175  curl -XGET http://localhost:9200/_cat/indices
+  176  curl -XGET http://localhost:920
+  177  curl -XGET http://localhost:9200
+  178  history
+  179  history > ~/note/vagrant_history.txt 
+  180  history
+  181  curl -XGET https://localhost:9200
+  182  ls
+  183  cd ELK/
+  184  ls
+  185  cd elasticsearch/
+  186  ls
+  187  curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200/_cat/nodes
+  188  curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200
+  189  curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD https://localhost:9200/_cat/indices
+  190  vireadme
+  191  ll
+  192  cd
+  193  ls
+  194  vi temp.txt
+  195  cd ELK/
+  196  ls
+  197  cd elasticsearch/
+  198  ll
+  199  mkdir setting
+  200  mv setting/ settings
+  201  mkdir mapping
+  202  cd settings/
+  203  cd ..
+  204  ls
+  205  mkdir meta
+  206  cd meta/
+  207  vi example.json
+  208  jq
+  209  jq '.' example.json 
+  210  jq '.' example.json  > ex.json
+  211  ll
+  212  vi ex.json 
+  213  ll
+  214  cp ex.json sample.json
+  215  vi sample.json 
+  216  cat sample.json 
+  217  curl --help
+  218  man curl
+  219  ls
+  220  cp sample.json ..
+  221  cd ..
+  222  ll
+  223  curl --help
+  224  history | grep curl
+  225  curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD -XPUT https://localhost:9200/sample -F @file=sample.json
+  226  cat sample.json 
+  227  vi sample.json 
+  228  cat sample.json 
+  229  curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD -XPUT https://localhost:9200/sample -H "Content-Type: application/json" -d '{ "settings": { "queries.cache.enabled": "true", "max_ngram_diff": 8, "max_shingle_diff": 8, "refresh_interval": "60s", "number_of_shards": 1, "number_of_replicas": 1, "analysis": { "filter": { "ngram_filter": { "type": "ngram", "min_gram": 2, "max_gram": 8, "token_chars": [ "letter", "digit" ] }, "shingle_filter": { "type": "shingle", "min_shingle_size": 2, "max_shingle_size": 8 } }, "analyzer": { "english_analyzer": { "tokenizer": "standard", "filter": [ "lowercase", "ngram_filter", "shingle_filter" ] } } } }, "mappings": { "properties": { "@timestamp": { "type": "date" }, "@version": { "type": "text", "fields": { "keyword": { "type": "keyword", "ignore_above": 256 } } }, "join_field": { "type": "join", "relations": { "parent": "child" } }, "knlg_info_id": { "type": "keyword", "ignore_above": 128 }, "korn_nm": { "type": "text", "analyzer": "english_analyzer" }, "expln": { "type": "text", "analyzer": "english_analyzer" }, "smy_cn": { "type": "text", "analyzer": "english_analyzer" }, "pstg_yn": { "type": "keyword", "ignore_above": 32 }, "rls_cd": { "type": "keyword", "ignore_above": 32 }, "kwrd_ivlst": { "type": "text", "analyzer": "english_analyzer" }, "del_yn": { "type": "keyword", "ignore_above": 32 }, "aprv_yn": { "type": "keyword", "ignore_above": 32 }, "inq_cnt": { "type": "integer" }, "dwnld_cnt": { "type": "integer" }, "frst_reg_dt": { "type": "date" }, "last_chg_dt": { "type": "date" }, "knlg_sclsf_cd": { "type": "keyword", "ignore_above": 128 }, "doc_clsf_cd": { "type": "keyword", "ignore_above": 128 }, "knlg_lclsf_cd": { "type": "keyword", "ignore_above": 128 }, "enfc_cn": { "type": "text", "analyzer": "english_analyzer" }, "page_cnt": { "type": "integer" }, "page_cn": { "type": "text", "analyzer": "english_analyzer" }, "dept_id": { "type": "keyword", "ignore_above": 256 }, "pvsn_inst_id": { "type": "keyword", "ignore_above": 256 } } } }'
+  230  curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD -XPUT https://localhost:9200/_cat/indices
+  231  curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD -XGET https://localhost:9200/_cat/indices
+  232  curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD -XGET https://localhost:9200/sample
+  233  vireadme
+  234  curl --cacert http_ca.crt -u elastic:$ELASTIC_PASSWORD -XGET https://localhost:9200/sample?pretty
+  235  vireadme
+  236  history > ~/note/vagrant_history.txt 
