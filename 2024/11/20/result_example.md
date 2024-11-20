@@ -1,0 +1,200 @@
+❯ python kmp.py
+```log
+~~~~~~
+t[o]mato
+======
+ v
+tomato
+^
+~~~~~~
+to[m]ato
+======
+  v
+tomato
+^
+~~~~~~
+tom[a]to
+======
+   v
+tomato
+^
+~~~~~~
+toma[t]o
+======
+    v
+tomato
+^
+======
+     v
+tomato
+ ^
+cur_sentence='to'
+cur_search_word='to'
+result pi_array of tomato:
+[0, 0, 0, 0, 1, 2]
+----------------------------------------
+~~~~~~~~~~~~~~~~
+[t]omatitomatomato
+sentence:
+v
+tomatitomatomato
+search_word:
+v
+tomato
+----------------------------------------
+sentence:
+ v
+tomatitomatomato
+search_word:
+ v
+tomato
+----------------------------------------
+sentence:
+  v
+tomatitomatomato
+search_word:
+  v
+tomato
+----------------------------------------
+sentence:
+   v
+tomatitomatomato
+search_word:
+   v
+tomato
+----------------------------------------
+sentence:
+    v
+tomatitomatomato
+search_word:
+    v
+tomato
+----------------------------------------
+sentence:
+     v
+tomatitomatomato
+search_word:
+     v
+tomato
+----------------------------------------
+sentence:
+    v
+tomatitomatomato
+search_word:
+v
+tomato
+----------------------------------------
+sentence:
+     v
+tomatitomatomato
+search_word:
+ v
+tomato
+----------------------------------------
+sentence:
+     v
+tomatitomatomato
+search_word:
+v
+tomato
+----------------------------------------
+~~~~~~~~~~~~~~~~
+tomati[t]omatomato
+sentence:
+      v
+tomatitomatomato
+search_word:
+v
+tomato
+----------------------------------------
+sentence:
+       v
+tomatitomatomato
+search_word:
+ v
+tomato
+----------------------------------------
+sentence:
+        v
+tomatitomatomato
+search_word:
+  v
+tomato
+----------------------------------------
+sentence:
+         v
+tomatitomatomato
+search_word:
+   v
+tomato
+----------------------------------------
+sentence:
+          v
+tomatitomatomato
+search_word:
+    v
+tomato
+----------------------------------------
+sentence:
+           v
+tomatitomatomato
+search_word:
+     v
+tomato
+----------------------------------------
+sentence:
+            v
+tomatitomatomato
+search_word:
+
+tomato
+----------------------------------------
+sentence:
+          v
+tomatitomatomato
+search_word:
+v
+tomato
+----------------------------------------
+sentence:
+           v
+tomatitomatomato
+search_word:
+ v
+tomato
+----------------------------------------
+sentence:
+            v
+tomatitomatomato
+search_word:
+  v
+tomato
+----------------------------------------
+sentence:
+             v
+tomatitomatomato
+search_word:
+   v
+tomato
+----------------------------------------
+sentence:
+              v
+tomatitomatomato
+search_word:
+    v
+tomato
+----------------------------------------
+sentence:
+               v
+tomatitomatomato
+search_word:
+     v
+tomato
+----------------------------------------
+sentence:
+
+tomatitomatomato
+search_word:
+
+tomato
+```
