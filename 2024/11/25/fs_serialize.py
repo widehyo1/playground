@@ -93,11 +93,11 @@ def gap_to_compressed_repr(gap_repr):
 def compressed_to_gap_repr(compressd_repr):
     gapped_repr = {}
     for key, value in compressd_repr.items():
-        if len(value) == 1:
-            gapped_repr[key] = value
-        else:
-            num, count = value[1]
-            gapped_repr[key] = [value[0]] + [num] * count
+        head, *tail = value
+        arr = [head]
+        for num, count in tail:
+            arr += [num] * count
+        gapped_repr[key] = arr
     return gapped_repr
 
 def gap_to_structured_repr(gapped_repr):
