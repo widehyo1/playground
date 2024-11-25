@@ -12,7 +12,8 @@ class TreeNode:
     def __repr__(self):
         if not self.children:
             return f'{self.value}*'
-        return f'{self.value}|children:{[child.value for child in self.children]}'
+        # return f'{self.value}|children:{[child.value for child in self.children]}'
+        return f'{self.value}|children:{[child for child in self.children]}'
 
 def gen_walk_without_hidden(path: str):
     for root, dirs, files in os.walk(path):
@@ -73,13 +74,8 @@ def serialize_tree_structure(root: TreeNode) -> dict:
                 queue.append((walker, parent_id, child))
     return tree_structure_repr
 
-def deserialize_tree_structure(tree_structure_repr: dict):
-    pprint(tree_structure_repr)
-    root_node = TreeNode()
-    for key, value in tree_structure_repr.items():
-        print(key, value)
-
-    return root_node
+def structure_to_gap_repr(tree_structure_repr):
+    return {k: gap_repr(v) for k, v in tree_structure_repr.items()}
 
 def gap_repr(array):
     gapped_array = [array[0]]
@@ -89,28 +85,77 @@ def gap_repr(array):
 
 def compress_by_value(array):
     from itertools import groupby
-    return [(grouper, sum(1 for _ in it)) for grouper, it in groupby(array)]
+    return [array[0]] + [(grouper, sum(1 for _ in it)) for grouper, it in groupby(array[1:])]
 
 def gap_to_compressed_repr(gap_repr):
-    return {k: compress_by_value(v) for k, v in gapped_repr}
+    return {k: compress_by_value(v) for k, v in gap_repr.items()}
+
+def compressed_to_gap_repr(compressd_repr):
+    gapped_repr = {}
+    for key, value in compressd_repr.items():
+        if len(value) == 1:
+            gapped_repr[key] = value
+        else:
+            num, count = value[1]
+            gapped_repr[key] = [value[0]] + [num] * count
+    return gapped_repr
+
+def gap_to_structured_repr(gapped_repr):
+    tree_structure_repr = {}
+    for key, value in gapped_repr.items():
+        head, *tail = value
+        cur = head
+        value = [cur]
+        for gap in tail:
+            cur = cur + gap
+            value.append(cur)
+        tree_structure_repr[key] = value
+    return tree_structure_repr
+
+
+def deserialize_tree_structure(tree_structure_repr: dict):
+    pprint(tree_structure_repr)
+    _inventory = {}
+    root_node = None
+    for key, value in tree_structure_repr.items():
+        _inventory[key] = TreeNode(key)
+        if not root_node:
+            root_node = _inventory[key]
+        for node_id in value:
+            _inventory[node_id] = TreeNode(node_id)
+
+    for key, value in tree_structure_repr.items():
+        _inventory[key].children = [_inventory[node_id] for node_id in value]
+        for node_id in value:
+            _inventory[node_id].parent = _inventory[key]
+
+    return root_node
 
 
 if __name__ == '__main__':
     path = '.'
     file_system_tree = walker_to_file_system_tree(gen_walk_without_hidden(path))
     tree_structure_repr = serialize_tree_structure(file_system_tree)
-    print('=== extracted tree structure ===')
+    print('=== tree structure representation ===')
     pprint(tree_structure_repr)
     print()
-    gapped_repr = {k: gap_repr(v) for k, v in tree_structure_repr.items()}
+    gapped_repr = structure_to_gap_repr(tree_structure_repr)
     print('=== gapped representation ===')
     pprint(gapped_repr)
     print()
-    compressd_repr = {k: compress_by_value(v) for k, v in gapped_repr.items()}
+    compressd_repr = gap_to_compressed_repr(gapped_repr)
     print('=== compressed representation ===')
     pprint(compressd_repr)
     print()
-    # root_node = deserialize_tree_structure(tree_structure_repr)
-    # print(root_node)
+    _gapped_repr = compressed_to_gap_repr(compressd_repr)
+    print('=== _gapped representation ===')
+    pprint(_gapped_repr)
+    print()
+    _tree_structure_repr = gap_to_structured_repr(_gapped_repr)
+    print('=== _tree structure representation ===')
+    pprint(_tree_structure_repr)
+    print()
+    tree_root = deserialize_tree_structure(_tree_structure_repr)
+    pprint(tree_root)
 
 
