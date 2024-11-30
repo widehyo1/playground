@@ -1,0 +1,2 @@
+"\C-b": backward-word       # Ctrl-B: Move to the previous word
+"\C-f": forward-word        # Ctrl-F: Move to the next word
