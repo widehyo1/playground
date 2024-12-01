@@ -1,0 +1,4 @@
+- pipeline.id: koai_knowinfo_parent
+  path.config: "/usr/share/logstash/custom_pipeline/parent_knowinfo_pipeline.conf"
+- pipeline.id: koai_knowinfo_child
+  path.config: "/usr/share/logstash/custom_pipeline/child_knowinfo_pipeline.conf"

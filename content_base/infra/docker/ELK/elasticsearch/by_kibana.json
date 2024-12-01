@@ -1,0 +1,130 @@
+PUT knowinfo
+{
+  "settings": {
+    "queries.cache.enabled":"true",
+    "max_ngram_diff": 8,
+    "max_shingle_diff": 8,
+    "refresh_interval": "60s",
+    "number_of_shards": 1,
+    "number_of_replicas": 1,
+    "analysis": {
+      "filter": {
+        "ngram_filter": {
+          "type": "ngram",
+          "min_gram": 2,
+          "max_gram": 8,
+          "token_chars": [
+            "letter",
+            "digit"
+          ]
+        },
+        "shingle_filter": {
+          "type": "shingle",
+          "min_shingle_size": 2,
+          "max_shingle_size": 8
+        }
+      },
+      "analyzer": {
+        "english_analyzer": {
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "ngram_filter"
+          ]
+        },
+        "ngram_analyzer": {
+          "tokenizer": "standard",
+          "filter": [
+            "shingle_filter",
+            "ngram_filter"
+          ]
+        }
+      }
+    }
+  },
+  "mappings" : {
+    "properties" : {
+      "@timestamp" : {
+        "type" : "date"
+      },
+      "@version" : {
+        "type" : "text",
+        "fields" : {
+          "keyword" : {
+            "type" : "keyword",
+            "ignore_above" : 256
+          }
+        }
+      },
+      "join_field": {
+        "type": "join",
+        "relations": {
+          "parent": "child"
+        }
+      },
+      "knowinfo_id" : {
+        "type" : "keyword",
+        "ignore_above" : 128
+      },
+      "kor_name" : {
+        "type" : "text",
+        "analyzer": "ngram_analyzer"
+      },
+      "eng_name" : {
+        "type" : "text",
+        "analyzer": "ngram_analyzer"
+      },
+      "expln" : {
+        "type" : "text",
+        "analyzer": "ngram_analyzer"
+      },
+      "smummary" : {
+        "type" : "text",
+        "analyzer": "ngram_analyzer"
+      },
+      "resource_code" : {
+        "type" : "keyword",
+        "ignore_above" : 32
+      },
+      "download_count" : {
+        "type": "integer"
+      },
+      "department_id" : {
+        "type": "integer"
+      },
+      "lcategory_name" : {
+        "type" : "keyword",
+        "ignore_above" : 128
+      },
+      "mcategory_name" : {
+        "type" : "keyword",
+        "ignore_above" : 128
+      },
+      "scategory_name" : {
+        "type" : "keyword",
+        "ignore_above" : 128
+      },
+      "del_yn" : {
+        "type" : "keyword",
+        "ignore_above" : 32
+      },
+      "create_dt" : {
+        "type" : "date"
+      },
+      "modified_dt" : {
+        "type" : "date"
+      },
+      "enfc_cn" : {
+        "type": "text",
+        "analyzer": "ngram_analyzer"
+      },
+      "page_cnt": {
+        "type": "integer"
+      },
+      "page_content": {
+        "type": "text",
+        "analyzer": "ngram_analyzer"
+      }
+    }
+  }
+}

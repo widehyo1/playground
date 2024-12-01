@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "python-elk"
+version = "0.1.0"
+description = ""
+authors = ["widehyo@gmail.com <widehyo@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+elasticsearch = "^8.16.0"
+sqlalchemy = "^2.0.36"
+psycopg2-binary = "^2.9.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

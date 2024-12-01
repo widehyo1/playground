@@ -1,4 +1,4 @@
-version: "3.8"
+version: "3.8.1"
 
 
 volumes:
@@ -8,11 +8,9 @@ volumes:
     driver: local
   kibanadata:
     driver: local
-  metricbeatdata01:
-    driver: local
-  filebeatdata01:
-    driver: local
   logstashdata01:
+    driver: local
+  postgresdata01:
     driver: local
 
 
@@ -58,6 +56,12 @@ services:
           "      - localhost\n"\
           "    ip:\n"\
           "      - 127.0.0.1\n"\
+          "  - name: postgres01\n"\
+          "    dns:\n"\
+          "      - postgres\n"\
+          "      - localhost\n"\
+          "    ip:\n"\
+          "      - 127.0.0.1\n"\
           > config/certs/instances.yml;
           bin/elasticsearch-certutil cert --silent --pem -out config/certs/certs.zip --in config/certs/instances.yml --ca-cert config/certs/ca/ca.crt --ca-key config/certs/ca/ca.key;
           unzip config/certs/certs.zip -d config/certs;
@@ -87,6 +91,10 @@ services:
     volumes:
       - certs:/usr/share/elasticsearch/config/certs
       - esdata01:/usr/share/elasticsearch/data
+      - "./elasticsearch/knowinfo_data.json:/usr/share/elasticsearch/index_config/knowinfo_data.json:ro"
+      - "./elasticsearch/user_dic.txt:/usr/share/elasticsearch/index_config/user_dic.txt:ro"
+      - "./elasticsearch/synonyms.txt:/usr/share/elasticsearch/index_config/synonyms.txt:ro"
+      - "./elasticsearch/stopwords.txt:/usr/share/elasticsearch/index_config/stopwords.txt:ro"
     ports:
       - ${ES_PORT}:9200
     environment:
@@ -151,64 +159,43 @@ services:
       interval: 10s
       timeout: 10s
       retries: 120
-  metricbeat01:
-    depends_on:
-      es01:
-        condition: service_healthy
-      kibana:
-        condition: service_healthy
-    image: docker.elastic.co/beats/metricbeat:${STACK_VERSION}
-    user: root
+  postgres01:
+    image: postgres:16
     volumes:
-      - certs:/usr/share/metricbeat/certs
-      - metricbeatdata01:/usr/share/metricbeat/data
-      - "./metricbeat.yml:/usr/share/metricbeat/metricbeat.yml:ro"
-      - "/var/run/docker.sock:/var/run/docker.sock:ro"
-      - "/sys/fs/cgroup:/hostfs/sys/fs/cgroup:ro"
-      - "/proc:/hostfs/proc:ro"
-      - "/:/hostfs:ro"
+      - postgresdata01:/var/lib/postgresql/data
+      - certs:/var/lib/postgresql/elk_certs
+    ports:
+      - "5433:5432"
     environment:
-      - ELASTIC_USER=elastic
-      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
-      - ELASTIC_HOSTS=https://es01:9200
-      - KIBANA_HOSTS=http://kibana:5601
-      - LOGSTASH_HOSTS=http://logstash01:9600
-  filebeat01:
-    depends_on:
-      es01:
-        condition: service_healthy
-    image: docker.elastic.co/beats/filebeat:${STACK_VERSION}
-    user: root
-    volumes:
-      - certs:/usr/share/filebeat/certs
-      - filebeatdata01:/usr/share/filebeat/data
-      - "./filebeat_ingest_data/:/usr/share/filebeat/ingest_data/"
-      - "./filebeat.yml:/usr/share/filebeat/filebeat.yml:ro"
-      - "/var/lib/docker/containers:/var/lib/docker/containers:ro"
-      - "/var/run/docker.sock:/var/run/docker.sock:ro"
-    environment:
-      - ELASTIC_USER=elastic
-      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
-      - ELASTIC_HOSTS=https://es01:9200
-      - KIBANA_HOSTS=http://kibana:5601
-      - LOGSTASH_HOSTS=http://logstash01:9600
-  logstash01:
-    depends_on:
-      es01:
-        condition: service_healthy
-      kibana:
-        condition: service_healthy
-    image: docker.elastic.co/logstash/logstash:${STACK_VERSION}
-    labels:
-      co.elastic.logs/module: logstash
-    user: root
-    volumes:
-      - certs:/usr/share/logstash/certs
-      - logstashdata01:/usr/share/logstash/data
-      - "./logstash_ingest_data/:/usr/share/logstash/ingest_data/"
-      - "./logstash.conf:/usr/share/logstash/pipeline/logstash.conf:ro"
-    environment:
-      - xpack.monitoring.enabled=false
-      - ELASTIC_USER=elastic
-      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
-      - ELASTIC_HOSTS=https://es01:9200
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+    restart: unless-stopped
+#   logstash01:
+#     depends_on:
+#       es01:
+#         condition: service_healthy
+#       postgres01:
+#         condition: service_healthy
+#     image: docker.elastic.co/logstash/logstash:${STACK_VERSION}
+#     labels:
+#       co.elastic.logs/module: logstash
+#     user: root
+#     volumes:
+#       - certs:/usr/share/logstash/certs
+#       - logstashdata01:/usr/share/logstash/data
+#       - "./logstash/pipelines.yml:/usr/share/logstash/config/pipelines.yml:ro"
+#       - "./logstash/jdbc/:/usr/share/logstash/jdbc/:ro"
+#       - "./logstash/custom_pipeline/:/usr/share/logstash/custom_pipeline/:ro"
+#     environment:
+#       - xpack.monitoring.enabled=false
+#       - ELASTIC_USER=elastic
+#       - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+#       - ELASTIC_HOSTS=https://es01:9200
+#       - LOGSTASH_JDBC_DRIVER_JAR_LOCATION="/usr/share/logstash/jdbc/postgresql-42.7.4.jar"
+#       - LOGSTASH_JDBC_DRIVER="org.postgresql.Driver"
+#       - LOGSTASH_JDBC_URL="jdbc:postgresql://postgres01:5432/$POSTGRES_DB"
+#       - LOGSTASH_JDBC_USERNAME="$POSTGRES_USER"
+#       - LOGSTASH_JDBC_PASSWORD="$POSTGRES_PASSWORD"
