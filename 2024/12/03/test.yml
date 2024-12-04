@@ -1,0 +1,895 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/widehyo/gitclone/playground/2024/12/03
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 435
+    content: "\e[?2004h\r\n\e[1;36m2024/12/03\e[0m on \e[1;35m \e[0m\e[1;35mmain\e[0m \e[1;31m[\e[0m\e[1;31m?\e[0m\e[1;31m]\e[0m \e[1;32m❯\e[0m "
+  - delay: 2716
+    content: t
+  - delay: 93
+    content: h
+  - delay: 35
+    content: e
+  - delay: 127
+    content: r
+  - delay: 148
+    content: e
+  - delay: 281
+    content: ' '
+  - delay: 211
+    content: a
+  - delay: 135
+    content: r
+  - delay: 238
+    content: e
+  - delay: 236
+    content: ' '
+  - delay: 152
+    content: m
+  - delay: 93
+    content: a
+  - delay: 544
+    content: 'n'
+  - delay: 207
+    content: 'y'
+  - delay: 159
+    content: ' '
+  - delay: 1102
+    content: s
+  - delay: 43
+    content: i
+  - delay: 471
+    content: t
+  - delay: 106
+    content: u
+  - delay: 322
+    content: a
+  - delay: 245
+    content: t
+  - delay: 254
+    content: u
+  - delay: 144
+    content: i
+  - delay: 464
+    content: "\b\e[K"
+  - delay: 449
+    content: "\b\e[K"
+  - delay: 256
+    content: i
+  - delay: 14
+    content: o
+  - delay: 953
+    content: 'n'
+  - delay: 126
+    content: s
+  - delay: 201
+    content: ' '
+  - delay: 287
+    content: ' '
+  - delay: 457
+    content: "\b\e[K"
+  - delay: 178
+    content: t
+  - delay: 140
+    content: a
+  - delay: 8
+    content: h
+  - delay: 666
+    content: "\b\e[K"
+  - delay: 364
+    content: "\b\e[K"
+  - delay: 1537
+    content: h
+  - delay: 34
+    content: a
+  - delay: 106
+    content: t
+  - delay: 179
+    content: ' '
+  - delay: 3064
+    content: w
+  - delay: 225
+    content: r
+  - delay: 43
+    content: i
+  - delay: 140
+    content: t
+  - delay: 82
+    content: e
+  - delay: 269
+    content: ' '
+  - delay: 941
+    content: c
+  - delay: 137
+    content: o
+  - delay: 148
+    content: m
+  - delay: 134
+    content: m
+  - delay: 194
+    content: a
+  - delay: 135
+    content: 'n'
+  - delay: 466
+    content: d
+  - delay: 581
+    content: s
+  - delay: 218
+    content: ' '
+  - delay: 94
+    content: i
+  - delay: 85
+    content: 'n'
+  - delay: 105
+    content: ' '
+  - delay: 325
+    content: c
+  - delay: 96
+    content: o
+  - delay: 239
+    content: m
+  - delay: 154
+    content: m
+  - delay: 110
+    content: a
+  - delay: 173
+    content: 'n'
+  - delay: 157
+    content: d
+  - delay: 464
+    content: ' '
+  - delay: 439
+    content: l
+  - delay: 92
+    content: i
+  - delay: 162
+    content: 'n'
+  - delay: 145
+    content: e
+  - delay: 583
+    content: "\r\n\e[?2004l\r"
+  - delay: 134
+    content: "Command 'there' not found, did you mean:\r\n  command 'theme' from deb discount (2.2.7-2)\r\nTry: sudo apt install <deb name>\r\n"
+  - delay: 19
+    content: "\e[?2004h\r\n\e[1;36m2024/12/03\e[0m on \e[1;35m \e[0m\e[1;35mmain\e[0m \e[1;31m[\e[0m\e[1;31m?\e[0m\e[1;31m]\e[0m \e[1;31m❯\e[0m "
+  - delay: 860
+    content: '3'
+  - delay: 641
+    content: "\b\e[K"
+  - delay: 661
+    content: '#'
+  - delay: 174
+    content: ' '
+  - delay: 499
+    content: i
+  - delay: 531
+    content: f
+  - delay: 215
+    content: ' '
+  - delay: 327
+    content: t
+  - delay: 178
+    content: h
+  - delay: 325
+    content: "\b\e[K"
+  - delay: 200
+    content: "\b\e[K"
+  - delay: 750
+    content: f
+  - delay: 849
+    content: a
+  - delay: 13
+    content: se
+  - delay: 510
+    content: "\b\e[K"
+  - delay: 153
+    content: "\b\e[K"
+  - delay: 442
+    content: "\b\e[K"
+  - delay: 126
+    content: t
+  - delay: 124
+    content: h
+  - delay: 80
+    content: e
+  - delay: 432
+    content: r
+  - delay: 118
+    content: e
+  - delay: 134
+    content: ' '
+  - delay: 203
+    content: i
+  - delay: 79
+    content: s
+  - delay: 143
+    content: ' '
+  - delay: 730
+    content: a
+  - delay: 151
+    content: ' '
+  - delay: 557
+    content: e
+  - delay: 763
+    content: "\b\e[K"
+  - delay: 223
+    content: t
+  - delay: 38
+    content: l
+  - delay: 7
+    content: k
+  - delay: 89
+    content: 'y'
+  - delay: 75
+    content: p
+  - delay: 1229
+    content: o
+  - delay: 140
+    content: ' '
+  - delay: 244
+    content: l
+  - delay: 115
+    content: i
+  - delay: 250
+    content: k
+  - delay: 169
+    content: e
+  - delay: 156
+    content: ' '
+  - delay: 180
+    content: i
+  - delay: 148
+    content: t
+  - delay: 443
+    content: '?'
+  - delay: 446
+    content: "\b\e[K"
+  - delay: 267
+    content: ','
+  - delay: 188
+    content: ' '
+  - delay: 1750
+    content: i
+  - delay: 291
+    content: t
+  - delay: 221
+    content: ' '
+  - delay: 204
+    content: i
+  - delay: 157
+    content: s
+  - delay: 156
+    content: ' '
+  - delay: 948
+    content: a
+  - delay: 163
+    content: 'n'
+  - delay: 154
+    content: 'n'
+  - delay: 260
+    content: 'y'
+  - delay: 581
+    content: "\b\e[K"
+  - delay: 272
+    content: o
+  - delay: 152
+    content: 'y'
+  - delay: 202
+    content: i
+  - delay: 111
+    content: 'n'
+  - delay: 84
+    content: g
+  - delay: 152
+    content: ' '
+  - delay: 188
+    content: t
+  - delay: 152
+    content: o
+  - delay: 133
+    content: ' '
+  - delay: 887
+    content: w
+  - delay: 361
+    content: "\b\e[K"
+  - delay: 1230
+    content: d
+  - delay: 1242
+    content: "\b\e[K"
+  - delay: 1545
+    content: f
+  - delay: 74
+    content: i
+  - delay: 343
+    content: x
+  - delay: 426
+    content: ' '
+  - delay: 140
+    content: i
+  - delay: 123
+    content: t
+  - delay: 1185
+    content: "\r\n\e[?2004l\r"
+  - delay: 25
+    content: "\e[?2004h\r\n\e[1;36m2024/12/03\e[0m on \e[1;35m \e[0m\e[1;35mmain\e[0m \e[1;31m[\e[0m\e[1;31m?\e[0m\e[1;31m]\e[0m \e[1;31m❯\e[0m "
+  - delay: 529
+    content: '# if fthere is a tlkypo like it, it is annoying to fix it'
+  - delay: 1560
+    content: ' '
+  - delay: 385
+    content: i
+  - delay: 107
+    content: f
+  - delay: 393
+    content: ' '
+  - delay: 1171
+    content: t
+  - delay: 108
+    content: h
+  - delay: 161
+    content: e
+  - delay: 68
+    content: 'n'
+  - delay: 239
+    content: ' '
+  - delay: 537
+    content: i
+  - delay: 267
+    content: t
+  - delay: 175
+    content: ' '
+  - delay: 176
+    content: i
+  - delay: 100
+    content: s
+  - delay: 150
+    content: ' '
+  - delay: 342
+    content: g
+  - delay: 89
+    content: o
+  - delay: 179
+    content: o
+  - delay: 115
+    content: t
+  - delay: 157
+    content: ' '
+  - delay: 627
+    content: "\b\e[K"
+  - delay: 169
+    content: "\b\e[K"
+  - delay: 90
+    content: d
+  - delay: 414
+    content: ' '
+  - delay: 358
+    content: t
+  - delay: 109
+    content: o
+  - delay: 127
+    content: ' '
+  - delay: 388
+    content: u
+  - delay: 102
+    content: s
+  - delay: 105
+    content: e
+  - delay: 1383
+    content: "\r\n\e[?2004l\r"
+  - delay: 17
+    content: "\e[?2004h\r\n\e[1;36m2024/12/03\e[0m on \e[1;35m \e[0m\e[1;35mmain\e[0m \e[1;31m[\e[0m\e[1;31m?\e[0m\e[1;31m]\e[0m \e[1;31m❯\e[0m "
+  - delay: 245
+    content: <
+  - delay: 526
+    content: C
+  - delay: 324
+    content: '-'
+  - delay: 386
+    content: "\b\e[K"
+  - delay: 162
+    content: "\b\e[K"
+  - delay: 863
+    content: "\b\e[K"
+  - delay: 369
+    content: '#'
+  - delay: 1463
+    content: <
+  - delay: 1458
+    content: C
+  - delay: 268
+    content: '-'
+  - delay: 408
+    content: A
+  - delay: 396
+    content: '>'
+  - delay: 196
+    content: ' '
+  - delay: 202
+    content: t
+  - delay: 79
+    content: o
+  - delay: 52
+    content: ' '
+  - delay: 782
+    content: g
+  - delay: 40
+    content: o
+  - delay: 130
+    content: ' '
+  - delay: 368
+    content: t
+  - delay: 126
+    content: h
+  - delay: 50
+    content: e
+  - delay: 615
+    content: ' '
+  - delay: 559
+    content: f
+  - delay: 62
+    content: i
+  - delay: 1620
+    content: "\b\e[K"
+  - delay: 516
+    content: "\b\e[K"
+  - delay: 31
+    content: "\b\e[K"
+  - delay: 26
+    content: "\b\e[K"
+  - delay: 34
+    content: "\b\e[K"
+  - delay: 19
+    content: "\b\e[K"
+  - delay: 29
+    content: "\b\e[K"
+  - delay: 53
+    content: "\b\e[K"
+  - delay: 299
+    content: "\b\e[K"
+  - delay: 290
+    content: m
+  - delay: 646
+    content: o
+  - delay: 328
+    content: v
+  - delay: 106
+    content: e
+  - delay: 766
+    content: ' '
+  - delay: 2126
+    content: c
+  - delay: 282
+    content: u
+  - delay: 1108
+    content: r
+  - delay: 406
+    content: s
+  - delay: 112
+    content: o
+  - delay: 55
+    content: r
+  - delay: 542
+    content: ' '
+  - delay: 227
+    content: t
+  - delay: 78
+    content: o
+  - delay: 322
+    content: ' '
+  - delay: 224
+    content: t
+  - delay: 126
+    content: h
+  - delay: 54
+    content: e
+  - delay: 185
+    content: ' '
+  - delay: 731
+    content: f
+  - delay: 68
+    content: i
+  - delay: 148
+    content: r
+  - delay: 500
+    content: s
+  - delay: 254
+    content: t
+  - delay: 696
+    content: ' '
+  - delay: 621
+    content: l
+  - delay: 1030
+    content: "\b\e[K"
+  - delay: 1008
+    content: c
+  - delay: 118
+    content: h
+  - delay: 93
+    content: a
+  - delay: 171
+    content: r
+  - delay: 1578
+    content: ' '
+  - delay: 476
+    content: l
+  - delay: 63
+    content: i
+  - delay: 255
+    content: k
+  - delay: 207
+    content: e
+  - delay: 185
+    content: ' '
+  - delay: 189
+    content: i
+  - delay: 167
+    content: t
+  - delay: 571
+    content: "\r\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C"
+  - delay: 2005
+    content: "\r\n\e[?2004l\r"
+  - delay: 36
+    content: "\e[?2004h\r\n\e[1;36m2024/12/03\e[0m on \e[1;35m \e[0m\e[1;35mmain\e[0m \e[1;31m[\e[0m\e[1;31m?\e[0m\e[1;31m]\e[0m \e[1;31m❯\e[0m "
+  - delay: 1333
+    content: '#'
+  - delay: 247
+    content: ' '
+  - delay: 268
+    content: s
+  - delay: 60
+    content: i
+  - delay: 325
+    content: m
+  - delay: 180
+    content: i
+  - delay: 229
+    content: l
+  - delay: 153
+    content: l
+  - delay: 126
+    content: a
+  - delay: 887
+    content: "\b\e[K"
+  - delay: 367
+    content: "\b\e[K"
+  - delay: 230
+    content: a
+  - delay: 140
+    content: r
+  - delay: 341
+    content: l
+  - delay: 132
+    content: 'y'
+  - delay: 198
+    content: ' '
+  - delay: 1163
+    content: i
+  - delay: 210
+    content: t
+  - delay: 195
+    content: ' '
+  - delay: 181
+    content: i
+  - delay: 48
+    content: s
+  - delay: 647
+    content: ' '
+  - delay: 618
+    content: p
+  - delay: 106
+    content: o
+  - delay: 149
+    content: s
+  - delay: 183
+    content: s
+  - delay: 177
+    content: i
+  - delay: 371
+    content: b
+  - delay: 125
+    content: l
+  - delay: 88
+    content: e
+  - delay: 138
+    content: ' '
+  - delay: 163
+    content: t
+  - delay: 99
+    content: o
+  - delay: 73
+    content: ' '
+  - delay: 344
+    content: j
+  - delay: 240
+    content: u
+  - delay: 245
+    content: m
+  - delay: 562
+    content: p
+  - delay: 113
+    content: ' '
+  - delay: 139
+    content: t
+  - delay: 92
+    content: o
+  - delay: 84
+    content: ' '
+  - delay: 336
+    content: e
+  - delay: 70
+    content: 'n'
+  - delay: 159
+    content: d
+  - delay: 604
+    content: "\b\e[K"
+  - delay: 137
+    content: "\b\e[K"
+  - delay: 157
+    content: "\b\e[K"
+  - delay: 91
+    content: t
+  - delay: 111
+    content: h
+  - delay: 17
+    content: e
+  - delay: 128
+    content: ' '
+  - delay: 308
+    content: e
+  - delay: 79
+    content: 'n'
+  - delay: 146
+    content: d
+  - delay: 94
+    content: ' '
+  - delay: 194
+    content: o
+  - delay: 128
+    content: f
+  - delay: 141
+    content: ' '
+  - delay: 252
+    content: l
+  - delay: 73
+    content: i
+  - delay: 120
+    content: 'n'
+  - delay: 103
+    content: e
+  - delay: 157
+    content: ' '
+  - delay: 1058
+    content: b
+  - delay: 83
+    content: 'y'
+  - delay: 83
+    content: ' '
+  - delay: 295
+    content: <
+  - delay: 1063
+    content: C
+  - delay: 322
+    content: '-'
+  - delay: 391
+    content: E
+  - delay: 1271
+    content: <
+  - delay: 843
+    content: "\b\e[K"
+  - delay: 488
+    content: '>'
+  - delay: 618
+    content: "\r\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C"
+  - delay: 417
+    content: "\e[1@a"
+  - delay: 97
+    content: "\e[1@f"
+  - delay: 119
+    content: "\e[1@e"
+  - delay: 322
+    content: "\b\e[1P"
+  - delay: 152
+    content: "\b\e[1P"
+  - delay: 109
+    content: "\b\e[1P"
+  - delay: 301
+    content: "\e[1@l"
+  - delay: 101
+    content: "\e[1@i"
+  - delay: 340
+    content: "\e[1@k"
+  - delay: 122
+    content: "\e[1@e"
+  - delay: 147
+    content: "\e[1@ "
+  - delay: 413
+    content: "\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C"
+  - delay: 340
+    content: ' '
+  - delay: 244
+    content: i
+  - delay: 56
+    content: t
+  - delay: 1623
+    content: "\r\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C"
+  - delay: 655
+    content: "\e[1@#"
+  - delay: 477
+    content: "\e[1@ "
+  - delay: 227
+    content: "\r\n\e[?2004l\r"
+  - delay: 31
+    content: "\e[?2004h\r\n\e[1;36m2024/12/03\e[0m on \e[1;35m \e[0m\e[1;35mmain\e[0m \e[1;31m[\e[0m\e[1;31m?\e[0m\e[1;31m]\e[0m \e[1;31m❯\e[0m "
+  - delay: 1913
+    content: t
+  - delay: 366
+    content: e
+  - delay: 83
+    content: r
+  - delay: 237
+    content: m
+  - delay: 247
+    content: i
+  - delay: 172
+    content: 'n'
+  - delay: 200
+    content: a
+  - delay: 887
+    content: "\b\e[K"
+  - delay: 190
+    content: "\b\e[K"
+  - delay: 809
+    content: 'n'
+  - delay: 224
+    content: a
+  - delay: 280
+    content: l
+  - delay: 296
+    content: i
+  - delay: 312
+    content: z
+  - delay: 236
+    content: e
+  - delay: 83
+    content: r
+  - delay: 1020
+    content: "\b\e[K"
+  - delay: 504
+    content: "\b\e[K"
+  - delay: 48
+    content: "\b\e[K"
+  - delay: 29
+    content: "\b\e[K"
+  - delay: 34
+    content: "\b\e[K"
+  - delay: 30
+    content: "\b\e[K"
+  - delay: 32
+    content: "\b\e[K"
+  - delay: 33
+    content: "\b\e[K"
+  - delay: 28
+    content: "\b\e[K"
+  - delay: 23
+    content: "\b\e[K"
+  - delay: 31
+    content: "\b\e[K"
+  - delay: 32
+    content: "\b\e[K"
+  - delay: 52
+    content: "\a"
+  - delay: 30
+    content: "\a"
+  - delay: 34
+    content: "\a"
+  - delay: 109
+    content: "\e[?2004l\r\r\nlogout\r\n"
