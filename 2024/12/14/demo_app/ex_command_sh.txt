@@ -1,0 +1,30 @@
+vim ex_command_sh.txt
+:pwd
+:sh
+pwd
+history 5
+# ex command :sh of vim execute builtin shell with :pwd path \
+# to return vim editor while executing builtin terminal, press <C-d>
+<C-d>
+:sh
+# the builtin terminal executed by :sh command can not change :pwd of vim
+cd ~
+pwd
+<C-d>
+:pwd
+:sh
+pwd
+# :pwd can be managed by ex command :cd and nerdtree provide **cd** to change :pwd by current cursor path
+<C-d>
+:cd ~
+:pwd
+:sh
+pwd
+<C-d>
+nerdtree cd
+:pwd
+:sh
+pwd
+# while this happens, history does not change
+history 5
+EOF

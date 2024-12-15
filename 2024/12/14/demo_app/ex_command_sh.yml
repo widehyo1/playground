@@ -1,0 +1,551 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /mnt/c/Users/widehyo/Desktop/work2/2024/12/14/demo_app
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 146
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 37
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 957
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 762
+    content: v
+  - delay: 68
+    content: i
+  - delay: 142
+    content: m
+  - delay: 149
+    content: ' '
+  - delay: 259
+    content: e
+  - delay: 172
+    content: x
+  - delay: 225
+    content: "\a_command_sh."
+  - delay: 940
+    content: t
+  - delay: 187
+    content: 'xt '
+  - delay: 253
+    content: "\r\n\e[?2004l\r"
+  - delay: 129
+    content: "\e[?1049h\e[22;0;0t\e[>4;2m\e[?1h\e=\e[?2004h\e[?1004h\e[1;37r\e[?12h\e[?12l\e[22;2t\e[22;1t"
+  - delay: 15
+    content: "\e[27m\e[23m\e[29m\e[m\e[38;5;188m\e[48;5;233m\e[H\e[2J\e[?25l\e[37;1H\"ex_command_sh.txt\" 30L, 511B"
+  - delay: 147
+    content: "\e[2;1H▽\e[6n\e[2;1H  \e[3;1H\ePzz\e\\\e[0%m\e[6n\e[3;1H           \e[1;1H\e[>c\e]10;?\a\e]11;?\a"
+  - delay: 137
+    content: "\e[1;1H\e[48;5;234m                               \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;16m|\e[2;32H|\e[3;32H|\e[4;32H|\e[5;32H|\e[6;32H|\e[7;32H|\e[8;32H|\e[9;32H|\e[10;32H|\e[11;32H|\e[12;32H|\e[13;32H|\e[14;32H|\e[15;32H|\e[16;32H|\e[17;32H|\e[18;32H|\e[19;32H|\e[20;32H|\e[21;32H|\e[22;32H|\e[23;32H|\e[24;32H|\e[25;32H|\e[26;32H|\e[27;32H|\e[28;32H|\e[29;32H|\e[30;32H|\e[31;32H|\e[32;32H|\e[33;32H|\e[34;32H|\e[35;32H|\e[m\e[38;5;188m\e[48;5;233m\e[2;1H\e[38;5;240m\e[48;5;233m~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;189m\e[48;5;25m<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;16m\e[48;5;253m \e[m\e[38;5;188m\e[48;5;233m\e[1;33H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233mvim ex_command_sh.txt\e[2;33H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[2;41H\e[K\e[3;33H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m:sh\e[3;40H\e[K\e[4;33H\e[38;5;59m\e[48;5;233m  4 \e[m\e[38;5;188m\e[48;5;233mpwd\e[5;33H\e[38;5;59m\e[48;5;233m  5 \e[m\e[38;5;188m\e[48;5;233mhistory 5\e[6;33H\e[38;5;59m\e[48;5;233m  6 \e[m\e[38;5;188m\e[48;5;233m# ex command :sh of vim execute builtin shell with :pwd path \\\e[7;33H\e[38;5;59m\e[48;5;233m  7 \e[m\e[38;5;188m\e[48;5;233m# to return vim editor while executing builtin terminal, press <C-d>\e[8;33H\e[38;5;59m\e[48;5;233m  8 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[9;33H\e[38;5;59m\e[48;5;233m  9 \e[m\e[38;5;188m\e[48;5;233m:sh\e[10;33H\e[38;5;59m\e[48;5;233m 10 \e[m\e[38;5;188m\e[48;5;233m# the builtin terminal executed by :sh command can not change :pwd of vim\e[11;33H\e[38;5;59m\e[48;5;233m 11 \e[m\e[38;5;188m\e[48;5;233mcd ~\e[12;33H\e[38;5;59m\e[48;5;233m 12 \e[m\e[38;5;188m\e[48;5;233mpwd\e[13;33H\e[38;5;59m\e[48;5;233m 13 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[14;33H\e[38;5;59m\e[48;5;233m 14 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[15;33H\e[38;5;59m\e[48;5;233m 15 \e[m\e[38;5;188m\e[48;5;233m:sh\e[16;33H\e[38;5;59m\e[48;5;233m 16 \e[m\e[38;5;188m\e[48;5;233mpwd\e[17;33H\e[38;5;59m\e[48;5;233m 17 \e[m\e[38;5;188m\e[48;5;233m# :pwd can be managed by ex command :cd and nerdtree provide **cd** to change :pwd by current cursor path\e[18;33H\e[38;5;59m\e[48;5;233m 18 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[19;33H\e[38;5;59m\e[48;5;233m 19 \e[m\e[38;5;188m\e[48;5;233m:cd ~\e[20;33H\e[38;5;59m\e[48;5;233m 20 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[21;33H\e[38;5;59m\e[48;5;233m 21 \e[m\e[38;5;188m\e[48;5;233m:sh\e[22;33H\e[38;5;59m\e[48;5;233m 22 \e[m\e[38;5;188m\e[48;5;233mpwd\e[23;33H\e[38;5;59m\e[48;5;233m 23 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[24;33H\e[38;5;59m\e[48;5;233m 24 \e[m\e[38;5;188m\e[48;5;233mnerdtree cd\e[25;33H\e[38;5;59m\e[48;5;233m 25 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[26;33H\e[38;5;59m\e[48;5;233m 26 \e[m\e[38;5;188m\e[48;5;233m:sh\e[27;33H\e[38;5;59m\e[48;5;233m 27 \e[m\e[38;5;188m\e[48;5;233mpwd\e[28;33H\e[38;5;59m\e[48;5;233m 28 \e[m\e[38;5;188m\e[48;5;233m# while this happens, history does not change\e[29;33H\e[38;5;59m\e[48;5;233m 29 \e[m\e[38;5;188m\e[48;5;233mhistory 5\e[30;33H\e[38;5;59m\e[48;5;233m 30 \e[m\e[38;5;188m\e[48;5;233mEOF"
+  - delay: 8
+    content: "\e[31;33H\e[38;5;240m\e[48;5;233m~                                                                                                                 \e[32;33H~                                                                                                                 \e[33;33H~                                                                                                                 \e[34;33H~                                                                                                                 \e[35;33H~                                                                                                                 \e[m\e[38;5;188m\e[48;5;233m\e[36;33H\e[38;5;59m\e[48;5;233m ex_command_sh.txt                                                      text  utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;235m 0 words 3% ㏑:1/30☰℅\e[36;144H:1 \e[m\e[38;5;188m\e[48;5;233m\e[37;1H\e[K"
+  - delay: 52
+    content: "\e[1;1H\e[38;5;107m\" Press ? for help\e[m\e[38;5;188m\e[48;5;233m             \r\n                               \r\n\e[38;5;186m.. (up a dir)\e[m\e[38;5;188m\e[48;5;233m                  \r\n\e[38;5;103m\e[48;5;234m</work2/2024/12/14/demo_app/\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m   \e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_c\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m                       \r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_cpp\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m                     \r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mdemo\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m                        \r\n\e[1m\e[38;5;71m  app.cs*\e[m\e[38;5;188m\e[48;5;233m                      \r\n\e[1m\e[38;5;71m  app.js*\e[m\e[38;5;188m\e[48;5;233m                      \r\n\e[1m\e[38;5;71m  app.lua*\e[m\e[38;5;188m\e[48;5;233m                     \r\n\e[1m\e[38;5;71m  app.py*\e[m\e[38;5;188m\e[48;5;233m                      \r\n\e[1m\e[38;5;71m  ex_command_sh.txt*\e[m\e[38;5;188m\e[48;5;233m           \r\n\e[1m\e[38;5;71m  ex_command_sh.yml*\e[m\e[38;5;188m\e[48;5;233m           \e[36;1H\e[38;5;243m\e[48;5;235m<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m "
+  - delay: 526
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ex_command_sh.txt\e[45Ctext \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 97 words 3%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:1/30☰℅\e[36;144H:1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[1;37H\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h\e[?12$p"
+  - delay: 15
+    content: "\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 13
+    content: "\e[36;132H6\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m2/\e[2;37H"
+  - delay: 484
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;103H\e[38;5;59m\e[48;5;233mtext \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 97 words 10\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m3/\e[3;37H"
+  - delay: 40
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;132H\e[38;5;189m\e[48;5;25m3\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m4/\e[4;37H"
+  - delay: 23
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;132H\e[38;5;189m\e[48;5;25m6\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m5/\e[5;37H"
+  - delay: 29
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;131H\e[38;5;189m\e[48;5;25m20\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m6/\e[6;37H"
+  - delay: 689
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m#\e[48;5;237m ex command :sh of vim execute builtin shell with :pwd path \\\e[m\e[38;5;188m\e[48;5;233m\e[37;1H\e[1m-- VISUAL LINE --\e[m\e[38;5;188m\e[48;5;233m\e[36;33H\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88mV-LINE\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;233m ex_command_sh.txt                                            text \e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;231m\e[48;5;88m 13 words 20%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m ㏑:6\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;231m\e[48;5;88m/30☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m℅\e[m\e[38;5;188m\e[48;5;233m\e[36;143H\e[1m\e[38;5;231m\e[48;5;88m℅\e[36;144H:1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[36;146H\e[38;5;231m\e[48;5;88m \e[6;37H\e[?25h"
+  - delay: 141
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m#\e[7;38H to return vim editor while executing builtin terminal, press <C-d>\e[m\e[38;5;188m\e[48;5;233m\e[36;122H\e[38;5;231m\e[48;5;88m24\e[8C3\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;231m\e[48;5;88m7/\e[7;37H\e[?25h"
+  - delay: 492
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[6;37H# ex command :sh of vim execute builtin shell with :pwd path \\\e[7;38H to return vim editor while executing builtin terminal, press <C-d>\e[37;1H\e[K\e[36;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ex_command_sh.txt                                            text \e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;189m\e[48;5;25m 97 words 20%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:6\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;189m\e[48;5;25m/30☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m℅\e[m\e[38;5;188m\e[48;5;233m\e[36;143H\e[1m\e[38;5;189m\e[48;5;25m℅\e[36;144H:1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\e[36;146H\e[38;5;189m\e[48;5;25m \e[6;37H\e[?25h"
+  - delay: 2174
+    content: "\e[?25l\e[37;1H\e[m\e[38;5;188m\e[48;5;233m:\e[36;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ex_command_sh.txt\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h\e[?25l\e[?25h"
+  - delay: 248
+    content: p
+  - delay: 91
+    content: w
+  - delay: 160
+    content: d
+  - delay: 175
+    content: "\r\e[?25l/mnt/c/Users/widehyo/Desktop/work2/2024/12/14/demo_app"
+  - delay: 38
+    content: "\e[36;34H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m ex_command_sh.txt \e[6;37H\e[?25h"
+  - delay: 972
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[37;1H\e[K\e[37;1H:\e[36;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ex_command_sh.txt\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 457
+    content: s
+  - delay: 62
+    content: h
+  - delay: 334
+    content: "\r\e[?25l\e[39;49m\e[?1004l\e[?2004l\e[?1l\e>\e[?25h\e[>4;m\e[?1049l\e[23;0;0t\r\n"
+  - delay: 897
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 526
+    content: p
+  - delay: 98
+    content: w
+  - delay: 114
+    content: d
+  - delay: 281
+    content: "\r\n\e[?2004l\r/mnt/c/Users/widehyo/Desktop/work2/2024/12/14/demo_app\r\n"
+  - delay: 106
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 445
+    content: h
+  - delay: 68
+    content: i
+  - delay: 92
+    content: s
+  - delay: 138
+    content: t
+  - delay: 143
+    content: o
+  - delay: 122
+    content: r
+  - delay: 100
+    content: 'y'
+  - delay: 155
+    content: ' '
+  - delay: 764
+    content: '5'
+  - delay: 351
+    content: "\r\n\e[?2004l\r"
+  - delay: 5
+    content: "20968  2024-12-14_21:54:34 rm .ex_command_sh.txt.swp \r\n20969  2024-12-14_21:54:37 ll\r\n20970  2024-12-14_21:54:44 clear\r\n20971  2024-12-14_21:55:07 pwd\r\n20972  2024-12-14_21:55:12 history 5\r\n"
+  - delay: 97
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 1900
+    content: "\e[7m# ex command :sh of vim execute builtin shell with :pwd path \\\e[27m\r\n\r\e[7m# to return vim editor while executing builtin terminal, press <C-d>\e[27m\r\n\r"
+  - delay: 1256
+    content: "\e[A\e[A\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C# ex command :sh of vim execute builtin shell with :pwd path \\\r\n\r# to return vim editor while executing builtin terminal, press <C-d>\r\n\r\e[A\r\n\e[?2004l\r"
+  - delay: 105
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 6157
+    content: "\e[?2004l\r\r\nexit\r\n"
+  - delay: 5
+    content: "\e[>4;m\e[>4;2m\e[?1049h\e[22;0;0t\e[>4;2m\e[?1h\e=\e[?2004h\e[?1004h"
+  - delay: 5
+    content: "\e[27m\e[23m\e[29m\e[m\e[38;5;188m\e[48;5;233m\e[H\e[2J\e[?25l\e[1;1H\e[38;5;107m\" Press ? for help\e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;243m\e[48;5;16m|\e[2;32H|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m.. (up a dir)\e[m\e[38;5;188m\e[48;5;233m\e[18C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;103m\e[48;5;234m</work2/2024/12/14/demo_app/\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m   \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_c\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[23C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_cpp\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mdemo\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[24C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.cs*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.js*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.lua*\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.py*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.txt*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.yml*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[14;32H|\e[15;32H|\e[16;32H|\e[17;32H|\e[18;32H|\e[19;32H|\e[20;32H|\e[21;32H|\e[22;32H|\e[23;32H|\e[24;32H|\e[25;32H|\e[26;32H|\e[27;32H|\e[28;32H|\e[29;32H|\e[30;32H|\e[31;32H|\e[32;32H|\e[33;32H|\e[34;32H|\e[35;32H|\e[m\e[38;5;188m\e[48;5;233m\e[14;1H\e[38;5;240m\e[48;5;233m~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;243m\e[48;5;235m<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m \e[m\e[38;5;188m\e[48;5;233m\e[1;33H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233mvim ex_command_sh.txt\e[2;33H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[3;33H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m:sh\e[4;33H\e[38;5;59m\e[48;5;233m  4 \e[m\e[38;5;188m\e[48;5;233mpwd\e[5;33H\e[38;5;59m\e[48;5;233m  5 \e[m\e[38;5;188m\e[48;5;233mhistory 5\e[6;33H\e[38;5;59m\e[48;5;233m  6 \e[m\e[38;5;188m\e[48;5;233m# ex command :sh of vim execute builtin shell with :pwd path \\\e[7;33H\e[38;5;59m\e[48;5;233m  7 \e[m\e[38;5;188m\e[48;5;233m# to return vim editor while executing builtin terminal, press <C-d>\e[8;33H\e[38;5;59m\e[48;5;233m  8 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[9;33H\e[38;5;59m\e[48;5;233m  9 \e[m\e[38;5;188m\e[48;5;233m:sh\e[10;33H\e[38;5;59m\e[48;5;233m 10 \e[m\e[38;5;188m\e[48;5;233m# the builtin terminal executed by :sh command can not change :pwd of vim\e[11;33H\e[38;5;59m\e[48;5;233m 11 \e[m\e[38;5;188m\e[48;5;233mcd ~\e[12;33H\e[38;5;59m\e[48;5;233m 12 \e[m\e[38;5;188m\e[48;5;233mpwd\e[13;33H\e[38;5;59m\e[48;5;233m 13 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[14;33H\e[38;5;59m\e[48;5;233m 14 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[15;33H\e[38;5;59m\e[48;5;233m 15 \e[m\e[38;5;188m\e[48;5;233m:sh\e[16;33H\e[38;5;59m\e[48;5;233m 16 \e[m\e[38;5;188m\e[48;5;233mpwd\e[17;33H\e[38;5;59m\e[48;5;233m 17 \e[m\e[38;5;188m\e[48;5;233m# :pwd can be managed by ex command :cd and nerdtree provide **cd** to change :pwd by current cursor path"
+  - delay: 20
+    content: "\e[18;33H\e[38;5;59m\e[48;5;233m 18 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[19;33H\e[38;5;59m\e[48;5;233m 19 \e[m\e[38;5;188m\e[48;5;233m:cd ~\e[20;33H\e[38;5;59m\e[48;5;233m 20 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[21;33H\e[38;5;59m\e[48;5;233m 21 \e[m\e[38;5;188m\e[48;5;233m:sh\e[22;33H\e[38;5;59m\e[48;5;233m 22 \e[m\e[38;5;188m\e[48;5;233mpwd\e[23;33H\e[38;5;59m\e[48;5;233m 23 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[24;33H\e[38;5;59m\e[48;5;233m 24 \e[m\e[38;5;188m\e[48;5;233mnerdtree cd\e[25;33H\e[38;5;59m\e[48;5;233m 25 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[26;33H\e[38;5;59m\e[48;5;233m 26 \e[m\e[38;5;188m\e[48;5;233m:sh\e[27;33H\e[38;5;59m\e[48;5;233m 27 \e[m\e[38;5;188m\e[48;5;233mpwd\e[28;33H\e[38;5;59m\e[48;5;233m 28 \e[m\e[38;5;188m\e[48;5;233m# while this happens, history does not change\e[29;33H\e[38;5;59m\e[48;5;233m 29 \e[m\e[38;5;188m\e[48;5;233mhistory 5\e[30;33H\e[38;5;59m\e[48;5;233m 30 \e[m\e[38;5;188m\e[48;5;233mEOF\e[31;33H\e[38;5;240m\e[48;5;233m~                                                                                                                 \e[32;33H~                                                                                                                 \e[33;33H~                                                                                                                 \e[34;33H~                                                                                                                 \e[35;33H~                                                                                                                 \e[m\e[38;5;188m\e[48;5;233m\e[36;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ex_command_sh.txt                                            text \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 97 words 20%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:6/30☰℅\e[36;144H:1\e[m\e[38;5;188m"
+  - delay: 7
+    content: "\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[6;37H\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 5
+    content: "\e[?25l\e[?25h"
+  - delay: 2320
+    content: "\e[36;132H3\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m7/\e[7;37H"
+  - delay: 211
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;132H\e[38;5;189m\e[48;5;25m6\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m8/\e[8;37H"
+  - delay: 193
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;131H\e[38;5;189m\e[48;5;25m30\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m9/\e[9;37H"
+  - delay: 324
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;102H\e[38;5;59m\e[48;5;233mtext \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 97 words 33%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:10/\e[10;37H"
+  - delay: 853
+    content: "\e[?25l\e[37;1H\e[m\e[38;5;188m\e[48;5;233m:\e[36;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ex_command_sh.txt\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 2247
+    content: s
+  - delay: 52
+    content: h
+  - delay: 546
+    content: "\r\e[?25l\e[39;49m\e[?1004l\e[?2004l\e[?1l\e>\e[?25h\e[>4;m\e[?1049l\e[23;0;0t\r\n"
+  - delay: 996
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 435
+    content: "\e[7m# the builtin terminal executed by :sh command can not change :pwd of vim\e[27m"
+  - delay: 809
+    content: "\r\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C\e[C# the builtin terminal executed by :sh command can not change :pwd of vim\r\n\e[?2004l\r"
+  - delay: 117
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 1292
+    content: c
+  - delay: 172
+    content: d
+  - delay: 116
+    content: ' '
+  - delay: 294
+    content: '~'
+  - delay: 475
+    content: "\r\n\e[?2004l\r"
+  - delay: 32
+    content: "\e[?2004h\r\n\e[1;36m~\e[0m \e[1;32m❯\e[0m "
+  - delay: 566
+    content: p
+  - delay: 90
+    content: w
+  - delay: 98
+    content: d
+  - delay: 327
+    content: "\r\n\e[?2004l\r/home/widehyo\r\n"
+  - delay: 27
+    content: "\e[?2004h\r\n\e[1;36m~\e[0m \e[1;32m❯\e[0m "
+  - delay: 1277
+    content: "\e[?2004l\r\r\nexit\r\n"
+  - delay: 5
+    content: "\e[>4;m\e[>4;2m\e[?1049h\e[22;0;0t\e[>4;2m\e[?1h\e=\e[?2004h\e[?1004h\e[27m\e[23m\e[29m\e[m\e[38;5;188m\e[48;5;233m\e[H\e[2J\e[?25l\e[1;1H\e[38;5;107m\" Press ? for help\e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;243m\e[48;5;16m|\e[2;32H|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m.. (up a dir)\e[m\e[38;5;188m\e[48;5;233m\e[18C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;103m\e[48;5;234m</work2/2024/12/14/demo_app/\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m   \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_c\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[23C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_cpp\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mdemo\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[24C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.cs*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.js*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.lua*\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.py*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.txt*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.yml*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[14;32H|\e[15;32H|\e[16;32H|\e[17;32H|\e[18;32H|\e[19;32H|\e[20;32H|\e[21;32H|\e[22;32H|\e[23;32H|\e[24;32H|\e[25;32H|\e[26;32H|\e[27;32H|\e[28;32H|\e[29;32H|\e[30;32H|\e[31;32H|\e[32;32H|\e[33;32H|\e[34;32H|\e[35;32H|\e[m\e[38;5;188m\e[48;5;233m\e[14;1H\e[38;5;240m\e[48;5;233m~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;243m\e[48;5;235m<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m \e[m\e[38;5;188m\e[48;5;233m\e[1;33H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233mvim ex_command_sh.txt\e[2;33H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[3;33H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m:sh\e[4;33H\e[38;5;59m\e[48;5;233m  4 \e[m\e[38;5;188m\e[48;5;233mpwd\e[5;33H\e[38;5;59m\e[48;5;233m  5 \e[m\e[38;5;188m\e[48;5;233mhistory 5\e[6;33H\e[38;5;59m\e[48;5;233m  6 \e[m\e[38;5;188m\e[48;5;233m# ex command :sh of vim execute builtin shell with :pwd path \\\e[7;33H\e[38;5;59m\e[48;5;233m  7 \e[m\e[38;5;188m\e[48;5;233m# to return vim editor while executing builtin terminal, press <C-d>\e[8;33H\e[38;5;59m\e[48;5;233m  8 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[9;33H\e[38;5;59m\e[48;5;233m  9 \e[m\e[38;5;188m\e[48;5;233m:sh\e[10;33H\e[38;5;59m\e[48;5;233m 10 \e[m\e[38;5;188m\e[48;5;233m# the builtin terminal executed by :sh command can not change :pwd of vim\e[11;33H\e[38;5;59m\e[48;5;233m 11 \e[m\e[38;5;188m\e[48;5;233mcd ~\e[12;33H\e[38;5;59m\e[48;5;233m 12 \e[m\e[38;5;188m\e[48;5;233mpwd\e[13;33H\e[38;5;59m\e[48;5;233m 13 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[14;33H\e[38;5;59m\e[48;5;233m 14 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[15;33H\e[38;5;59m\e[48;5;233m 15 \e[m\e[38;5;188m\e[48;5;233m:sh\e[16;33H\e[38;5;59m\e[48;5;233m 16 \e[m\e[38;5;188m\e[48;5;233mpwd\e[17;33H\e[38;5;59m\e[48;5;233m 17 \e[m\e[38;5;188m\e[48;5;233m# :pwd can be managed by ex command :cd and nerdtree provide **cd** to change :pwd by current cursor path"
+  - delay: 21
+    content: "\e[18;33H\e[38;5;59m\e[48;5;233m 18 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[19;33H\e[38;5;59m\e[48;5;233m 19 \e[m\e[38;5;188m\e[48;5;233m:cd ~\e[20;33H\e[38;5;59m\e[48;5;233m 20 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[21;33H\e[38;5;59m\e[48;5;233m 21 \e[m\e[38;5;188m\e[48;5;233m:sh\e[22;33H\e[38;5;59m\e[48;5;233m 22 \e[m\e[38;5;188m\e[48;5;233mpwd\e[23;33H\e[38;5;59m\e[48;5;233m 23 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[24;33H\e[38;5;59m\e[48;5;233m 24 \e[m\e[38;5;188m\e[48;5;233mnerdtree cd\e[25;33H\e[38;5;59m\e[48;5;233m 25 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[26;33H\e[38;5;59m\e[48;5;233m 26 \e[m\e[38;5;188m\e[48;5;233m:sh\e[27;33H\e[38;5;59m\e[48;5;233m 27 \e[m\e[38;5;188m\e[48;5;233mpwd\e[28;33H\e[38;5;59m\e[48;5;233m 28 \e[m\e[38;5;188m\e[48;5;233m# while this happens, history does not change\e[29;33H\e[38;5;59m\e[48;5;233m 29 \e[m\e[38;5;188m\e[48;5;233mhistory 5\e[30;33H\e[38;5;59m\e[48;5;233m 30 \e[m\e[38;5;188m\e[48;5;233mEOF\e[31;33H\e[38;5;240m\e[48;5;233m~                                                                                                                 \e[32;33H~                                                                                                                 \e[33;33H~                                                                                                                 \e[34;33H~                                                                                                                 \e[35;33H~                                                                                                                 \e[m\e[38;5;188m\e[48;5;233m\e[36;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ex_command_sh.txt                                           text \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 97 words 33%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:10/30☰℅\e[36;144H:1\e[m\e[38;5;188m"
+  - delay: 8
+    content: "\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[10;37H\e[?25h"
+  - delay: 6
+    content: "\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 610
+    content: "\e[?25l\e[37;1H\e[m\e[38;5;188m\e[48;5;233m:\e[36;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ex_command_sh.txt\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 246
+    content: p
+  - delay: 92
+    content: w
+  - delay: 120
+    content: d
+  - delay: 242
+    content: "\r\e[?25l/mnt/c/Users/widehyo/Desktop/work2/2024/12/14/demo_app"
+  - delay: 18
+    content: "\e[36;34H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m ex_command_sh.txt \e[10;37H\e[?25h"
+  - delay: 1127
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;131H\e[38;5;189m\e[48;5;25m6\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m1/\e[11;37H"
+  - delay: 479
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;130H\e[38;5;189m\e[48;5;25m40\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m2/\e[12;37H"
+  - delay: 28
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;131H\e[38;5;189m\e[48;5;25m3\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m3/\e[13;37H"
+  - delay: 29
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;131H\e[38;5;189m\e[48;5;25m6\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m4/\e[14;37H"
+  - delay: 50
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;130H\e[38;5;189m\e[48;5;25m50\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m5/\e[15;37H"
+  - delay: 31
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;131H\e[38;5;189m\e[48;5;25m3\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m6/\e[16;37H"
+  - delay: 431
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;131H\e[38;5;189m\e[48;5;25m6\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m7/\e[17;37H"
+  - delay: 872
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[37;1H\e[K\e[37;1H:\e[36;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ex_command_sh.txt\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 590
+    content: s
+  - delay: 45
+    content: h
+  - delay: 975
+    content: "\r\e[?25l\e[39;49m\e[?1004l\e[?2004l\e[?1l\e>\e[?25h\e[>4;m\e[?1049l\e[23;0;0t\r\n"
+  - delay: 1003
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 329
+    content: p
+  - delay: 106
+    content: w
+  - delay: 166
+    content: d
+  - delay: 167
+    content: "\r\n\e[?2004l\r/mnt/c/Users/widehyo/Desktop/work2/2024/12/14/demo_app\r\n"
+  - delay: 102
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 1338
+    content: "\e[7m# :pwd can be managed by ex command :cd and nerdtree provide **cd** to change :pwd by \e[27m\e[7mc\e[27m\e[7murrent cursor path\e[27m"
+  - delay: 1174
+    content: "\e[A\r\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m # :pwd can be managed by ex command :cd and nerdtree provide **cd** to change :pwd by current cursor path\r\n\e[?2004l\r"
+  - delay: 101
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 3083
+    content: "\e[?2004l\r\r\nexit\r\n"
+  - delay: 9
+    content: "\e[>4;m\e[>4;2m\e[?1049h\e[22;0;0t\e[>4;2m\e[?1h\e=\e[?2004h\e[?1004h\e[27m\e[23m\e[29m\e[m\e[38;5;188m\e[48;5;233m\e[H\e[2J\e[?25l\e[1;1H\e[38;5;107m\" Press ? for help\e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;243m\e[48;5;16m|\e[2;32H|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m.. (up a dir)\e[m\e[38;5;188m\e[48;5;233m\e[18C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;103m\e[48;5;234m</work2/2024/12/14/demo_app/\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m   \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_c\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[23C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_cpp\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mdemo\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[24C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.cs*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.js*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.lua*\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.py*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.txt*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.yml*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[14;32H|\e[15;32H|\e[16;32H|\e[17;32H|\e[18;32H|\e[19;32H|\e[20;32H|\e[21;32H|\e[22;32H|\e[23;32H|\e[24;32H|\e[25;32H|\e[26;32H|\e[27;32H|\e[28;32H|\e[29;32H|\e[30;32H|\e[31;32H|\e[32;32H|\e[33;32H|\e[34;32H|\e[35;32H|\e[m\e[38;5;188m\e[48;5;233m\e[14;1H\e[38;5;240m\e[48;5;233m~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;243m\e[48;5;235m<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m \e[m\e[38;5;188m\e[48;5;233m\e[1;33H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233mvim ex_command_sh.txt\e[2;33H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[3;33H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m:sh\e[4;33H\e[38;5;59m\e[48;5;233m  4 \e[m\e[38;5;188m\e[48;5;233mpwd\e[5;33H\e[38;5;59m\e[48;5;233m  5 \e[m\e[38;5;188m\e[48;5;233mhistory 5\e[6;33H\e[38;5;59m\e[48;5;233m  6 \e[m\e[38;5;188m\e[48;5;233m# ex command :sh of vim execute builtin shell with :pwd path \\\e[7;33H\e[38;5;59m\e[48;5;233m  7 \e[m\e[38;5;188m\e[48;5;233m# to return vim editor while executing builtin terminal, press <C-d>\e[8;33H\e[38;5;59m\e[48;5;233m  8 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[9;33H\e[38;5;59m\e[48;5;233m  9 \e[m\e[38;5;188m\e[48;5;233m:sh\e[10;33H\e[38;5;59m\e[48;5;233m 10 \e[m\e[38;5;188m\e[48;5;233m# the builtin terminal executed by :sh command can not change :pwd of vim\e[11;33H\e[38;5;59m\e[48;5;233m 11 \e[m\e[38;5;188m\e[48;5;233mcd ~\e[12;33H\e[38;5;59m\e[48;5;233m 12 \e[m\e[38;5;188m\e[48;5;233mpwd\e[13;33H\e[38;5;59m\e[48;5;233m 13 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[14;33H\e[38;5;59m\e[48;5;233m 14 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[15;33H\e[38;5;59m\e[48;5;233m 15 \e[m\e[38;5;188m\e[48;5;233m:sh\e[16;33H\e[38;5;59m\e[48;5;233m 16 \e[m\e[38;5;188m\e[48;5;233mpwd\e[17;33H\e[38;5;59m\e[48;5;233m 17 \e[m\e[38;5;188m\e[48;5;233m# :pwd can be managed by ex command :cd and nerdtree provide **cd** to change :pwd by current cursor path"
+  - delay: 18
+    content: "\e[18;33H\e[38;5;59m\e[48;5;233m 18 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[19;33H\e[38;5;59m\e[48;5;233m 19 \e[m\e[38;5;188m\e[48;5;233m:cd ~\e[20;33H\e[38;5;59m\e[48;5;233m 20 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[21;33H\e[38;5;59m\e[48;5;233m 21 \e[m\e[38;5;188m\e[48;5;233m:sh\e[22;33H\e[38;5;59m\e[48;5;233m 22 \e[m\e[38;5;188m\e[48;5;233mpwd\e[23;33H\e[38;5;59m\e[48;5;233m 23 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[24;33H\e[38;5;59m\e[48;5;233m 24 \e[m\e[38;5;188m\e[48;5;233mnerdtree cd\e[25;33H\e[38;5;59m\e[48;5;233m 25 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[26;33H\e[38;5;59m\e[48;5;233m 26 \e[m\e[38;5;188m\e[48;5;233m:sh\e[27;33H\e[38;5;59m\e[48;5;233m 27 \e[m\e[38;5;188m\e[48;5;233mpwd\e[28;33H\e[38;5;59m\e[48;5;233m 28 \e[m\e[38;5;188m\e[48;5;233m# while this happens, history does not change\e[29;33H\e[38;5;59m\e[48;5;233m 29 \e[m\e[38;5;188m\e[48;5;233mhistory 5\e[30;33H\e[38;5;59m\e[48;5;233m 30 \e[m\e[38;5;188m\e[48;5;233mEOF\e[31;33H\e[38;5;240m\e[48;5;233m~                                                                                                                 \e[32;33H~                                                                                                                 \e[33;33H~                                                                                                                 \e[34;33H~                                                                                                                 \e[35;33H~                                                                                                                 \e[m\e[38;5;188m\e[48;5;233m\e[36;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ex_command_sh.txt                                           text \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 97 words 56%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:17/30☰℅\e[36;144H:1\e[m\e[38;5;188m"
+  - delay: 7
+    content: "\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[17;37H\e[?25h"
+  - delay: 8
+    content: "\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 623
+    content: "\e[?25l\e[37;1H\e[m\e[38;5;188m\e[48;5;233m:\e[36;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ex_command_sh.txt\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 489
+    content: p
+  - delay: 68
+    content: w
+  - delay: 121
+    content: d
+  - delay: 129
+    content: "\r\e[?25l/mnt/c/Users/widehyo/Desktop/work2/2024/12/14/demo_app"
+  - delay: 18
+    content: "\e[36;34H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m ex_command_sh.txt \e[17;37H\e[?25h"
+  - delay: 489
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[37;1H\e[K\e[37;1H:\e[36;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ex_command_sh.txt\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 254
+    content: c
+  - delay: 174
+    content: d
+  - delay: 771
+    content: ' '
+  - delay: 274
+    content: '~'
+  - delay: 257
+    content: "\r\e[?25l/home/widehyo"
+  - delay: 30
+    content: "\e[36;34H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m <ehyo/Desktop/work2/2024/12/14/demo_app/ex_command_sh.txt\e[17;37H\e[?25h"
+  - delay: 472
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[37;1H\e[K\e[37;1H:\e[36;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m <\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 232
+    content: p
+  - delay: 113
+    content: w
+  - delay: 137
+    content: d
+  - delay: 228
+    content: "\r\e[?25l/home/widehyo"
+  - delay: 19
+    content: "\e[36;34H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m <e\e[17;37H\e[?25h"
+  - delay: 1370
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[37;1H\e[K\e[37;1H:\e[36;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m <\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 341
+    content: s
+  - delay: 50
+    content: h
+  - delay: 297
+    content: "\r\e[?25l\e[39;49m\e[?1004l\e[?2004l\e[?1l\e>\e[?25h\e[>4;m\e[?1049l\e[23;0;0t\r\n"
+  - delay: 775
+    content: "\e[?2004h\r\n\e[1;36m~\e[0m \e[1;32m❯\e[0m "
+  - delay: 339
+    content: p
+  - delay: 98
+    content: w
+  - delay: 114
+    content: d
+  - delay: 288
+    content: "\r\n\e[?2004l\r/home/widehyo\r\n"
+  - delay: 26
+    content: "\e[?2004h\r\n\e[1;36m~\e[0m \e[1;32m❯\e[0m "
+  - delay: 1903
+    content: "\e[?2004l\r\r\nexit\r\n\e[>4;m\e[>4;2m\e[?1049h\e[22;0;0t\e[>4;2m\e[?1h\e=\e[?2004h\e[?1004h"
+  - delay: 7
+    content: "\e[27m\e[23m\e[29m\e[m\e[38;5;188m\e[48;5;233m\e[H\e[2J\e[?25l\e[1;1H\e[38;5;107m\" Press ? for help\e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;243m\e[48;5;16m|\e[2;32H|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m.. (up a dir)\e[m\e[38;5;188m\e[48;5;233m\e[18C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;103m\e[48;5;234m</work2/2024/12/14/demo_app/\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m   \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_c\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[23C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_cpp\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mdemo\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[24C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.cs*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.js*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.lua*\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.py*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.txt*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.yml*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[14;32H|\e[15;32H|\e[16;32H|\e[17;32H|\e[18;32H|\e[19;32H|\e[20;32H|\e[21;32H|\e[22;32H|\e[23;32H|\e[24;32H|\e[25;32H|\e[26;32H|\e[27;32H|\e[28;32H|\e[29;32H|\e[30;32H|\e[31;32H|\e[32;32H|\e[33;32H|\e[34;32H|\e[35;32H|\e[m\e[38;5;188m\e[48;5;233m\e[14;1H\e[38;5;240m\e[48;5;233m~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;243m\e[48;5;235m<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m \e[m\e[38;5;188m\e[48;5;233m\e[1;33H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233mvim ex_command_sh.txt\e[2;33H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[3;33H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m:sh\e[4;33H\e[38;5;59m\e[48;5;233m  4 \e[m\e[38;5;188m\e[48;5;233mpwd\e[5;33H\e[38;5;59m\e[48;5;233m  5 \e[m\e[38;5;188m\e[48;5;233mhistory 5\e[6;33H\e[38;5;59m\e[48;5;233m  6 \e[m\e[38;5;188m\e[48;5;233m# ex command :sh of vim execute builtin shell with :pwd path \\\e[7;33H\e[38;5;59m\e[48;5;233m  7 \e[m\e[38;5;188m\e[48;5;233m# to return vim editor while executing builtin terminal, press <C-d>\e[8;33H\e[38;5;59m\e[48;5;233m  8 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[9;33H\e[38;5;59m\e[48;5;233m  9 \e[m\e[38;5;188m\e[48;5;233m:sh\e[10;33H\e[38;5;59m\e[48;5;233m 10 \e[m\e[38;5;188m\e[48;5;233m# the builtin terminal executed by :sh command can not change :pwd of vim\e[11;33H\e[38;5;59m\e[48;5;233m 11 \e[m\e[38;5;188m\e[48;5;233mcd ~\e[12;33H\e[38;5;59m\e[48;5;233m 12 \e[m\e[38;5;188m\e[48;5;233mpwd\e[13;33H\e[38;5;59m\e[48;5;233m 13 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[14;33H\e[38;5;59m\e[48;5;233m 14 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[15;33H\e[38;5;59m\e[48;5;233m 15 \e[m\e[38;5;188m\e[48;5;233m:sh\e[16;33H\e[38;5;59m\e[48;5;233m 16 \e[m\e[38;5;188m\e[48;5;233mpwd\e[17;33H\e[38;5;59m\e[48;5;233m 17 \e[m\e[38;5;188m\e[48;5;233m# :pwd can be managed by ex command :cd and nerdtree provide **cd** to change :pwd by current cursor path"
+  - delay: 19
+    content: "\e[18;33H\e[38;5;59m\e[48;5;233m 18 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[19;33H\e[38;5;59m\e[48;5;233m 19 \e[m\e[38;5;188m\e[48;5;233m:cd ~\e[20;33H\e[38;5;59m\e[48;5;233m 20 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[21;33H\e[38;5;59m\e[48;5;233m 21 \e[m\e[38;5;188m\e[48;5;233m:sh\e[22;33H\e[38;5;59m\e[48;5;233m 22 \e[m\e[38;5;188m\e[48;5;233mpwd\e[23;33H\e[38;5;59m\e[48;5;233m 23 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[24;33H\e[38;5;59m\e[48;5;233m 24 \e[m\e[38;5;188m\e[48;5;233mnerdtree cd\e[25;33H\e[38;5;59m\e[48;5;233m 25 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[26;33H\e[38;5;59m\e[48;5;233m 26 \e[m\e[38;5;188m\e[48;5;233m:sh\e[27;33H\e[38;5;59m\e[48;5;233m 27 \e[m\e[38;5;188m\e[48;5;233mpwd\e[28;33H\e[38;5;59m\e[48;5;233m 28 \e[m\e[38;5;188m\e[48;5;233m# while this happens, history does not change\e[29;33H\e[38;5;59m\e[48;5;233m 29 \e[m\e[38;5;188m\e[48;5;233mhistory 5\e[30;33H\e[38;5;59m\e[48;5;233m 30 \e[m\e[38;5;188m\e[48;5;233mEOF\e[31;33H\e[38;5;240m\e[48;5;233m~                                                                                                                 \e[32;33H~                                                                                                                 \e[33;33H~                                                                                                                 \e[34;33H~                                                                                                                 \e[35;33H~                                                                                                                 \e[m\e[38;5;188m\e[48;5;233m\e[36;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m <ehyo/Desktop/work2/2024/12/14/demo_app/ex_command_sh.txt   text \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 97 words 56%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:17/30☰℅\e[36;144H:1\e[m\e[38;5;188m"
+  - delay: 6
+    content: "\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[17;37H\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 868
+    content: "\e[?25l\e[36;1H<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;16m\e[48;5;253m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m <sers/wid\e[64C utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;235m 97 words 56% ㏑:17/30☰℅\e[36;144H:1 \e[4;1H\e[?25h"
+  - delay: 1733
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[36;34H\e[38;5;59m\e[48;5;233mex_command_sh.txt                                                \e[m\e[38;5;188m\e[48;5;233m\r\nNERDTree: CWD is now: /mnt/c/Users/widehyo/Desktop/work2/2024/12/14/demo_app\e[4;1H\e[?25h"
+  - delay: 1088
+    content: "\e[?25l\e[37;1H\e[K\e[37;1H:\e[?25h"
+  - delay: 324
+    content: p
+  - delay: 98
+    content: w
+  - delay: 128
+    content: d
+  - delay: 271
+    content: "\r\e[?25l/mnt/c/Users/widehyo/Desktop/work2/2024/12/14/demo_app"
+  - delay: 11
+    content: "\e[4;1H\e[?25h"
+  - delay: 847
+    content: "\e[?25l\e[37;1H\e[K\e[37;1H:\e[?25h"
+  - delay: 367
+    content: s
+  - delay: 28
+    content: h
+  - delay: 508
+    content: "\r\e[?25l\e[39;49m\e[?1004l\e[?2004l\e[?1l\e>\e[?25h\e[>4;m\e[?1049l\e[23;0;0t\r\n"
+  - delay: 1094
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 304
+    content: p
+  - delay: 98
+    content: w
+  - delay: 113
+    content: d
+  - delay: 326
+    content: "\r\n\e[?2004l\r/mnt/c/Users/widehyo/Desktop/work2/2024/12/14/demo_app\r\n"
+  - delay: 101
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 1967
+    content: "\e[?2004l\r\r\nexit\r\n"
+  - delay: 10
+    content: "\e[>4;m\e[>4;2m\e[?1049h\e[22;0;0t\e[>4;2m\e[?1h\e=\e[?2004h\e[?1004h\e[27m\e[23m\e[29m\e[m\e[38;5;188m\e[48;5;233m\e[H\e[2J\e[?25l\e[1;1H\e[38;5;107m\" Press ? for help\e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;243m\e[48;5;16m|\e[2;32H|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m.. (up a dir)\e[m\e[38;5;188m\e[48;5;233m\e[18C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;103m\e[48;5;234m</work2/2024/12/14/demo_app/\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m   \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_c\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[23C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_cpp\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mdemo\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[24C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.cs*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.js*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.lua*\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.py*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.txt*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.yml*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[14;32H|\e[15;32H|\e[16;32H|\e[17;32H|\e[18;32H|\e[19;32H|\e[20;32H|\e[21;32H|\e[22;32H|\e[23;32H|\e[24;32H|\e[25;32H|\e[26;32H|\e[27;32H|\e[28;32H|\e[29;32H|\e[30;32H|\e[31;32H|\e[32;32H|\e[33;32H|\e[34;32H|\e[35;32H|\e[m\e[38;5;188m\e[48;5;233m\e[14;1H\e[38;5;240m\e[48;5;233m~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              "
+  - delay: 14
+    content: "\r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;189m\e[48;5;25m<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;16m\e[48;5;253m \e[m\e[38;5;188m\e[48;5;233m\e[1;33H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233mvim ex_command_sh.txt\e[2;33H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[3;33H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m:sh\e[4;33H\e[38;5;59m\e[48;5;233m  4 \e[m\e[38;5;188m\e[48;5;233mpwd\e[5;33H\e[38;5;59m\e[48;5;233m  5 \e[m\e[38;5;188m\e[48;5;233mhistory 5\e[6;33H\e[38;5;59m\e[48;5;233m  6 \e[m\e[38;5;188m\e[48;5;233m# ex command :sh of vim execute builtin shell with :pwd path \\\e[7;33H\e[38;5;59m\e[48;5;233m  7 \e[m\e[38;5;188m\e[48;5;233m# to return vim editor while executing builtin terminal, press <C-d>\e[8;33H\e[38;5;59m\e[48;5;233m  8 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[9;33H\e[38;5;59m\e[48;5;233m  9 \e[m\e[38;5;188m\e[48;5;233m:sh\e[10;33H\e[38;5;59m\e[48;5;233m 10 \e[m\e[38;5;188m\e[48;5;233m# the builtin terminal executed by :sh command can not change :pwd of vim\e[11;33H\e[38;5;59m\e[48;5;233m 11 \e[m\e[38;5;188m\e[48;5;233mcd ~\e[12;33H\e[38;5;59m\e[48;5;233m 12 \e[m\e[38;5;188m\e[48;5;233mpwd\e[13;33H\e[38;5;59m\e[48;5;233m 13 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[14;33H\e[38;5;59m\e[48;5;233m 14 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[15;33H\e[38;5;59m\e[48;5;233m 15 \e[m\e[38;5;188m\e[48;5;233m:sh\e[16;33H\e[38;5;59m\e[48;5;233m 16 \e[m\e[38;5;188m\e[48;5;233mpwd\e[17;33H\e[38;5;59m\e[48;5;233m 17 \e[m\e[38;5;188m\e[48;5;233m# :pwd can be managed by ex command :cd and nerdtree provide **cd** to change :pwd by current cursor path\e[18;33H\e[38;5;59m\e[48;5;233m 18 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[19;33H\e[38;5;59m\e[48;5;233m 19 \e[m\e[38;5;188m\e[48;5;233m:cd ~\e[20;33H\e[38;5;59m\e[48;5;233m 20 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[21;33H\e[38;5;59m\e[48;5;233m 21 \e[m\e[38;5;188m\e[48;5;233m:sh\e[22;33H\e[38;5;59m\e[48;5;233m 22 \e[m\e[38;5;188m\e[48;5;233mpwd\e[23;33H\e[38;5;59m\e[48;5;233m 23 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[24;33H\e[38;5;59m\e[48;5;233m 24 \e[m\e[38;5;188m\e[48;5;233mnerdtree cd\e[25;33H\e[38;5;59m\e[48;5;233m 25 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[26;33H\e[38;5;59m\e[48;5;233m 26 \e[m\e[38;5;188m\e[48;5;233m:sh\e[27;33H\e[38;5;59m\e[48;5;233m 27 \e[m\e[38;5;188m\e[48;5;233mpwd\e[28;33H\e[38;5;59m\e[48;5;233m 28 \e[m\e[38;5;188m\e[48;5;233m# while this happens, history does not change\e[29;33H\e[38;5;59m\e[48;5;233m 29 \e[m\e[38;5;188m\e[48;5;233mhistory 5\e[30;33H\e[38;5;59m\e[48;5;233m 30 \e[m\e[38;5;188m\e[48;5;233mEOF\e[31;33H\e[38;5;240m\e[48;5;233m~                                                                                                                 \e[32;33H~                                                                                                                 \e[33;33H~                                                                                                                 \e[34;33H~                                                                                                                 \e[35;33H~                                                                                                                 \e[m\e[38;5;188m\e[48;5;233m\e[36;33H\e[38;5;59m\e[48;5;233m ex_command_sh.txt                                                   text  utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;235m 97 words 56% ㏑:17/30☰℅\e[36;144H:1 \e[4;1H\e[?25h"
+  - delay: 526
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m</work2/2024/12/14/demo_app/\e[m\e[38;5;188m\e[48;5;233m   \r\n\e[38;5;186m\e[48;5;234m▸\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;186m\e[48;5;234mapp_c\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m\e[48;5;234m/\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m                       \r\e[?25h"
+  - delay: 731
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[36;1H\e[38;5;243m\e[48;5;235m<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ex_command_sh.txt\e[m\e[38;5;188m\e[48;5;233m\e[48C\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 97 words 56%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:17/30☰℅\e[36;144H:1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[17;37H\e[?25h"
+  - delay: 7
+    content: "\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 183
+    content: "\e[36;130H60\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m8/\e[18;37H"
+  - delay: 482
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;131H\e[38;5;189m\e[48;5;25m3\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m9/\e[19;37H"
+  - delay: 18
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;131H\e[38;5;189m\e[48;5;25m6\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m20/\e[20;37H"
+  - delay: 33
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;130H\e[38;5;189m\e[48;5;25m70\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m1/\e[21;37H"
+  - delay: 35
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;131H\e[38;5;189m\e[48;5;25m3\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m2/\e[22;37H"
+  - delay: 37
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;131H\e[38;5;189m\e[48;5;25m6\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m3/\e[23;37H"
+  - delay: 25
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;130H\e[38;5;189m\e[48;5;25m80\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m4/\e[24;37H"
+  - delay: 38
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;131H\e[38;5;189m\e[48;5;25m3\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m5/\e[25;37H"
+  - delay: 652
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;131H\e[38;5;189m\e[48;5;25m6\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m6/\e[26;37H"
+  - delay: 183
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;130H\e[38;5;189m\e[48;5;25m90\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m7/\e[27;37H"
+  - delay: 350
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[36;131H\e[38;5;189m\e[48;5;25m3\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m8/\e[28;37H"
+  - delay: 1257
+    content: "\e[?25l\e[37;1H\e[m\e[38;5;188m\e[48;5;233m:\e[36;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ex_command_sh.txt\r\n\e[m\e[38;5;188m\e[48;5;233m:sh\r\e[39;49m\e[?1004l\e[?2004l\e[?1l\e>\e[?25h\e[>4;m\e[?1049l\e[23;0;0t\r\n"
+  - delay: 864
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 419
+    content: "\e[7m# while this happens, history does not change\e[27m"
+  - delay: 707
+    content: "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b# while this happens, history does not change\r\n\e[?2004l\r"
+  - delay: 122
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 1608
+    content: h
+  - delay: 61
+    content: i
+  - delay: 97
+    content: s
+  - delay: 137
+    content: t
+  - delay: 135
+    content: o
+  - delay: 181
+    content: r
+  - delay: 114
+    content: 'y'
+  - delay: 151
+    content: ' '
+  - delay: 719
+    content: '5'
+  - delay: 325
+    content: "\r\n\e[?2004l\r20977  2024-12-14_21:55:34 pwd\r\n20978  2024-12-14_21:55:47 # :pwd can be managed by ex command :cd and nerdtree provide **cd** to change :pwd by current cursor path\r\n20979  2024-12-14_21:55:59 pwd\r\n20980  2024-12-14_21:56:20 # while this happens, history does not change\r\n20981  2024-12-14_21:56:23 history 5\r\n"
+  - delay: 173
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 1702
+    content: "\e[?2004l\r\r\nexit\r\n\e[>4;m\e[>4;2m\e[?1049h\e[22;0;0t\e[>4;2m\e[?1h\e=\e[?2004h\e[?1004h"
+  - delay: 28
+    content: "\e[27m\e[23m\e[29m\e[m\e[38;5;188m\e[48;5;233m\e[H\e[2J\e[?25l\e[1;1H\e[38;5;107m\" Press ? for help\e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;243m\e[48;5;16m|\e[2;32H|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m.. (up a dir)\e[m\e[38;5;188m\e[48;5;233m\e[18C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;103m</work2/2024/12/14/demo_app/\e[m\e[38;5;188m\e[48;5;233m   \e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m\e[48;5;234m▸\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;186m\e[48;5;234mapp_c\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m\e[48;5;234m/\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m                       \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_cpp\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mdemo\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[24C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.cs*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.js*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.lua*\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.py*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.txt*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.yml*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[14;32H|\e[15;32H|\e[16;32H|\e[17;32H|\e[18;32H|\e[19;32H|\e[20;32H|\e[21;32H|\e[22;32H|\e[23;32H|\e[24;32H|\e[25;32H|\e[26;32H|\e[27;32H|\e[28;32H|\e[29;32H|\e[30;32H|\e[31;32H|\e[32;32H|\e[33;32H|\e[34;32H|\e[35;32H|\e[m\e[38;5;188m\e[48;5;233m\e[14;1H\e[38;5;240m\e[48;5;233m~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;243m\e[48;5;235m<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m \e[m\e[38;5;188m\e[48;5;233m\e[1;33H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233mvim ex_command_sh.txt\e[2;33H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[3;33H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m:sh\e[4;33H\e[38;5;59m\e[48;5;233m  4 \e[m\e[38;5;188m\e[48;5;233mpwd\e[5;33H\e[38;5;59m\e[48;5;233m  5 \e[m\e[38;5;188m\e[48;5;233mhistory 5\e[6;33H\e[38;5;59m\e[48;5;233m  6 \e[m\e[38;5;188m\e[48;5;233m# ex command :sh of vim execute builtin shell with :pwd path \\\e[7;33H\e[38;5;59m\e[48;5;233m  7 \e[m\e[38;5;188m\e[48;5;233m# to return vim editor while executing builtin terminal, press <C-d>\e[8;33H\e[38;5;59m\e[48;5;233m  8 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[9;33H\e[38;5;59m\e[48;5;233m  9 \e[m\e[38;5;188m\e[48;5;233m:sh\e[10;33H\e[38;5;59m\e[48;5;233m 10 \e[m\e[38;5;188m\e[48;5;233m# the builtin terminal executed by :sh command can not change :pwd of vim\e[11;33H\e[38;5;59m\e[48;5;233m 11 \e[m\e[38;5;188m\e[48;5;233mcd ~\e[12;33H\e[38;5;59m\e[48;5;233m 12 \e[m\e[38;5;188m\e[48;5;233mpwd\e[13;33H\e[38;5;59m\e[48;5;233m 13 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[14;33H\e[38;5;59m\e[48;5;233m 14 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[15;33H\e[38;5;59m\e[48;5;233m 15 \e[m\e[38;5;188m\e[48;5;233m:sh\e[16;33H\e[38;5;59m\e[48;5;233m 16 \e[m\e[38;5;188m\e[48;5;233mpwd\e[17;33H\e[38;5;59m\e[48;5;233m 17 \e[m\e[38;5;188m\e[48;5;233m# :pwd can be managed by ex command :cd and nerdtree provide **cd** to ch"
+  - delay: 91
+    content: "ange :pwd by current cursor path\e[18;33H\e[38;5;59m\e[48;5;233m 18 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[19;33H\e[38;5;59m\e[48;5;233m 19 \e[m\e[38;5;188m\e[48;5;233m:cd ~\e[20;33H\e[38;5;59m\e[48;5;233m 20 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[21;33H\e[38;5;59m\e[48;5;233m 21 \e[m\e[38;5;188m\e[48;5;233m:sh\e[22;33H\e[38;5;59m\e[48;5;233m 22 \e[m\e[38;5;188m\e[48;5;233mpwd\e[23;33H\e[38;5;59m\e[48;5;233m 23 \e[m\e[38;5;188m\e[48;5;233m<C-d>\e[24;33H\e[38;5;59m\e[48;5;233m 24 \e[m\e[38;5;188m\e[48;5;233mnerdtree cd\e[25;33H\e[38;5;59m\e[48;5;233m 25 \e[m\e[38;5;188m\e[48;5;233m:pwd\e[26;33H\e[38;5;59m\e[48;5;233m 26 \e[m\e[38;5;188m\e[48;5;233m:sh\e[27;33H\e[38;5;59m\e[48;5;233m 27 \e[m\e[38;5;188m\e[48;5;233mpwd\e[28;33H\e[38;5;59m\e[48;5;233m 28 \e[m\e[38;5;188m\e[48;5;233m# while this happens, history does not change\e[29;33H\e[38;5;59m\e[48;5;233m 29 \e[m\e[38;5;188m\e[48;5;233mhistory 5\e[30;33H\e[38;5;59m\e[48;5;233m 30 \e[m\e[38;5;188m\e[48;5;233mEOF\e[31;33H\e[38;5;240m\e[48;5;233m~                                                                                                                 \e[32;33H~                                                                                                                 \e[33;33H~                                                                                                                 \e[34;33H~                                                                                                                 \e[35;33H~                                                                                                                 \e[m\e[38;5;188m\e[48;5;233m\e[36;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ex_command_sh.txt                                           text \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 97 words 93%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:28/30"
+  - delay: 13
+    content: "☰℅\e[36;144H:1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[28;37H\e[?25h"
+  - delay: 111
+    content: "\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 13
+    content: "\e[?25l\e[?25h"
+  - delay: 743
+    content: "\e[?25l\e[37;1H\e[m\e[38;5;188m\e[48;5;233m:\e[36;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ex_command_sh.txt\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 197
+    content: q
+  - delay: 123
+    content: "\r"
+  - delay: 12
+    content: "\e[?25l\e[37;1H\e[K\e[37;1H\e[?2004l\e[>4;m\e[23;2t\e[23;1t\e[?1004l\e[?2004l\e[?1l\e>\e[?25h\e[>4;m\e[?1049l\e[23;0;0t"
+  - delay: 211
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m took \e[1;33m1m29s\e[0m \e[1;32m❯\e[0m "
+  - delay: 735
+    content: "\e[?2004l\r\r\nlogout\r\n"

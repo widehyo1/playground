@@ -1,0 +1,507 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /mnt/c/Users/widehyo/Desktop/work2/2024/12/14/demo_app
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1005
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 407
+    content: v
+  - delay: 68
+    content: i
+  - delay: 151
+    content: m
+  - delay: 189
+    content: ' '
+  - delay: 695
+    content: a
+  - delay: 75
+    content: p
+  - delay: 144
+    content: p
+  - delay: 304
+    content: .
+  - delay: 230
+    content: p
+  - delay: 122
+    content: 'y'
+  - delay: 223
+    content: "\r\n\e[?2004l\r"
+  - delay: 145
+    content: "\e[?1049h\e[22;0;0t\e[>4;2m\e[?1h\e=\e[?2004h\e[?1004h\e[1;30r\e[?12h\e[?12l\e[22;2t\e[22;1t"
+  - delay: 20
+    content: "\e[27m\e[23m\e[29m\e[m\e[38;5;188m\e[48;5;233m\e[H\e[2J\e[?25l\e[30;1H\"app.py\" 11L, 256B"
+  - delay: 158
+    content: "\e[2;1H▽\e[6n\e[2;1H  \e[3;1H\ePzz\e\\\e[0%m\e[6n\e[3;1H           \e[1;1H\e[>c\e]10;?\a\e]11;?\a"
+  - delay: 150
+    content: "\e[1;1H\e[48;5;234m                               \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;16m|\e[2;32H|\e[3;32H|\e[4;32H|\e[5;32H|\e[6;32H|\e[7;32H|\e[8;32H|\e[9;32H|\e[10;32H|\e[11;32H|\e[12;32H|\e[13;32H|\e[14;32H|\e[15;32H|\e[16;32H|\e[17;32H|\e[18;32H|\e[19;32H|\e[20;32H|\e[21;32H|\e[22;32H|\e[23;32H|\e[24;32H|\e[25;32H|\e[26;32H|\e[27;32H|\e[28;32H|\e[m\e[38;5;188m\e[48;5;233m\e[2;1H\e[38;5;240m\e[48;5;233m~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;189m\e[48;5;25m<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;16m\e[48;5;253m \e[m\e[38;5;188m\e[48;5;233m\e[1;33H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103mdef\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mfactorial\e[m\e[38;5;188m\e[48;5;233m(num: \e[38;5;222mint\e[m\e[38;5;188m\e[48;5;233m):\e[2;33H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m num == \e[38;5;167m1\e[m\e[38;5;188m\e[48;5;233m:\e[2;53H\e[K\e[3;33H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m        \e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m num\e[3;55H\e[K\e[4;33H\e[38;5;59m\e[48;5;233m  4 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m num * factorial(num - \e[38;5;167m1\e[m\e[38;5;188m\e[48;5;233m)\e[5;33H\e[38;5;59m\e[48;5;233m  5 \e[6;33H  6 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m __name__ == \e[38;5;107m'__main__'\e[m\e[38;5;188m\e[48;5;233m:\e[7;33H\e[38;5;59m\e[48;5;233m  7 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m'=== App start ==='\e[m\e[38;5;188m\e[48;5;233m)\e[8;33H\e[38;5;59m\e[48;5;233m  8 \e[m\e[38;5;188m\e[48;5;233m    num = \e[38;5;167m5\e[m\e[38;5;188m\e[48;5;233m\e[9;33H\e[38;5;59m\e[48;5;233m  9 \e[m\e[38;5;188m\e[48;5;233m    result = factorial(num)\e[10;33H\e[38;5;59m\e[48;5;233m 10 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(f\e[38;5;107m'result: {result}'\e[m\e[38;5;188m\e[48;5;233m)\e[11;33H\e[38;5;59m\e[48;5;233m 11 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m'=== App end ==='\e[m\e[38;5;188m\e[48;5;233m)\e[12;33H\e[38;5;240m\e[48;5;233m~                                                                                       \e[13;33H~                                                                                       \e[14;33H~                                                                                       \e[15;33H~                                                                                       \e[16;33H~                                                                                       \e[17;33H~                                                                                       \e[18;33H~                                                                                       \e[19;33H~                                                                                       \e[20;33H~                                                                                       \e[21;33H~                                                                                       \e[22;33H~                                                                                       "
+  - delay: 8
+    content: "\e[23;33H~                                                                                       \e[24;33H~                                                                                       \e[25;33H~                                                                                       \e[26;33H~                                                                                       \e[27;33H~                                                                                       \e[28;33H~                                                                                       \e[m\e[38;5;188m\e[48;5;233m\e[29;33H\e[38;5;59m\e[48;5;233m app.py                                               pyt…\e[29;91H  utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;235m 9% ㏑:1/11☰℅\e[29;118H:1 \e[m\e[38;5;188m\e[48;5;233m\e[30;1H\e[K"
+  - delay: 59
+    content: "\e[1;1H\e[38;5;107m\" Press ? for help\e[m\e[38;5;188m\e[48;5;233m             \r\n                               \r\n\e[38;5;186m.. (up a dir)\e[m\e[38;5;188m\e[48;5;233m                  \r\n\e[38;5;103m\e[48;5;234m</work2/2024/12/14/demo_app/\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m   \e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_c\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m                       \r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_cpp\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m                     \r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mdemo\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m                        \r\n\e[1m\e[38;5;71m  app.cs*\e[m\e[38;5;188m\e[48;5;233m                      \r\n\e[1m\e[38;5;71m  app.js*\e[m\e[38;5;188m\e[48;5;233m                      \r\n\e[1m\e[38;5;71m  app.lua*\e[m\e[38;5;188m\e[48;5;233m                     \r\n\e[1m\e[38;5;71m  app.py*\e[m\e[38;5;188m\e[48;5;233m                      \r\n\e[1m\e[38;5;71m  app_work.py*\e[m\e[38;5;188m\e[48;5;233m                 \r\n\e[1m\e[38;5;71m  edit_and_play.yml*\e[m\e[38;5;188m\e[48;5;233m           \r\n\e[1m\e[38;5;71m  ex_command_sh.txt*\e[m\e[38;5;188m\e[48;5;233m           \r\n\e[1m\e[38;5;71m  ex_command_sh.yml*\e[m\e[38;5;188m\e[48;5;233m           \e[29;1H\e[38;5;243m\e[48;5;235m<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m "
+  - delay: 499
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1C\e[38;5;59m\e[48;5;233mapp.py\e[m\e[38;5;188m\e[48;5;233m\e[44C\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 9%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:1/11☰℅\e[29;118H:1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[1;37H\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h\e[?12$p"
+  - delay: 13
+    content: "\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 617
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;86H\e[38;5;59m\e[48;5;233mpyt…\e[29;90H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 18\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m2/\e[2;37H"
+  - delay: 464
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;105H\e[38;5;189m\e[48;5;25m27\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m3/\e[3;37H"
+  - delay: 21
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;105H\e[38;5;189m\e[48;5;25m36\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m4/\e[4;37H"
+  - delay: 24
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;105H\e[38;5;189m\e[48;5;25m45\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m5/\e[5;37H"
+  - delay: 28
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;105H\e[38;5;189m\e[48;5;25m54\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m6/\e[6;37H"
+  - delay: 29
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;105H\e[38;5;189m\e[48;5;25m63\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m7/\e[7;37H"
+  - delay: 39
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;105H\e[38;5;189m\e[48;5;25m72\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m8/\e[8;37H"
+  - delay: 326
+    content: "\e[?25l\e[30;1H\e[m\e[38;5;188m\e[48;5;233m:\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m app.py\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 735
+    content: "\b \e[29;34H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m app.py \e[8;37H"
+  - delay: 264
+    content: "\e[?25l\e[30;1H\e[m\e[38;5;188m\e[48;5;233m:\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m app.py\r\n\e[m\e[38;5;188m\e[48;5;233m:sh\r\e[39;49m\e[?1004l\e[?2004l\e[?1l\e>\e[?25h\e[>4;m\e[?1049l\e[23;0;0t\r\n"
+  - delay: 740
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 211
+    content: p
+  - delay: 109
+    content: 'y'
+  - delay: 78
+    content: t
+  - delay: 116
+    content: h
+  - delay: 101
+    content: o
+  - delay: 99
+    content: 'n'
+  - delay: 108
+    content: ' '
+  - delay: 152
+    content: a
+  - delay: 181
+    content: p
+  - delay: 158
+    content: p
+  - delay: 258
+    content: .
+  - delay: 275
+    content: p
+  - delay: 116
+    content: 'y'
+  - delay: 199
+    content: "\r\n\e[?2004l\r"
+  - delay: 124
+    content: "=== App start ===\r\nresult: 120\r\n=== App end ===\r\n"
+  - delay: 114
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 507
+    content: "\e[?2004l\r\r\nexit\r\n"
+  - delay: 9
+    content: "\e[>4;m\e[>4;2m\e[?1049h\e[22;0;0t\e[>4;2m\e[?1h\e=\e[?2004h\e[?1004h"
+  - delay: 8
+    content: "\e[27m\e[23m\e[29m\e[m\e[38;5;188m\e[48;5;233m\e[H\e[2J\e[?25l\e[1;1H\e[38;5;107m\" Press ? for help\e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;243m\e[48;5;16m|\e[2;32H|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m.. (up a dir)\e[m\e[38;5;188m\e[48;5;233m\e[18C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;103m\e[48;5;234m</work2/2024/12/14/demo_app/\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m   \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_c\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[23C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_cpp\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mdemo\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[24C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.cs*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.js*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.lua*\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.py*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app_work.py*\e[m\e[38;5;188m\e[48;5;233m\e[17C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  edit_and_play.yml*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.txt*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.yml*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[16;32H|\e[17;32H|\e[18;32H|\e[19;32H|\e[20;32H|\e[21;32H|\e[22;32H|\e[23;32H|\e[24;32H|\e[25;32H|\e[26;32H|\e[27;32H|\e[28;32H|\e[m\e[38;5;188m\e[48;5;233m\e[16;1H\e[38;5;240m\e[48;5;233m~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;243m\e[48;5;235m<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m \e[m\e[38;5;188m\e[48;5;233m\e[1;33H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103mdef\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mfactorial\e[m\e[38;5;188m\e[48;5;233m(num: \e[38;5;222mint\e[m\e[38;5;188m\e[48;5;233m):\e[2;33H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m num == \e[38;5;167m1\e[m\e[38;5;188m\e[48;5;233m:\e[3;33H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m\e[8C\e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m num\e[4;33H\e[38;5;59m\e[48;5;233m  4 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m num * factorial(num - \e[38;5;167m1\e[m\e[38;5;188m\e[48;5;233m)\e[5;33H\e[38;5;59m\e[48;5;233m  5 \e[6;33H  6 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m __name__ == \e[38;5;107m'__main__'\e[m\e[38;5;188m\e[48;5;233m:\e[7;33H\e[38;5;59m\e[48;5;233m  7 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m'=== App start ==='\e[m\e[38;5;188m\e[48;5;233m)\e[8;33H\e[38;5;59m\e[48;5;233m  8 \e[m\e[38;5;188m\e[48;5;233m    num = \e[38;5;167m5\e[m\e[38;5;188m\e[48;5;233m\e[9;33H\e[38;5;59m\e[48;5;233m  9 \e[m\e[38;5;188m\e[48;5;233m    result = factorial(num)\e[10;33H\e[38;5;59m\e[48;5;233m 10 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(f\e[38;5;107m'result: {result}'\e[m\e[38;5;188m\e[48;5;233m)\e[11;33H\e[38;5;59m\e[48;5;233m 11 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m'=== App end ==='\e[m\e[38;5;188m\e[48;5;233m)\e[12;33H\e[38;5;240m\e[48;5;233m~                                                                                       "
+  - delay: 21
+    content: "\e[13;33H~                                                                                       \e[14;33H~                                                                                       \e[15;33H~                                                                                       \e[16;33H~                                                                                       \e[17;33H~                                                                                       \e[18;33H~                                                                                       \e[19;33H~                                                                                       \e[20;33H~                                                                                       \e[21;33H~                                                                                       \e[22;33H~                                                                                       \e[23;33H~                                                                                       \e[24;33H~                                                                                       \e[25;33H~                                                                                       \e[26;33H~                                                                                       \e[27;33H~                                                                                       \e[28;33H~                                                                                       \e[m\e[38;5;188m\e[48;5;233m\e[29;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m app.py                                      pyt…\e[29;90H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 72%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:8/11"
+  - delay: 6
+    content: "☰℅\e[29;118H:1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[8;37H\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 637
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[10C\e[38;5;167m6\e[m\e[38;5;188m\e[48;5;233m\e[29;41H\e[38;5;215m\e[48;5;233m app.py[+]                                 \e[m\e[38;5;188m\e[48;5;233m\e[1C\e[38;5;59m\e[48;5;233mpyt…\e[29;89H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 72%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:88\b/11☰☰\b℅\e[29;117H:11\e[8;47H\e[?25h"
+  - delay: 149
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;167m7\b\e[?25h"
+  - delay: 147
+    content: "\e[?25l8\b\e[?25h"
+  - delay: 126
+    content: "\e[?25l9\b\e[?25h"
+  - delay: 259
+    content: "\e[?25l\e[30;1H\e[m\e[38;5;188m\e[48;5;233m:\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;215m\e[48;5;233m app.py[+]\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 152
+    content: w
+  - delay: 139
+    content: "\r"
+  - delay: 5
+    content: "\e[?25l\"app.py\""
+  - delay: 29
+    content: ' 11L, 256B written'
+  - delay: 23
+    content: "\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m app.py                                    "
+  - delay: 7
+    content: "\e[8;47H\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 254
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[30;1H\e[K\e[30;1H:\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m app.py\r\n\e[m\e[38;5;188m\e[48;5;233m:sh\r\e[39;49m\e[?1004l\e[?2004l\e[?1l\e>\e[?25h\e[>4;m\e[?1049l\e[23;0;0t\r\n"
+  - delay: 337
+    content: '!'
+  - delay: 132
+    content: '!'
+  - delay: 161
+    content: "\r\n"
+  - delay: 265
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m !!\r\n\e[?2004l\rpython app.py\r\n"
+  - delay: 125
+    content: "=== App start ===\r\nresult: 362880\r\n=== App end ===\r\n"
+  - delay: 109
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 564
+    content: "\e[?2004l\r\r\nexit\r\n"
+  - delay: 7
+    content: "\e[>4;m\e[>4;2m\e[?1049h\e[22;0;0t\e[>4;2m\e[?1h\e=\e[?2004h\e[?1004h"
+  - delay: 7
+    content: "\e[27m\e[23m\e[29m\e[m\e[38;5;188m\e[48;5;233m\e[H\e[2J\e[?25l\e[1;1H\e[38;5;107m\" Press ? for help\e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;243m\e[48;5;16m|\e[2;32H|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m.. (up a dir)\e[m\e[38;5;188m\e[48;5;233m\e[18C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;103m\e[48;5;234m</work2/2024/12/14/demo_app/\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m   \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_c\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[23C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_cpp\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mdemo\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[24C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.cs*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.js*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.lua*\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.py*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app_work.py*\e[m\e[38;5;188m\e[48;5;233m\e[17C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  edit_and_play.yml*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.txt*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.yml*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[16;32H|\e[17;32H|\e[18;32H|\e[19;32H|\e[20;32H|\e[21;32H|\e[22;32H|\e[23;32H|\e[24;32H|\e[25;32H|\e[26;32H|\e[27;32H|\e[28;32H|\e[m\e[38;5;188m\e[48;5;233m\e[16;1H\e[38;5;240m\e[48;5;233m~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;243m\e[48;5;235m<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m \e[m\e[38;5;188m\e[48;5;233m\e[1;33H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103mdef\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mfactorial\e[m\e[38;5;188m\e[48;5;233m(num: \e[38;5;222mint\e[m\e[38;5;188m\e[48;5;233m):\e[2;33H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m num == \e[38;5;167m1\e[m\e[38;5;188m\e[48;5;233m:\e[3;33H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m\e[8C\e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m num\e[4;33H\e[38;5;59m\e[48;5;233m  4 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m num * factorial(num - \e[38;5;167m1\e[m\e[38;5;188m\e[48;5;233m)\e[5;33H\e[38;5;59m\e[48;5;233m  5 \e[6;33H  6 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m __name__ == \e[38;5;107m'__main__'\e[m\e[38;5;188m\e[48;5;233m:\e[7;33H\e[38;5;59m\e[48;5;233m  7 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m'=== App start ==='\e[m\e[38;5;188m\e[48;5;233m)\e[8;33H\e[38;5;59m\e[48;5;233m  8 \e[m\e[38;5;188m\e[48;5;233m    num = \e[38;5;167m9\e[m\e[38;5;188m\e[48;5;233m\e[9;33H\e[38;5;59m\e[48;5;233m  9 \e[m\e[38;5;188m\e[48;5;233m    result = factorial(num)\e[10;33H\e[38;5;59m\e[48;5;233m 10 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(f\e[38;5;107m'result: {result}'\e[m\e[38;5;188m\e[48;5;233m)\e[11;33H\e[38;5;59m\e[48;5;233m 11 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m'=== App end ==='\e[m\e[38;5;188m\e[48;5;233m)\e[12;33H\e[38;5;240m\e[48;5;233m~                                                                                       "
+  - delay: 19
+    content: "\e[13;33H~                                                                                       \e[14;33H~                                                                                       \e[15;33H~                                                                                       \e[16;33H~                                                                                       \e[17;33H~                                                                                       \e[18;33H~                                                                                       \e[19;33H~                                                                                       \e[20;33H~                                                                                       \e[21;33H~                                                                                       \e[22;33H~                                                                                       \e[23;33H~                                                                                       \e[24;33H~                                                                                       \e[25;33H~                                                                                       \e[26;33H~                                                                                       \e[27;33H~                                                                                       \e[28;33H~                                                                                       \e[m\e[38;5;188m\e[48;5;233m\e[29;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m app.py                                     pyt…\e[29;89H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 72%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:8/11"
+  - delay: 5
+    content: "☰℅\e[29;117H:11\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[8;47H\e[?25h"
+  - delay: 5
+    content: "\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 1214
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;167m8\e[m\e[38;5;188m\e[48;5;233m\e[29;41H\e[38;5;215m\e[48;5;233m app.py[+]                                 \e[8;47H\e[?25h"
+  - delay: 178
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;167m7\b\e[?25h"
+  - delay: 424
+    content: "\e[?25l\e[30;1H\e[m\e[38;5;188m\e[48;5;233m:\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;215m\e[48;5;233m app.py[+]\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 86
+    content: w
+  - delay: 116
+    content: "\r"
+  - delay: 6
+    content: "\e[?25l\"app.py\""
+  - delay: 30
+    content: ' 11L, 256B written'
+  - delay: 21
+    content: "\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m app.py                                    "
+  - delay: 7
+    content: "\e[8;47H\e[?25h"
+  - delay: 5
+    content: "\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 214
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[30;1H\e[K\e[30;1H:\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m app.py\r\n\e[m\e[38;5;188m\e[48;5;233m:sh\r\e[39;49m\e[?1004l\e[?2004l\e[?1l\e>\e[?25h\e[>4;m\e[?1049l\e[23;0;0t\r\n"
+  - delay: 381
+    content: '!'
+  - delay: 132
+    content: '!'
+  - delay: 140
+    content: "\r\n"
+  - delay: 96
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m !!\r\n\e[?2004l\rpython app.py\r\n"
+  - delay: 133
+    content: "=== App start ===\r\nresult: 5040\r\n=== App end ===\r\n"
+  - delay: 110
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 614
+    content: "\e[?2004l\r\r\nexit\r\n"
+  - delay: 7
+    content: "\e[>4;m\e[>4;2m\e[?1049h\e[22;0;0t\e[>4;2m\e[?1h\e=\e[?2004h\e[?1004h"
+  - delay: 8
+    content: "\e[27m\e[23m\e[29m\e[m\e[38;5;188m\e[48;5;233m\e[H\e[2J\e[?25l\e[1;1H\e[38;5;107m\" Press ? for help\e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;243m\e[48;5;16m|\e[2;32H|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m.. (up a dir)\e[m\e[38;5;188m\e[48;5;233m\e[18C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;103m\e[48;5;234m</work2/2024/12/14/demo_app/\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m   \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_c\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[23C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_cpp\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mdemo\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[24C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.cs*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.js*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.lua*\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.py*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app_work.py*\e[m\e[38;5;188m\e[48;5;233m\e[17C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  edit_and_play.yml*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.txt*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.yml*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[16;32H|\e[17;32H|\e[18;32H|\e[19;32H|\e[20;32H|\e[21;32H|\e[22;32H|\e[23;32H|\e[24;32H|\e[25;32H|\e[26;32H|\e[27;32H|\e[28;32H|\e[m\e[38;5;188m\e[48;5;233m\e[16;1H\e[38;5;240m\e[48;5;233m~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;243m\e[48;5;235m<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m \e[m\e[38;5;188m\e[48;5;233m\e[1;33H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103mdef\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mfactorial\e[m\e[38;5;188m\e[48;5;233m(num: \e[38;5;222mint\e[m\e[38;5;188m\e[48;5;233m):\e[2;33H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m num == \e[38;5;167m1\e[m\e[38;5;188m\e[48;5;233m:\e[3;33H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m\e[8C\e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m num\e[4;33H\e[38;5;59m\e[48;5;233m  4 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m num * factorial(num - \e[38;5;167m1\e[m\e[38;5;188m\e[48;5;233m)\e[5;33H\e[38;5;59m\e[48;5;233m  5 \e[6;33H  6 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m __name__ == \e[38;5;107m'__main__'\e[m\e[38;5;188m\e[48;5;233m:\e[7;33H\e[38;5;59m\e[48;5;233m  7 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m'=== App start ==='\e[m\e[38;5;188m\e[48;5;233m)\e[8;33H\e[38;5;59m\e[48;5;233m  8 \e[m\e[38;5;188m\e[48;5;233m    num = \e[38;5;167m7\e[m\e[38;5;188m\e[48;5;233m\e[9;33H\e[38;5;59m\e[48;5;233m  9 \e[m\e[38;5;188m\e[48;5;233m    result = factorial(num)\e[10;33H\e[38;5;59m\e[48;5;233m 10 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(f\e[38;5;107m'result: {result}'\e[m\e[38;5;188m\e[48;5;233m)\e[11;33H\e[38;5;59m\e[48;5;233m 11 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m'=== App end ==='\e[m\e[38;5;188m\e[48;5;233m)\e[12;33H\e[38;5;240m\e[48;5;233m~                                                                                       "
+  - delay: 19
+    content: "\e[13;33H~                                                                                       \e[14;33H~                                                                                       \e[15;33H~                                                                                       \e[16;33H~                                                                                       \e[17;33H~                                                                                       \e[18;33H~                                                                                       \e[19;33H~                                                                                       \e[20;33H~                                                                                       \e[21;33H~                                                                                       \e[22;33H~                                                                                       \e[23;33H~                                                                                       \e[24;33H~                                                                                       \e[25;33H~                                                                                       \e[26;33H~                                                                                       \e[27;33H~                                                                                       \e[28;33H~                                                                                       \e[m\e[38;5;188m\e[48;5;233m\e[29;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m app.py                                     pyt…\e[29;89H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 72%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:8/11"
+  - delay: 6
+    content: "☰℅\e[29;117H:11\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[8;47H\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 543
+    content: "\e[29;104H63\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m7/\e[7;47H"
+  - delay: 491
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;104H\e[38;5;189m\e[48;5;25m54\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m6/\e[6;47H"
+  - delay: 19
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;85H\e[38;5;59m\e[48;5;233m pyt…\e[29;90H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 45%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:51\b/11☰:\b℅\e[29;118H:1\e[5;37H"
+  - delay: 34
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;85H\e[38;5;59m\e[48;5;233mpyt…\e[29;89H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 36%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:45\b/11☰☰\b℅\e[29;117H:11\e[4;47H"
+  - delay: 781
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[5;41H\e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m num * factorial(num - \e[38;5;167m1\e[m\e[38;5;188m\e[48;5;233m)\e[6;37H\e[K\e[7;37H\e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m __name__ == \e[38;5;107m'__main__'\e[m\e[38;5;188m\e[48;5;233m:\e[7;63H\e[K\e[8;41H\e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m'=== App start ==='\e[m\e[38;5;188m\e[48;5;233m)\e[9;41Hnum = \e[38;5;167m7\e[m\e[38;5;188m\e[48;5;233m\e[9;48H\e[K\e[10;41Hresult = factorial(num)\e[10;64H\e[K\e[11;47Hf\e[38;5;107m'result: {result}'\e[m\e[38;5;188m\e[48;5;233m)\e[12;33H\e[38;5;59m\e[48;5;233m 12 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m'=== App end ==='\e[m\e[38;5;188m\e[48;5;233m)\e[12;65H\e[K\e[29;41H\e[38;5;215m\e[48;5;233m app.py[+]                                  \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m pyt…\e[29;90H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 41%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:51\b/12☰:\b℅\e[29;118H:5\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[5;41H\e[?25h"
+  - delay: 239
+    content: "\e[29;105H33\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m4/\e[4;41H"
+  - delay: 199
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[30;1H\e[1m-- INSERT --\e[m\e[38;5;188m\e[48;5;233m\e[29;33H\e[38;5;231m\e[48;5;22m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;22mINSERT\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;231m\e[48;5;22m \e[m\e[38;5;188m\e[48;5;233m\e[44C\e[38;5;231m\e[48;5;233m pyt…\e[29;90H \e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;231m\e[48;5;22m 33%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;22m ㏑:4\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;231m\e[48;5;22m/12☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m℅\e[m\e[38;5;188m\e[48;5;233m\e[29;117H\e[1m\e[38;5;231m\e[48;5;22m℅\e[29;118H:5\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[29;120H\e[38;5;231m\e[48;5;22m \e[4;41H\e[?25h"
+  - delay: 186
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;244m#return num * factorial(num - 1)\e[m\e[38;5;188m\e[48;5;233m\e[29;119H\e[1m\e[38;5;231m\e[48;5;22m6\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[4;42H\e[?25h"
+  - delay: 141
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;244m return num * factorial(num - 1)\e[m\e[38;5;188m\e[48;5;233m\e[29;119H\e[1m\e[38;5;231m\e[48;5;22m7\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[4;43H\e[?25h"
+  - delay: 110
+    content: "\e[m\e[38;5;188m\e[48;5;233mj\b"
+  - delay: 151
+    content: "\e[38;5;244mr\b\e[m\e[38;5;188m\e[48;5;233m\e[30;1H\e[K\e[?25l"
+  - delay: 30
+    content: "\e[29;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[44C\e[38;5;59m\e[48;5;233m pyt…\e[29;90H \e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;189m\e[48;5;25m 33%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:4\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;22m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;189m\e[48;5;25m/12☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;22m℅\e[m\e[38;5;188m\e[48;5;233m\e[29;117H\e[1m\e[38;5;189m\e[48;5;25m℅\e[29;118H:6\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[m\e[38;5;188m\e[48;5;233m\e[29;120H\e[38;5;189m\e[48;5;25m \e[4;42H\e[?25h"
+  - delay: 120
+    content: "\e[?25l\e[29;105H41\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m5/\e[5;42H\e[?25h"
+  - delay: 363
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[28C\e[38;5;167m2\e[m\e[38;5;188m\e[48;5;233m\e[29;84H\e[38;5;59m\e[48;5;233m pyt…\e[29;89H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 41%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:55\b/12☰☰\b℅\e[29;117H:34\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[5;70H\e[?25h"
+  - delay: 292
+    content: "\e[29;104H33\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m4/\e[4;70H"
+  - delay: 261
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;104H\e[38;5;189m\e[48;5;25m25\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m3/\e[5C18\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[3;54H"
+  - delay: 302
+    content: "\e[29;104H16\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m2/\e[6C6\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[2;52H"
+  - delay: 245
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;119H\e[1m\e[38;5;189m\e[48;5;25m5\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[2;51H"
+  - delay: 186
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;119H\e[1m\e[38;5;189m\e[48;5;25m2\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[2;48H"
+  - delay: 700
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m<\b\e[?25h"
+  - delay: 353
+    content: "\e[?25l\e[30;1H:\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;215m\e[48;5;233m app.py[+]\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 139
+    content: w
+  - delay: 90
+    content: "\r"
+  - delay: 7
+    content: "\e[?25l\"app.py\""
+  - delay: 29
+    content: ' 12L, 294B written'
+  - delay: 24
+    content: "\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m app.py                                    "
+  - delay: 7
+    content: "\e[2;48H\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 304
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[30;1H\e[K\e[30;1H:\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m app.py\r\n\e[m\e[38;5;188m\e[48;5;233m:sh\r\e[39;49m\e[?1004l\e[?2004l\e[?1l\e>\e[?25h\e[>4;m\e[?1049l\e[23;0;0t\r\n"
+  - delay: 477
+    content: '!'
+  - delay: 144
+    content: '!'
+  - delay: 204
+    content: "\r\n"
+  - delay: 73
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m !!\r\n\e[?2004l\rpython app.py\r\n"
+  - delay: 147
+    content: "=== App start ===\r\nresult: 105\r\n=== App end ===\r\n"
+  - delay: 129
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 559
+    content: "\e[?2004l\r\r\nexit\r\n"
+  - delay: 10
+    content: "\e[>4;m\e[>4;2m\e[?1049h\e[22;0;0t\e[>4;2m\e[?1h\e=\e[?2004h\e[?1004h"
+  - delay: 7
+    content: "\e[27m\e[23m\e[29m\e[m\e[38;5;188m\e[48;5;233m\e[H\e[2J\e[?25l\e[1;1H\e[38;5;107m\" Press ? for help\e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;243m\e[48;5;16m|\e[2;32H|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m.. (up a dir)\e[m\e[38;5;188m\e[48;5;233m\e[18C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;103m\e[48;5;234m</work2/2024/12/14/demo_app/\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m   \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_c\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[23C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_cpp\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mdemo\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[24C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.cs*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.js*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.lua*\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.py*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app_work.py*\e[m\e[38;5;188m\e[48;5;233m\e[17C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  edit_and_play.yml*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.txt*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.yml*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[16;32H|\e[17;32H|\e[18;32H|\e[19;32H|\e[20;32H|\e[21;32H|\e[22;32H|\e[23;32H|\e[24;32H|\e[25;32H|\e[26;32H|\e[27;32H|\e[28;32H|\e[m\e[38;5;188m\e[48;5;233m\e[16;1H\e[38;5;240m\e[48;5;233m~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;243m\e[48;5;235m<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m \e[m\e[38;5;188m\e[48;5;233m\e[1;33H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103mdef\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mfactorial\e[m\e[38;5;188m\e[48;5;233m(num: \e[38;5;222mint\e[m\e[38;5;188m\e[48;5;233m):\e[2;33H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m num <= \e[38;5;167m1\e[m\e[38;5;188m\e[48;5;233m:\e[3;33H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m\e[8C\e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m num\e[4;33H\e[38;5;59m\e[48;5;233m  4 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;244m# return num * factorial(num - 1)\e[m\e[38;5;188m\e[48;5;233m\e[5;33H\e[38;5;59m\e[48;5;233m  5 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m num * factorial(num - \e[38;5;167m2\e[m\e[38;5;188m\e[48;5;233m)\e[6;33H\e[38;5;59m\e[48;5;233m  6 \e[7;33H  7 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m __name__ == \e[38;5;107m'__main__'\e[m\e[38;5;188m\e[48;5;233m:\e[8;33H\e[38;5;59m\e[48;5;233m  8 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m'=== App start ==='\e[m\e[38;5;188m\e[48;5;233m)\e[9;33H\e[38;5;59m\e[48;5;233m  9 \e[m\e[38;5;188m\e[48;5;233m    num = \e[38;5;167m7\e[m\e[38;5;188m\e[48;5;233m\e[10;33H\e[38;5;59m\e[48;5;233m 10 \e[m\e[38;5;188m\e[48;5;233m    result = factorial(num)\e[11;33H\e[38;5;59m\e[48;5;233m 11 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(f\e[38;5;107m'result: {result}'\e[m\e[38;5;188m\e[48;5;233m)\e[12;33H\e[38;5;59m\e[48;5;233m 12 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint"
+  - delay: 22
+    content: "\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m'=== App end ==='\e[m\e[38;5;188m\e[48;5;233m)\e[13;33H\e[38;5;240m\e[48;5;233m~                                                                                       \e[14;33H~                                                                                       \e[15;33H~                                                                                       \e[16;33H~                                                                                       \e[17;33H~                                                                                       \e[18;33H~                                                                                       \e[19;33H~                                                                                       \e[20;33H~                                                                                       \e[21;33H~                                                                                       \e[22;33H~                                                                                       \e[23;33H~                                                                                       \e[24;33H~                                                                                       \e[25;33H~                                                                                       \e[26;33H~                                                                                       \e[27;33H~                                                                                       \e[28;33H~                                                                                       \e[m\e[38;5;188m\e[48;5;233m\e[29;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m app.py                                     pyt…\e[29;89H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m"
+  - delay: 10
+    content: "\e[48;5;233m\e[38;5;189m\e[48;5;25m 16%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:2/12☰℅\e[29;117H:12\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[2;48H\e[?25h"
+  - delay: 7
+    content: "\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 432
+    content: "\e[29;104H25\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m3/\e[3;48H"
+  - delay: 144
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;104H\e[38;5;189m\e[48;5;25m33\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m4/\e[4;48H"
+  - delay: 131
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;104H\e[38;5;189m\e[48;5;25m41\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m5/\e[5;48H"
+  - delay: 694
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;85H\e[38;5;59m\e[48;5;233m pyt…\e[29;90H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 50%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:61\b/12☰:\b℅\e[29;118H:1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[6;37H"
+  - delay: 141
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;85H\e[38;5;59m\e[48;5;233mpyt…\e[29;89H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 58%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:76\b/12☰☰\b℅\e[29;117H:12\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[7;48H"
+  - delay: 129
+    content: "\e[29;104H66\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m8/\e[8;48H"
+  - delay: 173
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;104H\e[38;5;189m\e[48;5;25m75\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m9/\e[6C1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[9;47H"
+  - delay: 387
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;167m8\e[m\e[38;5;188m\e[48;5;233m\e[29;41H\e[38;5;215m\e[48;5;233m app.py[+]                                 \e[9;47H\e[?25h"
+  - delay: 105
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;167m9\b\e[?25h"
+  - delay: 526
+    content: "\e[?25l10\e[m\e[38;5;188m\e[48;5;233m\e[29;119H\e[1m\e[38;5;189m\e[48;5;25m2\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[9;48H\e[?25h"
+  - delay: 193
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;167m1\b\e[?25h"
+  - delay: 499
+    content: "\e[?25l\e[30;1H\e[m\e[38;5;188m\e[48;5;233m:\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;215m\e[48;5;233m app.py[+]\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 127
+    content: w
+  - delay: 76
+    content: "\r"
+  - delay: 6
+    content: "\e[?25l\"app.py\""
+  - delay: 32
+    content: ' 12L, 295B written'
+  - delay: 23
+    content: "\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m app.py                                    "
+  - delay: 6
+    content: "\e[9;48H\e[?25h"
+  - delay: 5
+    content: "\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 196
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;104H\e[38;5;189m\e[48;5;25m66\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m8/\e[8;48H"
+  - delay: 495
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;104H\e[38;5;189m\e[48;5;25m58\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m7/\e[7;48H"
+  - delay: 12
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;85H\e[38;5;59m\e[48;5;233m pyt…\e[29;90H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 50%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:61\b/12☰:\b℅\e[29;118H:1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[6;37H"
+  - delay: 352
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[29;85H\e[38;5;59m\e[48;5;233mpyt…\e[29;89H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 41%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:56\b/12☰☰\b℅\e[29;117H:12\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[5;48H"
+  - delay: 455
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[6;41H\e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m num * factorial(num - \e[38;5;167m2\e[m\e[38;5;188m\e[48;5;233m)\e[7;37H\e[K\e[8;37H\e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m __name__ == \e[38;5;107m'__main__'\e[m\e[38;5;188m\e[48;5;233m:\e[8;63H\e[K\e[9;41H\e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m'=== App start ==='\e[m\e[38;5;188m\e[48;5;233m)\e[10;41Hnum = \e[38;5;167m11\e[m\e[38;5;188m\e[48;5;233m\e[10;50H\e[K\e[11;41Hresult = factorial(num)\e[11;64H\e[K\e[12;47Hf\e[38;5;107m'result: {result}'\e[m\e[38;5;188m\e[48;5;233m)\e[13;33H\e[38;5;59m\e[48;5;233m 13 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m'=== App end ==='\e[m\e[38;5;188m\e[48;5;233m)\e[13;65H\e[K\e[29;41H\e[38;5;215m\e[48;5;233m app.py[+]                                  \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m pyt…\e[29;90H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 46%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:61\b/13☰:\b℅\e[29;118H:5\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[6;41H\e[?25h"
+  - delay: 282
+    content: "\e[29;105H38\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m5/\e[5;41H"
+  - delay: 186
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[30;1H\e[1m-- INSERT --\e[m\e[38;5;188m\e[48;5;233m\e[30;13H\e[K\e[29;33H\e[38;5;231m\e[48;5;22m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;22mINSERT\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;231m\e[48;5;22m \e[m\e[38;5;188m\e[48;5;233m\e[44C\e[38;5;231m\e[48;5;233m pyt…\e[29;90H \e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;231m\e[48;5;22m 38%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;22m ㏑:5\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;231m\e[48;5;22m/13☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m℅\e[m\e[38;5;188m\e[48;5;233m\e[29;117H\e[1m\e[38;5;231m\e[48;5;22m℅\e[29;118H:5\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[29;120H\e[38;5;231m\e[48;5;22m \e[5;41H\e[?25h"
+  - delay: 185
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;244m#return num * factorial(num - 2)\e[m\e[38;5;188m\e[48;5;233m\e[29;119H\e[1m\e[38;5;231m\e[48;5;22m6\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[5;42H\e[?25h"
+  - delay: 166
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;244m return num * factorial(num - 2)\e[m\e[38;5;188m\e[48;5;233m\e[29;119H\e[1m\e[38;5;231m\e[48;5;22m7\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[5;43H\e[?25h"
+  - delay: 132
+    content: "\e[m\e[38;5;188m\e[48;5;233mj\b"
+  - delay: 136
+    content: "\e[38;5;244mr\b\e[m\e[38;5;188m\e[48;5;233m\e[30;1H\e[K\e[?25l"
+  - delay: 27
+    content: "\e[29;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[44C\e[38;5;59m\e[48;5;233m pyt…\e[29;90H \e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;189m\e[48;5;25m 38%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:5\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;22m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;189m\e[48;5;25m/13☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;22m℅\e[m\e[38;5;188m\e[48;5;233m\e[29;117H\e[1m\e[38;5;189m\e[48;5;25m℅\e[29;118H:6\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[m\e[38;5;188m\e[48;5;233m\e[29;120H\e[38;5;189m\e[48;5;25m \e[5;42H\e[?25h"
+  - delay: 117
+    content: "\e[?25l\e[29;105H46\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m6/\e[6;42H\e[?25h"
+  - delay: 379
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[28C\e[38;5;167m3\e[m\e[38;5;188m\e[48;5;233m\e[29;84H\e[38;5;59m\e[48;5;233m pyt…\e[29;89H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 46%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:66\b/13☰☰\b℅\e[29;117H:34\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[6;70H\e[?25h"
+  - delay: 299
+    content: "\e[?25l\e[30;1H\e[m\e[38;5;188m\e[48;5;233m:\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;215m\e[48;5;233m app.py[+]\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 149
+    content: w
+  - delay: 131
+    content: "\r"
+  - delay: 6
+    content: "\e[?25l\"app.py\""
+  - delay: 23
+    content: ' 13L, 333B written'
+  - delay: 20
+    content: "\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m app.py                                    "
+  - delay: 7
+    content: "\e[6;70H\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 815
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[30;1H\e[K\e[30;1H:\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m app.py\r\n\e[m\e[38;5;188m\e[48;5;233m:sh\r\e[39;49m\e[?1004l\e[?2004l\e[?1l\e>\e[?25h\e[>4;m\e[?1049l\e[23;0;0t\r\n"
+  - delay: 740
+    content: '!'
+  - delay: 6
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m !"
+  - delay: 131
+    content: '!'
+  - delay: 244
+    content: "\r\n\e[?2004l\rpython app.py\r\n"
+  - delay: 116
+    content: "=== App start ===\r\nresult: -880\r\n=== App end ===\r\n"
+  - delay: 97
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 1776
+    content: "\e[?2004l\r\r\nexit\r\n\e[>4;m\e[>4;2m\e[?1049h\e[22;0;0t\e[>4;2m\e[?1h\e=\e[?2004h\e[?1004h"
+  - delay: 6
+    content: "\e[27m\e[23m\e[29m\e[m\e[38;5;188m\e[48;5;233m\e[H\e[2J\e[?25l\e[1;1H\e[38;5;107m\" Press ? for help\e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;243m\e[48;5;16m|\e[2;32H|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m.. (up a dir)\e[m\e[38;5;188m\e[48;5;233m\e[18C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;103m\e[48;5;234m</work2/2024/12/14/demo_app/\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m   \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_c\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[23C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mapp_cpp\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;186m▸\e[m\e[38;5;188m\e[48;5;233m \e[38;5;186mdemo\e[m\e[38;5;188m\e[48;5;233m\e[38;5;183m/\e[m\e[38;5;188m\e[48;5;233m\e[24C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.cs*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.js*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.lua*\e[m\e[38;5;188m\e[48;5;233m\e[21C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app.py*\e[m\e[38;5;188m\e[48;5;233m\e[22C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  app_work.py*\e[m\e[38;5;188m\e[48;5;233m\e[17C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  edit_and_play.yml*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.txt*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m\e[38;5;71m  ex_command_sh.yml*\e[m\e[38;5;188m\e[48;5;233m\e[11C\e[38;5;243m\e[48;5;16m|\e[16;32H|\e[17;32H|\e[18;32H|\e[19;32H|\e[20;32H|\e[21;32H|\e[22;32H|\e[23;32H|\e[24;32H|\e[25;32H|\e[26;32H|\e[27;32H|\e[28;32H|\e[m\e[38;5;188m\e[48;5;233m\e[16;1H\e[38;5;240m\e[48;5;233m~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;243m\e[48;5;235m<top/work2/2024/12/14/demo_app \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m \e[m\e[38;5;188m\e[48;5;233m\e[1;33H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103mdef\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mfactorial\e[m\e[38;5;188m\e[48;5;233m(num: \e[38;5;222mint\e[m\e[38;5;188m\e[48;5;233m):\e[2;33H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m num <= \e[38;5;167m1\e[m\e[38;5;188m\e[48;5;233m:\e[3;33H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m\e[8C\e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m num\e[4;33H\e[38;5;59m\e[48;5;233m  4 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;244m# return num * factorial(num - 1)\e[m\e[38;5;188m\e[48;5;233m\e[5;33H\e[38;5;59m\e[48;5;233m  5 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;244m# return num * factorial(num - 2)\e[m\e[38;5;188m\e[48;5;233m\e[6;33H\e[38;5;59m\e[48;5;233m  6 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m num * factorial(num - \e[38;5;167m3\e[m\e[38;5;188m\e[48;5;233m)\e[7;33H\e[38;5;59m\e[48;5;233m  7 \e[8;33H  8 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m __name__ == \e[38;5;107m'__main__'\e[m\e[38;5;188m\e[48;5;233m:\e[9;33H\e[38;5;59m\e[48;5;233m  9 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m'=== App start ==='\e[m\e[38;5;188m\e[48;5;233m)\e[10;33H\e[38;5;59m\e[48;5;233m 10 \e[m\e[38;5;188m\e[48;5;233m    num = \e[38;5;167m11\e[m\e[38;5;188m\e[48;5;233m\e[11;33H\e[38;5;59m\e[48;5;233m 11 \e[m\e[38;5;188m\e[48;5;233m    result = factorial(num)\e[12;33H\e[38;5;59m\e[48;5;233m 12 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(f"
+  - delay: 28
+    content: "\e[38;5;107m'result: {result}'\e[m\e[38;5;188m\e[48;5;233m)\e[13;33H\e[38;5;59m\e[48;5;233m 13 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mprint\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m'=== App end ==='\e[m\e[38;5;188m\e[48;5;233m)\e[14;33H\e[38;5;240m\e[48;5;233m~                                                                                       \e[15;33H~                                                                                       \e[16;33H~                                                                                       \e[17;33H~                                                                                       \e[18;33H~                                                                                       \e[19;33H~                                                                                       \e[20;33H~                                                                                       \e[21;33H~                                                                                       \e[22;33H~                                                                                       \e[23;33H~                                                                                       \e[24;33H~                                                                                       \e[25;33H~                                                                                       \e[26;33H~                                                                                       \e[27;33H~                                                                                       \e[28;33H~                                                                                       \e[m\e[38;5;188m\e[48;5;233m\e[29;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m app.py                                     pyt…\e[29;89H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m"
+  - delay: 7
+    content: "\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 46%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:6/13☰℅\e[29;117H:34\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[6;70H\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h\e[?25l\e[?25h"
+  - delay: 409
+    content: "\e[?25l\e[30;1H\e[m\e[38;5;188m\e[48;5;233m:\e[29;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m app.py\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 364
+    content: q
+  - delay: 146
+    content: "\r"
+  - delay: 6
+    content: "\e[?25l\e[30;1H\e[K\e[30;1H\e[?2004l\e[>4;m\e[23;2t\e[23;1t\e[?1004l\e[?2004l\e[?1l\e>\e[?25h\e[>4;m\e[?1049l\e[23;0;0t"
+  - delay: 108
+    content: "\e[?2004h\r\n\e[1;36m12/14/demo_app\e[0m via \e[1;34m\U0001F319 \e[0m\e[1;34mv5.4.7\e[0m\e[1;34m \e[0mvia \e[1;32m \e[0m\e[1;32mv22.3.0\e[0m\e[1;32m \e[0mvia \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.9.13\e[0m\e[1;33m \e[0mtook \e[1;33m38s\e[0m \e[1;32m❯\e[0m "
+  - delay: 272
+    content: ':'
+  - delay: 458
+    content: "\b\e[K"
+  - delay: 780
+    content: "\e[?2004l\r\r\nlogout\r\n"
