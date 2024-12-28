@@ -101,3 +101,474 @@ Cloning into bare repository 'my_project.git'...
 warning: You appear to have cloned an empty repository.
 done.
 ```
+
+
+vagrant로 실습 중
+
+```
+vagrant
+├── config
+│   └── vagrant_host.conf
+├── Vagrantfile
+└── vagrant_host
+    └── index.html
+```
+
+```vagrant/config/vagrant_host.conf
+<VirtualHost *:80>
+    ServerAdmin   vagrant@vagrant_host.com
+    ServerName    www.vagrant_host.com
+    ServerAlias   vagrant_host.com
+    DocumentRoot  /var/www/vagrant_host
+    ErrorLog      /var/log/httpd/vagrant_host.com-error.log
+    CustomLog     /var/log/httpd/vagrant_host.com-access.log combined
+</VirtualHost>
+```
+
+```vagrant/vagrant_host/index.html
+<html>
+<head>
+<title>welcome httpd</title>
+</head>
+<body>
+<h1>Hello vagrant host</h1>
+</body>
+</html>
+```
+
+```vagrant/Vagrantfile
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "rockylinux/9"
+  config.vm.box_version = "4.0.0"
+  config.vm.network "private_network", ip: "192.168.56.10"
+  config.vm.synced_folder "./config", "/root/config"
+  config.vm.synced_folder "./vagrant_host", "/root/vagrant_host"
+  config.vm.synced_folder "./demo_proj.git", "/root/demo_proj.git"
+
+  config.vm.provision "shell", inline: <<-SHELL
+    echo 'HISTTIMEFORMAT="%Y-%m-%d_%H:%M:%S "' | tee -a /etc/profile
+    dnf update
+    dnf install -y httpd net-tools git
+    httpd -v
+    systemctl start httpd
+    systemctl enable httpd
+    ifconfig
+    cp /root/config/vagrant_host.conf /etc/httpd/conf.d/vagrant_host.conf
+    cp -r /root/vagrant_host /var/www/vagrant_host
+    chown -R vagrant:vagrant /var/www/vagrant_host/index.html
+    apachectl configtest
+    systemctl restart httpd
+    mkdir -p /opt/git/demo_proj.git
+    cd /opt/git/demo_proj.git
+    git init --bare --shared
+  SHELL
+end
+```
+
+```bash
+git clone vagrant@192.168.56.10:/opt/git/demo_proj.git
+Cloning into 'demo_proj'...
+vagrant@192.168.56.10's password: 
+fatal: detected dubious ownership in repository at '/opt/git/demo_proj.git'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /opt/git/demo_proj.git
+```
+
+$ git config --global --add safe.directory /opt/git/demo_proj.git
+
+
+```bash
+~/gitclone ❯ git clone vagrant@192.168.56.10:/opt/git/demo_proj.git
+Cloning into 'demo_proj'...
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:360IVP62Nr2q9s3/9f4JtQQBOgwgqpjxhzPKH/B7AgA.
+Please contact your system administrator.
+Add correct host key in /home/user/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /home/user/.ssh/known_hosts:2
+ECDSA host key for 192.168.56.10 has changed and you have requested strict checking.
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+
+```bash
+reading/progit/vagrant on  main [!?] via ⍱ v2.4.3 ❯ ssh-keygen -R 192.168.56.10
+# Host 192.168.56.10 found: line 2
+/home/user/.ssh/known_hosts updated.
+Original contents retained as /home/user/.ssh/known_hosts.old
+reading/progit/vagrant on  main [!?] via ⍱ v2.4.3 ❯ cat ~/.ssh/known_hosts
+gitlab.com,172.65.251.78 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFSMqzJeV9rUzU4kWitGjeR4PWSa29SPqJ1fVkhtj3Hw9xjLVXVYrU9QlYWrOLXBpQ6KWjbjTDTdDkoohFzgbEY=
+reading/progit/vagrant on  main [!?] via ⍱ v2.4.3 ❯ git clone vagrant@192.168.56.10:/opt/git/demo_proj.git
+Cloning into 'demo_proj'...
+The authenticity of host '192.168.56.10 (192.168.56.10)' can't be established.
+ECDSA key fingerprint is SHA256:360IVP62Nr2q9s3/9f4JtQQBOgwgqpjxhzPKH/B7AgA.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.56.10' (ECDSA) to the list of known hosts.
+vagrant@192.168.56.10's password: 
+fatal: detected dubious ownership in repository at '/opt/git/demo_proj.git'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /opt/git/demo_proj.git
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+가 발생한 이유는 vagrant용 서버를 항상 delete && create해서 생긴 문제였다.
+
+alias reva='vagrant destroy -f && vagrant up'
+
+서버가 새로 생기니 ~/.ssh/known_host에 기록한 ssh key 값이 서버와 달라지게 되어 위의 에러 메시지가 발생한다. 그리고 이 과정은 터미널에서
+The authenticity of host '192.168.56.10 (192.168.56.10)' can't be established.
+ECDSA key fingerprint is SHA256:360IVP62Nr2q9s3/9f4JtQQBOgwgqpjxhzPKH/B7AgA.
+Are you sure you want to continue connecting (yes/no)?
+
+가 수행된 경우에만 정상적으로 동작한다.
+
+
+```bash
+~/gitclone took 2s ❯ git clone vagrant@192.168.56.10:/opt/git/demo_proj.git
+Cloning into 'demo_proj'...
+The authenticity of host '192.168.56.10 (192.168.56.10)' can't be established.
+ECDSA key fingerprint is SHA256:EJ9fiXFhLy3KHIbwsgUg/j5wrHHFA9vrV5TykxMqvJI.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.56.10' (ECDSA) to the list of known hosts.
+vagrant@192.168.56.10's password: 
+warning: You appear to have cloned an empty repository.
+~/gitclone took 6s ❯ ls
+algorithm-interview  demo_proj                  private_bak  tui_playground
+CSharpRepl           functional-programming-js  sed_awk      urwid_tui
+demo                 playground                 travel       workspace
+~/gitclone ❯ cd demo
+demo on  project1 ❯ cd ..
+~/gitclone ❯ cd demo_proj/
+demo_proj on  master ❯ ls
+demo_proj on  master ❯ ls -al
+total 4
+drwxrwxr-x.  3 user user   18 Dec 28 22:35 .
+drwxrwxr-x. 14 user user 4096 Dec 28 22:35 ..
+drwxrwxr-x.  7 user user  119 Dec 28 22:35 .git
+demo_proj on  master ❯ cd ..
+~/gitclone ❯ date
+Sat Dec 28 22:36:29 KST 2024
+```
+
+
+```bash
+demo_proj on  master ❯ vi Readme.md
+demo_proj on  master [?] took 10s ❯ git add .
+demo_proj on  master [+] ❯ git commit -m "test commit"
+[master (root-commit) 7fd4183] test commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Readme.md
+demo_proj on  master ❯ git push
+vagrant@192.168.56.10's password: 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 231 bytes | 231.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To 192.168.56.10:/opt/git/demo_proj.git
+ * [new branch]      master -> master
+demo_proj on  master took 3s ❯ ginfo
+* master                7fd4183 [origin/master] test commit
+  remotes/origin/master 7fd4183 test commit
+demo_proj on  master ❯ exit
+
+reading/progit/vagrant on  main [!?] via ⍱ v2.4.3 ❯ vagrant ssh
+[vagrant@localhost ~]$ cd /opt/git/demo_proj.git/
+[vagrant@localhost demo_proj.git]$ git log
+commit 7fd41835b7596b1540f08eedcbd065b96c54c75f (HEAD -> master)
+Author: widehyo@gmail.com <widehyo@gmail.com>
+Date:   Sat Dec 28 22:40:53 2024 +0900
+
+    test commit
+[vagrant@localhost demo_proj.git]$ 
+```
+
+성공!
+
+---
+---
+
+```bash
+  config.vm.provision "shell", inline: <<-SHELL
+    # echo 'HISTTIMEFORMAT="%Y-%m-%d_%H:%M:%S "' | tee -a /etc/profile
+    echo 'HISTTIMEFORMAT="%Y-%m-%d_%H:%M:%S "' >> /etc/profile
+    dnf update
+    dnf install -y httpd net-tools git util-linux-user
+    useradd -m -p $(perl -e 'print crypt($ARGV[0], "password")' 'gitgit') git
+    mkdir /home/git/.ssh
+    touch /home/git/.ssh/authorized_keys
+    chown -R git:git /home/git/.ssh
+    chmod 700 /home/git/.ssh
+    chmod 600 /home/git/.ssh/authorized_keys
+    which git-shell >> /etc/shells
+    chsh -s $(which git-shell) git
+    mkdir -p /opt/git/demo_proj.git
+    cd /opt/git/demo_proj.git
+    git init --bare --shared
+    chown -R git:git .
+    httpd -v
+    systemctl start httpd
+    systemctl enable httpd
+    ifconfig
+    cp /root/config/vagrant_host.conf /etc/httpd/conf.d/vagrant_host.conf
+    cp -r /root/vagrant_host /var/www/vagrant_host
+    chown -R git:git /var/www/vagrant_host/index.html
+    apachectl configtest
+    systemctl restart httpd
+  SHELL
+```
+
+git 유저를 서버용으로만 생성하고 사용하는 예제 확인 완료
+
+```
+~/gitclone ❯ ls
+algorithm-interview  functional-programming-js  sed_awk         urwid_tui
+CSharpRepl           playground                 travel          workspace
+demo                 private_bak                tui_playground
+~/gitclone ❯ git clone git@192.168.56.10:/opt/git/demo_proj.git
+Cloning into 'demo_proj'...
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:7XS491+2hr+wcBkKUh27DvZ98qx1sbj79mml5ccsmbM.
+Please contact your system administrator.
+Add correct host key in /home/user/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /home/user/.ssh/known_hosts:2
+ECDSA host key for 192.168.56.10 has changed and you have requested strict checking.
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+~/gitclone ❯ vi ~/.ssh/known_hosts
+~/gitclone took 2s ❯ git clone git@192.168.56.10:/opt/git/demo_proj.git
+Cloning into 'demo_proj'...
+The authenticity of host '192.168.56.10 (192.168.56.10)' can't be established.
+ECDSA key fingerprint is SHA256:7XS491+2hr+wcBkKUh27DvZ98qx1sbj79mml5ccsmbM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.56.10' (ECDSA) to the list of known hosts.
+git@192.168.56.10's password: 
+Permission denied, please try again.
+git@192.168.56.10's password: 
+warning: You appear to have cloned an empty repository.
+~/gitclone took 11s ❯ ll
+total 12
+drwxrwxr-x.  9 user user 4096 Jun 17  2024 algorithm-interview
+drwxrwxr-x.  8 user user 4096 Apr 27  2024 CSharpRepl
+drwxrwxr-x.  4 user user   48 Sep 22 22:35 demo
+drwxrwxr-x.  3 user user   18 Dec 28 23:13 demo_proj
+drwxrwxr-x.  4 user user  128 Apr 16  2024 functional-programming-js
+drwxrwxr-x.  7 user user   96 Dec 28 20:44 playground
+drwxrwxr-x.  4 user user   47 Nov 17 15:12 private_bak
+drwxrwxr-x.  4 user user  154 Mar 23  2024 sed_awk
+drwxrwxr-x.  4 user user   47 Aug  4 15:51 travel
+drwxrwxr-x.  4 user user   59 Aug 25 20:56 tui_playground
+drwxrwxr-x.  5 user user  105 Aug 25 20:58 urwid_tui
+drwxrwxr-x. 10 user user 4096 Nov 17 15:18 workspace
+~/gitclone ❯ cd demo_proj/
+demo_proj on  master ❯ ls
+demo_proj on  master ❯ ssh git@192.168.56.10
+git@192.168.56.10's password: 
+Last failed login: Sat Dec 28 14:19:20 UTC 2024 from 192.168.56.1 on ssh:notty
+There was 1 failed login attempt since the last successful login.
+fatal: Interactive git shell is not enabled.
+hint: ~/git-shell-commands should exist and have read and execute access.
+Connection to 192.168.56.10 closed.
+demo_proj on  master took 2s ❯ vi readme.md
+demo_proj on  master [?] took 26s ❯ git add .
+demo_proj on  master [+] ❯ git commit -m "vagrant server as git host"
+[master (root-commit) 9badc42] vagrant server as git host
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.md
+demo_proj on  master ❯ git push
+git@192.168.56.10's password: 
+Permission denied, please try again.
+git@192.168.56.10's password: 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 261 bytes | 261.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To 192.168.56.10:/opt/git/demo_proj.git
+ * [new branch]      master -> master
+demo_proj on  master took 6s ❯ exit
+
+reading/progit/vagrant on  main [!?] via ⍱ v2.4.3 ❯ vagrant ssh
+[vagrant@localhost ~]$ cd /opt/git/demo_proj.git/
+[vagrant@localhost demo_proj.git]$ git log --oneline
+fatal: detected dubious ownership in repository at '/opt/git/demo_proj.git'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /opt/git/demo_proj.git
+[vagrant@localhost demo_proj.git]$ sudo su
+[root@localhost demo_proj.git]# su - git
+Last login: Sat Dec 28 14:19:50 UTC 2024 from 192.168.56.1 on pts/0
+Last failed login: Sat Dec 28 14:20:54 UTC 2024 from 192.168.56.1 on ssh:notty
+There was 1 failed login attempt since the last successful login.
+fatal: Interactive git shell is not enabled.
+hint: ~/git-shell-commands should exist and have read and execute access.
+[root@localhost demo_proj.git]# su git
+fatal: Interactive git shell is not enabled.
+hint: ~/git-shell-commands should exist and have read and execute access.
+[root@localhost demo_proj.git]# git config --global --add safe.directory /opt/git/demo_proj.git
+[root@localhost demo_proj.git]# git log
+commit 9badc4200de3c79f3d8fe44c30e4d15cbf14f5ae (HEAD -> master)
+Author: widehyo@gmail.com <widehyo@gmail.com>
+Date:   Sat Dec 28 23:15:04 2024 +0900
+
+    vagrant server as git host
+```
+
+---
+---
+---
+
+
+reading/progit/vagrant on  main [✘!?] via ⍱ v2.4.3 took 55s ❯ cat Vagrantfile
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure("2") do |config|
+  # The most common configuration options are documented and commented below.
+  # For a complete reference, please see the online documentation at
+  # https://docs.vagrantup.com.
+
+  # Every Vagrant development environment requires a box. You can search for
+  # boxes at https://vagrantcloud.com/search.
+  config.vm.box = "rockylinux/9"
+  config.vm.box_version = "4.0.0"
+
+  # Disable automatic box update checking. If you disable this, then
+  # boxes will only be checked for updates when the user runs
+  # `vagrant box outdated`. This is not recommended.
+  # config.vm.box_check_update = false
+
+  # Create a forwarded port mapping which allows access to a specific port
+  # within the machine from a port on the host machine. In the example below,
+  # accessing "localhost:8080" will access port 80 on the guest machine.
+  # NOTE: This will enable public access to the opened port
+  # config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
+  # config.vm.network "forwarded_port", guest: 443, host: 8443, host_ip: "127.0.0.1"
+
+  # Create a forwarded port mapping which allows access to a specific port
+  # within the machine from a port on the host machine and only allow access
+  # via 127.0.0.1 to disable public access
+  # config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
+
+  # Create a private network, which allows host-only access to the machine
+  # using a specific IP.
+  config.vm.network "private_network", ip: "192.168.56.10"
+
+  # Create a public network, which generally matched to bridged network.
+  # Bridged networks make the machine appear as another physical device on
+  # your network.
+  # config.vm.network "public_network"
+
+  # Share an additional folder to the guest VM. The first argument is
+  # the path on the host to the actual folder. The second argument is
+  # the path on the guest to mount the folder. And the optional third
+  # argument is a set of non-required options.
+  config.vm.synced_folder "./config", "/root/config"
+  config.vm.synced_folder "./mygit", "/root/mygit"
+
+  # Disable the default share of the current code directory. Doing this
+  # provides improved isolation between the vagrant box and your host
+  # by making sure your Vagrantfile isn't accessible to the vagrant box.
+  # If you use this you may want to enable additional shared subfolders as
+  # shown above.
+  # config.vm.synced_folder ".", "/vagrant", disabled: true
+
+  # Provider-specific configuration so you can fine-tune various
+  # backing providers for Vagrant. These expose provider-specific options.
+  # Example for VirtualBox:
+  #
+  # config.vm.provider "virtualbox" do |vb|
+  #   # Display the VirtualBox GUI when booting the machine
+  #   vb.gui = true
+  #
+  #   # Customize the amount of memory on the VM:
+  #   vb.memory = "1024"
+  # end
+  #
+  # View the documentation for the provider you are using for more
+  # information on available options.
+
+  # Enable provisioning with a shell script. Additional provisioners such as
+  # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
+  # documentation for more information about their specific syntax and use.
+  config.vm.provision "shell", inline: <<-SHELL
+    # echo 'HISTTIMEFORMAT="%Y-%m-%d_%H:%M:%S "' | tee -a /etc/profile
+    echo 'HISTTIMEFORMAT="%Y-%m-%d_%H:%M:%S "' >> /etc/profile
+    dnf update
+    dnf install -y httpd net-tools git
+    mkdir -p /opt/git/demo_proj.git
+    cd /opt/git/demo_proj.git
+    git init --bare --shared
+    chown -R apache:apache /opt/git
+    htpasswd -c /opt/git/.htpasswd git
+    hostnamectl set-hostname mygit
+    echo "127.0.0.1 localhost mygit" >> /etc/hosts
+    echo "::1 localhost mygit" >> /etc/hosts
+    echo "ServerName mygit" >> /etc/httpd/conf/httpd.conf
+    echo "LoadModule cgi_module modules/mod_cgi.so" >> /etc/httpd/conf.modules.d/00-base.conf
+    httpd -v
+    systemctl start httpd
+    systemctl enable httpd
+    ifconfig
+    cp /root/config/mygit.conf /etc/httpd/conf.d/mygit.conf
+    cp -r /root/mygit /var/www/mygit
+    chown -R apache:apache /var/www/mygit/index.html
+    apachectl configtest
+    systemctl restart httpd
+  SHELL
+end
+
+reading/progit/vagrant on  main [✘!?] via ⍱ v2.4.3 ❯ cdg
+~/gitclone ❯ ls
+algorithm-interview  demo_proj_with_user_git    private_bak  tui_playground
+CSharpRepl           functional-programming-js  sed_awk      urwid_tui
+demo                 playground                 travel       workspace
+~/gitclone ❯ git clone http://192.168.56.10/git/demo_proj.git
+Cloning into 'demo_proj'...
+warning: You appear to have cloned an empty repository.
+
+[vagrant@mygit ~]$ sudo htpasswd /opt/git/.htpasswd git
+New password: 
+Re-type new password: 
+Updating password for user git
+
+demo_proj on  master ❯ git push
+Gtk-Message: 00:35:51.099: Failed to load module "canberra-gtk-module"
+Gtk-Message: 00:35:52.570: Failed to load module "canberra-gtk-module"
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 215 bytes | 215.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+error: RPC failed; HTTP 403 curl 22 The requested URL returned error: 403
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date

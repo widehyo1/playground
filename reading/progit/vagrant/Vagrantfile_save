@@ -89,10 +89,8 @@ Vagrant.configure("2") do |config|
     mkdir -p /opt/git/demo_proj.git
     cd /opt/git/demo_proj.git
     git init --bare --shared
-    PASSWD=$(openssl passwd -apr1 "test")
-    echo "git:$PASSWD" > /opt/git/.htpasswd
-    chown -R git:git /opt/git
-    chmod -R 775 /opt/git/demo_proj.git/objects
+    chown -R apache:apache /opt/git
+    htpasswd -c /opt/git/.htpasswd git
     hostnamectl set-hostname mygit
     echo "127.0.0.1 localhost mygit" >> /etc/hosts
     echo "::1 localhost mygit" >> /etc/hosts

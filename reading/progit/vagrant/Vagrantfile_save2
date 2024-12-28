@@ -77,21 +77,13 @@ Vagrant.configure("2") do |config|
     # echo 'HISTTIMEFORMAT="%Y-%m-%d_%H:%M:%S "' | tee -a /etc/profile
     echo 'HISTTIMEFORMAT="%Y-%m-%d_%H:%M:%S "' >> /etc/profile
     dnf update
-    dnf install -y httpd net-tools git util-linux-user perl perl-interpreter
-    useradd -m -p $(perl -e 'print crypt($ARGV[0], "password")' 'gitgit') git
-    mkdir /home/git/.ssh
-    touch /home/git/.ssh/authorized_keys
-    chown -R git:git /home/git/.ssh
-    chmod 700 /home/git/.ssh
-    chmod 600 /home/git/.ssh/authorized_keys
-    which git-shell >> /etc/shells
-    chsh -s $(which git-shell) git
+    dnf install -y httpd net-tools git
     mkdir -p /opt/git/demo_proj.git
     cd /opt/git/demo_proj.git
     git init --bare --shared
     PASSWD=$(openssl passwd -apr1 "test")
     echo "git:$PASSWD" > /opt/git/.htpasswd
-    chown -R git:git /opt/git
+    chown -R apache:apache /opt/git
     chmod -R 775 /opt/git/demo_proj.git/objects
     hostnamectl set-hostname mygit
     echo "127.0.0.1 localhost mygit" >> /etc/hosts
@@ -104,7 +96,7 @@ Vagrant.configure("2") do |config|
     ifconfig
     cp /root/config/mygit.conf /etc/httpd/conf.d/mygit.conf
     cp -r /root/mygit /var/www/mygit
-    chown -R git:git /var/www/mygit/index.html
+    chown -R apache:apache /var/www/mygit/index.html
     apachectl configtest
     systemctl restart httpd
   SHELL
