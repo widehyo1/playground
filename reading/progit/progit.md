@@ -572,3 +572,48 @@ error: RPC failed; HTTP 403 curl 22 The requested URL returned error: 403
 send-pack: unexpected disconnect while reading sideband packet
 fatal: the remote end hung up unexpectedly
 Everything up-to-date
+
+---
+
+Integration-Manager 워크플로
+
+1. 프로젝트 Integration-Manager는 프로젝트 메인저장소에 Push한다.
+2. 프로젝트 기여자는 메인 저장소를 Clone하고 수정한다.
+3. 기여자는 자신의 저장소에 Push하고 Integration-Manager가 접근할 수 있도록 공개해놓는다.
+4. 기여자는 Integration-Manager에게 변경사항을 적용해 줄 것을 이메일로 요청한다.
+5. Integration-Manager는 기여자의 저장소를 리모트 저장소로 등록하고 수정하상을 Merge하여 테스트한다.
+6. Integration-Manager는 Merge한 사항을 메인 저장소에 Push한다.
+
+> $ git log --no-merges issue54..origin/master
+> issue54..origin/master 문법은 히스토리를 검색할 때 뒤의 브랜치(origin/master)에 속한 커밋 중 앞의 브랜치(issue54)에 속하지 않은 커밋을 검색하는 문법이다.
+
+> $ git push -u origin featureA
+> 리모트 저장소에 featureA 브랜치를 생성한다.
+> $ git push -u origin featureB:featureBee
+> 로컬 featureB 브랜치를 리모트 featureBee브랜치에 push한다.
+
+> git log contrib --not master
+> ==
+> git log master..contrib
+
+> 정말 보고 싶은 것은 토픽 브랜치에서 추가한 것이고 결국에는 이것을 master 브랜치에 추가하려는 것이다. 그러니까 master 브랜치와 토픽 브랜치의 공통조상인 커밋을 찾아서 토픽 브랜치가 현재 가리키는 커밋과 비교해야 한다.
+> git merge-base contrib master
+> $HASH
+> git diff $HASH
+
+> TFAE
+
+> git diff master...contrib
+> diff 명령을 사용할 때 두 브랜치 사이에 ...을 쓰면, 두 브랜치의 공통조상과 브랜치의 마지막 커밋을 비교한다.
+
+git 명령중에 협업을 위한 명령들이 많구나
+그리고 이런 명령들은 직접 써봐야 겠다.
+
+flow도 얘기만 들어본 것들이 나온다
+main / next / pu / maint
+언젠가 이런 프로젝트에 참여하게 될까
+
+git archive나 hash-object, 그리고 메일링 관련 명령이나 패치 적용하는 git am, git patch, git apply도 존재를 모르고 있었음
+일단 실습은 뒤로
+
+
