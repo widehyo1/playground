@@ -616,4 +616,8 @@ main / next / pu / maint
 git archive나 hash-object, 그리고 메일링 관련 명령이나 패치 적용하는 git am, git patch, git apply도 존재를 모르고 있었음
 일단 실습은 뒤로
 
+---
 
+cat .git/config
+
+> fetch =로 시작되는 라인이 "refspec."이라는 거다. 리모트 이름과 로컬 .git 디렉터리를 어떻게 매핑하는지 나타낸다.
