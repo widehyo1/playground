@@ -14,6 +14,7 @@ Vagrant.configure("2") do |config|
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "rockylinux/9"
   config.vm.box_version = "4.0.0"
+  config.vm.hostname = "mygit"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -74,38 +75,6 @@ Vagrant.configure("2") do |config|
   # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
-    # echo 'HISTTIMEFORMAT="%Y-%m-%d_%H:%M:%S "' | tee -a /etc/profile
-    echo 'HISTTIMEFORMAT="%Y-%m-%d_%H:%M:%S "' >> /etc/profile
-    dnf update
-    dnf install -y httpd net-tools git util-linux-user perl perl-interpreter
-    useradd -m -p $(perl -e 'print crypt($ARGV[0], "password")' 'gitgit') git
-    mkdir /home/git/.ssh
-    touch /home/git/.ssh/authorized_keys
-    chown -R git:git /home/git/.ssh
-    chmod 700 /home/git/.ssh
-    chmod 600 /home/git/.ssh/authorized_keys
-    which git-shell >> /etc/shells
-    chsh -s $(which git-shell) git
-    mkdir -p /opt/git/demo_proj.git
-    cd /opt/git/demo_proj.git
-    git init --bare --shared
-    PASSWD=$(openssl passwd -apr1 "test")
-    echo "git:$PASSWD" > /opt/git/.htpasswd
-    chown -R git:git /opt/git
-    chmod -R 775 /opt/git/demo_proj.git/objects
-    hostnamectl set-hostname mygit
-    echo "127.0.0.1 localhost mygit" >> /etc/hosts
-    echo "::1 localhost mygit" >> /etc/hosts
-    echo "ServerName mygit" >> /etc/httpd/conf/httpd.conf
-    echo "LoadModule cgi_module modules/mod_cgi.so" >> /etc/httpd/conf.modules.d/00-base.conf
-    httpd -v
-    systemctl start httpd
-    systemctl enable httpd
-    ifconfig
-    cp /root/config/mygit.conf /etc/httpd/conf.d/mygit.conf
-    cp -r /root/mygit /var/www/mygit
-    chown -R git:git /var/www/mygit/index.html
-    apachectl configtest
-    systemctl restart httpd
+    sh /root/config/all_in_one.sh
   SHELL
 end

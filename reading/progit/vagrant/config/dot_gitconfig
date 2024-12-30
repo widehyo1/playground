@@ -1,0 +1,8 @@
+[alias]
+	info = branch -avv
+	flog = log --name-status --oneline --pretty=format:\"%h|%ad|%s|by %an\" --date=short
+	flogabbr = log --oneline --pretty=format:\"%h|%ad|%s|by %an\" --date=short
+	flogall = !~/shell/git_commit_hist.sh | less
+	flogalltime = !~/shell/git_commit_hist.sh | sed -n \"/|/p\" | sort -t \"|\" -k2 -r | less
+	last = diff --name-only HEAD~..HEAD
+	token = !echo ***
