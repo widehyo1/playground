@@ -821,3 +821,15 @@ pg_dynshmem       pg_replslot    pg_tblspc     postgresql.conf
 [root@elk config]# netstat -tnlp | grep 5432
 tcp        0      0 0.0.0.0:5432            0.0.0.0:*               LISTEN      46907/postgres      
 tcp6       0      0 :::5432                 :::*                    LISTEN      46907/postgres      
+
+---
+
+[Important Elasticsearch configuration | Elasticsearch Guide [7.17] | Elastic](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/important-settings.html)
+
+
+[2024-12-31T11:46:29,400][WARN ][o.e.c.c.ClusterFormationFailureHelper] [elk] master not discovered yet, this node has not previously joined a bootstrapped (v7+) cluster, and this node must discover master-eligible nodes [node-1, node-2] to bootstrap a cluster: have discovered [{elk}{PhxRK046RQqUeXQP1su77w}{DUL9MKRjTQSoJYRftB2mHg}{10.0.2.15}{10.0.2.15:9300}{cdfhilmrstw}]; discovery will continue using [0.0.0.0:9300] from hosts providers and [{elk}{PhxRK046RQqUeXQP1su77w}{DUL9MKRjTQSoJYRftB2mHg}{10.0.2.15}{10.0.2.15:9300}{cdfhilmrstw}] from last-known cluster state; node term 0, last-accepted version 0 in term 0
+
+
+
+sed -i 's/#cluster.name: my-application/cluster.name: elk-playground/' /etc/elasticsearch/elasticsearch.yml
+sed -i 's/#node.name: node-1/node.name: node-1/' /etc/elasticsearch/elasticsearch.yml
