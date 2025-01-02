@@ -1,0 +1,15 @@
+FROM diamol/golang AS builder
+
+COPY main.go .
+RUN go build -o /web/server
+
+FROM diamol/base
+
+EXPOSE 80
+ENV USER=sixeyed
+CMD ["/web/server"]
+
+WORKDIR web
+COPY --from=builder /web/server .
+RUN chmod +x /web/server
+COPY index.html .
