@@ -1,0 +1,29 @@
+flowchart LR
+    %% nodes
+    db[todo-db]
+    web[todo-web]
+    nat[/app-net\]
+    secret[secret]
+    db_port_host((5433))
+    db_port_guest((5432))
+    web_port_host((8030))
+    web_port_guest((80))
+    secret[secret]
+
+    %% subgraphs
+    subgraph db_port
+    db_port_host -.-> db_port_guest
+    end
+
+    subgraph web_port
+    web_port_host -.-> web_port_guest
+    end
+
+    %% edges
+    db --> nat
+    web --> nat
+    db_port_guest --> db
+    web_port_guest --> web
+    web --> db
+    web --> secret
+

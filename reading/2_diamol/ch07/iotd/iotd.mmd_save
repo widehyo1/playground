@@ -1,0 +1,9 @@
+flowchart TB
+    host-port((8010)) --> ig[image-gallary]
+    docker-port((8000)) --> iotd[iotd]
+    ig[image-gallary] -.-> iotd[iotd]
+    ig[image-gallary] -.-> ac[accesslog]
+    iotd[iotd] --> net[/net: app-net\]
+    ac[accesslog] --> net[/net: app-net\]
+    ig[image-gallary] --> net[/net: app-net\]
+

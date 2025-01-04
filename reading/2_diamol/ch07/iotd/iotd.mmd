@@ -1,0 +1,18 @@
+flowchart TB
+    %% nodes
+    host-port((8010))
+    ig[image-gallary]
+    docker-port((8000))
+    iotd[iotd]
+    ac[accesslog]
+    net[/net: app-net\]
+
+    %% edges
+    host-port --> ig
+    docker-port --> iotd
+    ig -.-> iotd
+    ig -.-> ac
+    iotd --> net
+    ac --> net
+    ig --> net
+
