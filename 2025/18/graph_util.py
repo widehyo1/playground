@@ -3,11 +3,74 @@ from typing import List, Optional, Any
 from pprint import pformat
 
 @dataclass
+class DisjoinSet:
+    value: Optional[Any] = None
+    rank: int = 0
+    parent = None
+
+    def __post_init__(self):
+        self.parent = self
+
+    def __hash__(self):
+        return id(self)
+
+    def __eq__(self, other):
+        if isinstance(other, DisjoinSet):
+            return id(self) == id(other)
+        return False
+
+    def __repr__(self):
+        # base condition
+        if self.parent is self:
+            return f'<DS {self.value}({self.rank})*>'
+        # biz logic
+        return f'<DS {self.value}({self.rank}) -> {self.parent}'
+
+def make_set(value):
+    return DisjoinSet(value)
+
+def get_root(ds: DisjoinSet):
+    # base condition
+    if ds.parent is ds:
+        return ds
+    # biz logic
+    cur_ds = ds
+    visited_list = [ds]
+
+    while cur_ds.parent != cur_ds:
+        cur_ds = cur_ds.parent
+        visited_list.append(cur_ds)
+
+    # path compression
+    for target in visited_list:
+        target.parent = cur_ds
+
+    return cur_ds
+
+def union(ds_a: DisjoinSet, ds_b: DisjoinSet) -> bool:
+    root_a = get_root(ds_a)
+    root_b = get_root(ds_b)
+
+    # base condition
+    if root_a is root_b:
+        return True
+
+    # biz logic
+    if root_a.rank > root_b.rank:
+        root_b.parent = root_a
+    elif root_a.rank < root_b.rank:
+        root_a.parent = root_b
+    else:
+        root_a.parent = root_b
+        root_b.rank += 1
+
+    return False
+
+@dataclass
 class Node:
     value: Optional[Any] = None
 
     def __hash__(self):
-        # Use the value of the node as the hash (or any other unique attribute)
         return hash(self.value)
 
     def __eq__(self, other):
@@ -18,8 +81,18 @@ class Node:
 
 @dataclass
 class Edge:
-    src: Node
-    dst: Node
+    src_node: Node
+    dst_node: Node
+
+    def __hash__(self):
+        # Combine the hash of both nodes in the directed order (src -> dst)
+        return hash((self.src_node, self.dst_node))
+
+    def __eq__(self, other):
+        if isinstance(other, Edge):
+            # Edges are equal only if both src and dst nodes match (order matters)
+            return self.src_node == other.src_node and self.dst_node == other.dst_node
+        return False
 
 @dataclass
 class Graph:
@@ -36,10 +109,10 @@ class Graph:
         edges = self.edges
 
         for edge in edges:
-            src, dst = edge.src, edge.dst
-            if src not in nodes_set:
+            src_node, dst_node = edge.src_node, edge.dst_node
+            if src_node not in nodes_set:
                 return False
-            if dst not in nodes_set:
+            if dst_node not in nodes_set:
                 return False
 
         return True
@@ -66,14 +139,67 @@ class Graph:
         else:
             return None
 
-    def __repr__(self):
+    def is_cyclic(self):
         assert self.is_valid(), 'invalid graph'
-        # adjacent list version representation
+
+        ds_inventory = {node.value: make_set(node) for node in self.nodes}
+
+        for edge in self.edges:
+            src_node, dst_node = edge.src_node, edge.dst_node
+            result = union(ds_inventory[src_node.value], ds_inventory[dst_node.value])
+            if result:
+                return result
+        return False
+
+    def is_connected(self):
+        assert self.is_valid(), 'invalid graph'
+        assert len(self.nodes) > 0, 'empty graph'
+
+        ds_inventory = {node.value: make_set(node) for node in self.nodes}
+
+        for edge in self.edges:
+            src_node, dst_node = edge.src_node, edge.dst_node
+            union(ds_inventory[src_node.value], ds_inventory[dst_node.value])
+
+        # Get the root of the first node
+        first_root = get_root(ds_inventory[self.nodes[0].value])
+
+        # Check if all nodes have the same root as the first node
+        for ds in ds_inventory.values():
+            if get_root(ds) != first_root:
+                return False  # If any node doesn't have the same root, the graph is not connected
+
+        return True
+
+    def get_undirectional_graph(self):
+        edges_set = set(self.edges)
+        full_edges = self.edges[::]
+        for edge in self.edges:
+            src_node, dst_node = edge.src_node, edge.dst_node
+            rev_edge = Edge(dst_node, src_node)
+            if rev_edge not in edges_set:
+                full_edges.append(rev_edge)
+
+        return Graph(self.edges, full_edges)
+
+    def is_tree(self):
+        assert self.is_valid(), 'invalid graph'
+        assert len(self.nodes) > 0, 'empty graph'
+
+        g = self.get_undirectional_graph()
+        return g.is_connected() and not g.is_cyclic()
+
+    def get_adjacent_list(self):
         adj_list = {node.value: [] for node in self.nodes}
         for edge in self.edges:
-            src_val, dst_val = edge.src.value, edge.dst.value
+            src_node, dst_node = edge.src_node, edge.dst_node
+            src_val, dst_val = src_node.value, dst_node.value
             adj_list[src_val].append(dst_val)
-        return f'<Graph: \n{pformat(adj_list)}\n>'
+        return adj_list
+
+    def __repr__(self):
+        assert self.is_valid(), 'invalid graph'
+        return f'<Graph: \n{pformat(self.get_adjacent_list())}\n>'
 
 Graph.EMPTY = Graph()
 
