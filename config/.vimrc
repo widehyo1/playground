@@ -1,28 +1,24 @@
-set nocompatible               " turns off legacy vi mode
-filetype off                   " required!
+set nocompatible              " be iMproved, required
+filetype off                  " required
+" git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" set rtp+=~/.vim/bundle/Vundle.vim
+" call vundle#begin()
+" 
+" Plugin 'VundleVim/Vundle.vim'
+" Plugin 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+" Plugin 'nanotech/jellybeans.vim'
+" Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline-themes' " 
+" call vundle#end()            " required
+filetype on
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" jellybeans
+" colorscheme jellybeans
 
-Plugin 'VundleVIm/Vundle.vim'
-Plugin 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-fugitive'
-Plugin 'majutsushi/tagbar'
-
-call vundle#end()
-filetype plugin indent on     " required!
-
-"nerdtree
+" nerdtree
 " autocmd VimEnter * NERDTree | wincmd p
-autocmd VimEnter * if !&diff | NERDTree | wincmd p | endif
 " Exit Vim if NERDTree is the only window remaining in the only tab.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-
-set t_Co=256
-colorscheme jellybeans
+" autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 let mapleader=","
 
@@ -31,29 +27,29 @@ set showmatch
 set smartindent
 set tabstop=4
 set shiftwidth=4
-set expandtab
 set list
 set listchars=tab:>-,trail:-
-set nohlsearch
+set expandtab
 set clipboard=unnamedplus
+set nohlsearch
 set splitright
 set splitbelow
 
 nnoremap <leader>rc :e ~/.vimrc<CR>
-nnoremap <leader>n :NERDTreeToggle<CR>
-nnoremap <leader>a :NERDTreeFind<CR>
 
-nnoremap <C-Right> gt
-nnoremap <C-Left> gT
-nnoremap <C-Up> :tabc<CR>
-nnoremap <C-Down> :tabo<CR>
 nnoremap <C-H> <C-W>h
 nnoremap <C-L> <C-W>l
 nnoremap <C-J> <C-W>j
 nnoremap <C-K> <C-W>k
-nnoremap <S-J> gt
-nnoremap <S-K> gT
-nnoremap <C-D> :sh<CR>
-"nnoremap <C-D> :terminal<CR>i
-
+" nnoremap <leader>a :NERDTreeFind<CR>
+" nnoremap <leader>n :NERDTreeToggle<CR>
 imap jj <ESC>
+imap JJ <ESC>
+
+nnoremap <C-D> :sh<CR>
+" remove (carriage return) character
+nnoremap <leader>d :%s/\r//g<CR>
+
+let g:netrw_liststyle=3
+" gh toggles dot files hide/show
+nnoremap <leader>n :20Lex<CR>
