@@ -1,0 +1,45 @@
+```cl
+(ns trans.core
+  (:require [clojure.string :as s]))
+nil
+(defn process2 [list-of-emps]
+  (->> list-of-emps
+    (filter #(> (count %) 1))
+    (map s/capitalize)
+    (interpose ",")
+    (reduce str)))
+#'trans.core/process2
+(process2 ["cat" "a" "dog" "brian"])
+"Cat,Dog,Brian"
+```
+
+```hs
+import qualified Data.Char as Char
+
+capitalizer :: [String] -> String
+capitalizer [] = []
+capitalizer xs = foldl1 (\acc cur -> cap acc ++ ',':cap cur) $ filter moreTwoChar xs
+    where cap [] = []
+          cap (head:tail) = Char.toUpper head : map Char.toLower tail
+          moreTwoChar str = length str > 1
+```
+
+```console
+ghci
+GHCi, version 9.4.8: https://www.haskell.org/ghc/  :? for help
+ghci> :l playground.hs
+[1 of 2] Compiling Main             ( playground.hs, interpreted )
+Ok, one module loaded.
+ghci> capitalizer ["cat", "a", "dog", "brian"]
+"Cat,dog,Brian"
+```
+
+---
+
+
+```
+ghci> foldl1 (\_ _ -> 1) [1]
+1
+ghci> foldl1 (\_ _ -> 444) [1]
+1
+```
