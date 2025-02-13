@@ -1,0 +1,50 @@
+Awk Function Description
+gsub(r,s,t) Globally substitutes s for each match of the regular expression r in
+the string t. Retur ns the number of substitutions. If t is not supplied,
+defaults to $0.
+index(s, t) Retur ns position of substring t in string s or zero if not present.
+length(s) Retur ns length of string s or length of $0 if no string is supplied.
+match(s,r) Retur ns either the position in s wher e the regular expression r
+begins, or 0 if no occurrences are found. Sets the values of RSTART
+and RLENGTH.
+split(s,a,sep) Parses string s into elements of array a using field separator sep;
+retur ns number of elements. If sep is not supplied, FS is used. Array
+splitting works the same way as field splitting.
+spr intf(“fmt ”,expr) Uses pr intf for mat specification for expr.
+sub(r,s,t) Substitutes s for first match of the regular expression r in the string t.
+Retur ns 1 if successful; 0 otherwise. If t is not supplied, defaults to
+$0.
+substr(s,p,n) Retur ns substring of string s at beginning position p up to a
+maximum length of n. If n is not supplied, the rest of the string from
+p is used.
+tolower(s) Translates all uppercase characters in string s to lowercase and
+retur ns the new string.
+toupper(s) Translates all lowercase characters in string s to uppercase and
+retur ns the new string.
+
+
+awk ’# match -- print string that matches line
+# for lines match pattern
+match($0, pattern) {
+# extract string matching pattern using
+# starting position and length of string in $0
+# print string
+print substr($0, RSTART, RLENGTH)
+}’ pattern="$1" $2
+
+
+awk `# getname - print users fullname from /etc/passwd
+BEGIN { "who am i" | getline
+name = $1
+FS = ":"
+}
+name ˜ $1 { print $5 }
+` /etc/passwd
+
+
+# subdate.awk -- replace @date with todays date
+/@date/ {
+"date +'%a., %h %d, %Y'" | getline today
+gsub(/@date/, today)
+}
+{ print }

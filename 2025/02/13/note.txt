@@ -1,0 +1,147 @@
+2025/02/13 on  main [✘!?] ❯ echo "I have a cat" | awk '{ gsub("cat", "dog"); print }'
+I have a dog
+
+2025/02/13 on  main [✘!?] ❯ echo "I have a cat" | awk '{ gsub("catter", "dog"); print }'
+I have a cat
+
+gsub as nvl
+
+
+
+echo "5" | awk '{ result = ($1 > 3) ? "Greater" : "Smaller"; print result }'
+
+2025/02/13 on  main [✘!?] ❯ awk -f subdate.awk date.txt
+Thu., Feb 13, 2025
+
+
+
+{
+    "yes \"test this line\"" | getline str
+    print str
+    split(str, str_arr, " ")
+    for (item in str_arr) {
+        print item
+        print str_arr[item]
+    }
+}
+
+2025/02/13 on  main [✘!?] ❯ !!
+awk -f test2.awk
+
+test this line
+1
+test
+'test quote is expressed'
+2
+this
+'test quote is expressed'
+3
+line
+'test quote is expressed'
+
+test this line
+1
+test
+'test quote is expressed'
+2
+this
+'test quote is expressed'
+3
+line
+'test quote is expressed'
+
+test this line
+1
+test
+'test quote is expressed'
+2
+this
+'test quote is expressed'
+3
+line
+'test quote is expressed'
+^C
+
+
+{
+    "yes 'test this line'" | getline str
+    print str
+    split(str, str_arr, " ")
+    for (item in str_arr) {
+        print item
+        print str_arr[item]
+        print "'test quote is expressed'"
+    }
+}
+
+
+
+2025/02/13 on  main [✘!?] ❯ awk -f test3.awk candidates.txt
+convert,it,to,your,favorite,format
+1
+convert,it,to,your,favorite,format
+for,it,exspecially,,
+convert,it,to,your,favorite,format
+1
+convert,it,to,your,favorite,format
+example,is,if,,
+convert,it,to,your,favorite,format
+1
+convert,it,to,your,favorite,format
+you,hard,you,,
+convert,it,to,your,favorite,format
+1
+convert,it,to,your,favorite,format
+would,to,want,,
+convert,it,to,your,favorite,format
+1
+convert,it,to,your,favorite,format
+want,modify,to,,
+convert,it,to,your,favorite,format
+1
+convert,it,to,your,favorite,format
+to,general,modify,,
+convert,it,to,your,favorite,format
+1
+convert,it,to,your,favorite,format
+convert,text,specific,,
+convert,it,to,your,favorite,format
+1
+convert,it,to,your,favorite,format
+specific,for,fields,,
+convert,it,to,your,favorite,format
+1
+convert,it,to,your,favorite,format
+field,satisfying,to,,
+convert,it,to,your,favorite,format
+1
+convert,it,to,your,favorite,format
+to,format,your,,
+convert,it,to,your,favorite,format
+1
+convert,it,to,your,favorite,format
+other,which,variant,,
+convert,it,to,your,favorite,format
+1
+convert,it,to,your,favorite,format
+format,you,word,,
+convert,it,to,your,favorite,format
+1
+convert,it,to,your,favorite,format
+'quoted',want,list,,
+
+
+BEGIN {
+    FS=","
+    OFS=","
+}
+{
+    "yes 'convert,it,to,your,favorite,format'" | getline str
+    print str
+    split(str, str_arr, " ")
+    for (item in str_arr) {
+        print item
+        print str_arr[item]
+        print $1,$2,$3,$4,$5
+    }
+}

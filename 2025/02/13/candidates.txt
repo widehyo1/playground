@@ -1,0 +1,13 @@
+for,it,exspecially
+example,is,if
+you,hard,you
+would,to,want
+want,modify,to
+to,general,modify
+convert,text,specific
+specific,for,fields
+field,satisfying,to
+to,format,your
+other,which,variant
+format,you,word
+'quoted',want,list
