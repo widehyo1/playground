@@ -5,6 +5,10 @@ function join(arr, sep) {
     }
     return acc
 }
+function strip(str) {
+    gsub(/^\s+|\s+$/, res, str)
+    return res
+}
 function transform_header(header_str) {
     split(header_str, header_arr, ",")
     header_arr[1] = "`" header_arr[1] "`"
@@ -23,8 +27,7 @@ function transform_content(format_str) {
     format_arr[3] = "'" $3 "'"
     format_arr[4] = "'" $4 "'"
     format_arr[5] = $5
-    # format_arr[6] = $6
-    gsub(/^ +| +$/, format_arr[6], $6)
+    format_arr[6] = strip($6)
     result = join(format_arr, ",")
     return result
 }
