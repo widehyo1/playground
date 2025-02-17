@@ -1,0 +1,3 @@
+nnoremap <leader>s :e ~/script.awk<CR>
+nnoremap <leader>t :e ~/temp.txt<CR>
+nnoremap <leader>run :let @+ = system('awk -f ~/script.awk ~/temp.txt')<CR>
