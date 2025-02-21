@@ -1,0 +1,960 @@
+ > file[0-0]: statements? $
+  > statements[0-0]: statement+
+   > _loop1_11[0-0]: statement
+    > statement[0-0]: compound_stmt
+     > compound_stmt[0-0]: &('def' | '@' | ASYNC) function_def
+      > _tmp_16[0-0]: 'def'
+      + _tmp_16[0-1]: 'def' succeeded!
+      > function_def[0-0]: decorators function_def_raw
+       > decorators[0-0]: (('@' named_expression NEWLINE))+
+        > _loop1_69[0-0]: ('@' named_expression NEWLINE)
+         > _tmp_141[0-0]: '@' named_expression NEWLINE
+         - _tmp_141[0-0]: '@' named_expression NEWLINE failed!
+        - _loop1_69[0-0]: ('@' named_expression NEWLINE) failed!
+       - decorators[0-0]: (('@' named_expression NEWLINE))+ failed!
+      - function_def[0-0]: decorators function_def_raw failed!
+      > function_def[0-0]: function_def_raw
+       > function_def_raw[0-0]: 'def' NAME '(' params? ')' ['->' expression] ':' func_type_comment? block
+        > params[3-3]: parameters
+         > parameters[3-3]: slash_no_default param_no_default* param_with_default* star_etc?
+          > slash_no_default[3-3]: param_no_default+ '/' ','
+           > _loop1_61[3-3]: param_no_default
+            > param_no_default[3-3]: param ',' TYPE_COMMENT?
+             > param[3-3]: NAME annotation?
+             - param[3-3]: NAME annotation? failed!
+            - param_no_default[3-3]: param ',' TYPE_COMMENT? failed!
+            > param_no_default[3-3]: param TYPE_COMMENT? &')'
+             > param[3-3]: NAME annotation?
+             - param[3-3]: NAME annotation? failed!
+            - param_no_default[3-3]: param TYPE_COMMENT? &')' failed!
+           - _loop1_61[3-3]: param_no_default failed!
+          - slash_no_default[3-3]: param_no_default+ '/' ',' failed!
+          > slash_no_default[3-3]: param_no_default+ '/' &')'
+           > _loop1_62[3-3]: param_no_default
+            > param_no_default[3-3]: param ',' TYPE_COMMENT?
+             > param[3-3]: NAME annotation?
+             - param[3-3]: NAME annotation? failed!
+            - param_no_default[3-3]: param ',' TYPE_COMMENT? failed!
+            > param_no_default[3-3]: param TYPE_COMMENT? &')'
+             > param[3-3]: NAME annotation?
+             - param[3-3]: NAME annotation? failed!
+            - param_no_default[3-3]: param TYPE_COMMENT? &')' failed!
+           - _loop1_62[3-3]: param_no_default failed!
+          - slash_no_default[3-3]: param_no_default+ '/' &')' failed!
+         - parameters[3-3]: slash_no_default param_no_default* param_with_default* star_etc? failed!
+         > parameters[3-3]: slash_with_default param_with_default* star_etc?
+          > slash_with_default[3-3]: param_no_default* param_with_default+ '/' ','
+           > _loop0_63[3-3]: param_no_default
+            > param_no_default[3-3]: param ',' TYPE_COMMENT?
+             > param[3-3]: NAME annotation?
+             - param[3-3]: NAME annotation? failed!
+            - param_no_default[3-3]: param ',' TYPE_COMMENT? failed!
+            > param_no_default[3-3]: param TYPE_COMMENT? &')'
+             > param[3-3]: NAME annotation?
+             - param[3-3]: NAME annotation? failed!
+            - param_no_default[3-3]: param TYPE_COMMENT? &')' failed!
+           - _loop0_63[3-3]: param_no_default failed!
+           > _loop1_64[3-3]: param_with_default
+            > param_with_default[3-3]: param default ',' TYPE_COMMENT?
+             > param[3-3]: NAME annotation?
+             - param[3-3]: NAME annotation? failed!
+            - param_with_default[3-3]: param default ',' TYPE_COMMENT? failed!
+            > param_with_default[3-3]: param default TYPE_COMMENT? &')'
+             > param[3-3]: NAME annotation?
+             - param[3-3]: NAME annotation? failed!
+            - param_with_default[3-3]: param default TYPE_COMMENT? &')' failed!
+           - _loop1_64[3-3]: param_with_default failed!
+          - slash_with_default[3-3]: param_no_default* param_with_default+ '/' ',' failed!
+          > slash_with_default[3-3]: param_no_default* param_with_default+ '/' &')'
+           > _loop0_65[3-3]: param_no_default
+            > param_no_default[3-3]: param ',' TYPE_COMMENT?
+             > param[3-3]: NAME annotation?
+             - param[3-3]: NAME annotation? failed!
+            - param_no_default[3-3]: param ',' TYPE_COMMENT? failed!
+            > param_no_default[3-3]: param TYPE_COMMENT? &')'
+             > param[3-3]: NAME annotation?
+             - param[3-3]: NAME annotation? failed!
+            - param_no_default[3-3]: param TYPE_COMMENT? &')' failed!
+           - _loop0_65[3-3]: param_no_default failed!
+           > _loop1_66[3-3]: param_with_default
+            > param_with_default[3-3]: param default ',' TYPE_COMMENT?
+             > param[3-3]: NAME annotation?
+             - param[3-3]: NAME annotation? failed!
+            - param_with_default[3-3]: param default ',' TYPE_COMMENT? failed!
+            > param_with_default[3-3]: param default TYPE_COMMENT? &')'
+             > param[3-3]: NAME annotation?
+             - param[3-3]: NAME annotation? failed!
+            - param_with_default[3-3]: param default TYPE_COMMENT? &')' failed!
+           - _loop1_66[3-3]: param_with_default failed!
+          - slash_with_default[3-3]: param_no_default* param_with_default+ '/' &')' failed!
+         - parameters[3-3]: slash_with_default param_with_default* star_etc? failed!
+         > parameters[3-3]: param_no_default+ param_with_default* star_etc?
+          > _loop1_58[3-3]: param_no_default
+           > param_no_default[3-3]: param ',' TYPE_COMMENT?
+            > param[3-3]: NAME annotation?
+            - param[3-3]: NAME annotation? failed!
+           - param_no_default[3-3]: param ',' TYPE_COMMENT? failed!
+           > param_no_default[3-3]: param TYPE_COMMENT? &')'
+            > param[3-3]: NAME annotation?
+            - param[3-3]: NAME annotation? failed!
+           - param_no_default[3-3]: param TYPE_COMMENT? &')' failed!
+          - _loop1_58[3-3]: param_no_default failed!
+         - parameters[3-3]: param_no_default+ param_with_default* star_etc? failed!
+         > parameters[3-3]: param_with_default+ star_etc?
+          > _loop1_60[3-3]: param_with_default
+           > param_with_default[3-3]: param default ',' TYPE_COMMENT?
+            > param[3-3]: NAME annotation?
+            - param[3-3]: NAME annotation? failed!
+           - param_with_default[3-3]: param default ',' TYPE_COMMENT? failed!
+           > param_with_default[3-3]: param default TYPE_COMMENT? &')'
+            > param[3-3]: NAME annotation?
+            - param[3-3]: NAME annotation? failed!
+           - param_with_default[3-3]: param default TYPE_COMMENT? &')' failed!
+          - _loop1_60[3-3]: param_with_default failed!
+         - parameters[3-3]: param_with_default+ star_etc? failed!
+         > parameters[3-3]: star_etc
+          > star_etc[3-3]: '*' param_no_default param_maybe_default* kwds?
+          - star_etc[3-3]: '*' param_no_default param_maybe_default* kwds? failed!
+          > star_etc[3-3]: '*' ',' param_maybe_default+ kwds?
+          - star_etc[3-3]: '*' ',' param_maybe_default+ kwds? failed!
+          > star_etc[3-3]: kwds
+           > kwds[3-3]: '**' param_no_default
+           - kwds[3-3]: '**' param_no_default failed!
+          - star_etc[3-3]: kwds failed!
+         - parameters[3-3]: star_etc failed!
+        - params[3-3]: parameters failed!
+        > _tmp_52[4-4]: '->' expression
+        - _tmp_52[4-4]: '->' expression failed!
+        > func_type_comment[5-5]: NEWLINE TYPE_COMMENT &(NEWLINE INDENT)
+        - func_type_comment[5-5]: NEWLINE TYPE_COMMENT &(NEWLINE INDENT) failed!
+        > func_type_comment[5-5]: TYPE_COMMENT
+        - func_type_comment[5-5]: TYPE_COMMENT failed!
+        > block[5-5]: NEWLINE INDENT statements DEDENT
+         > statements[7-7]: statement+
+          > _loop1_11[7-7]: statement
+           > statement[7-7]: compound_stmt
+            > compound_stmt[7-7]: &('def' | '@' | ASYNC) function_def
+             > _tmp_16[7-7]: 'def'
+             - _tmp_16[7-7]: 'def' failed!
+             > _tmp_16[7-7]: '@'
+             - _tmp_16[7-7]: '@' failed!
+             > _tmp_16[7-7]: ASYNC
+             - _tmp_16[7-7]: ASYNC failed!
+            - compound_stmt[7-7]: &('def' | '@' | ASYNC) function_def failed!
+            > compound_stmt[7-7]: &'if' if_stmt
+            - compound_stmt[7-7]: &'if' if_stmt failed!
+            > compound_stmt[7-7]: &('class' | '@') class_def
+             > _tmp_17[7-7]: 'class'
+             - _tmp_17[7-7]: 'class' failed!
+             > _tmp_17[7-7]: '@'
+             - _tmp_17[7-7]: '@' failed!
+            - compound_stmt[7-7]: &('class' | '@') class_def failed!
+            > compound_stmt[7-7]: &('with' | ASYNC) with_stmt
+             > _tmp_18[7-7]: 'with'
+             - _tmp_18[7-7]: 'with' failed!
+             > _tmp_18[7-7]: ASYNC
+             - _tmp_18[7-7]: ASYNC failed!
+            - compound_stmt[7-7]: &('with' | ASYNC) with_stmt failed!
+            > compound_stmt[7-7]: &('for' | ASYNC) for_stmt
+             > _tmp_19[7-7]: 'for'
+             - _tmp_19[7-7]: 'for' failed!
+             > _tmp_19[7-7]: ASYNC
+             - _tmp_19[7-7]: ASYNC failed!
+            - compound_stmt[7-7]: &('for' | ASYNC) for_stmt failed!
+            > compound_stmt[7-7]: &'try' try_stmt
+            - compound_stmt[7-7]: &'try' try_stmt failed!
+            > compound_stmt[7-7]: &'while' while_stmt
+            - compound_stmt[7-7]: &'while' while_stmt failed!
+           - statement[7-7]: compound_stmt failed!
+           > statement[7-7]: simple_stmt
+            > simple_stmt[7-7]: small_stmt !';' NEWLINE
+             > small_stmt[7-7]: assignment
+              > assignment[7-7]: NAME ':' expression ['=' annotated_rhs]
+              - assignment[7-7]: NAME ':' expression ['=' annotated_rhs] failed!
+              > assignment[7-7]: ('(' single_target ')' | single_subscript_attribute_target) ':' expression ['=' annotated_rhs]
+               > _tmp_21[7-7]: '(' single_target ')'
+               - _tmp_21[7-7]: '(' single_target ')' failed!
+               > _tmp_21[7-7]: single_subscript_attribute_target
+                > single_subscript_attribute_target[7-7]: t_primary '.' NAME !t_lookahead
+                  > t_primary[7-7]: t_primary '.' NAME &t_lookahead
+                  - t_primary[7-7]: t_primary '.' NAME &t_lookahead failed!
+                  > t_primary[7-7]: t_primary '[' slices ']' &t_lookahead
+                  - t_primary[7-7]: t_primary '[' slices ']' &t_lookahead failed!
+                  > t_primary[7-7]: t_primary genexp &t_lookahead
+                  - t_primary[7-7]: t_primary genexp &t_lookahead failed!
+                  > t_primary[7-7]: t_primary '(' arguments? ')' &t_lookahead
+                  - t_primary[7-7]: t_primary '(' arguments? ')' &t_lookahead failed!
+                  > t_primary[7-7]: atom &t_lookahead
+                   > atom[7-7]: NAME
+                   - atom[7-7]: NAME failed!
+                   > atom[7-7]: 'True'
+                   - atom[7-7]: 'True' failed!
+                   > atom[7-7]: 'False'
+                   - atom[7-7]: 'False' failed!
+                   > atom[7-7]: 'None'
+                   - atom[7-7]: 'None' failed!
+                   > atom[7-7]: '__peg_parser__'
+                   - atom[7-7]: '__peg_parser__' failed!
+                   > atom[7-7]: &STRING strings
+                   - atom[7-7]: &STRING strings failed!
+                   > atom[7-7]: NUMBER
+                   - atom[7-7]: NUMBER failed!
+                   > atom[7-7]: &'(' (tuple | group | genexp)
+                   - atom[7-7]: &'(' (tuple | group | genexp) failed!
+                   > atom[7-7]: &'[' (list | listcomp)
+                   - atom[7-7]: &'[' (list | listcomp) failed!
+                   > atom[7-7]: &'{' (dict | set | dictcomp | setcomp)
+                   - atom[7-7]: &'{' (dict | set | dictcomp | setcomp) failed!
+                   > atom[7-7]: '...'
+                   - atom[7-7]: '...' failed!
+                  - t_primary[7-7]: atom &t_lookahead failed!
+                - single_subscript_attribute_target[7-7]: t_primary '.' NAME !t_lookahead failed!
+                > single_subscript_attribute_target[7-7]: t_primary '[' slices ']' !t_lookahead
+                - single_subscript_attribute_target[7-7]: t_primary '[' slices ']' !t_lookahead failed!
+               - _tmp_21[7-7]: single_subscript_attribute_target failed!
+              - assignment[7-7]: ('(' single_target ')' | single_subscript_attribute_target) ':' expression ['=' annotated_rhs] failed!
+              > assignment[7-7]: ((star_targets '='))+ (yield_expr | star_expressions) !'=' TYPE_COMMENT?
+               > _loop1_23[7-7]: (star_targets '=')
+                > _tmp_138[7-7]: star_targets '='
+                 > star_targets[7-7]: star_target !','
+                  > star_target[7-7]: '*' (!'*' star_target)
+                  - star_target[7-7]: '*' (!'*' star_target) failed!
+                  > star_target[7-7]: target_with_star_atom
+                   > target_with_star_atom[7-7]: t_primary '.' NAME !t_lookahead
+                   - target_with_star_atom[7-7]: t_primary '.' NAME !t_lookahead failed!
+                   > target_with_star_atom[7-7]: t_primary '[' slices ']' !t_lookahead
+                   - target_with_star_atom[7-7]: t_primary '[' slices ']' !t_lookahead failed!
+                   > target_with_star_atom[7-7]: star_atom
+                    > star_atom[7-7]: NAME
+                    - star_atom[7-7]: NAME failed!
+                    > star_atom[7-7]: '(' target_with_star_atom ')'
+                    - star_atom[7-7]: '(' target_with_star_atom ')' failed!
+                    > star_atom[7-7]: '(' star_targets_tuple_seq? ')'
+                    - star_atom[7-7]: '(' star_targets_tuple_seq? ')' failed!
+                    > star_atom[7-7]: '[' star_targets_list_seq? ']'
+                    - star_atom[7-7]: '[' star_targets_list_seq? ']' failed!
+                   - target_with_star_atom[7-7]: star_atom failed!
+                  - star_target[7-7]: target_with_star_atom failed!
+                 - star_targets[7-7]: star_target !',' failed!
+                 > star_targets[7-7]: star_target ((',' star_target))* ','?
+                 - star_targets[7-7]: star_target ((',' star_target))* ','? failed!
+                - _tmp_138[7-7]: star_targets '=' failed!
+               - _loop1_23[7-7]: (star_targets '=') failed!
+              - assignment[7-7]: ((star_targets '='))+ (yield_expr | star_expressions) !'=' TYPE_COMMENT? failed!
+              > assignment[7-7]: single_target augassign ~ (yield_expr | star_expressions)
+               > single_target[7-7]: single_subscript_attribute_target
+                > single_subscript_attribute_target[7-7]: t_primary '.' NAME !t_lookahead
+                - single_subscript_attribute_target[7-7]: t_primary '.' NAME !t_lookahead failed!
+                > single_subscript_attribute_target[7-7]: t_primary '[' slices ']' !t_lookahead
+                - single_subscript_attribute_target[7-7]: t_primary '[' slices ']' !t_lookahead failed!
+               - single_target[7-7]: single_subscript_attribute_target failed!
+               > single_target[7-7]: NAME
+               - single_target[7-7]: NAME failed!
+               > single_target[7-7]: '(' single_target ')'
+               - single_target[7-7]: '(' single_target ')' failed!
+              - assignment[7-7]: single_target augassign ~ (yield_expr | star_expressions) failed!
+             - small_stmt[7-7]: assignment failed!
+             > small_stmt[7-7]: star_expressions
+              > star_expressions[7-7]: star_expression ((',' star_expression))+ ','?
+               > star_expression[7-7]: '*' bitwise_or
+               - star_expression[7-7]: '*' bitwise_or failed!
+               > star_expression[7-7]: expression
+                > expression[7-7]: disjunction 'if' disjunction 'else' expression
+                 > disjunction[7-7]: conjunction (('or' conjunction))+
+                  > conjunction[7-7]: inversion (('and' inversion))+
+                   > inversion[7-7]: 'not' inversion
+                   - inversion[7-7]: 'not' inversion failed!
+                   > inversion[7-7]: comparison
+                    > comparison[7-7]: bitwise_or compare_op_bitwise_or_pair+
+                      > bitwise_or[7-7]: bitwise_or '|' bitwise_xor
+                      - bitwise_or[7-7]: bitwise_or '|' bitwise_xor failed!
+                      > bitwise_or[7-7]: bitwise_xor
+                        > bitwise_xor[7-7]: bitwise_xor '^' bitwise_and
+                        - bitwise_xor[7-7]: bitwise_xor '^' bitwise_and failed!
+                        > bitwise_xor[7-7]: bitwise_and
+                          > bitwise_and[7-7]: bitwise_and '&' shift_expr
+                          - bitwise_and[7-7]: bitwise_and '&' shift_expr failed!
+                          > bitwise_and[7-7]: shift_expr
+                            > shift_expr[7-7]: shift_expr '<<' sum
+                            - shift_expr[7-7]: shift_expr '<<' sum failed!
+                            > shift_expr[7-7]: shift_expr '>>' sum
+                            - shift_expr[7-7]: shift_expr '>>' sum failed!
+                            > shift_expr[7-7]: sum
+                              > sum[7-7]: sum '+' term
+                              - sum[7-7]: sum '+' term failed!
+                              > sum[7-7]: sum '-' term
+                              - sum[7-7]: sum '-' term failed!
+                              > sum[7-7]: term
+                                > term[7-7]: term '*' factor
+                                - term[7-7]: term '*' factor failed!
+                                > term[7-7]: term '/' factor
+                                - term[7-7]: term '/' factor failed!
+                                > term[7-7]: term '//' factor
+                                - term[7-7]: term '//' factor failed!
+                                > term[7-7]: term '%' factor
+                                - term[7-7]: term '%' factor failed!
+                                > term[7-7]: term '@' factor
+                                - term[7-7]: term '@' factor failed!
+                                > term[7-7]: factor
+                                 > factor[7-7]: '+' factor
+                                 - factor[7-7]: '+' factor failed!
+                                 > factor[7-7]: '-' factor
+                                 - factor[7-7]: '-' factor failed!
+                                 > factor[7-7]: '~' factor
+                                 - factor[7-7]: '~' factor failed!
+                                 > factor[7-7]: power
+                                  > power[7-7]: await_primary '**' factor
+                                   > await_primary[7-7]: AWAIT primary
+                                   - await_primary[7-7]: AWAIT primary failed!
+                                   > await_primary[7-7]: primary
+                                     > primary[7-7]: primary '.' NAME
+                                     - primary[7-7]: primary '.' NAME failed!
+                                     > primary[7-7]: primary genexp
+                                     - primary[7-7]: primary genexp failed!
+                                     > primary[7-7]: primary '(' arguments? ')'
+                                     - primary[7-7]: primary '(' arguments? ')' failed!
+                                     > primary[7-7]: primary '[' slices ']'
+                                     - primary[7-7]: primary '[' slices ']' failed!
+                                     > primary[7-7]: atom
+                                      > atom[7-7]: NAME
+                                      - atom[7-7]: NAME failed!
+                                      > atom[7-7]: 'True'
+                                      - atom[7-7]: 'True' failed!
+                                      > atom[7-7]: 'False'
+                                      - atom[7-7]: 'False' failed!
+                                      > atom[7-7]: 'None'
+                                      - atom[7-7]: 'None' failed!
+                                      > atom[7-7]: '__peg_parser__'
+                                      - atom[7-7]: '__peg_parser__' failed!
+                                      > atom[7-7]: &STRING strings
+                                      - atom[7-7]: &STRING strings failed!
+                                      > atom[7-7]: NUMBER
+                                      - atom[7-7]: NUMBER failed!
+                                      > atom[7-7]: &'(' (tuple | group | genexp)
+                                      - atom[7-7]: &'(' (tuple | group | genexp) failed!
+                                      > atom[7-7]: &'[' (list | listcomp)
+                                      - atom[7-7]: &'[' (list | listcomp) failed!
+                                      > atom[7-7]: &'{' (dict | set | dictcomp | setcomp)
+                                      - atom[7-7]: &'{' (dict | set | dictcomp | setcomp) failed!
+                                      > atom[7-7]: '...'
+                                      - atom[7-7]: '...' failed!
+                                     - primary[7-7]: atom failed!
+                                   - await_primary[7-7]: primary failed!
+                                  - power[7-7]: await_primary '**' factor failed!
+                                  > power[7-7]: await_primary
+                                  - power[7-7]: await_primary failed!
+                                 - factor[7-7]: power failed!
+                                - term[7-7]: factor failed!
+                              - sum[7-7]: term failed!
+                            - shift_expr[7-7]: sum failed!
+                          - bitwise_and[7-7]: shift_expr failed!
+                        - bitwise_xor[7-7]: bitwise_and failed!
+                      - bitwise_or[7-7]: bitwise_xor failed!
+                    - comparison[7-7]: bitwise_or compare_op_bitwise_or_pair+ failed!
+                    > comparison[7-7]: bitwise_or
+                    - comparison[7-7]: bitwise_or failed!
+                   - inversion[7-7]: comparison failed!
+                  - conjunction[7-7]: inversion (('and' inversion))+ failed!
+                  > conjunction[7-7]: inversion
+                  - conjunction[7-7]: inversion failed!
+                 - disjunction[7-7]: conjunction (('or' conjunction))+ failed!
+                 > disjunction[7-7]: conjunction
+                 - disjunction[7-7]: conjunction failed!
+                - expression[7-7]: disjunction 'if' disjunction 'else' expression failed!
+                > expression[7-7]: disjunction
+                - expression[7-7]: disjunction failed!
+                > expression[7-7]: lambdef
+                 > lambdef[7-7]: 'lambda' lambda_params? ':' expression
+                 - lambdef[7-7]: 'lambda' lambda_params? ':' expression failed!
+                - expression[7-7]: lambdef failed!
+               - star_expression[7-7]: expression failed!
+              - star_expressions[7-7]: star_expression ((',' star_expression))+ ','? failed!
+              > star_expressions[7-7]: star_expression ','
+              - star_expressions[7-7]: star_expression ',' failed!
+              > star_expressions[7-7]: star_expression
+              - star_expressions[7-7]: star_expression failed!
+             - small_stmt[7-7]: star_expressions failed!
+             > small_stmt[7-7]: &'return' return_stmt
+             - small_stmt[7-7]: &'return' return_stmt failed!
+             > small_stmt[7-7]: &('import' | 'from') import_stmt
+              > _tmp_14[7-7]: 'import'
+              - _tmp_14[7-7]: 'import' failed!
+              > _tmp_14[7-7]: 'from'
+              - _tmp_14[7-7]: 'from' failed!
+             - small_stmt[7-7]: &('import' | 'from') import_stmt failed!
+             > small_stmt[7-7]: &'raise' raise_stmt
+             - small_stmt[7-7]: &'raise' raise_stmt failed!
+             > small_stmt[7-7]: ('pass' | 'proceed')
+              > _tmp_15[7-7]: 'pass'
+              - _tmp_15[7-7]: 'pass' failed!
+              > _tmp_15[7-7]: 'proceed'
+              + _tmp_15[7-8]: 'proceed' succeeded!
+             + small_stmt[7-8]: ('pass' | 'proceed') succeeded!
+            + simple_stmt[7-9]: small_stmt !';' NEWLINE succeeded!
+           + statement[7-9]: simple_stmt succeeded!
+           > statement[9-9]: compound_stmt
+            > compound_stmt[9-9]: &('def' | '@' | ASYNC) function_def
+             > _tmp_16[9-9]: 'def'
+             - _tmp_16[9-9]: 'def' failed!
+             > _tmp_16[9-9]: '@'
+             - _tmp_16[9-9]: '@' failed!
+             > _tmp_16[9-9]: ASYNC
+             - _tmp_16[9-9]: ASYNC failed!
+            - compound_stmt[9-9]: &('def' | '@' | ASYNC) function_def failed!
+            > compound_stmt[9-9]: &'if' if_stmt
+            - compound_stmt[9-9]: &'if' if_stmt failed!
+            > compound_stmt[9-9]: &('class' | '@') class_def
+             > _tmp_17[9-9]: 'class'
+             - _tmp_17[9-9]: 'class' failed!
+             > _tmp_17[9-9]: '@'
+             - _tmp_17[9-9]: '@' failed!
+            - compound_stmt[9-9]: &('class' | '@') class_def failed!
+            > compound_stmt[9-9]: &('with' | ASYNC) with_stmt
+             > _tmp_18[9-9]: 'with'
+             - _tmp_18[9-9]: 'with' failed!
+             > _tmp_18[9-9]: ASYNC
+             - _tmp_18[9-9]: ASYNC failed!
+            - compound_stmt[9-9]: &('with' | ASYNC) with_stmt failed!
+            > compound_stmt[9-9]: &('for' | ASYNC) for_stmt
+             > _tmp_19[9-9]: 'for'
+             - _tmp_19[9-9]: 'for' failed!
+             > _tmp_19[9-9]: ASYNC
+             - _tmp_19[9-9]: ASYNC failed!
+            - compound_stmt[9-9]: &('for' | ASYNC) for_stmt failed!
+            > compound_stmt[9-9]: &'try' try_stmt
+            - compound_stmt[9-9]: &'try' try_stmt failed!
+            > compound_stmt[9-9]: &'while' while_stmt
+            - compound_stmt[9-9]: &'while' while_stmt failed!
+           - statement[9-9]: compound_stmt failed!
+           > statement[9-9]: simple_stmt
+            > simple_stmt[9-9]: small_stmt !';' NEWLINE
+             > small_stmt[9-9]: assignment
+              > assignment[9-9]: NAME ':' expression ['=' annotated_rhs]
+              - assignment[9-9]: NAME ':' expression ['=' annotated_rhs] failed!
+              > assignment[9-9]: ('(' single_target ')' | single_subscript_attribute_target) ':' expression ['=' annotated_rhs]
+               > _tmp_21[9-9]: '(' single_target ')'
+               - _tmp_21[9-9]: '(' single_target ')' failed!
+               > _tmp_21[9-9]: single_subscript_attribute_target
+                > single_subscript_attribute_target[9-9]: t_primary '.' NAME !t_lookahead
+                  > t_primary[9-9]: t_primary '.' NAME &t_lookahead
+                  - t_primary[9-9]: t_primary '.' NAME &t_lookahead failed!
+                  > t_primary[9-9]: t_primary '[' slices ']' &t_lookahead
+                  - t_primary[9-9]: t_primary '[' slices ']' &t_lookahead failed!
+                  > t_primary[9-9]: t_primary genexp &t_lookahead
+                  - t_primary[9-9]: t_primary genexp &t_lookahead failed!
+                  > t_primary[9-9]: t_primary '(' arguments? ')' &t_lookahead
+                  - t_primary[9-9]: t_primary '(' arguments? ')' &t_lookahead failed!
+                  > t_primary[9-9]: atom &t_lookahead
+                   > atom[9-9]: NAME
+                   - atom[9-9]: NAME failed!
+                   > atom[9-9]: 'True'
+                   - atom[9-9]: 'True' failed!
+                   > atom[9-9]: 'False'
+                   - atom[9-9]: 'False' failed!
+                   > atom[9-9]: 'None'
+                   - atom[9-9]: 'None' failed!
+                   > atom[9-9]: '__peg_parser__'
+                   - atom[9-9]: '__peg_parser__' failed!
+                   > atom[9-9]: &STRING strings
+                   - atom[9-9]: &STRING strings failed!
+                   > atom[9-9]: NUMBER
+                   - atom[9-9]: NUMBER failed!
+                   > atom[9-9]: &'(' (tuple | group | genexp)
+                   - atom[9-9]: &'(' (tuple | group | genexp) failed!
+                   > atom[9-9]: &'[' (list | listcomp)
+                   - atom[9-9]: &'[' (list | listcomp) failed!
+                   > atom[9-9]: &'{' (dict | set | dictcomp | setcomp)
+                   - atom[9-9]: &'{' (dict | set | dictcomp | setcomp) failed!
+                   > atom[9-9]: '...'
+                   - atom[9-9]: '...' failed!
+                  - t_primary[9-9]: atom &t_lookahead failed!
+                - single_subscript_attribute_target[9-9]: t_primary '.' NAME !t_lookahead failed!
+                > single_subscript_attribute_target[9-9]: t_primary '[' slices ']' !t_lookahead
+                - single_subscript_attribute_target[9-9]: t_primary '[' slices ']' !t_lookahead failed!
+               - _tmp_21[9-9]: single_subscript_attribute_target failed!
+              - assignment[9-9]: ('(' single_target ')' | single_subscript_attribute_target) ':' expression ['=' annotated_rhs] failed!
+              > assignment[9-9]: ((star_targets '='))+ (yield_expr | star_expressions) !'=' TYPE_COMMENT?
+               > _loop1_23[9-9]: (star_targets '=')
+                > _tmp_138[9-9]: star_targets '='
+                 > star_targets[9-9]: star_target !','
+                  > star_target[9-9]: '*' (!'*' star_target)
+                  - star_target[9-9]: '*' (!'*' star_target) failed!
+                  > star_target[9-9]: target_with_star_atom
+                   > target_with_star_atom[9-9]: t_primary '.' NAME !t_lookahead
+                   - target_with_star_atom[9-9]: t_primary '.' NAME !t_lookahead failed!
+                   > target_with_star_atom[9-9]: t_primary '[' slices ']' !t_lookahead
+                   - target_with_star_atom[9-9]: t_primary '[' slices ']' !t_lookahead failed!
+                   > target_with_star_atom[9-9]: star_atom
+                    > star_atom[9-9]: NAME
+                    - star_atom[9-9]: NAME failed!
+                    > star_atom[9-9]: '(' target_with_star_atom ')'
+                    - star_atom[9-9]: '(' target_with_star_atom ')' failed!
+                    > star_atom[9-9]: '(' star_targets_tuple_seq? ')'
+                    - star_atom[9-9]: '(' star_targets_tuple_seq? ')' failed!
+                    > star_atom[9-9]: '[' star_targets_list_seq? ']'
+                    - star_atom[9-9]: '[' star_targets_list_seq? ']' failed!
+                   - target_with_star_atom[9-9]: star_atom failed!
+                  - star_target[9-9]: target_with_star_atom failed!
+                 - star_targets[9-9]: star_target !',' failed!
+                 > star_targets[9-9]: star_target ((',' star_target))* ','?
+                 - star_targets[9-9]: star_target ((',' star_target))* ','? failed!
+                - _tmp_138[9-9]: star_targets '=' failed!
+               - _loop1_23[9-9]: (star_targets '=') failed!
+              - assignment[9-9]: ((star_targets '='))+ (yield_expr | star_expressions) !'=' TYPE_COMMENT? failed!
+              > assignment[9-9]: single_target augassign ~ (yield_expr | star_expressions)
+               > single_target[9-9]: single_subscript_attribute_target
+                > single_subscript_attribute_target[9-9]: t_primary '.' NAME !t_lookahead
+                - single_subscript_attribute_target[9-9]: t_primary '.' NAME !t_lookahead failed!
+                > single_subscript_attribute_target[9-9]: t_primary '[' slices ']' !t_lookahead
+                - single_subscript_attribute_target[9-9]: t_primary '[' slices ']' !t_lookahead failed!
+               - single_target[9-9]: single_subscript_attribute_target failed!
+               > single_target[9-9]: NAME
+               - single_target[9-9]: NAME failed!
+               > single_target[9-9]: '(' single_target ')'
+               - single_target[9-9]: '(' single_target ')' failed!
+              - assignment[9-9]: single_target augassign ~ (yield_expr | star_expressions) failed!
+             - small_stmt[9-9]: assignment failed!
+             > small_stmt[9-9]: star_expressions
+              > star_expressions[9-9]: star_expression ((',' star_expression))+ ','?
+               > star_expression[9-9]: '*' bitwise_or
+               - star_expression[9-9]: '*' bitwise_or failed!
+               > star_expression[9-9]: expression
+                > expression[9-9]: disjunction 'if' disjunction 'else' expression
+                 > disjunction[9-9]: conjunction (('or' conjunction))+
+                  > conjunction[9-9]: inversion (('and' inversion))+
+                   > inversion[9-9]: 'not' inversion
+                   - inversion[9-9]: 'not' inversion failed!
+                   > inversion[9-9]: comparison
+                    > comparison[9-9]: bitwise_or compare_op_bitwise_or_pair+
+                      > bitwise_or[9-9]: bitwise_or '|' bitwise_xor
+                      - bitwise_or[9-9]: bitwise_or '|' bitwise_xor failed!
+                      > bitwise_or[9-9]: bitwise_xor
+                        > bitwise_xor[9-9]: bitwise_xor '^' bitwise_and
+                        - bitwise_xor[9-9]: bitwise_xor '^' bitwise_and failed!
+                        > bitwise_xor[9-9]: bitwise_and
+                          > bitwise_and[9-9]: bitwise_and '&' shift_expr
+                          - bitwise_and[9-9]: bitwise_and '&' shift_expr failed!
+                          > bitwise_and[9-9]: shift_expr
+                            > shift_expr[9-9]: shift_expr '<<' sum
+                            - shift_expr[9-9]: shift_expr '<<' sum failed!
+                            > shift_expr[9-9]: shift_expr '>>' sum
+                            - shift_expr[9-9]: shift_expr '>>' sum failed!
+                            > shift_expr[9-9]: sum
+                              > sum[9-9]: sum '+' term
+                              - sum[9-9]: sum '+' term failed!
+                              > sum[9-9]: sum '-' term
+                              - sum[9-9]: sum '-' term failed!
+                              > sum[9-9]: term
+                                > term[9-9]: term '*' factor
+                                - term[9-9]: term '*' factor failed!
+                                > term[9-9]: term '/' factor
+                                - term[9-9]: term '/' factor failed!
+                                > term[9-9]: term '//' factor
+                                - term[9-9]: term '//' factor failed!
+                                > term[9-9]: term '%' factor
+                                - term[9-9]: term '%' factor failed!
+                                > term[9-9]: term '@' factor
+                                - term[9-9]: term '@' factor failed!
+                                > term[9-9]: factor
+                                 > factor[9-9]: '+' factor
+                                 - factor[9-9]: '+' factor failed!
+                                 > factor[9-9]: '-' factor
+                                 - factor[9-9]: '-' factor failed!
+                                 > factor[9-9]: '~' factor
+                                 - factor[9-9]: '~' factor failed!
+                                 > factor[9-9]: power
+                                  > power[9-9]: await_primary '**' factor
+                                   > await_primary[9-9]: AWAIT primary
+                                   - await_primary[9-9]: AWAIT primary failed!
+                                   > await_primary[9-9]: primary
+                                     > primary[9-9]: primary '.' NAME
+                                     - primary[9-9]: primary '.' NAME failed!
+                                     > primary[9-9]: primary genexp
+                                     - primary[9-9]: primary genexp failed!
+                                     > primary[9-9]: primary '(' arguments? ')'
+                                     - primary[9-9]: primary '(' arguments? ')' failed!
+                                     > primary[9-9]: primary '[' slices ']'
+                                     - primary[9-9]: primary '[' slices ']' failed!
+                                     > primary[9-9]: atom
+                                      > atom[9-9]: NAME
+                                      - atom[9-9]: NAME failed!
+                                      > atom[9-9]: 'True'
+                                      - atom[9-9]: 'True' failed!
+                                      > atom[9-9]: 'False'
+                                      - atom[9-9]: 'False' failed!
+                                      > atom[9-9]: 'None'
+                                      - atom[9-9]: 'None' failed!
+                                      > atom[9-9]: '__peg_parser__'
+                                      - atom[9-9]: '__peg_parser__' failed!
+                                      > atom[9-9]: &STRING strings
+                                      - atom[9-9]: &STRING strings failed!
+                                      > atom[9-9]: NUMBER
+                                      - atom[9-9]: NUMBER failed!
+                                      > atom[9-9]: &'(' (tuple | group | genexp)
+                                      - atom[9-9]: &'(' (tuple | group | genexp) failed!
+                                      > atom[9-9]: &'[' (list | listcomp)
+                                      - atom[9-9]: &'[' (list | listcomp) failed!
+                                      > atom[9-9]: &'{' (dict | set | dictcomp | setcomp)
+                                      - atom[9-9]: &'{' (dict | set | dictcomp | setcomp) failed!
+                                      > atom[9-9]: '...'
+                                      - atom[9-9]: '...' failed!
+                                     - primary[9-9]: atom failed!
+                                   - await_primary[9-9]: primary failed!
+                                  - power[9-9]: await_primary '**' factor failed!
+                                  > power[9-9]: await_primary
+                                  - power[9-9]: await_primary failed!
+                                 - factor[9-9]: power failed!
+                                - term[9-9]: factor failed!
+                              - sum[9-9]: term failed!
+                            - shift_expr[9-9]: sum failed!
+                          - bitwise_and[9-9]: shift_expr failed!
+                        - bitwise_xor[9-9]: bitwise_and failed!
+                      - bitwise_or[9-9]: bitwise_xor failed!
+                    - comparison[9-9]: bitwise_or compare_op_bitwise_or_pair+ failed!
+                    > comparison[9-9]: bitwise_or
+                    - comparison[9-9]: bitwise_or failed!
+                   - inversion[9-9]: comparison failed!
+                  - conjunction[9-9]: inversion (('and' inversion))+ failed!
+                  > conjunction[9-9]: inversion
+                  - conjunction[9-9]: inversion failed!
+                 - disjunction[9-9]: conjunction (('or' conjunction))+ failed!
+                 > disjunction[9-9]: conjunction
+                 - disjunction[9-9]: conjunction failed!
+                - expression[9-9]: disjunction 'if' disjunction 'else' expression failed!
+                > expression[9-9]: disjunction
+                - expression[9-9]: disjunction failed!
+                > expression[9-9]: lambdef
+                 > lambdef[9-9]: 'lambda' lambda_params? ':' expression
+                 - lambdef[9-9]: 'lambda' lambda_params? ':' expression failed!
+                - expression[9-9]: lambdef failed!
+               - star_expression[9-9]: expression failed!
+              - star_expressions[9-9]: star_expression ((',' star_expression))+ ','? failed!
+              > star_expressions[9-9]: star_expression ','
+              - star_expressions[9-9]: star_expression ',' failed!
+              > star_expressions[9-9]: star_expression
+              - star_expressions[9-9]: star_expression failed!
+             - small_stmt[9-9]: star_expressions failed!
+             > small_stmt[9-9]: &'return' return_stmt
+             - small_stmt[9-9]: &'return' return_stmt failed!
+             > small_stmt[9-9]: &('import' | 'from') import_stmt
+              > _tmp_14[9-9]: 'import'
+              - _tmp_14[9-9]: 'import' failed!
+              > _tmp_14[9-9]: 'from'
+              - _tmp_14[9-9]: 'from' failed!
+             - small_stmt[9-9]: &('import' | 'from') import_stmt failed!
+             > small_stmt[9-9]: &'raise' raise_stmt
+             - small_stmt[9-9]: &'raise' raise_stmt failed!
+             > small_stmt[9-9]: ('pass' | 'proceed')
+              > _tmp_15[9-9]: 'pass'
+              - _tmp_15[9-9]: 'pass' failed!
+              > _tmp_15[9-9]: 'proceed'
+              - _tmp_15[9-9]: 'proceed' failed!
+             - small_stmt[9-9]: ('pass' | 'proceed') failed!
+             > small_stmt[9-9]: &'del' del_stmt
+             - small_stmt[9-9]: &'del' del_stmt failed!
+             > small_stmt[9-9]: &'yield' yield_stmt
+             - small_stmt[9-9]: &'yield' yield_stmt failed!
+             > small_stmt[9-9]: &'assert' assert_stmt
+             - small_stmt[9-9]: &'assert' assert_stmt failed!
+             > small_stmt[9-9]: 'break'
+             - small_stmt[9-9]: 'break' failed!
+             > small_stmt[9-9]: 'continue'
+             - small_stmt[9-9]: 'continue' failed!
+             > small_stmt[9-9]: &'global' global_stmt
+             - small_stmt[9-9]: &'global' global_stmt failed!
+             > small_stmt[9-9]: &'nonlocal' nonlocal_stmt
+             - small_stmt[9-9]: &'nonlocal' nonlocal_stmt failed!
+            - simple_stmt[9-9]: small_stmt !';' NEWLINE failed!
+            > simple_stmt[9-9]: ';'.small_stmt+ ';'? NEWLINE
+             > _gather_12[9-9]: small_stmt _loop0_13
+             - _gather_12[9-9]: small_stmt _loop0_13 failed!
+            - simple_stmt[9-9]: ';'.small_stmt+ ';'? NEWLINE failed!
+           - statement[9-9]: simple_stmt failed!
+          - _loop1_11[9-9]: statement failed!
+         + statements[7-9]: statement+ succeeded!
+        + block[5-10]: NEWLINE INDENT statements DEDENT succeeded!
+       + function_def_raw[0-10]: 'def' NAME '(' params? ')' ['->' expression] ':' func_type_comment? block succeeded!
+      + function_def[0-10]: function_def_raw succeeded!
+     + compound_stmt[0-10]: &('def' | '@' | ASYNC) function_def succeeded!
+    + statement[0-10]: compound_stmt succeeded!
+    > statement[10-10]: compound_stmt
+     > compound_stmt[10-10]: &('def' | '@' | ASYNC) function_def
+      > _tmp_16[10-10]: 'def'
+      - _tmp_16[10-10]: 'def' failed!
+      > _tmp_16[10-10]: '@'
+      - _tmp_16[10-10]: '@' failed!
+      > _tmp_16[10-10]: ASYNC
+      - _tmp_16[10-10]: ASYNC failed!
+     - compound_stmt[10-10]: &('def' | '@' | ASYNC) function_def failed!
+     > compound_stmt[10-10]: &'if' if_stmt
+     - compound_stmt[10-10]: &'if' if_stmt failed!
+     > compound_stmt[10-10]: &('class' | '@') class_def
+      > _tmp_17[10-10]: 'class'
+      - _tmp_17[10-10]: 'class' failed!
+      > _tmp_17[10-10]: '@'
+      - _tmp_17[10-10]: '@' failed!
+     - compound_stmt[10-10]: &('class' | '@') class_def failed!
+     > compound_stmt[10-10]: &('with' | ASYNC) with_stmt
+      > _tmp_18[10-10]: 'with'
+      - _tmp_18[10-10]: 'with' failed!
+      > _tmp_18[10-10]: ASYNC
+      - _tmp_18[10-10]: ASYNC failed!
+     - compound_stmt[10-10]: &('with' | ASYNC) with_stmt failed!
+     > compound_stmt[10-10]: &('for' | ASYNC) for_stmt
+      > _tmp_19[10-10]: 'for'
+      - _tmp_19[10-10]: 'for' failed!
+      > _tmp_19[10-10]: ASYNC
+      - _tmp_19[10-10]: ASYNC failed!
+     - compound_stmt[10-10]: &('for' | ASYNC) for_stmt failed!
+     > compound_stmt[10-10]: &'try' try_stmt
+     - compound_stmt[10-10]: &'try' try_stmt failed!
+     > compound_stmt[10-10]: &'while' while_stmt
+     - compound_stmt[10-10]: &'while' while_stmt failed!
+    - statement[10-10]: compound_stmt failed!
+    > statement[10-10]: simple_stmt
+     > simple_stmt[10-10]: small_stmt !';' NEWLINE
+      > small_stmt[10-10]: assignment
+       > assignment[10-10]: NAME ':' expression ['=' annotated_rhs]
+       - assignment[10-10]: NAME ':' expression ['=' annotated_rhs] failed!
+       > assignment[10-10]: ('(' single_target ')' | single_subscript_attribute_target) ':' expression ['=' annotated_rhs]
+        > _tmp_21[10-10]: '(' single_target ')'
+        - _tmp_21[10-10]: '(' single_target ')' failed!
+        > _tmp_21[10-10]: single_subscript_attribute_target
+         > single_subscript_attribute_target[10-10]: t_primary '.' NAME !t_lookahead
+           > t_primary[10-10]: t_primary '.' NAME &t_lookahead
+           - t_primary[10-10]: t_primary '.' NAME &t_lookahead failed!
+           > t_primary[10-10]: t_primary '[' slices ']' &t_lookahead
+           - t_primary[10-10]: t_primary '[' slices ']' &t_lookahead failed!
+           > t_primary[10-10]: t_primary genexp &t_lookahead
+           - t_primary[10-10]: t_primary genexp &t_lookahead failed!
+           > t_primary[10-10]: t_primary '(' arguments? ')' &t_lookahead
+           - t_primary[10-10]: t_primary '(' arguments? ')' &t_lookahead failed!
+           > t_primary[10-10]: atom &t_lookahead
+            > atom[10-10]: NAME
+            - atom[10-10]: NAME failed!
+            > atom[10-10]: 'True'
+            - atom[10-10]: 'True' failed!
+            > atom[10-10]: 'False'
+            - atom[10-10]: 'False' failed!
+            > atom[10-10]: 'None'
+            - atom[10-10]: 'None' failed!
+            > atom[10-10]: '__peg_parser__'
+            - atom[10-10]: '__peg_parser__' failed!
+            > atom[10-10]: &STRING strings
+            - atom[10-10]: &STRING strings failed!
+            > atom[10-10]: NUMBER
+            - atom[10-10]: NUMBER failed!
+            > atom[10-10]: &'(' (tuple | group | genexp)
+            - atom[10-10]: &'(' (tuple | group | genexp) failed!
+            > atom[10-10]: &'[' (list | listcomp)
+            - atom[10-10]: &'[' (list | listcomp) failed!
+            > atom[10-10]: &'{' (dict | set | dictcomp | setcomp)
+            - atom[10-10]: &'{' (dict | set | dictcomp | setcomp) failed!
+            > atom[10-10]: '...'
+            - atom[10-10]: '...' failed!
+           - t_primary[10-10]: atom &t_lookahead failed!
+         - single_subscript_attribute_target[10-10]: t_primary '.' NAME !t_lookahead failed!
+         > single_subscript_attribute_target[10-10]: t_primary '[' slices ']' !t_lookahead
+         - single_subscript_attribute_target[10-10]: t_primary '[' slices ']' !t_lookahead failed!
+        - _tmp_21[10-10]: single_subscript_attribute_target failed!
+       - assignment[10-10]: ('(' single_target ')' | single_subscript_attribute_target) ':' expression ['=' annotated_rhs] failed!
+       > assignment[10-10]: ((star_targets '='))+ (yield_expr | star_expressions) !'=' TYPE_COMMENT?
+        > _loop1_23[10-10]: (star_targets '=')
+         > _tmp_138[10-10]: star_targets '='
+          > star_targets[10-10]: star_target !','
+           > star_target[10-10]: '*' (!'*' star_target)
+           - star_target[10-10]: '*' (!'*' star_target) failed!
+           > star_target[10-10]: target_with_star_atom
+            > target_with_star_atom[10-10]: t_primary '.' NAME !t_lookahead
+            - target_with_star_atom[10-10]: t_primary '.' NAME !t_lookahead failed!
+            > target_with_star_atom[10-10]: t_primary '[' slices ']' !t_lookahead
+            - target_with_star_atom[10-10]: t_primary '[' slices ']' !t_lookahead failed!
+            > target_with_star_atom[10-10]: star_atom
+             > star_atom[10-10]: NAME
+             - star_atom[10-10]: NAME failed!
+             > star_atom[10-10]: '(' target_with_star_atom ')'
+             - star_atom[10-10]: '(' target_with_star_atom ')' failed!
+             > star_atom[10-10]: '(' star_targets_tuple_seq? ')'
+             - star_atom[10-10]: '(' star_targets_tuple_seq? ')' failed!
+             > star_atom[10-10]: '[' star_targets_list_seq? ']'
+             - star_atom[10-10]: '[' star_targets_list_seq? ']' failed!
+            - target_with_star_atom[10-10]: star_atom failed!
+           - star_target[10-10]: target_with_star_atom failed!
+          - star_targets[10-10]: star_target !',' failed!
+          > star_targets[10-10]: star_target ((',' star_target))* ','?
+          - star_targets[10-10]: star_target ((',' star_target))* ','? failed!
+         - _tmp_138[10-10]: star_targets '=' failed!
+        - _loop1_23[10-10]: (star_targets '=') failed!
+       - assignment[10-10]: ((star_targets '='))+ (yield_expr | star_expressions) !'=' TYPE_COMMENT? failed!
+       > assignment[10-10]: single_target augassign ~ (yield_expr | star_expressions)
+        > single_target[10-10]: single_subscript_attribute_target
+         > single_subscript_attribute_target[10-10]: t_primary '.' NAME !t_lookahead
+         - single_subscript_attribute_target[10-10]: t_primary '.' NAME !t_lookahead failed!
+         > single_subscript_attribute_target[10-10]: t_primary '[' slices ']' !t_lookahead
+         - single_subscript_attribute_target[10-10]: t_primary '[' slices ']' !t_lookahead failed!
+        - single_target[10-10]: single_subscript_attribute_target failed!
+        > single_target[10-10]: NAME
+        - single_target[10-10]: NAME failed!
+        > single_target[10-10]: '(' single_target ')'
+        - single_target[10-10]: '(' single_target ')' failed!
+       - assignment[10-10]: single_target augassign ~ (yield_expr | star_expressions) failed!
+      - small_stmt[10-10]: assignment failed!
+      > small_stmt[10-10]: star_expressions
+       > star_expressions[10-10]: star_expression ((',' star_expression))+ ','?
+        > star_expression[10-10]: '*' bitwise_or
+        - star_expression[10-10]: '*' bitwise_or failed!
+        > star_expression[10-10]: expression
+         > expression[10-10]: disjunction 'if' disjunction 'else' expression
+          > disjunction[10-10]: conjunction (('or' conjunction))+
+           > conjunction[10-10]: inversion (('and' inversion))+
+            > inversion[10-10]: 'not' inversion
+            - inversion[10-10]: 'not' inversion failed!
+            > inversion[10-10]: comparison
+             > comparison[10-10]: bitwise_or compare_op_bitwise_or_pair+
+               > bitwise_or[10-10]: bitwise_or '|' bitwise_xor
+               - bitwise_or[10-10]: bitwise_or '|' bitwise_xor failed!
+               > bitwise_or[10-10]: bitwise_xor
+                 > bitwise_xor[10-10]: bitwise_xor '^' bitwise_and
+                 - bitwise_xor[10-10]: bitwise_xor '^' bitwise_and failed!
+                 > bitwise_xor[10-10]: bitwise_and
+                   > bitwise_and[10-10]: bitwise_and '&' shift_expr
+                   - bitwise_and[10-10]: bitwise_and '&' shift_expr failed!
+                   > bitwise_and[10-10]: shift_expr
+                     > shift_expr[10-10]: shift_expr '<<' sum
+                     - shift_expr[10-10]: shift_expr '<<' sum failed!
+                     > shift_expr[10-10]: shift_expr '>>' sum
+                     - shift_expr[10-10]: shift_expr '>>' sum failed!
+                     > shift_expr[10-10]: sum
+                       > sum[10-10]: sum '+' term
+                       - sum[10-10]: sum '+' term failed!
+                       > sum[10-10]: sum '-' term
+                       - sum[10-10]: sum '-' term failed!
+                       > sum[10-10]: term
+                         > term[10-10]: term '*' factor
+                         - term[10-10]: term '*' factor failed!
+                         > term[10-10]: term '/' factor
+                         - term[10-10]: term '/' factor failed!
+                         > term[10-10]: term '//' factor
+                         - term[10-10]: term '//' factor failed!
+                         > term[10-10]: term '%' factor
+                         - term[10-10]: term '%' factor failed!
+                         > term[10-10]: term '@' factor
+                         - term[10-10]: term '@' factor failed!
+                         > term[10-10]: factor
+                          > factor[10-10]: '+' factor
+                          - factor[10-10]: '+' factor failed!
+                          > factor[10-10]: '-' factor
+                          - factor[10-10]: '-' factor failed!
+                          > factor[10-10]: '~' factor
+                          - factor[10-10]: '~' factor failed!
+                          > factor[10-10]: power
+                           > power[10-10]: await_primary '**' factor
+                            > await_primary[10-10]: AWAIT primary
+                            - await_primary[10-10]: AWAIT primary failed!
+                            > await_primary[10-10]: primary
+                              > primary[10-10]: primary '.' NAME
+                              - primary[10-10]: primary '.' NAME failed!
+                              > primary[10-10]: primary genexp
+                              - primary[10-10]: primary genexp failed!
+                              > primary[10-10]: primary '(' arguments? ')'
+                              - primary[10-10]: primary '(' arguments? ')' failed!
+                              > primary[10-10]: primary '[' slices ']'
+                              - primary[10-10]: primary '[' slices ']' failed!
+                              > primary[10-10]: atom
+                               > atom[10-10]: NAME
+                               - atom[10-10]: NAME failed!
+                               > atom[10-10]: 'True'
+                               - atom[10-10]: 'True' failed!
+                               > atom[10-10]: 'False'
+                               - atom[10-10]: 'False' failed!
+                               > atom[10-10]: 'None'
+                               - atom[10-10]: 'None' failed!
+                               > atom[10-10]: '__peg_parser__'
+                               - atom[10-10]: '__peg_parser__' failed!
+                               > atom[10-10]: &STRING strings
+                               - atom[10-10]: &STRING strings failed!
+                               > atom[10-10]: NUMBER
+                               - atom[10-10]: NUMBER failed!
+                               > atom[10-10]: &'(' (tuple | group | genexp)
+                               - atom[10-10]: &'(' (tuple | group | genexp) failed!
+                               > atom[10-10]: &'[' (list | listcomp)
+                               - atom[10-10]: &'[' (list | listcomp) failed!
+                               > atom[10-10]: &'{' (dict | set | dictcomp | setcomp)
+                               - atom[10-10]: &'{' (dict | set | dictcomp | setcomp) failed!
+                               > atom[10-10]: '...'
+                               - atom[10-10]: '...' failed!
+                              - primary[10-10]: atom failed!
+                            - await_primary[10-10]: primary failed!
+                           - power[10-10]: await_primary '**' factor failed!
+                           > power[10-10]: await_primary
+                           - power[10-10]: await_primary failed!
+                          - factor[10-10]: power failed!
+                         - term[10-10]: factor failed!
+                       - sum[10-10]: term failed!
+                     - shift_expr[10-10]: sum failed!
+                   - bitwise_and[10-10]: shift_expr failed!
+                 - bitwise_xor[10-10]: bitwise_and failed!
+               - bitwise_or[10-10]: bitwise_xor failed!
+             - comparison[10-10]: bitwise_or compare_op_bitwise_or_pair+ failed!
+             > comparison[10-10]: bitwise_or
+             - comparison[10-10]: bitwise_or failed!
+            - inversion[10-10]: comparison failed!
+           - conjunction[10-10]: inversion (('and' inversion))+ failed!
+           > conjunction[10-10]: inversion
+           - conjunction[10-10]: inversion failed!
+          - disjunction[10-10]: conjunction (('or' conjunction))+ failed!
+          > disjunction[10-10]: conjunction
+          - disjunction[10-10]: conjunction failed!
+         - expression[10-10]: disjunction 'if' disjunction 'else' expression failed!
+         > expression[10-10]: disjunction
+         - expression[10-10]: disjunction failed!
+         > expression[10-10]: lambdef
+          > lambdef[10-10]: 'lambda' lambda_params? ':' expression
+          - lambdef[10-10]: 'lambda' lambda_params? ':' expression failed!
+         - expression[10-10]: lambdef failed!
+        - star_expression[10-10]: expression failed!
+       - star_expressions[10-10]: star_expression ((',' star_expression))+ ','? failed!
+       > star_expressions[10-10]: star_expression ','
+       - star_expressions[10-10]: star_expression ',' failed!
+       > star_expressions[10-10]: star_expression
+       - star_expressions[10-10]: star_expression failed!
+      - small_stmt[10-10]: star_expressions failed!
+      > small_stmt[10-10]: &'return' return_stmt
+      - small_stmt[10-10]: &'return' return_stmt failed!
+      > small_stmt[10-10]: &('import' | 'from') import_stmt
+       > _tmp_14[10-10]: 'import'
+       - _tmp_14[10-10]: 'import' failed!
+       > _tmp_14[10-10]: 'from'
+       - _tmp_14[10-10]: 'from' failed!
+      - small_stmt[10-10]: &('import' | 'from') import_stmt failed!
+      > small_stmt[10-10]: &'raise' raise_stmt
+      - small_stmt[10-10]: &'raise' raise_stmt failed!
+      > small_stmt[10-10]: ('pass' | 'proceed')
+       > _tmp_15[10-10]: 'pass'
+       - _tmp_15[10-10]: 'pass' failed!
+       > _tmp_15[10-10]: 'proceed'
+       - _tmp_15[10-10]: 'proceed' failed!
+      - small_stmt[10-10]: ('pass' | 'proceed') failed!
+      > small_stmt[10-10]: &'del' del_stmt
+      - small_stmt[10-10]: &'del' del_stmt failed!
+      > small_stmt[10-10]: &'yield' yield_stmt
+      - small_stmt[10-10]: &'yield' yield_stmt failed!
+      > small_stmt[10-10]: &'assert' assert_stmt
+      - small_stmt[10-10]: &'assert' assert_stmt failed!
+      > small_stmt[10-10]: 'break'
+      - small_stmt[10-10]: 'break' failed!
+      > small_stmt[10-10]: 'continue'
+      - small_stmt[10-10]: 'continue' failed!
+      > small_stmt[10-10]: &'global' global_stmt
+      - small_stmt[10-10]: &'global' global_stmt failed!
+      > small_stmt[10-10]: &'nonlocal' nonlocal_stmt
+      - small_stmt[10-10]: &'nonlocal' nonlocal_stmt failed!
+     - simple_stmt[10-10]: small_stmt !';' NEWLINE failed!
+     > simple_stmt[10-10]: ';'.small_stmt+ ';'? NEWLINE
+      > _gather_12[10-10]: small_stmt _loop0_13
+      - _gather_12[10-10]: small_stmt _loop0_13 failed!
+     - simple_stmt[10-10]: ';'.small_stmt+ ';'? NEWLINE failed!
+    - statement[10-10]: simple_stmt failed!
+   - _loop1_11[10-10]: statement failed!
+  + statements[0-10]: statement+ succeeded!
+ + file[0-11]: statements? $ succeeded!

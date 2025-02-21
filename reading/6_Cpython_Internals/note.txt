@@ -1,0 +1,90 @@
+```
+Grammar/python.gram/python.gram
+
+small_stmt[stmt_ty] (memo):
+    | assignment
+    | e=star_expressions { _Py_Expr(e, EXTRA) }
+    | &'return' return_stmt
+    | &('import' | 'from') import_stmt
+    | &'raise' raise_stmt
+    | ('pass'|'proceed') { _Py_Pass(EXTRA) }
+```
+
+```
+~/.bashrc
+alias runpy='/home/widehyo/gitclone/cpython/python'
+alias rebuild='make -j2 -s'
+```
+
+playground/reading/6_Cpython_Internals on  main [✘!?] via 🐍 v3.10.12 took 3s ❯ runpy -m tokenize -e test_tokens.py
+0,0-0,0:            ENCODING       'utf-8'
+1,0-1,9:            COMMENT        '# comment'
+1,9-1,10:           NL             '\n'
+2,0-2,3:            NAME           'def'
+2,4-2,15:           NAME           'my_function'
+2,15-2,16:          LPAR           '('
+2,16-2,17:          RPAR           ')'
+2,17-2,18:          COLON          ':'
+2,18-2,19:          NEWLINE        '\n'
+3,0-3,4:            INDENT         '    '
+3,4-3,11:           NAME           'proceed'
+3,11-3,12:          NEWLINE        '\n'
+4,0-4,0:            DEDENT         ''
+4,0-4,0:            ENDMARKER      ''
+
+playground/reading/6_Cpython_Internals on  main [✘!?] via 🐍 v3.10.12 ❯ runpy -d test_tokens.py | wc
+ > file[0-0]: statements? $
+  > statements[0-0]: statement+
+   > _loop1_11[0-0]: statement
+    > statement[0-0]: compound_stmt
+     > compound_stmt[0-0]: &('def' | '@' | ASYNC) function_def
+      > _tmp_16[0-0]: 'def'
+      + _tmp_16[0-1]: 'def' succeeded!
+      ...
+ + file[0-11]: statements? $ succeeded!
+      0       0       0
+
+playground/reading/6_Cpython_Internals on  main [✘!?] via 🐍 v3.10.12 ❯ runpy -d test_tokens.py > stdout
+ > file[0-0]: statements? $
+  > statements[0-0]: statement+
+   > _loop1_11[0-0]: statement
+    > statement[0-0]: compound_stmt
+     > compound_stmt[0-0]: &('def' | '@' | ASYNC) function_def
+      > _tmp_16[0-0]: 'def'
+      + _tmp_16[0-1]: 'def' succeeded!
+      > function_def[0-0]: decorators function_def_raw
+       > decorators[0-0]: (('@' named_expression NEWLINE))+
+        > _loop1_69[0-0]: ('@' named_expression NEWLINE)
+         > _tmp_141[0-0]: '@' named_expression NEWLINE
+         - _tmp_141[0-0]: '@' named_expression NEWLINE failed!
+        - _loop1_69[0-0]: ('@' named_expression NEWLINE) failed!
+       - decorators[0-0]: (('@' named_expression NEWLINE))+ failed!
+      - function_def[0-0]: decorators function_def_raw failed!
+      > function_def[0-0]: function_def_raw
+       > function_def_raw[0-0]: 'def' NAME '(' params? ')' ['->' expression] ':' func_type_comment? block
+        > params[3-3]: parameters
+         > parameters[3-3]: slash_no_default param_no_default* param_with_default* star_etc?
+          > slash_no_default[3-3]: param_no_default+ '/' ','
+           > _loop1_61[3-3]: param_no_default
+            > param_no_default[3-3]: param ',' TYPE_COMMENT?
+             > param[3-3]: NAME annotation?
+             - param[3-3]: NAME annotation? failed!
+
+playground/reading/6_Cpython_Internals on  main [✘!?] via 🐍 v3.10.12 ❯ ll
+total 8
+-rw-r--r-- 1 widehyo widehyo 1077 Feb 21 23:20 note.txt
+-rw-r--r-- 1 widehyo widehyo    0 Feb 21 23:23 stdout
+-rw-r--r-- 1 widehyo widehyo   41 Feb 21 23:19 test_tokens.py
+
+playground/reading/6_Cpython_Internals on  main [✘!?] via 🐍 v3.10.12 ❯ cat stdout
+
+playground/reading/6_Cpython_Internals on  main [✘!?] via 🐍 v3.10.12 ❯ runpy -d test_tokens.py 2> stdout
+
+playground/reading/6_Cpython_Internals on  main [✘!?] via 🐍 v3.10.12 ❯ ll
+total 68
+-rw-r--r-- 1 widehyo widehyo  1077 Feb 21 23:20 note.txt
+-rw-r--r-- 1 widehyo widehyo 58602 Feb 21 23:24 stdout
+-rw-r--r-- 1 widehyo widehyo    41 Feb 21 23:19 test_tokens.py
+
+playground/reading/6_Cpython_Internals on  main [✘!?] via 🐍 v3.10.12 ❯ wc stdout
+  960  4754 58602 stdout
