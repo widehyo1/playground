@@ -1,0 +1,74 @@
+set nocompatible               " turns off legacy vi mode filetype off                   " required!
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVIm/Vundle.vim'
+Plugin 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
+Plugin 'majutsushi/tagbar'
+" Plugin 'junegunn/fzf.vim'
+
+call vundle#end()
+filetype plugin indent on     " required!
+
+"nerdtree
+" autocmd VimEnter * NERDTree | wincmd p
+autocmd VimEnter * if !&diff | NERDTree | wincmd p | endif
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
+set t_Co=256
+colorscheme jellybeans
+
+let mapleader=","
+
+set number
+set showmatch
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set list
+set noswapfile
+set listchars=tab:>-,trail:-
+set nohlsearch
+set clipboard=unnamedplus
+set splitright
+set splitbelow
+set tags=./.tags;/
+
+source ~/vim/util/common.vim
+source ~/vim/snippet/awk.vim
+source ~/vim/snippet/py.vim
+
+nnoremap <leader>rc :e ~/.vimrc<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>a :NERDTreeFind<CR>
+nnoremap <leader>t :e ~/temp.txt<CR>
+nnoremap <leader>s :e ~/script.awk<CR>
+nnoremap <leader><leader> :let @+ = system('awk -f ~/script.awk ~/temp.txt')<CR>
+" Remap <leader><leader> in visual mode to call the function.
+" <C-U> clears the automatically inserted range from visual mode.
+vnoremap <leader><leader> :<C-U>call ProcessVisual()<CR>
+
+nnoremap L :bn!<CR>
+nnoremap H :bp!<CR>
+nnoremap <leader>q :bp<bar>bd #<CR>
+nnoremap <leader>ls :ls<CR>
+
+nnoremap <leader>pp :call CaptureCommandOutputToClipboard('echo fnamemodify(expand("%"), ":~:.")')<CR>
+
+nnoremap <C-H> <C-W>h
+nnoremap <C-L> <C-W>l
+nnoremap <C-J> <C-W>j
+nnoremap <C-K> <C-W>k
+nnoremap <C-D> :sh<CR>
+nnoremap <leader>d :%s/\r//g<CR>
+
+imap jj <ESC>
+
+nnoremap <C-]> <C-]>zz
