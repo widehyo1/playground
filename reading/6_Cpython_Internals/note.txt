@@ -1,3 +1,45 @@
+### python 3.9 구성(from git repo)
+
+10525  2025-02-23 05:21:36 history | grep "2025-02-21" | sort -k 2
+```bash
+10275  2025-02-21 22:16:24 cdg
+10276  2025-02-21 22:16:27 git clone --branch 3.9 https://github.com/python/cpython
+10277  2025-02-21 22:18:09 ll
+10278  2025-02-21 22:18:12 cd cpython/
+10279  2025-02-21 22:18:13 ll
+10280  2025-02-21 22:18:17 ./config
+10281  2025-02-21 22:18:19 ./configure
+10282  2025-02-21 22:18:50 make tags
+10283  2025-02-21 22:18:57 ctags
+10284  2025-02-21 22:19:14 sudo apt install universal-ctags
+10285  2025-02-21 22:19:25 make tags
+10286  2025-02-21 22:19:27 ll
+10287  2025-02-21 22:19:37 vi
+10225  2025-02-21 22:22:09 sudo apt install libssl-dev zlib1g-dev libncurses5-dev
+10226  2025-02-21 22:22:31 sudo apt install libncursesw5-dev libreadline-dev libsqlite3-dev libgdbm-dev
+10227  2025-02-21 22:23:03 sudo apt install libdb5.3-dev libbz2-deb libexpat1-dev liblzma-dev libffi-dev
+10228  2025-02-21 22:23:15 sudo apt install libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev libffi-dev
+10229  2025-02-21 22:23:24 ll
+10230  2025-02-21 22:23:37 ./configure --with-pydebug
+10231  2025-02-21 22:24:05 ll
+10232  2025-02-21 22:24:14 make -j2 -s
+10233  2025-02-21 22:25:16 ll
+10234  2025-02-21 22:25:20 ./python
+10235  2025-02-21 22:26:25 which python
+10236  2025-02-21 22:26:30 python
+10237  2025-02-21 22:26:43 type python
+10238  2025-02-21 22:26:49 alias python
+10239  2025-02-21 22:27:05 ll
+10240  2025-02-21 22:27:11 cat Makefile
+10288  2025-02-21 22:30:40 make docclean
+10289  2025-02-21 22:30:42 ll
+10290  2025-02-21 22:31:54 make quicktext
+10291  2025-02-21 22:31:56 make quicktest
+10292  2025-02-21 22:40:46 virc
+10293  2025-02-21 22:41:31 brc
+10294  2025-02-21 22:41:33 runpy
+```
+
 ```
 Grammar/python.gram/python.gram
 
@@ -88,3 +130,335 @@ total 68
 
 playground/reading/6_Cpython_Internals on  main [✘!?] via 🐍 v3.10.12 ❯ wc stdout
   960  4754 58602 stdout
+
+---
+
+playground/reading/6_Cpython_Internals on  main [✘!?] via 🐍 v3.10.12 ❯ runpy lex.py
+/home/widehyo/gitclone/playground/reading/6_Cpython_Internals/lex.py:1: DeprecationWarning: The symbol module is deprecated and will be removed in future versions of Python
+  import symbol
+/home/widehyo/gitclone/playground/reading/6_Cpython_Internals/lex.py:3: DeprecationWarning: The parser module is deprecated and will be removed in future versions of Python
+  import parser
+--Return--
+> /home/widehyo/gitclone/playground/reading/6_Cpython_Internals/lex.py(29)<module>()->None
+-> breakpoint()
+(Pdb) interact
+*interactive*
+>>> from pprint import pprint
+>>> pprint(lex('a + 1'))
+['eval_input',
+ ['testlist',
+  ['test',
+   ['or_test',
+    ['and_test',
+     ['not_test',
+      ['comparison',
+       ['expr',
+        ['xor_expr',
+         ['and_expr',
+          ['shift_expr',
+           ['arith_expr',
+            ['term',
+             ['factor', ['power', ['atom_expr', ['atom', ['NAME', 'a']]]]]],
+            ['PLUS', '+'],
+            ['term',
+             ['factor',
+              ['power', ['atom_expr', ['atom', ['NUMBER', '1']]]]]]]]]]]]]]]]],
+ ['NEWLINE', ''],
+ ['ENDMARKER', '']]
+>>>
+now exiting InteractiveConsole...
+(Pdb)
+Traceback (most recent call last):
+  File "/home/widehyo/gitclone/playground/reading/6_Cpython_Internals/lex.py", line 29, in <module>
+    breakpoint()
+  File "/home/widehyo/gitclone/cpython/Lib/bdb.py", line 92, in trace_dispatch
+    return self.dispatch_return(frame, arg)
+  File "/home/widehyo/gitclone/cpython/Lib/bdb.py", line 154, in dispatch_return
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+playground/reading/6_Cpython_Internals on  main [✘!?] via 🐍 v3.10.12 took 49s ❯ cat lex.py
+import symbol
+import token
+import parser
+
+def lex(expression):
+    symbols = {v: k for k, v in symbol.__dict__.items()
+               if isinstance(v, int)}
+    tokens = {v: k for k, v in token.__dict__.items()
+              if isinstance(v, int)}
+    lexicon = {**symbols, **tokens}
+    st = parser.expr(expression)
+    st_list = parser.st2list(st)
+
+    def replace(l: list):
+        r = []
+        for i in l:
+            if isinstance(i, list):
+                r.append(replace(i))
+            else:
+                if i in lexicon:
+                    r.append(lexicon[i])
+                else:
+                    r.append(i)
+        return r
+
+    return replace(st_list)
+
+if __name__ == '__main__':
+    breakpoint()
+
+---
+
+playground/reading/6_Cpython_Internals on  main [✘!?] via 🐍 v3.10.12 ❯ alias runpy
+alias runpy='/home/widehyo/gitclone/cpython/python'
+
+playground/reading/6_Cpython_Internals on  main [✘!?] via 🐍 v3.10.12 ❯ poetry env
+
+The command "env" does not exist.
+
+Did you mean one of these?
+    env use
+    env info
+    env list
+    env remove
+
+playground/reading/6_Cpython_Internals on  main [✘!?] via 🐍 v3.10.12 ❯ poetry env list
+
+Poetry could not find a pyproject.toml file in /home/widehyo/gitclone/playground/reading/6_Cpython_Internals or its parents
+
+playground/reading/6_Cpython_Internals on  main [✘!?] via 🐍 v3.10.12 ❯ poetry new cpython3.9
+Created package cpython3.9 in cpython3.9
+
+playground/reading/6_Cpython_Internals on  main [✘!?] via 🐍 v3.10.12 ❯ cd cpython3.9/
+
+reading/6_Cpython_Internals/cpython3.9 on  main [✘!?] is 📦 v0.1.0 via 🐍 v3.10.12 ❯ poetry env list
+
+reading/6_Cpython_Internals/cpython3.9 on  main [✘!?] is 📦 v0.1.0 via 🐍 v3.10.12 ❯ poetry env info
+
+Virtualenv
+Python:         3.10.12
+Implementation: CPython
+Path:           NA
+Executable:     NA
+
+Base
+Platform:   linux
+OS:         posix
+Python:     3.10.12
+Path:       /usr
+Executable: /usr/bin/python3.10
+
+reading/6_Cpython_Internals/cpython3.9 on  main [✘!?] is 📦 v0.1.0 via 🐍 v3.10.12 ❯ poetry env use
+
+Not enough arguments (missing: "python")
+
+reading/6_Cpython_Internals/cpython3.9 on  main [✘!?] is 📦 v0.1.0 via 🐍 v3.10.12 ❯ poetry env use /home/widehyo/gitclone/cpython/python
+
+The specified Python version (3.9.21) is not supported by the project (^3.10).
+Please choose a compatible version or loosen the python constraint specified in the pyproject.toml file.
+
+reading/6_Cpython_Internals/cpython3.9 on  main [✘!?] is 📦 v0.1.0 via 🐍 v3.10.12 ❯ vi pyproject.toml
+
+reading/6_Cpython_Internals/cpython3.9 on  main [✘!?] is 📦 v0.1.0 via 🐍 v3.10.12 took 5s ❯ poetry env use /home/widehyo/gitclone/cpython/python
+Creating virtualenv cpython3-9-DkvwWjd2-py3.9 in /home/widehyo/.cache/pypoetry/virtualenvs
+Using virtualenv: /home/widehyo/.cache/pypoetry/virtualenvs/cpython3-9-DkvwWjd2-py3.9
+
+reading/6_Cpython_Internals/cpython3.9 on  main [✘!?] is 📦 v0.1.0 via 🐍 v3.10.12 ❯ python
+Python 3.10.12 (main, Jan 17 2025, 14:35:34) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+
+reading/6_Cpython_Internals/cpython3.9 on  main [✘!?] is 📦 v0.1.0 via 🐍 v3.10.12 took 3s ❯ poetry shell
+Spawning shell within /home/widehyo/.cache/pypoetry/virtualenvs/cpython3-9-DkvwWjd2-py3.9
+. /home/widehyo/.cache/pypoetry/virtualenvs/cpython3-9-DkvwWjd2-py3.9/bin/activate
+
+reading/6_Cpython_Internals/cpython3.9 on  main [✘!?] is 📦 v0.1.0 via 🐍 v3.10.12 ❯ . /home/widehyo/.cache/pypoetry/virtualenvs/cpython3-9-DkvwWjd2-py3.9/bin/activate
+
+reading/6_Cpython_Internals/cpython3.9 on  main [✘!?] is 📦 v0.1.0 via 🐍 v3.9.21+ (cpython3-9-py3.9) ❯ python
+Python 3.9.21+ (heads/3.9:ff4e5c25666, Feb 21 2025, 23:28:32)
+[GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+
+6_Cpython_Internals/cpython3.9/cpython3 on  main [✘!?] via 🐍 v3.9.21+ (cpython3-9-py3.9) ❯ poetry add instaviz
+Using version ^0.6.0 for instaviz
+
+Updating dependencies
+Resolving dependencies... (2.7s)
+
+Package operations: 6 installs, 0 updates, 0 removals
+
+  - Installing markupsafe (3.0.2)
+  - Installing bottle (0.13.2)
+  - Installing dill (0.3.9)
+  - Installing jinja2 (3.1.5)
+  - Installing pygments (2.19.1)
+  - Installing instaviz (0.6.0)
+
+Writing lock file
+
+6_Cpython_Internals/cpython3.9/cpython3 on  main [✘!?] via 🐍 v3.9.21+ (cpython3-9-py3.9) took 5s ❯ python
+Python 3.9.21+ (heads/3.9:ff4e5c25666, Feb 21 2025, 23:28:32)
+[GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import instaviz
+>>> def example():
+...     a = 1
+...     b = a + 1
+...     return b
+...
+>>> instaviz.show(example)
+Bottle v0.13.2 server starting up (using WSGIRefServer())...
+Listening on http://localhost:8080/
+Hit Ctrl-C to quit.
+
+---
+
+reading/6_Cpython_Internals/cpython3.9 on  main [✘!?] is 📦 v0.1.0 via 🐍 v3.9.21+ (cpython3-9-py3.9) ❯ alias rebuildpy
+alias rebuildpy='make -j8 -s'
+
+```
+Parser/Python.asdl
+    cmpop = Eq | NotEq | Lt | LtE | Gt | GtE | Is | IsNot | In | NotIn | AlE
+
+Grammar/python.gram
+
+compare_op_bitwise_or_pair[CmpopExprPair*]:
+    | eq_bitwise_or
+    ...
+    | ale_bitwise_or
+eq_bitwise_or[CmpopExprPair*]: '==' a=bitwise_or { _PyPegen_cmpop_expr_pair(p, Eq, a) }
+...
+ale_bitwise_or[CmpopExprPair*]: '~=' a=bitwise_or { _PyPegen_cmpop_expr_pair(p, AlE, a) }
+
+Python/ast.c:1235:
+            case ALMOSTEQUAL:                   /* ~= */
+                return AlE;
+```
+
+```bash
+10501  2025-02-23 04:56:44 make regen-token regen-pegen
+10504  2025-02-23 04:59:27 make regen-ast
+10509  2025-02-23 05:02:51 rebuildpy
+```
+
+```console
+reading/6_Cpython_Internals/cpython3.9 on  main [✘!?] is 📦 v0.1.0 via 🐍 v3.9.21+ (cpython3-9-py3.9) ❯
+exit
+
+reading/6_Cpython_Internals/cpython3.9 on  main [✘!?] is 📦 v0.1.0 via 🐍 v3.10.12 took 20m49s ❯ poetry shell
+Spawning shell within /home/widehyo/.cache/pypoetry/virtualenvs/cpython3-9-DkvwWjd2-py3.9
+. /home/widehyo/.cache/pypoetry/virtualenvs/cpython3-9-DkvwWjd2-py3.9/bin/activate
+
+reading/6_Cpython_Internals/cpython3.9 on  main [✘!?] is 📦 v0.1.0 via 🐍 v3.10.12 ❯ . /home/widehyo/.cache/pypoetry/virtualenvs/cpython3-9-DkvwWjd2-py3.9/bin/activate
+
+reading/6_Cpython_Internals/cpython3.9 on  main [✘!?] is 📦 v0.1.0 via 🐍 v3.9.21+ (cpython3-9-py3.9) ❯ python
+Python 3.9.21+ (heads/3.9-dirty:ff4e5c25666, Feb 23 2025, 05:02:00)
+[GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import ast
+>>> m = ast.parse('1 ~= 2')
+>>> m.body[0]
+<ast.Expr object at 0x7f35017375f0>
+>>> m.body[0].vlaue
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Expr' object has no attribute 'vlaue'
+>>> m.body[0].value
+<ast.Compare object at 0x7f3501737b90>
+>>> m.body[0].value.ops[0]
+<ast.AlE object at 0x7f35016f5a50>
+>>>
+```
+
+
+```.vimrc
+nnoremap L :bn!<CR>
+nnoremap H :bp!<CR>
+nnoremap <leader>q :bp<bar>bd #<CR>
+nnoremap <leader>ls :ls<CR>
+
+nnoremap <leader>pp :call CaptureCommandOutputToClipboard('echo fnamemodify(expand("%"), ":~:.")')<CR>
+```
+
+```.bashrc
+alias runpy='/home/widehyo/gitclone/cpython/python'
+alias rebuildpy='make -j8 -s'
+```
+
+> 컴파일러 플래그 중 -O 플래그는 디버그 용도로 추가된 모든 assert 문을 비활성화하는 최적화를 실행하낟. 이 플래그는 PYTHONOPTIMIZE=1 환경 변수로도 활성화할 수 있다.
+
+
+6_Cpython_Internals/cpython3.9/cpython3 on  main [✘!?] via 🐍 v3.9.21+ (cpython3-9-py3.9) ❯ poetry add tabulate
+Using version ^0.9.0 for tabulate
+
+Updating dependencies
+Resolving dependencies... (0.2s)
+
+Package operations: 1 install, 0 updates, 0 removals
+
+  - Installing tabulate (0.9.0)
+
+
+```py
+import tabulate
+import symtable
+
+code = """
+def calc_pow(a, b):
+    return a ** b
+a = 1
+b = 2
+c = calc_pow(a,b)
+"""
+
+_st = symtable.symtable(code, "example.py", "exec")
+
+def show(table):
+    print("Symtable {0} ({1})".format(table.get_name(),
+                                      table.get_type()))
+    print(
+        tabulate.tabulate(
+            [
+                (
+                    symbol.get_name(),
+                    symbol.is_global(),
+                    symbol.is_local(),
+                    symbol.get_namespaces(),
+                )
+                for symbol in table.get_symbols()
+            ],
+            headers=["name", "global", "local", "namespaces"],
+            tablefmt="grid",
+        )
+    )
+    if table.has_children():
+        [show(child) for child in table.get_children()]
+
+show(_st)
+```
+
+```console
+6_Cpython_Internals/cpython3.9/cpython3 on  main [✘!?] via 🐍 v3.9.21+ (cpython3-9-py3.9) ❯ python symbiz.py
+Symtable top (module)
++----------+----------+---------+-----------------------------------------------------+
+| name     | global   | local   | namespaces                                          |
++==========+==========+=========+=====================================================+
+| calc_pow | True     | True    | [<Function SymbolTable for calc_pow in example.py>] |
++----------+----------+---------+-----------------------------------------------------+
+| a        | True     | True    | ()                                                  |
++----------+----------+---------+-----------------------------------------------------+
+| b        | True     | True    | ()                                                  |
++----------+----------+---------+-----------------------------------------------------+
+| c        | True     | True    | ()                                                  |
++----------+----------+---------+-----------------------------------------------------+
+Symtable calc_pow (function)
++--------+----------+---------+--------------+
+| name   | global   | local   | namespaces   |
++========+==========+=========+==============+
+| a      | False    | True    | ()           |
++--------+----------+---------+--------------+
+| b      | False    | True    | ()           |
++--------+----------+---------+--------------+
+```
