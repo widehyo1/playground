@@ -1,0 +1,171 @@
+\dn
+\du
+\l
+\c test_db;
+\t
+\dt
+\t
+\dt
+\du
+\c test_db
+\du
+grant all on all tables in schema playground to playground;
+\du
+drop role test;
+drop role playground;
+\dt
+select * from pg_user;
+select * from database_privs('test')
+;
+select * from database_privs('test');
+\du
+\du+
+select * from database_privs;
+select * from database_privs('test');
+select * from database_privs(test);
+select * from database_privs('test');
+select * from pg_roles;
+select * from pg_roles where oid='16388';
+grant usage on schema playground to test;
+grant select on all tables in schema playtround to test;
+grant select on all tables in schema playround to test;
+\dn
+grant select on all tables in schema playground to test;
+ALTER DEFAULT PRIVILEGES IN SCHEMA playground GRANT SELECT ON TABLES TO test;
+\dt playground.*
+CREATE TABLE playground.knowinfo_content (
+    page_num INTEGER,
+    page_content TEXT,
+    knowinfo_id INTEGER,
+    create_dt DATE,
+    modified_dt DATE
+);
+CREATE TABLE playground.knowinfo (
+    knowinfo_id INTEGER,
+    kor_name VARCHAR(100),
+    eng_name VARCHAR(100),
+    expln TEXT,
+    smummary VARCHAR(1000),
+    resource_code VARCHAR(100),
+    download_count INTEGER,
+    department_id INTEGER,
+    lcategory_name VARCHAR(100),
+    mcategory_name VARCHAR(100),
+    scategory_name VARCHAR(100),
+    del_yn CHAR(1),
+    create_dt DATE,
+    modified_dt DATE
+);
+\dt playground.*
+drop table playground.test_table;
+\dt
+\dS knowinfo
+\dS knowinfo_content
+GRANT INSERT, SELECT, DELETE, SELECT ON ALL TABLES IN SCHEMA playground TO test;
+\dt
+select * from knowinfo
+;
+\dS
+\dt
+\dS knowinfo
+\dS knowinfo_content 
+\c playground
+\dt
+\dS knowinfo
+\dS knowinfo_content 
+\dS playground.knowinfo
+\dS playground.knowinfo_content 
+alter table playground.knowinfo column knowinfo_id VARCHAR(100);
+alter table playground.knowinfo alter column knowinfo_id type VARCHAR(100);
+\c test_db
+\c playground
+\dt
+\dt playground.knowinfo
+\dS playground.knowinfo
+alter table playground.knowinfo alter column knowinfo_id type VARCHAR(100);
+alter table playground.knowinfo_content alter column knowinfo_id type VARCHAR(100);
+\dS playground.knowinfo
+\dS playground.knowinfo_content 
+select * from playground.knowinfo
+;
+select * from playground.knowinfo_content ;
+\dn
+show search_path;
+\dt
+\d
+\?
+\;
+\l;
+;
+\l;
+\?
+\db
+\d
+\?
+\dn
+\dl
+\l;
+\l
+\d todo
+set search_path = 'todo';
+\d
+\d
+\?
+\e
+select 1;
+\conninfo
+\s
+show search_path;
+\?
+\s
+\pset pager off
+\?
+\? variables
+$USER;
+USER
+;
+\set AUTOCOMMIT
+\set AUTOCOMMIT off
+\unset AUTOCOMMIT
+\prompt
+\prompt AUTOCOMMIT
+!pwd
+;
+\!pwd
+\!
+\?
+\e init.sql 
+CREATE TABLE health (
+    id SERIAL PRIMARY KEY,
+    first VARCHAR(50),
+    second VARCHAR(50)
+);
+
+INSERT INTO health(first, second) VALUES('health', 'check');
+\dt
+\e
+select *
+from health
+;
+\?
+\? copy
+\? \l
+\?
+\h
+\h CREATE TABLE
+\h SHOW
+SHOW ALL;
+SHOW hba_file;
+\dt
+\t
+\dt
+SHOW ALL
+;
+\pset pager off
+SHOW ALL;
+\?
+\getenv AUTOCOMMIT
+\getenv AUTOCOMMIT A
+\getenv
+\set
+\s qsql_hist.txt
