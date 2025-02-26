@@ -1,0 +1,4 @@
+alias cdr7='cd ~/gitclone/playground/reading/7_vim_mannual'
+alias awktest='awk -f ~/script.awk ~/temp.txt'
+alias jqtest='jq -f ~/script.jq ~/temp.json'
+alias curltest='curl --config ~/curlconfig.txt'

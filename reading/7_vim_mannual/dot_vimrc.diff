@@ -1,0 +1,16 @@
+57a58,60
+> set autoread
+> set cursorline
+> set gdefault
+70a74
+> nnoremap <leader>ap :r ! awk -f ~/script.awk ~/temp.txt<CR>
+77a82
+> nnoremap <leader>jp :r ! jq -f ~/script.jq ~/temp.json<CR>
+79a85,91
+>
+> " curl
+> nnoremap <leader>cs :e ~/curlconfig.txt<CR>
+> nnoremap <leader>ct :e ~/request.json<CR>
+> nnoremap <leader>cy :let @+ = system('curl --config ~/curlconfig.txt')<CR>
+> nnoremap <leader>cp :r ! curl --config ~/curlconfig.txt<CR>
+>
