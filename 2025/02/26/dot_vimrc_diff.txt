@@ -1,0 +1,5 @@
+
+" curl
+nnoremap <leader>cs :e ~/curlconfig.txt<CR>
+nnoremap <leader>cr :e ~/request.json<CR>
+
