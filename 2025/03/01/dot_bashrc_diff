@@ -1,0 +1,9 @@
+export TODAYMD="$TODAY/`date '+%Y%m%d'`.md"
+
+alias runawk='awk -f ~/script.awk ~/temp.txt'
+alias runjq='jq -f ~/script.jq ~/temp.json'
+alias runcurl='curl --config ~/script.curl'
+alias runnode='node ~/script.js'
+
+alias tarc='tar -czvf'
+alias tarx='tar -xzvf'

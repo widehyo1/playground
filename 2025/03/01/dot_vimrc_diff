@@ -1,0 +1,30 @@
+Plugin 'airblade/vim-gitgutter'
+
+" * enable/disable searchcount integration >
+let g:airline#extensions#searchcount#enabled = 1
+" * enable/disable displaying search term >
+let g:airline#extensions#searchcount#show_search_term = 1
+" * enable/disable csv integration for displaying the current column. >
+let g:airline#extensions#csv#enabled = 1
+
+" * enable/disable showing a summary of changed hunks under source control. >
+let g:airline#extensions#hunks#enabled = 1
+" * enable/disable showing only non-zero hunks. >
+let g:airline#extensions#hunks#non_zero_only = 0
+" * set hunk count symbols. >
+let g:airline#extensions#hunks#hunk_symbols = ['+', '~', '-']
+
+
+set hlsearch
+set incsearch
+
+set listchars=tab:>-,trail:«,space:•,lead:»
+
+nnoremap <leader>md :e $TODAYMD<CR>
+nnoremap <leader>h :noh<CR>
+
+" node
+nnoremap <leader>ns :e ~/script.js<CR>
+nnoremap <leader>nt :e ~/temp.html<CR>
+nnoremap <leader>ny :let @+ = system('node ~/script.js')<CR>
+nnoremap <leader>np :r ! node ~/script.js<CR>
