@@ -1,0 +1,5 @@
+{ gsub(/_quotes_/, "1") }
+{ gsub(/_alice_/, "1") }
+{ gsub(/_huck_/, "2") }
+{ gsub(/_bible_/, "3") }
+!/^[.]#/

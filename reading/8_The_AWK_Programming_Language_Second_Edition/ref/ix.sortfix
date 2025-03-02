@@ -1,0 +1,4 @@
+r ix.sort1
+$-1s/^$/\\\&/
+$s/	/\\f2tab\\fP/
+w ix.sortout

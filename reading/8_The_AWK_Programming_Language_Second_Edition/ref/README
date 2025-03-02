@@ -1,0 +1,20 @@
+These are all the program and data files for The AWK
+Programming Language, second edition.  Some of the early
+or tiniest examples, for example, from Chapter 1, do not
+appear here; they are inline in the text of the book.
+(That's not always a good idea, of course, since it
+prevents automated testing.)
+
+The beer review files have been compressed with gzip.
+
+There are also some extra files, not mentioned in the
+book, that might provide some test harness or extra data,
+or that might just be dregs that I failed to remove.  In
+the fullness of time, I hope to make this information more
+orderly, but don't hold your breath while waiting.
+
+Do let us know of any problems; mail to info@awk.dev.
+
+Thanks!
+
+Brian K

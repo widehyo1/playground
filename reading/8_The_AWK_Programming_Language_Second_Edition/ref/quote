@@ -1,0 +1,19 @@
+# quote - retrieve stock quotes for a list of tickers
+
+curl "https://bigcharts.marketwatch.com/quotes/\
+multi.asp?view=q&msymb=$1" 2>/dev/null |
+awk '
+  /<td class="symb-col"/ {
+     sub(/.*<td class="symb-col">/, "")
+     sub(/<.*/, "")
+     symb = $0
+     next
+  }
+  /<td class="last-col"/ {
+     sub(/.*<td class="last-col">/, "")
+     sub(/<.*/, "")
+     price = $0
+     gsub(/,/, "", price)
+     printf("%6s  %s\n", symb, price)
+  }
+'

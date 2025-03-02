@@ -1,0 +1,40 @@
+# local.check - check whether local variables are declared
+
+BEGIN { asplit("if else while for do return break continue in " \
+        "next nextfile exit BEGIN END print printf sprintf getline " \
+        "close flush system gsub index length match split sub substr " \
+        "atan2 cos exp int log rand sin sqrt srand toupper tolower ARGC ARGV " \
+        "FILENAME FNR FS NF NR CONVFMT OFMT OFS ORS RS RLENGTH RSTART " \
+        "ENVIRON SUBSEP", keys)   # put keywords into keys array
+      }
+
+/"/        { remove_strings() }      # remove strings,
+/^\// || /(match|sub)[(].*\// || /~[ ]*\// {
+             remove_regexprs() }     # regular exprs,
+/#/        { sub(/#.*/, "") }        # and comments
+           { isolate_variables() }
+
+/^function/ { for (i = 2; i <= NF; i++) args[$i]++; next } # collect args
+
+/./ { isolate_variables()
+      for (i = 1; i <= NF; i++)
+         if ( !($i in keys) )
+           args[$i]++
+}
+
+END  { print "The following names are used only once:"
+       for (i in args)
+           if (args[i] >= 1)
+               print "\t", i, args[i]
+}
+
+function remove_strings() { gsub(/"([^"]|\\")*"/, "") }
+function remove_regexprs() { gsub(/\/([^\/]|\\\/)+\//, "") }
+function isolate_variables() { gsub(/[^a-zA-Z_][^a-zA-Z_0-9()]*/, " ") }
+
+function asplit(str, arr) {  # make an assoc array from str
+    n = split(str, temp)
+    for (i = 1; i <= n; i++)
+        arr[temp[i]]++
+    return n
+}

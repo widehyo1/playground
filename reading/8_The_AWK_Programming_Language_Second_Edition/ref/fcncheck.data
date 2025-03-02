@@ -1,0 +1,5 @@
+/\/line\// { line++; printf("line %d: %s\n", lin) }
+
+function f(line,    i,j) {    # print a line
+    print line, i, k
+}

@@ -1,0 +1,6 @@
+function rest(n,   _s) {
+  _s = ""
+  while (n <= NF)
+    _s = _s $n++ " "
+  return substr(_s, 1, length(_s)-1)
+}

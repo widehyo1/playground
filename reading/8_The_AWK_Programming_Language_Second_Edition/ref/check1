@@ -1,0 +1,19 @@
+# check1 - print total deposits and checks
+
+/^check/   { chk = 1; next }
+/^deposit/ { dep = 1; next }
+/^amount/  { amt = $2; next }
+/^$/       { addup() }
+
+END        { addup()
+             printf("deposits $%.2f, checks $%.2f\n",
+                 deposits, checks)
+           }
+
+function addup() {
+    if (chk)
+        checks += amt
+    else if (dep)
+        deposits += amt
+    chk = dep = amt = 0
+}

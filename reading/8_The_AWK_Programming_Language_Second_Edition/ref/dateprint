@@ -1,0 +1,5 @@
+BEGIN {
+          "date" | getline date         # get todays' date
+          split(date, d); date = d[2] " " d[3] ", " d[6]
+	print date
+}

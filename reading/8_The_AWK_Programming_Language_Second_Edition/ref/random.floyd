@@ -1,0 +1,22 @@
+# permutation - print random permutation
+
+{ random($1, $2) }
+
+function random(k, n,    i, r) {
+    srand()
+    p = ""
+    for (i in A)
+        delete A[i]
+    for (i = n-k+1; i <= n; i++)
+        if ((r = randint(i)) in A) {
+            A[i] = 1
+            sub(r, r " " i, p)  # insert i after r in p
+        }
+        else {
+            A[r] = 1
+            p = r " " p         # insert r at front of p
+        }
+    print p
+}
+
+function randint(n) { return int(n*rand())+1 }

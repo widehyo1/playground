@@ -1,0 +1,9 @@
+# randk - print in order k random elements from a[1]..a[n]
+
+function randk(a, k, n,    i) {
+    for (i = 1; n > 0; i++)
+        if (rand() < k/n--) {
+            print a[i]
+            k--
+        }
+}

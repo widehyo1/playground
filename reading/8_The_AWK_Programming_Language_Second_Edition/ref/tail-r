@@ -1,0 +1,2 @@
+awk '{ line[NR] = $0 }
+ END { for (i = NR; i > NR-3; i--) print line[i] } ' $*

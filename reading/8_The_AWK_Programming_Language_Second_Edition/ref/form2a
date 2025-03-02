@@ -1,0 +1,19 @@
+# form2a - format countries by continent, pop density
+
+BEGIN { FS = ","
+        printf("%-15s %-10s %10s %7s %12s\n",
+            "CONTINENT", "COUNTRY", "POPULATION",
+            "AREA", "POP. DEN.")
+      }
+{ cont[NR] = $1; country[NR] = $2; pop[NR] = $3
+  area[NR] = $4; den[NR] = $5
+}
+END {
+  for (i = 1; i <= NR; i++) {
+    if (cont[i] != cont[i-1])
+      print ""
+    c = cont[i] == cont[i-1] ? "" : cont[i]
+    printf("%-15s %-10s %7d %10d %10.1f\n",
+            c, country[i], pop[i], area[i], den[i])
+  }
+}

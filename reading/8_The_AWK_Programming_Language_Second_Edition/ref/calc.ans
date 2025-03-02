@@ -1,0 +1,52 @@
+# calc3 - infix calculator
+
+NF > 0 {
+    f = 1
+    e = expr()
+    if (f <= NF) printf("error at %s\n", $f)
+    else printf("\t%.8g\n", e)
+}
+
+function expr(  e) {        # term | term [+-] term
+    e = term()
+    while ($f == "+" || $f == "-")
+        e = $(f++) == "+" ? e + term() : e - term()
+    return e
+}
+function term(  e) {        # more | more [*/] more
+    e = more()
+    while ($f == "*" || $f == "/")
+        e = $(f++) == "*" ? e * more() : e / more()
+    return e
+}
+function more(  e) {         # thing | thing ^ thing
+    e = thing()
+    while ($f == "^") {      # luckily awk has this operator
+        f++
+        e = e ^ more()       # a^b^c = a^(b^c)
+    }
+    return e
+}
+function thing(  e, x) {        # factor | function (factor)
+    x = $(f++)
+    if (x == "sin") e = sin(factor())
+    else if(x == "exp") e = exp(factor())
+    else {
+        f--
+        e = factor()
+    }
+    return e
+}  
+function factor(  e) {       # number | (expr)
+    if ($f ~ /^[-+]?([0-9]+[.]?[0-9]*|[.][0-9]+)$/) {
+        return $(f++)
+    } else if ($f == "(") {
+        f++; e = expr()
+        if ($(f++) != ")")
+            printf("missing )\n")
+        return e
+    } else {
+        printf("error at %s\n", $f)
+        return 0
+    }
+}

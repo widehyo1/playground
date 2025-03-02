@@ -1,0 +1,10 @@
+awk '
+BEGIN {
+	for (i = 1; i <= 220; i++) {
+		if (i == 100)
+			sum -= rand()
+		else
+			sum += rand()
+		printf("%4d %8.4f\n", i, sum)
+	}
+}'

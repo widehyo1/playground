@@ -1,0 +1,13 @@
+lex.o:
+0000000000000000 T startreg
+                 U strcmp
+00000000000003d0 T string
+                 U strlen
+                 U strtod
+
+lib.o:
+00000000000002f0 T eprint
+00000000000015f0 T errcheck
+0000000000000680 T error
+                 U exit
+                 U fclose

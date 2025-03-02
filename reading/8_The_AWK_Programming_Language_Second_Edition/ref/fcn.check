@@ -1,0 +1,50 @@
+# fcn.check - check use of awk variables and functions
+
+BEGIN { asplit("if else while for do return break continue in " \
+        "next nextfile exit BEGIN END print printf sprintf getline " \
+        "close flush system gsub index length match split sub substr " \
+        "atan2 cos exp int log rand sin sqrt srand toupper tolower ARGC ARGV " \
+        "FILENAME FNR FS NF NR CONVFMT OFMT OFS ORS RS RLENGTH RSTART " \
+        "ENVIRON", "SUBSEP", keys)   # put keywords into keys array
+      }
+
+/"/        { remove_strings() }      # remove strings,
+/^\// || /(match|sub)[(].*\// || /~[ ]*\// {
+             remove_regexprs() }     # regular exprs,
+/#/        { sub(/#.*/, "") }        # and comments
+/[{}]/     { braces += gsub(/{/, " ") - gsub(/}/, " ") # count {}
+             if (braces < 0) braces = 0
+           }
+
+           { gsub(/[^a-zA-Z_0-9()]+/, " "); gsub(/[()]/, " & ") }
+/function/ { use[fname=$2]++; $1 = $2 = ""
+             for (i = 3; i <= NF && $i != ")"; i++)
+                 args[$i " in " fname]++
+           }
+fname == "" { for (i = 1; i <= NF; i++) use[$i]++ }
+fname != "" { for (i = 1; i <= NF; i++) { # in a function
+                  if ($i in keys)
+                      continue
+                  if (($i " in " fname) in args)
+                      use[$i " in " fname]++
+                  else
+                      use[$i]++
+              }
+}
+braces == 0 { fname = "" }
+
+END  { print "The following names are used only once:"
+       for (i in use)
+           if (use[i] == 1 && !(i in keys) && i !~ /^[0-9()]/)
+               print "\t", i
+}
+
+function remove_strings() { gsub(/"([^"]|\\")*"/, "") }
+function remove_regexprs() { gsub(/\/([^\/]|\\\/)+\//, "") }
+
+function asplit(str, arr) {  # make an assoc array from str
+    n = split(str, temp)
+    for (i = 1; i <= n; i++)
+        arr[temp[i]]++
+    return n
+}

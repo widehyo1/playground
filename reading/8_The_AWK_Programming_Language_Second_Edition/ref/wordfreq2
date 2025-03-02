@@ -1,0 +1,12 @@
+# wordfreq2 - print number of occurrences of each word
+#     Input:  text
+#     Output: number-word pairs sorted by number
+
+    { for (i = 1; i <= NF; i++) {
+          gsub(/[.,:;!?()]/, "", $i)   # remove punctuation
+          count[$i]++
+      }
+    }
+END { for (w in count)
+          print count[w], w | "sort -rn"
+    }

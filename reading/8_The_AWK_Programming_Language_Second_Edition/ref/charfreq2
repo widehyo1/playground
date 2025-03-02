@@ -1,0 +1,12 @@
+# charfreq2 - alternate version of charfreq
+
+awk '
+{ n = length($0)
+  for (i = 1; i <= n; i++)
+    tab[substr($0, i, 1)]++
+}
+
+END {
+  for (i in tab)
+    print i "\t" tab[i]
+} ' $* | sort -k2 -nr

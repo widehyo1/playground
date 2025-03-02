@@ -1,0 +1,1 @@
+tbl ch8 | eqn -Taps | troff -Taps ../tmac.s ../macros -

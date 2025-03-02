@@ -1,0 +1,10 @@
+awk 'BEGIN { RS = ""; FS = "\n"
+        pat = "^" ARGV[1] "\t" ARGV[2] "$"
+        ARGC = 2
+        ARGV[1] = "-"
+print pat}
+{ for (i = 1; i <= NF; i++)
+      if ($i ~ pat)
+          print $0 "\n"
+}' "$1" "$2" < checks
+

@@ -1,0 +1,6 @@
+c--rw-rw-rw- 0 2 1 0 /dev/tty Sun Jun  1 20:21:31 1986 518055691
+d--rwxr-xr-x 0 2 17 592 / Tue Sep  9 20:03:58 1986 526694638
+-u-rwxr-xr-x 0 2 1 13472 /etc/su Thu Mar 14 10:49:38 1985 479663378
+L--rwxrwxrwx 170 2 1 14 /usr/rje Fri Jun  3 10:04:15 1983 423497055
+b--rw-r--r-- 0 2 1 0 /dev/ra01 Thu Nov 27 10:10:46 1986 533488246
+---rw-rw-r-- 170 1 1 426 /u/pjw/file.o Mon Jul 21 08:59:21 1986 522334761

@@ -1,0 +1,14 @@
+
+{ n = asplit($0, a)
+  print n, length(a)
+  for (i in a) print i, a[i]
+  #delete a
+}
+
+
+function asplit(str, arr,   n, i, temp) {  # make an indexed array from str
+    n = split(str, temp)
+    for (i = 1; i <= n; i++)
+        arr[temp[i]] = i
+    return n
+}

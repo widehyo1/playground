@@ -1,0 +1,43 @@
+# calc3 - infix calculator
+#     input:  expressions in standard infix notation
+#     output: value of each expression
+
+NF > 0 {
+    gsub(/[+\-*\/()]/, " & ")  # insert spaces around operators
+    nf = split($0, op)         # and parentheses
+    f = 1
+    e = expr()
+    if (f <= nf)
+        printf("error at %s\n", op[f])
+    else
+        printf("\t%.8g\n", e)
+}
+
+function expr(  e) {        # term | term [+-] term
+    e = term()
+    while (op[f] == "+" || op[f] == "-")
+        e = op[f++] == "+" ? e + term() : e - term()
+    return e
+}
+#P3
+function term(  e) {        # factor | factor [*/] factor
+    e = factor()
+    while (op[f] == "*" || op[f] == "/")
+        e = op[f++] == "*" ? e * factor() : e / factor()
+    return e
+}
+
+function factor(  e) {      # number | (expr)
+    if (op[f] ~ /^[+-]?([0-9]+[.]?[0-9]*|[.][0-9]+)$/) {
+        return op[f++]
+    } else if (op[f] == "(") {
+        f++
+        e = expr()
+        if (op[f++] != ")")
+            printf("error: missing ) at %s\n", op[f])
+        return e
+    } else {
+        printf("error: expected number or ( at %s\n", op[f])
+        return 0
+    }
+}

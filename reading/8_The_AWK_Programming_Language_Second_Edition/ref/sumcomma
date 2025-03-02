@@ -1,0 +1,4 @@
+# sumcomma - add up numbers containing commas
+
+    { gsub(/,/, ""); sum += $1 }
+END { print sum }

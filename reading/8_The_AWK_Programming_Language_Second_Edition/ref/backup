@@ -1,0 +1,3 @@
+rm foo* temp* junk*
+push snb [a-z]* /usr/bwk/book/C8
+touch backup
