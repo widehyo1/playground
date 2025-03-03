@@ -1,3 +1,48 @@
+			      Table Of Contents			*user-manual*
+
+==============================================================================
+Overview ~
+
+Getting Started
+|usr_01.txt|  About the manuals
+|usr_02.txt|  The first steps in Vim
+|usr_03.txt|  Moving around
+|usr_04.txt|  Making small changes
+|usr_05.txt|  Set your settings
+|usr_06.txt|  Using syntax highlighting
+|usr_07.txt|  Editing more than one file
+|usr_08.txt|  Splitting windows
+|usr_09.txt|  Using the GUI
+|usr_10.txt|  Making big changes
+|usr_11.txt|  Recovering from a crash
+|usr_12.txt|  Clever tricks
+
+Editing Effectively
+|usr_20.txt|  Typing command-line commands quickly
+|usr_21.txt|  Go away and come back
+|usr_22.txt|  Finding the file to edit
+|usr_23.txt|  Editing other files
+|usr_24.txt|  Inserting quickly
+|usr_25.txt|  Editing formatted text
+|usr_26.txt|  Repeating
+|usr_27.txt|  Search commands and patterns
+|usr_28.txt|  Folding
+|usr_29.txt|  Moving through programs
+|usr_30.txt|  Editing programs
+|usr_31.txt|  Exploiting the GUI
+|usr_32.txt|  The undo tree
+
+Tuning Vim
+|usr_40.txt|  Make new commands
+|usr_41.txt|  Write a Vim script
+|usr_42.txt|  Add new menus
+|usr_43.txt|  Using filetypes
+|usr_44.txt|  Your own syntax highlighted
+|usr_45.txt|  Select your language (locale)
+|usr_46.txt|  Write plugins using Vim9 script
+
+Making Vim Run
+|usr_90.txt|  Installing Vim
 
 
 Another way to move to a line is using the "%" command with a count.  For
@@ -1009,3 +1054,464 @@ By default, "b:#" is included.  This means that a line that starts with
 	current		use the current directory
 
 	:browse split /etc
+
+
+SPECIAL CHARACTERS
+inside a map command.  To include one, use <Bar> (five characters).  Example:
+>
+	:map <F8> :write <Bar> !checkin %:S<CR>
+When using a space inside a mapping, use <Space> (seven characters): >
+	:map <Space> W
+
+To make a key do nothing, map it to <Nop> (five characters).
+
+
+	:command DeleteFirst 1delete
+
+Now when you execute the command ":DeleteFirst" Vim executes ":1delete", which
+deletes the first line.
+
+	Note:
+	User-defined commands must start with a capital letter.  You cannot
+	use ":X", ":Next" and ":Print".  The underscore cannot be used!  You
+	can use digits, but this is discouraged.
+
+To list the user-defined commands, execute the following command: >
+
+	:command
+
+	:command -nargs=0 DeleteFirst 1delete
+	-nargs=0	No arguments
+	-nargs=1	One argument
+	-nargs=*	Any number of arguments
+	-nargs=?	Zero or one argument
+	-nargs=+	One or more arguments
+
+	:command -nargs=+ Say :echo "<args>"
+	:Say Hello World
+Vim echoes "Hello World".  However, if you add a double quote, it won't work.
+For example: >
+
+	:Say he said "hello"
+
+To get special characters turned into a string, properly escaped to use as an
+expression, use "<q-args>": >
+
+	:command -nargs=+ Say :echo <q-args>
+	:echo "he said \"hello\""
+
+The <f-args> keyword contains the same information as the <args> keyword,
+except in a format suitable for use as function call arguments.  For example:
+>
+	:command -nargs=* DoIt :call AFunction(<f-args>)
+	:DoIt a b c
+
+Executes the following command: >
+
+	:call AFunction("a", "b", "c")
+
+
+LINE RANGE
+	:command -range=% SaveIt :<line1>,<line2>write! save_file
+
+	-range		Range is allowed; default is the current line.
+	-range=%	Range is allowed; default is the whole file.
+	-range={count}	Range is allowed; the last number in it is used as a
+			single number whose default is {count}.
+When a range is specified, the keywords <line1> and <line2> get the values of
+the first and last line in the range.  For example, the following command
+defines the SaveIt command, which writes out the specified range to the file
+"save_file": >
+
+OTHER OPTIONS
+
+Some of the other options and keywords are as follows:
+
+	-count={number}		The command can take a count whose default is
+				{number}.  The resulting count can be used
+				through the <count> keyword.
+	-bang			You can use a !.  If present, using <bang> will
+				result in a !.
+	-register		You can specify a register.  (The default is
+				the unnamed register.)
+				The register specification is available as
+				<reg> (a.k.a. <register>).
+	-complete={type}	Type of command-line completion used.  See
+				|:command-completion| for the list of possible
+				values.
+	-bar			The command can be followed by | and another
+				command, or " and a comment.
+	-buffer			The command is only available for the current
+				buffer.
+
+Finally, you have the <lt> keyword.  It stands for the character <.  Use this
+to escape the special meaning of the <> items mentioned.
+
+
+REDEFINING AND DELETING
+
+To redefine the same command use the ! argument: >
+
+	:command -nargs=+ Say :echo "<args>"
+	:command! -nargs=+ Say :echo <q-args>
+	:delcommand SaveIt
+	:comclear
+
+	:function DateInsert()
+	:  $delete
+	:  read !date
+	:endfunction
+
+	:autocmd BufWritePre *  call DateInsert()
+
+	:autocmd [group] {events} {file-pattern} [++nested] {command}
+
+The [group] name is optional.  It is used in managing and calling the commands
+(more on this later).  The {events} parameter is a list of events (comma
+separated) that trigger the command.
+   {file-pattern} is a filename, usually with wildcards.  For example, using
+"*.txt" makes the autocommand be used for all files whose name end in ".txt".
+The optional [++nested] flag allows for nesting of autocommands (see below),
+and finally, {command} is the command to be executed.
+
+
+	:autocmd Filetype text  source ~/.vim/abbrevs.vim
+
+When starting to edit a new file, you could make Vim insert a skeleton: >
+
+	:autocmd BufNewFile *.[ch]  0read ~/skeletons/skel.c
+
+PATTERNS
+
+The {file-pattern} argument can actually be a comma-separated list of file
+patterns.  For example: "*.c,*.h" matches files ending in ".c" and ".h".
+   The usual file wildcards can be used.  Here is a summary of the most often
+used ones:
+
+	*		Match any character any number of times
+	?		Match any character once
+	[abc]		Match the character a, b or c
+	.		Matches a dot
+	a{b,c}		Matches "ab" and "ac"
+
+When the pattern includes a slash (/) Vim will compare directory names.
+Without the slash only the last part of a file name is used.  For example,
+"*.txt" matches "/home/biep/readme.txt".  The pattern "/home/biep/*" would
+also match it.  But "home/foo/*.txt" wouldn't.
+   When including a slash, Vim matches the pattern against both the full path
+of the file ("/home/biep/readme.txt") and the relative path (e.g.,
+"biep/readme.txt").
+
+    */boot/grub/menu.lst
+              setf grub
+    */boot/grub/grub.conf
+              setf grub
+
+0read ~/skeletons/skel.c
+
+autocmd markdown */widehyo1.github.io/_posts/*.md 0read ~/skeletons/skel.post
+
+DELETING
+
+To delete an autocommand, use the same command as what it was defined with,
+but leave out the {command} at the end and use a !.  Example: >
+
+	:autocmd! FileWritePre *
+
+LISTING
+
+To list all the currently defined autocommands, use this: >
+
+	:autocmd
+
+The list can be very long, especially when filetype detection is used.  To
+list only part of the commands, specify the group, event and/or pattern.  For
+example, to list all BufNewFile autocommands: >
+
+	:autocmd BufNewFile
+
+To list all autocommands for the pattern "*.c": >
+
+	:autocmd * *.c
+
+Using "*" for the event will list all the events.  To list all autocommands
+for the cprograms group: >
+
+	:autocmd cprograms
+
+GROUPS
+
+The {group} item, used when defining an autocommand, groups related autocommands
+together.  This can be used to delete all the autocommands in a certain group,
+for example.
+   When defining several autocommands for a certain group, use the ":augroup"
+command.  For example, let's define autocommands for C programs: >
+
+	:augroup cprograms
+	:  autocmd BufReadPost *.c,*.h :set sw=4 sts=4
+	:  autocmd BufReadPost *.cpp   :set sw=3 sts=3
+	:augroup END
+
+This will do the same as: >
+
+	:autocmd cprograms BufReadPost *.c,*.h :set sw=4 sts=4
+	:autocmd cprograms BufReadPost *.cpp   :set sw=3 sts=3
+
+To delete all autocommands in the "cprograms" group: >
+
+	:autocmd! cprograms
+
+
+EXECUTING AUTOCOMMANDS
+
+It is possible to trigger an autocommand by pretending an event has occurred.
+This is useful to have one autocommand trigger another one.  Example: >
+
+	:autocmd BufReadPost *.new  execute "doautocmd BufReadPost " . expand("<afile>:r")
+
+This defines an autocommand that is triggered when a new file has been edited.
+The file name must end in ".new".  The ":execute" command uses expression
+evaluation to form a new command and execute it.  When editing the file
+"tryout.c.new" the executed command will be: >
+
+	:doautocmd BufReadPost tryout.c
+
+The expand() function takes the "<afile>" argument, which stands for the file
+name the autocommand was executed for, and takes the root of the file name
+with ":r".
+
+	:autocmd BufReadPost *.log normal G
+
+
+
+`~/.vim/ftplugin/markdown.vim`
+```vim
+inoremap \post; ---<CR>layout: post<CR>title: post title<CR>subtitle: post subtitle<CR>tags: [tag]<CR>comments: true<CR>author: widehyo<CR>---
+```
+
+
+
+~/.vim/ftplugin/vim.vim
+```vim
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+iabbrev \while; while condition<CR>statements<CR>endwhile
+iabbrev \for; for item in group<CR>statements<CR>endfor
+
+vnoremap gcc :s/^/" /<CR>
+```
+
+There are more kinds of variables, see |internal-variables|.  The most often
+used ones are:
+
+	b:name		variable local to a buffer
+	w:name		variable local to a window
+	g:name		global variable (also in a function)
+	v:name		variable predefined by Vim
+
+	var name: string
+	var age: number
+
+	var name = "he is \"Peter\""
+	echo name
+<	he is "Peter" ~
+
+To avoid the need for a backslash, you can use a string in single quotes: >
+
+	var name = 'he is "Peter"'
+	echo name
+<	he is "Peter" ~
+
+Inside a single-quote string all the characters are as they are.  Only the
+single quote itself is special: you need to use two to get one.  A backslash
+is taken literally, thus you can't use it to change the meaning of the
+character after it: >
+
+	var name = 'P\e''ter'''
+	echo name
+<	P\e'ter' ~
+
+
+	\t		<Tab>
+	\n		<NL>, line break
+	\r		<CR>, <Enter>
+	\e		<Esc>
+	\b		<BS>, backspace
+	\"		"
+	\\		\, backslash
+	\<Esc>		<Esc>
+	\<C-W>		CTRL-W
+
+This uses "#" to start a comment, more about that later.
+
+	$NAME		environment variable
+	&name		option
+	@r		register
+
+	var save_ic = &ic
+	set noic
+	s/The Start/The Beginning/
+	&ic = save_ic
+
+	if v:version >= 700
+	  echo "congratulations"
+	else
+	  echo "you are using an old version, upgrade!"
+	endif
+
+Here "v:version" is a variable defined by Vim, which has the value of the Vim
+
+If you don't want to execute a string but evaluate it to get its expression
+value, you can use the eval() function: >
+
+	var optname = "path"
+	var optvalue = eval('&' .. optname)
+
+A "&" character is prepended to "path", thus the argument to eval() is
+"&path".  The result will then be the value of the 'path' option.
+
+Popup window:					*popup-window-functions*
+	popup_create()		create popup centered in the screen
+	popup_atcursor()	create popup just above the cursor position,
+				closes when the cursor moves away
+	popup_beval()		at the position indicated by v:beval_
+				variables, closes when the mouse moves away
+	popup_notification()	show a notification for three seconds
+	popup_dialog()		create popup centered with padding and border
+	popup_menu()		prompt for selecting an item from a list
+	popup_hide()		hide a popup temporarily
+	popup_show()		show a previously hidden popup
+	popup_move()		change the position and size of a popup
+	popup_setoptions()	override options of a popup
+	popup_settext()		replace the popup buffer contents
+	popup_close()		close one popup
+	popup_clear()		close all popups
+	popup_filter_menu()	select from a list of items
+	popup_filter_yesno()	block until 'y' or 'n' is pressed
+	popup_getoptions()	get current options for a popup
+	popup_getpos()		get actual position and size of a popup
+	popup_findinfo()	get window ID for popup info window
+	popup_findpreview()	get window ID for popup preview window
+	popup_list()		get list of all popup window IDs
+	popup_locate()		get popup window ID from its screen position
+
+
+LISTING FUNCTIONS
+
+The `function` command lists the names and arguments of all user-defined
+functions: >
+
+	:function
+<	def <SNR>86_Show(start: string, ...items: list<string>) ~
+	function GetVimIndent() ~
+	function SetSyn(name) ~
+
+The "<SNR>" prefix means that a function is script-local.  |Vim9| functions
+wil start with "def" and include argument and return types.  Legacy functions
+are listed with "function".
+
+
+To see what a function does, use its name as an argument for `function`: >
+
+	:function SetSyn
+<	1     if &syntax == '' ~
+	2       let &syntax = a:name ~
+	3     endif ~
+	   endfunction ~
+
+
+FUNCTION REFERENCES
+
+Sometimes it can be useful to have a variable point to one function or
+another.  You can do it with function reference variable.  Often shortened to
+"funcref".  Example: >
+
+	def Right()
+	  return 'Right!'
+	enddef
+	def Wrong()
+	  return 'Wrong!'
+	enddef
+	
+	var Afunc = g:result == 1 ? Right : Wrong
+	Afunc()
+<	Wrong! ~
+
+This assumes "g:result" is not one.
+
+Note that the name of a variable that holds a function reference must start
+with a capital.  Otherwise it could be confused with the name of a builtin
+function.
+
+More information about defining your own functions here: |user-functions|.
+
+
+RESTORING THE VIEW
+
+Sometimes you want to make a change and go back to where the cursor was.
+Restoring the relative position would also be nice, so that the same line
+appears at the top of the window.
+
+This example yanks the current line, puts it above the first line in the file
+and then restores the view: >
+
+	map ,p ma"aYHmbgg"aP`bzt`a
+
+What this does: >
+	ma"aYHmbgg"aP`bzt`a
+<	ma			set mark a at cursor position
+	  "aY			yank current line into register a
+	     Hmb		go to top line in window and set mark b there
+		gg		go to first line in file
+		  "aP		put the yanked line above it
+		     `b		go back to top line in display
+		       zt	position the text in the window as before
+			 `a	go back to saved cursor position
+
+FIRST LINE
+>
+  1	vim9script noclear
+
+You need to use `vimscript` as the very first command.  Best is to put it in
+the very first line.
+
+menu File.Save  :update
+
+	setlocal softtabstop=4
+	noremap <buffer> <LocalLeader>c o/**************<CR><CR>/<Esc>
+
+The ":map <buffer>" command creates a mapping that is local to the current
+buffer.  This works with any mapping command: ":map!", ":vmap", etc.  The
+|<LocalLeader>| in the mapping is replaced with the value of the
+"maplocalleader" variable.
+
+
+*43.2*	Adding a filetype
+
+If you are using a type of file that is not recognized by Vim, this is how to
+get it recognized.  You need a runtime directory of your own.  See
+|your-runtime-dir| above.
+
+Create a file "filetype.vim" which contains an autocommand for your filetype.
+(Autocommands were explained in section |40.3|.)  Example: >
+
+	augroup filetypedetect
+	au BufNewFile,BufRead *.xyz	setf xyz
+	augroup END
+
+This will recognize all files that end in ".xyz" as the "xyz" filetype.  The
+":augroup" commands put this autocommand in the "filetypedetect" group.  This
+allows removing all autocommands for filetype detection when doing ":filetype
+off".  The "setf" command will set the 'filetype' option to its argument,
+unless it was set already.  This will make sure that 'filetype' isn't set
+twice.
+
+
+	1. filetype.vim files before $VIMRUNTIME in 'runtimepath'
+	2. first part of $VIMRUNTIME/filetype.vim
+	3. all scripts.vim files in 'runtimepath'
+	4. remainder of $VIMRUNTIME/filetype.vim
+	5. filetype.vim files after $VIMRUNTIME in 'runtimepath'
+
