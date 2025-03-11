@@ -99,3 +99,11 @@ END {
   }
 } ' $*
 
+
+`custom_script`
+```
+awk 'program' $*
+```
+을 작성한다는 것은 새로운 custom_script를 작성하겠다는 것이다.
+
+
