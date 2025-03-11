@@ -70,3 +70,32 @@ fInt _ = ()
 unit :: a -> ()
 unit _ = ()
 ```
+
+---
+
+
+[[번역] 프로그래머를 위한 카테고리 이론 - 3. 다양한 카테고리들 | Evans Library](https://evan-moon.github.io/2024/02/13/category-theory-for-programmers-3-categories-great-and-small)
+
+대상들간의 사상이 "작거나 같음"으로 나타나는관계를 가진 카테고리
+
+1. 항등사상이 존재하는가?
+모든 대상은 자기 자신보다 작거나 같으므로 답은 참이다.
+
+[https://en.wikipedia.org/wiki/Category_theory](https://en.wikipedia.org/wiki/Category_theory)
+
+
+A category \text{C} consists of the following three mathematical entities:
+- A class \text{ob}(\text{C}), whose elements are called objects,
+- A class \text{hom}(\text{C}), whose elements are called morphisms or maps or arrows.
+\quad Each morphism \text{f} has a \text{source object} a and \text{target object} b.
+\quad The expression \text{f} : \text{a} \to \text{b} would be verbally stated as "\text{f} is a morphism from \text{a} to \text{b}".
+\quad The expression \text{hom}(\text{a}, \text{b}) - alternatively expressed as \text{hom}_{C}(\text{a}, \text{b}), \text{mor}(\text{a}, \text{b}), or \text{C}(\text{a}, \text{b}) - denotes the \text{hom-class} of all morphisms from \text{a} to \text{b}.
+- A binary operation \circ, called \text{composition of morphisms}, such that for any three objects \text{a}, \text{b}, and \text{c}, we have
+\quad \circ : \text{hom}(\text{b}, \text{c}) \x \text{hom}(\text{a}, \text{b}) \to \text{hom}(\text{a}, \text{c})
+The composition of \text{f} : \text{a} \to \text{b} and \text{g} : \text{b} \to \text{c} is written as \text{g} \circ \text{f} or \text{gf}, governed by two axioms:
+\quad \quad 1. Associativity: if \text{f} : \text{a} \to \text{b}, \text{g} : \text{b} \to \text{c}, and \text{h} :\text{c} \to \text{d} then
+\quad \text{g} \circ (\text{g} \circ \text{f}) \eq (\text{h} \circ \text{g}) \circ \text{f}
+\quad \quad 2. Identity: For every object \x, there exists a morphism 1_{x} : \text{x} \to \text{x} (also denoted as \text{id}_{x} called the \text{identity morphism} for \text{x}, such that for every morphism \text{f} : \text{a} \to \text{b}, we have
+\quad 1_{b} \circ \text{f} \eq \text{f} \eq \text{f} \circ 1_{a}
+From the axioms, it can be proved that there is exactly one \text{identity morphism} for every object.
+
