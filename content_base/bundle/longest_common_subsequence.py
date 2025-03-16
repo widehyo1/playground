@@ -41,7 +41,7 @@ def longest_common_subsequence(x: str, y: str) -> str:
         matrix
         """
         assert row > 0, f"invalid row index({row}) found"
-        assert col > 0, f"invalid row index({col}) found"
+        assert col > 0, f"invalid col index({col}) found"
 
         if tx[row] == ty[col]:
             value, dirction = matrix[row-1][col-1]
