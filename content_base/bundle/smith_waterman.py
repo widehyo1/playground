@@ -40,18 +40,18 @@ LEFT = Direction.LEFT
 UPLEFT = Direction.UPLEFT
 
 
-def needleman_wunsch(x: str, y: str) -> str:
+def smith_waterman(x: str, y: str) -> str:
     def calc_element_value(
         row: int,
         col: int,
         /,
-        match_value: int = 1,
-        mis_match_value: int = -1,
-        gap_penalty: int = -1,
+        match_value: int = 3,
+        mis_match_value: int = -3,
+        gap_penalty: int = -2,
     ) -> tuple:
         """
         closure for calculate matrix with free variable:
-        matrix, tx, ty
+        matrix, tx, ty, score, backtrace_point_list
         """
         assert row > 0, f"invalid row index({row}) found"
         assert col > 0, f"invalid col index({col}) found"
@@ -75,6 +75,20 @@ def needleman_wunsch(x: str, y: str) -> str:
         element_value = max(candidate_l, candidate_up, candidate_diag)
         element_direction = DEFAULT
 
+        if element_value < 0:
+            matrix[row][col] = (0, element_direction)
+            return max(score, element_value)
+
+        if element_value > score:
+            # if new maximum score is seen
+            # reset backtrace_point_list with the element
+            backtrace_point_list.clear()
+            backtrace_point_list.append((row, col, "", ""))
+        elif element_value == score:
+            # if the element is of maximum score
+            # append it
+            backtrace_point_list.append((row, col, "", ""))
+
         base_direction = UP | LEFT | UPLEFT
 
         if element_value == candidate_l:
@@ -88,7 +102,7 @@ def needleman_wunsch(x: str, y: str) -> str:
 
         matrix[row][col] = (element_value, element_direction)
 
-        return matrix[row][col]
+        return max(element_value, score)
 
     if len(x) == 0 or len(y) == 0:
         return ""
@@ -99,55 +113,39 @@ def needleman_wunsch(x: str, y: str) -> str:
     col_cnt = len(ty)
 
     matrix = [[(0, DEFAULT)] * col_cnt for _ in range(row_cnt)]
-    # initialize first row
-    for idx, _ in enumerate(matrix[0]):
-        matrix[0][idx] = (-idx, DEFAULT)
-    # initialize first column
-    for idx, _ in enumerate(matrix):
-        matrix[idx][0] = (-idx, DEFAULT)
+
+    score = 0
+    backtrace_point_list = []
 
     for ix in range(1, row_cnt):
         for iy in range(1, col_cnt):
-            calc_element_value(ix, iy)
+            score = calc_element_value(ix, iy)
     visualized_matrix(tx, ty, matrix)
 
-    cur_row = row_cnt - 1
-    cur_col = col_cnt - 1
-    x_result = ""
-    y_result = ""
+    print(f"{score=}")
+    print(f"{backtrace_point_list=}")
 
-    stack = [(cur_row, cur_col, x_result, y_result)]
+    stack = backtrace_point_list
 
     result_list = []
     result_set = set()
 
     while stack:
         cur_row, cur_col, x_result, y_result = stack.pop()
-        # base condition
-        if cur_row == 0:
-            y_result = cur_col * "-" + y_result
-            if (x_result, y_result) not in result_set:
-                result_set.add((x_result, y_result))
-                result_list.append((x_result, y_result))
-            if len(stack) > 1:
-                stack.pop()
-            continue
-        if cur_col == 0:
-            x_result = cur_row * "-" + x_result
-            if (x_result, y_result) not in result_set:
-                result_set.add((x_result, y_result))
-                result_list.append((x_result, y_result))
-            if len(stack) > 1:
-                stack.pop()
-            continue
-
         cur_item = matrix[cur_row][cur_col]
         cur_value, cur_direction = cur_item
 
+        # base condition
+        if cur_direction == DEFAULT:
+            result_list.append((x_result, y_result))
+            continue
+
         if cur_direction & UP:
             stack.append((cur_row - 1, cur_col, "-" + x_result, y_result))
+            continue
         if cur_direction & LEFT:
             stack.append((cur_row, cur_col - 1, x_result, "-" + y_result))
+            continue
         if cur_direction & UPLEFT:
             stack.append(
                 (
@@ -157,9 +155,10 @@ def needleman_wunsch(x: str, y: str) -> str:
                     ty[cur_col] + y_result,
                 )
             )
+            continue
         elif cur_direction is DEFAULT:
             print("error")
-            break
+            continue
     return result_list
 
 
@@ -176,7 +175,7 @@ def reducer(acc, cur) -> str:
 
 
 if __name__ == "__main__":
-    x = "XMJYAUZ"
-    y = "MZJAWXU"
-    result = needleman_wunsch(x, y)
+    x = "GGTTGACTA"
+    y = "TGTTACGG"
+    result = smith_waterman(x, y)
     print(result)
