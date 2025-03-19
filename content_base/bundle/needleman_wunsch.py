@@ -1,43 +1,33 @@
 from typing import List
-from enum import Flag, auto
 from functools import reduce
 from pprint import pprint, pformat
 
 
-class Direction(Flag):
-    DEFAULT = auto()
-    UP = auto()
-    LEFT = auto()
-    UPLEFT = auto()
+class Direction:
+    def __init__(self, val: int = 0b000):
+        """
+        self.val is a representation of direction
+        up:      0b001
+        left:    0b010
+        upleft:  0b100
+        default: 0b000
 
-    def __hash__(self):
-        return hash(self.value)
-
-    def __eq__(self, other):
-        if type(self) != type(other):
-            return False
-        return self.value == other.value
+        each direction acts as a flag, thus it can be overrapped
+        """
+        self.val = val
 
     def __repr__(self):
-        name_info = {
-            "DEFAULT": "-",
-            "UP": "↑",
-            "LEFT": "←",
-            "UPLEFT": "↖",
-        }
+        rep_list = []
+        if self.val & 0b001:  # test it contains up direction
+            rep_list.append("↑")
+        if self.val & 0b010:  # test it contains left direction
+            rep_list.append("←")
+        if self.val & 0b100:  # test it contains upleft direction
+            rep_list.append("↖")
 
-        # If it's a single flag, return the mapped symbol
-        if self._value_ in name_info:
-            return name_info[self.name]
-        # Otherwise, return a combination of flags
-        active_flags = [name_info[flag.name] for flag in Direction if (self & flag)]
-        return "|".join(active_flags)
-
-
-DEFAULT = Direction.DEFAULT
-UP = Direction.UP
-LEFT = Direction.LEFT
-UPLEFT = Direction.UPLEFT
+        if len(rep_list) == 0:
+            return "-"
+        return "|".join(rep_list)
 
 
 def needleman_wunsch(x: str, y: str) -> str:
@@ -73,18 +63,14 @@ def needleman_wunsch(x: str, y: str) -> str:
         candidate_diag = diag_value + s_value
 
         element_value = max(candidate_l, candidate_up, candidate_diag)
-        element_direction = DEFAULT
+        element_direction = Direction()
 
-        base_direction = UP | LEFT | UPLEFT
-
-        if element_value == candidate_l:
-            element_direction |= LEFT
         if element_value == candidate_up:
-            element_direction |= UP
+            element_direction.val |= 0b001
+        if element_value == candidate_l:
+            element_direction.val |= 0b010
         if element_value == candidate_diag:
-            element_direction |= UPLEFT
-
-        element_direction = element_direction & base_direction
+            element_direction.val |= 0b100
 
         matrix[row][col] = (element_value, element_direction)
 
@@ -98,13 +84,13 @@ def needleman_wunsch(x: str, y: str) -> str:
     row_cnt = len(tx)
     col_cnt = len(ty)
 
-    matrix = [[(0, DEFAULT)] * col_cnt for _ in range(row_cnt)]
+    matrix = [[(0, Direction())] * col_cnt for _ in range(row_cnt)]
     # initialize first row
     for idx, _ in enumerate(matrix[0]):
-        matrix[0][idx] = (-idx, DEFAULT)
+        matrix[0][idx] = (-idx, Direction())
     # initialize first column
     for idx, _ in enumerate(matrix):
-        matrix[idx][0] = (-idx, DEFAULT)
+        matrix[idx][0] = (-idx, Direction())
 
     for ix in range(1, row_cnt):
         for iy in range(1, col_cnt):
@@ -144,11 +130,11 @@ def needleman_wunsch(x: str, y: str) -> str:
         cur_item = matrix[cur_row][cur_col]
         cur_value, cur_direction = cur_item
 
-        if cur_direction & UP:
+        if cur_direction.val & 0b001:
             stack.append((cur_row - 1, cur_col, "-" + x_result, y_result))
-        if cur_direction & LEFT:
+        if cur_direction.val & 0b010:
             stack.append((cur_row, cur_col - 1, x_result, "-" + y_result))
-        if cur_direction & UPLEFT:
+        if cur_direction.val & 0b100:
             stack.append(
                 (
                     cur_row - 1,
@@ -157,7 +143,7 @@ def needleman_wunsch(x: str, y: str) -> str:
                     ty[cur_col] + y_result,
                 )
             )
-        elif cur_direction is DEFAULT:
+        if cur_direction.val == 0b000:
             print("error")
             break
     return result_list
