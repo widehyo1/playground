@@ -161,7 +161,10 @@ def reducer(acc, cur) -> str:
 
 
 if __name__ == "__main__":
-    x = "GGTTGACTA"
-    y = "TGTTACGG"
+    # x = "buf"
+    # x = "gitwatbufplay"
+    x = "watsmibuffe"
+    y = "/home/widehyo/gitclone/playground/content_base/bundle/buffer_fzf.vim"
+    # y = "/home/widehyo/gitclone/playground/content_base/bundle/smith_waterman.py"
     result = smith_waterman(x, y)
     print(result)

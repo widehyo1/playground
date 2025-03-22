@@ -1,0 +1,515 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/widehyo/gitclone/playground/2025/02/17
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 209
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 51
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 810
+    content: "\e[?2004h\r\n\e[1;36m2025/02/17\e[0m on \e[1;35m \e[0m\e[1;35mmain\e[0m \e[1;31m[\e[0m\e[1;31m✘\e[0m\e[1;31m!\e[0m\e[1;31m?\e[0m\e[1;31m]\e[0m via \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.10.12\e[0m\e[1;33m \e[0m\e[1;32m❯\e[0m "
+  - delay: 797
+    content: v
+  - delay: 80
+    content: i
+  - delay: 57
+    content: ' '
+  - delay: 672
+    content: d
+  - delay: 169
+    content: e
+  - delay: 183
+    content: 'mo.py '
+  - delay: 430
+    content: "\r\n\e[?2004l\r"
+  - delay: 124
+    content: "\e[?1049h\e[22;0;0t\e[>4;2m\e[?1h\e=\e[?2004h\e[?1004h\e[1;51r\e[?12h\e[?12l\e[22;2t\e[22;1t\e[27m\e[23m\e[29m\e[m\e[38;5;188m\e[48;5;233m\e[H\e[2J\e[?25l\e[51;1H\"demo.py\" 25L, 586B"
+  - delay: 75
+    content: "\e[2;1H▽\e[6n\e[2;1H  \e[3;1H\ePzz\e\\\e[0%m\e[6n\e[3;1H           \e[1;1H\e[>c\e]10;?\a\e]11;?\a"
+  - delay: 12
+    content: "\e[1;1H\e[48;5;234m                               \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;16m|\e[2;32H|\e[3;32H|\e[4;32H|\e[5;32H|\e[6;32H|\e[7;32H|\e[8;32H|\e[9;32H|\e[10;32H|\e[11;32H|\e[12;32H|\e[13;32H|\e[14;32H|\e[15;32H|\e[16;32H|\e[17;32H|\e[18;32H|\e[19;32H|\e[20;32H|\e[21;32H|\e[22;32H|\e[23;32H|\e[24;32H|\e[25;32H|\e[26;32H|\e[27;32H|\e[28;32H|\e[29;32H|\e[30;32H|\e[31;32H|\e[32;32H|\e[33;32H|\e[34;32H|\e[35;32H|\e[36;32H|\e[37;32H|\e[38;32H|\e[39;32H|\e[40;32H|\e[41;32H|\e[42;32H|\e[43;32H|\e[44;32H|\e[45;32H|\e[46;32H|\e[47;32H|\e[48;32H|\e[49;32H|\e[m\e[38;5;188m\e[48;5;233m\e[2;1H\e[38;5;240m\e[48;5;233m~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                              \r\n~                      "
+  - delay: 10
+    content: "        \r\n~                              \r\n~                              \r\n~                              \e[m\e[38;5;188m\e[48;5;233m\r\n\e[38;5;189m\e[48;5;25m<itclone/playground/2025/02/17 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;16m\e[48;5;253m \e[m\e[38;5;188m\e[48;5;233m\e[1;33H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;110mfrom\e[m\e[38;5;188m\e[48;5;233m typing \e[38;5;110mimport\e[m\e[38;5;188m\e[48;5;233m List, Optional\e[2;33H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;110mfrom\e[m\e[38;5;188m\e[48;5;233m datetime \e[38;5;110mimport\e[m\e[38;5;188m\e[48;5;233m datetime\e[2;66H\e[K\e[3;33H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;110mfrom\e[m\e[38;5;188m\e[48;5;233m dataclasses \e[38;5;110mimport\e[m\e[38;5;188m\e[48;5;233m dataclass\e[3;70H\e[K\e[4;33H\e[38;5;59m\e[48;5;233m  4 \e[5;33H  5 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;110m@\e[m\e[38;5;188m\e[48;5;233m\e[38;5;222mdataclasses\e[m\e[38;5;188m\e[48;5;233m\e[6;33H\e[38;5;59m\e[48;5;233m  6 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103mclass\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mDemo\e[m\e[38;5;188m\e[48;5;233m:\e[7;33H\e[38;5;59m\e[48;5;233m  7 \e[m\e[38;5;188m\e[48;5;233m    name : Optional[\e[38;5;222mstr\e[m\e[38;5;188m\e[48;5;233m] = \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m\e[8;33H\e[38;5;59m\e[48;5;233m  8 \e[m\e[38;5;188m\e[48;5;233m    value : Optional[\e[38;5;222mint\e[m\e[38;5;188m\e[48;5;233m] = \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m\e[9;33H\e[38;5;59m\e[48;5;233m  9 \e[m\e[38;5;188m\e[48;5;233m    created_at : Optional[datetime] = \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m\e[10;33H\e[38;5;59m\e[48;5;233m 10 \e[m\e[38;5;188m\e[48;5;233m    modified_at : Optional[datetime] = \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m\e[11;33H\e[38;5;59m\e[48;5;233m 11 \e[12;33H 12 \e[13;33H 13 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;110m@\e[m\e[38;5;188m\e[48;5;233m\e[38;5;222mdataclasses\e[m\e[38;5;188m\e[48;5;233m\e[14;33H\e[38;5;59m\e[48;5;233m 14 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103mclass\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mDemoWrapper\e[m\e[38;5;188m\e[48;5;233m:\e[15;33H\e[38;5;59m\e[48;5;233m 15 \e[m\e[38;5;188m\e[48;5;233m    meta_information : Optional[\e[38;5;222mstr\e[m\e[38;5;188m\e[48;5;233m] = \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m\e[16;33H\e[38;5;59m\e[48;5;233m 16 \e[m\e[38;5;188m\e[48;5;233m    demo : Optional[Demo] = \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m\e[17;33H\e[38;5;59m\e[48;5;233m 17 \e[18;33H 18 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;110m@\e[m\e[38;5;188m\e[48;5;233m\e[38;5;222mclassmethod\e[m\e[38;5;188m\e[48;5;233m\e[19;33H\e[38;5;59m\e[48;5;233m 19 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mdef\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mto_demo\e[m\e[38;5;188m\e[48;5;233m(cls):\e[20;33H\e[38;5;59m\e[48;5;233m 20 \e[m\e[38;5;188m\e[48;5;233m\e[8C\e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m Demo(\e[21;33H\e[38;5;59m\e[48;5;233m 21 \e[m\e[38;5;188m\e[48;5;233m\e[12Cname = name,\e[22;33H\e[38;5;59m\e[48;5;233m 22 \e[m\e[38;5;188m\e[48;5;233m\e[12Cvalue = value,\e[23;33H\e[38;5;59m\e[48;5;233m 23 \e[m\e[38;5;188m\e[48;5;233m\e[12Ccreated_at = created_at,\e[24;33H\e[38;5;59m\e[48;5;233m 24 \e[m\e[38;5;188m\e[48;5;233m\e[12Cmodified_at = modified_at,\e[25;33H\e[38;5;59m\e[48;5;233m 25 \e[m\e[38;5;188m\e[48;5;233m\e[8C)\e[26;33H\e[38;5;240m\e[48;5;233m~                                                                                                                                                                                \e[27;33H~                                                                                                                                                                                \e[28;33H~                                                                                                                                                                                \e[29;33H~                                                                                                                                                                                \e[30;33H~                                                                                                                                                                                \e[31;33H~                                                                                                                                                                                \e[32;33H~                                                                                                                                                                                \e[33;33H~                                                                                                                                                                                \e[34;33H~                                                                                                                                                                                \e[35;33H~                                                                                                                                                                                \e[36;33H~                                                                                                                                                                                \e[37;33H~                                                                                                                                                                                \e[38;33H~                                                                                                                                                                                \e[39;33H~                                                                                                                                                                                \e[40;33H~                                                                                                                                                                                \e[41;33H~                                                                                                                                                                                "
+  - delay: 9
+    content: "\e[42;33H~                                                                                                                                                                                \e[43;33H~                                                                                                                                                                                \e[44;33H~                                                                                                                                                                                \e[45;33H~                                                                                                                                                                                \e[46;33H~                                                                                                                                                                                \e[47;33H~                                                                                                                                                                                \e[48;33H~                                                                                                                                                                                \e[49;33H~                                                                                                                                                                                \e[m\e[38;5;188m\e[48;5;233m\e[50;33H\e[38;5;59m\e[48;5;233m demo.py                                                                                                                                     python  utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;235m 4% ㏑:1/25☰℅\e[50;207H:1 \e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[K"
+  - delay: 33
+    content: "\e[1;1H\e[38;5;107m\" Press ? for help\e[m\e[38;5;188m\e[48;5;233m             \r\n                               \r\n\e[38;5;186m.. (up a dir)\e[m\e[38;5;188m\e[48;5;233m                  \r\n\e[38;5;103m\e[48;5;234m</playground/2025/02/17/\e[m\e[38;5;188m\e[48;5;233m\e[48;5;234m       \e[m\e[38;5;188m\e[48;5;233m\r\n  20250217.md                  \r\n  demo.py                      \r\n  dot_vimrc                    \r\n  script_as_code_generator.yml \e[50;1H\e[38;5;243m\e[48;5;235m<itclone/playground/2025/02/17 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1C\e[38;5;59m\e[48;5;233mdemo.py\e[m\e[38;5;188m\e[48;5;233m\e[132C\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 4%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:1/25☰℅\e[50;207H:1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[1;37H\e[?25h\e[?12$p"
+  - delay: 862
+    content: "\e[50;195H8\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m2/\e[2;37H"
+  - delay: 502
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;173H\e[38;5;59m\e[48;5;233mpython \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 12\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m3/\e[3;37H"
+  - delay: 27
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;195H\e[38;5;189m\e[48;5;25m6\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m4/\e[4;37H"
+  - delay: 31
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;194H\e[38;5;189m\e[48;5;25m20\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m5/\e[5;37H"
+  - delay: 46
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;195H\e[38;5;189m\e[48;5;25m4\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m6/\e[6;37H"
+  - delay: 32
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;195H\e[38;5;189m\e[48;5;25m8\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m7/\e[7;37H"
+  - delay: 32
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;194H\e[38;5;189m\e[48;5;25m32\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m8/\e[8;37H"
+  - delay: 31
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;195H\e[38;5;189m\e[48;5;25m6\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m9/\e[9;37H"
+  - delay: 32
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;172H\e[38;5;59m\e[48;5;233mpython \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 40%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:10/\e[10;37H"
+  - delay: 30
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;194H\e[38;5;189m\e[48;5;25m4\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m1/\e[11;37H"
+  - delay: 32
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;194H\e[38;5;189m\e[48;5;25m8\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m2/\e[12;37H"
+  - delay: 33
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;193H\e[38;5;189m\e[48;5;25m52\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m3/\e[13;37H"
+  - delay: 33
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;194H\e[38;5;189m\e[48;5;25m6\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m4/\e[14;37H"
+  - delay: 47
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;193H\e[38;5;189m\e[48;5;25m60\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m5/\e[15;37H"
+  - delay: 38
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;194H\e[38;5;189m\e[48;5;25m4\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m6/\e[16;37H"
+  - delay: 33
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;194H\e[38;5;189m\e[48;5;25m8\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m7/\e[17;37H"
+  - delay: 28
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;193H\e[38;5;189m\e[48;5;25m72\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m8/\e[18;37H"
+  - delay: 29
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;194H\e[38;5;189m\e[48;5;25m6\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m9/\e[19;37H"
+  - delay: 29
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;193H\e[38;5;189m\e[48;5;25m80\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m20/\e[20;37H"
+  - delay: 401
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;194H\e[38;5;189m\e[48;5;25m4\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m1/\e[21;37H"
+  - delay: 494
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m \e[48;5;237m           name = name,\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[1m-- VISUAL LINE --\e[m\e[38;5;188m\e[48;5;233m\e[50;33H\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88mV-LINE\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;233m demo.py                                                                                                                           python \e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;231m\e[48;5;88m 84%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m ㏑:21\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;231m\e[48;5;88m/25☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m℅\e[m\e[38;5;188m\e[48;5;233m\e[50;206H\e[1m\e[38;5;231m\e[48;5;88m℅\e[50;207H:1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[50;209H\e[38;5;231m\e[48;5;88m \e[21;37H\e[?25h"
+  - delay: 141
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[22;38H           value = value,\e[m\e[38;5;188m\e[48;5;233m\e[50;194H\e[38;5;231m\e[48;5;88m8\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;231m\e[48;5;88m2/\e[22;37H\e[?25h"
+  - delay: 170
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[23;38H           created_at = created_at,\e[m\e[38;5;188m\e[48;5;233m\e[50;193H\e[38;5;231m\e[48;5;88m92\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;231m\e[48;5;88m3/\e[23;37H\e[?25h"
+  - delay: 199
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[24;38H           modified_at = modified_at,\e[m\e[38;5;188m\e[48;5;233m\e[50;194H\e[38;5;231m\e[48;5;88m6\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;231m\e[48;5;88m4/\e[24;37H\e[?25h"
+  - delay: 576
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[51;1H4 fewer lines\e[1mE\e[m\e[38;5;188m\e[48;5;233m\e[51;14H\e[K"
+  - delay: 31
+    content: "\e[20;56H\e[1m\e[38;5;231m\e[48;5;60m(\e[m\e[38;5;188m\e[48;5;233m\e[21;37H        \e[1m\e[38;5;231m\e[48;5;60m)\e[m\e[38;5;188m\e[48;5;233m\e[21;46H\e[K\e[22;33H\e[38;5;240m\e[48;5;233m~                                                                                                                                                                                \e[23;33H~                                                                                                                                                                                \e[24;33H~                                                                                                                                                                                \e[25;33H~                                                                                                                                                                                \e[m\e[38;5;188m\e[48;5;233m\e[50;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;215m\e[48;5;233m demo.py[+]                                                                                                                      \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m python \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 100%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:21\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;189m\e[48;5;25m/21☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m℅\e[m\e[38;5;188m\e[48;5;233m\e[50;206H\e[1m\e[38;5;189m\e[48;5;25m℅\e[50;207H:9\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\e[50;209H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[K\e[51;1H4 fewer lines\e[21;45H\e[?25h"
+  - delay: 491
+    content: "\e[?25l\e[20;33H\e[38;5;240m\e[48;5;233m~                                                                                                                                                                                \e[21;33H~                                                                                                                                                                                \e[22;33H~                                                                                                                                                                                \e[23;33H~                                                                                                                                                                                \e[24;33H~                                                                                                                                                                                \e[25;33H~                                                                                                                                                                                \e[26;33H~                                                                                                                                                                                \e[27;33H~                                                                                                                                                                                \e[28;33H~                                                                                                                                                                                \e[29;33H~                                                                                                                                                                                \e[30;33H~                                                                                                                                                                                \e[31;33H~                                                                                                                                                                                \e[32;33H~                                                                                                                                                                                \e[33;33H~                                                                                                                                                                                \e[34;33H~                                                                                                                                                                                \e[35;33H~                                                                                                                                                                                \e[36;33H~                                                                                                                                                                                \e[37;33H~                                                                                                                                                                                \e[38;33H~                                                                                                                                                                                \e[39;33H~                                                                                                                                                                                \e[40;33H~                                                                                                                                                                                \e[41;33H~                                                                                                                                                                                \e[42;33H~                                                                                                                                                                                \e[43;33H~                                                                                                                                                                                \e[44;33H~                                                                                                                                                                                \e[45;33H~                                                                                                                                                                                \e[46;33H~                                                                                                                                                                                \e[m\e[38;5;188m\e[48;5;233m\e[47;33H                                                                                                                                                                                 \e[48;33H                                                                                                                                                                                 \e[49;33H                                                                                                                                                                                 \e[20;33H\e[38;5;59m\e[48;5;233m 20 \e[m\e[38;5;188m\e[48;5;233m        \e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m Demo(\e[20;57H\e[K\e[21;33H\e[38;5;59m\e[48;5;233m 21 \e[m\e[38;5;188m\e[48;5;233m        )\e[21;46H\e[K\e[47;33H\e[38;5;240m\e[48;5;233m~                                                                                                                                                                                \e[48;33H~                                                                                                                       "
+  - delay: 6
+    content: "                                                         \e[49;33H~                                                                                                                                                                                \e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[K\e[50;170H\e[38;5;215m\e[48;5;233m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m python \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 95\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m0/\e[20;45H\e[?25h"
+  - delay: 410
+    content: "\e[?25l\e[?25h"
+  - delay: 73
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;194H\e[38;5;189m\e[48;5;25m0\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m19/\e[19;45H"
+  - delay: 32
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;193H\e[38;5;189m\e[48;5;25m85\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m8/\e[18;45H"
+  - delay: 45
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;194H\e[38;5;189m\e[48;5;25m0\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m7/\e[5C1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[17;37H"
+  - delay: 34
+    content: "\e[50;193H76\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m6/\e[5C9\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[16;45H"
+  - delay: 32
+    content: "\e[50;194H1\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m5/\e[15;45H"
+  - delay: 28
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;193H\e[38;5;189m\e[48;5;25m66\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m4/\e[14;45H"
+  - delay: 32
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;194H\e[38;5;189m\e[48;5;25m1\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m3/\e[13;45H"
+  - delay: 34
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;193H\e[38;5;189m\e[48;5;25m57\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m2/\e[5C1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[12;37H"
+  - delay: 30
+    content: "\e[50;194H2\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m1/\e[11;37H"
+  - delay: 51
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;193H\e[38;5;189m\e[48;5;25m47\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m0/\e[5C9\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[10;45H"
+  - delay: 34
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;171H\e[38;5;215m\e[48;5;233m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m python \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 42%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:9/\e[9;45H"
+  - delay: 31
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;194H\e[38;5;189m\e[48;5;25m38\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m8/\e[8;45H"
+  - delay: 303
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;195H\e[38;5;189m\e[48;5;25m3\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m7/\e[7;45H"
+  - delay: 2803
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[7;37H\e[48;5;237m    name\e[m\e[38;5;188m\e[48;5;233m \e[48;5;237m: Optional[\e[m\e[38;5;188m\e[48;5;233m\e[38;5;222m\e[48;5;237mstr\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m] = \e[m\e[38;5;188m\e[48;5;233m\e[38;5;222m\e[48;5;237mNone\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[1m-- VISUAL LINE --\e[m\e[38;5;188m\e[48;5;233m\e[50;33H\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88mV-LINE\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\e[131C\e[38;5;231m\e[48;5;233m python \e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;231m\e[48;5;88m 33%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m ㏑:7\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;231m\e[48;5;88m/21☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m℅\e[m\e[38;5;188m\e[48;5;233m\e[50;206H\e[1m\e[38;5;231m\e[48;5;88m℅\e[50;207H:9\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[50;209H\e[38;5;231m\e[48;5;88m \e[7;45H\e[?25h"
+  - delay: 134
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[8;37H    valu\e[m\e[38;5;188m\e[48;5;233me\e[48;5;237m : Optional[\e[m\e[38;5;188m\e[48;5;233m\e[38;5;222m\e[48;5;237mint\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m] = \e[m\e[38;5;188m\e[48;5;233m\e[38;5;222m\e[48;5;237mNone\e[m\e[38;5;188m\e[48;5;233m\e[50;195H\e[38;5;231m\e[48;5;88m8\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;231m\e[48;5;88m8/\e[8;45H\e[?25h"
+  - delay: 148
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237me\e[9;37H    crea\e[m\e[38;5;188m\e[48;5;233mt\e[48;5;237med_at : Optional[datetime] = \e[m\e[38;5;188m\e[48;5;233m\e[38;5;222m\e[48;5;237mNone\e[m\e[38;5;188m\e[48;5;233m\e[50;194H\e[38;5;231m\e[48;5;88m42\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;231m\e[48;5;88m9/\e[9;45H\e[?25h"
+  - delay: 170
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237mt\e[10;37H    modi\e[m\e[38;5;188m\e[48;5;233mf\e[48;5;237mied_at : Optional[datetime] = \e[m\e[38;5;188m\e[48;5;233m\e[38;5;222m\e[48;5;237mNone\e[m\e[38;5;188m\e[48;5;233m\e[50;171H\e[38;5;231m\e[48;5;233m python \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;88m 47%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m ㏑:10/\e[10;45H\e[?25h"
+  - delay: 327
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[7;37H    name : Optional[\e[38;5;222mstr\e[m\e[38;5;188m\e[48;5;233m] = \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m\e[8;37H    value : Optional[\e[38;5;222mint\e[m\e[38;5;188m\e[48;5;233m] = \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m\e[9;37H    created_at : Optional[datetime] = \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m\e[10;37H    modified_at : Optional[datetime] = \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[K\e[51;1H4 lines yanked"
+  - delay: 35
+    content: "\e[50;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[130C\e[38;5;215m\e[48;5;233m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m python \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 33%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:7\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;189m\e[48;5;25m/21☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m℅\e[m\e[38;5;188m\e[48;5;233m\e[50;206H\e[1m\e[38;5;189m\e[48;5;25m℅\e[50;207H:1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\e[50;209H\e[38;5;189m\e[48;5;25m \e[7;37H\e[?25h"
+  - delay: 385
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[K\e[51;1H:\e[50;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;215m\e[48;5;233m demo.py[+]\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 304
+    content: v
+  - delay: 113
+    content: s
+  - delay: 257
+    content: "\r"
+  - delay: 42
+    content: "\e[?25l\e[1;121H\e[38;5;243m\e[48;5;16m|\e[2;121H|\e[3;121H|\e[4;121H|\e[5;121H|\e[6;121H|\e[7;121H|\e[8;121H|\e[9;121H|\e[10;121H|\e[11;121H|\e[12;121H|\e[13;121H|\e[14;121H|\e[15;121H|\e[16;121H|\e[17;121H|\e[18;121H|\e[19;121H|\e[20;121H|\e[21;121H|\e[22;121H|\e[23;121H|\e[24;121H|\e[25;121H|\e[26;121H|\e[27;121H|\e[28;121H|\e[29;121H|\e[30;121H|\e[31;121H|\e[32;121H|\e[33;121H|\e[34;121H|\e[35;121H|\e[36;121H|\e[37;121H|\e[38;121H|\e[39;121H|\e[40;121H|\e[41;121H|\e[42;121H|\e[43;121H|\e[44;121H|\e[45;121H|\e[46;121H|\e[47;121H|\e[48;121H|\e[49;121H|\e[m\e[38;5;188m\e[48;5;233m\e[50;33H\e[38;5;215m\e[48;5;233m demo.py[+]         \e[m\e[38;5;188m\e[48;5;233m\e[32C\e[38;5;59m\e[48;5;233m pyt…\e[50;90H  utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;235m 33% ㏑:7/21☰℅\e[50;118H:1 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m \e[m\e[38;5;188m\e[48;5;233m\e[1;122H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;110mfrom\e[m\e[38;5;188m\e[48;5;233m typing \e[38;5;110mimport\e[m\e[38;5;188m\e[48;5;233m List, Optional\e[2;122H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;110mfrom\e[m\e[38;5;188m\e[48;5;233m datetime \e[38;5;110mimport\e[m\e[38;5;188m\e[48;5;233m datetime\e[3;122H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;110mfrom\e[m\e[38;5;188m\e[48;5;233m dataclasses \e[38;5;110mimport\e[m\e[38;5;188m\e[48;5;233m dataclass\e[4;122H\e[38;5;59m\e[48;5;233m  4 \e[5;122H  5 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;110m@\e[m\e[38;5;188m\e[48;5;233m\e[38;5;222mdataclasses\e[m\e[38;5;188m\e[48;5;233m\e[6;122H\e[38;5;59m\e[48;5;233m  6 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103mclass\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mDemo\e[m\e[38;5;188m\e[48;5;233m:\e[7;122H\e[38;5;59m\e[48;5;233m  7 \e[m\e[38;5;188m\e[48;5;233m    name : Optional[\e[38;5;222mstr\e[m\e[38;5;188m\e[48;5;233m] = \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m\e[8;122H\e[38;5;59m\e[48;5;233m  8 \e[m\e[38;5;188m\e[48;5;233m    value : Optional[\e[38;5;222mint\e[m\e[38;5;188m\e[48;5;233m] = \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m\e[9;122H\e[38;5;59m\e[48;5;233m  9 \e[m\e[38;5;188m\e[48;5;233m    created_at : Optional[datetime] = "
+  - delay: 19
+    content: "\e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m\e[10;122H\e[38;5;59m\e[48;5;233m 10 \e[m\e[38;5;188m\e[48;5;233m    modified_at : Optional[datetime] = \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m\e[11;122H\e[38;5;59m\e[48;5;233m 11 \e[12;122H 12 \e[13;122H 13 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;110m@\e[m\e[38;5;188m\e[48;5;233m\e[38;5;222mdataclasses\e[m\e[38;5;188m\e[48;5;233m\e[14;122H\e[38;5;59m\e[48;5;233m 14 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103mclass\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mDemoWrapper\e[m\e[38;5;188m\e[48;5;233m:\e[15;122H\e[38;5;59m\e[48;5;233m 15 \e[m\e[38;5;188m\e[48;5;233m    meta_information : Optional[\e[38;5;222mstr\e[m\e[38;5;188m\e[48;5;233m] = \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m\e[16;122H\e[38;5;59m\e[48;5;233m 16 \e[m\e[38;5;188m\e[48;5;233m    demo : Optional[Demo] = \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m\e[17;122H\e[38;5;59m\e[48;5;233m 17 \e[18;122H 18 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;110m@\e[m\e[38;5;188m\e[48;5;233m\e[38;5;222mclassmethod\e[m\e[38;5;188m\e[48;5;233m\e[19;122H\e[38;5;59m\e[48;5;233m 19 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mdef\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mto_demo\e[m\e[38;5;188m\e[48;5;233m(cls):\e[20;122H\e[38;5;59m\e[48;5;233m 20 \e[m\e[38;5;188m\e[48;5;233m\e[8C\e[38;5;103mreturn\e[m\e[38;5;188m\e[48;5;233m Demo(\e[21;122H\e[38;5;59m\e[48;5;233m 21 \e[m\e[38;5;188m\e[48;5;233m\e[8C)\e[22;122H\e[38;5;240m\e[48;5;233m~\e[23;122H~\e[24;122H~\e[25;122H~\e[26;122H~\e[27;122H~\e[28;122H~\e[29;122H~\e[30;122H~\e[31;122H~\e[32;122H~\e[33;122H~\e[34;122H~\e[35;122H~\e[36;122H~\e[37;122H~\e[38;122H~\e[39;122H~\e[40;122H~\e[41;122H~\e[42;122H~\e[43;122H~\e[44;122H~\e[45;122H~\e[46;122H~\e[47;122H~\e[48;122H~\e[49;122H~\e[m\e[38;5;188m\e[48;5;233m\e[50;122H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1C\e[38;5;215m\e[48;5;233mdemo.py[+]\e[31C  \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m pyt…\e[7;126H\e[?25h"
+  - delay: 1245
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[K\e[51;1H:\e[50;123H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;215m\e[48;5;233m demo.py[+]\r\n\e[m\e[38;5;188m\e[48;5;233m:e ~/temp.txt\r\"~/temp.txt\" 4L, 152B"
+  - delay: 34
+    content: "\e[1;126H    name : Optional[str] = None\e[1;157H\e[K\e[2;126H    value : Optional[int] = None\e[3;126H    created_at : Optional[datetime] = None\e[4;130Hmodified_at : Optional[datetime] = None\e[5;122H\e[38;5;240m\e[48;5;233m~                                                                                       \e[6;122H~                                                                                       \e[7;122H~                                                                                       \e[8;122H~                                                                                       \e[9;122H~                                                                                       \e[10;122H~                                                                                       \e[11;122H~                                                                                       \e[12;122H~                                                                                       \e[13;122H~                                                                                       \e[14;122H~                                                                                       \e[15;122H~                                                                                       \e[16;122H~                                                                                       \e[17;122H~                                                                                       \e[18;122H~                                                                                       \e[19;122H~                                                                                       \e[20;122H~                                                                                       \e[21;122H~                                                                                       \e[m\e[38;5;188m\e[48;5;233m\e[50;123H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m ~/temp.txt                          tex…\e[50;171H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 20 words 25%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:12\b/4☰\e[2C5\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[1;130H\e[?25h"
+  - delay: 744
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\b\b\b\b\e[48;5;237m    \e[m\e[38;5;188m\e[48;5;233mn\e[48;5;237mame : Optional[str] = None\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[1m-- VISUAL LINE --\e[m\e[38;5;188m\e[48;5;233m\e[51;18H\e[K\e[50;122H\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88mV-LINE\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;233m ~/temp.txt                           tex…\e[50;172H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;88m 5 words 25%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m ㏑:1\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;231m\e[48;5;88m/4☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m℅\e[m\e[38;5;188m\e[48;5;233m\e[50;206H\e[1m\e[38;5;231m\e[48;5;88m℅\e[50;207H:5\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[50;209H\e[38;5;231m\e[48;5;88m \e[1;130H\e[?25h"
+  - delay: 150
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237mn\e[2;126H    value : Optional[int] = None\e[3;126H    created_at : Optional[datetime] = None\e[4;126H    \e[m\e[38;5;188m\e[48;5;233mm\e[48;5;237modified_at : Optional[datetime] = None\e[m\e[38;5;188m\e[48;5;233m\e[50;166H\e[38;5;231m\e[48;5;233mtex…\e[50;170H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;88m 20 words 100\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;231m\e[48;5;88m4/\e[4;130H\e[?25h"
+  - delay: 296
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[51;1H4 more lines\e[1mN\e[m\e[38;5;188m\e[48;5;233m\e[51;13H\e[K"
+  - delay: 36
+    content: "\e[1;126H    name : Optional[str] = None\e[2;126H    value : Optional[int] = None\e[3;126H    created_at : Optional[datetime] = None\e[4;126H    modified_at : Optional[datetime] = None\e[50;122H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;215m\e[48;5;233m ~/temp.txt[+]                      \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m tex…\e[50;171H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 20 words 25%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:1\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;189m\e[48;5;25m/4☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m℅\e[m\e[38;5;188m\e[48;5;233m\e[50;206H\e[1m\e[38;5;189m\e[48;5;25m℅\e[50;207H:5\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\e[50;209H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[K\e[51;1H4 more lines\e[1;130H\e[?25h"
+  - delay: 307
+    content: "\e[?25l\e[51;1H\e[K\e[51;1H:\e[50;123H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;215m\e[48;5;233m ~/temp.txt[+]\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 128
+    content: w
+  - delay: 93
+    content: "\r\e[?25l\"~/temp.txt\""
+  - delay: 13
+    content: ' 4L, 152B written'
+  - delay: 25
+    content: "\e[50;123H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m ~/temp.txt                         \e[1;130H\e[?25h"
+  - delay: 487
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[K\e[51;1H:\e[50;123H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ~/temp.txt\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 217
+    content: s
+  - delay: 61
+    content: p
+  - delay: 232
+    content: "\r"
+  - delay: 58
+    content: "\e[?25l\e[25;122H\e[38;5;59m\e[48;5;233m ~/temp.txt                                  tex…\e[25;171H  utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;235m 20 words 25% ㏑:1/4☰℅\e[25;207H:5 \e[m\e[38;5;188m\e[48;5;233m\e[26;122H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233m    name : Optional[str] = None\e[26;157H\e[K\e[27;122H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m    value : Optional[int] = None\e[27;158H\e[K\e[28;122H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m    created_at : Optional[datetime] = None\e[28;168H\e[K\e[29;122H\e[38;5;59m\e[48;5;233m  4 \e[m\e[38;5;188m\e[48;5;233m    modified_at : Optional[datetime] = None\e[29;169H\e[K\e[50;123H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m ~/temp.txt \e[26;130H\e[?25h"
+  - delay: 1982
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[K\e[51;1H:\e[50;123H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ~/temp.txt\r\n\e[m\e[38;5;188m\e[48;5;233m:e ~/temp.txt\r\"~/temp.txt\" 4L, 152B"
+  - delay: 24
+    content: "\e[50;123H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m ~/temp.txt \e[26;130H\e[?25h"
+  - delay: 642
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[K\e[51;1H:\e[50;123H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ~/temp.txt\r\n\e[m\e[38;5;188m\e[48;5;233m:e ~/script.awk\r\"~/script.awk\" 7L, 76B"
+  - delay: 54
+    content: "\e[26;126H\e[38;5;107mBEGIN\e[m\e[38;5;188m\e[48;5;233m {\e[26;133H\e[K\e[27;130H\e[38;5;107mFS\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m=\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m\":\"\e[m\e[38;5;188m\e[48;5;233m\e[27;138H\e[K\e[28;126H}\e[28;130H\e[K\e[29;126H{\e[29;130H\e[K\e[30;122H\e[38;5;59m\e[48;5;233m  5 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mgsub\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m/\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\\s+\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m/\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m,\e[m\e[38;5;188m\e[48;5;233m _\e[38;5;107m,\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m$0\e[m\e[38;5;188m\e[48;5;233m)\e[30;148H\e[K\e[31;122H\e[38;5;59m\e[48;5;233m  6 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mprint\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m$1\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m\" = \"\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m$1\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m\",\"\e[m\e[38;5;188m\e[48;5;233m\e[31;151H\e[K\e[32;122H\e[38;5;59m\e[48;5;233m  7 \e[m\e[38;5;188m\e[48;5;233m}\e[32;127H\e[K\e[50;123H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m ~/script.awk\e[24C          awk \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[1C\e[38;5;189m\e[48;5;25m14\e[m\e[38;5;188m\e[48;5;233m\e[7C\e[1m\e[38;5;189m\e[48;5;25m7☰\e[2C1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[26;126H\e[?25h"
+  - delay: 821
+    content: "\e[50;195H28\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m2/\e[27;126H"
+  - delay: 157
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[26;132H\e[1m\e[38;5;231m\e[48;5;60m{\e[28;126H}\e[m\e[38;5;188m\e[48;5;233m\e[50;195H\e[38;5;189m\e[48;5;25m42\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m3/\e[28;126H\e[?25h"
+  - delay: 159
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[26;132H{\e[28;126H}\e[29;126H\e[1m\e[38;5;231m\e[48;5;60m{\e[32;126H}\e[m\e[38;5;188m\e[48;5;233m\e[50;195H\e[38;5;189m\e[48;5;25m57\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m4/\e[29;126H\e[?25h"
+  - delay: 158
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m{\e[32;126H}\e[50;195H\e[38;5;189m\e[48;5;25m71\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m5/\e[30;126H\e[?25h"
+  - delay: 182
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;195H\e[38;5;189m\e[48;5;25m85\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m6/\e[31;126H"
+  - delay: 511
+    content: "\e[50;208H5\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[31;130H"
+  - delay: 221
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;176H\e[38;5;59m\e[48;5;233mawk \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 85%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:66\b/7☰☰\b℅\e[50;206H:11\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[31;136H"
+  - delay: 200
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;189m\e[48;5;25m2\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[31;137H"
+  - delay: 208
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;189m\e[48;5;25m4\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[31;139H"
+  - delay: 223
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;189m\e[48;5;25m6\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[31;141H"
+  - delay: 219
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;189m\e[48;5;25m8\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[31;143H"
+  - delay: 217
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;207H\e[1m\e[38;5;189m\e[48;5;25m20\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[31;145H"
+  - delay: 244
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;189m\e[48;5;25m1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[31;146H"
+  - delay: 656
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;189m\e[48;5;25m2\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[31;147H"
+  - delay: 283
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;189m\e[48;5;25m3\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[31;148H"
+  - delay: 1981
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[1m-- INSERT --\e[m\e[38;5;188m\e[48;5;233m\e[51;13H\e[K\e[50;122H\e[38;5;231m\e[48;5;22m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;22mINSERT\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;231m\e[48;5;22m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;233m ~/script.awk                                 awk \e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;231m\e[48;5;22m 85%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;22m ㏑:6\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;231m\e[48;5;22m/7☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m℅\e[m\e[38;5;188m\e[48;5;233m\e[50;205H\e[1m\e[38;5;231m\e[48;5;22m℅\e[50;206H:24\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[50;209H\e[38;5;231m\e[48;5;22m \e[31;149H\e[?25h"
+  - delay: 361
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m ,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;130H\e[38;5;215m\e[48;5;233m ~/script.awk[+]                             \e[m\e[38;5;188m\e[48;5;233m\e[33C\e[1m\e[38;5;231m\e[48;5;22m5\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;150H\e[?25h"
+  - delay: 325
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107mi,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m6\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;151H\e[?25h"
+  - delay: 101
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107ms,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m7\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;152H\e[?25h"
+  - delay: 601
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;107m,\"\e[m\e[38;5;188m\e[48;5;233m\e[31;153H\e[K\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m6\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;151H\e[?25h"
+  - delay: 196
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107mf,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m7\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;152H\e[?25h"
+  - delay: 146
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m ,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m8\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;153H\e[?25h"
+  - delay: 1957
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\"\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m,\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\"\e[32;126H}\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m9\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;154H\e[?25h"
+  - delay: 851
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m,\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\"\e[m\e[38;5;188m\e[48;5;233m\e[50;207H\e[1m\e[38;5;231m\e[48;5;22m30\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;155H\e[?25h"
+  - delay: 598
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m$\e[38;5;107m,\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;156H\e[?25h"
+  - delay: 133
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;107m$1,\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m2\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;157H\e[?25h"
+  - delay: 263
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m,\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m3\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;158H\e[?25h"
+  - delay: 353
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\",\"\e[m\e[38;5;188m\e[48;5;233m\e[32;126H}\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m4\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;159H\e[?25h"
+  - delay: 688
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m ,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m5\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;160H\e[?25h"
+  - delay: 195
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107mi,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m6\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;161H\e[?25h"
+  - delay: 86
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107ms,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m7\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;162H\e[?25h"
+  - delay: 130
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m ,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m8\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;163H\e[?25h"
+  - delay: 184
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107mn,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m9\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;164H\e[?25h"
+  - delay: 104
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107mo,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;207H\e[1m\e[38;5;231m\e[48;5;22m40\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;165H\e[?25h"
+  - delay: 323
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107mt,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;166H\e[?25h"
+  - delay: 155
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m ,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m2\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;167H\e[?25h"
+  - delay: 265
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107mN,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m3\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;168H\e[?25h"
+  - delay: 118
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107mo,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m4\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;169H\e[?25h"
+  - delay: 80
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107mn,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m5\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;170H\e[?25h"
+  - delay: 111
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107me,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m6\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;171H\e[?25h"
+  - delay: 762
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m ,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m7\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;172H\e[?25h"
+  - delay: 184
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107me,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m8\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;173H\e[?25h"
+  - delay: 124
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107ml,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m9\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;174H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107ms,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;207H\e[1m\e[38;5;231m\e[48;5;22m50\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;175H\e[?25h"
+  - delay: 88
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107me,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;176H\e[?25h"
+  - delay: 1063
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m ,\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m2\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;177H\e[?25h"
+  - delay: 1100
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\"\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m,\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\"\e[32;126H}\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m3\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;178H\e[?25h"
+  - delay: 233
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m,\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m4\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;179H\e[?25h"
+  - delay: 1456
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m$\e[38;5;107m,\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m5\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;180H\e[?25h"
+  - delay: 147
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;107m$1,\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m6\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;181H\e[?25h"
+  - delay: 1281
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m,\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\"\e[m\e[38;5;188m\e[48;5;233m\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m7\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;182H\e[?25h"
+  - delay: 251
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\",\"\e[m\e[38;5;188m\e[48;5;233m\e[32;126H}\e[50;208H\e[1m\e[38;5;231m\e[48;5;22m8\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[31;183H\e[?25h"
+  - delay: 436
+    content: "\e[m\e[38;5;188m\e[48;5;233mj\b"
+  - delay: 154
+    content: "\e[38;5;107m,\b\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[K\e[?25l"
+  - delay: 44
+    content: "\e[50;122H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[45C\e[38;5;59m\e[48;5;233m awk \e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;189m\e[48;5;25m 85%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:6\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;22m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;189m\e[48;5;25m/7☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;22m℅\e[m\e[38;5;188m\e[48;5;233m\e[50;205H\e[1m\e[38;5;189m\e[48;5;25m℅\e[50;206H:57\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;22m \e[m\e[38;5;188m\e[48;5;233m\e[50;209H\e[38;5;189m\e[48;5;25m \e[31;182H\e[?25h"
+  - delay: 172
+    content: "\e[?25l\e[51;1H\e[m\e[38;5;188m\e[48;5;233m:\e[50;123H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;215m\e[48;5;233m ~/script.awk[+]\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 151
+    content: w
+  - delay: 70
+    content: "\r\e[?25l\"~/script.awk\""
+  - delay: 20
+    content: ' 7L, 110B written'
+  - delay: 29
+    content: "\e[50;123H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m ~/script.awk                                \e[31;182H\e[?25h"
+  - delay: 485
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[50;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;215m\e[48;5;233m demo.py[+]\e[m\e[38;5;188m\e[48;5;233m\e[39C\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 33%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:7/21☰℅\e[50;118H:1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;16m\e[48;5;253m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ~/script.awk        \e[37C utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;235m 85% ㏑:6/7☰℅\e[50;206H:57 \e[7;37H\e[?25h"
+  - delay: 635
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;106H\e[38;5;189m\e[48;5;25m8\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m8/\e[8;37H"
+  - delay: 504
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;105H\e[38;5;189m\e[48;5;25m42\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m9/\e[9;37H"
+  - delay: 27
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;84H\e[38;5;59m\e[48;5;233m pyt…\e[50;89H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 47%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:10/\e[10;37H"
+  - delay: 29
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;104H\e[38;5;189m\e[48;5;25m52\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m1/\e[11;37H"
+  - delay: 32
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;105H\e[38;5;189m\e[48;5;25m7\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m2/\e[12;37H"
+  - delay: 31
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;104H\e[38;5;189m\e[48;5;25m61\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m3/\e[13;37H"
+  - delay: 45
+    content: "\e[m\e[38;5;188m\e[48;5;233m\e[50;105H\e[38;5;189m\e[48;5;25m6\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m4/\e[14;37H"
+  - delay: 589
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[20;56H\e[1m\e[38;5;231m\e[48;5;60m(\e[21;45H)\e[m\e[38;5;188m\e[48;5;233m\e[50;83H\e[38;5;59m\e[48;5;233m pyt…\e[50;88H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 100\e[m\e[38;5;188m\e[48;5;233m\e[5C\e[1m\e[38;5;189m\e[48;5;25m21/\e[5C9\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[21;45H\e[?25h"
+  - delay: 201
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[20;56H(\e[21;45H)\e[50;83H\e[38;5;215m\e[48;5;233m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m pyt…\e[50;89H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 95\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m0/\e[20;45H\e[?25h"
+  - delay: 1489
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[K\e[51;1H:\e[50;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;215m\e[48;5;233m demo.py[+]\r\n\e[m\e[38;5;188m\e[48;5;233m:let @+ = system('awk -f ~/script.awk ~/temp.txt')\r\e[?2004l\e[>4;m"
+  - delay: 8
+    content: "\e[>4;m\e[>4;2m\e[?2004h\e[>4;2m"
+  - delay: 37
+    content: "\e[50;34H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;215m\e[48;5;233m demo.py[+] \e[20;45H\e[?25h"
+  - delay: 195
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[51;1H4 more lines\e[51;13H\e[K"
+  - delay: 13
+    content: "\e[21;37Hname = name \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m name \e[38;5;103mis\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103mnot\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103melse\e[m\e[38;5;188m\e[48;5;233m name,\e[22;33H\e[38;5;59m\e[48;5;233m 22 \e[m\e[38;5;188m\e[48;5;233mvalue = value \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m value \e[38;5;103mis\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103mnot\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103melse\e[m\e[38;5;188m\e[48;5;233m value,                                      \e[23;33H\e[38;5;59m\e[48;5;233m 23 \e[m\e[38;5;188m\e[48;5;233mcreated_at = created_at \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m created_at \e[38;5;103mis\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103mnot\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103melse\e[m\e[38;5;188m\e[48;5;233m created_at,                  \e[24;33H\e[38;5;59m\e[48;5;233m 24 \e[m\e[38;5;188m\e[48;5;233mmodified_at = modified_at \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m modified_at \e[38;5;103mis\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103mnot\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103melse\e[m\e[38;5;188m\e[48;5;233m modified_at,              \e[25;33H\e[38;5;59m\e[48;5;233m 25 \e[m\e[38;5;188m\e[48;5;233m        )                                                                           \e[50;104H\e[38;5;189m\e[48;5;25m84\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;189m\e[48;5;25m1/25☰\e[2C1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[21;37H\e[?25h"
+  - delay: 647
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233mn\e[48;5;237mame = name \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mif\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m name \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mis\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mnot\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;222m\e[48;5;237mNone\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237melse\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m name,\e[m\e[38;5;188m\e[48;5;233m\e[50;33H\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88mV-LINE\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\e[43C\e[38;5;231m\e[48;5;233m pyt…\e[50;89H \e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;231m\e[48;5;88m 84%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m ㏑:21\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;231m\e[48;5;88m/25☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m℅\e[m\e[38;5;188m\e[48;5;233m\e[50;117H\e[1m\e[38;5;231m\e[48;5;88m℅\e[50;118H:1\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\r\n\e[1m-- VISUAL LINE --\e[21;37H\e[?25h"
+  - delay: 86
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237mn\e[22;38Halue = value \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mif\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m value \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mis\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mnot\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;222m\e[48;5;237mNone\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237melse\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m value,\e[m\e[38;5;188m\e[48;5;233m\e[50;105H\e[38;5;231m\e[48;5;88m8\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;231m\e[48;5;88m2/\e[22;37H\e[?25h"
+  - delay: 152
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237mv\e[23;38Hreated_at = created_at \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mif\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m created_at \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mis\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mnot\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;222m\e[48;5;237mNone\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237melse\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m created_at,\e[m\e[38;5;188m\e[48;5;233m\e[50;104H\e[38;5;231m\e[48;5;88m92\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;231m\e[48;5;88m3/\e[23;37H\e[?25h"
+  - delay: 374
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237mc\e[24;38Hodified_at = modified_at \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mif\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m modified_at \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mis\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mnot\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;222m\e[48;5;237mNone\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237melse\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m modified_at,\e[m\e[38;5;188m\e[48;5;233m\e[50;105H\e[38;5;231m\e[48;5;88m6\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;231m\e[48;5;88m4/\e[24;37H\e[?25h"
+  - delay: 273
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[51;1H4 lines >ed 1 time\e[21;37H    name = name \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m name \e[38;5;103mis\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103mnot\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103melse\e[m\e[38;5;188m\e[48;5;233m name,\e[22;37H    value = value \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m value \e[38;5;103mis\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103mnot\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103melse\e[m\e[38;5;188m\e[48;5;233m value,\e[23;37H    created_at = created_at \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m created_at \e[38;5;103mis\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103mnot\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103melse\e[m\e[38;5;188m\e[48;5;233m created_at,\e[24;37H    modified_at = modified_at \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m modified_at \e[38;5;103mis\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103mnot\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103melse\e[m\e[38;5;188m\e[48;5;233m modified_at,\e[51;1H\e[K\e[51;1H4 lines >ed 1 time"
+  - delay: 34
+    content: "\e[50;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[43C\e[38;5;59m\e[48;5;233m pyt…\e[50;89H \e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;189m\e[48;5;25m 84%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:21\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;189m\e[48;5;25m/25☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m℅\e[m\e[38;5;188m\e[48;5;233m\e[50;117H\e[1m\e[38;5;189m\e[48;5;25m℅\e[50;118H:5\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m \e[21;41H\e[?25h"
+  - delay: 105
+    content: "\e[?25l\e[?25h"
+  - delay: 772
+    content: "\a"
+  - delay: 907
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\b\b\b\b\e[48;5;237m    \e[m\e[38;5;188m\e[48;5;233mn\e[48;5;237mame = name \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mif\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m name \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mis\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mnot\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;222m\e[48;5;237mNone\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237melse\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m name,\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[1m-- VISUAL LINE --\e[m\e[38;5;188m\e[48;5;233m\e[51;18H\e[K\e[50;33H\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88mV-LINE\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\e[43C\e[38;5;231m\e[48;5;233m pyt…\e[50;89H \e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;231m\e[48;5;88m 84%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m ㏑:21\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;231m\e[48;5;88m/25☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m℅\e[m\e[38;5;188m\e[48;5;233m\e[50;117H\e[1m\e[38;5;231m\e[48;5;88m℅\e[50;118H:5\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;231m\e[48;5;88m \e[21;41H\e[?25h"
+  - delay: 195
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237mn\e[22;37H    \e[m\e[38;5;188m\e[48;5;233mv\e[48;5;237malue = value \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mif\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m value \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mis\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mnot\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;222m\e[48;5;237mNone\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237melse\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m value,\e[m\e[38;5;188m\e[48;5;233m\e[50;105H\e[38;5;231m\e[48;5;88m8\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;231m\e[48;5;88m2/\e[m\e[38;5;188m\e[48;5;233m\e[25;167H\e[38;5;59m\e[48;5;233m tex…\e[25;173H utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;235m \e[22;41H\e[?25h"
+  - delay: 167
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237mv\e[23;37H    \e[m\e[38;5;188m\e[48;5;233mc\e[48;5;237mreated_at = created_at \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mif\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m created_at \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mis\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mnot\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;222m\e[48;5;237mNone\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237melse\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m created_at,\e[m\e[38;5;188m\e[48;5;233m\e[50;104H\e[38;5;231m\e[48;5;88m92\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;231m\e[48;5;88m3/\e[23;41H\e[?25h"
+  - delay: 145
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237mc\e[24;37H    \e[m\e[38;5;188m\e[48;5;233mm\e[48;5;237modified_at = modified_at \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mif\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m modified_at \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mis\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237mnot\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;222m\e[48;5;237mNone\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;103m\e[48;5;237melse\e[m\e[38;5;188m\e[48;5;233m\e[48;5;237m modified_at,\e[m\e[38;5;188m\e[48;5;233m\e[50;105H\e[38;5;231m\e[48;5;88m6\e[m\e[38;5;188m\e[48;5;233m\e[6C\e[1m\e[38;5;231m\e[48;5;88m4/\e[24;41H\e[?25h"
+  - delay: 249
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[51;1H4 lines >ed 1 time\e[21;37H        name = name \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m name \e[38;5;103mis\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103mnot\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103melse\e[m\e[38;5;188m\e[48;5;233m name,\e[22;37H        value = value \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m value \e[38;5;103mis\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103mnot\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103melse\e[m\e[38;5;188m\e[48;5;233m value,\e[23;37H        created_at = created_at \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m created_at \e[38;5;103mis\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103mnot\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103melse\e[m\e[38;5;188m\e[48;5;233m created_at,\e[24;37H        modified_at = modified_at \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m modified_at \e[38;5;103mis\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103mnot\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103melse\e[m\e[38;5;188m\e[48;5;233m modified_at,\e[51;1H\e[K\e[51;1H4 lines >ed 1 time"
+  - delay: 23
+    content: "\e[50;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[43C\e[38;5;59m\e[48;5;233m pyt…\e[50;89H \e[m\e[38;5;188m\e[48;5;233m\e[13C\e[38;5;189m\e[48;5;25m 84%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:21\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m/\e[m\e[38;5;188m\e[48;5;233m\b\e[1m\e[38;5;189m\e[48;5;25m/25☰\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;231m\e[48;5;88m℅\e[m\e[38;5;188m\e[48;5;233m\e[50;117H\e[1m\e[38;5;189m\e[48;5;25m℅\e[50;118H:9\e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;88m \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m \e[21;45H\e[?25h"
+  - delay: 623
+    content: "\e[?25l"
+  - delay: 8
+    content: "\e[m\e[38;5;188m\e[48;5;233m    name = name \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m name \e[38;5;103mis\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103mnot\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103melse\e[m\e[38;5;188m\e[48;5;233m name,\e[22;45H    value = value \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m value \e[38;5;103mis\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103mnot\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103melse\e[m\e[38;5;188m\e[48;5;233m value,\e[23;45H    created_at = created_at \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m created_at \e[38;5;103mis\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103mnot\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103melse\e[m\e[38;5;188m\e[48;5;233m created_at,\e[24;45H    modified_at = modified_at \e[38;5;103mif\e[m\e[38;5;188m\e[48;5;233m modified_at \e[38;5;103mis\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103mnot\e[m\e[38;5;188m\e[48;5;233m \e[38;5;222mNone\e[m\e[38;5;188m\e[48;5;233m \e[38;5;103melse\e[m\e[38;5;188m\e[48;5;233m modified_at,\e[50;83H\e[38;5;59m\e[48;5;233m pyt…\e[50;88H \e[m\e[38;5;188m\e[48;5;233m\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 84%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:211\b/25☰☰\b℅\e[50;117H:13\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[25;167H\e[38;5;59m\e[48;5;233mtex…\e[25;171H  utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;243m\e[48;5;235m 2\e[21;49H\e[?25h"
+  - delay: 568
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[K\e[51;1H:\e[50;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;215m\e[48;5;233m demo.py[+]\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 187
+    content: w
+  - delay: 60
+    content: "\r\e[?25l\"demo.py\""
+  - delay: 20
+    content: ' 25L, 734B written'
+  - delay: 27
+    content: "\e[50;34H\e[1m\e[38;5;189m\e[48;5;25mNORMALD\e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;189m\e[48;5;25m  \e[m\e[38;5;188m\e[48;5;233m\b\e[38;5;59m\e[48;5;233m demo.py                                  \e[21;49H\e[?25h"
+  - delay: 1221
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[K\e[51;1H:\e[50;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m demo.py\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 162
+    content: q
+  - delay: 112
+    content: "\r"
+  - delay: 26
+    content: "\e[?25l\e[1;37H    name : Optional[str] = None\e[1;68H\e[K\e[2;37H    value : Optional[int] = None\e[2;121H\e[K\e[3;37H    created_at : Optional[datetime] = None\e[3;121H\e[K\e[4;41Hmodified_at : Optional[datetime] = None\e[4;121H\e[K\e[5;33H\e[38;5;240m\e[48;5;233m~                                                                                          \e[6;33H~                                                                                          \e[7;33H~                                                                                          \e[8;33H~                                                                                          \e[9;33H~                                                                                          \e[10;33H~                                                                                          \e[11;33H~                                                                                          \e[12;33H~                                                                                          \e[13;33H~                                                                                          \e[14;33H~                                                                                          \e[15;33H~                                                                                          \e[16;33H~                                                                                          \e[17;33H~                                                                                          \e[18;33H~                                                                                          \e[19;33H~                                                                                          \e[20;33H~                                                                                          \e[21;33H~                                                                                          \e[22;33H~                                                                                          "
+  - delay: 19
+    content: "\e[23;33H~                                                                                          \e[24;33H~                                                                                          \e[m\e[38;5;188m\e[48;5;233m\e[25;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ~/temp.txt                                                                                 \e[37Ct\e[m\e[38;5;188m\e[48;5;233m\e[1C\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 20 words 25%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:1/4☰℅\e[25;207H:5\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[26;33H\e[38;5;59m\e[48;5;233m  1 \e[m\e[38;5;188m\e[48;5;233m\e[38;5;107mBEGIN\e[m\e[38;5;188m\e[48;5;233m {\e[26;44H\e[K\e[27;33H\e[38;5;59m\e[48;5;233m  2 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;107mFS\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m=\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m\":\"\e[m\e[38;5;188m\e[48;5;233m\e[27;49H\e[K\e[28;33H\e[38;5;59m\e[48;5;233m  3 \e[m\e[38;5;188m\e[48;5;233m}\e[28;38H\e[K\e[29;33H\e[38;5;59m\e[48;5;233m  4 \e[m\e[38;5;188m\e[48;5;233m{\e[29;38H\e[K\e[30;33H\e[38;5;59m\e[48;5;233m  5 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mgsub\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m/\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\\s+\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m/\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m,\e[m\e[38;5;188m\e[48;5;233m _\e[38;5;107m,\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m$0\e[m\e[38;5;188m\e[48;5;233m)\e[30;59H\e[K\e[31;33H\e[38;5;59m\e[48;5;233m  6 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mprint\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m$1\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m\" = \"\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m$1\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m\" if \"\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m$1\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m\" is not None else \"\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m$1\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m\",\"\e[m\e[38;5;188m\e[48;5;233m\e[31;96H\e[K\e[32;33H\e[38;5;59m\e[48;5;233m  7 \e[m\e[38;5;188m\e[48;5;233m}\e[32;38H\e[K\e[33;121H\e[38;5;240m\e[48;5;233m   \e[34;121H   \e[35;121H   \e[36;121H   \e[37;121H   \e[38;121H   \e[39;121H   \e[40;121H   \e[41;121H   \e[42;121H   \e[43;121H   \e[44;121H   \e[45;121H   \e[46;121H   \e[47;121H   \e[48;121H   \e[49;121H   \e[m\e[38;5;188m\e[48;5;233m\e[50;33H\e[38;5;59m\e[48;5;233m ~/script.awk    \e[34C                                                   \e[1;41H\e[?25h"
+  - delay: 955
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[K\e[51;1H:\e[25;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ~/temp.txt\e[51;2H\e[?25h"
+  - delay: 178
+    content: "\e[m\e[38;5;188m\e[48;5;233mq"
+  - delay: 117
+    content: "\r"
+  - delay: 21
+    content: "\e[?25l\e[1;37H\e[38;5;107mBEGIN\e[m\e[38;5;188m\e[48;5;233m {\e[1;44H\e[K\e[2;41H\e[38;5;107mFS\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m=\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m\":\"\e[m\e[38;5;188m\e[48;5;233m\e[2;49H\e[K\e[3;37H}\e[3;41H\e[K\e[4;37H{\e[4;41H\e[K\e[5;33H\e[38;5;59m\e[48;5;233m  5 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;222mgsub\e[m\e[38;5;188m\e[48;5;233m(\e[38;5;107m/\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m\\s+\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m/\e[m\e[38;5;188m\e[48;5;233m\e[38;5;107m,\e[m\e[38;5;188m\e[48;5;233m _\e[38;5;107m,\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m$0\e[m\e[38;5;188m\e[48;5;233m)\e[5;59H\e[K\e[6;33H\e[38;5;59m\e[48;5;233m  6 \e[m\e[38;5;188m\e[48;5;233m    \e[38;5;103mprint\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m$1\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m\" = \"\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m$1\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m\" if \"\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m$1\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m\" is not None else \"\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m$1\e[m\e[38;5;188m\e[48;5;233m \e[38;5;107m\",\"\e[m\e[38;5;188m\e[48;5;233m\e[6;96H\e[K\e[7;33H\e[38;5;59m\e[48;5;233m  7 \e[m\e[38;5;188m\e[48;5;233m}\e[7;38H\e[K\e[25;33H\e[38;5;240m\e[48;5;233m~                                                                                                                                                                                \e[26;33H~                                                                                                                                                                                \e[27;33H~                                                                                                                                                                                \e[28;33H~                                                                                                                                                                                \e[29;33H~                                                                                                                                                                                "
+  - delay: 20
+    content: "\e[30;33H~                                                                                                                                                                                \e[31;33H~                                                                                                                                                                                \e[32;33H~                                                                                                                                                                                \e[m\e[38;5;188m\e[48;5;233m\e[50;33H\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25mNORMAL\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ~/script.awk\e[m\e[38;5;188m\e[48;5;233m\e[126C\e[38;5;231m\e[48;5;235m utf-8[unix] \e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m 85%\e[m\e[38;5;188m\e[48;5;233m\e[1m\e[38;5;189m\e[48;5;25m ㏑:6/7☰℅\e[50;206H:57\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[6;93H\e[?25h"
+  - delay: 306
+    content: "\a"
+  - delay: 518
+    content: "\e[?25l\e[m\e[38;5;188m\e[48;5;233m\e[51;1H\e[K\e[51;1H:\e[50;34H\e[1m\e[38;5;189m\e[48;5;25mCOMMAND\e[m\e[38;5;188m\e[48;5;233m\e[38;5;189m\e[48;5;25m \e[m\e[38;5;188m\e[48;5;233m\e[38;5;59m\e[48;5;233m ~/script.awk\r\n\e[m\e[38;5;188m\e[48;5;233m:\e[?25h"
+  - delay: 306
+    content: q
+  - delay: 149
+    content: "\r"
+  - delay: 8
+    content: "\e[?25l\e[51;1H\e[K\e[51;1H\e[?2004l\e[>4;m\e[23;2t\e[23;1t\e[?1004l\e[?2004l\e[?1l\e>\e[?25h\e[>4;m\e[?1049l\e[23;0;0t"
+  - delay: 40
+    content: "\e[?2004h\r\n\e[1;36m2025/02/17\e[0m on \e[1;35m \e[0m\e[1;35mmain\e[0m \e[1;31m[\e[0m\e[1;31m✘\e[0m\e[1;31m!\e[0m\e[1;31m?\e[0m\e[1;31m]\e[0m via \e[1;33m\U0001F40D \e[0m\e[1;33m\e[0m\e[1;33mv3.10.12\e[0m\e[1;33m \e[0mtook \e[1;33m54s\e[0m \e[1;32m❯\e[0m "
+  - delay: 724
+    content: "\e[?2004l\r\r\nlogout\r\n"
