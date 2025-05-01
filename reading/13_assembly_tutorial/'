@@ -674,7 +674,7 @@ CMAIN:
 Type Name Content
   c  "v   /`/-1^MV?`?+1^M
 /`/-1<CR>?`?+1<CR>
-let @t = '/`/-1V?`?+1'
+let @t = '/`/-1V?`?+1'
 let @t = '/`/-1^MV?`?+1^M'
 let @t = '/`/-1V?`'
 
@@ -1016,7 +1016,6 @@ if (max < c) max = c;
 section .text
 global CMAIN
 CMAIN:
-    mov rbp, rsp; for correct debugging
     ;write your code here
 
     PRINT_STRING input_msg
@@ -1037,14 +1036,12 @@ CMAIN:
     mov [max],ax ; init max value
     cmp bx,ax ; compare with max value and b
     jg L_bx_gt1 ; set max value
-    
-L_cmp1:
 
     mov [min],ax ; init min value
     cmp bx,ax ; compare with min value and b
     jl L_bx_lt1 ; set min value
 
-L_cmp2:
+L_cmp1:
     ; prepare new variable c
     mov bx,[c]
 
@@ -1052,13 +1049,11 @@ L_cmp2:
     cmp bx,ax ; compare with max value and c
     jg L_bx_gt2 ; set max value
 
-L_cmp3:
-
     mov ax,[min]
     cmp bx,ax ; compare with min value and c
     jl L_bx_lt2 ; set min vlaue
 
-L_cmp4:
+L_cmp2:
     PRINT_STRING max_msg
     PRINT_DEC 2,max
     NEWLINE
@@ -1073,7 +1068,7 @@ L_cmp4:
 
     mul bx
     shl edx,16
-    and eax,0x0000ffff
+    and eax,0b0000ffff
     or  eax,edx
     mov [res],eax
 
@@ -1081,24 +1076,24 @@ L_cmp4:
     PRINT_DEC 4,res
     NEWLINE
 
-    xor rax, rax
-    ret
-
 L_bx_gt1:
     mov [max],bx ; update max
     jmp L_cmp1
 
 L_bx_lt1:
     mov [min],bx ; update min
-    jmp L_cmp2
+    jmp L_cmp1
 
 L_bx_gt2:
     mov [max],bx ; update max
-    jmp L_cmp3
+    jmp L_cmp2
 
 L_bx_lt2:
     mov [min],bx ; update min
-    jmp L_cmp4
+    jmp L_cmp2
+
+    xor rax, rax
+    ret
 
 section .data
     input_msg db 'input number:',0x00
@@ -1115,481 +1110,10 @@ section .bss
     res resd 1
 ```
 
-반복문
-MOV ECX, 반복횟수
-라벨:
-  <<반복되는 내용>>
-LOOP 라벨
 
-반복 블록 내에서 ECX 레지스터는 절대 사용금지
-LOOP 라벨 명령어에 도착하면 ECX 값을 1 감소시키고, 만약 ECX 값이 0이면 블록을 종료하고, 그렇지 않으면 라벨에서부터 다시 실행된다.
 
-```asm
-%include "io64.inc"
-
-section .text
-global CMAIN
-CMAIN:
-    ;write your code here
-    mov ax,0
-    mov cx,10
-L1:
-    add ax,cx
-    loop L1
-
-    PRINT_DEC 2,ax
-    NEWLINE
-
-    xor rax, rax
-    ret
-```
-
-INC para
-para: 1 더할 곳의 주소(레지스터, 메모리)
-
-DEC para
-para: 1 감소시킬 곳의 주소(레지스터, 메모리)
-
-```asm
-%include "io64.inc"
-
-section .text
-global CMAIN
-CMAIN:
-    ;write your code here
-    mov ax,0
-    mov bx,1
-    mov cx,10
-L1:
-    add ax,bx
-    inc bx
-    loop L1
-
-    PRINT_DEC 2,ax
-    NEWLINE
-
-    xor rax, rax
-    ret
-```
-
-
-```asm
-%include "io64.inc"
-
-section .text
-global CMAIN
-CMAIN:
-    ;write your code here
-    mov ax,0
-    mov bx,0
-L1:
-    add ax,bx
-    inc bx
-    cmp bx,10
-    jle L1
-
-    PRINT_DEC 2, ax
-    NEWLINE
-
-    xor rax, rax
-    ret
-```
-
-```asm
-%include "io64.inc"
-
-section .text
-global CMAIN
-CMAIN:
-    ;write your code here
-    mov ax,0
-    mov bx,0
-L1:
-    cmp bx,10
-    jg L2
-    add ax,bx
-    inc bx
-    jmp L1
-L2:
-    PRINT_DEC 2,ax
-    NEWLINE
-
-    xor rax, rax
-    ret
-```
-
-초기 값이 있는 배열 변수 선언
-
-section .data에서 선언
-<변수이름> <데이터타입> <배열 개수만큼의 값>
-<변수이름> TIMES <변수개수> <데이터타입> <초기값>
-
-초기 값이 없는 배열 변수 선언
-section .bss에서 선언
-<변수이름> <예약 데이터 타입> <배열 개수>
-
-```asm
-%include "io64.inc"
-
-section .text
-global CMAIN
-CMAIN:
-    ;write your code here
-    mov eax,a
-    PRINT_HEX 4,eax ; 403044
-    NEWLINE
-
-    mov eax, [a]
-    PRINT_HEX 4,eax ; 4614321e <- 값으로 표현되는 수
-    NEWLINE
-
-    xor rax, rax
-    ret
-
-section .data
-    a db 30,50,20,70,60 ; 1E,32,14,46,3C <- 실제 저장되어 있는 메모리, 리틀엔디언
-    b times 5 dw 0 ; 0000 0000 0000 0000 0000
-    a1 dw 0x1234,0x5678,10 ; 3412 7856 9A00
-
-section .bss
-    c resb 3
-    d resw 4
-
-```
-
-
-인덱스로 배열 요소에 접근할 때 주의점
-
-반드시 메모리값으로 접근한다
-접근 주소 = 시작 주소(변수 이름 또는 시작 주소를 가지고 있는 4byte 레지스터 이름) + 배열인덱스 * 데이터타입 바이트 크기
-
-```asm
-%include "io64.inc"
-
-section .text
-global CMAIN
-CMAIN:
-    ;write your code here
-    mov al,[a]
-    PRINT_DEC 1,al
-    NEWLINE
-
-    mov al,[a+1] ; a+1*1
-    PRINT_DEC 1,al
-    NEWLINE
-
-    mov ax,[a1]
-    PRINT_HEX 2,ax
-    NEWLINE
-
-    mov ax,[a1+1] ; bug
-    PRINT_HEX 2,ax
-    NEWLINE
-
-    mov ax,[a1+2] ; bug
-    PRINT_HEX 2,ax
-    NEWLINE
-
-    xor rax, rax
-    ret
-
-section .data
-    a db 30,50,20,70,60 ; 1E,32,14,46,3C
-    b times 5 dw 0 ; 0000 0000 0000 0000 0000
-    a1 dw 0x1234,0x5678,10 ; 3412 7856 9A00
-
-section .bss
-    c resb 3
-    d resw 4
-
-```
-
-
-```asm
-%include "io64.inc"
-
-section .text
-global CMAIN
-CMAIN:
-    ;write your code here
-    mov eax,0
-    mov ecx,3
-L1:
-    mov ebx, [my + eax*2]
-    mov [you + eax*2],ebx
-    inc eax
-    loop L1
-
-    ; print you[3]
-    mov edx,you
-    mov eax,0
-L2:
-    PRINT_HEX 2,[edx+eax*2]
-    NEWLINE
-    inc eax
-    cmp eax,3
-    jl L2
-
-    xor rax, rax
-    ret
-
-section .data
-    my dw 0x1234,0x4567,0x1133 ; 34 12 67 45 33 11
-section .bss
-    you resw 3
-```
-
-
-ECX 레지스터에 반복 횟수를 넣고 LOOP 문으로 반복을 구현하는 문법 사용 시 유의해야 하는 것이 있는데 반복 블록 내에서는 PRINT 계역의 매크로 함수(io64.inc)를 사용할 수 없다는 것이다. PRINT 계역의 매크로 함수 내부에서 사용하는 라벨의 범위와 LOOP 명령어에서 사용하는 라벨의 범위가 충돌하기 때문이다. ... 이런 경우 DO WHILE 문장을 사용해서 구현하여 동일한 목표를 달성할 수 있다.
-
-```
-my1[3](W)={0x1234,0x4567,10};
-you1[3](W);
-edx;
-edx=0;
-for(ecx=3;0<ecx;ecx--) {
-    eax = my1[edx];
-    you1[edx]=eax;
-    edx++;
-}
-edx=0;
-do{
-    print(my1[edx])
-    edx++;
-}while(edx < 3);
-```
-
-```asm
-%include "io64.inc"
-
-section .text
-global CMAIN
-CMAIN:
-    ;write your code here
-    mov eax,my1
-    mov ebx,you1
-
-    mov edx,0
-    mov ecx,3
-L1:
-    mov eax, [my1+edx*2]
-    mov [you1+edx*2],eax
-    inc edx
-    loop L1
-
-    mov edx,0
-L2:
-    PRINT_HEX 2,my1+edx*2
-    NEWLINE
-    inc edx
-    cmp edx,3
-    jl L2
-
-    xor rax, rax
-    ret
-
-section .data
-    my1 dw 0x1234,0x4567,10
-
-section .bss
-    you1 resw 3
-```
-
-
-임의의 숫자를 입력받아(2byte 크기) 1에서부터 그 숫자까지 3의 배수만 선택하여 모두 배열에 저장하고 그 개수와 값을 각각 출력하라.
-저장된 모든 수의 합을 구하여 출력하라.
-
-```asm
-%include "io64.inc"
-
-section .text
-global CMAIN
-CMAIN:
-    ;write your code here
-    PRINT_STRING msg_input
-    GET_DEC 2,input
-    NEWLINE
-
-    mov [count],0
-    mov [total],0
-    mov cx,1 ; temporary variable
-L1:
-    mov ax,cx
-    mov bx,3
-    div bx ; dx:ax with ax(quotient), dx(remain)
-    cmp dx,0
-    je L_target
-    jmp L_target_end
-L_target:
-    mov [arr + 2 * count],cx
-    inc count
-L_target_end:
-    inc cx
-    cmp input,cx
-    jge L1
-
-    PRINT_STRING msg_count
-    PRINT_DEC 2,count
-    NEWLINE
-
-    cmp count,0
-    jg L_print_arr
-    jmp L_print_arr_end
-
-L_print_arr:
-    mov cx,[count]
-    mov bx,0
-L_print:
-    mov ax,[total]
-    mov dx,[arr + 2 * bx]
-    add ax,dx
-    mov [total],ax
-    PRINT_DEC 2,dx
-    NEWLINE
-    inc bx
-    dec cx
-    cmp cx,0
-    jne L_print
-L_print_arr_end:
-    PRINT_STRING msg_total
-    PRINT_DEC 2,total
-    NEWLINE
-
-    xor rax, rax
-    ret
-
-section .data
-    msg_input db '# input max number:',0x00
-    msg_count db '# number count:',0x00
-    msg_total db '# total:',0x00
-section .bss
-    input resw 1
-    count resw 1
-    total resw 1
-    arr resw 100
-
-```
-
-
-DIV para(2byte)
-para가 2byte일 때: DX:AX / para(2byte) : AX(몫), DX(나머지)
-para는 레지스터만 허용된다.
-나누어지는 값은 무조건 DX:AX 레지스터에만 넣어야 한다.
-결과는 AX, DX의 레지스터에서만 얻을 수 있다.
-
-```asm
-%include "io64.inc"
-
-section .text
-global CMAIN
-CMAIN:
-    ;write your code here
-    mov eax,0x12345678
-    mov bx,0x4567
-
-    mov edx,eax
-    shr edx,16
-    and eax,0x0000ffff
-    div bx
-
-    mov [quotient],ax
-    mov [remain],dx
-
-    PRINT_HEX 2,quotient
-    NEWLINE
-    PRINT_HEX 2,remain
-    NEWLINE
-
-    xor rax, rax
-    ret
-
-section .bss
-    quotient resw 1
-    remain resw 1
-```
-
-
-DIV para(1byte)
-para가 1byte일 때: AX / para : AL(몫), AH(나머지)
-para는 레지스터만 허용된다
-나누어지는 값은 반드시 AX레지스터에만 넣어야 한다
-연산결과는 무조건 AL, AH의 고정된 레지스터로만 리턴된다.
-
-```asm
-%include "io64.inc"
-
-section .text
-global CMAIN
-CMAIN:
-    mov rbp, rsp; for correct debugging
-    ;write your code here
-    PRINT_STRING msg_input
-    GET_DEC 2,input
-    NEWLINE
-
-    mov [count],word 0
-    mov [total],word 0
-    mov cx,1 ; temporary variable
-L1:
-    mov ax,cx
-    mov bl,3
-    div bl ; dx:ax with ax(quotient), dx(remain)
-    cmp ah,0
-    je L_target
-    jmp L_target_end
-L_target:
-    mov edx,[count]
-    mov [arr + 2 * edx],cx
-    mov ax,dx
-    add ax,1
-    mov [count],ax
-
-L_target_end:
-    inc cx
-    mov ax,[input]
-    cmp ax,cx
-    jge L1
-
-    PRINT_STRING msg_count
-    PRINT_DEC 2,count
-    NEWLINE
-    
-    mov eax,[count]
-    cmp eax,0
-    jg L_print_arr
-    jmp L_print_arr_end
-
-L_print_arr:
-    mov cx,[count]
-    mov ebx,0
-L_print:
-    mov ax,[total]
-    mov dx,[arr + 2 * ebx]
-    add ax,dx
-    mov [total],ax
-    PRINT_DEC 2,dx
-    NEWLINE
-    inc bx
-    dec cx
-    cmp cx,0
-    jne L_print
-L_print_arr_end:
-    PRINT_STRING msg_total
-    PRINT_DEC 2,total
-    NEWLINE
-
-    xor rax, rax
-    ret
-
-section .data
-    msg_input db '# input max number:',0x00
-    msg_count db '# number count:',0x00
-    msg_total db '# total:',0x00
-section .bss
-    input resw 1
-    count resw 1
-    total resw 1
-    arr resw 100
-
-```
-
+JMP 계열 명령어(플래그 레지스터의 플래그를 보고 수행됨)
+JE/JNE label: 같거나/같지 않다면 label로 jump
+JG/JGE label: 크거나/크지 않다면 label로 jump
+JL/JLE label: 작거나/작지 않다면 label로 jump
+JMP    label: label로 jump
