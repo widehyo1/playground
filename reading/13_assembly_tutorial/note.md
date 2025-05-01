@@ -1593,3 +1593,133 @@ section .bss
 
 ```
 
+```asm
+%include "io64.inc"
+
+section .text
+global CMAIN
+CMAIN:
+    ;write your code here
+    mov ax,10
+    call MyShow
+
+    xor rax, rax
+    ret
+
+MyShow:
+    PRINT_STRING msg1
+    NEWLINE
+    ret
+
+section .data
+    msg1 db 'haha',0x00
+```
+
+```asm
+%include "io64.inc"
+
+section .text
+global CMAIN
+CMAIN:
+    ;write your code here
+    GET_DEC 2,ax
+    GET_DEC 2,bx
+
+    call MyCheck
+
+    PRINT_DEC 2,ax
+    NEWLINE
+
+    xor rax, rax
+    ret
+
+MyCheck: ; inpupt: ax,bx return: ax
+    cmp ax,bx
+    jl L_less
+    add ax,bx
+    jmp L_less_end
+L_less:
+    sub ax,bx
+L_less_end:
+    ret
+```
+
+프로시저의 선언은 section .text에서 선언하고, section .text 내에서 호출(call)한다. 프로시저가 끝나는 부분은 항상 ret 명령어를 사용하는데, 이것은 명령어의 흐름을 call했던 다음 라인으로 보내는 일종의 특수한 jmp문이라고 생각하면 된다.
+section .data, section .bss 등에 있는 변수들은 모든 프로시저에서 접근 가능하며 공유된다.
+라벨의 이름은 모든 프로시저에서 인식되는 전역 범위이기 때문에 동일한 이름의 라벨이 2개 이상 프로시저 내에 존재할 수 없다.
+
+
+Pointer Registers
+- Instruction Pointer(IP)
+  - 다음에 수행한 명령어가 있는 곳의 주소값을 저장
+  - CPU가 관리함
+- Stack Pointer(SP)
+  - 현재 스택의 Top값의 주소를 저장
+  - 주로 CPU가 관리하고, 프로그래머가 변경해야 하는 경우도 있음
+- Base Pointer(BP)
+  - 프로그래머가 계산 중 주소를 저장하기 위한 용도
+  - 프로시저의 파라미터 접근 등에 사용됨
+
+
+64bit 어셈블러 모드에서
+스택에 자료 넣기
+PUSH para: para는 넣고자 하는 자료값으로 2byte 또는 8byte 크기 상수값 또는 레지스터
+- para가 상수인 경우는 크기를 명시적으로 표시
+(push word 0x12, push qword 0x1234)
+
+스택에서 자료 빼기
+POP para: para는 저장된 자료를 받을 곳 2byte 또는 8byte 크기의 레지스터 또는 메모리
+para가 메모리인 경우는 크기를 명시해야 함
+(pop word [a], pop qword [b])
+
+32bit 어셈블러 모드에서
+스택에 자료 넣기
+PUSH para: para는 넣고자 하는 자료값으로 2byte 또는 4byte 크기 상수값 또는 레지스터
+- para가 상수인 경우는 크기를 명시적으로 표시
+(push word 0x12, push dword 0x1234)
+
+스택에서 자료 빼기
+POP para: para는 저장된 자료를 받을 곳 2byte 또는 4byte 크기의 레지스터 또는 메모리
+para가 메모리인 경우는 크기를 명시해야 함
+(pop word [a], pop dword [b])
+
+
+스택은 메모리의 영역에서 미리 예약되어 있는 일정 크기의 특별한 배열 변수라고 생각하면 쉽다. 이 배열은 마지막 인덱스부터 앞쪽으로 오면서(주소의 높은 쪽에서 낮은 쪽으로) 사용한다. PUSH 연산은 뒤쪽에서 앞쪽으로(높은 주소에서 낮은 주소로) 이루어지고, POP은 그 반대 방향으로 연산이 진행된다. 또 요소크기의 기본 단위는 64bit 모드인 경우는 2byte 또는 8byte이며, 32bit 모드일 때는 2byte 또는 4byte이다. 그리고 현재 어떤 인덱스(주소)까지 작업했는지를 기억하기 위해 특별한 레지스터를 사용하는데, 이 레지스터가 RSP(stack pointer) 레지스터이다. 이런 이유로 PUSH 연산을 수행하면 RSP 값(주소)은 데이터의 크기만큼 감소한다. POP의 경우는 데이터의 크기만큼 증가한다.
+
+```asm
+%include "io64.inc"
+
+section .text
+global CMAIN
+CMAIN:
+    ;write your code here
+    GET_DEC 2,ax
+    GET_DEC 2,bx
+
+    ; push ax
+    ; push bx
+    call MyCheck
+
+    PRINT_DEC 2,ax
+    NEWLINE
+    ; pop bx
+    ; pop ax
+
+    PRINT_DEC 2,ax
+    NEWLINE
+
+    xor rax, rax
+    ret
+
+MyCheck: ; inpupt: ax,bx return: ax
+    cmp ax,bx
+    jl L_less
+    add ax,bx
+    jmp L_less_end
+L_less:
+    sub ax,bx
+L_less_end:
+    ret
+```
+
+
