@@ -7,6 +7,24 @@ function snake_to_camel(text, result) {
   result = tolower(substr(result, 0, 1)) substr(result, 2)
   return result
 }
+function snakeToCamel(text, result) {
+  result = ""
+  upflag = 0
+  for (i = 1; i <= length(text); i++) {
+    curchar = substr(text, i, 1)
+    if (curchar == "_") {
+      upflag = 1
+      continue
+    }
+    if (upflag) {
+      upflag = 0
+      curchar = toupper(curchar)
+    }
+    result = result curchar
+  }
+  result = tolower(substr(result, 0, 1)) substr(result, 2)
+  return result
+}
 function camel_to_snake(text, result) {
   result = text
   while (match(result, /[A-Z]/) > 1) {
