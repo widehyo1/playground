@@ -1,185 +1,139 @@
+from pprint import pprint, pformat
 from collections.abc import Sequence
 from typing import Optional
-from enum import Enum, auto
 from dataclasses import dataclass
+from enum import Enum, EnumMeta
 
 
-class ReprMixin:
-    hide_fields = set()
-
-    def _get_debug_fields(self):
-        return {k: v for k, v in self.__dict__.items() if k not in hide_fields}
-
-    def __repr__(self):
-        from pprint import pformat
-
-        fields = self._get_debug_fields()
-        formatted = ", ".join(f"{k}={pformat(v)}" for k, v in fields.items())
-        return f"<{self.__class__.__name__} {formatted}>"
+class SpecialState(Enum):
+    SPLIT = 256
+    MATCH = 257
+    EMPTY = 258
 
 
-class Node(Enum):
-    Split = 256
-    Match = 257
+class _RegexOpMeta(EnumMeta):
+    def __contains__(self, item):
+        if isinstance(item, self):
+            return True
+        return item in (
+            member.value for member in self
+        )  # short circuit: O(k), k <= n, memory O(1)
+        # return item in {member.value for member in self} # constructing set: O(n), and lookup O(1) for time, memory O(n)
 
 
-StateType = Optional["State"]
-PtrType = Optional["Ptrlist"]
-FragType = Optional["Frag"]
+class RegexOp(Enum, metaclass=_RegexOpMeta):
+    CONCAT = "."
+    ALTERNATIVE = "|"
+    ZERO_OR_MORE = "*"
+    ONE_OR_MORE = "+"
+    ZERO_OR_ONE = "?"
 
-nstate = 0
-
-
-@dataclass
-class State(ReprMixin):
-    """
-    Represents an NFA state plus zero or one or two arrows exiting.
-    if c == Match, no arrows out; matching state.
-    If c == Split, unlabeled arrows to out and out1 (if != NULL).
-    If c < 256, labeled arrow with character c to out.
-    """
-
-    c: int
-    out: StateType = None
-    out1: StateType = None
-    lastlist: int = 0
-
-    def __post_init__(self):
-        global nstate
-        nstate += 1
-        print(f"current nstate: {nstate}")
-
-
-print("init match_state")
-match_state = State(Node.Match.value)
-nstate -= 1
-print(f"done with nstate: {nstate}")
+    # @classmethod
+    # def to_set(cls):
+    #     return {member.value for member in cls}
 
 
 @dataclass
-class Frag(ReprMixin):
-    """
-    A partially built NFA without the matching state filled in.
-    Frag.start points at the start state.
-    Frag.out is a list of places that need to be set to the
-    next state for this fragment.
-    """
-
-    start: StateType = None
-    out: PtrType = None
-
-
-@dataclass
-class Ptrlist(ReprMixin):
-    """
-    Since the out pointers in the list are always
-    uninitialized, we use the pointers themselves
-    as storage for the Ptrlists.
-    """
-
-    nxt: PtrType = None
-    s: StateType = None
+class State:
+    c: str | SpecialState
+    out: Optional["State"] = None
+    out1: Optional["State"] = None
 
     @classmethod
-    def from_states(cls, outp: Optional[Sequence["State"]]) -> PtrType:
-        if outp:
-            return Ptrlist(None, outp)
-        return None
+    def empty(cls):
+        return State(SpecialState.EMPTY, None, None)
+
+    def to_list(self):
+        return [self]
 
 
-def patch(l: PtrType, s: StateType) -> None:
-    while l:
-        next_l = l.nxt
-        l.s = s
-        l = next_l
+@dataclass
+class Frag:
+    start: State
+    out: Sequence[State]
+
+    def patch(self, s: State):
+        for state in self.out:
+            state.out = s
 
 
-def append(l1: PtrType, l2: PtrType) -> PtrType:
-    head = l1
-    while l1.nxt:
-        l1 = l1.nxt
-    l1.nxt = l2
-    return head
+def _chain(l1: Sequence[State], l2: Sequence[State]):
+    yield from l1
+    yield from l2
 
 
-def post2nfa(postfix: str) -> StateType:
+def chain(l1: Sequence[State], l2: Sequence[State]):
+    return [item for item in _chain(l1, l2)]
 
-    if len(postfix) == 0:
-        return None
 
-    list1 = Ptrlist.from_states
+def one_or_more(stack):
+    e = stack.pop()
+    s = State(SpecialState.SPLIT, e.start, State.empty())
+    e.out = s.to_list()
+    stack.append(Frag(e.start, s.out1.to_list()))
+
+
+def zero_or_one(stack):
+    e = stack.pop()
+    s = State(SpecialState.SPLIT, e.start, State.empty())
+    stack.append(Frag(s, chain(e.out, s.out1.to_list())))
+
+
+def zero_or_more(stack):
+    e = stack.pop()
+    s = State(SpecialState.SPLIT, e.start, State.empty())
+    e.out = s.to_list()
+    stack.append(Frag(s, s.out1.to_list()))
+
+
+def alternative(stack):
+    e1 = stack.pop()
+    e2 = stack.pop()
+    s = State(SpecialState.SPLIT, e1.start, e2.start)
+    stack.append(Frag(s, chain(e1.out, e2.out)))
+
+
+def concat(stack):
+    e1 = stack.pop()
+    e2 = stack.pop()
+    e1.patch(e2.start)
+    stack.append(Frag(e1.start, e2.out))
+
+
+def character(stack, char):
+    s = State(char, State.empty(), State.empty())
+    stack.append(Frag(s, s.out.to_list()))
+
+
+def post2nfa(postfix: str) -> State | None:
+
     stack = []
 
-    # closures for free variable stack:
-    # concat, alternate, zero_or_one,
-    # zero_or_more, one_or_more, character
-    # get_processor
-    def concat(char=None):
-        e2 = stack.pop()
-        e1 = stack.pop()
-        print(f"e2: {e2}, e1: {e1}")
-        patch(e1.out, e2.start)
-        stack.append(Frag(e1.start, e2.out))
-
-    def alternate(char=None):
-        e2 = stack.pop()
-        e1 = stack.pop()
-        s = State(Node.Split.value, e1.start, e2.start)
-        stack.append(Frag(s, append(e1.out, e2.out)))
-
-    def zero_or_one(char=None):
-        e = stack.pop()
-        s = State(Node.Split.value, e.start, None)
-        stack.append(Frag(s, append(e.out, list1(s.out1))))
-
-    def zero_or_more(char=None):
-        e = stack.pop()
-        s = State(Node.Split.value, e.start, None)
-        patch(e.out, s)
-        stack.append(Frag(s, list1(s.out1)))
-
-    def one_or_more(char=None):
-        e = stack.pop()
-        s = State(Node.Split.value, e.start, None)
-        patch(e.out, s)
-        stack.append(Frag(e.start, list1(s.out1)))
-
-    def character(char):
-        s = State(ord(char), None, None)
-        stack.append(Frag(s, list1(s.out)))
-
-    special_chars = {".", "|", "?", "*", "+"}
-    processor_inventory = {
-        ".": concat,
-        "|": alternate,
-        "?": zero_or_one,
-        "*": zero_or_more,
+    regex_mapping = {
         "+": one_or_more,
+        "*": zero_or_more,
+        "?": zero_or_one,
+        "|": alternative,
+        ".": concat,
     }
 
-    def get_processor(char):
-        if char not in special_chars:
-            return character
-        return processor_inventory[char]
-
     for p in postfix:
-        print("postfix loop")
-        print(p, stack)
-        processor = get_processor(p)
-        processor(p)
+        if p in RegexOp:
+            regex_mapping[p](stack)
+        else:
+            character(stack, p)
 
     e = stack.pop()
-    if len(stack):
+    if len(stack) != 0:
+        pprint(stack)
+        print("invaild postfix")
         return None
+    e.patch(State(SpecialState.MATCH, State.empty(), State.empty()))
 
-    global match_state
-
-    patch(e.out, match_state)
     return e.start
 
 
 if __name__ == "__main__":
     postfix = "abb.+.a."
-    res = post2nfa(postfix)
-    print("main result:")
-    print(res)
+    nfa = post2nfa(postfix)
+    pprint(nfa)
