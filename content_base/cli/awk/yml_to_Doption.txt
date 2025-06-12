@@ -1,0 +1,231 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/comm
+#    username: postgres
+#    password: 1234
+    url: jdbc:postgresql://localhost:30006/comm
+    username: ****
+    password: ***********
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+        globally_quoted_identifiers: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  thymeleaf:
+    cache: false
+
+file:
+  upload:
+    root-dir-path: C:\Users\John\.proj\katech\katech-analysis-portal
+#    root-dir-path: D:\\katech\\katech-analysis-portal
+#    root-dir-path: "/FIDATA/upload"
+
+playground:
+  api:
+    endpoint: http://localhost:9090/api/playground/v1
+#    endpoint: http://localhost:9090/api/playground/v1
+
+spring:
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+    mapper:
+      accept_case_insensitive_enums: true
+  servlet:
+    multipart:
+      max-file-size: 4096MB
+
+admin:
+  username: ***********************
+  password: **********************
+  email: ******************************
+
+security:
+  failedLoginAttempts: ${SECURITY_FAILED_LOGIN_ATTEMPTS:3}
+
+brute:
+  force:
+    cache:
+      maxSize: ${BRUTE_FORCE_CACHE_MAX_SIZE:1000}
+
+jwt:
+  secret: ******************************************************************************
+
+sso:
+  requestUrl: http://localhost:30004
+  clientId: ************************************
+  clientPassword: ************************************
+
+encryption:
+  secret:
+    password: **************************************
+    salt: *********************************************
+server:
+  port: 8081
+    
+spring:
+  #. 자동 재시작
+  devtools:
+    restart:
+      enabled: false
+  #. 설정한 Job 만 실행, 없으면 default EMPTY 가 할당 되어서 어떠한 Job 도 실행 안됨.
+  batch:
+    job:
+      enabled: false
+      #names: conditionalStepFlowJob
+      names: NONE
+  datasource:
+    batch:
+      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+      jdbc-url: jdbc:log4jdbc:postgresql://localhost:30006/comm?autoReconnect=true&useUnicode=true&characterEncoding=utf8
+      username: postgres
+      password: fidata12345!
+      maximum-pool-size: 50 #. 유휴한 connection과 사용중인 connection을 포함하여 pool의 크기를 설정, 기본값으로는 10
+      minimum-idle: 10 #. pool에서 관리하는 최소 유휴 connection의 수에 관한 설정, 기본값으로 maximumPoolSize와 같은 값
+      poolName: Hikari
+      Connection-timeout: 30000 #. 클라이언트가 풀(Pool)에서 연결을 기다리는 최대 시간(밀리초)을 제어, 연결을 사용할 수 없는 상태에서 이 시간을 초과하면 SQLException이 발생, 허용 가능한 최저 연결 제한 시간은 250ms입니다. 기본값: 30000(30초)
+      idle-timeout: 500000 #. connection이 유휴 상태로 남을 수 있는 최대시간(밀리초, ms)에 관한 설정, 기본값은 600000ms(10분)이고, 최소값으로는 10000ms(10초)
+      max-lifetime: 178000 #. connection의 최대 유지시간에 관한 설정, 기본값으로는 1800000ms(30분)를 가지고, 0으로 설정하게 되면 무한 수명을 의미
+      auto-commit: false #. pool에서 반환된 connection의 기본 autoCommit에 관한 설정으로 기본값은 true
+      transaction-isolation: TRANSACTION_READ_COMMITTED
+      data-source-properties: #. HikariCP와 상용DB(Oracle, Mysql, Postgresql, ...)을 같이 사용할 시에 권장되는 옵션
+        cachePrepStmts: true #. cache 사용에 여부 대한 설정으로 true로 지정해야지 cache 관련 옵션들을 활성화 할 수 있다.
+        prepStmtCacheSize: 250 #. 상용DB(Oracle, ㅊFfix: sAdd Visualtiization sSCreate request optionsMysql, Postgresql, ...) 드라이버가 연결당 cache할 statement의 수에 관한 설정이다. 기본값은 25이지만 250~500이 권장 설정이다.
+        prepStmtCacheSqlLimit: 2048 #. cache할 SQL 문의 최대 길이에 관한 설정이다. 상용DB(Oracle, Mysql, Postgresql, ...)은 기본값으로 256을 가지고 권장 설정은 2048이다.
+        useServerPrepStmts: true #, 상용DB(Oracle, Mysql, Postgresql, ...)의 최신 버전을 지원 받는 설정으로 큰 성능 향상을 제공받을 수 있기에 true를 권장한다.
+ 
+#swagger-api
+playground:
+  api:
+    version: v1
+    swagger:
+      host: localhost:${server.port}
+      
+logging:
+  config: classpath:log/logback-${spring.profiles.active}.xml
+  file:
+    path: /eng01/logs/playground-batch
+  level:
+    root: INFO
+    com.deeplify.tutorial.batch: DEBUG
+    org.springframework.batch: DEBUG
+    org.quartz: DEBUG
+    
+#. batch 스케줄러 등록
+batch:
+  cron:
+    data-env-request-new-extn: 0 0/10 * * * * #. 분석환경 신규/연장 신청 : 매일 10분마다 실행
+    data-env-request-end: 0 0/15 * * * * #. 분석환경 만료 신청 : 매일 10분마다 실행
+    
+# 사용자 정의 설정들
+properties:
+  common:
+    playground-api:
+      endpoint: http://localhost:9090
+      k8s-jupyterhub-namespace: jupyterhub
+      jupyter-container-name-prefix: jupyter-
+    scheduler:
+      pool-size: 10
+      thread-name-prefix: Playground-Scheduler-
+    server:
+      safezone-portal: http://localhost:8082### server port
+server:
+  port: 9091
+    
+spring:
+  #. local-ejd, local, dev, prod
+  profiles:
+    active: local-ejd
+  #. 자동 재시작
+  devtools:
+    restart:
+      enabled: true
+  #. 설정한 Job 만 실행, 없으면 default EMPTY 가 할당 되어서 어떠한 Job 도 실행 안됨.
+  batch:
+    job:
+      enabled: false
+      #names: conditionalStepFlowJob
+      names: NONE
+  #datasource:
+  #  driver-class-name: org.h2.Driver
+  #  url: jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;MODE=MYSQL;
+  #  schema: classpath:/org/springframework/batch/core/schema-h2.sql
+  datasource:
+    batch:
+      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+      #jdbc-url: jdbc:log4jdbc:postgresql://localhost:5432/spring_batch
+      #username: spring_batch
+      #password: spring_batch
+      jdbc-url: jdbc:log4jdbc:postgresql://localhost:30006/comm?autoReconnect=true&useUnicode=true&characterEncoding=utf8
+      username: postgres
+      password: fidata12345!
+      maximum-pool-size: 50 #. 유휴한 connection과 사용중인 connection을 포함하여 pool의 크기를 설정, 기본값으로는 10
+      minimum-idle: 10 #. pool에서 관리하는 최소 유휴 connection의 수에 관한 설정, 기본값으로 maximumPoolSize와 같은 값
+      poolName: Hikari
+      Connection-timeout: 30000 #. 클라이언트가 풀(Pool)에서 연결을 기다리는 최대 시간(밀리초)을 제어, 연결을 사용할 수 없는 상태에서 이 시간을 초과하면 SQLException이 발생, 허용 가능한 최저 연결 제한 시간은 250ms입니다. 기본값: 30000(30초)
+      idle-timeout: 500000 #. connection이 유휴 상태로 남을 수 있는 최대시간(밀리초, ms)에 관한 설정, 기본값은 600000ms(10분)이고, 최소값으로는 10000ms(10초)
+      max-lifetime: 178000 #. connection의 최대 유지시간에 관한 설정, 기본값으로는 1800000ms(30분)를 가지고, 0으로 설정하게 되면 무한 수명을 의미
+      auto-commit: false #. pool에서 반환된 connection의 기본 autoCommit에 관한 설정으로 기본값은 true
+      transaction-isolation: TRANSACTION_READ_COMMITTED
+      data-source-properties: #. HikariCP와 상용DB(Oracle, Mysql, Postgresql, ...)을 같이 사용할 시에 권장되는 옵션
+        cachePrepStmts: true #. cache 사용에 여부 대한 설정으로 true로 지정해야지 cache 관련 옵션들을 활성화 할 수 있다.
+        prepStmtCacheSize: 250 #. 상용DB(Oracle, Mysql, Postgresql, ...) 드라이버가 연결당 cache할 statement의 수에 관한 설정이다. 기본값은 25이지만 250~500이 권장 설정이다.
+        prepStmtCacheSqlLimit: 2048 #. cache할 SQL 문의 최대 길이에 관한 설정이다. 상용DB(Oracle, Mysql, Postgresql, ...)은 기본값으로 256을 가지고 권장 설정은 2048이다.
+        useServerPrepStmts: true #, 상용DB(Oracle, Mysql, Postgresql, ...)의 최신 버전을 지원 받는 설정으로 큰 성능 향상을 제공받을 수 있기에 true를 권장한다.
+
+#. i18n 다국어 메세지
+i18n:
+  basenames: i18n/exception
+  
+#. http client configuration   
+http-client-configuration:
+  max-total: 300
+  default-max-per-route: 50
+  default-keep-alive-duration: -1
+  connection-reqeust-timeout: 3000
+  connection-timeout: 3000
+  socket-timeout: -1
+  idle-timeout: 60
+
+# swagger-api
+playground:
+  api:
+    version: v1
+    prefix: /api/playground
+    swagger:
+      host: localhost:${server.port}
+      
+logging:
+  config: classpath:log/logback-${spring.profiles.active}.xml
+  file:
+    path: /eng01/logs/playground-batch
+  level:
+    root: INFO
+    com.deeplify.tutorial.batch: DEBUG
+    org.springframework.batch: DEBUG
+    org.quartz: DEBUG
+
+#. batch 스케줄러 등록
+batch:
+  cron:
+    data-env-request-new-extn: 0 10 0 * * * #. 분석환경 신규/연장 신청 : 매일 0시 0분에 실행
+    data-env-request-end: 0 10 0 * * * #. 분석환경 만료 신청 : 매일 0시 10분에 실행
+    
+# 사용자 정의 설정들
+properties:
+  common:
+    playground-api:
+      endpoint: http://localhost:9090
+      k8s-jupyterhub-namespace: jupyterhub
+      jupyter-container-name-prefix: jupyter-
+    scheduler:
+      pool-size: 10
+      thread-name-prefix: Playground-Scheduler-
