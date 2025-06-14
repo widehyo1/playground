@@ -86,6 +86,7 @@ def post2nfa(postfix) -> State | None:
     stack: Sequence[Frag] = []
 
     for tok in postfix:
+        print(f"current tok: {tok}")
         match tok:
             case "*":
                 zero_or_more(stack)
@@ -99,6 +100,7 @@ def post2nfa(postfix) -> State | None:
                 alternate(stack)
             case _:
                 character(stack, tok)
+        pp(stack)
 
     assert len(stack) == 1, "invalid postfix"
     e = stack.pop()
@@ -107,30 +109,16 @@ def post2nfa(postfix) -> State | None:
     return e.start
 
 
-def flush_atom(scope, postfix_buffer):
-    if scope.atom_cnt > 0:
-        postfix_buffer += ["."] * (scope.atom_cnt - 1)
-    scope.atom_cnt = 0
-    return postfix_buffer
-
-
-def flush_scope(scope, postfix_buffer):
-    postfix_buffer = flush_atom(scope, postfix_buffer)
-    postfix_buffer += ["|"] * scope.alt_cnt
-    scope.alt_cnt = 0
-    return postfix_buffer
-
-
 def re2post(regex: str) -> str:
     """
     a(bb)+a -> abb.+.a.
     """
-
     postfix_buffer = []
     stack = [Scope()]
     scope_level = 0
     scope = stack[scope_level]
     for re in regex:
+        print(f"re: {re}")
         match re:
             case "*" | "+" | "?":
                 postfix_buffer.append(re)
@@ -144,13 +132,19 @@ def re2post(regex: str) -> str:
             case ")":
                 assert scope_level != 0, "closing paren - can not close unopened paren"
                 assert scope.atom_cnt != 0, "closing paren - atom is empty"
-                postfix_buffer = flush_scope(scope, postfix_buffer)
+                if scope.atom_cnt > 0:
+                    postfix_buffer += ["."] * (scope.atom_cnt - 1)
+                postfix_buffer += ["|"] * scope.alt_cnt
+                scope.atom_cnt = 0
+                scope.alt_cnt = 0
                 scope_level -= 1
                 scope = stack[scope_level]
                 scope.atom_cnt += 1
             case "|":
                 assert scope.atom_cnt != 0, "alternate - atom is empty"
-                postfix_buffer = flush_atom(scope, postfix_buffer)
+                if scope.atom_cnt:
+                    postfix_buffer += ["."] * (scope.atom_cnt - 1)
+                scope.atom_cnt = 0
                 scope.alt_cnt += 1
             case _:
                 if scope.atom_cnt > 1:
@@ -158,58 +152,25 @@ def re2post(regex: str) -> str:
                     postfix_buffer.append(".")
                 postfix_buffer.append(re)
                 scope.atom_cnt += 1
+        pp(postfix_buffer)
+        pp(stack)
     assert scope_level == 0, "invalid paren - unclosed paren"
-    postfix_buffer = flush_scope(scope, postfix_buffer)
+    if scope.atom_cnt > 0:
+        postfix_buffer += ["."] * (scope.atom_cnt - 1)
+    postfix_buffer += ["|"] * scope.alt_cnt
 
+    scope.atom_cnt = 0
+    scope.alt_cnt = 0
+
+    pp(postfix_buffer)
+    pp(stack)
     return "".join(postfix_buffer)
 
-def from_nfa(nfa: State):
-    states = []
-    add_state(states, nfa)
-    return states
-
-def add_state(states: Sequence[State], s: State):
-    if s.c == Special.SPLIT:
-        add_state(states, s.out)
-        add_state(states, s.out1)
-        return
-    states.append(s)
-
-def step(states: Sequence[State], char: str):
-
-    next_states = []
-
-    for state in states:
-        if state.c == char:
-            add_state(next_states, state)
-
-    return next_states
-
-def is_match(states: Sequence[State]):
-    for state in states:
-        if state.c == Special.MATCH:
-            return True
-    else:
-        return False
-
-def nfa_match(nfa: State, string: str):
-    states = from_nfa(nfa)
-    for char in string:
-        print(f"current char: {char}")
-        pp(states)
-        next_states = step(states, char)
-        pp(next_states)
-        states, next_states = next_states, states
-
-    return is_match(states)
 
 # main
 if __name__ == "__main__":
-    regex = "a(bb)+a"
-    postfix = re2post(regex)
-    pp(regex)
+    postfix = re2post("a(bb)+a")
+    # postfix = re2post("a(bb)+")
     pp(postfix)
-    nfa = post2nfa("abb.+.a.")  # (=  a (bb+). a .)
-    pp(nfa)
-    print(nfa_match(nfa, "abbba"))
-    print(nfa_match(nfa, "abbbba"))
+    # nfa = post2nfa("abb.+.a.")  # (=  a (bb+). a .)
+    # pp(nfa)

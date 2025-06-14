@@ -1,0 +1,103 @@
+from dataclasses import dataclass
+from typing import Sequence, Tuple, Optional
+from enum import Enum, auto
+from pprint import pp
+
+class Special(Enum):
+    SPLIT = auto()
+    MATCH = auto()
+
+@dataclass
+class State:
+    c: str | Special
+    out: Optional["State"] | None = None
+    out1: Optional["State"] | None = None
+
+    def to_tuple(self, attrname) -> Sequence[Tuple["State", str]]:
+        return [(self, attrname)]
+
+@dataclass
+class Frag:
+    start: State
+    outs: Sequence[Tuple[State, str]]
+
+def patch(outs: Sequence[Tuple[State, str]], target: State):
+    pp(outs)
+    pp(target)
+    for state, attr in outs:
+        print("=== patch loop ===")
+        pp(state)
+        pp(attr)
+        setattr(state, attr, target)
+    # breakpoint()
+
+
+def append(s1: Sequence[Tuple[State, str]], s2: Sequence[Tuple[State, str]]) -> Sequence[Tuple[State, str]]:
+    return s1 + s2
+
+def zero_or_more(stack):
+    e = stack.pop()
+    s = State(Special.SPLIT, e.start, None)
+    patch(e.outs, s)
+    stack.append(Frag(s, s.to_tuple("out1")))
+
+def one_or_more(stack):
+    e = stack.pop()
+    s = State(Special.SPLIT, e.start, None)
+    patch(e.outs, s)
+    stack.append(Frag(e.start, s.to_tuple("out1")))
+
+def zero_or_one(stack):
+    e = stack.pop()
+    s = State(Special.SPLIT, e.start, None)
+    stack.append(Frag(s, append(e.outs, s.to_tuple("out1"))))
+
+def concat(stack):
+    e1 = stack.pop()
+    e2 = stack.pop()
+    patch(e2.outs, e1.start)
+    stack.append(Frag(e2.start, e1.outs))
+
+def alternate(stack):
+    e1 = stack.pop()
+    e2 = stack.pop()
+    s = State(Special.SPLIT, e1.start, e2.start)
+    stack.append(Frag(s, append(e1.outs, e2.outs)))
+
+def character(stack, tok: str):
+    s = State(tok)
+    stack.append(Frag(s, s.to_tuple("out")))
+
+
+def post2nfa(postfix) -> State | None:
+
+    stack: Sequence[Frag] = []
+
+    for tok in postfix:
+        print(f"current tok: {tok}")
+        match tok:
+            case "*":
+                zero_or_more(stack)
+            case "+":
+                one_or_more(stack)
+            case "?":
+                zero_or_one(stack)
+            case ".":
+                concat(stack)
+            case "|":
+                alternate(stack)
+            case _:
+                character(stack, tok)
+        pp(stack)
+
+    assert len(stack) == 1, "invalid postfix"
+    e = stack.pop()
+    matchstate = State(Special.MATCH)
+    patch(e.outs, matchstate)
+    return e.start
+
+# ── 6. 빠른 확인 ─────────────────────────────────────────────
+if __name__ == "__main__":
+    nfa = post2nfa("abb.+.a.")   # (=  a (bb+). a .)
+    pp(nfa)
+
