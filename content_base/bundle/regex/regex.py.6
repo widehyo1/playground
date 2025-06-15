@@ -19,27 +19,6 @@ class State:
     def to_tuple(self, attrname) -> Sequence[Tuple["State", str]]:
         return [(self, attrname)]
 
-    def __hash__(self):
-        return id(self)
-
-    def ismatch(self):
-        visited = set()
-        stack = [self]
-
-        while stack:
-            state = stack.pop()
-            if state in visited:
-                continue
-            visited.add(state)
-            if state.c == Special.MATCH:
-                return True
-            if state.out:
-                stack.append(state.out)
-            if state.out1:
-                stack.append(state.out1)
-
-        return False
-
 
 @dataclass
 class Frag:
@@ -52,44 +31,65 @@ class Scope:
     atom_cnt: int = 0
     alt_cnt: int = 0
 
-
 @dataclass
 class StateWalker:
     state: State
+    _queue: deque = None
+
+    def __post_init__(self):
+        if self._queue is None:
+            self._queue = deque([(self.state, 0)])
 
     @classmethod
     def from_state(cls, state: State) -> "StateWalker":
         return StateWalker(state)
 
     def state_generator(self, maxlevel: int | None = None):
-        queue = deque([(self.state, 0)])
-        while queue:
-            st, step_level = queue.popleft()
+        self._queue = deque([(self.state, 0)])
+        while self._queue:
+            st, step_level = self._queue.popleft()
 
             if maxlevel is not None and step_level > maxlevel:
                 continue
 
             yield st, step_level
             if st.c == Special.SPLIT:
-                queue.append((st.out, step_level))
-                queue.append((st.out1, step_level))
+                self._queue.append((st.out, step_level,))
+                self._queue.append((st.out1, step_level,))
             elif st.out:
-                queue.append((st.out, step_level + 1))
+                self._queue.append((st.out, step_level + 1,))
+
+    # def __iter__(self, maxlevel=None):
+    #     return self.state_generator(maxlevel)
 
     def gen_filter(self, string: str):
+        print("=== gen filter ===")
         for idx, char in enumerate(string):
+            # print(f"idx: {idx}, char: {char}")
+            # breakpoint()
+            # yield from (
+            #     (st, step_level) for st, step_level in self
+            #     if idx == step_level
+            #     and st.c == char
+            # )
             for st, step_level in self.state_generator(idx):
                 if idx == step_level and st.c == char:
                     yield (st, step_level)
 
     def ismatch(self, string) -> bool:
         target = len(string) - 1
+        return any(st.out.c == Special.MATCH
+        for st, step_level in self.gen_filter(string)
+        if step_level == target)
 
-        return any(
-            st.ismatch()
-            for st, step_level in self.gen_filter(string)
-            if step_level == target
-        )
+        # for st, step_level in self.gen_filter(string):
+        #     print(st)
+        #     print(step_level)
+        # a = list(self.gen_filter(string))
+        # print(len(a))
+        # print(a)
+        # print("asdf")
+
 
 
 def patch(outs: Sequence[Tuple[State, str]], target: State):
@@ -224,16 +224,62 @@ def re2post(regex: str) -> str:
 
     return "".join(postfix_buffer)
 
-
-def regex_by_nfa(regex, string):
-    postfix = re2post(regex)
-    nfa = post2nfa(postfix)
-    sw = StateWalker.from_state(nfa)
-    return sw.ismatch(string)
+# def from_nfa(nfa: State):
+#     states = []
+#     add_state(states, nfa)
+#     return states
+# 
+# def add_state(states: Sequence[State], s: State):
+#     if s.c == Special.SPLIT:
+#         add_state(states, s.out)
+#         add_state(states, s.out1)
+#         return
+#     states.append(s)
+# 
+# def step(states: Sequence[State], char: str):
+# 
+#     next_states = []
+# 
+#     for state in states:
+#         if state.c == char:
+#             add_state(next_states, state)
+# 
+#     return next_states
+# 
+# def is_match(states: Sequence[State]):
+#     for state in states:
+#         if state.c == Special.MATCH:
+#             return True
+#     else:
+#         return False
+# 
+# def nfa_match(nfa: State, string: str):
+#     states = from_nfa(nfa)
+#     for char in string:
+#         print(f"current char: {char}")
+#         pp(states)
+#         next_states = step(states, char)
+#         pp(next_states)
+#         states, next_states = next_states, states
+# 
+#     return is_match(states)
 
 
 # main
 if __name__ == "__main__":
-    regex = "a+"
-    for string in ["", "a", "aa", "aaa", "asve"]:
-        print(regex_by_nfa(regex, string))
+    regex = "a(bb)+a"
+    # regex = "a*(ab|ba)+bbaba"
+    postfix = re2post(regex)
+    # pp(regex)
+    # pp(postfix)
+    nfa = post2nfa("abb.+.a.")  # (=  a (bb+). a .)
+    sw = StateWalker.from_state(nfa)
+
+    # print(sw.ismatch("abba"))
+    # print(sw.ismatch("abbbba"))
+    print(sw.ismatch("abbba"))
+    # for st in sw:
+    #     print(st)
+    # pp(nfa)
+    # print(nfa_match(nfa, "abbba"))
+    # print(nfa_match(nfa, "abbbba"))
