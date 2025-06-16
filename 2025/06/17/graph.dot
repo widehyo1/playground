@@ -1,0 +1,26 @@
+digraph{
+  fontname="Helvetica,Arial,snas-serif"
+  node [fontname="Helvetica,Arial,snas-serif"]
+  edge [fontname="Helvetica,Arial,snas-serif"]
+
+  node [shape="doublecircle"] n006
+  node [shape="point"] n004
+  node [shape="circle"]
+
+  rankdir=LR;
+
+  n001 [label="a"]
+  n002 [label="b"]
+  n003 [label="b"]
+  n004 [label=""]
+  n005 [label="a"]
+  n006 [label=""]
+
+  n001 -> n002
+  n002 -> n003
+  n003 -> n004
+  n004 -> n002
+  n004 -> n005
+  n005 -> n006
+}
+
