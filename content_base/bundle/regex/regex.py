@@ -3,6 +3,7 @@ from collections import deque
 from typing import Sequence, Tuple, Optional
 from enum import Enum, auto
 from pprint import pp
+import sys
 
 
 class Special(Enum):
@@ -40,7 +41,72 @@ class State:
                 stack.append(state.out)
 
         return False
+    
+    def extract_graph(self) -> dict:
+        visited = set()
+        node_inventory = {}
+        stack = [(self, None, None)]
+        nodes = []
+        edges = []
+        split_nodes = []
+        match_nodes = []
+        nodeid = 0
+        while stack:
+            state, parent, parentid = stack.pop()
+            if state in visited:
+                edges.append((parentid, node_inventory[state]))
+                continue
+            nodeid += 1
+            visited.add(state)
+            node_inventory[state] = nodeid
+            edges.append((parentid, nodeid))
 
+            if state.out:
+                stack.append((state.out, state, nodeid))
+            if state.out1:
+                stack.append((state.out1, state, nodeid))
+
+            if state.c == Special.MATCH:
+                nodes.append((nodeid, ""))
+                match_nodes.append(nodeid)
+            elif state.c == Special.SPLIT:
+                nodes.append((nodeid, ""))
+                split_nodes.append(nodeid)
+            else:
+                nodes.append((nodeid, state.c))
+
+        return {
+            "nodes": nodes,
+            "match_nodes": match_nodes,
+            "split_nodes": split_nodes,
+            "edges": edges,
+        }
+
+    def to_dot(self):
+        graph_info = self.extract_graph()
+        print("\n".join(generate_dotfile(graph_info)))
+
+def generate_dotfile(graph_info: dict):
+    nodes = graph_info["nodes"]
+    matches = graph_info["match_nodes"]
+    splits = graph_info["split_nodes"]
+    edges = graph_info["edges"]
+    yield 'digraph {'
+    yield '  fontname="Helvetica,Arial,snas-serif"'
+    yield '  node [fontname="Helvetica,Arial,snas-serif"]'
+    yield '  edge [fontname="Helvetica,Arial,snas-serif"]'
+    yield ''
+    yield '  graph [center=1 rankdir=LR]'
+    yield ''
+    yield '  node [height=0.25 width=0.25 shape="circle" label=""]'
+    yield '  node [shape="doublecircle"] ' + " ".join([f"n{id_:03}" for id_ in matches])
+    yield '  node [shape="point"] ' + " ".join([f"n{id_:03}" for id_ in splits])
+    yield '  node [shape="circle"]'
+    yield ''
+    yield from [f'  n{id_:03} [label="{c}"]' for id_, c in nodes]
+    yield ''
+    yield from [f'  n{from_:03} -> n{to:03}' for from_, to in edges if from_ is not None]
+    yield '}'
 
 @dataclass
 class Frag:
@@ -223,42 +289,13 @@ def re2post(regex: str) -> str:
 def regex_by_nfa(regex, string):
     postfix = re2post(regex)
     nfa = post2nfa(postfix)
-    visited = set()
-    stack = [(nfa, None, None)]
-    nodes = []
-    edges = []
-    split_nodes = []
-    match_nodes = []
-    nodeid = 0
-    while stack:
-        state, parent, parentid = stack.pop()
-        if state in visited:
-            continue
-        nodeid += 1
-        visited.add(state)
+    sw = StateWalker.from_state(nfa)
+    return sw.ismatch(string)
 
-        edges.append((parentid, nodeid))
-
-        if state.out:
-            stack.append((state.out, state, nodeid))
-        if state.out1:
-            stack.append((state.out1, state, nodeid))
-
-        if state.c == Special.MATCH:
-            nodes.append((nodeid, ""))
-            match_nodes.append(nodeid)
-        elif state.c == Special.SPLIT:
-            nodes.append((nodeid, ""))
-            split_nodes.append(nodeid)
-        else:
-            nodes.append((nodeid, state.c))
-
-    print(f"nodes: {nodes}")
-    print(f"edges: {edges}")
-    print(f"match_nodes: {match_nodes}")
-    print(f"split_nodes: {split_nodes}")
-    # sw = StateWalker.from_state(nfa)
-    # return sw.ismatch(string)
+def print_dot(regex):
+    postfix = re2post(regex)
+    nfa = post2nfa(postfix)
+    nfa.to_dot()
 
 
 # main
@@ -266,8 +303,7 @@ if __name__ == "__main__":
     # regex = "a+"
     # for string in ["", "a", "aa", "aaa", "asve"]:
     #     print(regex_by_nfa(regex, string))
-    regex = "a(bb)+a"
-    string = "abbbba"
-    regex_by_nfa(regex, string)
-
-
+    # regex = "a(bb)+a|ab*ab"
+    regexes = ["a+", "a?b+c*", "ab|cd", "((a|b)c)*", "a(b|c)*d", "a(b(cd)?)+", "a(bb)+a|ab*ab"]
+    target = int(sys.argv[1])
+    print_dot(regexes[target])
