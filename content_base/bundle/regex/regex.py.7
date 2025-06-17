@@ -33,11 +33,10 @@ class State:
             visited.add(state)
             if state.c == Special.MATCH:
                 return True
-            elif state.c == Special.SPLIT:
+            if state.out:
                 stack.append(state.out)
+            if state.out1:
                 stack.append(state.out1)
-            elif state.out:
-                stack.append(state.out)
 
         return False
 
@@ -149,12 +148,18 @@ def post2nfa(postfix) -> State | None:
 
     for tok in postfix:
         match tok:
-            case "*": zero_or_more(stack)
-            case "+": one_or_more(stack)
-            case "?": zero_or_one(stack)
-            case ".": concat(stack)
-            case "|": alternate(stack)
-            case _: character(stack, tok)
+            case "*":
+                zero_or_more(stack)
+            case "+":
+                one_or_more(stack)
+            case "?":
+                zero_or_one(stack)
+            case ".":
+                concat(stack)
+            case "|":
+                alternate(stack)
+            case _:
+                character(stack, tok)
 
     assert len(stack) == 1, "invalid postfix"
     e = stack.pop()
@@ -223,51 +228,12 @@ def re2post(regex: str) -> str:
 def regex_by_nfa(regex, string):
     postfix = re2post(regex)
     nfa = post2nfa(postfix)
-    visited = set()
-    stack = [(nfa, None, None)]
-    nodes = []
-    edges = []
-    split_nodes = []
-    match_nodes = []
-    nodeid = 0
-    while stack:
-        state, parent, parentid = stack.pop()
-        if state in visited:
-            continue
-        nodeid += 1
-        visited.add(state)
-
-        edges.append((parentid, nodeid))
-
-        if state.out:
-            stack.append((state.out, state, nodeid))
-        if state.out1:
-            stack.append((state.out1, state, nodeid))
-
-        if state.c == Special.MATCH:
-            nodes.append((nodeid, ""))
-            match_nodes.append(nodeid)
-        elif state.c == Special.SPLIT:
-            nodes.append((nodeid, ""))
-            split_nodes.append(nodeid)
-        else:
-            nodes.append((nodeid, state.c))
-
-    print(f"nodes: {nodes}")
-    print(f"edges: {edges}")
-    print(f"match_nodes: {match_nodes}")
-    print(f"split_nodes: {split_nodes}")
-    # sw = StateWalker.from_state(nfa)
-    # return sw.ismatch(string)
+    sw = StateWalker.from_state(nfa)
+    return sw.ismatch(string)
 
 
 # main
 if __name__ == "__main__":
-    # regex = "a+"
-    # for string in ["", "a", "aa", "aaa", "asve"]:
-    #     print(regex_by_nfa(regex, string))
-    regex = "a(bb)+a"
-    string = "abbbba"
-    regex_by_nfa(regex, string)
-
-
+    regex = "a+"
+    for string in ["", "a", "aa", "aaa", "asve"]:
+        print(regex_by_nfa(regex, string))
