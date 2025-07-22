@@ -46,9 +46,6 @@ def binary_search(start, end, n):
         # right -> mid: right decrease to left
         # because left and right are finite, the loop must end
         if condition(mid):
-            if right == mid + 1:
-                # thus, mid is the last number that satisfies the condition
-                return mid
             left = mid
         else:
             right = mid
