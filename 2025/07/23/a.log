@@ -1,0 +1,82 @@
+n=3, k=6, char_cnt=10
+num_of_ones=[6, 9, 6]
+{'a': 0, 'n': 1, 't': 2, 'r': 3, 'c': 4, 'i': 5, 'h': 6, 'e': 7, 'l': 8, 'o': 9}
+{'antarctica': ('0b111111', 6), 'antahellotica': ('0b1111110111', 9), 'antacartica': ('0b111111', 6)}
+antarctica          , 6 ,                     111111
+antacartica         , 6 ,                     111111
+antahellotica       , 9 ,                 1111110111
+idx=0, zero_to_fill=4, len(possible_reprs)=3
+idx=1, zero_to_fill=3, len(possible_reprs)=0
+base case2
+len(possible_reprs)=0, possible_word_cnt=0
+idx=1, zero_to_fill=4, len(possible_reprs)=3
+idx=2, zero_to_fill=3, len(possible_reprs)=0
+base case2
+len(possible_reprs)=0, possible_word_cnt=0
+idx=2, zero_to_fill=4, len(possible_reprs)=3
+idx=3, zero_to_fill=3, len(possible_reprs)=0
+base case2
+len(possible_reprs)=0, possible_word_cnt=0
+idx=3, zero_to_fill=4, len(possible_reprs)=3
+idx=4, zero_to_fill=3, len(possible_reprs)=1
+idx=5, zero_to_fill=2, len(possible_reprs)=0
+base case2
+len(possible_reprs)=0, possible_word_cnt=0
+idx=5, zero_to_fill=3, len(possible_reprs)=1
+idx=6, zero_to_fill=2, len(possible_reprs)=0
+base case2
+len(possible_reprs)=0, possible_word_cnt=0
+idx=6, zero_to_fill=3, len(possible_reprs)=1
+idx=7, zero_to_fill=2, len(possible_reprs)=0
+base case2
+len(possible_reprs)=0, possible_word_cnt=0
+idx=7, zero_to_fill=3, len(possible_reprs)=1
+idx=8, zero_to_fill=2, len(possible_reprs)=0
+base case2
+len(possible_reprs)=0, possible_word_cnt=0
+idx=8, zero_to_fill=3, len(possible_reprs)=1
+idx=9, zero_to_fill=2, len(possible_reprs)=0
+base case2
+len(possible_reprs)=0, possible_word_cnt=0
+idx=9, zero_to_fill=3, len(possible_reprs)=1
+idx=10, zero_to_fill=2, len(possible_reprs)=0
+base case1
+idx=10, zero_to_fill=3, len(possible_reprs)=1
+base case1
+idx=4, zero_to_fill=4, len(possible_reprs)=3
+idx=5, zero_to_fill=3, len(possible_reprs)=0
+base case2
+len(possible_reprs)=0, possible_word_cnt=0
+idx=5, zero_to_fill=4, len(possible_reprs)=3
+idx=6, zero_to_fill=3, len(possible_reprs)=0
+base case2
+len(possible_reprs)=0, possible_word_cnt=0
+idx=6, zero_to_fill=4, len(possible_reprs)=3
+idx=7, zero_to_fill=3, len(possible_reprs)=2
+idx=8, zero_to_fill=2, len(possible_reprs)=2
+idx=9, zero_to_fill=1, len(possible_reprs)=2
+idx=10, zero_to_fill=0, len(possible_reprs)=2
+exit condition
+possible_word_cnt=2
+idx=10, zero_to_fill=1, len(possible_reprs)=2
+base case1
+idx=9, zero_to_fill=2, len(possible_reprs)=2
+base case2
+len(possible_reprs)=2, possible_word_cnt=2
+idx=8, zero_to_fill=3, len(possible_reprs)=2
+base case2
+len(possible_reprs)=2, possible_word_cnt=2
+idx=7, zero_to_fill=4, len(possible_reprs)=3
+idx=8, zero_to_fill=3, len(possible_reprs)=2
+base case2
+len(possible_reprs)=2, possible_word_cnt=2
+idx=8, zero_to_fill=4, len(possible_reprs)=3
+idx=9, zero_to_fill=3, len(possible_reprs)=2
+base case2
+len(possible_reprs)=2, possible_word_cnt=2
+idx=9, zero_to_fill=4, len(possible_reprs)=3
+idx=10, zero_to_fill=3, len(possible_reprs)=2
+base case1
+idx=10, zero_to_fill=4, len(possible_reprs)=3
+base case1
+2

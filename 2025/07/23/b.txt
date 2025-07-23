@@ -1,0 +1,67 @@
+fmleoplueff         , 7 , 11100100000100001000001000
+aqmuoimchx          , 9 ,     1100101110100010001000
+espqoplieccitto     , 9 ,  1100000000111101010100000
+uywmqdgwse          , 9 ,      100010000101000111101
+ltiqmvaelb          , 9 ,  1011000000001111010001000
+oktirnuqtw          , 9 ,      101000101100111010000
+nwjadxwjrowvppd     , 10,   111011001100000001010001
+wmbnknhlaaqbmx      , 10,  1001001101000110100011000
+cbizadmencdpb       , 10,   101001000010011010001011
+nsumqgihmbvumh      , 10,    10101100000110010101100
+gwlicevrlbn         , 10,  1010001000010011011010100
+dzgmwsrikgemrzbkrqi , 12,               111111111111
+itcddzmroxbwy       , 12,          11111010011011011
+fhlgdzbwswtyhazda   , 12, 11001000110001010000110111
+stkohwniteyqehtjysou, 13,      111110101101110110000
+qldeikqwetjcnag     , 13,  1001011000011101110010101
+sjqtoiittwntgvrwuaa , 13,    11111000101100011110100
+hoygrspaipqkogpbaszd, 14,   101000110100110111100111
+kleuuhwvgqjdtxbxht  , 14,  1010110101001111100010101
+ocurjowemstykvlrfm  , 15, 11010110010111001101111000
+
+fmleoplueff         , 7 , 1110010000010000100000100
+aqmuoimchx          , 9 ,     110010111010001000100
+espqoplieccitto     , 9 ,  110000000011110101010000
+ltiqmvaelb          , 9 ,  101100000000111101000100
+oktirnuqtw          , 9 ,      10100010110011101000
+wmbnknhlaaqbmx      , 10,  100100110100011010001100
+nsumqgihmbvumh      , 10,    1010110000011001010110
+gwlicevrlbn         , 10,  101000100001001101101010
+stkohwniteyqehtjysou, 13,      11111010110111011000
+sjqtoiittwntgvrwuaa , 13,    1111100010110001111010
+ocurjowemstykvlrfm  , 15, 1101011001011100110111100
+
+fmleoplueff         , 7 , 111001000001000010000010
+aqmuoimchx          , 9 ,     11001011101000100010
+espqoplieccitto     , 9 ,  11000000001111010101000
+ltiqmvaelb          , 9 ,  10110000000011110100010
+oktirnuqtw          , 9 ,      1010001011001110100
+wmbnknhlaaqbmx      , 10,  10010011010001101000110
+nsumqgihmbvumh      , 10,    101011000001100101011
+gwlicevrlbn         , 10,  10100010000100110110101
+stkohwniteyqehtjysou, 13,      1111101011011101100
+sjqtoiittwntgvrwuaa , 13,    111110001011000111101
+ocurjowemstykvlrfm  , 15, 110101100101110011011110
+
+fmleoplueff         , 7 , 11100100000100001000001
+aqmuoimchx          , 9 ,     1100101110100010001
+espqoplieccitto     , 9 ,  1100000000111101010100
+ltiqmvaelb          , 9 ,  1011000000001111010001
+oktirnuqtw          , 9 ,      101000101100111010
+wmbnknhlaaqbmx      , 10,  1001001101000110100011
+stkohwniteyqehtjysou, 13,      111110101101110110
+ocurjowemstykvlrfm  , 15, 11010110010111001101111
+
+espqoplieccitto     , 9 ,  110000000011110101010
+oktirnuqtw          , 9 ,      10100010110011101
+stkohwniteyqehtjysou, 13,      11111010110111011
+
+espqoplieccitto     , 9 ,  11000000001111010101
+
+idx=0, zero_to_fill=10, len(possible_reprs)=20
+idx=1, zero_to_fill=9, len(possible_reprs)=11
+idx=2, zero_to_fill=8, len(possible_reprs)=11
+idx=3, zero_to_fill=7, len(possible_reprs)=8
+idx=4, zero_to_fill=6, len(possible_reprs)=3
+idx=5, zero_to_fill=5, len(possible_reprs)=1
+idx=6, zero_to_fill=4, len(possible_reprs)=0
