@@ -1,0 +1,40 @@
+digraph {
+  fontname="Helvetica,Arial,snas-serif"
+  node [fontname="Helvetica,Arial,snas-serif"]
+  edge [fontname="Helvetica,Arial,snas-serif"]
+
+  graph [center=1 rankdir=LR]
+
+  node [height=0.25 width=0.25 shape="circle" label=""]
+  node [shape="doublecircle"] n007
+  node [shape="point"] n001 n005 n009
+  node [shape="circle"]
+
+  n001 [label=""]
+  n002 [label="a"]
+  n003 [label="b"]
+  n004 [label="b"]
+  n005 [label=""]
+  n006 [label="a"]
+  n007 [label=""]
+  n008 [label="a"]
+  n009 [label=""]
+  n010 [label="a"]
+  n011 [label="b"]
+  n012 [label="b"]
+
+  n001 -> n002
+  n002 -> n003
+  n003 -> n004
+  n004 -> n005
+  n005 -> n006
+  n006 -> n007
+  n005 -> n003
+  n001 -> n008
+  n008 -> n009
+  n009 -> n010
+  n010 -> n011
+  n011 -> n007
+  n009 -> n012
+  n012 -> n009
+}

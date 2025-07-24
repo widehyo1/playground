@@ -1,0 +1,16 @@
+digraph G {
+  graph  [rankdir=LR, splines=ortho, nodesep=0.25]
+  node   [fontname="monospace", fontsize=11]
+  edge   [arrowhead=none]
+  "./.bashrc_diff" [label=".bashrc_diff", shape=note]
+  "./.vimrc" [label=".vimrc", shape=note]
+  "./dir2dot.dot" [label="dir2dot.dot", shape=note]
+  "./.zshrc" [label=".zshrc", shape=note]
+  "./nvim" [label="nvim", shape=folder]
+  "./nvim/treesitter_utils.lua" [label="treesitter_utils.lua", shape=note]
+  "./nvim" -> "./nvim/treesitter_utils.lua"
+  "./nvim/init.lua" [label="init.lua", shape=note]
+  "./nvim" -> "./nvim/init.lua"
+  "./dir2dot.sh" [label="dir2dot.sh", shape=note]
+  "./.inputrc" [label=".inputrc", shape=note]
+}

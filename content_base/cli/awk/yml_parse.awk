@@ -1,23 +1,18 @@
-BEGIN {
-    RS = ""
-    OFS = "|"
-    print "topic|theme|main_summary|sub_summary"
+function printRow(topic, theme, main_summary, sub_summary) {
+  print topic,theme,main_summary,sub_summary
 }
+
+BEGIN {
+  RS = ""
+  FS = "\n"
+  print "topic|theme|main_summary|sub_summary"
+}
+
 {
-    split($0, lines, "\n")
-    for (idx in lines) {
-        if (idx == 1) {
-            topic = substr(lines[idx], 7)
-        }
-        if (lines[idx] ~ /^-/) {
-            theme = substr(lines[idx], 3)
-        }
-        if (lines[idx] ~ /^  -/) {
-            main_summary = substr(lines[idx], 5)
-        }
-        if (lines[idx] ~ /^    -/) {
-            sub_summary = substr(lines[idx], 7)
-            print topic,theme,main_summary,sub_summary
-        }
-    }
+  topic = substr($1, 7)
+  for (i = 2; i <= NF; i++) {
+    if (match($i, /^-/))     theme        = substr($i, 3); continue
+    if (match($i, /^  -/))   main_summary = substr($i, 5); continue
+    if (match($i, /^    -/)) sub_summary  = substr($i, 7); printRow(topic, theme, main_summary, sub_summary)
+  }
 }

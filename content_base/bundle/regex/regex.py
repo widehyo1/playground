@@ -304,6 +304,7 @@ if __name__ == "__main__":
     # for string in ["", "a", "aa", "aaa", "asve"]:
     #     print(regex_by_nfa(regex, string))
     # regex = "a(bb)+a|ab*ab"
-    regexes = ["a+", "a?b+c*", "ab|cd", "((a|b)c)*", "a(b|c)*d", "a(b(cd)?)+", "a(bb)+a|ab*ab"]
+    # regexes = ["a+", "a?b+c*", "ab|cd", "((a|b)c)*", "a(b|c)*d", "a(b(cd)?)+", "a(bb)+a|ab*ab"]
+    regexes = ["(l|_)(l|d|_)*"]
     target = int(sys.argv[1])
     print_dot(regexes[target])
