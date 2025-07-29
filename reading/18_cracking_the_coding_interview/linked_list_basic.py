@@ -1,5 +1,6 @@
 from typing import Optional, NamedTuple
 
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -12,26 +13,32 @@ class ListNode:
         else:
             return f"{self.val} -> {self.next}"
 
+
 class Node(NamedTuple):
     name: str
     label: str
+
 
 class Edge(NamedTuple):
     start: str
     end: str
     label: str
 
+
 class Graph(NamedTuple):
     nodes: list[Node]
     edges: list[Edge]
 
+
 def nodename(id_: int) -> str:
     return f"n{id_}"
+
 
 def to_node(id_: int, label: str = None) -> Node:
     if label is None:
         label = nodename(id_)
     return Node(nodename(id_), label)
+
 
 class LinkedList:
     def __init__(self, head: ListNode):
@@ -70,25 +77,26 @@ class LinkedList:
 
 def graph_to_dot(graph: Graph):
     nodes, edges = graph
-    yield 'digraph {'
+    yield "digraph {"
     yield '  fontname="Helvetica,Arial,snas-serif"'
     yield '  node [fontname="Helvetica,Arial,snas-serif"]'
     yield '  edge [fontname="Helvetica,Arial,snas-serif"]'
-    yield ''
-    yield '  graph [center=1 rankdir=LR]'
-    yield ''
+    yield ""
+    yield "  graph [center=1 rankdir=LR]"
+    yield ""
     yield '  node [height=0.25 width=0.25 shape="circle" label=""]'
     yield '  node [shape="circle"]'
-    yield ''
+    yield ""
     yield from [f'  {node.name} [label="{node.label}"]' for node in nodes]
-    yield ''
+    yield ""
     yield from [f'  {edge.start} -> {edge.end} [label="{edge.label}"]' for edge in edges]
-    yield '}'
+    yield "}"
+
 
 def arr2list(arr: list[int]):
     n = len(arr)
     if n == 0:
-        return None
+        return LinkedList(None)
     head_node = ListNode(arr[0])
     linked_list = LinkedList(head_node)
     if n == 1:
@@ -104,11 +112,13 @@ def arr2list(arr: list[int]):
 
     return linked_list
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     # arr = [1,3,5,7,9]
     # print(arr2list(arr))
-    arrs = [[1,3,5,7,9], [1], [], [2,4,6]]
+    arrs = [[1, 3, 5, 7, 9], [1], [], [2, 4, 6]]
     for arr in arrs:
         ll = arr2list(arr)
+        # print(ll)
         if ll:
             ll.to_dot()
