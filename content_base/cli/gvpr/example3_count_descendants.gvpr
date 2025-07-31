@@ -1,0 +1,149 @@
+// Example 3: Count descendants for each node in a tree
+// Usage: gvpr -f example3_count_descendants.gvpr example3_tree.dot
+
+BEGIN {
+    printf("// Counting descendants for each node in the tree\n");
+
+    int count_descendants(node_t n) {
+        node_t queue[int];  // Queue for BFS
+        int visited[int];   // Track visited nodes  
+        int front = 0, rear = 0;
+        int count = 0;
+        int i;
+        edge_t e;
+        node_t current;
+        
+        // Initialize visited array
+        for (i = 0; i < 100; i++) {
+            visited[i] = 0;
+        }
+        
+        // Add immediate children to queue
+        for (e = fstout(n); e; e = nxtout(e)) {
+            queue[rear] = e.head;
+            visited[rear] = 1;
+            rear++;
+            count++;
+        }
+        
+        // BFS to count all descendants
+        while (front < rear) {
+            current = queue[front];
+            front++;
+            
+            // Add children of current node to queue
+            for (e = fstout(current); e; e = nxtout(e)) {
+                // Check if already visited
+                int already_visited = 0;
+                for (i = 0; i < rear; i++) {
+                    if (queue[i].name == e.head.name) {
+                        already_visited = 1;
+                        break;
+                    }
+                }
+                
+                if (!already_visited) {
+                    queue[rear] = e.head;
+                    visited[rear] = 1;
+                    rear++;
+                    count++;
+                }
+            }
+        }
+        
+        return count;
+    }
+}
+
+/// // Function to count descendants (non-recursive implementation)
+/// int count_descendants(node_t n) {
+///     node_t queue[100];  // Queue for BFS
+///     int visited[100];   // Track visited nodes  
+///     int front = 0, rear = 0;
+///     int count = 0;
+///     int i;
+///     edge_t e;
+///     node_t current;
+///     
+///     // Initialize visited array
+///     for (i = 0; i < 100; i++) {
+///         visited[i] = 0;
+///     }
+///     
+///     // Add immediate children to queue
+///     for (e = fstout(n); e; e = nxtout(e)) {
+///         queue[rear] = e.head;
+///         visited[rear] = 1;
+///         rear++;
+///         count++;
+///     }
+///     
+///     // BFS to count all descendants
+///     while (front < rear) {
+///         current = queue[front];
+///         front++;
+///         
+///         // Add children of current node to queue
+///         for (e = fstout(current); e; e = nxtout(e)) {
+///             // Check if already visited
+///             int already_visited = 0;
+///             for (i = 0; i < rear; i++) {
+///                 if (queue[i].name == e.head.name) {
+///                     already_visited = 1;
+///                     break;
+///                 }
+///             }
+///             
+///             if (!already_visited) {
+///                 queue[rear] = e.head;
+///                 visited[rear] = 1;
+///                 rear++;
+///                 count++;
+///             }
+///         }
+///     }
+///     
+///     return count;
+/// }
+
+// Process all nodes
+N {
+    int desc_count = count_descendants($);
+    string old_label = $.label;
+    
+    // Update the label to include descendant count
+    if (desc_count > 0) {
+        $.label = sprintf("%s\\n(%d descendants)", old_label, desc_count);
+        $.style = "filled";
+        
+        // Color based on number of descendants
+        if (desc_count >= 6) {
+            $.fillcolor = "red";
+            $.color = "darkred";
+        } else if (desc_count >= 3) {
+            $.fillcolor = "orange";  
+            $.color = "darkorange";
+        } else if (desc_count >= 1) {
+            $.fillcolor = "yellow";
+            $.color = "gold";
+        }
+    } else {
+        // Leaf nodes
+        $.label = sprintf("%s\\n(leaf)", old_label);
+        $.style = "filled";
+        $.fillcolor = "lightgreen";
+        $.color = "darkgreen";
+    }
+    
+    printf("// %s has %d descendants\n", $.name, desc_count);
+}
+
+// Keep all edges unchanged
+E {
+    $.color = "blue";
+    $.penwidth = "2";
+}
+
+END {
+    printf("// Finished counting descendants\n");
+} 

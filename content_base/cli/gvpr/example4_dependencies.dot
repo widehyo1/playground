@@ -1,0 +1,27 @@
+digraph dependencies {
+    // Software dependency graph with some circular dependencies
+    rankdir=LR;
+    
+    ModuleA [label="Module A\nv1.0"];
+    ModuleB [label="Module B\nv2.1"];
+    ModuleC [label="Module C\nv1.5"];
+    ModuleD [label="Module D\nv3.0"];
+    ModuleE [label="Module E\nv1.2"];
+    ModuleF [label="Module F\nv2.0"];
+    
+    // Normal dependencies
+    ModuleA -> ModuleB;
+    ModuleB -> ModuleC;
+    ModuleA -> ModuleD;
+    ModuleD -> ModuleE;
+    ModuleE -> ModuleF;
+    
+    // Circular dependency 1: C -> A (creates cycle A -> B -> C -> A)
+    ModuleC -> ModuleA;
+    
+    // Circular dependency 2: F -> D (creates cycle D -> E -> F -> D)  
+    ModuleF -> ModuleD;
+    
+    // Additional connection
+    ModuleB -> ModuleE;
+} 

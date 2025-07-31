@@ -1,0 +1,51 @@
+// Example 5: Simple node and edge filtering with attribute modification
+// Usage: gvpr -f example5_simple_filter.gvpr input.dot
+
+BEGIN {
+    printf("// Simple filtering and styling example\n");
+}
+
+// Style all nodes with specific patterns
+N {
+    // Make all node labels uppercase and add a border
+    $.label = toupper($.label);
+    $.style = "filled,bold";
+    $.penwidth = "2";
+    
+    // Color nodes based on their name patterns
+    if (match($.name, "^[Aa].*")) {
+        // Names starting with A or a - blue
+        $.fillcolor = "lightblue";
+        $.color = "blue";
+    } else if (match($.name, "^[Bb].*")) {
+        // Names starting with B or b - green  
+        $.fillcolor = "lightgreen";
+        $.color = "darkgreen";
+    } else {
+        // All other names - yellow
+        $.fillcolor = "lightyellow";
+        $.color = "orange";
+    }
+    
+    printf("// Styled node: %s\n", $.name);
+}
+
+// Filter and style edges
+E {
+    // Only keep edges where both nodes have been processed
+    if ($.tail && $.head) {
+        $.color = "purple";
+        $.penwidth = "2";
+        
+        // Add arrow labels
+        $.label = sprintf("%s→%s", $.tail.name, $.head.name);
+        $.fontsize = "8";
+        $.fontcolor = "red";
+        
+        printf("// Kept edge: %s -> %s\n", $.tail.name, $.head.name);
+    }
+}
+
+END {
+    printf("// Filtering complete\n");
+} 

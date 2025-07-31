@@ -1,0 +1,160 @@
+// Example 4: Detect and highlight circular dependencies
+// Usage: gvpr -f example4_detect_cycles.gvpr example4_dependencies.dot
+
+BEGIN {
+    printf("// Detecting circular dependencies in the graph\n");
+    int node_count = 0;
+    int in_cycle[int];  // Track which nodes are in cycles
+    int i;
+    node_t temp;
+    
+    // Initialize cycle tracking
+    for (i = 0; i < 100; i++) {
+        in_cycle[i] = 0;
+    }
+
+    // Simple cycle detection using DFS-like approach
+    int has_path_to(node_t from, node_t to, int max_depth) {
+        edge_t e;
+        int depth = 0;
+        node_t queue[int];
+        int visited[int];
+        int front = 0, rear = 0;
+        
+        // Initialize visited array
+        for (i = 0; i < 50; i++) {
+            visited[i] = 0;
+        }
+        
+        // Start with immediate successors of 'from'
+        for (e = fstout(from); e; e = nxtout(e)) {
+            if (e.head.name == to.name) {
+                return 1;  // Direct path found
+            }
+            queue[rear] = e.head;
+            visited[rear] = 1;
+            rear++;
+        }
+        
+        // BFS to find path within max_depth
+        while (front < rear && depth < max_depth) {
+            int current_level_size = rear - front;
+            
+            for (i = 0; i < current_level_size; i++) {
+                node_t current = queue[front];
+                front++;
+                
+                // Check successors of current node
+                for (e = fstout(current); e; e = nxtout(e)) {
+                    if (e.head.name == to.name) {
+                        return 1;  // Path found
+                    }
+                    
+                    // Check if already visited
+                    int already_visited = 0;
+                    int j;
+                    for (j = 0; j < rear; j++) {
+                        if (queue[j].name == e.head.name) {
+                            already_visited = 1;
+                            break;
+                        }
+                    }
+                    
+                    if (!already_visited && rear < 49) {
+                        queue[rear] = e.head;
+                        visited[rear] = 1;
+                        rear++;
+                    }
+                }
+            }
+            depth++;
+        }
+        
+        return 0;  // No path found within max_depth
+    }
+
+}
+
+// First pass: identify nodes in cycles
+N {
+    node_t current = $;
+    edge_t e;
+    
+    // Check if this node can reach itself through any of its successors
+    for (e = fstout(current); e; e = nxtout(e)) {
+        if (has_path_to(e.head, current, 10)) {
+            in_cycle[node_count] = 1;
+            printf("// Found cycle involving node: %s\n", current.name);
+            break;
+        }
+    }
+    
+    node_count++;
+}
+
+// Second pass: style nodes based on cycle detection
+N {
+    int node_index = 0;
+    
+    // Find the index of current node
+    for (temp = fstnode($G); temp; temp = nxtnode(temp)) {
+        if (temp.name == $.name) {
+            break;
+        }
+        node_index++;
+    }
+    
+    if (in_cycle[node_index]) {
+        // Node is part of a cycle - highlight in red
+        $.style = "filled";
+        $.fillcolor = "lightcoral";
+        $.color = "red";
+        $.penwidth = "3";
+        $.label = sprintf("%s\\n[CIRCULAR DEP]", $.label);
+    } else {
+        // Normal node - style in green
+        $.style = "filled";
+        $.fillcolor = "lightgreen";
+        $.color = "darkgreen";
+    }
+}
+
+// Third pass: style edges
+E {
+    node_t tail_node = $.tail;
+    node_t head_node = $.head;
+    int tail_index = 0, head_index = 0;
+    
+    // Find indices for tail and head nodes
+    for (temp = fstnode($G); temp; temp = nxtnode(temp)) {
+        if (temp.name == tail_node.name) {
+            break;
+        }
+        tail_index++;
+    }
+    
+    for (temp = fstnode($G); temp; temp = nxtnode(temp)) {
+        if (temp.name == head_node.name) {
+            break;
+        }
+        head_index++;
+    }
+    
+    // Check if this edge creates a back-edge (potential cycle)
+    if (has_path_to(head_node, tail_node, 10)) {
+        // This edge is part of a cycle
+        $.color = "red";
+        $.penwidth = "3";
+        $.style = "dashed";
+        $.label = "CYCLE";
+        printf("// Cycle edge: %s -> %s\n", tail_node.name, head_node.name);
+    } else {
+        // Normal edge
+        $.color = "blue";
+        $.penwidth = "1";
+    }
+}
+
+END {
+    printf("// Finished cycle detection analysis\n");
+} 

@@ -1,0 +1,29 @@
+digraph family_tree {
+    // Simple family tree for descendant counting example
+    rankdir=TB;
+    
+    A [label="Alice"];
+    B [label="Bob"];
+    C [label="Carol"];
+    D [label="David"];
+    E [label="Eve"];
+    F [label="Frank"];
+    G [label="Grace"];
+    H [label="Henry"];
+    I [label="Ivy"];
+    J [label="Jack"];
+    
+    // Tree structure
+    A -> B;
+    A -> C;
+    A -> D;
+    
+    B -> E;
+    B -> F;
+    
+    C -> G;
+    C -> H;
+    
+    D -> I;
+    D -> J;
+} 

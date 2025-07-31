@@ -1,0 +1,42 @@
+digraph network {
+    // Network topology example
+    
+    // Routers
+    Router1 [label="Router-1\n192.168.1.1", type="router"];
+    Router2 [label="Router-2\n192.168.2.1", type="router"];
+    Router3 [label="Router-3\n192.168.3.1", type="router"];
+    
+    // Switches
+    Switch1 [label="Switch-1\n192.168.1.10", type="switch"];
+    Switch2 [label="Switch-2\n192.168.2.10", type="switch"];
+    Switch3 [label="Switch-3\n192.168.3.10", type="switch"];
+    
+    // Servers
+    WebServer [label="Web Server\n192.168.1.100", type="server"];
+    DBServer [label="DB Server\n192.168.2.100", type="server"];
+    FileServer [label="File Server\n192.168.3.100", type="server"];
+    
+    // End devices
+    PC1 [label="PC-1\n192.168.1.50", type="endpoint"];
+    PC2 [label="PC-2\n192.168.2.50", type="endpoint"];
+    Printer [label="Printer\n192.168.3.50", type="endpoint"];
+    
+    // Core connections
+    Router1 -> Router2 [label="WAN"];
+    Router2 -> Router3 [label="WAN"];
+    Router1 -> Router3 [label="WAN"];
+    
+    // Local connections
+    Router1 -> Switch1;
+    Router2 -> Switch2;
+    Router3 -> Switch3;
+    
+    Switch1 -> WebServer;
+    Switch1 -> PC1;
+    
+    Switch2 -> DBServer;
+    Switch2 -> PC2;
+    
+    Switch3 -> FileServer;
+    Switch3 -> Printer;
+} 

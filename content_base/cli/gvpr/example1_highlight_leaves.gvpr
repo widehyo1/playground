@@ -1,0 +1,32 @@
+// Example 1: Highlight leaf nodes (employees with no subordinates)
+// Usage: gvpr -f example1_highlight_leaves.gvpr example1_input.dot
+
+BEGIN {
+    printf("// Processing organizational chart to highlight leaf nodes\n");
+}
+
+// Process all nodes
+N {
+    // Check if this node has any outgoing edges (subordinates)
+    if ($.outdegree == 0) {
+        // This is a leaf node (no subordinates)
+        $.color = "red";
+        $.style = "filled";
+        $.fillcolor = "lightcoral";
+        printf("// Highlighted leaf node: %s\n", $.name);
+    } else {
+        // Manager node - make it blue
+        $.color = "blue";
+        $.style = "filled";
+        $.fillcolor = "lightblue";
+    }
+}
+
+// Copy all edges unchanged
+E {
+    // Keep all edges as they are
+}
+
+END {
+    printf("// Finished highlighting leaf nodes\n");
+} 

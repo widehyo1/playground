@@ -1,0 +1,114 @@
+// Example 2: Extract servers and their immediate connections
+// Usage: gvpr -f example2_extract_servers.gvpr example2_network.dot
+
+BEGIN {
+    printf("// Extracting server subgraph from network topology\n");
+    /// node_t server_nodes[100];  // Array to store server nodes
+    node_t server_nodes[];  // Array to store server nodes
+    int server_count = 0;
+}
+
+BEG_G {
+    // Create a new graph for the output
+    graph_t new_graph = graph("server_network", "D");
+    new_graph.rankdir = "TB";
+    new_graph.label = "Server Infrastructure";
+}
+
+// First pass: identify and clone server nodes
+N [type == "server"] {
+    printf("// Found server: %s\n", $.name);
+    node_t new_node = clone(new_graph, $);
+    new_node.shape = "box";
+    new_node.style = "filled";
+    new_node.fillcolor = "lightgreen";
+    new_node.color = "darkgreen";
+    
+    // Store server node for later reference
+    server_nodes[server_count] = $;
+    server_count++;
+}
+
+// Second pass: find and clone nodes connected to servers
+N [type != "server"] {
+    edge_t e;
+    int connected_to_server = 0;
+    
+    // Check outgoing edges
+    for (e = fstout($); e; e = nxtout(e)) {
+        if (e.head.type == "server") {
+            connected_to_server = 1;
+            break;
+        }
+    }
+    
+    // Check incoming edges
+    if (!connected_to_server) {
+        for (e = fstin($); e; e = nxtin(e)) {
+            if (e.tail.type == "server") {
+                connected_to_server = 1;
+                break;
+            }
+        }
+    }
+    
+    if (connected_to_server) {
+        printf("// Including connected node: %s (type: %s)\n", $.name, $.type);
+        /// node_t new_node = clone(new_graph, $);
+        new_node = clone(new_graph, $);
+        
+        // Style based on type
+        if ($.type == "switch") {
+            new_node.shape = "diamond";
+            new_node.fillcolor = "lightyellow";
+        } else if ($.type == "router") {
+            new_node.shape = "ellipse";
+            new_node.fillcolor = "lightblue";
+        }
+        new_node.style = "filled";
+    }
+}
+
+// Third pass: clone relevant edges
+E {
+    // Include edge if both nodes are in our subgraph
+    int include_edge = 0;
+    
+    if (($.tail.type == "server") || ($.head.type == "server")) {
+        include_edge = 1;
+    } else {
+        // Check if both nodes are connected to servers
+        int tail_connected = 0, head_connected = 0;
+        edge_t e2;
+        
+        for (e2 = fstout($.tail); e2; e2 = nxtout(e2)) {
+            if (e2.head.type == "server") { tail_connected = 1; break; }
+        }
+        for (e2 = fstin($.tail); e2; e2 = nxtin(e2)) {
+            if (e2.tail.type == "server") { tail_connected = 1; break; }
+        }
+        
+        for (e2 = fstout($.head); e2; e2 = nxtout(e2)) {
+            if (e2.head.type == "server") { head_connected = 1; break; }
+        }
+        for (e2 = fstin($.head); e2; e2 = nxtin(e2)) {
+            if (e2.tail.type == "server") { head_connected = 1; break; }
+        }
+        
+        if (tail_connected && head_connected) {
+            include_edge = 1;
+        }
+    }
+    
+    if (include_edge) {
+        printf("// Including edge: %s -> %s\n", $.tail.name, $.head.name);
+        edge_t new_edge = clone(new_graph, $);
+        new_edge.color = "darkgreen";
+        new_edge.penwidth = "2";
+    }
+}
+
+END_G {
+    printf("// Server subgraph extraction complete\n");
+    $O = new_graph;
+} 

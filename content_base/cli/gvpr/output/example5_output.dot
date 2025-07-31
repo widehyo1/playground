@@ -1,0 +1,21 @@
+// Simple filtering and styling example
+// Styled node: CEO
+// Kept edge: CEO -> CTO
+// Kept edge: CEO -> CFO
+// Styled node: CTO
+// Kept edge: CTO -> DevMgr
+// Kept edge: CTO -> QAMgr
+// Styled node: CFO
+// Styled node: DevMgr
+// Kept edge: DevMgr -> Dev1
+// Kept edge: DevMgr -> Dev2
+// Kept edge: DevMgr -> Dev3
+// Styled node: QAMgr
+// Kept edge: QAMgr -> QA1
+// Kept edge: QAMgr -> QA2
+// Styled node: Dev1
+// Styled node: Dev2
+// Styled node: Dev3
+// Styled node: QA1
+// Styled node: QA2
+// Filtering complete

@@ -1,0 +1,27 @@
+digraph org_chart {
+    rankdir=TB;
+    
+    CEO [label="Alice\nCEO"];
+    CTO [label="Bob\nCTO"];
+    CFO [label="Carol\nCFO"];
+    
+    DevMgr [label="Dave\nDev Manager"];
+    QAMgr [label="Eve\nQA Manager"];
+    
+    Dev1 [label="Frank\nDeveloper"];
+    Dev2 [label="Grace\nDeveloper"];
+    Dev3 [label="Henry\nDeveloper"];
+    
+    QA1 [label="Ivy\nQA Engineer"];
+    QA2 [label="Jack\nQA Engineer"];
+    
+    CEO -> CTO;
+    CEO -> CFO;
+    CTO -> DevMgr;
+    CTO -> QAMgr;
+    DevMgr -> Dev1;
+    DevMgr -> Dev2;
+    DevMgr -> Dev3;
+    QAMgr -> QA1;
+    QAMgr -> QA2;
+} 
