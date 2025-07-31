@@ -1,0 +1,19 @@
+digraph {
+  fontname="Helvetica,Arial,snas-serif"
+  node [fontname="Helvetica,Arial,snas-serif"]
+  edge [fontname="Helvetica,Arial,snas-serif"]
+
+  graph [center=1 rankdir=LR]
+
+  node [height=0.25 width=0.25 shape="circle" label=""]
+  node [shape="circle"]
+
+  n0 [label="2"]
+  n1 [label="3"]
+  n2 [label="1"]
+  n3 [label="6"]
+
+  n0 -> n1 [label=""]
+  n1 -> n2 [label=""]
+  n2 -> n3 [label=""]
+}
