@@ -1,1 +1,8 @@
 GET localhost:8080
+
+###
+POST localhost:8080/reverse_linked_list
+Content-Type: application/json
+
+{ "arr": [1,2,3,4,5] }
+

@@ -1,0 +1,27 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+  default:
+    format: "%(message)s"
+
+handlers:
+  file:
+    class: logging.FileHandler
+    formatter: default
+    filename: app.log
+    mode: w  # overwrite each run
+    encoding: utf-8
+
+loggers:
+  uvicorn.error:
+    handlers: [file]
+    level: DEBUG
+    propagate: False
+  uvicorn.access:
+    handlers: [file]
+    level: DEBUG
+    propagate: False
+
+root:
+  handlers: [file]
+  level: DEBUG
