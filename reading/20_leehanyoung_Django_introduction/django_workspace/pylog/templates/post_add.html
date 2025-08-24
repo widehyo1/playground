@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div id="navbar"><span>make post</span></div>
+    <div id="post-add">
+        <h1>Post Add</h1>
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div>
+                <label for="">title</label>
+                <input name="title" type="text">
+            </div>
+            <div>
+                <label for="">content</label>
+                <textarea id="" name="content"></textarea>
+            </div>
+            <div>
+                <label for="">thumbnail</label>
+                <input type="file" name="thumbnail">
+            </div>
+            <button type="submit" class="btn btn-primary">save</button>
+        </form>
+    </div>
+</body>
+</html>
+
