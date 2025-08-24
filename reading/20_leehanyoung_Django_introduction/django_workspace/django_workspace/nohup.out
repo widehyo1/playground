@@ -1,0 +1,35 @@
+Watching for file changes with StatReloader
+[24/Aug/2025 04:22:11] "GET /burgers/ HTTP/1.1" 200 27
+[24/Aug/2025 04:22:13] "GET / HTTP/1.1" 200 19
+/home/widehyo/gitclone/playground/reading/20_leehanyoung_Django_introduction/django_workspace/django_workspace/config/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 24, 2025 - 04:22:04
+Django version 5.2.5, using settings 'config.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+Watching for file changes with StatReloader
+/home/widehyo/gitclone/playground/reading/20_leehanyoung_Django_introduction/django_workspace/django_workspace/config/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 24, 2025 - 04:30:14
+Django version 5.2.5, using settings 'config.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+WARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+For more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+Watching for file changes with StatReloader
+[24/Aug/2025 04:31:23] "GET / HTTP/1.1" 200 89
+[24/Aug/2025 04:31:36] "GET /burgers/ HTTP/1.1" 200 83
