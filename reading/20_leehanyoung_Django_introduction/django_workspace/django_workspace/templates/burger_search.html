@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
 <body>
-    <h1>pyberger list</h1>
+    <h1>pyberger burger search view</h1>
+    <div>
+        <form method="GET">
+            <input type="text" name="keyword">
+            <button type="submit">search</button>
+        </form>
+    </div>
+    <h2>result</h2>
     {% for burger in burgers %}
         <div>
             {{ burger.name }}
