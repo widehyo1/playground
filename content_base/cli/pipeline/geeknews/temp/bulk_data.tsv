@@ -1,0 +1,1866 @@
+https://news.hada.io/topic?id=50	&#39;타다&#39; 금지법 나오나	[](http://www.zdnet.co.kr/ArticleView.asp?artice_id=20190711113608){.bold
+.ud}
+
+\'타다\' 금지법 나오나
+======================
+
+[ ]{#topic_contents}
+
+김경진 의원은 유난히 타다를 집요하게 공격하네요\...\
+국토부는 면허 비용을 내게 하고 차량 공유 서비스를 제도권에 편입시키려는
+거 같은데, 이런 비용이 자금력 있는 곳들만 들어오게 하는 진입장벽이
+되지는 않을지.
+https://news.hada.io/topic?id=62	페이스북 프라이버시 위반에 대한 벌금 $5B (원화로 거의 5.9조원)	[](https://www.wired.com/story/facebook-ftc-fine-five-billion/){.bold
+.ud}
+
+페이스북 프라이버시 위반에 대한 벌금 \$5B (원화로 거의 5.9조원)
+===============================================================
+
+[ ]{#topic_contents}
+
+미 연방거래위원회가 페이스북에게 약 5.9조에 따른 벌금을 부여.\
+다른 한편에서는 프라이버시이슈가 아니라 반독점문제로 구조조정을 해야
+한다는 주장도 있음
+
+[ ]{#contents55 .comment_contents}
+
+페이스북 매출에 비하면 크지 않은 벌금인거 같은데,\
+이걸 계기로 다른 회사들도 프라이버시 이슈에 더 신경쓰게 될듯 하네요.
+https://news.hada.io/topic?id=17	Google 검색은 어떻게 동작하는가?	[](https://medium.com/@euncho/google-%EA%B2%80%EC%83%89%EC%9D%80-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%8F%99%EC%9E%91%ED%95%98%EB%8A%94%EA%B0%80-fbc0e421a97a){.bold
+.ud}
+
+Google 검색은 어떻게 동작하는가?
+================================
+
+[ ]{#topic_contents}
+https://news.hada.io/topic?id=15	Lazydocker: a terminal GUI for Docker	[](https://github.com/jesseduffield/lazydocker/blob/master/README.md){.bold
+.ud}
+
+Lazydocker: a terminal GUI for Docker
+=====================================
+
+[ ]{#topic_contents}
+
+Docker 와 Docker-compose 용 터미널 UI. 마우스로도 동작가능
+https://news.hada.io/topic?id=88	bpf를 이용한 성능분석	[](http://www.brendangregg.com/blog/2019-07-15/bpf-performance-tools-book.html){.bold
+.ud}
+
+bpf를 이용한 성능분석
+=====================
+
+[ ]{#topic_contents}
+
+버클리 패킷 필터를 이용한 리눅스 커널의 다양한 레이어에서 성능 측정하기\
+어멋. 이건 봐야해!!
+https://news.hada.io/topic?id=21	2019년과 이후 JavaScript의 동향 - JavaScript(ECMAScript)	[](https://d2.naver.com/helloworld/4007447){.bold .ud}
+
+2019년과 이후 JavaScript의 동향 - JavaScript(ECMAScript)
+========================================================
+
+[ ]{#topic_contents}
+https://news.hada.io/topic?id=37	Android Studio 3.5부터 Gradle kotlin 지원 제한 안내 표시	[](https://android.googlesource.com/platform/tools/adt/idea/+/c86a64d4%5E%21/){.bold
+.ud}
+
+Android Studio 3.5부터 Gradle kotlin 지원 제한 안내 표시
+========================================================
+
+[ ]{#topic_contents}
+
+기존에도 Gradle kotlin dsl지원이 부족했었는데, Android Studio 3.5
+beta버젼부터 공식적으로 지원이 잘 되지 않을 것이라는 경고메세지를
+출력하도록 변경되었습니다.
+https://news.hada.io/topic?id=54	‘일단후퇴’ 페이스북 “‘리브라’, 인도 서비스 계획 없어”	[](https://blockinpress.com/archives/19726){.bold .ud}
+
+'일단후퇴' 페이스북 "'리브라', 인도 서비스 계획 없어"
+=====================================================
+
+[ ]{#topic_contents}
+
+페이스북이 자체 암호화폐 리브라(Libra)와 리브라용 지갑 앱
+칼리브라(Calibra)를 인도에서 출시하지 않겠다고 밝혔다.
+
+10일(현지시간) 암호화페 전문 매체 코인데스크에 따르면 알렌산드루
+보이카(Alexandru Voica) 페이스북 대변인은 현지 언론을 통해 "현재로선
+인도에서 칼리브라를 제공할 계획이 없다"며 "인도 규제로 인해 칼리브라
+출시가 불가능한 상황"이라고 말했다.\
+https://news.hada.io/topic?id=2	1조 회사를 만들다 실패한 경험 이야기	[](https://medium.com/s/story/reflecting-on-my-failure-to-build-a-billion-dollar-company-b0c31d7db0e7){.bold
+.ud}
+
+1조 회사를 만들다 실패한 경험 이야기
+====================================
+
+[ ]{#topic_contents}
+
+핀터레스트 초창기 직원 Sahil이 스탁옵션을 버리고 창업했던 Gumroad의
+10년간 성장과 실패,재기한 과정에 대해서 본인이 담담히 적은 훌륭한 글
+
+창업자분들은 꼭 한번 읽어보시길 추천드립니다.
+
+아래는 바쁜 분들을 위한 정리..
+
+1\. Gumroad 는 창작자를 포함한 누구라도 쉽게 고객들에게 물건을 팔수
+있도록 하는 이커머스 플랫폼. 링크 하나만 있으면 됨. 상점개설 필요없음\
+2. 주말에 후딱 만들어서 해커뉴스에 공유했고, 첫날 52000명 방문\
+3. 얼마후 스탁옵션 버리고 퇴사를 결심한뒤, 앤젤과 VC로 부터 \$1.1M 펀딩.
+그로부터 몇달후 2012년 5월에는 KPCB가 리딩해서 \$7M 추가 펀딩\
+4. 그때 Sahil 은 19살, 혼자 창업했고 3명의 직원과 통장에 \$8M이..\
+5. 팀을 늘리고, 프로덕에 집중해서 월간 숫자들이 올라갔지만..
+특정시점부터 올라가지 않음\
+6. 프로덕트를 살리기 위해 직원중 75%를 해고. 그중엔 베스트 프렌드 포함\
+7. 그리고 나서 TechCrunch 가 Gumroad의 정리해고에 대한 기사를 적으면서,
+실패가 공식화 됨
+
+뭐가 문제였을까 ??
+
+1\. 2012년부터 2015년까지 성장은 했지만, 펀딩을 받은 회사가 가져야할
+성장속도에는 맞지 않았음. \$15M 이상의 시리즈B 를 받기위해서 가져야할
+성장속도가 나오지 않음.\
+2. 이런 비즈니스에서는 월간 20% 이하의 성장은 빨간불\
+3. 2015년 1월 통장 잔고가 18개월 이하로 떨어짐. 20명 멤버들에게 이제
+앞으로는 시리즈B를 위한 숫자를 만들기 위해 좀 힘들거라고 얘기하고,
+성장을 위한 모든 노력을 다하기 시작.\
+4. 9개월간 아무도 회사를 나가지 않고, 어떤때보다도 다 열심히 일했지만..
+숫자를 맞추지 못함.
+
+줄일까 아님 닫을까 ?
+
+1\. 뒤돌아 보면, 숫자를 맞추지 못한게 다행임. 만약 그랬다면 더 많은
+펀딩을 받았을꺼고, 더 큰 실패를 경험했을지도 모름\
+2. Gumroad의 선택지는..\
+- 비즈니스 셧다운하고 남은 돈을 투자자한테 돌려주고, 새 일을 한다.\
+- 회사 사이즈를 줄여서 계속 유지한다.\
+- Acquihire 될수 있도록 회사를 내놓는다.\
+3. 최종 결정은 20명 직원을 5명회사로 줄이고, 작은 사무실로 옮긴다.\
+4. 2015년 6월 - 월 \$89K 매출, 매출총이익 \$17K, 운영비용 \$364K ==\>
+\$351K 적자\
+5. 2016년 6월 - 월 \$176K 매출, 매출총이익 \$42K, 운영비용 \$32K ==\>
+10K 흑자
+
+이제 Lifestyle business로
+
+1\. Gumroad 는 이제 펀딩받고 빨리 성장하는 스타트업이 아님. 이제 직원은
+모두 떠나고 혼자.\
+2. 팀도 없고, 직원도 없고.. 친구들은 억만장자가 되었지만, 내 비즈니스는
+이제 시시한 라이프스타일 비즈니스가 되었음. 이게 내가 하고 싶은 일은
+아니었지만, 침몰하지는 못하게 해야했음.\
+( 주 : Lifestyle business 는 창업자가 일정 수준 이상이지만 아주 많지는
+않은 수입을 벌어서 자신이 살고 싶은 삶을 살수 있도록 해주는 비즈니스를
+말함 )\
+3. 세상과 단절하고 누구하고도 얘기하지 않음. 매일 일어나 고객지원을 하고
+버그를 잡고, 심지어 예전에 떠난 엔지니어들한테 물어서 도움을 받기도 함.
+오늘 할 일을 다하면, 운동을 하러 가거나, 조금의 의지가 남아있다면 취미인
+판타지 소설쓰기를 시도했지만 대부분의 날엔 그걸 하지 못했음
+
+새로운 시작
+
+1\. 2017년 11월 27일에 메인 투자자인 KPCB 에서 자신들이 가지고 있는
+Gumroad 의 주식을 \$1 에 도로 팔고싶다는 메일이 옴. 다른 투자자 하나도
+참여해서 더 삼.\
+2. ( 이제 투자자의 부담에서 벗어나서 ) go-big-or-go-home 이 아닌 독립
+비즈니스가 될 길이 열림\
+3. 이제 작은 팀을 키우면서, Gumroad 를 창작자들에게 좀더 포커싱하는
+의미있는 비즈니스로 천천히 키우는게 가능해짐. 빌리언 달라 컴퍼니가
+되기는 힘들겠지만, 이제 그건 상관없어졌음. 특히나 Gumroad 에서 판매하고
+있는 창작자들은 더더욱 그것과 상관없을것임.
+
+재무 공유하기
+
+1\. 정리해고후, 아무하고도 회사 얘기를 하지 않았고, 샌프란시스코를 떠난
+후에는 스타트업 커뮤니티를 떠난것 같았음.\
+2. 커뮤니티에 다시 참여하기 위해, 회사의 재무정보를 트위터에 공개적으로
+공유하기 시작.\
+3. 2018년 4월 - GMV: \$4.2M (down 2%) / Revenue: \$273K (down 2%) /
+Gross profit: \$65K (up 34%)
+
+성공도 실패도 아닌 세번째(non-binary)를 찾아서
+
+\"지난 몇년간 나의 성공의 척도는 빌리언 달라 컴퍼니를 만드는 것이었지만,
+그건 나쁜 목표였다는걸 깨달았다\"
+
+\"프로덕트가 얼마나 훌륭한지, 기능을 얼마나 빨리 만들고 하는지는
+상관없다. 당신이 속한 마켓이 당신의 성장을 결정한다.\"
+
+\"나는 실패했지만, 다른 많은것에서 성공했다. 창작자들에게 많은 돈이
+갈수있도록 했고, 다음번 펀딩을 위한 목표 맞추기와 상관없이 우리 고객들을
+위한 최고의 프로덕트를 만드는데에만 집중할수 있었다.\"
+
+[ ]{#contents29215 .comment_contents}
+
+검로드 지금은 어마어마해졌네요
+
+[ ]{#contents13607 .comment_contents}
+
+요약 감사합니다 :)
+https://news.hada.io/topic?id=38	Android Studio 3.6부터 Proguard 지원기능을 제외하려고 준비 중	[](https://android.googlesource.com/platform/tools/base/+/a07073b%5E%21/){.bold
+.ud}
+
+Android Studio 3.6부터 Proguard 지원기능을 제외하려고 준비 중
+=============================================================
+
+[ ]{#topic_contents}
+
+안드 앱 개발자 분들은 R8으로 갈아탈 준비를 얼른 하셔야 할 것입니다.
+https://news.hada.io/topic?id=3	저는 인터넷에서 양파를 팝니다	[](https://www.deepsouthventures.com/i-sell-onions-on-the-internet/){.bold
+.ud}
+
+저는 인터넷에서 양파를 팝니다
+=============================
+
+[ ]{#topic_contents}
+
+특이한방식으로 웹 서비스를 개발하는 Peter의 양파 비즈니스 이야기.
+"비즈니스 아이디어는 필요없어요. 진짜 필요한건 훌륭한 도메인 이름뿐\"
+
+글쓴이인 웹개발자 Peter Askew 는 Domain Name 에 중독된 사람 으로 이런
+저런 도메인 사는게 취미. 2014년에 VidaliaOnions.com 이라는 도메인이
+풀리자, 있는 경매에 비딩해서 \$2200에 도메인을 사들임
+
+( 추가설명 : Vidalia 바이델리아 양파는 조지아의 특산품으로 맵지않고
+달달해서 마치 사과처럼 씹어 먹을수 있는 양파랍니다. 저도 먹어보고
+싶네요. )
+
+도메인을 사고나니 도메인이 자기를 자꾸 유혹함.\
+구글트렌드를 찾아보니 충분한 검색볼륨이 있음.\
+바이델리아 양파를 "Caviar of sweet onions" 라고 부르고 있었음.
+
+그래서 2015년 2월 작업 시작.
+
+바이델리아 양파 위원회를 통해 농부 3명을 소개 받았는데, 3번째 농부와
+이야기가 통함. 지금까지는 Direct-to-Consumer 를 하지 않았지만, 그게
+가치가 있다는것에 동의. 포장시설도 가지고 있었고, 정말 중요한건.. 그가
+상을 탈만한 정도 품질의 양파를 키우고 있었음.
+
+웹사이트 오픈하고 2015년에 50주문을 예상했지만 그해에만 600주문이
+쏟아짐.
+
+Peter 혼자 CS,마케팅,브랜딩,웹개발,배송까지를 다함. 다양한 마케팅 시작,
+I-95 에 빌보드를 설치하고, 크로스컨트리 후원, 고등학교 농구팀 후원 등등.
+전화 핫라인도 개설했더니 가끔 온라인 보다 더 많은 주문이 들어오기도 함.
+
+고객들이 정말로 좋아하기 시작. 작년엔 주문건 때문에 고객에게 전화했더니
+고객 와이프가 받길래 자신을 소개하니 남편에게 "여보! THE VIDALIA MAN
+이에요 전화받아요!" 라고 소리치는걸 들음.
+
+그 순간 깨달음.\
+우리가 정말 뭔가를 하고 있구나.\
+사람들에게 도움이 되는 일을!
+
+이제 올해로 5번째 시즌이 되었고, 우리는 계속할 것임.\
+즉, 도메인 구입이 양파비즈니스를 시작한 계기가 되었음\
+Peter Askew 는 자신의 트위터 계정 \@searchbound 에서 2017년에 이렇게
+트윗함. (현재 메인트윗으로 고정됨)
+
+You don\'t really need a business idea. All you really need is a great
+domain name. The domain can be your business inspiration.
+
+"비즈니스 아이디어는 필요없어요. 진짜 필요한건 훌륭한 도메인 이름입니다.
+도메인이 비즈니스에 대한 영감이 될수 있어요.\"
+
+[ ]{#contents31 .comment_contents}
+
+아니 이것은 그 유명한 DDD의 시초가 된 그 글이 아니오!! ;-)
+
+[ ]{#contents35048 .comment_contents}
+
+ㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+
+[ ]{#contents26 .comment_contents}
+
+DDBD - Domain Driven Business Development !
+https://news.hada.io/topic?id=66	Kubernetes 실패 사례 모음	[](https://github.com/hjacobs/kubernetes-failure-stories){.bold .ud}
+
+Kubernetes 실패 사례 모음
+=========================
+
+[ ]{#topic_contents}
+
+실패 사례 링크와 관련된 기능만 키워드로 정리. 쿠버네티스 사용중이면서
+여기 키워드에 적힌 컴포넌트나, 회색으로 표시된 설정값을 사용중이라면
+자세히 읽어두면 좋을 듯.
+https://news.hada.io/topic?id=63	Jupyter기반의 논문출판 시스템	[](https://nextjournal.com/){.bold .ud}
+
+Jupyter기반의 논문출판 시스템
+=============================
+
+[ ]{#topic_contents}
+
+이제 논문작성도 클라우드로 가즈아\~
+
+[ ]{#contents56 .comment_contents}
+
+Open Research 일 경우엔 무료고, Private Research 는 월 \$99 네요. 싼듯
+비싼듯 ?
+https://news.hada.io/topic?id=24	당신이 절대 모르는 아마존이 소유한 모든 비즈니스들 2019	[](https://www.buzzfeednews.com/article/leticiamiranda/these-are-all-the-businesses-you-never-knew-were-owned-by){.bold
+.ud}
+
+당신이 절대 모르는 아마존이 소유한 모든 비즈니스들 2019
+=======================================================
+
+[ ]{#topic_contents}
+
+미국 이커머스:38% 온라인 도서/음악/비디오:67% 전자제품&컴퓨터:46%
+장난감:45% 가구:34% 점유 AWS매출 25조\
+\
+Zappos, Ring, Whole Foods, IMDB, Twitch, Woot, Shopbop 등 잘 알려진것들
+포함\
+약 80개의 PB(Private Brand)들과 800개가 넘는 Trademark를 가지고 있음
+https://news.hada.io/topic?id=35	VS code로 WSL 환경에서 코딩하기	[](https://devblogs.microsoft.com/commandline/take-your-linux-development-experience-in-windows-to-the-next-level-with-wsl-and-visual-studio-code-remote/){.bold
+.ud}
+
+VS code로 WSL 환경에서 코딩하기
+===============================
+
+[ ]{#topic_contents}
+
+vscode, remote development, linux, windows,사실 wsl이 아니어도
+상관없음이 밝혀져
+
+[ ]{#contents22 .comment_contents}
+
+wsl hell!
+https://news.hada.io/topic?id=97	Python 3.8 의 새로운 기능	[](https://python.flowdas.com/whatsnew/3.8.html){.bold .ud}
+
+Python 3.8 의 새로운 기능
+=========================
+
+[ ]{#topic_contents}
+
+\[파이썬 설명서 한국어 주석판\] 해마연산자 := , 위치전용매개변수문법 /
+,f 문자열 디버깅지원 =,\_\_pycache\_\_ 폴더 위치 변경설정, C확장 호출을
+빠르게 하는 Vectorcall 프로토콜 등
+
+[ ]{#contents103 .comment_contents}
+
+해마\...연산자\...\
+할당 연산자가 아니군요. (쿨럭)
+
+[ ]{#contents104 .comment_contents}
+
+어 제가 올릴때는 저기도 해마였는데, 바다코끼리로 바뀌었네요. 해마가
+헷갈리긴 합니다
+https://news.hada.io/topic?id=32	Apple - 맥북 단종, 맥북Air 와 맥북Pro 만 리프레시	[](https://www.apple.com/kr/mac/){.bold .ud}
+
+Apple - 맥북 단종, 맥북Air 와 맥북Pro 만 리프레시
+=================================================
+
+[ ]{#topic_contents}
+
+맥북Air 가격 10만원 인하, 맥북Pro는 터치바/터치ID 추가되고 인텔8세대로
+업데이트 후 가격 5만원 인상
+https://news.hada.io/topic?id=89	맥북Air 2019 256GB모델의 SSD 읽기속도가 이전 버전보다 35%느리다고	[](https://www.macrumors.com/2019/07/15/macbook-air-2019-slower-ssd/){.bold
+.ud}
+
+맥북Air 2019 256GB모델의 SSD 읽기속도가 이전 버전보다 35%느리다고
+=================================================================
+
+[ ]{#topic_contents}
+
+True Tone 디스플레이로 올리면서도, 가격 10만원 인하했다더니, 역시나 다른
+쪽에서 절감을 한듯. 신기하게 128GB짜리는 별차이 없다고
+https://news.hada.io/topic?id=85	Lorem Picsum - 사진을 위한 Lorem Ipsum	[](https://picsum.photos/){.bold .ud}
+
+Lorem Picsum - 사진을 위한 Lorem Ipsum
+======================================
+
+[ ]{#topic_contents}
+
+width/height 입력하면 해당 사이즈 이미지 랜덤 불러옴\
+?grayscale , ?blur 등도 가능\
+/v2/list 로는 json array 형태의 이미지들 정보를 가져옴.
+
+[ ]{#contents87 .comment_contents}
+
+이런거 찾으셨어요?\
+<https://loremipsum.io/21-of-the-best-placeholder-image-generators/>
+
+그래서\... 또 뭐 하실라고?
+https://news.hada.io/topic?id=98	Adele The repository of publicly available design systems and pattern libraries	[](https://adele.uxpin.com/){.bold .ud}
+
+Adele The repository of publicly available design systems and pattern libraries
+===============================================================================
+
+[ ]{#topic_contents}
+
+공개된 디자인 시스템 & 패턴 라이브러리 저장소?!
+
+ui/ux 프레임웍, 가이드라인, 베스트프릭티스\... (예쁘게) 모음.
+https://news.hada.io/topic?id=18	지식의 가난에는 이자가 붙는다	[](https://brunch.co.kr/@lemontia/21){.bold .ud}
+
+지식의 가난에는 이자가 붙는다
+=============================
+
+[ ]{#topic_contents} [ ]{#contents6 .comment_contents}
+
+테스트 겸.. 이왕이면 링크 누르면 새창으로 띄워주심이.. ㅋㅋ
+https://news.hada.io/topic?id=39	&#39;우분투&#39; 만든 캐노니컬 깃허브 계정 털렸다	[](http://m.zdnet.co.kr/news_view.asp?article_id=20190708064632&re=zdk){.bold
+.ud}
+
+\'우분투\' 만든 캐노니컬 깃허브 계정 털렸다
+===========================================
+
+[ ]{#topic_contents}
+https://news.hada.io/topic?id=44	Microsoft에서 리눅스 커널의 exfat 지원에 대해 내부적으로 논의 중	[](https://www.phoronix.com/scan.php?page=news_item&px=Linux-exFAT-2019-Discussion){.bold
+.ud}
+
+Microsoft에서 리눅스 커널의 exfat 지원에 대해 내부적으로 논의 중
+================================================================
+
+[ ]{#topic_contents}
+
+구현물 보다는 파일시스템 디자인에 포함된 특허를 어떻게 부여할 것인지에
+초점\
+exfat지원 구현은 예전에 삼성에서 작성한 것 기반
+
+[ ]{#contents27 .comment_contents}
+
+삼성의 오픈소스 기반이라니 뭔가 색다른 느낌이네요
+
+[ ]{#contents28 .comment_contents}
+
+삼성이 자사제품 지원 관련해서 리눅스 커널에 기여하는게 꽤 됩니다.\
+특히 Flash memory 관련된건 단순 하드웨어 드라이버 뿐만 아니라 파일시스템
+같은 공통 컴포넌트도 많이 건드려요.
+
+[ ]{#contents38 .comment_contents}
+
+옛날(?)에 삼성 NAND 메모리 사용할때 파일 시스템 버그 때문에 개고생했던
+기억이\... 시간이 많이 지났으니 안정화 되었겠죠?
+https://news.hada.io/topic?id=28	vue에서 model과 collection을 사용해보자. 	[](http://vuemc.io/#model-instances){.bold .ud}
+
+vue에서 model과 collection을 사용해보자.
+========================================
+
+[ ]{#topic_contents}
+https://news.hada.io/topic?id=49	최신 자바스크립트 최적화 기법 2019 [video]	[](https://www.youtube.com/watch?v=zC42PFIaK4M){.bold .ud}
+
+최신 자바스크립트 최적화 기법 2019 \[video\]
+============================================
+
+[ ]{#topic_contents}
+
+브라우저의 성능이 개선되고 원리가 바뀌면서 최적화 기법도 자연스럽게
+바뀌고 있습니다. 글 The cost of JavaScript in 2019을 함께 읽어보면서
+어떤 부분을 어떻게 고려해야하는지 알아봅니다.
+https://news.hada.io/topic?id=31	답답한 윈도우의 command 창대신에 새로운 윈도우 터미널을 설치해보자	[](https://github.com/microsoft/terminal){.bold .ud}
+
+답답한 윈도우의 command 창대신에 새로운 윈도우 터미널을 설치해보자
+==================================================================
+
+[ ]{#topic_contents}
+
+빌드하고 설치할 수 있는 가이드 영상
+
+<https://www.youtube.com/watch?v=4Rsr0NRHuBY&t=660s>
+
+[ ]{#contents13 .comment_contents}
+
+설치했다 10분만에 세번 프리징\... 포기
+
+[ ]{#contents16 .comment_contents}
+
+아직은 많이 불안한가 보네요 쩝..
+https://news.hada.io/topic?id=59	QuickJS Javascript Engine - 작고 빠르고 임베드 가능한 자바스크립트 엔진	[](https://bellard.org/quickjs/){.bold .ud}
+
+QuickJS Javascript Engine - 작고 빠르고 임베드 가능한 자바스크립트 엔진
+=======================================================================
+
+[ ]{#topic_contents}
+
+FFMpeg과 QEMU를 만든 Fabrice Bellard의 새 작품.\
+ES2019지원. C파일 몇개로 구성, 외부 디펜던시 없음.\
+JS를 단독실행가능한 Exe로 만들수 있음.\
+BigInt, BitFloat, 연산자 오버로딩도 지원.\
+ECMAScript Test Suite 100% 통과.\
+레퍼런스 카운팅을 이용한 가비지 콜렉션.
+
+[ ]{#contents85 .comment_contents}
+
+그리고 하루만에 발견된 보안 버그\...
+<https://twitter.com/qwertyoruiopz/status/1149424025111801858>
+(qwertyoruiopz는 iOS jailbreak으로 유명한 보안 연구자입니다.)
+
+[ ]{#contents51 .comment_contents}
+
+Fabrice Bellard 는 정말 괴물급 개발자.
+
+1989년에 LZEXE 개발
+
+1996년에 Harissa - Java Virtual Machine 이자 Java to C 코드 컴파일러
+
+1997년에 2진법 표기시 파이(π)의 특정 자리수 값을 알아내는 공식 발표.\
+-\> 앞자리를 전혀 계산하지 않는 방법으로 계산. 1조번째 자리는 \"1\"\
+<https://en.wikipedia.org/wiki/Bellard%27s_formula>
+
+1998년에 TinyGL 발표 - 작고 임베드가능한 OpenGL 구현체
+
+2000년에 FFMpeg 발표. 현재 우리가 보고있는 대부분의 동영상 플레이어가
+사용중.
+
+2000년에 가장 큰 소수를 찾는 448바이트 C코드로 IOCCC 우승. 이 소수는
+2016년까지 발견된 가장 큰 소수였음.
+
+2001년에 Tiny C Compiler 발표 - 초경량 C 컴파일러
+
+2002년에 QEmacs 발표 - 초경량 Emacs 클론. HTML/XML/CSS2 WYSIWYG 렌더링
+및 수정가능 (자체 브라우저엔진 내장)
+
+2003년에 QEMU 발표 - 하드웨어 가상화 기능을 갖춘 CPU 에뮬레이터
+
+2004년에 TinyCC Boot Loader 발표 - 리눅스 커널을 직접 컴파일해서 부팅이
+가능한 부트로더
+
+2005년에 DVB-T 시그널 생성기 발표 : 비싼송출기 대신 데스크탑에서
+디지털티비 송출이 가능. 이건 소스코드 미공개
+
+2009년에 π 소수점 아래 2조 7천억자리 까지 계산해서 세계 신기록세움. 자기
+데스크탑으로 131동안 계산했다고.\
+-\> 큰 숫자에 관심보다는 그냥 컴퓨터 프로그래밍 도전을 위해서 였다고.
+
+2011년에 JSLinux 발표. 웹브라우저에서 실행되는 Linux 발표.
+
+그외에도 JPG보다 압축률좋은 HEVC 기반 이미지 포맷 BPG (자바스크립트
+디코더 제공해서 아무 브라우저에서나 사용가능)
+
+4G LTE/5G NR 베이스 스테이션을 PC기반으로 저렴하게 구현했고, 이건 자신의
+회사인 Amarisoft 를 통해서 상품화
+
+하는일마다 이게 어찌 한사람이 하는 일인지 놀라울뿐인 사람.
+
+[ ]{#contents52 .comment_contents}
+
+jslinux도 첨엔 커널띄우는것만으로도 놀랐는데, 계속 업데이트가 되네요.
+
+네트워크 지원\
+Win2000지원\
+그래픽 지원
+
+<https://bellard.org/jslinux/tech.html>
+https://news.hada.io/topic?id=71	AWS EBS(Elastic Block Storage) 비용 최적화	[](https://ericygkim.wordpress.com/2019/07/11/aws-ebselastic-block-storage-의-비용-최적화/){.bold
+.ud}
+
+AWS EBS(Elastic Block Storage) 비용 최적화
+==========================================
+
+[ ]{#topic_contents}
+
+gp2/io1/st1/sc1 유형에 대한 요약 비교 설명과 선택시 고려해야할 것.
+IOPS냐 처리량이냐. 가격 비교와 비용 최적화를 위한 도구 소개
+https://news.hada.io/topic?id=41	딥러닝을 이용한 자연어처리 입문	[](https://wikidocs.net/book/2155){.bold .ud}
+
+딥러닝을 이용한 자연어처리 입문
+===============================
+
+[ ]{#topic_contents}
+
+깊은 내용보다는 입문으로써 도움이 될만한 사이트입니다. 시간이 지날 수록
+내용들이 꾸준히 채워지지 않을까 싶네요.
+https://news.hada.io/topic?id=8	제프 베조스의 아마존 주주서한 모음 [1997~현재]	[](https://medium.com/@hooda/every-jeff-bezos-letter-to-shareholders-since-1997-b3cb57914cab){.bold
+.ud}
+
+제프 베조스의 아마존 주주서한 모음 \[1997\~현재\]
+=================================================
+
+[ ]{#topic_contents}
+https://news.hada.io/topic?id=7	CockroachDB, BSL로 라이센스 변경 - 오픈소스지만 상업화는 안됨	[](https://www.cockroachlabs.com/blog/oss-relicensing-cockroachdb/){.bold
+.ud}
+
+CockroachDB, BSL로 라이센스 변경 - 오픈소스지만 상업화는 안됨
+=============================================================
+
+[ ]{#topic_contents}
+
+새로운 Business Source License (BSL) 이라는 라이센스 적용해서 상업화는
+불가.\
+릴리즈후 3년후에 APL 로 변경
+
+[ ]{#contents1 .comment_contents}
+
+글에도 있지만, AWS가 오픈소스 기반의 솔루션들을 추가하면서 상용화
+하는것이 보기 싫은듯\
+아마존이 MySQL / MongoDB / ElasticSearch 에 한 일들 보면 이해는 됨
+https://news.hada.io/topic?id=26	아마존 Fire TV에 Youtube 다시 런칭, 크롬캐스트에서 아마존 Prime Video도 가능해져	[](https://blog.google/products/chromecast/prime-video-chromecast-android-tv-youtube-fire-tv/){.bold
+.ud}
+
+아마존 Fire TV에 Youtube 다시 런칭, 크롬캐스트에서 아마존 Prime Video도 가능해져
+================================================================================
+
+[ ]{#topic_contents} [ ]{#contents7 .comment_contents}
+
+오 집에가서 깔아야 겠으요.
+
+[ ]{#contents3 .comment_contents}
+
+2017년 12월말에 아마존 Prime Video 를 크롬캐스트 제공안하는것 과 구글
+Nest 판매 중단한 일 관련해서 삭제했다가 이제 다시 재개 하는것.
+18개월만의 복귀
+
+관련 기사\
+YouTube app removed from Amazon Fire TV kit early\
+<https://www.bbc.com/news/technology-42511363>
+https://news.hada.io/topic?id=76	10x.engineer	[](http://10x.engineer/){.bold .ud}
+
+10x.engineer
+============
+
+[ ]{#topic_contents} [ ]{#contents69 .comment_contents}
+
+링크 깨진줄 알고 댓글 쓰려다 댓글보고 다시 들어가서 이해한 1인 ㅋ
+
+[ ]{#contents67 .comment_contents}
+
+404 올리려고 \$8을 쓰다니!
+
+[ ]{#contents68 .comment_contents}
+
+😆
+https://news.hada.io/topic?id=77	‘문서’로 세상에 도움을 주는 테크니컬 라이터 [인터뷰]	[](https://engineering.linecorp.com/ko/blog/line-developer-interview-4/){.bold
+.ud}
+
+'문서'로 세상에 도움을 주는 테크니컬 라이터 \[인터뷰\]
+======================================================
+
+[ ]{#topic_contents}
+
+LINE의 테크니컬 라이터 인터뷰.\
+- 테크니컬 라이터가 하는일\
+- 테크니컬 라이터 직무가 가진 장점\
+- 테크니컬 라이터가 되려면
+https://news.hada.io/topic?id=83	USB-C to USB-C 케이블 종류는 몇개인가요?	[](https://people.kernel.org/bleung/how-many-kinds-of-usb-c-to-usb-c-cables-are-there){.bold
+.ud}
+
+USB-C to USB-C 케이블 종류는 몇개인가요?
+========================================
+
+[ ]{#topic_contents}
+
+다 똑같이 생겼지만 2019년 6월 기준 총 6개라고
+
+USB 2.0 rated at 3A\
+USB 2.0 rated at 5A\
+USB 3.2 Gen 1 (5gbps) rated at 3A\
+USB 3.2 Gen 1 (5gbps) rated at 5A\
+USB 3.2 Gen 2 (10gbps) rated at 3A\
+USB 3.2 Gen 2 (10gpbs) rated at 5A\
+
+[ ]{#contents80 .comment_contents}
+
+썬더볼트3 도 똑같이 생겨서 구분 하기 어려워요.\
+케이블 그립감이 좀 틀린거 같기도 하고.
+https://news.hada.io/topic?id=9	소프트웨어 환멸감 [번역글]	[](https://muchtrans.com/translations/software-disenchantment.ko.html){.bold
+.ud}
+
+소프트웨어 환멸감 \[번역글\]
+============================
+
+[ ]{#topic_contents}
+
+\- 참을 수 없을 정도로 모든 것이 느리다\
+- 모든 게 너무 커어어어다랗군요\
+- 모든 것은 썩는다\
+- 나쁜 것이 그나마 나은 상황\
+- 프로그래밍도 혼란스럽다\
+- 우린 얽매여 있죠\
+- 시장은 신경도 쓰지 않죠\
+- 다 나쁘기만 한 건 아니죠\
+- 더 나은 세상을 위한 선언문\
+\"진전을 보고 싶습니다. 바꾸고 싶습니다. 소프트웨어 엔지니어링이 현재의
+최신 기술에 머무르는 것이 아니라 향상되는 것을 바랍니다. 같은 것을 계속
+반복해서 더 느리고 덩치만 커지게 만들고 싶지 않습니다. 믿을 만하고,
+목표로 삼을만한, 오늘날보다 더 나은 미래를 위한 그 무언가를 원합니다.
+이러한 비전을 나누는 엔지니어들의 커뮤니티를 원합니다.\"
+https://news.hada.io/topic?id=74	협업 필터링 추천 시스템 (Collaborative Filtering Recommendation System)	[](https://scvgoe.github.io/2017-02-01-%ED%98%91%EC%97%85-%ED%95%84%ED%84%B0%EB%A7%81-%EC%B6%94%EC%B2%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C-(Collaborative-Filtering-Recommendation-System)/){.bold
+.ud}
+
+협업 필터링 추천 시스템 (Collaborative Filtering Recommendation System)
+=======================================================================
+
+[ ]{#topic_contents}
+
+협업 필터링은 많은 유저들로부터 모은 취향 정보들을 기반으로 하여 스스로
+예측하는 기술을 말한다. 협업 필터링은 어떤 특정한 인물 A가 한가지 이슈에
+관해서 인물 B와 같은 의견을 갖는다면 다른 이슈에 대해서도 비슷한 의견을
+가질 확률이 높을 것이라는 사실에 기반한다. 어떻게 보면 집단 지성 비슷한
+것으로 이해하면 된다.\
+\-\-\-\-\-\-\-\-\--\
+ps.작성일 자체는 오래된 내용인데 좋은 내용이고 어쩌다가 페북에 보여서..
+https://news.hada.io/topic?id=29	페이스북 리브라(Libra) 이해 및 관련 동향 [pdf]	[](https://drive.google.com/file/d/1p38kRyF4PB_qHy4Xj9QOYRb40addlMFm/view){.bold
+.ud}
+
+페이스북 리브라(Libra) 이해 및 관련 동향 \[pdf\]
+================================================
+
+[ ]{#topic_contents}
+
+금융위원회에서 언론등의 이해를 돕기위해 리브라 백서, 국내외 언론 및
+해외동향을 정리한 18P 분량의 pdf
+
+[ ]{#contents17 .comment_contents}
+
+금융위원회는 여전히 부정적인 시각을 가지고 있는 듯 합니다. 하지만 더
+이상 무시할 수 없는 플레이어의 참여라서 무시할 수도 없고 확실히
+페이스북의 참전은 큰 임팩트를 주네요
+https://news.hada.io/topic?id=72	1x.engineer	[](https://1x.engineer/){.bold .ud}
+
+1x.engineer
+===========
+
+[ ]{#topic_contents}
+
+당신은 1x engineer 인가요, 10x engineer 인가요
+
+[ ]{#contents71 .comment_contents}
+
+이런게 진짜 10x 엔지니어?!\
+[https://dev.to/turnerj/...](https://dev.to/turnerj/the-10-points-that-make-up-real-10x-engineers-4mj4){.ud
+.link}
+
+아뇨\... 그건 그냥 좋은 개발자예요.
+
+[ ]{#contents72 .comment_contents}
+
+긴 링크를 줄이는 기준이 뭐죠? 구루님 쓴 글에 링크는 안 줄이고\... 제가
+쓴 글레 링크는 줄이고\... 힝 ㅠㅠ
+
+[ ]{#contents73 .comment_contents}
+
+70자 기준인데요. 4글자 넘으셨습니다..
+
+[ ]{#contents78 .comment_contents}
+
+췟\... ㅡ,.ㅡ;;
+
+[ ]{#contents61 .comment_contents}
+
+10x에 대해 "비주얼 베이직의 아버지" Alan Cooper 옹의 생각은
+
+<https://twitter.com/MrAlanCooper/status/1150215587978596353>
+
+[ ]{#contents70 .comment_contents}
+
+10xer 새로운 hype가 되려나\...
+
+[ ]{#contents60 .comment_contents}
+
+트위터에서 얘기되고 있는 이슈
+
+시작은\
+<https://twitter.com/skirani/status/1149302828420067328>
+
+[ ]{#contents65 .comment_contents}
+
+협업이 잘 되는 1x 와 전혀 안되는 10x 로 논쟁중인 것 같네요. 10x
+엔지니어가 선망의 대상이긴 하지만, 일의 대부분은 여러 사람이 긴 호흡으로
+하기 때문에 많은 조직에서는 팀플레이어가 필요하지 않나 싶습니다.
+프로젝트의 아웃풋은 코드나 서비스 형태로 나오겠지만, 그것이 나오기까지는
+눈에 보이지 않는 여러 사람의 커뮤니케이션이 있으니까요. 10x 이면서
+팀플레이어면 베스트겠죠.
+https://news.hada.io/topic?id=6	Github - Repository Templates 지원 시작	[](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/){.bold
+.ud}
+
+Github - Repository Templates 지원 시작
+=======================================
+
+[ ]{#topic_contents}
+
+새 Repo 만들때 템플릿에서 시작 가능.
+
+Repo 생성후 템플릿으로 지정만 하면 끝.\
+등록된 템플릿 Repo는 /generate 라는 엔드포인트를 제공해서,\
+사용하고자 하는 사람에게 repo/generate 만 던지면\
+바로 새로운 템플릿 기반 리파지토리 생성가능
+https://news.hada.io/topic?id=16	재개발중인 안드로이드용 Firefox 미리보기	[](https://blog.mozilla.org/futurereleases/2019/06/27/reinventing-firefox-for-android-a-preview/){.bold
+.ud}
+
+재개발중인 안드로이드용 Firefox 미리보기
+========================================
+
+[ ]{#topic_contents}
+
+빠른속도와 미니멀UI, 사용루틴에 따른 콜렉션 기능, 보안에 중점. GeckoView
+모바일 브라우저 엔진 기반.
+https://news.hada.io/topic?id=61	Microsoft Azure Kinect DK - 키넥트 기반 AI 카메라 판매 개시	[](https://techcrunch.com/2019/07/11/microsofts-399-azure-kinect-ai-camera-is-now-shipping-in-the-u-s-and-china/){.bold
+.ud}
+
+Microsoft Azure Kinect DK - 키넥트 기반 AI 카메라 판매 개시
+===========================================================
+
+[ ]{#topic_contents}
+
+게이밍장비였던 XBox용 Kinect가 AI 장비로 재탄생. Azure 머신러닝 서비스와
+연결해서 다양한 용도로 사용가능.
+
+\- 1MP depth camera\
+- 360도 마이크\
+- 12MP RGB camera 와 orientation censor\
+- HoloLens 2세대에 들어갔던 Time of Flight 센서 그대로 사용\
+- 가격은 \$399
+
+\- 현재 Sensor SDK 와 Body Tracing SDK 제공중
+https://news.hada.io/topic?id=25	jExcel - 가벼운 Vanilla 자바스크립트 스프레드시트 플러그인	[](https://github.com/paulhodel/jexcel){.bold .ud}
+
+jExcel - 가벼운 Vanilla 자바스크립트 스프레드시트 플러그인
+==========================================================
+
+[ ]{#topic_contents}
+
+JS Array,JSON,CSV,XLSX 에서 생성가능. Excel에서 바로 복사 붙여넣기도
+가능. MIT라이센스
+https://news.hada.io/topic?id=27	I Can&#39;t Stop Winning!	[](https://blog.pinboard.in/2019/07/i_cant_stop_winning/){.bold .ud}
+
+I Can\'t Stop Winning!
+======================
+
+[ ]{#topic_contents}
+
+10년째 북마킹 서비스 Pinboard를 혼자 개발해온 maciej의 회고. 누적북마크
+10억개, AU 2만명, 10년간 20억원이 넘는 매출에 투자받은건 0원.
+
+[ ]{#contents8 .comment_contents}
+
+오래 운영하려면 최소한 BM이 유지되야 하는데 그게 쉬운 일이 아니겠죠.\
+누군가는 욕심이 지나쳐서 규모를 더 키워보고 싶다고 하고\
+누군가는 꾸준히 하는 것보다는 J커브를 그려야만 한다고 하고\
+비즈니스 모델도 다양하게 성장하면 안되는건가 싶은 요즘입니다.
+
+[ ]{#contents25 .comment_contents}
+
++1 저도 다양하게 성장 가능한 비즈니스 모델 사례가 필요하다에 한표
+
+[ ]{#contents34 .comment_contents}
+
+남들이 성공하는 거 보면 참 쉬운데 막상 내가 하려면 어려운게 BM \...
+
+[ ]{#contents5 .comment_contents}
+
+테스트로 남겨봅니다. ㅋㅋ
+
+[ ]{#contents4 .comment_contents}
+
+1인 비즈니스로서 귀감적인 사례라고 생각하는 <https://pinboard.in/>
+
+초기에는 가입비를 받았고, 가입비가 점차 증가하는 방식\
+내가 가입할때는 \$6.1 였음. 그 시절 신기해서 블로그도 남겨둠
+<https://xguru.net/549>
+
+이제는 년간 11달러를 받는 서브스크립션 모델로 발전해서,\
+개발자는 이거를 계속 유지하는 원동력이 됨.
+
+국내에도 이렇게 1인 또는 작은팀이 오래 운영하는 서비스들이 많아졌으면
+좋겠음\
+
+[ ]{#contents74 .comment_contents}
+
+요즘에는 유료 서비스가 영속성이 있을 것 같아 더 유심히 보게 되더라고요.\
+(블로그 글의 스크린 샷에서 세월이 느껴집니다 ㅎㅎ)
+
+[ ]{#contents76 .comment_contents}
+
+10년전 글인지라 저도 아이폰 스크린샷보고 깜짝 놀랐습니다 \^\^;
+https://news.hada.io/topic?id=52	주목할만한 실리콘밸리의 ‘빅 데이터’ 스타트업 7개	[](https://sungmooncho.com/2014/02/03/big-data-startups-2/){.bold .ud}
+
+주목할만한 실리콘밸리의 '빅 데이터' 스타트업 7개
+================================================
+
+[ ]{#topic_contents}
+
+\[조성문블로그\]실리콘밸리에 워낙 실력 있는 스타트업이 많아 몇 가지만
+골라내는 것 자체가 쉽지 않았는데, 그 중 가장 흥미를 자극한 것은
+'데이터'를 기반으로 한 스타트업들이었다. 내가 이 분야에 관심이 많아서
+그런 회사들이 유독 눈에 띄는 면도 있다. 스타트업 정보를 가장 잘 모아
+놓은 웹사이트 중 하나인 엔젤리스트(Angelist)에서 'Big Data Analytics
+Startups'로 검색하면 무려 558개가 나온다. 그 중 몇몇 회사들로부터는
+링크드인(LinkedIn)을 통해 연락이 와서 인터뷰를 하면서 더 자세히 알게
+되기도 했기에, 내가 직접 써봤거나 내부 사정을 잘 아는 회사들 위주로
+소개를 해보겠다.
+https://news.hada.io/topic?id=30	중산층의 직업이 사라지고 있다	[](https://blog.naver.com/businessinsight/221581257922){.bold .ud}
+
+중산층의 직업이 사라지고 있다
+=============================
+
+[ ]{#topic_contents}
+https://news.hada.io/topic?id=56	2019년 현재 세계에서 가장 혁신적인 기업 50개	[](https://www.fastcompany.com/most-innovative-companies/2019){.bold
+.ud}
+
+2019년 현재 세계에서 가장 혁신적인 기업 50개
+============================================
+
+[ ]{#topic_contents}
+
+전세계 스타트업과 기업들의 이노베이션 사례를 알아보고 트렌드를 알 수
+있는 내용입니다\~
+https://news.hada.io/topic?id=20	Mary Meeker Internet Trends 2019 [slide] 	[](https://www.bondcap.com/report/itr19/){.bold .ud}
+
+Mary Meeker Internet Trends 2019 \[slide\]
+==========================================
+
+[ ]{#topic_contents} [ ]{#contents2 .comment_contents}
+
+한글 요약본들 링크 모음
+
+e바닥 뉴스 :
+<https://ebadak.news/2019/06/12/mary-meeker-internet-trends-2019/>
+
+TPMN :
+[https://medium.com/\@tpmn/...](https://medium.com/@tpmn/메리미커-인터넷-트렌드-보고서-2019-요약-7f67cf3be1b0){.ud
+.link}
+
+Bull over Bear :\
+1.인터넷 사용자 - <https://blog.naver.com/cinedemian/221560839161>\
+2.e커머스,온라인광고 - <https://blog.naver.com/cinedemian/221561284592>\
+3.인터넷 사용현황 - <https://blog.naver.com/cinedemian/221561732852>\
+4.이미지의 시대,소통의 시대 -
+<https://blog.naver.com/cinedemian/221562491387>\
+5.공짜가 좋아요. 나중엔 공짜가 아니어도 -
+<https://blog.naver.com/cinedemian/221563684803>\
+6.인간이 감당할수 없을 정도의 많은 데이터가 온다 -
+<https://blog.naver.com/cinedemian/221565711582>\
+7.일 (Work) 에 미치는 영향 -
+<https://blog.naver.com/cinedemian/221568520953>\
+8.온라인 교육 시장의 성장 -
+<https://blog.naver.com/cinedemian/221570043491>\
+9.병원, 약국, 변하는 헬스케어 -
+<https://blog.naver.com/cinedemian/221572578431>\
+10.사이버보안, 인터넷의 폐해 -
+<https://blog.naver.com/cinedemian/221577771501>
+https://news.hada.io/topic?id=19	Docker Best Practices	[](https://medium.com/rainist-engineering/docker-best-practices-8b4f28ab3a65){.bold
+.ud}
+
+Docker Best Practices
+=====================
+
+[ ]{#topic_contents}
+
+Kubernetes, AWS ECS 환경위에서 Docker 컨테이너로 뱅크샐러드를 운영하며
+알게된것들
+https://news.hada.io/topic?id=69	Material Design - Dark Theme 디자인 가이드	[](https://material.io/design/color/dark-theme.html#){.bold .ud}
+
+Material Design - Dark Theme 디자인 가이드
+==========================================
+
+[ ]{#topic_contents}
+
+요즘 유행인 어두운 테마에 대한 머티리얼 디자인의 정리. 꼭 머티리얼
+아니더라도 웹이나 앱에서 다크 테마를 구현한다면 참고해 볼만한 깔끔한
+가이드
+
+[ ]{#contents177 .comment_contents}
+
+한글 번역본 - <https://brunch.co.kr/@blckschrl/57>
+https://news.hada.io/topic?id=81	네이버는 과연 제2의 싸이월드가 될 것인가	[](https://brunch.co.kr/@soundsgood/78){.bold .ud}
+
+네이버는 과연 제2의 싸이월드가 될 것인가
+========================================
+
+[ ]{#topic_contents}
+
+제목이 자극적인데 가장 쓸데 없는 걱정이라는 네이버, 삼성, 연예인이라지만
+실제 내용은 싸이월드의 흥망성쇄와 네이버에서 유투브로의 컨텐츠 생산 유저
+이동으로 비교 분석하고 있습니다.
+
+[ ]{#contents77 .comment_contents}
+
+네이버 걱정\...
+
+[ ]{#contents79 .comment_contents}
+
+네이버 걱정을 한다기 보다는 싸이월드에서 페이스북으로 이동만
+생각했었는데 네이버 블로그로의 사용자 이전이나 유투브로의 사용자 이전 등
+미처 몰랐던 관점이 있어서 공유했어요..
+
+[ ]{#contents75 .comment_contents}
+
+네이버가 5년전부터 동영상콘텐츠를 성장동력으로 삼겠다는 얘기를 했는데,
+성과는 좋지 않았던것 같구요.\
+최근에는 아예 메인화면에 동영상을 넣으려고 준비중이라고 하는거 보면,
+유튜브 쏠림현상에 대해서 자신들도 알고있고 계속 대응은 하는 것 같습니다.
+
+요즘 세대는 녹색창 검색과 구글 검색이 아닌 빨간창 검색이라고
+얘기하더군요.
+
+[ ]{#contents88 .comment_contents}
+
+\> 요즘 세대는 녹색창 검색과 구글 검색이 아닌 빨간창 검색이라고
+얘기하더군요.\
+동감합니다. 만 5세가 채 안된 제 아들부터가 궁금한건 유튜브에서
+검색합니다.
+https://news.hada.io/topic?id=60	AI 포커봇이 멀티플레이어 상대 텍사스홀덤에서 첫승을 거둠	[](https://ai.facebook.com/blog/pluribus-first-ai-to-beat-pros-in-6-player-poker/){.bold
+.ud}
+
+AI 포커봇이 멀티플레이어 상대 텍사스홀덤에서 첫승을 거둠
+========================================================
+
+[ ]{#topic_contents}
+
+페이스북과 카네기멜론이 만든 AI 포커봇 Pluribus.
+
+포커는 체스나 바둑이랑은 달리 숨겨진 정보가 있기때문에 AI가 계산하기에
+어려운 문제.\
+6인 무제한 텍사스 홀덤 게임 방식.\
+\"5 AI+1 Human\" \"5 Human + 1 AI\" 두가지 방식으로 해서 모두 이김.
+
+Pluribus 는 2017년 2인 포커 게임에서 이긴 Libratus를 개선한 것
+
+[ ]{#contents53 .comment_contents}
+
+매일경제 기사 : <https://www.mk.co.kr/news/it/view/2019/07/512240/>
+https://news.hada.io/topic?id=34	MS Windows 1.11 출시 	[](https://www.microsoft.com/ko-kr/p/windows-111/9pghpx7zmjrc){.bold
+.ud}
+
+MS Windows 1.11 출시
+====================
+
+[ ]{#topic_contents}
+
+윈10에서만 설치가능. 그림판,Write 등과 클래식 게임&퍼즐 포함. 넷플릭스
+기묘한이야기 시즌3 가 1985년 배경이어서 이와 연계한 콜라보레이션.
+https://news.hada.io/topic?id=96	LINE 베트남에서 당근마켓 그대로 베낀 GET IT이라는 중고 거래앱 서비스중	[](https://www.facebook.com/691442267/posts/10157644617552268?sfns=mo){.bold
+.ud}
+
+LINE 베트남에서 당근마켓 그대로 베낀 GET IT이라는 중고 거래앱 서비스중
+======================================================================
+
+[ ]{#topic_contents} [ ]{#contents97 .comment_contents}
+
+네이버 라인 Get IT vs 당근마켓 주요 화면 비교: <http://bit.ly/2JBlmll>
+https://news.hada.io/topic?id=51	인스타그램은 어떻게 커머스가 되어가는가?	[](https://ppss.kr/archives/199006){.bold .ud}
+
+인스타그램은 어떻게 커머스가 되어가는가?
+========================================
+
+[ ]{#topic_contents}
+
+ㅇ 인스타그램은 어떻게 커머스가 되어가는가?\
+- 숍 기능을 먼저 도입한 페이스북의 경우 지속적인 유저 이탈과 페북 숍만의
+변별력 전달 실패\
+- 비슷한 관심사 기반 유저들은 상호 유대감으로 '우리끼리만 아는 잇템'을
+소개하고 소비
+
+ㅇ 유저들은 왜 인플루언서에게 살까?\
+- 디지털 판매자들은 스스로 모델과 능동적 셀러 역할을 동시에 수행하며
+유저 거리감 해소\
+- 유저들은 인플루언서에게 상업적 거리감 대신 되려 인간적 호감과
+자연스러운 신뢰를 형성
+
+[ ]{#contents46 .comment_contents}
+
+왜 페이스북숍은 실패했고, 인스타숍은 성공할수 있는가? 인스타숍에서
+인플루언서가 아닌 브랜드들은 어떻게 숍으로 성공할수 있는가? 이전
+블로그의 경우와 같이, 브랜드들이 진입하는 순간 이 시장은 Spoil 되면서
+쇠퇴의 길을 걷게 되는가? 등등이 더 궁금해지네요.
+
+[ ]{#contents43 .comment_contents}
+
+무엇을 파느냐에서 누가파느냐로 패러다임 전환이라는 관점에 상당히
+공감합니다. 요즘 한참 즐기는 등산 경우도 주로 인스타그램을 통해 사진과
+정보를 공유하는데, 내공 깊은 남녀 산악인, 캠퍼들이 좋아하고 사랑하는
+브랜드는 자연스럽게 깊은 신뢰를 하게 됩니다. 인스타는 지인 중심이 아니고
+비슷한 기호의 회원들 중심으로 뭉쳐있기 때문에 이런게 가능한듯!
+https://news.hada.io/topic?id=82	인플루언서들이 영향력을 잃고 있다	[](https://visla.kr/news/etc/96213/){.bold .ud}
+
+인플루언서들이 영향력을 잃고 있다
+=================================
+
+[ ]{#topic_contents}
+
+유명한 매체는 아닌데 요즘 인플루언서 마케팅 트렌드와 비슷한 내용을 담고
+있습니다.\
+인플루언서 기반 소셜 마케팅 솔루션들이 봇물을 이루고 있는데 실제로
+성공한 사례가 없고 피로도가 높아지는 것 같습니다.
+
+[ ]{#contents129 .comment_contents}
+
+네이버 파워 블로거 시장이 얼마나 빨리 spoil 되어서 결국 법령까지
+제정되어 쇠퇴해갔는지 기억한다면 인플루언서 시장도 같은 길을 걷고 있고
+이제 곧 같은 수순을 밟겠구나 하는 생각이 드네요.
+https://news.hada.io/topic?id=78	덩치큰 GIF를 AV1 비디오로 바꾸기	[](https://www.singhkays.com/blog/its-time-replace-gifs-with-av1-video/){.bold
+.ud}
+
+덩치큰 GIF를 AV1 비디오로 바꾸기
+================================
+
+[ ]{#topic_contents}
+
+AV1이 가장 압축율이 좋지만 데스크탑 파폭/크롬만 지원.\
+모바일 지원을 위해서 AV1/VP9/MP4 3가지로 폴백 만들기.\
+AV1은 FFMPEG으로 생성가능
+
+[ ]{#contents83 .comment_contents}
+
+좋은데\... 좋은데\... 써먹을데가 없네\... (레..코믹스?)
+https://news.hada.io/topic?id=43	안드로이드 Q Beta5	[](https://android-developers.googleblog.com/2019/07/android-q-beta-5-update.html){.bold
+.ud}
+
+안드로이드 Q Beta5
+==================
+
+[ ]{#topic_contents}
+
+Android 10(Q)의 5번째 베타 업데이트 배포입니다. 이제 1번만 더 나오면
+정식 버젼이 눈앞.
+
+[ ]{#contents33 .comment_contents}
+
+구글이 안드로이드를 어디로 끌고가는 걸까요?\
+요즘 보전 업되는거 보면 뭐하는 건지 당췌 모르겠던데\...
+
+[ ]{#contents48 .comment_contents}
+
+그냥 평범한 광고 플랫폼이죠.. (먼산;; )
+https://news.hada.io/topic?id=84	Lossless Compression of English Short Messages	[](http://textsynth.org/sms.html){.bold .ud}
+
+Lossless Compression of English Short Messages
+==============================================
+
+[ ]{#topic_contents}
+
+Fabrice Bellard 얘기가 요즘 자주 들리는데 이 양반의 이전 프로젝트는
+신경망을 사용한 무손실 압축 알고리즘( <https://bellard.org/nncp/>
+참고)이었죠. 마침 요즘 GPT-2(
+<https://openai.com/blog/better-language-models/> )가 공개되었으니까
+신경망을 그걸로 대체해서 압축 알고리즘을 돌리면 어떨까? 하는 착상에서
+나온 게 이 페이지입니다. 짧은 영문을 15% 정도, 즉 문자 하나당
+1.2비트만을 사용하는데, 이 정도면 영문 한 글자당 추정되는 정보
+엔트로피(0.6\~1.3비트)에 근접하는 수준입니다. URL에서 볼 수 있듯이 SMS를
+통해서 보내라는 게 의도인 것 같군요.
+
+\* 신경망을 사용한 압축 알고리즘은 이게 처음은 아닙니다. PAQ를 위시한
+최상위 압축 알고리즘은 모두 통계적인 방법을 사용하고 있으며, 신경망도
+드물지 않게 사용합니다. 당장 이들의 근간을 이루는 context mixing(
+<https://en.wikipedia.org/wiki/Context_mixing> )이 신경망을 응용한
+것이며, Bellard가 사용한 LSTM도 이미 사례가 있습니다(
+<https://github.com/byronknoll/lstm-compress> ). Bellard의 기여는 성능
+최적화에 가깝습니다.
+
+[ ]{#contents82 .comment_contents}
+
+유니코드 cjk와 한글 영역을 사용한다니\...\
+2바이트 조합형/완성형 시절 확장 ascii 문자가 한글/한자로 보이는 악몽이
+떠오르면.. (노땅인증)
+https://news.hada.io/topic?id=47	Deepfake에 대한 페이스북의 달라진 접근	[](http://newspeppermint.com/2019/07/10/mark-zuckerberg-is-rethinking/){.bold
+.ud}
+
+Deepfake에 대한 페이스북의 달라진 접근
+======================================
+
+[ ]{#topic_contents}
+
+\> 저커버그는 페이스북이 딥페이크를 어떻게 다룰지에 대한 정책 결정
+과정에 있다고 말했습니다. 한 가지 문제는 저커버그가 내린 딥페이크의
+정의가 폭넓지 않다는 점입니다
+https://news.hada.io/topic?id=1	GeekNews - 국내외 기술 뉴스와 의견을 볼수 있는 사이트 오픈	[](topic?id=1){.bold .ud}
+
+GeekNews - 국내외 기술 뉴스와 의견을 볼수 있는 사이트 오픈
+==========================================================
+
+[ ]{#topic_contents}
+
+Geek들을 위한 뉴스 서비스.\
+사용자 투표로 글/댓글의 순위 조정\
+
+[ ]{#contents30069 .comment_contents}
+
+성지순례 시작합니다
+
+[ ]{#contents19860 .comment_contents}
+
+재미있네요.
+
+[ ]{#contents13336 .comment_contents}
+
+감사합니다
+
+[ ]{#contents50 .comment_contents}
+
+텍스트 위주라 확실히 열악한 인터넷 환경에서도 쾌적한 로딩이네요! from
+Cebu
+
+[ ]{#contents44 .comment_contents}
+
+오오 깔끔하네요
+
+[ ]{#contents40 .comment_contents}
+
+축하드립니다!!
+
+[ ]{#contents35 .comment_contents}
+
+링크 클릭하면 새창으로 띄우기 정도는 해주시면 안될까요?
+
+[ ]{#contents36 .comment_contents}
+
+ctrl + click 을 추천드립니다..
+
+[ ]{#contents39 .comment_contents}
+
+켁! 저\~ 아래 댓글에 누구는 수정한다고 하고..\
+Karma를 높이면 반영 되나요? ㅋ
+
+[ ]{#contents41 .comment_contents}
+
+말씀하신건 화면 변경하고는 다른 요소라서요\
+새창열기는 취향차이인지라 !\
+카르마하고는 상관없습니다..
+
+호옥시 나중에 계정 설정에 추가될수는 있겠네요 \^\^
+
+[ ]{#contents32 .comment_contents}
+
+클리앙이 지겨워 졌는데 잘 되었구만유
+
+[ ]{#contents30 .comment_contents}
+
+축하합니다!!
+
+[ ]{#contents20 .comment_contents}
+
+1\. 글등록 화면에서 header 와 footer 을 추가\
+2. 헤더에 컬러를 적용해서 엣지있는 모양새 만들기\
+3, 댓글의 폰트 컬러를 좀더 진하게 해서 보기 편하게\
+4. Footer에 있는 사이트이용법/FAQ/About 모든 페이지에 긱뉴스 공통의
+헤더가 먼저 올라가는 형태로 변경
+
+[ ]{#contents37 .comment_contents}
+
+감사합니다. 조금씩 수정해 나갈께요!
+
+[ ]{#contents14 .comment_contents}
+
+그러고보니 down이 없군요. 너무 건전한거 아님?\
+up.hada.io
+
+[ ]{#contents15 .comment_contents}
+
+님 karma가 낮아서 downvote가 안보이는 겁니다..
+
+[ ]{#contents21 .comment_contents}
+
+karma? 업보?
+
+[ ]{#contents12 .comment_contents}
+
+이건 뭘 \"하는\"건가요? 뉴스하다는 이상한데\...\
+updown.hada.io?\
+link.hada.io?
+
+[ ]{#contents11 .comment_contents}
+
+오홋
+
+[ ]{#contents10 .comment_contents}
+
+결과물 나온거 축하 드립니다.\
+흥하라 뉴스.하다
+
+[ ]{#contents9 .comment_contents}
+
+오픈 축하드려요
+https://news.hada.io/topic?id=12	구글 robots.txt Parser 오픈소스로 공개 [C++ 라이브러리]	[](https://opensource.googleblog.com/2019/07/googles-robotstxt-parser-is-now-open.html){.bold
+.ud}
+
+구글 robots.txt Parser 오픈소스로 공개 \[C++ 라이브러리\]
+=========================================================
+
+[ ]{#topic_contents}
+
+구글이 90년대부터 내부적으로 사용하는 코드 포함. 룰 테스트 도구도 같이
+공개
+https://news.hada.io/topic?id=46	우버, 드론 활용해 맥도날드 빅맥버거 배달 예정	[](http://techneedle.com/archives/37637){.bold .ud}
+
+우버, 드론 활용해 맥도날드 빅맥버거 배달 예정
+=============================================
+
+[ ]{#topic_contents}
+
+배달 수수료는 우버이츠 랑 동일. 고객까지 배달은 아니고 지정장소까지 드론
+배달후 우버이츠 운전자가 고객한테 배달
+https://news.hada.io/topic?id=5	구글의 reCAPTCHA v3 는 어두운 부분이 있다	[](https://www.fastcompany.com/90369697/googles-new-recaptcha-has-a-dark-side){.bold
+.ud}
+
+구글의 reCAPTCHA v3 는 어두운 부분이 있다
+=========================================
+
+[ ]{#topic_contents}
+
+reCaptcha V3가 사용자에게 안보여서 좋기는 한데, 구글쿠키를 사용해서
+로봇이 아닌지 판별하는데 사용한다고.\
+또한 구글 계정에 로그인한 브라우저에서는 ReCaptcha 점수가 좋게나오지만,
+Tor 나 VPN 접근했던 브라우저에서는 점수가 낮게 나온다고도.
+
+즉 개인정보 보호에는 좋지 않다는 것.
+https://news.hada.io/topic?id=91	Java &amp; JVM Trends Report [2019년 7월]	[](https://www.infoq.com/articles/java-jvm-trends-2019/){.bold .ud}
+
+Java & JVM Trends Report \[2019년 7월\]
+=======================================
+
+[ ]{#topic_contents}
+
+Java 13 신규등장. Non-HotSpot JVM인 Graal/OpenJ9 와 Vert.x 얼리어답터들
+증가중. Kotlin/JRuby/Reactive Java 의 사용자 급확장중. Clojure와
+SpringBoot의 대중화 등
+
+그래프에 나온 항목들만 눈여겨 봐도 좋을듯
+
+[ ]{#contents98 .comment_contents}
+
+Java 9도 아직 적응중인데\... 맘편히 kotlin을 해야겠네요;
+https://news.hada.io/topic?id=95	채용절차의 공정화에 관한 법률 시행	[](http://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EC%B1%84%EC%9A%A9%EC%A0%88%EC%B0%A8%EC%9D%98%20%EA%B3%B5%EC%A0%95%ED%99%94%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0){.bold
+.ud}
+
+채용절차의 공정화에 관한 법률 시행
+==================================
+
+[ ]{#topic_contents}
+
+오늘(7/17)부터 \'채용절차의 공정화에 관한 법률\'이 시행입니다.
+GeekNews에 맞지 않을 수도 있는데 다들 잘 모르시는 듯 해서\...
+
+주요 내용은 구직자에 대하여 그 직무의 수행에 필요하지 않는 외모, 학력,
+출신지역, 혼인여부, 재산(구직자의 직계 존비속 및 형제자매도 포함) 등을
+기재하거나 요구해서는 안된다는 것입니다.
+
+법령링크: <http://bit.ly/hire-law-2019-july>\
+업무매뉴얼(hwp): <http://bit.ly/hire-law-2019-july-manual>\
+표준이력서 양식: <http://bit.ly/std-resume>
+
+[ ]{#contents94 .comment_contents}
+
+이런거 볼때마다.. 사실 채용시에 가장 기본적인건데 법률로 차단하고,
+가이드 해야한다는게 슬프네요
+
+[ ]{#contents95 .comment_contents}
+
+아쉽긴 하지만 이렇게 라도 바뀌면\...
+
+[ ]{#contents91 .comment_contents}
+
+링크는 댓글에 적으면 활성화 됩니다
+
+법령링크: <http://bit.ly/hire-law-2019-july>\
+업무매뉴얼(hwp): <http://bit.ly/hire-law-2019-july-manual>\
+표준이력서 양식: <http://bit.ly/std-resume>
+
+[ ]{#contents92 .comment_contents}
+
+뭔 사용법이 다 hidden 입니꽈?
+
+[ ]{#contents93 .comment_contents}
+
+본문에 링크 막 넣어서 엄한데로의 클릭 유도를 방지하기 위한건데, 아무데도
+안적었네요. 이용법에 추가해두겠습니다.
+
+[ ]{#contents102 .comment_contents}
+
+오 좋은 의도네요. 알려지기만 잘 하면 될 것 같습니다 !
+
+[ ]{#contents96 .comment_contents}
+
+아\~ 나름 깊은 뜻이 있었군요.. ㅎㅎ
+https://news.hada.io/topic?id=45	Klaytn 클레이튼 메인넷 Cypress 런칭	[](https://byline.network/2019/07/09-14/){.bold .ud}
+
+Klaytn 클레이튼 메인넷 Cypress 런칭
+===================================
+
+[ ]{#topic_contents}
+
+Klaytn 클레이튼 메인넷 Cypress 런칭을 기념해 파트너, 업계 관계자,
+기자들을 초청해 기념행사를 진행했습니다.
+https://news.hada.io/topic?id=10	어떻게 넷플릭스는 TV 업계를 집어삼키고 있는가 [번역글]	[](https://medium.com/ebadaknews/netflix-swallows-tv-a3873a3cff08){.bold
+.ud}
+
+어떻게 넷플릭스는 TV 업계를 집어삼키고 있는가 \[번역글\]
+========================================================
+
+[ ]{#topic_contents}
+https://news.hada.io/topic?id=100	The modern PWA Cheat Sheet - JSConf EU [video]	[](https://www.youtube.com/watch?v=cybhV88KLfI){.bold .ud}
+
+The modern PWA Cheat Sheet - JSConf EU \[video\]
+================================================
+
+[ ]{#topic_contents}
+
+유명한 웹개발자 Max Firtman 의 Progressive Web App 설명. 현재 지원플랫폼
+부터 다양한 사례를 통한 기능 설명. 물론 아직 iOS에서는 다양한 문제점이
+있음.
+
+[ ]{#contents106 .comment_contents}
+
+이제 커닝 페이퍼도 유툽?!
+
+[ ]{#contents107 .comment_contents}
+
+빨간창의 시대이니까요!
+
+[ ]{#contents105 .comment_contents}
+
+발표 스크립트로 읽어보기
+
+[https://2019.jsconf.eu/maximiliano-firtman/...](https://2019.jsconf.eu/maximiliano-firtman/the-modern-pwa-cheat-sheet.html){.ud
+.link}
+https://news.hada.io/topic?id=86	Amazon Java (Corretto)&#39;s Crypto Provider (ACCP) 발표	[](https://aws.amazon.com/blogs/opensource/introducing-amazon-corretto-crypto-provider-accp/){.bold
+.ud}
+
+Amazon Java (Corretto)\'s Crypto Provider (ACCP) 발표
+=====================================================
+
+[ ]{#topic_contents}
+
+Java의 아버지 James Gosling이 계신 Amazon에서 JCA 기반 Crypto Provider
+발표.\
+기존 것보다 성능이 좋아 - AES-GCM algorithm with ACCP is over 28x faster
+than AES-GCM without ACCP - 적용한 머신의 CPU가 뚝뚝 떨어진걸 자랑하고
+있음.\
+
+[ ]{#contents86 .comment_contents}
+
+HotSpot에 x86 AES/CLMUL intrinsic 지원이 있을텐데 이게 무슨? 싶었는데
+무슨 몇 번 실행을 해야 intrinsic이 켜지고 하는 이상한 조건이 있었나
+보네요. 이게 무슨.
+
+[https://stackoverflow.com/questions/48905291/...](https://stackoverflow.com/questions/48905291/java-9-aes-gcm-performance){.ud
+.link}
+https://news.hada.io/topic?id=40	올 가을 닌텐도 스위치 라이트 출시 계획	[](https://www.cnet.com/news/nintendo-switch-lite-is-200-and-colorful-but-doesnt-connect-to-tv/){.bold
+.ud}
+
+올 가을 닌텐도 스위치 라이트 출시 계획
+======================================
+
+[ ]{#topic_contents}
+
+TV에는 연결이 되지 않는 포터블 기기.
+
+[ ]{#contents18 .comment_contents}
+
+기존 스위치 보다 더 가볍고 작지만, 조이콘이 분리되지 않아서 호환성 문제
+발생\
+닌텐도는 3ds -\> 2ds 도 그러더니 항상 기능을 줄인 저렴버전을 추가로
+발매하는듯
+
+[ ]{#contents19 .comment_contents}
+
+이렇게 되면 새로운 닌텐도 스위치가 출시된다는 합리적인 의심을 해봐도 될
+듯 하네요. 내년에 PS5도 나온다고 하니까요.
+https://news.hada.io/topic?id=68	Amazon’s Choice 가 의미하는 것은 ?	[](https://www.wired.com/story/what-does-amazons-choice-mean/){.bold
+.ud}
+
+Amazon's Choice 가 의미하는 것은 ?
+==================================
+
+[ ]{#topic_contents}
+
+아마존의 제품 추천 방식들을 비공식적으로 살펴본 글.\
+가장 싼 가격이나 평점에 따른 선정이 아니라, 리턴율 같은 것도 보는 듯
+하다고.\
+키워드에 따라서도 쵸이스가 다르고, 단어별로도 Choice 제품이 없는것도
+있음.\
+요즘엔 Editorial Recommendation 이라는 외부 추천 제품들이 나열되기도 함.
+https://news.hada.io/topic?id=55	코딩 글꼴 top 10	[](https://scotch.io/bar-talk/top-10-monospace-fonts-for-developers){.bold
+.ud}
+
+코딩 글꼴 top 10
+================
+
+[ ]{#topic_contents}
+
+개발자 대상 사이트에서 PV올리는 제일 쉽고 확실한 주제.. ;)
+
+[ ]{#contents54 .comment_contents}
+
+저는 monaco 랑 SF Mono 를 씁니다.\
+근데 희한하게 VSCode에서는 Menlo가 가장 잘 어울리네요.
+
+[ ]{#contents45 .comment_contents}
+
+Visual Studio Code 에서 사용하는 menlo 폰트도 괜찮음
+
+[ ]{#contents47 .comment_contents}
+
+그건 님이 맥을 써서 그런거구요\... 윈도 쓰시면 consolas\...
+
+[ ]{#contents49 .comment_contents}
+
+윈도 에선 Menlo 수정한 Meslo 를 쓰면..
+
+<https://github.com/andreberg/Meslo-Font>
+https://news.hada.io/topic?id=65	Amazon EventBridge 발표 – SaaS 어플리케이션을 위한 Event-Driven AWS 연동	[](https://aws.amazon.com/blogs/aws/amazon-eventbridge-event-driven-aws-integration-for-your-saas-applications/){.bold
+.ud}
+
+Amazon EventBridge 발표 -- SaaS 어플리케이션을 위한 Event-Driven AWS 연동
+=========================================================================
+
+[ ]{#topic_contents}
+
+쉽게 말하면 IFTTT for Enterprise. SaaS 파트너가 늘어날수록 강력해질듯.
+
+[ ]{#contents100 .comment_contents}
+
+이 문서의 한글 번역본 - 서울리전도 지원
+
+[https://aws.amazon.com/ko/blogs/...](https://aws.amazon.com/ko/blogs/korea/amazon-eventbridge-event-driven-aws-integration-for-your-saas-applications/){.ud
+.link}
+
+[ ]{#contents58 .comment_contents}
+
+제가 아는 고객사도 Zendesk event 를 Cloud Watch 로 받아 S3등 에 저장하는
+구조로 검토중에 있습니다.\
+많이 쓰일 서비스 중 하나가 될것 같습니다.
+https://news.hada.io/topic?id=92	PHP in 2019	[](https://stitcher.io/blog/php-in-2019){.bold .ud}
+
+PHP in 2019
+===========
+
+[ ]{#topic_contents}
+
+PHP는 매년 새 릴리즈가 나오면서 개발되고 있음. PHP5 이후로 성능 2배이상
+향상. 다양한 패키지와 프레임워크 에코시스템. 새로운 기능이 추가되고,
+언어도 계속 진화중.
+
+\- 언어 확장 : Short Closure , Null 병합 연산자 ?? , Traits(루비의
+Mixin) , Typed Properties , Argument Unpacking, JIT ( PHP-8 예정 ),
+Anonymous Class, Generators 등\
+- Laravel 과 Symfony 를 비롯한 Zend, Yii, Cake, Cog Igniter 같은
+프레임워크들\
+- Psalm , Phan , PHPStan 같은 Static Analyser 등장.
+
+[ ]{#contents99 .comment_contents}
+
+이런건 어떠십니까? <https://github.com/php-java/php-java>
+
+[ ]{#contents101 .comment_contents}
+
+헐 코드변환이 아니고, 바이너리를 직접 읽어서 실행!\
+뭐 누군가에게는 쓸모있을 수도 있것는데요?
+
+[ ]{#contents90 .comment_contents}
+
+Cog Igniter -\> CodeIgniter
+https://news.hada.io/topic?id=73	Microsoft Teams is now officially bigger than Slack	[](https://arstechnica.com/gadgets/2019/07/microsoft-teams-is-now-officially-bigger-than-slack/){.bold
+.ud}
+
+Microsoft Teams is now officially bigger than Slack
+===================================================
+
+[ ]{#topic_contents}
+
+Teams가 Slack을 따돌렸다는 뉴스입니다.
+
+업무용으로 두 가지 도구를 전부 사용중인데, 개발자 입장에서의 편의성은
+Slack이 압도적이지만, 아무래도 비개발자들이 느끼는 사용성과 O365를
+구매하면 같이 따라온다는 점이 야금야금 점유율을 따라잡는데 큰 역할을
+하지 않았나 싶네요.
+
+[ ]{#contents63 .comment_contents}
+
+Azure도 그렇고 MS Teams도 그렇고.. Global로 시장 점유율이 증가했다고
+하는데 제 주변에서는 아직 체감되지 않는 것을 보니 트렌드에 시차가 있거나
+한국 MS가 밥값을 못하거나.. 그렇다고 봐야 할까요?
+
+[ ]{#contents64 .comment_contents}
+
+저도 아직 Azure & Teams 를 쓰는거는 아닌데,\
+확실히 VS Code 는 좋더군요. 에디터는 Sublime 에서 70% 쯤 갈아탔습니다.\
+조금씩 영역을 확장하지 않을까 싶네요.
+
+[ ]{#contents62 .comment_contents}
+
+무료버전 만으로 봤을때,
+
+Slack : 검색 X , 화면 공유 X , Integration 10개 까지만\
+Teams : 무제한 검색 , 화면 공유 , Integration 제한 특별히 없는듯(확인
+어려움)
+
+이 정도면 스타트업등에서 Slack 대신 Teams 를 써보는 것도 좋아보임
+
+[ ]{#contents66 .comment_contents}
+
+러프한 기능적으로는 나쁘지 않습니다만 세세하게 미비한 점들도 있습니다.
+일단 Teams는 \@channel 과 \@here 등의 구분이라거나, TimeZone 별
+notification 발송여부 등이 지원 안되고요\... 그 외에 UX/UI 등이 미묘하게
+개발자들하게 환영받기 힘든 느낌도 있네요. (GitHub과 Bitbucket의 차이
+정도의 느낌?)
+https://news.hada.io/topic?id=14	Microsoft 의 Linux Kernel 오픈소스	[](https://github.com/microsoft/WSL2-Linux-Kernel){.bold .ud}
+
+Microsoft 의 Linux Kernel 오픈소스
+==================================
+
+[ ]{#topic_contents}
+
+MS Windows Subsystem for Linux2 (WSL2)에 사용된 리눅스 커널 소스
+https://news.hada.io/topic?id=13	SwiftWebUI - SwiftUI on Web	[](http://www.alwaysrightinstitute.com/swiftwebui/){.bold .ud}
+
+SwiftWebUI - SwiftUI on Web
+===========================
+
+[ ]{#topic_contents}
+
+WWDC2019 에서 발표된 SwiftUI 의 Web용 포팅버전.
+
+Toy Project 지만 관심가지고 지켜볼만한듯
+https://news.hada.io/topic?id=70	인공지능은 의료를 어떻게 혁신하는가 [slide]	[](http://www.yoonsupchoi.com/2019/07/14/medical-ai-201907/){.bold .ud}
+
+인공지능은 의료를 어떻게 혁신하는가 \[slide\]
+=============================================
+
+[ ]{#topic_contents}
+
+380장 분량의 슬라이드. 2019년 7월 버전.
+https://news.hada.io/topic?id=75	국내 은행별 블록체인 사업 총정리	[](https://www.coindeskkorea.com/koreabankblockchainprojects/amp/){.bold
+.ud}
+
+국내 은행별 블록체인 사업 총정리
+================================
+
+[ ]{#topic_contents}
+
+정부가 암호화폐 사업을 규제하는 상황에서 라이선스 사업자인 은행이 할 수
+있는 블록체인 사업은 많지 않다. 하지만 페이스북, 카카오 등 거대한
+플랫폼을 가진 IT 회사들이 금융업에 꾸준히 진출하는 상황에서 마냥 손 놓고
+있을 수는 없다. '디지털 전환' 구호 아래 은행들이 추진하고 있는 블록체인
+사업을 모아봤다. 암호화폐 관련 사업보단, 분산원장을 활용한 내부 프로세스
+개선에 활용하는 사례가 많다.
+https://news.hada.io/topic?id=67	리눅스 커널에서 0.0.0.0/8 주소 범위를 허용	[](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=96125bf9985a){.bold
+.ud}
+
+리눅스 커널에서 0.0.0.0/8 주소 범위를 허용
+==========================================
+
+[ ]{#topic_contents}
+
+BSD에서는 이미 허용하던 주소범위,\
+자세한 설명은
+[https://netdevconf.org/0x13/session.html/...](https://www.netdevconf.org/0x13/session.html?talk-ipv4-unicast-expansions)
+https://news.hada.io/topic?id=80	실리콘밸리에서 연봉 15만불을 번다면 어느정도의 삶을 살 수 있을까	[](https://medium.com/@sj.sweetest/실리콘밸리에서-연봉-15만불을-번다면-어느정도의-삶을-살-수-있을까-e22e8811dad4){.bold
+.ud}
+
+실리콘밸리에서 연봉 15만불을 번다면 어느정도의 삶을 살 수 있을까
+================================================================
+
+[ ]{#topic_contents}
+
+과연 실리콘밸리에서 연봉 15만불을 번다면 어느정도의 삶을 기대할수
+있을지에 대해서 매우 어렴풋하게 분석을 해보려고 한다. 한국에서 혹은 미국
+타주에서 실리콘밸리의 삶을 꿈꿔보는 분들이 있다면, 혹은 당장 이민이나
+이주 계획이 있다면 이 글의 분석이 조금은 도움이 되지 않을까.
+https://news.hada.io/topic?id=11	97개의 VPN서비스들이 실제로는 23개 회사들에 의해 운영중	[](https://vpnpro.com/blog/hidden-vpn-owners-unveiled-97-vpns-23-companies/){.bold
+.ud}
+
+97개의 VPN서비스들이 실제로는 23개 회사들에 의해 운영중
+=======================================================
+
+[ ]{#topic_contents}
+
+데이터 보안에 문제가 있을수 있음. 또한 유명 모바일전용 VPN업체는 대부분
+중국계회사 거나 중국인이 운영한다고
+https://news.hada.io/topic?id=93	생산성을 높여주는 VSCode 단축키 및 팁 정리	[](https://gomcine.tistory.com/328){.bold .ud}
+
+생산성을 높여주는 VSCode 단축키 및 팁 정리
+==========================================
+
+[ ]{#topic_contents}
+https://news.hada.io/topic?id=23	Dribbble 을 공동창업하고 배운 것들	[](http://simplebits.com/2019/06/25/dribbble.html){.bold .ud}
+
+Dribbble 을 공동창업하고 배운 것들
+==================================
+
+[ ]{#topic_contents}
+
+Dan Cederholm이 Dribbble을 공동창업후 10년동안 배운 것들을 정리한 글
+
+간단 번역
+
+1\. 창업자를 현명하게 골라라\
+2. 티셔츠를 만들고 시작해라 : 사이트 초기에 도울수 있는 사람들에게
+뿌려서 (빚진거같은 생각이 들게하여) 그들이 사이트에 기여하게 하라\
+3. 첫번째 100명의 멤버가 중요하다.\
+4. 초기 멤버들에게 귀 기울이고, 그들이 원하는 것을 만들어가라.\
+5. 버리는것을 두려워 하지 마라 : 내부에서 반복하고 배포는 천천히\
+6. 큰 변화 대신 천천히 바꿔가라\
+7. 지금 뭘하는지 모르겠는것도 괜찮다\
+8. 뻔뻔해져라. 빨리 : 맘에 안들어 하는 사람도 많을테지만, 무시하는것을
+배우고, 긍정적인 것들에 자축하면서 둘러쌓여있도록 유지할것\
+9. 트렌드는 돌고 돈다\
+10. 모든것들은 일시적이고, 그것도 괜찮다\
+11. 사람과 관계가 정말 중요하다\
+12. 사이드 프로젝트로 새로운것들을 배우고 경험하라\
+13. 불행한 숫자니까 13은 없다.\
+14. 미신을 믿지마라\
+15. 좋은 변호사와 회계사를 찾아라\
+16. 뭔가를 결정할때 내가 고집을 부리고 있는건지 되돌아 보라\
+17. 배운것에 대해 적고, 가르치고, 공유하라\
+18. 펀딩은 받지마라\
+19. 자신을 먼저 챙겨라\
+20. 언제 손을 놓아야할지 생각하라 : 회사의 다음단계를 위해 주식을
+팔거나, 회사 업무에서 멀어지는 것도 필요하다
+https://news.hada.io/topic?id=4	당신네 회사 개발팀의 핵심가치는 무엇인가요 ? 	[](https://www.keyvalues.com/){.bold .ud}
+
+당신네 회사 개발팀의 핵심가치는 무엇인가요 ?
+============================================
+
+[ ]{#topic_contents}
+
+회사 개발팀이 어떤 가치를 중요하게 여기는 지 보여줘서, 개발자들이 회사를
+선택할때 중요한 정보를 미리취득가능.\
+좋은 회사를 찾는 개발자와 자신들의 문화와 잘 어울리는 이를 찾는 회사,
+양쪽의 니즈가 서로 맞아서 생긴 서비스
+https://news.hada.io/topic?id=36	Linux 5.2의 새 기능들	[](https://kernelnewbies.org/Linux_5.2){.bold .ud}
+
+Linux 5.2의 새 기능들
+=====================
+
+[ ]{#topic_contents}
+
+Kernel Newbies에서 관리하는 리눅스 변경사항 정리 위키
+https://news.hada.io/topic?id=33	Dropbox 파일 직접 전송 가능한 Transfer 서비스 공개	[](https://www.dropbox.com/transfer/about/){.bold .ud}
+
+Dropbox 파일 직접 전송 가능한 Transfer 서비스 공개
+==================================================
+
+[ ]{#topic_contents}
+
+기존의 링크 공유가 아닌 파일을 직접 보내는 방식. 수신확인 기능 및 통계도
+지원. 요금제에 따라 크기 차등 지원
+https://news.hada.io/topic?id=99	Wechat 이 비공개 대화에서 이미지를 검열하는 방법	[](https://boingboing.net/2019/07/16/md5-vs-xi.html){.bold .ud}
+
+Wechat 이 비공개 대화에서 이미지를 검열하는 방법
+================================================
+
+[ ]{#topic_contents}
+
+수많은 양의 검열이미지 MD5 해쉬를 보관하여, 검열될 이미지가 보내지기전에
+블락됨. 해쉬DB에 없는 이미지는 별도로 처리해서 이미 블락된 이미지에
+들어있는 글자 또는 일부분이 있는지 검사후 매치하면 검열DB에 추가한다고
+https://news.hada.io/topic?id=87	Git Commit Messages Guide [한글]	[](https://github.com/RomuloOliveira/commit-messages-guide/blob/master/README_ko-KR.md){.bold
+.ud}
+
+Git Commit Messages Guide \[한글\]
+==================================
+
+[ ]{#topic_contents}
+https://news.hada.io/topic?id=53	개발 과제를 준비하는 팁 10가지	[](https://medium.com/@gojbpark/%EA%B0%9C%EB%B0%9C-%EA%B3%BC%EC%A0%9C%EB%A5%BC-%EC%A4%80%EB%B9%84%ED%95%98%EB%8A%94-%ED%8C%81-10%EA%B0%80%EC%A7%80-372d00c3db8){.bold
+.ud}
+
+개발 과제를 준비하는 팁 10가지
+==============================
+
+[ ]{#topic_contents}
+
+구직 목적으로 개발 과제 또는 토이 프로젝트를 준비할 때의 팁 10가지를
+추천합니다.
+https://news.hada.io/topic?id=64	How to remember anything - 어떤 것이든 기억 하는 방법	[](https://www.inc.com/jeff-haden/how-to-remember-anything-you-really-want-to-remember-backed-by-science.html){.bold
+.ud}
+
+How to remember anything - 어떤 것이든 기억 하는 방법
+=====================================================
+
+[ ]{#topic_contents}
+
+1\. 자기한테 퀴즈내기\
+2. 요약하고 남에게 공유하기\
+3. 이미 아는것들과 연결해서 기억하기
+
+[ ]{#contents57 .comment_contents}
+
+2번의 경우, 제가 예전에 트위터에 글 올릴때 요약하는것만으로도 정말 잘
+기억이 되는것을 경험
+
+즉, 여기다 뉴스를 요약해서 많이 올리시면, 더 많이 기억하게되고
+유식해집니다..
+https://news.hada.io/topic?id=79	딥러닝 기반의 코드 자동완성 모듈 (유료서비스)	[](https://tabnine.com/blog/deep){.bold .ud}
+
+딥러닝 기반의 코드 자동완성 모듈 (유료서비스)
+=============================================
+
+[ ]{#topic_contents}
+
+깃허브의 코드를 이용해서 학습시켜서 코드 자동완성기능을 제공하는
+서비스입니다. 오픈소스가 아니라 유료서비스로 제공을 하네요.
+
+[ ]{#contents81 .comment_contents}
+
+데스크탑에서 스탠드얼론으로 안되는게 아쉽네요.\
+테스트라도 해봤으면 하는데, 이거하기 위해 클라우드 연결까지 하는건
+부담스러울꺼 같아요.
+
+[ ]{#contents84 .comment_contents}
+
+이게 셰어웨어인데, <https://tabnine.com/faq#language> 에 따르면 Rust로
+만들었기 때문에 Rust에서는 유료 기능이 무료 버전에서도 사용 가능하다는
+얘기가 있었습니다. 확인해 보지 않았는데 여기에도 적용되는지 궁금하네요.
+https://news.hada.io/topic?id=42	삼성전자의 블록체인 SDK	[](https://developer.samsung.com/blockchain){.bold .ud}
+
+삼성전자의 블록체인 SDK
+=======================
+
+[ ]{#topic_contents} [ ]{#contents24 .comment_contents}
+
+<http://m.news1.kr/articles/?3666203>
+
+[ ]{#contents23 .comment_contents}
+
+<https://developer.samsung.com/blockchain>
+https://news.hada.io/topic?id=48	Pillman - 512바이트 짜리 팩맨게임 	[](https://github.com/nanochess/pillman){.bold .ud}
+
+Pillman - 512바이트 짜리 팩맨게임
+=================================
+
+[ ]{#topic_contents}
+
+8088호환 어셈블리코드. 코드는 12k, 380라인. 화살표키로 이동. 사이즈가
+작아서 부트섹터에 넣어서도 실행가능
+
+[ ]{#contents42 .comment_contents}
+
+4반세기전\... 1라인 콘테스트가 떠오르면\... 노땅 인증
+
+[ ]{#contents29 .comment_contents}
+
+작동 영상\
+<https://www.youtube.com/watch?v=ALBgsXOq11o>
+https://news.hada.io/topic?id=90	Wikipedia 의 robots.txt	[](https://en.wikipedia.org/robots.txt){.bold .ud}
+
+Wikipedia 의 robots.txt
+=======================
+
+[ ]{#topic_contents}
+
+주석이 달려 있어서 재미난 robots.txt - 이상동작하는 봇, 규약을 지키지
+않는 봇, 캡쳐봇, 구글광고봇, 문제많은 wget recursive 모드등.
+
+[ ]{#contents135 .comment_contents}
+
+\"Doesn\'t follow robots.txt anyway, but\...\" 부분이 재미있네요 ㅋㅋ
+
+[ ]{#contents89 .comment_contents}
+
+robots.txt 의 모범 사례라 할만!!\
+좋은 정보 감사합니다.
+https://news.hada.io/topic?id=57	Webasm 대 Native 성능분석	[](https://www.usenix.org/sites/default/files/conference/protected-files/atc19_slides_lt_jangda.pdf){.bold
+.ud}
+
+Webasm 대 Native 성능분석
+=========================
+
+[ ]{#topic_contents}
+
+네이티브 코드에 비해 웹어셈블리가 왜 아직 느린지에 대한 분석
+https://news.hada.io/topic?id=94	The PGP Problem	[](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html){.bold
+.ud}
+
+The PGP Problem
+===============
+
+[ ]{#topic_contents}
+
+PGP는 고대의 암호학 지식으로 만들어진 거대하고 안전하지 않은
+프로토콜·소프트웨어입니다. 아마도 오늘날 PGP를 쓰는 가장 안전한 방법은
+Keybase 뿐이 아닐까요? Latacora의 Thomas Ptacek이 (자기 말로는 그간
+PGP를 까 왔던 여러 암호학자들의 글을 슬쩍 하여) 개발자는 모르는데
+암호학자들은 잘 알고 있는 PGP의 문제들을 정리해 놓았습니다.
+https://news.hada.io/topic?id=58	Node.js 12 (LTS) 새로운 기능들	[](https://tsh.io/blog/new-node-js-features/){.bold .ud}
+
+Node.js 12 (LTS) 새로운 기능들
+==============================
+
+[ ]{#topic_contents}
+
+worker thread, es module(import statement), private member,
+flat/flatMap, 기타 등등

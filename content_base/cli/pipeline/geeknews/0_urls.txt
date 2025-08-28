@@ -1,0 +1,8 @@
+https://news.hada.io/sitemap/sitemap.xml
+https://news.hada.io/sitemap/2019.xml
+https://news.hada.io/sitemap/2020.xml
+https://news.hada.io/sitemap/2021.xml
+https://news.hada.io/sitemap/2022.xml
+https://news.hada.io/sitemap/2023.xml
+https://news.hada.io/sitemap/2024.xml
+https://news.hada.io/sitemap/2025.xml

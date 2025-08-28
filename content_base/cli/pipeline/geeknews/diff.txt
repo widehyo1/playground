@@ -1,0 +1,1526 @@
+bulk_data.tsv --- 1/88 --- Text
+ 1 https://news.hada.io/topic?id=50    '타다' 금지법 나오나    [](http://www.zdnet.co.kr/ArticleView.asp?artice_id=20  1 https://news.hada.io/topic?id=50    &#39;타다&#39; 금지법 나오나    [](http://www.zdnet.co.kr/ArticleView.asp?arti
+ . 190711113608){.bold                                                                                                 . ce_id=20190711113608){.bold
+ 2 .ud}                                                                                                                2 .ud}
+ 3                                                                                                                     3 
+ 4 \'타다\' 금지법 나오나                                                                                              4 \'타다\' 금지법 나오나
+ 5 ======================                                                                                              5 ======================
+ 6                                                                                                                     6 
+ 7 []{#topic_contents}                                                                                                 7 [ ]{#topic_contents}
+ 8                                                                                                                     8 
+ 9 김경진 의원은 유난히 타다를 집요하게 공격하네요\...\                                                                9 김경진 의원은 유난히 타다를 집요하게 공격하네요\...\
+10 국토부는 면허 비용을 내게 하고 차량 공유 서비스를 제도권에 편입시키려는                                            10 국토부는 면허 비용을 내게 하고 차량 공유 서비스를 제도권에 편입시키려는
+
+bulk_data.tsv --- 2/88 --- Text
+16 페이스북 프라이버시 위반에 대한 벌금 \$5B (원화로 거의 5.9조원)                                                    16 페이스북 프라이버시 위반에 대한 벌금 \$5B (원화로 거의 5.9조원)
+17 ===============================================================                                                    17 ===============================================================
+18                                                                                                                    18 
+19 []{#topic_contents}                                                                                                19 [ ]{#topic_contents}
+20                                                                                                                    20 
+21 미 연방거래위원회가 페이스북에게 약 5.9조에 따른 벌금을 부여.\                                                     21 미 연방거래위원회가 페이스북에게 약 5.9조에 따른 벌금을 부여.\
+22 다른 한편에서는 프라이버시이슈가 아니라 반독점문제로 구조조정을 해야                                               22 다른 한편에서는 프라이버시이슈가 아니라 반독점문제로 구조조정을 해야
+23 한다는 주장도 있음                                                                                                 23 한다는 주장도 있음
+24                                                                                                                    24 
+25 []{#contents55 .comment_contents}                                                                                  25 [ ]{#contents55 .comment_contents}
+26                                                                                                                    26 
+27 페이스북 매출에 비하면 크지 않은 벌금인거 같은데,\                                                                 27 페이스북 매출에 비하면 크지 않은 벌금인거 같은데,\
+28 이걸 계기로 다른 회사들도 프라이버시 이슈에 더 신경쓰게 될듯 하네요.                                               28 이걸 계기로 다른 회사들도 프라이버시 이슈에 더 신경쓰게 될듯 하네요.
+
+bulk_data.tsv --- 3/88 --- Text
+32 Google 검색은 어떻게 동작하는가?                                                                                   32 Google 검색은 어떻게 동작하는가?
+33 ================================                                                                                   33 ================================
+34                                                                                                                    34 
+35 []{#topic_contents}                                                                                                35 [ ]{#topic_contents}
+36 https://news.hada.io/topic?id=15    Lazydocker: a terminal GUI for Docker    [](https://github.com/jesseduffield/l 36 https://news.hada.io/topic?id=15    Lazydocker: a terminal GUI for Docker    [](https://github.com/jesseduffield/l
+.. azydocker/blob/master/README.md){.bold                                                                             .. azydocker/blob/master/README.md){.bold
+37 .ud}                                                                                                               37 .ud}
+38                                                                                                                    38 
+39 Lazydocker: a terminal GUI for Docker                                                                              39 Lazydocker: a terminal GUI for Docker
+40 =====================================                                                                              40 =====================================
+41                                                                                                                    41 
+42 []{#topic_contents}                                                                                                42 [ ]{#topic_contents}
+43                                                                                                                    43 
+44 Docker 와 Docker-compose 용 터미널 UI. 마우스로도 동작가능                                                         44 Docker 와 Docker-compose 용 터미널 UI. 마우스로도 동작가능
+45 https://news.hada.io/topic?id=88    bpf를 이용한 성능분석    [](http://www.brendangregg.com/blog/2019-07-15/bpf-pe 45 https://news.hada.io/topic?id=88    bpf를 이용한 성능분석    [](http://www.brendangregg.com/blog/2019-07-15/bpf-pe
+   rformance-tools-book.html){.bold                                                                                      rformance-tools-book.html){.bold
+
+bulk_data.tsv --- 4/88 --- Text
+48 bpf를 이용한 성능분석                                                                                              48 bpf를 이용한 성능분석
+49 =====================                                                                                              49 =====================
+50                                                                                                                    50 
+51 []{#topic_contents}                                                                                                51 [ ]{#topic_contents}
+52                                                                                                                    52 
+53 버클리 패킷 필터를 이용한 리눅스 커널의 다양한 레이어에서 성능 측정하기\                                           53 버클리 패킷 필터를 이용한 리눅스 커널의 다양한 레이어에서 성능 측정하기\
+54 어멋. 이건 봐야해!!                                                                                                54 어멋. 이건 봐야해!!
+
+bulk_data.tsv --- 5/88 --- Text
+57 2019년과 이후 JavaScript의 동향 - JavaScript(ECMAScript)                                                           57 2019년과 이후 JavaScript의 동향 - JavaScript(ECMAScript)
+58 ========================================================                                                           58 ========================================================
+59                                                                                                                    59 
+60 []{#topic_contents}                                                                                                60 [ ]{#topic_contents}
+61 https://news.hada.io/topic?id=37    Android Studio 3.5부터 Gradle kotlin 지원 제한 안내 표시    [](https://android 61 https://news.hada.io/topic?id=37    Android Studio 3.5부터 Gradle kotlin 지원 제한 안내 표시    [](https://android
+.. .googlesource.com/platform/tools/adt/idea/+/c86a64d4%5E%21/){.bold                                                 .. .googlesource.com/platform/tools/adt/idea/+/c86a64d4%5E%21/){.bold
+62 .ud}                                                                                                               62 .ud}
+63                                                                                                                    63 
+64 Android Studio 3.5부터 Gradle kotlin 지원 제한 안내 표시                                                           64 Android Studio 3.5부터 Gradle kotlin 지원 제한 안내 표시
+65 ========================================================                                                           65 ========================================================
+66                                                                                                                    66 
+67 []{#topic_contents}                                                                                                67 [ ]{#topic_contents}
+68                                                                                                                    68 
+69 기존에도 Gradle kotlin dsl지원이 부족했었는데, Android Studio 3.5                                                  69 기존에도 Gradle kotlin dsl지원이 부족했었는데, Android Studio 3.5
+70 beta버젼부터 공식적으로 지원이 잘 되지 않을 것이라는 경고메세지를                                                  70 beta버젼부터 공식적으로 지원이 잘 되지 않을 것이라는 경고메세지를
+
+bulk_data.tsv --- 6/88 --- Text
+74 '일단후퇴' 페이스북 "'리브라', 인도 서비스 계획 없어"                                                              74 '일단후퇴' 페이스북 "'리브라', 인도 서비스 계획 없어"
+75 =====================================================                                                              75 =====================================================
+76                                                                                                                    76 
+77 []{#topic_contents}                                                                                                77 [ ]{#topic_contents}
+78                                                                                                                    78 
+79 페이스북이 자체 암호화폐 리브라(Libra)와 리브라용 지갑 앱                                                          79 페이스북이 자체 암호화폐 리브라(Libra)와 리브라용 지갑 앱
+80 칼리브라(Calibra)를 인도에서 출시하지 않겠다고 밝혔다.                                                             80 칼리브라(Calibra)를 인도에서 출시하지 않겠다고 밝혔다.
+
+bulk_data.tsv --- 7/88 --- Text
+89 1조 회사를 만들다 실패한 경험 이야기                                                                               89 1조 회사를 만들다 실패한 경험 이야기
+90 ====================================                                                                               90 ====================================
+91                                                                                                                    91 
+92 []{#topic_contents}                                                                                                92 [ ]{#topic_contents}
+93                                                                                                                    93 
+94 핀터레스트 초창기 직원 Sahil이 스탁옵션을 버리고 창업했던 Gumroad의                                                94 핀터레스트 초창기 직원 Sahil이 스탁옵션을 버리고 창업했던 Gumroad의
+95 10년간 성장과 실패,재기한 과정에 대해서 본인이 담담히 적은 훌륭한 글                                               95 10년간 성장과 실패,재기한 과정에 대해서 본인이 담담히 적은 훌륭한 글
+
+bulk_data.tsv --- 8/88 --- Text
+184 갈수있도록 했고, 다음번 펀딩을 위한 목표 맞추기와 상관없이 우리 고객들을                                          184 갈수있도록 했고, 다음번 펀딩을 위한 목표 맞추기와 상관없이 우리 고객들을
+185 위한 최고의 프로덕트를 만드는데에만 집중할수 있었다.\"                                                            185 위한 최고의 프로덕트를 만드는데에만 집중할수 있었다.\"
+186                                                                                                                   186 
+187 []{#contents29215 .comment_contents}                                                                              187 [ ]{#contents29215 .comment_contents}
+188                                                                                                                   188 
+189 검로드 지금은 어마어마해졌네요                                                                                    189 검로드 지금은 어마어마해졌네요
+190                                                                                                                   190 
+191 []{#contents13607 .comment_contents}                                                                              191 [ ]{#contents13607 .comment_contents}
+192                                                                                                                   192 
+193 요약 감사합니다 :)                                                                                                193 요약 감사합니다 :)
+194 https://news.hada.io/topic?id=38    Android Studio 3.6부터 Proguard 지원기능을 제외하려고 준비 중    [](https://a 194 https://news.hada.io/topic?id=38    Android Studio 3.6부터 Proguard 지원기능을 제외하려고 준비 중    [](https://a
+    ndroid.googlesource.com/platform/tools/base/+/a07073b%5E%21/){.bold                                                   ndroid.googlesource.com/platform/tools/base/+/a07073b%5E%21/){.bold
+
+bulk_data.tsv --- 9/88 --- Text
+197 Android Studio 3.6부터 Proguard 지원기능을 제외하려고 준비 중                                                     197 Android Studio 3.6부터 Proguard 지원기능을 제외하려고 준비 중
+198 =============================================================                                                     198 =============================================================
+199                                                                                                                   199 
+200 []{#topic_contents}                                                                                               200 [ ]{#topic_contents}
+201                                                                                                                   201 
+202 안드 앱 개발자 분들은 R8으로 갈아탈 준비를 얼른 하셔야 할 것입니다.                                               202 안드 앱 개발자 분들은 R8으로 갈아탈 준비를 얼른 하셔야 할 것입니다.
+203 https://news.hada.io/topic?id=3    저는 인터넷에서 양파를 팝니다    [](https://www.deepsouthventures.com/i-sell-o 203 https://news.hada.io/topic?id=3    저는 인터넷에서 양파를 팝니다    [](https://www.deepsouthventures.com/i-sell-o
+    nions-on-the-internet/){.bold                                                                                         nions-on-the-internet/){.bold
+
+bulk_data.tsv --- 10/88 --- Text
+206 저는 인터넷에서 양파를 팝니다                                                                                     206 저는 인터넷에서 양파를 팝니다
+207 =============================                                                                                     207 =============================
+208                                                                                                                   208 
+209 []{#topic_contents}                                                                                               209 [ ]{#topic_contents}
+210                                                                                                                   210 
+211 특이한방식으로 웹 서비스를 개발하는 Peter의 양파 비즈니스 이야기.                                                 211 특이한방식으로 웹 서비스를 개발하는 Peter의 양파 비즈니스 이야기.
+212 "비즈니스 아이디어는 필요없어요. 진짜 필요한건 훌륭한 도메인 이름뿐\"                                             212 "비즈니스 아이디어는 필요없어요. 진짜 필요한건 훌륭한 도메인 이름뿐\"
+
+bulk_data.tsv --- 11/88 --- Text
+256 "비즈니스 아이디어는 필요없어요. 진짜 필요한건 훌륭한 도메인 이름입니다.                                          256 "비즈니스 아이디어는 필요없어요. 진짜 필요한건 훌륭한 도메인 이름입니다.
+257 도메인이 비즈니스에 대한 영감이 될수 있어요.\"                                                                    257 도메인이 비즈니스에 대한 영감이 될수 있어요.\"
+258                                                                                                                   258 
+259 []{#contents31 .comment_contents}                                                                                 259 [ ]{#contents31 .comment_contents}
+260                                                                                                                   260 
+261 아니 이것은 그 유명한 DDD의 시초가 된 그 글이 아니오!! ;-)                                                        261 아니 이것은 그 유명한 DDD의 시초가 된 그 글이 아니오!! ;-)
+262                                                                                                                   262 
+263 []{#contents35048 .comment_contents}                                                                              263 [ ]{#contents35048 .comment_contents}
+264                                                                                                                   264 
+265 ㅋㅋㅋㅋㅋㅋㅋㅋㅋ                                                                                                265 ㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+266                                                                                                                   266 
+267 []{#contents26 .comment_contents}                                                                                 267 [ ]{#contents26 .comment_contents}
+268                                                                                                                   268 
+269 DDBD - Domain Driven Business Development !                                                                       269 DDBD - Domain Driven Business Development !
+270 https://news.hada.io/topic?id=66    Kubernetes 실패 사례 모음    [](https://github.com/hjacobs/kubernetes-failure 270 https://news.hada.io/topic?id=66    Kubernetes 실패 사례 모음    [](https://github.com/hjacobs/kubernetes-failure
+... -stories){.bold .ud}                                                                                              ... -stories){.bold .ud}
+271                                                                                                                   271 
+272 Kubernetes 실패 사례 모음                                                                                         272 Kubernetes 실패 사례 모음
+273 =========================                                                                                         273 =========================
+274                                                                                                                   274 
+275 []{#topic_contents}                                                                                               275 [ ]{#topic_contents}
+276                                                                                                                   276 
+277 실패 사례 링크와 관련된 기능만 키워드로 정리. 쿠버네티스 사용중이면서                                             277 실패 사례 링크와 관련된 기능만 키워드로 정리. 쿠버네티스 사용중이면서
+278 여기 키워드에 적힌 컴포넌트나, 회색으로 표시된 설정값을 사용중이라면                                              278 여기 키워드에 적힌 컴포넌트나, 회색으로 표시된 설정값을 사용중이라면
+
+bulk_data.tsv --- 12/88 --- Text
+282 Jupyter기반의 논문출판 시스템                                                                                     282 Jupyter기반의 논문출판 시스템
+283 =============================                                                                                     283 =============================
+284                                                                                                                   284 
+285 []{#topic_contents}                                                                                               285 [ ]{#topic_contents}
+286                                                                                                                   286 
+287 이제 논문작성도 클라우드로 가즈아\~                                                                               287 이제 논문작성도 클라우드로 가즈아\~
+288                                                                                                                   288 
+289 []{#contents56 .comment_contents}                                                                                 289 [ ]{#contents56 .comment_contents}
+290                                                                                                                   290 
+291 Open Research 일 경우엔 무료고, Private Research 는 월 \$99 네요. 싼듯                                            291 Open Research 일 경우엔 무료고, Private Research 는 월 \$99 네요. 싼듯
+292 비싼듯 ?                                                                                                          292 비싼듯 ?
+
+bulk_data.tsv --- 13/88 --- Text
+296 당신이 절대 모르는 아마존이 소유한 모든 비즈니스들 2019                                                           296 당신이 절대 모르는 아마존이 소유한 모든 비즈니스들 2019
+297 =======================================================                                                           297 =======================================================
+298                                                                                                                   298 
+299 []{#topic_contents}                                                                                               299 [ ]{#topic_contents}
+300                                                                                                                   300 
+301 미국 이커머스:38% 온라인 도서/음악/비디오:67% 전자제품&컴퓨터:46%                                                 301 미국 이커머스:38% 온라인 도서/음악/비디오:67% 전자제품&컴퓨터:46%
+302 장난감:45% 가구:34% 점유 AWS매출 25조\                                                                            302 장난감:45% 가구:34% 점유 AWS매출 25조\
+
+bulk_data.tsv --- 14/88 --- Text
+310 VS code로 WSL 환경에서 코딩하기                                                                                   310 VS code로 WSL 환경에서 코딩하기
+311 ===============================                                                                                   311 ===============================
+312                                                                                                                   312 
+313 []{#topic_contents}                                                                                               313 [ ]{#topic_contents}
+314                                                                                                                   314 
+315 vscode, remote development, linux, windows,사실 wsl이 아니어도                                                    315 vscode, remote development, linux, windows,사실 wsl이 아니어도
+316 상관없음이 밝혀져                                                                                                 316 상관없음이 밝혀져
+317                                                                                                                   317 
+318 []{#contents22 .comment_contents}                                                                                 318 [ ]{#contents22 .comment_contents}
+319                                                                                                                   319 
+320 wsl hell!                                                                                                         320 wsl hell!
+321 https://news.hada.io/topic?id=97    Python 3.8 의 새로운 기능    [](https://python.flowdas.com/whatsnew/3.8.html) 321 https://news.hada.io/topic?id=97    Python 3.8 의 새로운 기능    [](https://python.flowdas.com/whatsnew/3.8.html)
+... {.bold .ud}                                                                                                       ... {.bold .ud}
+322                                                                                                                   322 
+323 Python 3.8 의 새로운 기능                                                                                         323 Python 3.8 의 새로운 기능
+324 =========================                                                                                         324 =========================
+325                                                                                                                   325 
+326 []{#topic_contents}                                                                                               326 [ ]{#topic_contents}
+327                                                                                                                   327 
+328 \[파이썬 설명서 한국어 주석판\] 해마연산자 := , 위치전용매개변수문법 /                                            328 \[파이썬 설명서 한국어 주석판\] 해마연산자 := , 위치전용매개변수문법 /
+329 ,f 문자열 디버깅지원 =,\_\_pycache\_\_ 폴더 위치 변경설정, C확장 호출을                                           329 ,f 문자열 디버깅지원 =,\_\_pycache\_\_ 폴더 위치 변경설정, C확장 호출을
+330 빠르게 하는 Vectorcall 프로토콜 등                                                                                330 빠르게 하는 Vectorcall 프로토콜 등
+331                                                                                                                   331 
+332 []{#contents103 .comment_contents}                                                                                332 [ ]{#contents103 .comment_contents}
+333                                                                                                                   333 
+334 해마\...연산자\...\                                                                                               334 해마\...연산자\...\
+335 할당 연산자가 아니군요. (쿨럭)                                                                                    335 할당 연산자가 아니군요. (쿨럭)
+336                                                                                                                   336 
+337 []{#contents104 .comment_contents}                                                                                337 [ ]{#contents104 .comment_contents}
+338                                                                                                                   338 
+339 어 제가 올릴때는 저기도 해마였는데, 바다코끼리로 바뀌었네요. 해마가                                               339 어 제가 올릴때는 저기도 해마였는데, 바다코끼리로 바뀌었네요. 해마가
+340 헷갈리긴 합니다                                                                                                   340 헷갈리긴 합니다
+
+bulk_data.tsv --- 15/88 --- Text
+343 Apple - 맥북 단종, 맥북Air 와 맥북Pro 만 리프레시                                                                 343 Apple - 맥북 단종, 맥북Air 와 맥북Pro 만 리프레시
+344 =================================================                                                                 344 =================================================
+345                                                                                                                   345 
+346 []{#topic_contents}                                                                                               346 [ ]{#topic_contents}
+347                                                                                                                   347 
+348 맥북Air 가격 10만원 인하, 맥북Pro는 터치바/터치ID 추가되고 인텔8세대로                                            348 맥북Air 가격 10만원 인하, 맥북Pro는 터치바/터치ID 추가되고 인텔8세대로
+349 업데이트 후 가격 5만원 인상                                                                                       349 업데이트 후 가격 5만원 인상
+
+bulk_data.tsv --- 16/88 --- Text
+353 맥북Air 2019 256GB모델의 SSD 읽기속도가 이전 버전보다 35%느리다고                                                 353 맥북Air 2019 256GB모델의 SSD 읽기속도가 이전 버전보다 35%느리다고
+354 =================================================================                                                 354 =================================================================
+355                                                                                                                   355 
+356 []{#topic_contents}                                                                                               356 [ ]{#topic_contents}
+357                                                                                                                   357 
+358 True Tone 디스플레이로 올리면서도, 가격 10만원 인하했다더니, 역시나 다른                                          358 True Tone 디스플레이로 올리면서도, 가격 10만원 인하했다더니, 역시나 다른
+359 쪽에서 절감을 한듯. 신기하게 128GB짜리는 별차이 없다고                                                            359 쪽에서 절감을 한듯. 신기하게 128GB짜리는 별차이 없다고
+
+bulk_data.tsv --- 17/88 --- Text
+362 Lorem Picsum - 사진을 위한 Lorem Ipsum                                                                            362 Lorem Picsum - 사진을 위한 Lorem Ipsum
+363 ======================================                                                                            363 ======================================
+364                                                                                                                   364 
+365 []{#topic_contents}                                                                                               365 [ ]{#topic_contents}
+366                                                                                                                   366 
+367 width/height 입력하면 해당 사이즈 이미지 랜덤 불러옴\                                                             367 width/height 입력하면 해당 사이즈 이미지 랜덤 불러옴\
+368 ?grayscale , ?blur 등도 가능\                                                                                     368 ?grayscale , ?blur 등도 가능\
+369 /v2/list 로는 json array 형태의 이미지들 정보를 가져옴.                                                           369 /v2/list 로는 json array 형태의 이미지들 정보를 가져옴.
+370                                                                                                                   370 
+371 []{#contents87 .comment_contents}                                                                                 371 [ ]{#contents87 .comment_contents}
+372                                                                                                                   372 
+373 이런거 찾으셨어요?\                                                                                               373 이런거 찾으셨어요?\
+374 <https://loremipsum.io/21-of-the-best-placeholder-image-generators/>                                              374 <https://loremipsum.io/21-of-the-best-placeholder-image-generators/>
+
+bulk_data.tsv --- 18/88 --- Text
+379 Adele The repository of publicly available design systems and pattern libraries                                   379 Adele The repository of publicly available design systems and pattern libraries
+380 ===============================================================================                                   380 ===============================================================================
+381                                                                                                                   381 
+382 []{#topic_contents}                                                                                               382 [ ]{#topic_contents}
+383                                                                                                                   383 
+384 공개된 디자인 시스템 & 패턴 라이브러리 저장소?!                                                                   384 공개된 디자인 시스템 & 패턴 라이브러리 저장소?!
+385                                                                                                                   385 
+
+bulk_data.tsv --- 19/88 --- Text
+389 지식의 가난에는 이자가 붙는다                                                                                     389 지식의 가난에는 이자가 붙는다
+390 =============================                                                                                     390 =============================
+391                                                                                                                   391 
+392 []{#topic_contents} []{#contents6 .comment_contents}                                                              392 [ ]{#topic_contents} [ ]{#contents6 .comment_contents}
+393                                                                                                                   393 
+394 테스트 겸.. 이왕이면 링크 누르면 새창으로 띄워주심이.. ㅋㅋ                                                       394 테스트 겸.. 이왕이면 링크 누르면 새창으로 띄워주심이.. ㅋㅋ
+395 https://news.hada.io/topic?id=39    '우분투' 만든 캐노니컬 깃허브 계정 털렸다    [](http://m.zdnet.co.kr/news_vie 395 https://news.hada.io/topic?id=39    &#39;우분투&#39; 만든 캐노니컬 깃허브 계정 털렸다    [](http://m.zdnet.co.kr/
+... w.asp?article_id=20190708064632&re=zdk){.bold                                                                     ... news_view.asp?article_id=20190708064632&re=zdk){.bold
+396 .ud}                                                                                                              396 .ud}
+397                                                                                                                   397 
+398 \'우분투\' 만든 캐노니컬 깃허브 계정 털렸다                                                                       398 \'우분투\' 만든 캐노니컬 깃허브 계정 털렸다
+399 ===========================================                                                                       399 ===========================================
+400                                                                                                                   400 
+401 []{#topic_contents}                                                                                               401 [ ]{#topic_contents}
+402 https://news.hada.io/topic?id=44    Microsoft에서 리눅스 커널의 exfat 지원에 대해 내부적으로 논의 중    [](https: 402 https://news.hada.io/topic?id=44    Microsoft에서 리눅스 커널의 exfat 지원에 대해 내부적으로 논의 중    [](https:
+... //www.phoronix.com/scan.php?page=news_item&px=Linux-exFAT-2019-Discussion){.bold                                  ... //www.phoronix.com/scan.php?page=news_item&px=Linux-exFAT-2019-Discussion){.bold
+403 .ud}                                                                                                              403 .ud}
+404                                                                                                                   404 
+405 Microsoft에서 리눅스 커널의 exfat 지원에 대해 내부적으로 논의 중                                                  405 Microsoft에서 리눅스 커널의 exfat 지원에 대해 내부적으로 논의 중
+406 ================================================================                                                  406 ================================================================
+407                                                                                                                   407 
+408 []{#topic_contents}                                                                                               408 [ ]{#topic_contents}
+409                                                                                                                   409 
+410 구현물 보다는 파일시스템 디자인에 포함된 특허를 어떻게 부여할 것인지에                                            410 구현물 보다는 파일시스템 디자인에 포함된 특허를 어떻게 부여할 것인지에
+411 초점\                                                                                                             411 초점\
+412 exfat지원 구현은 예전에 삼성에서 작성한 것 기반                                                                   412 exfat지원 구현은 예전에 삼성에서 작성한 것 기반
+413                                                                                                                   413 
+414 []{#contents27 .comment_contents}                                                                                 414 [ ]{#contents27 .comment_contents}
+415                                                                                                                   415 
+416 삼성의 오픈소스 기반이라니 뭔가 색다른 느낌이네요                                                                 416 삼성의 오픈소스 기반이라니 뭔가 색다른 느낌이네요
+417                                                                                                                   417 
+418 []{#contents28 .comment_contents}                                                                                 418 [ ]{#contents28 .comment_contents}
+419                                                                                                                   419 
+420 삼성이 자사제품 지원 관련해서 리눅스 커널에 기여하는게 꽤 됩니다.\                                                420 삼성이 자사제품 지원 관련해서 리눅스 커널에 기여하는게 꽤 됩니다.\
+421 특히 Flash memory 관련된건 단순 하드웨어 드라이버 뿐만 아니라 파일시스템                                          421 특히 Flash memory 관련된건 단순 하드웨어 드라이버 뿐만 아니라 파일시스템
+422 같은 공통 컴포넌트도 많이 건드려요.                                                                               422 같은 공통 컴포넌트도 많이 건드려요.
+423                                                                                                                   423 
+424 []{#contents38 .comment_contents}                                                                                 424 [ ]{#contents38 .comment_contents}
+425                                                                                                                   425 
+426 옛날(?)에 삼성 NAND 메모리 사용할때 파일 시스템 버그 때문에 개고생했던                                            426 옛날(?)에 삼성 NAND 메모리 사용할때 파일 시스템 버그 때문에 개고생했던
+427 기억이\... 시간이 많이 지났으니 안정화 되었겠죠?                                                                  427 기억이\... 시간이 많이 지났으니 안정화 되었겠죠?
+
+bulk_data.tsv --- 20/88 --- Text
+430 vue에서 model과 collection을 사용해보자.                                                                          430 vue에서 model과 collection을 사용해보자.
+431 ========================================                                                                          431 ========================================
+432                                                                                                                   432 
+433 []{#topic_contents}                                                                                               433 [ ]{#topic_contents}
+434 https://news.hada.io/topic?id=49    최신 자바스크립트 최적화 기법 2019 [video]    [](https://www.youtube.com/watc 434 https://news.hada.io/topic?id=49    최신 자바스크립트 최적화 기법 2019 [video]    [](https://www.youtube.com/watc
+... h?v=zC42PFIaK4M){.bold .ud}                                                                                       ... h?v=zC42PFIaK4M){.bold .ud}
+435                                                                                                                   435 
+436 최신 자바스크립트 최적화 기법 2019 \[video\]                                                                      436 최신 자바스크립트 최적화 기법 2019 \[video\]
+437 ============================================                                                                      437 ============================================
+438                                                                                                                   438 
+439 []{#topic_contents}                                                                                               439 [ ]{#topic_contents}
+440                                                                                                                   440 
+441 브라우저의 성능이 개선되고 원리가 바뀌면서 최적화 기법도 자연스럽게                                               441 브라우저의 성능이 개선되고 원리가 바뀌면서 최적화 기법도 자연스럽게
+442 바뀌고 있습니다. 글 The cost of JavaScript in 2019을 함께 읽어보면서                                              442 바뀌고 있습니다. 글 The cost of JavaScript in 2019을 함께 읽어보면서
+
+bulk_data.tsv --- 21/88 --- Text
+446 답답한 윈도우의 command 창대신에 새로운 윈도우 터미널을 설치해보자                                                446 답답한 윈도우의 command 창대신에 새로운 윈도우 터미널을 설치해보자
+447 ==================================================================                                                447 ==================================================================
+448                                                                                                                   448 
+449 []{#topic_contents}                                                                                               449 [ ]{#topic_contents}
+450                                                                                                                   450 
+451 빌드하고 설치할 수 있는 가이드 영상                                                                               451 빌드하고 설치할 수 있는 가이드 영상
+452                                                                                                                   452 
+453 <https://www.youtube.com/watch?v=4Rsr0NRHuBY&t=660s>                                                              453 <https://www.youtube.com/watch?v=4Rsr0NRHuBY&t=660s>
+454                                                                                                                   454 
+455 []{#contents13 .comment_contents}                                                                                 455 [ ]{#contents13 .comment_contents}
+456                                                                                                                   456 
+457 설치했다 10분만에 세번 프리징\... 포기                                                                            457 설치했다 10분만에 세번 프리징\... 포기
+458                                                                                                                   458 
+459 []{#contents16 .comment_contents}                                                                                 459 [ ]{#contents16 .comment_contents}
+460                                                                                                                   460 
+461 아직은 많이 불안한가 보네요 쩝..                                                                                  461 아직은 많이 불안한가 보네요 쩝..
+462 https://news.hada.io/topic?id=59    QuickJS Javascript Engine - 작고 빠르고 임베드 가능한 자바스크립트 엔진    [] 462 https://news.hada.io/topic?id=59    QuickJS Javascript Engine - 작고 빠르고 임베드 가능한 자바스크립트 엔진    []
+... (https://bellard.org/quickjs/){.bold .ud}                                                                         ... (https://bellard.org/quickjs/){.bold .ud}
+463                                                                                                                   463 
+464 QuickJS Javascript Engine - 작고 빠르고 임베드 가능한 자바스크립트 엔진                                           464 QuickJS Javascript Engine - 작고 빠르고 임베드 가능한 자바스크립트 엔진
+465 =======================================================================                                           465 =======================================================================
+466                                                                                                                   466 
+467 []{#topic_contents}                                                                                               467 [ ]{#topic_contents}
+468                                                                                                                   468 
+469 FFMpeg과 QEMU를 만든 Fabrice Bellard의 새 작품.\                                                                  469 FFMpeg과 QEMU를 만든 Fabrice Bellard의 새 작품.\
+470 ES2019지원. C파일 몇개로 구성, 외부 디펜던시 없음.\                                                               470 ES2019지원. C파일 몇개로 구성, 외부 디펜던시 없음.\
+
+bulk_data.tsv --- 22/88 --- Text
+473 ECMAScript Test Suite 100% 통과.\                                                                                 473 ECMAScript Test Suite 100% 통과.\
+474 레퍼런스 카운팅을 이용한 가비지 콜렉션.                                                                           474 레퍼런스 카운팅을 이용한 가비지 콜렉션.
+475                                                                                                                   475 
+476 []{#contents85 .comment_contents}                                                                                 476 [ ]{#contents85 .comment_contents}
+477                                                                                                                   477 
+478 그리고 하루만에 발견된 보안 버그\...                                                                              478 그리고 하루만에 발견된 보안 버그\...
+479 <https://twitter.com/qwertyoruiopz/status/1149424025111801858>                                                    479 <https://twitter.com/qwertyoruiopz/status/1149424025111801858>
+480 (qwertyoruiopz는 iOS jailbreak으로 유명한 보안 연구자입니다.)                                                     480 (qwertyoruiopz는 iOS jailbreak으로 유명한 보안 연구자입니다.)
+481                                                                                                                   481 
+482 []{#contents51 .comment_contents}                                                                                 482 [ ]{#contents51 .comment_contents}
+483                                                                                                                   483 
+484 Fabrice Bellard 는 정말 괴물급 개발자.                                                                            484 Fabrice Bellard 는 정말 괴물급 개발자.
+485                                                                                                                   485 
+
+bulk_data.tsv --- 23/88 --- Text
+526                                                                                                                   526 
+527 하는일마다 이게 어찌 한사람이 하는 일인지 놀라울뿐인 사람.                                                        527 하는일마다 이게 어찌 한사람이 하는 일인지 놀라울뿐인 사람.
+528                                                                                                                   528 
+529 []{#contents52 .comment_contents}                                                                                 529 [ ]{#contents52 .comment_contents}
+530                                                                                                                   530 
+531 jslinux도 첨엔 커널띄우는것만으로도 놀랐는데, 계속 업데이트가 되네요.                                             531 jslinux도 첨엔 커널띄우는것만으로도 놀랐는데, 계속 업데이트가 되네요.
+532                                                                                                                   532 
+
+bulk_data.tsv --- 24/88 --- Text
+541 AWS EBS(Elastic Block Storage) 비용 최적화                                                                        541 AWS EBS(Elastic Block Storage) 비용 최적화
+542 ==========================================                                                                        542 ==========================================
+543                                                                                                                   543 
+544 []{#topic_contents}                                                                                               544 [ ]{#topic_contents}
+545                                                                                                                   545 
+546 gp2/io1/st1/sc1 유형에 대한 요약 비교 설명과 선택시 고려해야할 것.                                                546 gp2/io1/st1/sc1 유형에 대한 요약 비교 설명과 선택시 고려해야할 것.
+547 IOPS냐 처리량이냐. 가격 비교와 비용 최적화를 위한 도구 소개                                                       547 IOPS냐 처리량이냐. 가격 비교와 비용 최적화를 위한 도구 소개
+
+bulk_data.tsv --- 25/88 --- Text
+550 딥러닝을 이용한 자연어처리 입문                                                                                   550 딥러닝을 이용한 자연어처리 입문
+551 ===============================                                                                                   551 ===============================
+552                                                                                                                   552 
+553 []{#topic_contents}                                                                                               553 [ ]{#topic_contents}
+554                                                                                                                   554 
+555 깊은 내용보다는 입문으로써 도움이 될만한 사이트입니다. 시간이 지날 수록                                           555 깊은 내용보다는 입문으로써 도움이 될만한 사이트입니다. 시간이 지날 수록
+556 내용들이 꾸준히 채워지지 않을까 싶네요.                                                                           556 내용들이 꾸준히 채워지지 않을까 싶네요.
+
+bulk_data.tsv --- 26/88 --- Text
+560 제프 베조스의 아마존 주주서한 모음 \[1997\~현재\]                                                                 560 제프 베조스의 아마존 주주서한 모음 \[1997\~현재\]
+561 =================================================                                                                 561 =================================================
+562                                                                                                                   562 
+563 []{#topic_contents}                                                                                               563 [ ]{#topic_contents}
+564 https://news.hada.io/topic?id=7    CockroachDB, BSL로 라이센스 변경 - 오픈소스지만 상업화는 안됨    [](https://ww 564 https://news.hada.io/topic?id=7    CockroachDB, BSL로 라이센스 변경 - 오픈소스지만 상업화는 안됨    [](https://ww
+... w.cockroachlabs.com/blog/oss-relicensing-cockroachdb/){.bold                                                      ... w.cockroachlabs.com/blog/oss-relicensing-cockroachdb/){.bold
+565 .ud}                                                                                                              565 .ud}
+566                                                                                                                   566 
+567 CockroachDB, BSL로 라이센스 변경 - 오픈소스지만 상업화는 안됨                                                     567 CockroachDB, BSL로 라이센스 변경 - 오픈소스지만 상업화는 안됨
+568 =============================================================                                                     568 =============================================================
+569                                                                                                                   569 
+570 []{#topic_contents}                                                                                               570 [ ]{#topic_contents}
+571                                                                                                                   571 
+572 새로운 Business Source License (BSL) 이라는 라이센스 적용해서 상업화는                                            572 새로운 Business Source License (BSL) 이라는 라이센스 적용해서 상업화는
+573 불가.\                                                                                                            573 불가.\
+574 릴리즈후 3년후에 APL 로 변경                                                                                      574 릴리즈후 3년후에 APL 로 변경
+575                                                                                                                   575 
+576 []{#contents1 .comment_contents}                                                                                  576 [ ]{#contents1 .comment_contents}
+577                                                                                                                   577 
+578 글에도 있지만, AWS가 오픈소스 기반의 솔루션들을 추가하면서 상용화                                                 578 글에도 있지만, AWS가 오픈소스 기반의 솔루션들을 추가하면서 상용화
+579 하는것이 보기 싫은듯\                                                                                             579 하는것이 보기 싫은듯\
+
+bulk_data.tsv --- 27/88 --- Text
+584 아마존 Fire TV에 Youtube 다시 런칭, 크롬캐스트에서 아마존 Prime Video도 가능해져                                  584 아마존 Fire TV에 Youtube 다시 런칭, 크롬캐스트에서 아마존 Prime Video도 가능해져
+585 ================================================================================                                  585 ================================================================================
+586                                                                                                                   586 
+587 []{#topic_contents} []{#contents7 .comment_contents}                                                              587 [ ]{#topic_contents} [ ]{#contents7 .comment_contents}
+588                                                                                                                   588 
+589 오 집에가서 깔아야 겠으요.                                                                                        589 오 집에가서 깔아야 겠으요.
+590                                                                                                                   590 
+591 []{#contents3 .comment_contents}                                                                                  591 [ ]{#contents3 .comment_contents}
+592                                                                                                                   592 
+593 2017년 12월말에 아마존 Prime Video 를 크롬캐스트 제공안하는것 과 구글                                             593 2017년 12월말에 아마존 Prime Video 를 크롬캐스트 제공안하는것 과 구글
+594 Nest 판매 중단한 일 관련해서 삭제했다가 이제 다시 재개 하는것.                                                    594 Nest 판매 중단한 일 관련해서 삭제했다가 이제 다시 재개 하는것.
+
+bulk_data.tsv --- 28/88 --- Text
+602 10x.engineer                                                                                                      602 10x.engineer
+603 ============                                                                                                      603 ============
+604                                                                                                                   604 
+605 []{#topic_contents} []{#contents69 .comment_contents}                                                             605 [ ]{#topic_contents} [ ]{#contents69 .comment_contents}
+606                                                                                                                   606 
+607 링크 깨진줄 알고 댓글 쓰려다 댓글보고 다시 들어가서 이해한 1인 ㅋ                                                 607 링크 깨진줄 알고 댓글 쓰려다 댓글보고 다시 들어가서 이해한 1인 ㅋ
+608                                                                                                                   608 
+609 []{#contents67 .comment_contents}                                                                                 609 [ ]{#contents67 .comment_contents}
+610                                                                                                                   610 
+611 404 올리려고 \$8을 쓰다니!                                                                                        611 404 올리려고 \$8을 쓰다니!
+612                                                                                                                   612 
+613 []{#contents68 .comment_contents}                                                                                 613 [ ]{#contents68 .comment_contents}
+614                                                                                                                   614 
+615 😆                                                                                                                615 😆
+616 https://news.hada.io/topic?id=77    ‘문서’로 세상에 도움을 주는 테크니컬 라이터 [인터뷰]    [](https://engineerin 616 https://news.hada.io/topic?id=77    ‘문서’로 세상에 도움을 주는 테크니컬 라이터 [인터뷰]    [](https://engineerin
+    g.linecorp.com/ko/blog/line-developer-interview-4/){.bold                                                             g.linecorp.com/ko/blog/line-developer-interview-4/){.bold
+
+bulk_data.tsv --- 29/88 --- Text
+619 '문서'로 세상에 도움을 주는 테크니컬 라이터 \[인터뷰\]                                                            619 '문서'로 세상에 도움을 주는 테크니컬 라이터 \[인터뷰\]
+620 ======================================================                                                            620 ======================================================
+621                                                                                                                   621 
+622 []{#topic_contents}                                                                                               622 [ ]{#topic_contents}
+623                                                                                                                   623 
+624 LINE의 테크니컬 라이터 인터뷰.\                                                                                   624 LINE의 테크니컬 라이터 인터뷰.\
+625 - 테크니컬 라이터가 하는일\                                                                                       625 - 테크니컬 라이터가 하는일\
+
+bulk_data.tsv --- 30/88 --- Text
+631 USB-C to USB-C 케이블 종류는 몇개인가요?                                                                          631 USB-C to USB-C 케이블 종류는 몇개인가요?
+632 ========================================                                                                          632 ========================================
+633                                                                                                                   633 
+634 []{#topic_contents}                                                                                               634 [ ]{#topic_contents}
+635                                                                                                                   635 
+636 다 똑같이 생겼지만 2019년 6월 기준 총 6개라고                                                                     636 다 똑같이 생겼지만 2019년 6월 기준 총 6개라고
+637                                                                                                                   637 
+
+bulk_data.tsv --- 31/88 --- Text
+642 USB 3.2 Gen 2 (10gbps) rated at 3A\                                                                               642 USB 3.2 Gen 2 (10gbps) rated at 3A\
+643 USB 3.2 Gen 2 (10gpbs) rated at 5A\                                                                               643 USB 3.2 Gen 2 (10gpbs) rated at 5A\
+644                                                                                                                   644 
+645 []{#contents80 .comment_contents}                                                                                 645 [ ]{#contents80 .comment_contents}
+646                                                                                                                   646 
+647 썬더볼트3 도 똑같이 생겨서 구분 하기 어려워요.\                                                                   647 썬더볼트3 도 똑같이 생겨서 구분 하기 어려워요.\
+648 케이블 그립감이 좀 틀린거 같기도 하고.                                                                            648 케이블 그립감이 좀 틀린거 같기도 하고.
+
+bulk_data.tsv --- 32/88 --- Text
+652 소프트웨어 환멸감 \[번역글\]                                                                                      652 소프트웨어 환멸감 \[번역글\]
+653 ============================                                                                                      653 ============================
+654                                                                                                                   654 
+655 []{#topic_contents}                                                                                               655 [ ]{#topic_contents}
+656                                                                                                                   656 
+657 \- 참을 수 없을 정도로 모든 것이 느리다\                                                                          657 \- 참을 수 없을 정도로 모든 것이 느리다\
+658 - 모든 게 너무 커어어어다랗군요\                                                                                  658 - 모든 게 너무 커어어어다랗군요\
+
+bulk_data.tsv --- 33/88 --- Text
+674 협업 필터링 추천 시스템 (Collaborative Filtering Recommendation System)                                           674 협업 필터링 추천 시스템 (Collaborative Filtering Recommendation System)
+675 =======================================================================                                           675 =======================================================================
+676                                                                                                                   676 
+677 []{#topic_contents}                                                                                               677 [ ]{#topic_contents}
+678                                                                                                                   678 
+679 협업 필터링은 많은 유저들로부터 모은 취향 정보들을 기반으로 하여 스스로                                           679 협업 필터링은 많은 유저들로부터 모은 취향 정보들을 기반으로 하여 스스로
+680 예측하는 기술을 말한다. 협업 필터링은 어떤 특정한 인물 A가 한가지 이슈에                                          680 예측하는 기술을 말한다. 협업 필터링은 어떤 특정한 인물 A가 한가지 이슈에
+
+bulk_data.tsv --- 34/88 --- Text
+689 페이스북 리브라(Libra) 이해 및 관련 동향 \[pdf\]                                                                  689 페이스북 리브라(Libra) 이해 및 관련 동향 \[pdf\]
+690 ================================================                                                                  690 ================================================
+691                                                                                                                   691 
+692 []{#topic_contents}                                                                                               692 [ ]{#topic_contents}
+693                                                                                                                   693 
+694 금융위원회에서 언론등의 이해를 돕기위해 리브라 백서, 국내외 언론 및                                               694 금융위원회에서 언론등의 이해를 돕기위해 리브라 백서, 국내외 언론 및
+695 해외동향을 정리한 18P 분량의 pdf                                                                                  695 해외동향을 정리한 18P 분량의 pdf
+696                                                                                                                   696 
+697 []{#contents17 .comment_contents}                                                                                 697 [ ]{#contents17 .comment_contents}
+698                                                                                                                   698 
+699 금융위원회는 여전히 부정적인 시각을 가지고 있는 듯 합니다. 하지만 더                                              699 금융위원회는 여전히 부정적인 시각을 가지고 있는 듯 합니다. 하지만 더
+700 이상 무시할 수 없는 플레이어의 참여라서 무시할 수도 없고 확실히                                                   700 이상 무시할 수 없는 플레이어의 참여라서 무시할 수도 없고 확실히
+
+bulk_data.tsv --- 35/88 --- Text
+704 1x.engineer                                                                                                       704 1x.engineer
+705 ===========                                                                                                       705 ===========
+706                                                                                                                   706 
+707 []{#topic_contents}                                                                                               707 [ ]{#topic_contents}
+708                                                                                                                   708 
+709 당신은 1x engineer 인가요, 10x engineer 인가요                                                                    709 당신은 1x engineer 인가요, 10x engineer 인가요
+710                                                                                                                   710 
+711 []{#contents71 .comment_contents}                                                                                 711 [ ]{#contents71 .comment_contents}
+712                                                                                                                   712 
+713 이런게 진짜 10x 엔지니어?!\                                                                                       713 이런게 진짜 10x 엔지니어?!\
+714 [https://dev.to/turnerj/...](https://dev.to/turnerj/the-10-points-that-make-up-real-10x-engineers-4mj4){.ud       714 [https://dev.to/turnerj/...](https://dev.to/turnerj/the-10-points-that-make-up-real-10x-engineers-4mj4){.ud
+715 .link}                                                                                                            715 .link}
+716                                                                                                                   716 
+717 아뇨\... 그건 그냥 좋은 개발자예요.                                                                               717 아뇨\... 그건 그냥 좋은 개발자예요.
+718                                                                                                                   718 
+719 []{#contents72 .comment_contents}                                                                                 719 [ ]{#contents72 .comment_contents}
+720                                                                                                                   720 
+721 긴 링크를 줄이는 기준이 뭐죠? 구루님 쓴 글에 링크는 안 줄이고\... 제가                                            721 긴 링크를 줄이는 기준이 뭐죠? 구루님 쓴 글에 링크는 안 줄이고\... 제가
+722 쓴 글레 링크는 줄이고\... 힝 ㅠㅠ                                                                                 722 쓴 글레 링크는 줄이고\... 힝 ㅠㅠ
+723                                                                                                                   723 
+724 []{#contents73 .comment_contents}                                                                                 724 [ ]{#contents73 .comment_contents}
+725                                                                                                                   725 
+726 70자 기준인데요. 4글자 넘으셨습니다..                                                                             726 70자 기준인데요. 4글자 넘으셨습니다..
+727                                                                                                                   727 
+728 []{#contents78 .comment_contents}                                                                                 728 [ ]{#contents78 .comment_contents}
+729                                                                                                                   729 
+730 췟\... ㅡ,.ㅡ;;                                                                                                   730 췟\... ㅡ,.ㅡ;;
+731                                                                                                                   731 
+732 []{#contents61 .comment_contents}                                                                                 732 [ ]{#contents61 .comment_contents}
+733                                                                                                                   733 
+734 10x에 대해 "비주얼 베이직의 아버지" Alan Cooper 옹의 생각은                                                       734 10x에 대해 "비주얼 베이직의 아버지" Alan Cooper 옹의 생각은
+735                                                                                                                   735 
+736 <https://twitter.com/MrAlanCooper/status/1150215587978596353>                                                     736 <https://twitter.com/MrAlanCooper/status/1150215587978596353>
+737                                                                                                                   737 
+738 []{#contents70 .comment_contents}                                                                                 738 [ ]{#contents70 .comment_contents}
+739                                                                                                                   739 
+740 10xer 새로운 hype가 되려나\...                                                                                    740 10xer 새로운 hype가 되려나\...
+741                                                                                                                   741 
+742 []{#contents60 .comment_contents}                                                                                 742 [ ]{#contents60 .comment_contents}
+743                                                                                                                   743 
+744 트위터에서 얘기되고 있는 이슈                                                                                     744 트위터에서 얘기되고 있는 이슈
+745                                                                                                                   745 
+746 시작은\                                                                                                           746 시작은\
+747 <https://twitter.com/skirani/status/1149302828420067328>                                                          747 <https://twitter.com/skirani/status/1149302828420067328>
+748                                                                                                                   748 
+749 []{#contents65 .comment_contents}                                                                                 749 [ ]{#contents65 .comment_contents}
+750                                                                                                                   750 
+751 협업이 잘 되는 1x 와 전혀 안되는 10x 로 논쟁중인 것 같네요. 10x                                                   751 협업이 잘 되는 1x 와 전혀 안되는 10x 로 논쟁중인 것 같네요. 10x
+752 엔지니어가 선망의 대상이긴 하지만, 일의 대부분은 여러 사람이 긴 호흡으로                                          752 엔지니어가 선망의 대상이긴 하지만, 일의 대부분은 여러 사람이 긴 호흡으로
+
+bulk_data.tsv --- 36/88 --- Text
+760 Github - Repository Templates 지원 시작                                                                           760 Github - Repository Templates 지원 시작
+761 =======================================                                                                           761 =======================================
+762                                                                                                                   762 
+763 []{#topic_contents}                                                                                               763 [ ]{#topic_contents}
+764                                                                                                                   764 
+765 새 Repo 만들때 템플릿에서 시작 가능.                                                                              765 새 Repo 만들때 템플릿에서 시작 가능.
+766                                                                                                                   766 
+
+bulk_data.tsv --- 37/88 --- Text
+774 재개발중인 안드로이드용 Firefox 미리보기                                                                          774 재개발중인 안드로이드용 Firefox 미리보기
+775 ========================================                                                                          775 ========================================
+776                                                                                                                   776 
+777 []{#topic_contents}                                                                                               777 [ ]{#topic_contents}
+778                                                                                                                   778 
+779 빠른속도와 미니멀UI, 사용루틴에 따른 콜렉션 기능, 보안에 중점. GeckoView                                          779 빠른속도와 미니멀UI, 사용루틴에 따른 콜렉션 기능, 보안에 중점. GeckoView
+780 모바일 브라우저 엔진 기반.                                                                                        780 모바일 브라우저 엔진 기반.
+
+bulk_data.tsv --- 38/88 --- Text
+784 Microsoft Azure Kinect DK - 키넥트 기반 AI 카메라 판매 개시                                                       784 Microsoft Azure Kinect DK - 키넥트 기반 AI 카메라 판매 개시
+785 ===========================================================                                                       785 ===========================================================
+786                                                                                                                   786 
+787 []{#topic_contents}                                                                                               787 [ ]{#topic_contents}
+788                                                                                                                   788 
+789 게이밍장비였던 XBox용 Kinect가 AI 장비로 재탄생. Azure 머신러닝 서비스와                                          789 게이밍장비였던 XBox용 Kinect가 AI 장비로 재탄생. Azure 머신러닝 서비스와
+790 연결해서 다양한 용도로 사용가능.                                                                                  790 연결해서 다양한 용도로 사용가능.
+
+bulk_data.tsv --- 39/88 --- Text
+801 jExcel - 가벼운 Vanilla 자바스크립트 스프레드시트 플러그인                                                        801 jExcel - 가벼운 Vanilla 자바스크립트 스프레드시트 플러그인
+802 ==========================================================                                                        802 ==========================================================
+803                                                                                                                   803 
+804 []{#topic_contents}                                                                                               804 [ ]{#topic_contents}
+805                                                                                                                   805 
+806 JS Array,JSON,CSV,XLSX 에서 생성가능. Excel에서 바로 복사 붙여넣기도                                              806 JS Array,JSON,CSV,XLSX 에서 생성가능. Excel에서 바로 복사 붙여넣기도
+807 가능. MIT라이센스                                                                                                 807 가능. MIT라이센스
+808 https://news.hada.io/topic?id=27    I Can't Stop Winning!    [](https://blog.pinboard.in/2019/07/i_cant_stop_winn 808 https://news.hada.io/topic?id=27    I Can&#39;t Stop Winning!    [](https://blog.pinboard.in/2019/07/i_cant_stop_
+... ing/){.bold .ud}                                                                                                  ... winning/){.bold .ud}
+809                                                                                                                   809 
+810 I Can\'t Stop Winning!                                                                                            810 I Can\'t Stop Winning!
+811 ======================                                                                                            811 ======================
+812                                                                                                                   812 
+813 []{#topic_contents}                                                                                               813 [ ]{#topic_contents}
+814                                                                                                                   814 
+815 10년째 북마킹 서비스 Pinboard를 혼자 개발해온 maciej의 회고. 누적북마크                                           815 10년째 북마킹 서비스 Pinboard를 혼자 개발해온 maciej의 회고. 누적북마크
+816 10억개, AU 2만명, 10년간 20억원이 넘는 매출에 투자받은건 0원.                                                     816 10억개, AU 2만명, 10년간 20억원이 넘는 매출에 투자받은건 0원.
+817                                                                                                                   817 
+818 []{#contents8 .comment_contents}                                                                                  818 [ ]{#contents8 .comment_contents}
+819                                                                                                                   819 
+820 오래 운영하려면 최소한 BM이 유지되야 하는데 그게 쉬운 일이 아니겠죠.\                                             820 오래 운영하려면 최소한 BM이 유지되야 하는데 그게 쉬운 일이 아니겠죠.\
+821 누군가는 욕심이 지나쳐서 규모를 더 키워보고 싶다고 하고\                                                          821 누군가는 욕심이 지나쳐서 규모를 더 키워보고 싶다고 하고\
+822 누군가는 꾸준히 하는 것보다는 J커브를 그려야만 한다고 하고\                                                       822 누군가는 꾸준히 하는 것보다는 J커브를 그려야만 한다고 하고\
+823 비즈니스 모델도 다양하게 성장하면 안되는건가 싶은 요즘입니다.                                                     823 비즈니스 모델도 다양하게 성장하면 안되는건가 싶은 요즘입니다.
+824                                                                                                                   824 
+825 []{#contents25 .comment_contents}                                                                                 825 [ ]{#contents25 .comment_contents}
+826                                                                                                                   826 
+827 +1 저도 다양하게 성장 가능한 비즈니스 모델 사례가 필요하다에 한표                                                 827 +1 저도 다양하게 성장 가능한 비즈니스 모델 사례가 필요하다에 한표
+828                                                                                                                   828 
+829 []{#contents34 .comment_contents}                                                                                 829 [ ]{#contents34 .comment_contents}
+830                                                                                                                   830 
+831 남들이 성공하는 거 보면 참 쉬운데 막상 내가 하려면 어려운게 BM \...                                               831 남들이 성공하는 거 보면 참 쉬운데 막상 내가 하려면 어려운게 BM \...
+832                                                                                                                   832 
+833 []{#contents5 .comment_contents}                                                                                  833 [ ]{#contents5 .comment_contents}
+834                                                                                                                   834 
+835 테스트로 남겨봅니다. ㅋㅋ                                                                                         835 테스트로 남겨봅니다. ㅋㅋ
+836                                                                                                                   836 
+837 []{#contents4 .comment_contents}                                                                                  837 [ ]{#contents4 .comment_contents}
+838                                                                                                                   838 
+839 1인 비즈니스로서 귀감적인 사례라고 생각하는 <https://pinboard.in/>                                                839 1인 비즈니스로서 귀감적인 사례라고 생각하는 <https://pinboard.in/>
+840                                                                                                                   840 
+
+bulk_data.tsv --- 40/88 --- Text
+848 국내에도 이렇게 1인 또는 작은팀이 오래 운영하는 서비스들이 많아졌으면                                             848 국내에도 이렇게 1인 또는 작은팀이 오래 운영하는 서비스들이 많아졌으면
+849 좋겠음\                                                                                                           849 좋겠음\
+850                                                                                                                   850 
+851 []{#contents74 .comment_contents}                                                                                 851 [ ]{#contents74 .comment_contents}
+852                                                                                                                   852 
+853 요즘에는 유료 서비스가 영속성이 있을 것 같아 더 유심히 보게 되더라고요.\                                          853 요즘에는 유료 서비스가 영속성이 있을 것 같아 더 유심히 보게 되더라고요.\
+854 (블로그 글의 스크린 샷에서 세월이 느껴집니다 ㅎㅎ)                                                                854 (블로그 글의 스크린 샷에서 세월이 느껴집니다 ㅎㅎ)
+855                                                                                                                   855 
+856 []{#contents76 .comment_contents}                                                                                 856 [ ]{#contents76 .comment_contents}
+857                                                                                                                   857 
+858 10년전 글인지라 저도 아이폰 스크린샷보고 깜짝 놀랐습니다 \^\^;                                                    858 10년전 글인지라 저도 아이폰 스크린샷보고 깜짝 놀랐습니다 \^\^;
+859 https://news.hada.io/topic?id=52    주목할만한 실리콘밸리의 ‘빅 데이터’ 스타트업 7개    [](https://sungmooncho.co 859 https://news.hada.io/topic?id=52    주목할만한 실리콘밸리의 ‘빅 데이터’ 스타트업 7개    [](https://sungmooncho.co
+... m/2014/02/03/big-data-startups-2/){.bold .ud}                                                                     ... m/2014/02/03/big-data-startups-2/){.bold .ud}
+860                                                                                                                   860 
+861 주목할만한 실리콘밸리의 '빅 데이터' 스타트업 7개                                                                  861 주목할만한 실리콘밸리의 '빅 데이터' 스타트업 7개
+862 ================================================                                                                  862 ================================================
+863                                                                                                                   863 
+864 []{#topic_contents}                                                                                               864 [ ]{#topic_contents}
+865                                                                                                                   865 
+866 \[조성문블로그\]실리콘밸리에 워낙 실력 있는 스타트업이 많아 몇 가지만                                             866 \[조성문블로그\]실리콘밸리에 워낙 실력 있는 스타트업이 많아 몇 가지만
+867 골라내는 것 자체가 쉽지 않았는데, 그 중 가장 흥미를 자극한 것은                                                   867 골라내는 것 자체가 쉽지 않았는데, 그 중 가장 흥미를 자극한 것은
+
+bulk_data.tsv --- 41/88 --- Text
+877 중산층의 직업이 사라지고 있다                                                                                     877 중산층의 직업이 사라지고 있다
+878 =============================                                                                                     878 =============================
+879                                                                                                                   879 
+880 []{#topic_contents}                                                                                               880 [ ]{#topic_contents}
+881 https://news.hada.io/topic?id=56    2019년 현재 세계에서 가장 혁신적인 기업 50개    [](https://www.fastcompany.co 881 https://news.hada.io/topic?id=56    2019년 현재 세계에서 가장 혁신적인 기업 50개    [](https://www.fastcompany.co
+... m/most-innovative-companies/2019){.bold                                                                           ... m/most-innovative-companies/2019){.bold
+882 .ud}                                                                                                              882 .ud}
+883                                                                                                                   883 
+884 2019년 현재 세계에서 가장 혁신적인 기업 50개                                                                      884 2019년 현재 세계에서 가장 혁신적인 기업 50개
+885 ============================================                                                                      885 ============================================
+886                                                                                                                   886 
+887 []{#topic_contents}                                                                                               887 [ ]{#topic_contents}
+888                                                                                                                   888 
+889 전세계 스타트업과 기업들의 이노베이션 사례를 알아보고 트렌드를 알 수                                              889 전세계 스타트업과 기업들의 이노베이션 사례를 알아보고 트렌드를 알 수
+890 있는 내용입니다\~                                                                                                 890 있는 내용입니다\~
+
+bulk_data.tsv --- 42/88 --- Text
+893 Mary Meeker Internet Trends 2019 \[slide\]                                                                        893 Mary Meeker Internet Trends 2019 \[slide\]
+894 ==========================================                                                                        894 ==========================================
+895                                                                                                                   895 
+896 []{#topic_contents} []{#contents2 .comment_contents}                                                              896 [ ]{#topic_contents} [ ]{#contents2 .comment_contents}
+897                                                                                                                   897 
+898 한글 요약본들 링크 모음                                                                                           898 한글 요약본들 링크 모음
+899                                                                                                                   899 
+
+bulk_data.tsv --- 43/88 --- Text
+928 Docker Best Practices                                                                                             928 Docker Best Practices
+929 =====================                                                                                             929 =====================
+930                                                                                                                   930 
+931 []{#topic_contents}                                                                                               931 [ ]{#topic_contents}
+932                                                                                                                   932 
+933 Kubernetes, AWS ECS 환경위에서 Docker 컨테이너로 뱅크샐러드를 운영하며                                            933 Kubernetes, AWS ECS 환경위에서 Docker 컨테이너로 뱅크샐러드를 운영하며
+934 알게된것들                                                                                                        934 알게된것들
+
+bulk_data.tsv --- 44/88 --- Text
+937 Material Design - Dark Theme 디자인 가이드                                                                        937 Material Design - Dark Theme 디자인 가이드
+938 ==========================================                                                                        938 ==========================================
+939                                                                                                                   939 
+940 []{#topic_contents}                                                                                               940 [ ]{#topic_contents}
+941                                                                                                                   941 
+942 요즘 유행인 어두운 테마에 대한 머티리얼 디자인의 정리. 꼭 머티리얼                                                942 요즘 유행인 어두운 테마에 대한 머티리얼 디자인의 정리. 꼭 머티리얼
+943 아니더라도 웹이나 앱에서 다크 테마를 구현한다면 참고해 볼만한 깔끔한                                              943 아니더라도 웹이나 앱에서 다크 테마를 구현한다면 참고해 볼만한 깔끔한
+944 가이드                                                                                                            944 가이드
+945                                                                                                                   945 
+946 []{#contents177 .comment_contents}                                                                                946 [ ]{#contents177 .comment_contents}
+947                                                                                                                   947 
+948 한글 번역본 - <https://brunch.co.kr/@blckschrl/57>                                                                948 한글 번역본 - <https://brunch.co.kr/@blckschrl/57>
+949 https://news.hada.io/topic?id=81    네이버는 과연 제2의 싸이월드가 될 것인가    [](https://brunch.co.kr/@soundsgo 949 https://news.hada.io/topic?id=81    네이버는 과연 제2의 싸이월드가 될 것인가    [](https://brunch.co.kr/@soundsgo
+... od/78){.bold .ud}                                                                                                 ... od/78){.bold .ud}
+950                                                                                                                   950 
+951 네이버는 과연 제2의 싸이월드가 될 것인가                                                                          951 네이버는 과연 제2의 싸이월드가 될 것인가
+952 ========================================                                                                          952 ========================================
+953                                                                                                                   953 
+954 []{#topic_contents}                                                                                               954 [ ]{#topic_contents}
+955                                                                                                                   955 
+956 제목이 자극적인데 가장 쓸데 없는 걱정이라는 네이버, 삼성, 연예인이라지만                                          956 제목이 자극적인데 가장 쓸데 없는 걱정이라는 네이버, 삼성, 연예인이라지만
+957 실제 내용은 싸이월드의 흥망성쇄와 네이버에서 유투브로의 컨텐츠 생산 유저                                          957 실제 내용은 싸이월드의 흥망성쇄와 네이버에서 유투브로의 컨텐츠 생산 유저
+958 이동으로 비교 분석하고 있습니다.                                                                                  958 이동으로 비교 분석하고 있습니다.
+959                                                                                                                   959 
+960 []{#contents77 .comment_contents}                                                                                 960 [ ]{#contents77 .comment_contents}
+961                                                                                                                   961 
+962 네이버 걱정\...                                                                                                   962 네이버 걱정\...
+963                                                                                                                   963 
+964 []{#contents79 .comment_contents}                                                                                 964 [ ]{#contents79 .comment_contents}
+965                                                                                                                   965 
+966 네이버 걱정을 한다기 보다는 싸이월드에서 페이스북으로 이동만                                                      966 네이버 걱정을 한다기 보다는 싸이월드에서 페이스북으로 이동만
+967 생각했었는데 네이버 블로그로의 사용자 이전이나 유투브로의 사용자 이전 등                                          967 생각했었는데 네이버 블로그로의 사용자 이전이나 유투브로의 사용자 이전 등
+968 미처 몰랐던 관점이 있어서 공유했어요..                                                                            968 미처 몰랐던 관점이 있어서 공유했어요..
+969                                                                                                                   969 
+970 []{#contents75 .comment_contents}                                                                                 970 [ ]{#contents75 .comment_contents}
+971                                                                                                                   971 
+972 네이버가 5년전부터 동영상콘텐츠를 성장동력으로 삼겠다는 얘기를 했는데,                                            972 네이버가 5년전부터 동영상콘텐츠를 성장동력으로 삼겠다는 얘기를 했는데,
+973 성과는 좋지 않았던것 같구요.\                                                                                     973 성과는 좋지 않았던것 같구요.\
+
+bulk_data.tsv --- 45/88 --- Text
+977 요즘 세대는 녹색창 검색과 구글 검색이 아닌 빨간창 검색이라고                                                      977 요즘 세대는 녹색창 검색과 구글 검색이 아닌 빨간창 검색이라고
+978 얘기하더군요.                                                                                                     978 얘기하더군요.
+979                                                                                                                   979 
+980 []{#contents88 .comment_contents}                                                                                 980 [ ]{#contents88 .comment_contents}
+981                                                                                                                   981 
+982 \> 요즘 세대는 녹색창 검색과 구글 검색이 아닌 빨간창 검색이라고                                                   982 \> 요즘 세대는 녹색창 검색과 구글 검색이 아닌 빨간창 검색이라고
+983 얘기하더군요.\                                                                                                    983 얘기하더군요.\
+
+bulk_data.tsv --- 46/88 --- Text
+989 AI 포커봇이 멀티플레이어 상대 텍사스홀덤에서 첫승을 거둠                                                          989 AI 포커봇이 멀티플레이어 상대 텍사스홀덤에서 첫승을 거둠
+990 ========================================================                                                          990 ========================================================
+991                                                                                                                   991 
+992 []{#topic_contents}                                                                                               992 [ ]{#topic_contents}
+993                                                                                                                   993 
+994 페이스북과 카네기멜론이 만든 AI 포커봇 Pluribus.                                                                  994 페이스북과 카네기멜론이 만든 AI 포커봇 Pluribus.
+995                                                                                                                   995 
+
+bulk_data.tsv --- 47/88 --- Text
+1000                                                                                                                  1000 
+1001 Pluribus 는 2017년 2인 포커 게임에서 이긴 Libratus를 개선한 것                                                   1001 Pluribus 는 2017년 2인 포커 게임에서 이긴 Libratus를 개선한 것
+1002                                                                                                                  1002 
+1003 []{#contents53 .comment_contents}                                                                                1003 [ ]{#contents53 .comment_contents}
+1004                                                                                                                  1004 
+1005 매일경제 기사 : <https://www.mk.co.kr/news/it/view/2019/07/512240/>                                              1005 매일경제 기사 : <https://www.mk.co.kr/news/it/view/2019/07/512240/>
+1006 https://news.hada.io/topic?id=34    MS Windows 1.11 출시     [](https://www.microsoft.com/ko-kr/p/windows-111/9p 1006 https://news.hada.io/topic?id=34    MS Windows 1.11 출시     [](https://www.microsoft.com/ko-kr/p/windows-111/9p
+     ghpx7zmjrc){.bold                                                                                                     ghpx7zmjrc){.bold
+
+bulk_data.tsv --- 48/88 --- Text
+1009 MS Windows 1.11 출시                                                                                             1009 MS Windows 1.11 출시
+1010 ====================                                                                                             1010 ====================
+1011                                                                                                                  1011 
+1012 []{#topic_contents}                                                                                              1012 [ ]{#topic_contents}
+1013                                                                                                                  1013 
+1014 윈10에서만 설치가능. 그림판,Write 등과 클래식 게임&퍼즐 포함. 넷플릭스                                           1014 윈10에서만 설치가능. 그림판,Write 등과 클래식 게임&퍼즐 포함. 넷플릭스
+1015 기묘한이야기 시즌3 가 1985년 배경이어서 이와 연계한 콜라보레이션.                                                1015 기묘한이야기 시즌3 가 1985년 배경이어서 이와 연계한 콜라보레이션.
+
+bulk_data.tsv --- 49/88 --- Text
+1019 LINE 베트남에서 당근마켓 그대로 베낀 GET IT이라는 중고 거래앱 서비스중                                           1019 LINE 베트남에서 당근마켓 그대로 베낀 GET IT이라는 중고 거래앱 서비스중
+1020 ======================================================================                                           1020 ======================================================================
+1021                                                                                                                  1021 
+1022 []{#topic_contents} []{#contents97 .comment_contents}                                                            1022 [ ]{#topic_contents} [ ]{#contents97 .comment_contents}
+1023                                                                                                                  1023 
+1024 네이버 라인 Get IT vs 당근마켓 주요 화면 비교: <http://bit.ly/2JBlmll>                                           1024 네이버 라인 Get IT vs 당근마켓 주요 화면 비교: <http://bit.ly/2JBlmll>
+1025 https://news.hada.io/topic?id=51    인스타그램은 어떻게 커머스가 되어가는가?    [](https://ppss.kr/archives/1990 1025 https://news.hada.io/topic?id=51    인스타그램은 어떻게 커머스가 되어가는가?    [](https://ppss.kr/archives/1990
+.... 06){.bold .ud}                                                                                                   .... 06){.bold .ud}
+1026                                                                                                                  1026 
+1027 인스타그램은 어떻게 커머스가 되어가는가?                                                                         1027 인스타그램은 어떻게 커머스가 되어가는가?
+1028 ========================================                                                                         1028 ========================================
+1029                                                                                                                  1029 
+1030 []{#topic_contents}                                                                                              1030 [ ]{#topic_contents}
+1031                                                                                                                  1031 
+1032 ㅇ 인스타그램은 어떻게 커머스가 되어가는가?\                                                                     1032 ㅇ 인스타그램은 어떻게 커머스가 되어가는가?\
+1033 - 숍 기능을 먼저 도입한 페이스북의 경우 지속적인 유저 이탈과 페북 숍만의                                         1033 - 숍 기능을 먼저 도입한 페이스북의 경우 지속적인 유저 이탈과 페북 숍만의
+
+bulk_data.tsv --- 50/88 --- Text
+1041 - 유저들은 인플루언서에게 상업적 거리감 대신 되려 인간적 호감과                                                  1041 - 유저들은 인플루언서에게 상업적 거리감 대신 되려 인간적 호감과
+1042 자연스러운 신뢰를 형성                                                                                           1042 자연스러운 신뢰를 형성
+1043                                                                                                                  1043 
+1044 []{#contents46 .comment_contents}                                                                                1044 [ ]{#contents46 .comment_contents}
+1045                                                                                                                  1045 
+1046 왜 페이스북숍은 실패했고, 인스타숍은 성공할수 있는가? 인스타숍에서                                               1046 왜 페이스북숍은 실패했고, 인스타숍은 성공할수 있는가? 인스타숍에서
+1047 인플루언서가 아닌 브랜드들은 어떻게 숍으로 성공할수 있는가? 이전                                                 1047 인플루언서가 아닌 브랜드들은 어떻게 숍으로 성공할수 있는가? 이전
+1048 블로그의 경우와 같이, 브랜드들이 진입하는 순간 이 시장은 Spoil 되면서                                            1048 블로그의 경우와 같이, 브랜드들이 진입하는 순간 이 시장은 Spoil 되면서
+1049 쇠퇴의 길을 걷게 되는가? 등등이 더 궁금해지네요.                                                                 1049 쇠퇴의 길을 걷게 되는가? 등등이 더 궁금해지네요.
+1050                                                                                                                  1050 
+1051 []{#contents43 .comment_contents}                                                                                1051 [ ]{#contents43 .comment_contents}
+1052                                                                                                                  1052 
+1053 무엇을 파느냐에서 누가파느냐로 패러다임 전환이라는 관점에 상당히                                                 1053 무엇을 파느냐에서 누가파느냐로 패러다임 전환이라는 관점에 상당히
+1054 공감합니다. 요즘 한참 즐기는 등산 경우도 주로 인스타그램을 통해 사진과                                           1054 공감합니다. 요즘 한참 즐기는 등산 경우도 주로 인스타그램을 통해 사진과
+
+bulk_data.tsv --- 51/88 --- Text
+1060 인플루언서들이 영향력을 잃고 있다                                                                                1060 인플루언서들이 영향력을 잃고 있다
+1061 =================================                                                                                1061 =================================
+1062                                                                                                                  1062 
+1063 []{#topic_contents}                                                                                              1063 [ ]{#topic_contents}
+1064                                                                                                                  1064 
+1065 유명한 매체는 아닌데 요즘 인플루언서 마케팅 트렌드와 비슷한 내용을 담고                                          1065 유명한 매체는 아닌데 요즘 인플루언서 마케팅 트렌드와 비슷한 내용을 담고
+1066 있습니다.\                                                                                                       1066 있습니다.\
+1067 인플루언서 기반 소셜 마케팅 솔루션들이 봇물을 이루고 있는데 실제로                                               1067 인플루언서 기반 소셜 마케팅 솔루션들이 봇물을 이루고 있는데 실제로
+1068 성공한 사례가 없고 피로도가 높아지는 것 같습니다.                                                                1068 성공한 사례가 없고 피로도가 높아지는 것 같습니다.
+1069                                                                                                                  1069 
+1070 []{#contents129 .comment_contents}                                                                               1070 [ ]{#contents129 .comment_contents}
+1071                                                                                                                  1071 
+1072 네이버 파워 블로거 시장이 얼마나 빨리 spoil 되어서 결국 법령까지                                                 1072 네이버 파워 블로거 시장이 얼마나 빨리 spoil 되어서 결국 법령까지
+1073 제정되어 쇠퇴해갔는지 기억한다면 인플루언서 시장도 같은 길을 걷고 있고                                           1073 제정되어 쇠퇴해갔는지 기억한다면 인플루언서 시장도 같은 길을 걷고 있고
+
+bulk_data.tsv --- 52/88 --- Text
+1078 덩치큰 GIF를 AV1 비디오로 바꾸기                                                                                 1078 덩치큰 GIF를 AV1 비디오로 바꾸기
+1079 ================================                                                                                 1079 ================================
+1080                                                                                                                  1080 
+1081 []{#topic_contents}                                                                                              1081 [ ]{#topic_contents}
+1082                                                                                                                  1082 
+1083 AV1이 가장 압축율이 좋지만 데스크탑 파폭/크롬만 지원.\                                                           1083 AV1이 가장 압축율이 좋지만 데스크탑 파폭/크롬만 지원.\
+1084 모바일 지원을 위해서 AV1/VP9/MP4 3가지로 폴백 만들기.\                                                           1084 모바일 지원을 위해서 AV1/VP9/MP4 3가지로 폴백 만들기.\
+1085 AV1은 FFMPEG으로 생성가능                                                                                        1085 AV1은 FFMPEG으로 생성가능
+1086                                                                                                                  1086 
+1087 []{#contents83 .comment_contents}                                                                                1087 [ ]{#contents83 .comment_contents}
+1088                                                                                                                  1088 
+1089 좋은데\... 좋은데\... 써먹을데가 없네\... (레..코믹스?)                                                          1089 좋은데\... 좋은데\... 써먹을데가 없네\... (레..코믹스?)
+1090 https://news.hada.io/topic?id=43    안드로이드 Q Beta5    [](https://android-developers.googleblog.com/2019/07/a 1090 https://news.hada.io/topic?id=43    안드로이드 Q Beta5    [](https://android-developers.googleblog.com/2019/07/a
+     ndroid-q-beta-5-update.html){.bold                                                                                    ndroid-q-beta-5-update.html){.bold
+
+bulk_data.tsv --- 53/88 --- Text
+1093 안드로이드 Q Beta5                                                                                               1093 안드로이드 Q Beta5
+1094 ==================                                                                                               1094 ==================
+1095                                                                                                                  1095 
+1096 []{#topic_contents}                                                                                              1096 [ ]{#topic_contents}
+1097                                                                                                                  1097 
+1098 Android 10(Q)의 5번째 베타 업데이트 배포입니다. 이제 1번만 더 나오면                                             1098 Android 10(Q)의 5번째 베타 업데이트 배포입니다. 이제 1번만 더 나오면
+1099 정식 버젼이 눈앞.                                                                                                1099 정식 버젼이 눈앞.
+1100                                                                                                                  1100 
+1101 []{#contents33 .comment_contents}                                                                                1101 [ ]{#contents33 .comment_contents}
+1102                                                                                                                  1102 
+1103 구글이 안드로이드를 어디로 끌고가는 걸까요?\                                                                     1103 구글이 안드로이드를 어디로 끌고가는 걸까요?\
+1104 요즘 보전 업되는거 보면 뭐하는 건지 당췌 모르겠던데\...                                                          1104 요즘 보전 업되는거 보면 뭐하는 건지 당췌 모르겠던데\...
+1105                                                                                                                  1105 
+1106 []{#contents48 .comment_contents}                                                                                1106 [ ]{#contents48 .comment_contents}
+1107                                                                                                                  1107 
+1108 그냥 평범한 광고 플랫폼이죠.. (먼산;; )                                                                          1108 그냥 평범한 광고 플랫폼이죠.. (먼산;; )
+1109 https://news.hada.io/topic?id=84    Lossless Compression of English Short Messages    [](http://textsynth.org/sm 1109 https://news.hada.io/topic?id=84    Lossless Compression of English Short Messages    [](http://textsynth.org/sm
+.... s.html){.bold .ud}                                                                                               .... s.html){.bold .ud}
+1110                                                                                                                  1110 
+1111 Lossless Compression of English Short Messages                                                                   1111 Lossless Compression of English Short Messages
+1112 ==============================================                                                                   1112 ==============================================
+1113                                                                                                                  1113 
+1114 []{#topic_contents}                                                                                              1114 [ ]{#topic_contents}
+1115                                                                                                                  1115 
+1116 Fabrice Bellard 얘기가 요즘 자주 들리는데 이 양반의 이전 프로젝트는                                              1116 Fabrice Bellard 얘기가 요즘 자주 들리는데 이 양반의 이전 프로젝트는
+1117 신경망을 사용한 무손실 압축 알고리즘(<https://bellard.org/nncp/>                                                 1117 신경망을 사용한 무손실 압축 알고리즘( <https://bellard.org/nncp/>
+1118 참고)이었죠. 마침 요즘                                                                                           1118 참고)이었죠. 마침 요즘 GPT-2(
+1119 GPT-2(<https://openai.com/blog/better-language-models/>)가                                                       1119 <https://openai.com/blog/better-language-models/> )가 공개되었으니까
+1120 공개되었으니까 신경망을 그걸로 대체해서 압축 알고리즘을 돌리면 어떨까?                                           1120 신경망을 그걸로 대체해서 압축 알고리즘을 돌리면 어떨까? 하는 착상에서
+1121 하는 착상에서 나온 게 이 페이지입니다. 짧은 영문을 15% 정도, 즉 문자                                             1121 나온 게 이 페이지입니다. 짧은 영문을 15% 정도, 즉 문자 하나당
+1122 하나당 1.2비트만을 사용하는데, 이 정도면 영문 한 글자당 추정되는 정보                                            1122 1.2비트만을 사용하는데, 이 정도면 영문 한 글자당 추정되는 정보
+1123 엔트로피(0.6\~1.3비트)에 근접하는 수준입니다. URL에서 볼 수 있듯이 SMS를                                         1123 엔트로피(0.6\~1.3비트)에 근접하는 수준입니다. URL에서 볼 수 있듯이 SMS를
+1124 통해서 보내라는 게 의도인 것 같군요.                                                                             1124 통해서 보내라는 게 의도인 것 같군요.
+1125                                                                                                                  1125 
+1126 \* 신경망을 사용한 압축 알고리즘은 이게 처음은 아닙니다. PAQ를 위시한                                            1126 \* 신경망을 사용한 압축 알고리즘은 이게 처음은 아닙니다. PAQ를 위시한
+1127 최상위 압축 알고리즘은 모두 통계적인 방법을 사용하고 있으며, 신경망도                                            1127 최상위 압축 알고리즘은 모두 통계적인 방법을 사용하고 있으며, 신경망도
+1128 드물지 않게 사용합니다. 당장 이들의 근간을 이루는 context                                                        1128 드물지 않게 사용합니다. 당장 이들의 근간을 이루는 context mixing(
+1129 mixing(<https://en.wikipedia.org/wiki/Context_mixing>)이 신경망을 응용한                                         1129 <https://en.wikipedia.org/wiki/Context_mixing> )이 신경망을 응용한
+1130 것이며, Bellard가 사용한 LSTM도 이미 사례가                                                                      1130 것이며, Bellard가 사용한 LSTM도 이미 사례가 있습니다(
+1131 있습니다(<https://github.com/byronknoll/lstm-compress>). Bellard의                                               1131 <https://github.com/byronknoll/lstm-compress> ). Bellard의 기여는 성능
+1132 기여는 성능 최적화에 가깝습니다.                                                                                 1132 최적화에 가깝습니다.
+1133                                                                                                                  1133 
+1134 []{#contents82 .comment_contents}                                                                                1134 [ ]{#contents82 .comment_contents}
+1135                                                                                                                  1135 
+1136 유니코드 cjk와 한글 영역을 사용한다니\...\                                                                       1136 유니코드 cjk와 한글 영역을 사용한다니\...\
+1137 2바이트 조합형/완성형 시절 확장 ascii 문자가 한글/한자로 보이는 악몽이                                           1137 2바이트 조합형/완성형 시절 확장 ascii 문자가 한글/한자로 보이는 악몽이
+
+bulk_data.tsv --- 54/88 --- Text
+1142 Deepfake에 대한 페이스북의 달라진 접근                                                                           1142 Deepfake에 대한 페이스북의 달라진 접근
+1143 ======================================                                                                           1143 ======================================
+1144                                                                                                                  1144 
+1145 []{#topic_contents}                                                                                              1145 [ ]{#topic_contents}
+1146                                                                                                                  1146 
+1147 \> 저커버그는 페이스북이 딥페이크를 어떻게 다룰지에 대한 정책 결정                                               1147 \> 저커버그는 페이스북이 딥페이크를 어떻게 다룰지에 대한 정책 결정
+1148 과정에 있다고 말했습니다. 한 가지 문제는 저커버그가 내린 딥페이크의                                              1148 과정에 있다고 말했습니다. 한 가지 문제는 저커버그가 내린 딥페이크의
+
+bulk_data.tsv --- 55/88 --- Text
+1152 GeekNews - 국내외 기술 뉴스와 의견을 볼수 있는 사이트 오픈                                                       1152 GeekNews - 국내외 기술 뉴스와 의견을 볼수 있는 사이트 오픈
+1153 ==========================================================                                                       1153 ==========================================================
+1154                                                                                                                  1154 
+1155 []{#topic_contents}                                                                                              1155 [ ]{#topic_contents}
+1156                                                                                                                  1156 
+1157 Geek들을 위한 뉴스 서비스.\                                                                                      1157 Geek들을 위한 뉴스 서비스.\
+1158 사용자 투표로 글/댓글의 순위 조정\                                                                               1158 사용자 투표로 글/댓글의 순위 조정\
+1159                                                                                                                  1159 
+1160 []{#contents30069 .comment_contents}                                                                             1160 [ ]{#contents30069 .comment_contents}
+1161                                                                                                                  1161 
+1162 성지순례 시작합니다                                                                                              1162 성지순례 시작합니다
+1163                                                                                                                  1163 
+1164 []{#contents19860 .comment_contents}                                                                             1164 [ ]{#contents19860 .comment_contents}
+1165                                                                                                                  1165 
+1166 재미있네요.                                                                                                      1166 재미있네요.
+1167                                                                                                                  1167 
+1168 []{#contents13336 .comment_contents}                                                                             1168 [ ]{#contents13336 .comment_contents}
+1169                                                                                                                  1169 
+1170 감사합니다                                                                                                       1170 감사합니다
+1171                                                                                                                  1171 
+1172 []{#contents50 .comment_contents}                                                                                1172 [ ]{#contents50 .comment_contents}
+1173                                                                                                                  1173 
+1174 텍스트 위주라 확실히 열악한 인터넷 환경에서도 쾌적한 로딩이네요! from                                            1174 텍스트 위주라 확실히 열악한 인터넷 환경에서도 쾌적한 로딩이네요! from
+1175 Cebu                                                                                                             1175 Cebu
+1176                                                                                                                  1176 
+1177 []{#contents44 .comment_contents}                                                                                1177 [ ]{#contents44 .comment_contents}
+1178                                                                                                                  1178 
+1179 오오 깔끔하네요                                                                                                  1179 오오 깔끔하네요
+1180                                                                                                                  1180 
+1181 []{#contents40 .comment_contents}                                                                                1181 [ ]{#contents40 .comment_contents}
+1182                                                                                                                  1182 
+1183 축하드립니다!!                                                                                                   1183 축하드립니다!!
+1184                                                                                                                  1184 
+1185 []{#contents35 .comment_contents}                                                                                1185 [ ]{#contents35 .comment_contents}
+1186                                                                                                                  1186 
+1187 링크 클릭하면 새창으로 띄우기 정도는 해주시면 안될까요?                                                          1187 링크 클릭하면 새창으로 띄우기 정도는 해주시면 안될까요?
+1188                                                                                                                  1188 
+1189 []{#contents36 .comment_contents}                                                                                1189 [ ]{#contents36 .comment_contents}
+1190                                                                                                                  1190 
+1191 ctrl + click 을 추천드립니다..                                                                                   1191 ctrl + click 을 추천드립니다..
+1192                                                                                                                  1192 
+1193 []{#contents39 .comment_contents}                                                                                1193 [ ]{#contents39 .comment_contents}
+1194                                                                                                                  1194 
+1195 켁! 저\~ 아래 댓글에 누구는 수정한다고 하고..\                                                                   1195 켁! 저\~ 아래 댓글에 누구는 수정한다고 하고..\
+1196 Karma를 높이면 반영 되나요? ㅋ                                                                                   1196 Karma를 높이면 반영 되나요? ㅋ
+1197                                                                                                                  1197 
+1198 []{#contents41 .comment_contents}                                                                                1198 [ ]{#contents41 .comment_contents}
+1199                                                                                                                  1199 
+1200 말씀하신건 화면 변경하고는 다른 요소라서요\                                                                      1200 말씀하신건 화면 변경하고는 다른 요소라서요\
+1201 새창열기는 취향차이인지라 !\                                                                                     1201 새창열기는 취향차이인지라 !\
+1202 카르마하고는 상관없습니다..                                                                                      1202 카르마하고는 상관없습니다..
+1203                                                                                                                  1203 
+1204 호옥시 나중에 계정 설정에 추가될수는 있겠네요 \^\^                                                               1204 호옥시 나중에 계정 설정에 추가될수는 있겠네요 \^\^
+1205                                                                                                                  1205 
+1206 []{#contents32 .comment_contents}                                                                                1206 [ ]{#contents32 .comment_contents}
+1207                                                                                                                  1207 
+1208 클리앙이 지겨워 졌는데 잘 되었구만유                                                                             1208 클리앙이 지겨워 졌는데 잘 되었구만유
+1209                                                                                                                  1209 
+1210 []{#contents30 .comment_contents}                                                                                1210 [ ]{#contents30 .comment_contents}
+1211                                                                                                                  1211 
+1212 축하합니다!!                                                                                                     1212 축하합니다!!
+1213                                                                                                                  1213 
+1214 []{#contents20 .comment_contents}                                                                                1214 [ ]{#contents20 .comment_contents}
+1215                                                                                                                  1215 
+1216 1\. 글등록 화면에서 header 와 footer 을 추가\                                                                    1216 1\. 글등록 화면에서 header 와 footer 을 추가\
+1217 2. 헤더에 컬러를 적용해서 엣지있는 모양새 만들기\                                                                1217 2. 헤더에 컬러를 적용해서 엣지있는 모양새 만들기\
+1218 3, 댓글의 폰트 컬러를 좀더 진하게 해서 보기 편하게\                                                              1218 3, 댓글의 폰트 컬러를 좀더 진하게 해서 보기 편하게\
+1219 4. Footer에 있는 사이트이용법/FAQ/About 모든 페이지에 긱뉴스 공통의                                              1219 4. Footer에 있는 사이트이용법/FAQ/About 모든 페이지에 긱뉴스 공통의
+1220 헤더가 먼저 올라가는 형태로 변경                                                                                 1220 헤더가 먼저 올라가는 형태로 변경
+1221                                                                                                                  1221 
+1222 []{#contents37 .comment_contents}                                                                                1222 [ ]{#contents37 .comment_contents}
+1223                                                                                                                  1223 
+1224 감사합니다. 조금씩 수정해 나갈께요!                                                                              1224 감사합니다. 조금씩 수정해 나갈께요!
+1225                                                                                                                  1225 
+1226 []{#contents14 .comment_contents}                                                                                1226 [ ]{#contents14 .comment_contents}
+1227                                                                                                                  1227 
+1228 그러고보니 down이 없군요. 너무 건전한거 아님?\                                                                   1228 그러고보니 down이 없군요. 너무 건전한거 아님?\
+1229 up.hada.io                                                                                                       1229 up.hada.io
+1230                                                                                                                  1230 
+1231 []{#contents15 .comment_contents}                                                                                1231 [ ]{#contents15 .comment_contents}
+1232                                                                                                                  1232 
+1233 님 karma가 낮아서 downvote가 안보이는 겁니다..                                                                   1233 님 karma가 낮아서 downvote가 안보이는 겁니다..
+1234                                                                                                                  1234 
+1235 []{#contents21 .comment_contents}                                                                                1235 [ ]{#contents21 .comment_contents}
+1236                                                                                                                  1236 
+1237 karma? 업보?                                                                                                     1237 karma? 업보?
+1238                                                                                                                  1238 
+1239 []{#contents12 .comment_contents}                                                                                1239 [ ]{#contents12 .comment_contents}
+1240                                                                                                                  1240 
+1241 이건 뭘 \"하는\"건가요? 뉴스하다는 이상한데\...\                                                                 1241 이건 뭘 \"하는\"건가요? 뉴스하다는 이상한데\...\
+1242 updown.hada.io?\                                                                                                 1242 updown.hada.io?\
+1243 link.hada.io?                                                                                                    1243 link.hada.io?
+1244                                                                                                                  1244 
+1245 []{#contents11 .comment_contents}                                                                                1245 [ ]{#contents11 .comment_contents}
+1246                                                                                                                  1246 
+1247 오홋                                                                                                             1247 오홋
+1248                                                                                                                  1248 
+1249 []{#contents10 .comment_contents}                                                                                1249 [ ]{#contents10 .comment_contents}
+1250                                                                                                                  1250 
+1251 결과물 나온거 축하 드립니다.\                                                                                    1251 결과물 나온거 축하 드립니다.\
+1252 흥하라 뉴스.하다                                                                                                 1252 흥하라 뉴스.하다
+1253                                                                                                                  1253 
+1254 []{#contents9 .comment_contents}                                                                                 1254 [ ]{#contents9 .comment_contents}
+1255                                                                                                                  1255 
+1256 오픈 축하드려요                                                                                                  1256 오픈 축하드려요
+1257 https://news.hada.io/topic?id=12    구글 robots.txt Parser 오픈소스로 공개 [C++ 라이브러리]    [](https://openso 1257 https://news.hada.io/topic?id=12    구글 robots.txt Parser 오픈소스로 공개 [C++ 라이브러리]    [](https://openso
+     urce.googleblog.com/2019/07/googles-robotstxt-parser-is-now-open.html){.bold                                          urce.googleblog.com/2019/07/googles-robotstxt-parser-is-now-open.html){.bold
+
+bulk_data.tsv --- 56/88 --- Text
+1260 구글 robots.txt Parser 오픈소스로 공개 \[C++ 라이브러리\]                                                        1260 구글 robots.txt Parser 오픈소스로 공개 \[C++ 라이브러리\]
+1261 =========================================================                                                        1261 =========================================================
+1262                                                                                                                  1262 
+1263 []{#topic_contents}                                                                                              1263 [ ]{#topic_contents}
+1264                                                                                                                  1264 
+1265 구글이 90년대부터 내부적으로 사용하는 코드 포함. 룰 테스트 도구도 같이                                           1265 구글이 90년대부터 내부적으로 사용하는 코드 포함. 룰 테스트 도구도 같이
+1266 공개                                                                                                             1266 공개
+
+bulk_data.tsv --- 57/88 --- Text
+1269 우버, 드론 활용해 맥도날드 빅맥버거 배달 예정                                                                    1269 우버, 드론 활용해 맥도날드 빅맥버거 배달 예정
+1270 =============================================                                                                    1270 =============================================
+1271                                                                                                                  1271 
+1272 []{#topic_contents}                                                                                              1272 [ ]{#topic_contents}
+1273                                                                                                                  1273 
+1274 배달 수수료는 우버이츠 랑 동일. 고객까지 배달은 아니고 지정장소까지 드론                                         1274 배달 수수료는 우버이츠 랑 동일. 고객까지 배달은 아니고 지정장소까지 드론
+1275 배달후 우버이츠 운전자가 고객한테 배달                                                                           1275 배달후 우버이츠 운전자가 고객한테 배달
+
+bulk_data.tsv --- 58/88 --- Text
+1279 구글의 reCAPTCHA v3 는 어두운 부분이 있다                                                                        1279 구글의 reCAPTCHA v3 는 어두운 부분이 있다
+1280 =========================================                                                                        1280 =========================================
+1281                                                                                                                  1281 
+1282 []{#topic_contents}                                                                                              1282 [ ]{#topic_contents}
+1283                                                                                                                  1283 
+1284 reCaptcha V3가 사용자에게 안보여서 좋기는 한데, 구글쿠키를 사용해서                                              1284 reCaptcha V3가 사용자에게 안보여서 좋기는 한데, 구글쿠키를 사용해서
+1285 로봇이 아닌지 판별하는데 사용한다고.\                                                                            1285 로봇이 아닌지 판별하는데 사용한다고.\
+1286 또한 구글 계정에 로그인한 브라우저에서는 ReCaptcha 점수가 좋게나오지만,                                          1286 또한 구글 계정에 로그인한 브라우저에서는 ReCaptcha 점수가 좋게나오지만,
+1287 Tor 나 VPN 접근했던 브라우저에서는 점수가 낮게 나온다고도.                                                       1287 Tor 나 VPN 접근했던 브라우저에서는 점수가 낮게 나온다고도.
+1288                                                                                                                  1288 
+1289 즉 개인정보 보호에는 좋지 않다는 것.                                                                             1289 즉 개인정보 보호에는 좋지 않다는 것.
+1290 https://news.hada.io/topic?id=91    Java & JVM Trends Report [2019년 7월]    [](https://www.infoq.com/articles/j 1290 https://news.hada.io/topic?id=91    Java &amp; JVM Trends Report [2019년 7월]    [](https://www.infoq.com/articl
+.... ava-jvm-trends-2019/){.bold .ud}                                                                                 .... es/java-jvm-trends-2019/){.bold .ud}
+1291                                                                                                                  1291 
+1292 Java & JVM Trends Report \[2019년 7월\]                                                                          1292 Java & JVM Trends Report \[2019년 7월\]
+1293 =======================================                                                                          1293 =======================================
+1294                                                                                                                  1294 
+1295 []{#topic_contents}                                                                                              1295 [ ]{#topic_contents}
+1296                                                                                                                  1296 
+1297 Java 13 신규등장. Non-HotSpot JVM인 Graal/OpenJ9 와 Vert.x 얼리어답터들                                          1297 Java 13 신규등장. Non-HotSpot JVM인 Graal/OpenJ9 와 Vert.x 얼리어답터들
+1298 증가중. Kotlin/JRuby/Reactive Java 의 사용자 급확장중. Clojure와                                                 1298 증가중. Kotlin/JRuby/Reactive Java 의 사용자 급확장중. Clojure와
+1299 SpringBoot의 대중화 등                                                                                           1299 SpringBoot의 대중화 등
+1300                                                                                                                  1300 
+1301 그래프에 나온 항목들만 눈여겨 봐도 좋을듯                                                                        1301 그래프에 나온 항목들만 눈여겨 봐도 좋을듯
+1302                                                                                                                  1302 
+1303 []{#contents98 .comment_contents}                                                                                1303 [ ]{#contents98 .comment_contents}
+1304                                                                                                                  1304 
+1305 Java 9도 아직 적응중인데\... 맘편히 kotlin을 해야겠네요;                                                         1305 Java 9도 아직 적응중인데\... 맘편히 kotlin을 해야겠네요;
+1306 https://news.hada.io/topic?id=95    채용절차의 공정화에 관한 법률 시행    [](http://www.law.go.kr/%EB%B2%95%EB%A 1306 https://news.hada.io/topic?id=95    채용절차의 공정화에 관한 법률 시행    [](http://www.law.go.kr/%EB%B2%95%EB%A
+     0%B9/%EC%B1%84%EC%9A%A9%EC%A0%88%EC%B0%A8%EC%9D%98%20%EA%B3%B5%EC%A0%95%ED%99%94%EC%97%90%20%EA%B4%80%ED%95%9C%2      0%B9/%EC%B1%84%EC%9A%A9%EC%A0%88%EC%B0%A8%EC%9D%98%20%EA%B3%B5%EC%A0%95%ED%99%94%EC%97%90%20%EA%B4%80%ED%95%9C%2
+     0%EB%B2%95%EB%A5%A0){.bold                                                                                            0%EB%B2%95%EB%A5%A0){.bold
+
+bulk_data.tsv --- 59/88 --- Text
+1309 채용절차의 공정화에 관한 법률 시행                                                                               1309 채용절차의 공정화에 관한 법률 시행
+1310 ==================================                                                                               1310 ==================================
+1311                                                                                                                  1311 
+1312 []{#topic_contents}                                                                                              1312 [ ]{#topic_contents}
+1313                                                                                                                  1313 
+1314 오늘(7/17)부터 \'채용절차의 공정화에 관한 법률\'이 시행입니다.                                                   1314 오늘(7/17)부터 \'채용절차의 공정화에 관한 법률\'이 시행입니다.
+1315 GeekNews에 맞지 않을 수도 있는데 다들 잘 모르시는 듯 해서\...                                                    1315 GeekNews에 맞지 않을 수도 있는데 다들 잘 모르시는 듯 해서\...
+
+bulk_data.tsv --- 60/88 --- Text
+1322 업무매뉴얼(hwp): <http://bit.ly/hire-law-2019-july-manual>\                                                      1322 업무매뉴얼(hwp): <http://bit.ly/hire-law-2019-july-manual>\
+1323 표준이력서 양식: <http://bit.ly/std-resume>                                                                      1323 표준이력서 양식: <http://bit.ly/std-resume>
+1324                                                                                                                  1324 
+1325 []{#contents94 .comment_contents}                                                                                1325 [ ]{#contents94 .comment_contents}
+1326                                                                                                                  1326 
+1327 이런거 볼때마다.. 사실 채용시에 가장 기본적인건데 법률로 차단하고,                                               1327 이런거 볼때마다.. 사실 채용시에 가장 기본적인건데 법률로 차단하고,
+1328 가이드 해야한다는게 슬프네요                                                                                     1328 가이드 해야한다는게 슬프네요
+1329                                                                                                                  1329 
+1330 []{#contents95 .comment_contents}                                                                                1330 [ ]{#contents95 .comment_contents}
+1331                                                                                                                  1331 
+1332 아쉽긴 하지만 이렇게 라도 바뀌면\...                                                                             1332 아쉽긴 하지만 이렇게 라도 바뀌면\...
+1333                                                                                                                  1333 
+1334 []{#contents91 .comment_contents}                                                                                1334 [ ]{#contents91 .comment_contents}
+1335                                                                                                                  1335 
+1336 링크는 댓글에 적으면 활성화 됩니다                                                                               1336 링크는 댓글에 적으면 활성화 됩니다
+1337                                                                                                                  1337 
+1338 법령링크: <http://bit.ly/hire-law-2019-july>\                                                                    1338 법령링크: <http://bit.ly/hire-law-2019-july>\
+1339 업무매뉴얼(hwp): <http://bit.ly/hire-law-2019-july-manual>\                                                      1339 업무매뉴얼(hwp): <http://bit.ly/hire-law-2019-july-manual>\
+1340 표준이력서 양식: <http://bit.ly/std-resume>                                                                      1340 표준이력서 양식: <http://bit.ly/std-resume>
+1341                                                                                                                  1341 
+1342 []{#contents92 .comment_contents}                                                                                1342 [ ]{#contents92 .comment_contents}
+1343                                                                                                                  1343 
+1344 뭔 사용법이 다 hidden 입니꽈?                                                                                    1344 뭔 사용법이 다 hidden 입니꽈?
+1345                                                                                                                  1345 
+1346 []{#contents93 .comment_contents}                                                                                1346 [ ]{#contents93 .comment_contents}
+1347                                                                                                                  1347 
+1348 본문에 링크 막 넣어서 엄한데로의 클릭 유도를 방지하기 위한건데, 아무데도                                         1348 본문에 링크 막 넣어서 엄한데로의 클릭 유도를 방지하기 위한건데, 아무데도
+1349 안적었네요. 이용법에 추가해두겠습니다.                                                                           1349 안적었네요. 이용법에 추가해두겠습니다.
+1350                                                                                                                  1350 
+1351 []{#contents102 .comment_contents}                                                                               1351 [ ]{#contents102 .comment_contents}
+1352                                                                                                                  1352 
+1353 오 좋은 의도네요. 알려지기만 잘 하면 될 것 같습니다 !                                                            1353 오 좋은 의도네요. 알려지기만 잘 하면 될 것 같습니다 !
+1354                                                                                                                  1354 
+1355 []{#contents96 .comment_contents}                                                                                1355 [ ]{#contents96 .comment_contents}
+1356                                                                                                                  1356 
+1357 아\~ 나름 깊은 뜻이 있었군요.. ㅎㅎ                                                                              1357 아\~ 나름 깊은 뜻이 있었군요.. ㅎㅎ
+1358 https://news.hada.io/topic?id=45    Klaytn 클레이튼 메인넷 Cypress 런칭    [](https://byline.network/2019/07/09- 1358 https://news.hada.io/topic?id=45    Klaytn 클레이튼 메인넷 Cypress 런칭    [](https://byline.network/2019/07/09-
+.... 14/){.bold .ud}                                                                                                  .... 14/){.bold .ud}
+1359                                                                                                                  1359 
+1360 Klaytn 클레이튼 메인넷 Cypress 런칭                                                                              1360 Klaytn 클레이튼 메인넷 Cypress 런칭
+1361 ===================================                                                                              1361 ===================================
+1362                                                                                                                  1362 
+1363 []{#topic_contents}                                                                                              1363 [ ]{#topic_contents}
+1364                                                                                                                  1364 
+1365 Klaytn 클레이튼 메인넷 Cypress 런칭을 기념해 파트너, 업계 관계자,                                                1365 Klaytn 클레이튼 메인넷 Cypress 런칭을 기념해 파트너, 업계 관계자,
+1366 기자들을 초청해 기념행사를 진행했습니다.                                                                         1366 기자들을 초청해 기념행사를 진행했습니다.
+
+bulk_data.tsv --- 61/88 --- Text
+1370 어떻게 넷플릭스는 TV 업계를 집어삼키고 있는가 \[번역글\]                                                         1370 어떻게 넷플릭스는 TV 업계를 집어삼키고 있는가 \[번역글\]
+1371 ========================================================                                                         1371 ========================================================
+1372                                                                                                                  1372 
+1373 []{#topic_contents}                                                                                              1373 [ ]{#topic_contents}
+1374 https://news.hada.io/topic?id=100    The modern PWA Cheat Sheet - JSConf EU [video]    [](https://www.youtube.co 1374 https://news.hada.io/topic?id=100    The modern PWA Cheat Sheet - JSConf EU [video]    [](https://www.youtube.co
+.... m/watch?v=cybhV88KLfI){.bold .ud}                                                                                .... m/watch?v=cybhV88KLfI){.bold .ud}
+1375                                                                                                                  1375 
+1376 The modern PWA Cheat Sheet - JSConf EU \[video\]                                                                 1376 The modern PWA Cheat Sheet - JSConf EU \[video\]
+1377 ================================================                                                                 1377 ================================================
+1378                                                                                                                  1378 
+1379 []{#topic_contents}                                                                                              1379 [ ]{#topic_contents}
+1380                                                                                                                  1380 
+1381 유명한 웹개발자 Max Firtman 의 Progressive Web App 설명. 현재 지원플랫폼                                         1381 유명한 웹개발자 Max Firtman 의 Progressive Web App 설명. 현재 지원플랫폼
+1382 부터 다양한 사례를 통한 기능 설명. 물론 아직 iOS에서는 다양한 문제점이                                           1382 부터 다양한 사례를 통한 기능 설명. 물론 아직 iOS에서는 다양한 문제점이
+1383 있음.                                                                                                            1383 있음.
+1384                                                                                                                  1384 
+1385 []{#contents106 .comment_contents}                                                                               1385 [ ]{#contents106 .comment_contents}
+1386                                                                                                                  1386 
+1387 이제 커닝 페이퍼도 유툽?!                                                                                        1387 이제 커닝 페이퍼도 유툽?!
+1388                                                                                                                  1388 
+1389 []{#contents107 .comment_contents}                                                                               1389 [ ]{#contents107 .comment_contents}
+1390                                                                                                                  1390 
+1391 빨간창의 시대이니까요!                                                                                           1391 빨간창의 시대이니까요!
+1392                                                                                                                  1392 
+1393 []{#contents105 .comment_contents}                                                                               1393 [ ]{#contents105 .comment_contents}
+1394                                                                                                                  1394 
+1395 발표 스크립트로 읽어보기                                                                                         1395 발표 스크립트로 읽어보기
+1396                                                                                                                  1396 
+1397 [https://2019.jsconf.eu/maximiliano-firtman/...](https://2019.jsconf.eu/maximiliano-firtman/the-modern-pwa-cheat 1397 [https://2019.jsconf.eu/maximiliano-firtman/...](https://2019.jsconf.eu/maximiliano-firtman/the-modern-pwa-cheat
+.... -sheet.html){.ud                                                                                                 .... -sheet.html){.ud
+1398 .link}                                                                                                           1398 .link}
+1399 https://news.hada.io/topic?id=86    Amazon Java (Corretto)'s Crypto Provider (ACCP) 발표    [](https://aws.amazo 1399 https://news.hada.io/topic?id=86    Amazon Java (Corretto)&#39;s Crypto Provider (ACCP) 발표    [](https://aws.a
+.... n.com/blogs/opensource/introducing-amazon-corretto-crypto-provider-accp/){.bold                                  .... mazon.com/blogs/opensource/introducing-amazon-corretto-crypto-provider-accp/){.bold
+1400 .ud}                                                                                                             1400 .ud}
+1401                                                                                                                  1401 
+1402 Amazon Java (Corretto)\'s Crypto Provider (ACCP) 발표                                                            1402 Amazon Java (Corretto)\'s Crypto Provider (ACCP) 발표
+1403 =====================================================                                                            1403 =====================================================
+1404                                                                                                                  1404 
+1405 []{#topic_contents}                                                                                              1405 [ ]{#topic_contents}
+1406                                                                                                                  1406 
+1407 Java의 아버지 James Gosling이 계신 Amazon에서 JCA 기반 Crypto Provider                                           1407 Java의 아버지 James Gosling이 계신 Amazon에서 JCA 기반 Crypto Provider
+1408 발표.\                                                                                                           1408 발표.\
+1409 기존 것보다 성능이 좋아 - AES-GCM algorithm with ACCP is over 28x faster                                         1409 기존 것보다 성능이 좋아 - AES-GCM algorithm with ACCP is over 28x faster
+1410 than AES-GCM without ACCP - 적용한 머신의 CPU가 뚝뚝 떨어진걸 자랑하고                                           1410 than AES-GCM without ACCP - 적용한 머신의 CPU가 뚝뚝 떨어진걸 자랑하고
+1411 있음.\                                                                                                           1411 있음.\
+1412                                                                                                                  1412 
+1413 []{#contents86 .comment_contents}                                                                                1413 [ ]{#contents86 .comment_contents}
+1414                                                                                                                  1414 
+1415 HotSpot에 x86 AES/CLMUL intrinsic 지원이 있을텐데 이게 무슨? 싶었는데                                            1415 HotSpot에 x86 AES/CLMUL intrinsic 지원이 있을텐데 이게 무슨? 싶었는데
+1416 무슨 몇 번 실행을 해야 intrinsic이 켜지고 하는 이상한 조건이 있었나                                              1416 무슨 몇 번 실행을 해야 intrinsic이 켜지고 하는 이상한 조건이 있었나
+
+bulk_data.tsv --- 62/88 --- Text
+1424 올 가을 닌텐도 스위치 라이트 출시 계획                                                                           1424 올 가을 닌텐도 스위치 라이트 출시 계획
+1425 ======================================                                                                           1425 ======================================
+1426                                                                                                                  1426 
+1427 []{#topic_contents}                                                                                              1427 [ ]{#topic_contents}
+1428                                                                                                                  1428 
+1429 TV에는 연결이 되지 않는 포터블 기기.                                                                             1429 TV에는 연결이 되지 않는 포터블 기기.
+1430                                                                                                                  1430 
+1431 []{#contents18 .comment_contents}                                                                                1431 [ ]{#contents18 .comment_contents}
+1432                                                                                                                  1432 
+1433 기존 스위치 보다 더 가볍고 작지만, 조이콘이 분리되지 않아서 호환성 문제                                          1433 기존 스위치 보다 더 가볍고 작지만, 조이콘이 분리되지 않아서 호환성 문제
+1434 발생\                                                                                                            1434 발생\
+1435 닌텐도는 3ds -\> 2ds 도 그러더니 항상 기능을 줄인 저렴버전을 추가로                                              1435 닌텐도는 3ds -\> 2ds 도 그러더니 항상 기능을 줄인 저렴버전을 추가로
+1436 발매하는듯                                                                                                       1436 발매하는듯
+1437                                                                                                                  1437 
+1438 []{#contents19 .comment_contents}                                                                                1438 [ ]{#contents19 .comment_contents}
+1439                                                                                                                  1439 
+1440 이렇게 되면 새로운 닌텐도 스위치가 출시된다는 합리적인 의심을 해봐도 될                                          1440 이렇게 되면 새로운 닌텐도 스위치가 출시된다는 합리적인 의심을 해봐도 될
+1441 듯 하네요. 내년에 PS5도 나온다고 하니까요.                                                                       1441 듯 하네요. 내년에 PS5도 나온다고 하니까요.
+
+bulk_data.tsv --- 63/88 --- Text
+1445 Amazon's Choice 가 의미하는 것은 ?                                                                               1445 Amazon's Choice 가 의미하는 것은 ?
+1446 ==================================                                                                               1446 ==================================
+1447                                                                                                                  1447 
+1448 []{#topic_contents}                                                                                              1448 [ ]{#topic_contents}
+1449                                                                                                                  1449 
+1450 아마존의 제품 추천 방식들을 비공식적으로 살펴본 글.\                                                             1450 아마존의 제품 추천 방식들을 비공식적으로 살펴본 글.\
+1451 가장 싼 가격이나 평점에 따른 선정이 아니라, 리턴율 같은 것도 보는 듯                                             1451 가장 싼 가격이나 평점에 따른 선정이 아니라, 리턴율 같은 것도 보는 듯
+
+bulk_data.tsv --- 64/88 --- Text
+1459 코딩 글꼴 top 10                                                                                                 1459 코딩 글꼴 top 10
+1460 ================                                                                                                 1460 ================
+1461                                                                                                                  1461 
+1462 []{#topic_contents}                                                                                              1462 [ ]{#topic_contents}
+1463                                                                                                                  1463 
+1464 개발자 대상 사이트에서 PV올리는 제일 쉽고 확실한 주제.. ;)                                                       1464 개발자 대상 사이트에서 PV올리는 제일 쉽고 확실한 주제.. ;)
+1465                                                                                                                  1465 
+1466 []{#contents54 .comment_contents}                                                                                1466 [ ]{#contents54 .comment_contents}
+1467                                                                                                                  1467 
+1468 저는 monaco 랑 SF Mono 를 씁니다.\                                                                               1468 저는 monaco 랑 SF Mono 를 씁니다.\
+1469 근데 희한하게 VSCode에서는 Menlo가 가장 잘 어울리네요.                                                           1469 근데 희한하게 VSCode에서는 Menlo가 가장 잘 어울리네요.
+1470                                                                                                                  1470 
+1471 []{#contents45 .comment_contents}                                                                                1471 [ ]{#contents45 .comment_contents}
+1472                                                                                                                  1472 
+1473 Visual Studio Code 에서 사용하는 menlo 폰트도 괜찮음                                                             1473 Visual Studio Code 에서 사용하는 menlo 폰트도 괜찮음
+1474                                                                                                                  1474 
+1475 []{#contents47 .comment_contents}                                                                                1475 [ ]{#contents47 .comment_contents}
+1476                                                                                                                  1476 
+1477 그건 님이 맥을 써서 그런거구요\... 윈도 쓰시면 consolas\...                                                      1477 그건 님이 맥을 써서 그런거구요\... 윈도 쓰시면 consolas\...
+1478                                                                                                                  1478 
+1479 []{#contents49 .comment_contents}                                                                                1479 [ ]{#contents49 .comment_contents}
+1480                                                                                                                  1480 
+1481 윈도 에선 Menlo 수정한 Meslo 를 쓰면..                                                                           1481 윈도 에선 Menlo 수정한 Meslo 를 쓰면..
+1482                                                                                                                  1482 
+
+bulk_data.tsv --- 65/88 --- Text
+1487 Amazon EventBridge 발표 -- SaaS 어플리케이션을 위한 Event-Driven AWS 연동                                        1487 Amazon EventBridge 발표 -- SaaS 어플리케이션을 위한 Event-Driven AWS 연동
+1488 =========================================================================                                        1488 =========================================================================
+1489                                                                                                                  1489 
+1490 []{#topic_contents}                                                                                              1490 [ ]{#topic_contents}
+1491                                                                                                                  1491 
+1492 쉽게 말하면 IFTTT for Enterprise. SaaS 파트너가 늘어날수록 강력해질듯.                                           1492 쉽게 말하면 IFTTT for Enterprise. SaaS 파트너가 늘어날수록 강력해질듯.
+1493                                                                                                                  1493 
+1494 []{#contents100 .comment_contents}                                                                               1494 [ ]{#contents100 .comment_contents}
+1495                                                                                                                  1495 
+1496 이 문서의 한글 번역본 - 서울리전도 지원                                                                          1496 이 문서의 한글 번역본 - 서울리전도 지원
+1497                                                                                                                  1497 
+1498 [https://aws.amazon.com/ko/blogs/...](https://aws.amazon.com/ko/blogs/korea/amazon-eventbridge-event-driven-aws- 1498 [https://aws.amazon.com/ko/blogs/...](https://aws.amazon.com/ko/blogs/korea/amazon-eventbridge-event-driven-aws-
+.... integration-for-your-saas-applications/){.ud                                                                     .... integration-for-your-saas-applications/){.ud
+1499 .link}                                                                                                           1499 .link}
+1500                                                                                                                  1500 
+1501 []{#contents58 .comment_contents}                                                                                1501 [ ]{#contents58 .comment_contents}
+1502                                                                                                                  1502 
+1503 제가 아는 고객사도 Zendesk event 를 Cloud Watch 로 받아 S3등 에 저장하는                                         1503 제가 아는 고객사도 Zendesk event 를 Cloud Watch 로 받아 S3등 에 저장하는
+1504 구조로 검토중에 있습니다.\                                                                                       1504 구조로 검토중에 있습니다.\
+
+bulk_data.tsv --- 66/88 --- Text
+1508 PHP in 2019                                                                                                      1508 PHP in 2019
+1509 ===========                                                                                                      1509 ===========
+1510                                                                                                                  1510 
+1511 []{#topic_contents}                                                                                              1511 [ ]{#topic_contents}
+1512                                                                                                                  1512 
+1513 PHP는 매년 새 릴리즈가 나오면서 개발되고 있음. PHP5 이후로 성능 2배이상                                          1513 PHP는 매년 새 릴리즈가 나오면서 개발되고 있음. PHP5 이후로 성능 2배이상
+1514 향상. 다양한 패키지와 프레임워크 에코시스템. 새로운 기능이 추가되고,                                             1514 향상. 다양한 패키지와 프레임워크 에코시스템. 새로운 기능이 추가되고,
+
+bulk_data.tsv --- 67/88 --- Text
+1521 프레임워크들\                                                                                                    1521 프레임워크들\
+1522 - Psalm , Phan , PHPStan 같은 Static Analyser 등장.                                                              1522 - Psalm , Phan , PHPStan 같은 Static Analyser 등장.
+1523                                                                                                                  1523 
+1524 []{#contents99 .comment_contents}                                                                                1524 [ ]{#contents99 .comment_contents}
+1525                                                                                                                  1525 
+1526 이런건 어떠십니까? <https://github.com/php-java/php-java>                                                        1526 이런건 어떠십니까? <https://github.com/php-java/php-java>
+1527                                                                                                                  1527 
+1528 []{#contents101 .comment_contents}                                                                               1528 [ ]{#contents101 .comment_contents}
+1529                                                                                                                  1529 
+1530 헐 코드변환이 아니고, 바이너리를 직접 읽어서 실행!\                                                              1530 헐 코드변환이 아니고, 바이너리를 직접 읽어서 실행!\
+1531 뭐 누군가에게는 쓸모있을 수도 있것는데요?                                                                        1531 뭐 누군가에게는 쓸모있을 수도 있것는데요?
+1532                                                                                                                  1532 
+1533 []{#contents90 .comment_contents}                                                                                1533 [ ]{#contents90 .comment_contents}
+1534                                                                                                                  1534 
+1535 Cog Igniter -\> CodeIgniter                                                                                      1535 Cog Igniter -\> CodeIgniter
+1536 https://news.hada.io/topic?id=73    Microsoft Teams is now officially bigger than Slack    [](https://arstechnic 1536 https://news.hada.io/topic?id=73    Microsoft Teams is now officially bigger than Slack    [](https://arstechnic
+     a.com/gadgets/2019/07/microsoft-teams-is-now-officially-bigger-than-slack/){.bold                                     a.com/gadgets/2019/07/microsoft-teams-is-now-officially-bigger-than-slack/){.bold
+
+bulk_data.tsv --- 68/88 --- Text
+1539 Microsoft Teams is now officially bigger than Slack                                                              1539 Microsoft Teams is now officially bigger than Slack
+1540 ===================================================                                                              1540 ===================================================
+1541                                                                                                                  1541 
+1542 []{#topic_contents}                                                                                              1542 [ ]{#topic_contents}
+1543                                                                                                                  1543 
+1544 Teams가 Slack을 따돌렸다는 뉴스입니다.                                                                           1544 Teams가 Slack을 따돌렸다는 뉴스입니다.
+1545                                                                                                                  1545 
+
+bulk_data.tsv --- 69/88 --- Text
+1548 구매하면 같이 따라온다는 점이 야금야금 점유율을 따라잡는데 큰 역할을                                             1548 구매하면 같이 따라온다는 점이 야금야금 점유율을 따라잡는데 큰 역할을
+1549 하지 않았나 싶네요.                                                                                              1549 하지 않았나 싶네요.
+1550                                                                                                                  1550 
+1551 []{#contents63 .comment_contents}                                                                                1551 [ ]{#contents63 .comment_contents}
+1552                                                                                                                  1552 
+1553 Azure도 그렇고 MS Teams도 그렇고.. Global로 시장 점유율이 증가했다고                                             1553 Azure도 그렇고 MS Teams도 그렇고.. Global로 시장 점유율이 증가했다고
+1554 하는데 제 주변에서는 아직 체감되지 않는 것을 보니 트렌드에 시차가 있거나                                         1554 하는데 제 주변에서는 아직 체감되지 않는 것을 보니 트렌드에 시차가 있거나
+1555 한국 MS가 밥값을 못하거나.. 그렇다고 봐야 할까요?                                                                1555 한국 MS가 밥값을 못하거나.. 그렇다고 봐야 할까요?
+1556                                                                                                                  1556 
+1557 []{#contents64 .comment_contents}                                                                                1557 [ ]{#contents64 .comment_contents}
+1558                                                                                                                  1558 
+1559 저도 아직 Azure & Teams 를 쓰는거는 아닌데,\                                                                     1559 저도 아직 Azure & Teams 를 쓰는거는 아닌데,\
+1560 확실히 VS Code 는 좋더군요. 에디터는 Sublime 에서 70% 쯤 갈아탔습니다.\                                          1560 확실히 VS Code 는 좋더군요. 에디터는 Sublime 에서 70% 쯤 갈아탔습니다.\
+1561 조금씩 영역을 확장하지 않을까 싶네요.                                                                            1561 조금씩 영역을 확장하지 않을까 싶네요.
+1562                                                                                                                  1562 
+1563 []{#contents62 .comment_contents}                                                                                1563 [ ]{#contents62 .comment_contents}
+1564                                                                                                                  1564 
+1565 무료버전 만으로 봤을때,                                                                                          1565 무료버전 만으로 봤을때,
+1566                                                                                                                  1566 
+
+bulk_data.tsv --- 70/88 --- Text
+1570                                                                                                                  1570 
+1571 이 정도면 스타트업등에서 Slack 대신 Teams 를 써보는 것도 좋아보임                                                1571 이 정도면 스타트업등에서 Slack 대신 Teams 를 써보는 것도 좋아보임
+1572                                                                                                                  1572 
+1573 []{#contents66 .comment_contents}                                                                                1573 [ ]{#contents66 .comment_contents}
+1574                                                                                                                  1574 
+1575 러프한 기능적으로는 나쁘지 않습니다만 세세하게 미비한 점들도 있습니다.                                           1575 러프한 기능적으로는 나쁘지 않습니다만 세세하게 미비한 점들도 있습니다.
+1576 일단 Teams는 \@channel 과 \@here 등의 구분이라거나, TimeZone 별                                                  1576 일단 Teams는 \@channel 과 \@here 등의 구분이라거나, TimeZone 별
+
+bulk_data.tsv --- 71/88 --- Text
+1582 Microsoft 의 Linux Kernel 오픈소스                                                                               1582 Microsoft 의 Linux Kernel 오픈소스
+1583 ==================================                                                                               1583 ==================================
+1584                                                                                                                  1584 
+1585 []{#topic_contents}                                                                                              1585 [ ]{#topic_contents}
+1586                                                                                                                  1586 
+1587 MS Windows Subsystem for Linux2 (WSL2)에 사용된 리눅스 커널 소스                                                 1587 MS Windows Subsystem for Linux2 (WSL2)에 사용된 리눅스 커널 소스
+1588 https://news.hada.io/topic?id=13    SwiftWebUI - SwiftUI on Web    [](http://www.alwaysrightinstitute.com/swiftw 1588 https://news.hada.io/topic?id=13    SwiftWebUI - SwiftUI on Web    [](http://www.alwaysrightinstitute.com/swiftw
+.... ebui/){.bold .ud}                                                                                                .... ebui/){.bold .ud}
+1589                                                                                                                  1589 
+1590 SwiftWebUI - SwiftUI on Web                                                                                      1590 SwiftWebUI - SwiftUI on Web
+1591 ===========================                                                                                      1591 ===========================
+1592                                                                                                                  1592 
+1593 []{#topic_contents}                                                                                              1593 [ ]{#topic_contents}
+1594                                                                                                                  1594 
+1595 WWDC2019 에서 발표된 SwiftUI 의 Web용 포팅버전.                                                                  1595 WWDC2019 에서 발표된 SwiftUI 의 Web용 포팅버전.
+1596                                                                                                                  1596 
+
+bulk_data.tsv --- 72/88 --- Text
+1600 인공지능은 의료를 어떻게 혁신하는가 \[slide\]                                                                    1600 인공지능은 의료를 어떻게 혁신하는가 \[slide\]
+1601 =============================================                                                                    1601 =============================================
+1602                                                                                                                  1602 
+1603 []{#topic_contents}                                                                                              1603 [ ]{#topic_contents}
+1604                                                                                                                  1604 
+1605 380장 분량의 슬라이드. 2019년 7월 버전.                                                                          1605 380장 분량의 슬라이드. 2019년 7월 버전.
+1606 https://news.hada.io/topic?id=75    국내 은행별 블록체인 사업 총정리    [](https://www.coindeskkorea.com/koreaba 1606 https://news.hada.io/topic?id=75    국내 은행별 블록체인 사업 총정리    [](https://www.coindeskkorea.com/koreaba
+     nkblockchainprojects/amp/){.bold                                                                                      nkblockchainprojects/amp/){.bold
+
+bulk_data.tsv --- 73/88 --- Text
+1609 국내 은행별 블록체인 사업 총정리                                                                                 1609 국내 은행별 블록체인 사업 총정리
+1610 ================================                                                                                 1610 ================================
+1611                                                                                                                  1611 
+1612 []{#topic_contents}                                                                                              1612 [ ]{#topic_contents}
+1613                                                                                                                  1613 
+1614 정부가 암호화폐 사업을 규제하는 상황에서 라이선스 사업자인 은행이 할 수                                          1614 정부가 암호화폐 사업을 규제하는 상황에서 라이선스 사업자인 은행이 할 수
+1615 있는 블록체인 사업은 많지 않다. 하지만 페이스북, 카카오 등 거대한                                                1615 있는 블록체인 사업은 많지 않다. 하지만 페이스북, 카카오 등 거대한
+
+bulk_data.tsv --- 74/88 --- Text
+1623 리눅스 커널에서 0.0.0.0/8 주소 범위를 허용                                                                       1623 리눅스 커널에서 0.0.0.0/8 주소 범위를 허용
+1624 ==========================================                                                                       1624 ==========================================
+1625                                                                                                                  1625 
+1626 []{#topic_contents}                                                                                              1626 [ ]{#topic_contents}
+1627                                                                                                                  1627 
+1628 BSD에서는 이미 허용하던 주소범위,\                                                                               1628 BSD에서는 이미 허용하던 주소범위,\
+1629 자세한 설명은                                                                                                    1629 자세한 설명은
+
+bulk_data.tsv --- 75/88 --- Text
+1634 실리콘밸리에서 연봉 15만불을 번다면 어느정도의 삶을 살 수 있을까                                                 1634 실리콘밸리에서 연봉 15만불을 번다면 어느정도의 삶을 살 수 있을까
+1635 ================================================================                                                 1635 ================================================================
+1636                                                                                                                  1636 
+1637 []{#topic_contents}                                                                                              1637 [ ]{#topic_contents}
+1638                                                                                                                  1638 
+1639 과연 실리콘밸리에서 연봉 15만불을 번다면 어느정도의 삶을 기대할수                                                1639 과연 실리콘밸리에서 연봉 15만불을 번다면 어느정도의 삶을 기대할수
+1640 있을지에 대해서 매우 어렴풋하게 분석을 해보려고 한다. 한국에서 혹은 미국                                         1640 있을지에 대해서 매우 어렴풋하게 분석을 해보려고 한다. 한국에서 혹은 미국
+
+bulk_data.tsv --- 76/88 --- Text
+1646 97개의 VPN서비스들이 실제로는 23개 회사들에 의해 운영중                                                          1646 97개의 VPN서비스들이 실제로는 23개 회사들에 의해 운영중
+1647 =======================================================                                                          1647 =======================================================
+1648                                                                                                                  1648 
+1649 []{#topic_contents}                                                                                              1649 [ ]{#topic_contents}
+1650                                                                                                                  1650 
+1651 데이터 보안에 문제가 있을수 있음. 또한 유명 모바일전용 VPN업체는 대부분                                          1651 데이터 보안에 문제가 있을수 있음. 또한 유명 모바일전용 VPN업체는 대부분
+1652 중국계회사 거나 중국인이 운영한다고                                                                              1652 중국계회사 거나 중국인이 운영한다고
+
+bulk_data.tsv --- 77/88 --- Text
+1655 생산성을 높여주는 VSCode 단축키 및 팁 정리                                                                       1655 생산성을 높여주는 VSCode 단축키 및 팁 정리
+1656 ==========================================                                                                       1656 ==========================================
+1657                                                                                                                  1657 
+1658 []{#topic_contents}                                                                                              1658 [ ]{#topic_contents}
+1659 https://news.hada.io/topic?id=23    Dribbble 을 공동창업하고 배운 것들    [](http://simplebits.com/2019/06/25/dr 1659 https://news.hada.io/topic?id=23    Dribbble 을 공동창업하고 배운 것들    [](http://simplebits.com/2019/06/25/dr
+.... ibbble.html){.bold .ud}                                                                                          .... ibbble.html){.bold .ud}
+1660                                                                                                                  1660 
+1661 Dribbble 을 공동창업하고 배운 것들                                                                               1661 Dribbble 을 공동창업하고 배운 것들
+1662 ==================================                                                                               1662 ==================================
+1663                                                                                                                  1663 
+1664 []{#topic_contents}                                                                                              1664 [ ]{#topic_contents}
+1665                                                                                                                  1665 
+1666 Dan Cederholm이 Dribbble을 공동창업후 10년동안 배운 것들을 정리한 글                                             1666 Dan Cederholm이 Dribbble을 공동창업후 10년동안 배운 것들을 정리한 글
+1667                                                                                                                  1667 
+
+bulk_data.tsv --- 78/88 --- Text
+1695 당신네 회사 개발팀의 핵심가치는 무엇인가요 ?                                                                     1695 당신네 회사 개발팀의 핵심가치는 무엇인가요 ?
+1696 ============================================                                                                     1696 ============================================
+1697                                                                                                                  1697 
+1698 []{#topic_contents}                                                                                              1698 [ ]{#topic_contents}
+1699                                                                                                                  1699 
+1700 회사 개발팀이 어떤 가치를 중요하게 여기는 지 보여줘서, 개발자들이 회사를                                         1700 회사 개발팀이 어떤 가치를 중요하게 여기는 지 보여줘서, 개발자들이 회사를
+1701 선택할때 중요한 정보를 미리취득가능.\                                                                            1701 선택할때 중요한 정보를 미리취득가능.\
+
+bulk_data.tsv --- 79/88 --- Text
+1706 Linux 5.2의 새 기능들                                                                                            1706 Linux 5.2의 새 기능들
+1707 =====================                                                                                            1707 =====================
+1708                                                                                                                  1708 
+1709 []{#topic_contents}                                                                                              1709 [ ]{#topic_contents}
+1710                                                                                                                  1710 
+1711 Kernel Newbies에서 관리하는 리눅스 변경사항 정리 위키                                                            1711 Kernel Newbies에서 관리하는 리눅스 변경사항 정리 위키
+1712 https://news.hada.io/topic?id=33    Dropbox 파일 직접 전송 가능한 Transfer 서비스 공개    [](https://www.dropbox 1712 https://news.hada.io/topic?id=33    Dropbox 파일 직접 전송 가능한 Transfer 서비스 공개    [](https://www.dropbox
+.... .com/transfer/about/){.bold .ud}                                                                                 .... .com/transfer/about/){.bold .ud}
+1713                                                                                                                  1713 
+1714 Dropbox 파일 직접 전송 가능한 Transfer 서비스 공개                                                               1714 Dropbox 파일 직접 전송 가능한 Transfer 서비스 공개
+1715 ==================================================                                                               1715 ==================================================
+1716                                                                                                                  1716 
+1717 []{#topic_contents}                                                                                              1717 [ ]{#topic_contents}
+1718                                                                                                                  1718 
+1719 기존의 링크 공유가 아닌 파일을 직접 보내는 방식. 수신확인 기능 및 통계도                                         1719 기존의 링크 공유가 아닌 파일을 직접 보내는 방식. 수신확인 기능 및 통계도
+1720 지원. 요금제에 따라 크기 차등 지원                                                                               1720 지원. 요금제에 따라 크기 차등 지원
+
+bulk_data.tsv --- 80/88 --- Text
+1723 Wechat 이 비공개 대화에서 이미지를 검열하는 방법                                                                 1723 Wechat 이 비공개 대화에서 이미지를 검열하는 방법
+1724 ================================================                                                                 1724 ================================================
+1725                                                                                                                  1725 
+1726 []{#topic_contents}                                                                                              1726 [ ]{#topic_contents}
+1727                                                                                                                  1727 
+1728 수많은 양의 검열이미지 MD5 해쉬를 보관하여, 검열될 이미지가 보내지기전에                                         1728 수많은 양의 검열이미지 MD5 해쉬를 보관하여, 검열될 이미지가 보내지기전에
+1729 블락됨. 해쉬DB에 없는 이미지는 별도로 처리해서 이미 블락된 이미지에                                              1729 블락됨. 해쉬DB에 없는 이미지는 별도로 처리해서 이미 블락된 이미지에
+
+bulk_data.tsv --- 81/88 --- Text
+1734 Git Commit Messages Guide \[한글\]                                                                               1734 Git Commit Messages Guide \[한글\]
+1735 ==================================                                                                               1735 ==================================
+1736                                                                                                                  1736 
+1737 []{#topic_contents}                                                                                              1737 [ ]{#topic_contents}
+1738 https://news.hada.io/topic?id=53    개발 과제를 준비하는 팁 10가지    [](https://medium.com/@gojbpark/%EA%B0%9C% 1738 https://news.hada.io/topic?id=53    개발 과제를 준비하는 팁 10가지    [](https://medium.com/@gojbpark/%EA%B0%9C%
+.... EB%B0%9C-%EA%B3%BC%EC%A0%9C%EB%A5%BC-%EC%A4%80%EB%B9%84%ED%95%98%EB%8A%94-%ED%8C%81-10%EA%B0%80%EC%A7%80-372d00c .... EB%B0%9C-%EA%B3%BC%EC%A0%9C%EB%A5%BC-%EC%A4%80%EB%B9%84%ED%95%98%EB%8A%94-%ED%8C%81-10%EA%B0%80%EC%A7%80-372d00c
+.... 3db8){.bold                                                                                                      .... 3db8){.bold
+1739 .ud}                                                                                                             1739 .ud}
+1740                                                                                                                  1740 
+1741 개발 과제를 준비하는 팁 10가지                                                                                   1741 개발 과제를 준비하는 팁 10가지
+1742 ==============================                                                                                   1742 ==============================
+1743                                                                                                                  1743 
+1744 []{#topic_contents}                                                                                              1744 [ ]{#topic_contents}
+1745                                                                                                                  1745 
+1746 구직 목적으로 개발 과제 또는 토이 프로젝트를 준비할 때의 팁 10가지를                                             1746 구직 목적으로 개발 과제 또는 토이 프로젝트를 준비할 때의 팁 10가지를
+1747 추천합니다.                                                                                                      1747 추천합니다.
+
+bulk_data.tsv --- 82/88 --- Text
+1751 How to remember anything - 어떤 것이든 기억 하는 방법                                                            1751 How to remember anything - 어떤 것이든 기억 하는 방법
+1752 =====================================================                                                            1752 =====================================================
+1753                                                                                                                  1753 
+1754 []{#topic_contents}                                                                                              1754 [ ]{#topic_contents}
+1755                                                                                                                  1755 
+1756 1\. 자기한테 퀴즈내기\                                                                                           1756 1\. 자기한테 퀴즈내기\
+1757 2. 요약하고 남에게 공유하기\                                                                                     1757 2. 요약하고 남에게 공유하기\
+1758 3. 이미 아는것들과 연결해서 기억하기                                                                             1758 3. 이미 아는것들과 연결해서 기억하기
+1759                                                                                                                  1759 
+1760 []{#contents57 .comment_contents}                                                                                1760 [ ]{#contents57 .comment_contents}
+1761                                                                                                                  1761 
+1762 2번의 경우, 제가 예전에 트위터에 글 올릴때 요약하는것만으로도 정말 잘                                            1762 2번의 경우, 제가 예전에 트위터에 글 올릴때 요약하는것만으로도 정말 잘
+1763 기억이 되는것을 경험                                                                                             1763 기억이 되는것을 경험
+
+bulk_data.tsv --- 83/88 --- Text
+1769 딥러닝 기반의 코드 자동완성 모듈 (유료서비스)                                                                    1769 딥러닝 기반의 코드 자동완성 모듈 (유료서비스)
+1770 =============================================                                                                    1770 =============================================
+1771                                                                                                                  1771 
+1772 []{#topic_contents}                                                                                              1772 [ ]{#topic_contents}
+1773                                                                                                                  1773 
+1774 깃허브의 코드를 이용해서 학습시켜서 코드 자동완성기능을 제공하는                                                 1774 깃허브의 코드를 이용해서 학습시켜서 코드 자동완성기능을 제공하는
+1775 서비스입니다. 오픈소스가 아니라 유료서비스로 제공을 하네요.                                                      1775 서비스입니다. 오픈소스가 아니라 유료서비스로 제공을 하네요.
+1776                                                                                                                  1776 
+1777 []{#contents81 .comment_contents}                                                                                1777 [ ]{#contents81 .comment_contents}
+1778                                                                                                                  1778 
+1779 데스크탑에서 스탠드얼론으로 안되는게 아쉽네요.\                                                                  1779 데스크탑에서 스탠드얼론으로 안되는게 아쉽네요.\
+1780 테스트라도 해봤으면 하는데, 이거하기 위해 클라우드 연결까지 하는건                                               1780 테스트라도 해봤으면 하는데, 이거하기 위해 클라우드 연결까지 하는건
+1781 부담스러울꺼 같아요.                                                                                             1781 부담스러울꺼 같아요.
+1782                                                                                                                  1782 
+1783 []{#contents84 .comment_contents}                                                                                1783 [ ]{#contents84 .comment_contents}
+1784                                                                                                                  1784 
+1785 이게 셰어웨어인데, <https://tabnine.com/faq#language> 에 따르면 Rust로                                           1785 이게 셰어웨어인데, <https://tabnine.com/faq#language> 에 따르면 Rust로
+1786 만들었기 때문에 Rust에서는 유료 기능이 무료 버전에서도 사용 가능하다는                                           1786 만들었기 때문에 Rust에서는 유료 기능이 무료 버전에서도 사용 가능하다는
+
+bulk_data.tsv --- 84/88 --- Text
+1790 삼성전자의 블록체인 SDK                                                                                          1790 삼성전자의 블록체인 SDK
+1791 =======================                                                                                          1791 =======================
+1792                                                                                                                  1792 
+1793 []{#topic_contents} []{#contents24 .comment_contents}                                                            1793 [ ]{#topic_contents} [ ]{#contents24 .comment_contents}
+1794                                                                                                                  1794 
+1795 <http://m.news1.kr/articles/?3666203>                                                                            1795 <http://m.news1.kr/articles/?3666203>
+1796                                                                                                                  1796 
+1797 []{#contents23 .comment_contents}                                                                                1797 [ ]{#contents23 .comment_contents}
+1798                                                                                                                  1798 
+1799 <https://developer.samsung.com/blockchain>                                                                       1799 <https://developer.samsung.com/blockchain>
+1800 https://news.hada.io/topic?id=48    Pillman - 512바이트 짜리 팩맨게임     [](https://github.com/nanochess/pillma 1800 https://news.hada.io/topic?id=48    Pillman - 512바이트 짜리 팩맨게임     [](https://github.com/nanochess/pillma
+.... n){.bold .ud}                                                                                                    .... n){.bold .ud}
+1801                                                                                                                  1801 
+1802 Pillman - 512바이트 짜리 팩맨게임                                                                                1802 Pillman - 512바이트 짜리 팩맨게임
+1803 =================================                                                                                1803 =================================
+1804                                                                                                                  1804 
+1805 []{#topic_contents}                                                                                              1805 [ ]{#topic_contents}
+1806                                                                                                                  1806 
+1807 8088호환 어셈블리코드. 코드는 12k, 380라인. 화살표키로 이동. 사이즈가                                            1807 8088호환 어셈블리코드. 코드는 12k, 380라인. 화살표키로 이동. 사이즈가
+1808 작아서 부트섹터에 넣어서도 실행가능                                                                              1808 작아서 부트섹터에 넣어서도 실행가능
+1809                                                                                                                  1809 
+1810 []{#contents42 .comment_contents}                                                                                1810 [ ]{#contents42 .comment_contents}
+1811                                                                                                                  1811 
+1812 4반세기전\... 1라인 콘테스트가 떠오르면\... 노땅 인증                                                            1812 4반세기전\... 1라인 콘테스트가 떠오르면\... 노땅 인증
+1813                                                                                                                  1813 
+1814 []{#contents29 .comment_contents}                                                                                1814 [ ]{#contents29 .comment_contents}
+1815                                                                                                                  1815 
+1816 작동 영상\                                                                                                       1816 작동 영상\
+1817 <https://www.youtube.com/watch?v=ALBgsXOq11o>                                                                    1817 <https://www.youtube.com/watch?v=ALBgsXOq11o>
+
+bulk_data.tsv --- 85/88 --- Text
+1820 Wikipedia 의 robots.txt                                                                                          1820 Wikipedia 의 robots.txt
+1821 =======================                                                                                          1821 =======================
+1822                                                                                                                  1822 
+1823 []{#topic_contents}                                                                                              1823 [ ]{#topic_contents}
+1824                                                                                                                  1824 
+1825 주석이 달려 있어서 재미난 robots.txt - 이상동작하는 봇, 규약을 지키지                                            1825 주석이 달려 있어서 재미난 robots.txt - 이상동작하는 봇, 규약을 지키지
+1826 않는 봇, 캡쳐봇, 구글광고봇, 문제많은 wget recursive 모드등.                                                     1826 않는 봇, 캡쳐봇, 구글광고봇, 문제많은 wget recursive 모드등.
+1827                                                                                                                  1827 
+1828 []{#contents135 .comment_contents}                                                                               1828 [ ]{#contents135 .comment_contents}
+1829                                                                                                                  1829 
+1830 \"Doesn\'t follow robots.txt anyway, but\...\" 부분이 재미있네요 ㅋㅋ                                            1830 \"Doesn\'t follow robots.txt anyway, but\...\" 부분이 재미있네요 ㅋㅋ
+1831                                                                                                                  1831 
+1832 []{#contents89 .comment_contents}                                                                                1832 [ ]{#contents89 .comment_contents}
+1833                                                                                                                  1833 
+1834 robots.txt 의 모범 사례라 할만!!\                                                                                1834 robots.txt 의 모범 사례라 할만!!\
+1835 좋은 정보 감사합니다.                                                                                            1835 좋은 정보 감사합니다.
+
+bulk_data.tsv --- 86/88 --- Text
+1839 Webasm 대 Native 성능분석                                                                                        1839 Webasm 대 Native 성능분석
+1840 =========================                                                                                        1840 =========================
+1841                                                                                                                  1841 
+1842 []{#topic_contents}                                                                                              1842 [ ]{#topic_contents}
+1843                                                                                                                  1843 
+1844 네이티브 코드에 비해 웹어셈블리가 왜 아직 느린지에 대한 분석                                                     1844 네이티브 코드에 비해 웹어셈블리가 왜 아직 느린지에 대한 분석
+1845 https://news.hada.io/topic?id=94    The PGP Problem    [](https://latacora.micro.blog/2019/07/16/the-pgp-problem 1845 https://news.hada.io/topic?id=94    The PGP Problem    [](https://latacora.micro.blog/2019/07/16/the-pgp-problem
+     .html){.bold                                                                                                          .html){.bold
+
+bulk_data.tsv --- 87/88 --- Text
+1848 The PGP Problem                                                                                                  1848 The PGP Problem
+1849 ===============                                                                                                  1849 ===============
+1850                                                                                                                  1850 
+1851 []{#topic_contents}                                                                                              1851 [ ]{#topic_contents}
+1852                                                                                                                  1852 
+1853 PGP는 고대의 암호학 지식으로 만들어진 거대하고 안전하지 않은                                                     1853 PGP는 고대의 암호학 지식으로 만들어진 거대하고 안전하지 않은
+1854 프로토콜·소프트웨어입니다. 아마도 오늘날 PGP를 쓰는 가장 안전한 방법은                                           1854 프로토콜·소프트웨어입니다. 아마도 오늘날 PGP를 쓰는 가장 안전한 방법은
+
+bulk_data.tsv --- 88/88 --- Text
+1860 Node.js 12 (LTS) 새로운 기능들                                                                                   1860 Node.js 12 (LTS) 새로운 기능들
+1861 ==============================                                                                                   1861 ==============================
+1862                                                                                                                  1862 
+1863 []{#topic_contents}                                                                                              1863 [ ]{#topic_contents}
+1864                                                                                                                  1864 
+1865 worker thread, es module(import statement), private member,                                                      1865 worker thread, es module(import statement), private member,
+1866 flat/flatMap, 기타 등등                                                                                          1866 flat/flatMap, 기타 등등
+

@@ -1,0 +1,1524 @@
+[
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "children": [
+       {
+        "content": "IE=edge,chrome=1",
+        "http-equiv": "X-UA-Compatible",
+        "tag": "meta"
+       },
+       {
+        "src": "/vendor/markdown-it.min.js",
+        "tag": "script"
+       },
+       {
+        "href": "/vendor/highlight-default.min.css",
+        "rel": "stylesheet",
+        "tag": "link"
+       },
+       {
+        "src": "/vendor/highlight.min.js",
+        "tag": "script"
+       },
+       {
+        "tag": "script",
+        "text": "hljs.highlightAll();"
+       },
+       {
+        "async": "",
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-MCD87E7SF0",
+        "tag": "script"
+       },
+       {
+        "tag": "script",
+        "text": "window.dataLayer = window.dataLayer || [];\n        function gtag(){dataLayer.push(arguments);}\n        gtag('js', new Date());\n\n        gtag('config', 'G-MCD87E7SF0');"
+       },
+       {
+        "charset": "utf-8",
+        "tag": "meta"
+       },
+       {
+        "content": "width=device-width",
+        "name": "viewport",
+        "tag": "meta"
+       },
+       {
+        "tag": "title",
+        "text": "x86는 왜 Apple M 시리즈를 따라잡지 못했는가? | GeekNews"
+       },
+       {
+        "content": "Apple M 시리즈의 뛰어난 전력 효율과 성능이 기존 x86 칩 대비 큰 관심을 받음많은 개발자들이 x86 아키텍처가 왜 같은 수준의 혁신을 보여주지 못하는지 궁금함x86 설계는 오랜 기간 동안의 호환성과 복잡성 때문에 변화가 제한적임Apple은 SoC 통합과 특화된 하드웨어 가속기를 통해 성능의 큰 향상을 이루었음x86 칩 제조사들도 효율성 개선을 시도",
+        "name": "description",
+        "tag": "meta"
+       },
+       {
+        "content": "https://news.hada.io/topic?id=22743",
+        "property": "og:url",
+        "tag": "meta"
+       },
+       {
+        "content": "x86는 왜 Apple M 시리즈를 따라잡지 못했는가? | GeekNews",
+        "property": "og:title",
+        "tag": "meta"
+       },
+       {
+        "content": "https://social.news.hada.io/topic/22743",
+        "property": "og:image",
+        "tag": "meta"
+       },
+       {
+        "content": "1200",
+        "property": "og:image:width",
+        "tag": "meta"
+       },
+       {
+        "content": "630",
+        "property": "og:image:height",
+        "tag": "meta"
+       },
+       {
+        "content": "max-image-preview:large",
+        "name": "robots",
+        "tag": "meta"
+       },
+       {
+        "content": "ko_KR",
+        "property": "og:locale",
+        "tag": "meta"
+       },
+       {
+        "content": "GeekNews",
+        "property": "og:site_name",
+        "tag": "meta"
+       },
+       {
+        "content": "Apple M 시리즈의 뛰어난 전력 효율과 성능이 기존 x86 칩 대비 큰 관심을 받음많은 개발자들이 x86 아키텍처가 왜 같은 수준의 혁신을 보여주지 못하는지 궁금함x86 설계는 오랜 기간 동안의 호환성과 복잡성 때문에 변화가 제한적임Apple은 SoC 통합과 특화된 하드웨어 가속기를 통해 성능의 큰 향상을 이루었음x86 칩 제조사들도 효율성 개선을 시도",
+        "property": "og:description",
+        "tag": "meta"
+       },
+       {
+        "content": "2417316805247011",
+        "property": "fb:app_id",
+        "tag": "meta"
+       },
+       {
+        "content": "https://social.news.hada.io/topic/22743",
+        "name": "twitter:image",
+        "tag": "meta"
+       },
+       {
+        "content": "x86는 왜 Apple M 시리즈를 따라잡지 못했는가? | GeekNews",
+        "name": "twitter:title",
+        "tag": "meta"
+       },
+       {
+        "content": "@GeekNewsHada",
+        "name": "twitter:creator",
+        "tag": "meta"
+       },
+       {
+        "content": "@GeekNewsHada",
+        "name": "twitter:site",
+        "tag": "meta"
+       },
+       {
+        "content": "Apple M 시리즈의 뛰어난 전력 효율과 성능이 기존 x86 칩 대비 큰 관심을 받음많은 개발자들이 x86 아키텍처가 왜 같은 수준의 혁신을 보여주지 못하는지 궁금함x86 설계는 오랜 기간 동안의 호환성과 복잡성 때문에 변화가 제한적임Apple은 SoC 통합과 특화된 하드웨어 가속기를 통해 성능의 큰 향상을 이루었음x86 칩 제조사들도 효율성 개선을 시도",
+        "name": "twitter:description",
+        "tag": "meta"
+       },
+       {
+        "content": "article",
+        "property": "og:type",
+        "tag": "meta"
+       },
+       {
+        "content": "2025-08-27T05:34:43+09:00",
+        "property": "article:published_time",
+        "tag": "meta"
+       },
+       {
+        "content": "neo",
+        "property": "article:author",
+        "tag": "meta"
+       },
+       {
+        "content": "GN⁺",
+        "property": "article:section",
+        "tag": "meta"
+       },
+       {
+        "content": "summary_large_image",
+        "name": "twitter:card",
+        "tag": "meta"
+       },
+       {
+        "tag": "script",
+        "text": "{\n    \"@context\": \"https://schema.org\",\n    \"@type\": \"NewsArticle\",\n    \"mainEntityOfPage\": {\n        \"@type\": \"WebPage\",\n        \"@id\": \"https://news.hada.io/topic?id=22743\",\n        \"name\": \"x86는 왜 Apple M 시리즈를 따라잡지 못했는가?\"\n    },\n    \"headline\": \"x86는 왜 Apple M 시리즈를 따라잡지 못했는가?\",\n    \"thumbnailUrl\": \"https://social.news.hada.io/topic/22743\",\n    \"image\": [\n        \"https://social.news.hada.io/topic/22743\"\n    ],\n    \"datePublished\": \"2025-08-27T05:34:43+09:00\",\n    \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"neo\"\n    },\n    \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"GeekNews\",\n        \"logo\": {\n            \"@type\": \"ImageObject\",\n            \"url\": \"https://news.hada.io/logo_newsarticle.png\"\n        }\n    },\n    \"description\": \"\u0026lt;ul\u0026gt;\\n\u0026lt;li\u0026gt;\\n\u0026lt;strong\u0026gt;Apple M 시리즈\u0026lt;/strong\u0026gt;의 뛰어난 전력 효율과 성능이 기존 \u0026lt;strong\u0026gt;x86 칩\u0026lt;/strong\u0026gt; 대비 큰 관심을 받음\u0026lt;/li\u0026gt;\\n\u0026lt;li\u0026gt;많은 개발...\",\n    \"dateModified\": \"2025-08-27T05:34:43+09:00\",\n    \"commentCount\": 1\n}",
+        "type": "application/ld+json"
+       },
+       {
+        "src": "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js",
+        "tag": "script"
+       },
+       {
+        "src": "/vendor/hotkeys.min.js",
+        "tag": "script"
+       },
+       {
+        "href": "/assets/main.css?20250605",
+        "rel": "stylesheet",
+        "tag": "link",
+        "type": "text/css"
+       },
+       {
+        "href": "/manifest.json?20240404a",
+        "rel": "manifest",
+        "tag": "link"
+       },
+       {
+        "content": "#000065",
+        "name": "theme-color",
+        "tag": "meta"
+       },
+       {
+        "content": "xfNJ7NBfDxPJBTNxTxSIQ7UVPA5zwPKBCC6STmWrQYE",
+        "name": "google-site-verification",
+        "tag": "meta"
+       },
+       {
+        "src": "/assets/main.js?20230914",
+        "tag": "script",
+        "type": "text/javascript"
+       },
+       {
+        "href": "https://fonts.googleapis.com",
+        "rel": "preconnect",
+        "tag": "link"
+       },
+       {
+        "crossorigin": "",
+        "href": "https://fonts.gstatic.com",
+        "rel": "preconnect",
+        "tag": "link"
+       },
+       {
+        "href": "https://fonts.googleapis.com/css2?family=Noto+Sans+KR",
+        "rel": "stylesheet",
+        "tag": "link"
+       },
+       {
+        "href": "https://fonts.googleapis.com/css2?family=Noto+Emoji\u0026amp;display=swap",
+        "rel": "stylesheet",
+        "tag": "link"
+       },
+       {
+        "href": "https://webmention.io/news.hada.io/webmention",
+        "rel": "webmention",
+        "tag": "link"
+       },
+       {
+        "href": "https://webmention.io/news.hada.io/xmlrpc",
+        "rel": "pingback",
+        "tag": "link"
+       },
+       {
+        "tag": "script",
+        "text": "function getUrlParameter(name) {\n\t\t\t\tname = name.replace(/[\\[]/, '\\\\[').replace(/[\\]]/, '\\\\]');\n\t\t\t\tvar regex = new RegExp('[\\\\?\u0026]' + name + '=([^\u0026#]*)');\n\t\t\t\tvar results = regex.exec(location.search);\n\t\t\t\treturn results === null ? '' : decodeURIComponent(results[1].replace(/\\+/g, ' '));\n\t\t\t};\n\n            function submitReply(form) {\n                $.ajax({\n                    type: 'POST',\n                    url: '/comments',\n                    data: $(\".write_reply\").serialize(),\n                    success: function(data)\n                    {\n                        if (data.status) {\n                            window.location.href = \"topic?id=\"+data.id+\"#cid\"+data.cid;\n                            location.reload();\n                        } else {\n                            if (data.code == 213) {\n                                document.getElementById('msg').innerText = \"비정상적인 사용으로 계정이 정지되었습니다.\";\n                            } else if (data.code == 490) {\n                                document.getElementById('msg').innerText = \"의견을 조금 더 길게 작성해주세요.\";\n                            } else {\n                                document.getElementById('msg').innerText = \"알 수 없는 에러입니다.\";\n                            }\n                        }\n                    }\n                });\n            }\n\n            $(function() {\n                $(\".cmtreply\").on('click', function(e) {                    \n                    e.preventDefault();\n                    var topic_watched = null;\n                    var verified = document.getElementById('verified').value;\n\n                    var userid = $(\"#userid\").val();\n                    if (userid == null || userid == '') {\n                        window.location.href = \"login?code=101\u0026return=\" + encodeURI('/topic?id='+$(this).data('tid'));\n                    } else if (!$(this).parent().has('form').length) {\n                        $('.write_reply').remove();                      \n\n                        if (!topic_watched \u0026\u0026 $(this).data('watchable') \u0026\u0026 !$(this).data('watch')) {\n                            cmtwatch = '\u003cspan id=\"watch' + $(this).data('cid')+'\"\u003e\u003clabel class=smalltext\u003e\u003cinput id=\"watchcheck' + $(this).data('cid')+'\" data-cid=\"' + $(this).data('cid')+ '\" name=\"watch\" type=\"checkbox\" class=\"check\"';\n                            if (verified) {\n                                cmtwatch += ' checked';\n                            }\n                            cmtwatch += '\u003e\u003cspan id=\"watchmsg' + $(this).data('cid')+'\"\u003e댓글 알림 받기\u003c/span\u003e\u003c/label\u003e\\\n                                \u003cdiv class=inline\u003e\\\n                                \u003cinput type=\"email\" id=\"email' + $(this).data('cid')+'\" name=\"email\"  value=\"\" style=\"width:180px\" placeholder=\"댓글 알림받을 이메일 주소\" hidden\u003e \\\n                                \u003cinput id=\"verify_email_btn' + $(this).data('cid')+'\"  data-cid=\"' + $(this).data('cid')+ '\" type=\"button\" value=\"이메일 인증\" hidden\u003e \\\n                                \u003c/div\u003e \\\n                            \u003c/span\u003e';\n                        } else {\n                            cmtwatch = '';\n                        }\n\n                        cmtform = '\u003cform class=\"write_reply\" autocomplete=\"off\" onsubmit=\"return replace2spaces(\\'reply_contents\\')\"\u003e \\\n                        \u003cdiv class=\"table_reply comment-table\"\u003e \\\n                            \u003cdiv\u003e \\\n                                \u003ctextarea id=\"reply_contents\" rows=5 style=\"width:100%\" name=\"contents\" class=\"comment_textarea\" required placeholder=\"댓글에 대한 답변\"\u003e\u003c/textarea\u003e \\\n                            \u003c/div\u003e\\\n                            \u003cdiv style=\"display: grid; grid-template-columns: auto 100px\"\u003e \\\n                                \u003cdiv\u003e ' + cmtwatch + '\u003c/div\u003e \\\n                                \u003cinput type=\"submit\" class=\"reply_button\" value=\"답변 달기\"\u003e \\\n                                \u003cdiv id=\"authmsg' + $(this).data('cid')+'\" class=\"inline watch\" style=\"display: none; grid-column: 1 / 3\"\u003e인증 이메일 클릭후 다시 체크박스를 눌러주세요\u003c/div\u003e\\\n                                \u003cinput type=\"hidden\" name=\"dynamic\" value=\"true\"\u003e \\\n                                \u003cinput type=\"hidden\" name=\"parent_id\" value=\"' + $(this).data('cid') +  '\"\u003e \\\n                                \u003cinput type=\"hidden\" name=\"tid\" value=\"' + $(this).data('tid') + '\"\u003e \\\n                            \u003c/div\u003e \\\n                        \u003c/div\u003e \\\n                        \u003c/form\u003e \\\n                        ';\n\n\n                        $(this).parent().append(cmtform);\n                        $(document).on('click','#watchcheck' + $(this).data('cid'),function(){\n                            var userid = document.getElementById('userid').value;\n                            var verified = document.getElementById('verified').value;\n                            var email = document.getElementById('email').value;\n                            if ($(this).is(\":checked\")) {\n                                if (!email || !verified) {\n                                    var cmtwatch = $(this).data('cid');\n                                    $.ajax({\n                                        url: '/users/' + userid + '/email',\n                                        type: \"GET\",\n                                        contentType: \"application/json; charset=utf-8\",\n                                        dataType: \"json\",\n                                        success: (function (data) {\n                                            var status = data.status;\n                                            if (status) {\n                                                $(\"#watchmsg\" + cmtwatch).css(\"display\", \"inline\");\n                                                $(\"#email\" + cmtwatch).hide();\n                                                $(\"#authmsg\" + cmtwatch).hide();\n                                                $(\"#verify_email_btn\" + cmtwatch).hide();\n                                            } else {\n                                                if (data.code === 109) {\n                                                    $(\"#watchmsg\" + cmtwatch).hide();\n                                                    $(\"#email\" + cmtwatch).css(\"display\", \"inline\");\n                                                    $(\"#verify_email_btn\" + cmtwatch).css(\"display\", \"inline\");\n                                                    $(\"#email\" + cmtwatch).prop(\"disabled\", false);\n                                                    $(\"#email\" + cmtwatch).focus();\n                                                } else if (data.code === 110) {\n                                                    alert('이메일 주소 인증이 완료되지 않았습니다. 이메일을 확인해 주세요.');\n                                                    $(\"#watchmsg\" + cmtwatch).hide();\n                                                    $(\"#email\" + cmtwatch).css(\"display\", \"inline\");\n                                                    $(\"#verify_email_btn\" + cmtwatch).css(\"display\", \"inline\");\n                                                }\n                                                $(\"#verify_email_btn\" + cmtwatch).prop(\"disabled\", false);\n                                                $(\"#watchcheck\" + cmtwatch).prop(\"checked\", false);\n                                            }\n                                        }),\n                                        error: (function (xhr) {\n                                            console.log(xhr);\n                                        })\n                                    });\n                                }\n\n\n                            } \n                        });\n\n                        $(document).on('click','#verify_email_btn' + $(this).data('cid'),function(event){\n                            event.preventDefault();\n                            $(\"#authmsg\" + $(this).data('cid')).hide();\n                            var userid = document.getElementById('userid').value;\n                            var cid = $(this).data('cid');\n\n                            if ($(\"#email\" + $(this).data('cid'))[0]) {\n                                $(\"#email\" + $(this).data('cid')).prop('disabled', true);\n                                doUpdate = true;\n\n                                $.ajax({\n                                    type: 'POST',\n                                    url: '/users/' + userid + '/email',\n                                    data: ({ 'email': encodeURI($(\"#email\" + $(this).data('cid'))[0].value) }),\n                                    success: function (data) {\n                                        if (data.status) {\n                                            if (data.email) {\n                                                alert('인증 메일이 발송되었습니다. 이메일을 확인해주세요.');\n                                                $(\"#watch_comment\" + cid).prop(\"checked\", false);\n                                                $(\"#authmsg\" + cid).show();\n                                            }\n                                        } else {\n                                            if (data.code == 108){\n                                                alert('다른 이메일을 입력해주세요.');\n                                            } else {\n                                                alert('오류가 있는 것 같아요.');\n                                            }\n                                            $(\"#email\" + cid).prop('disabled', false);\n                                        }\n                                    }\n                                });\n                            }\n\n                        });\n                        \n\n                        $(this).parent().on(\"submit\", \".write_reply\", function (event){\n                            event.preventDefault();\n                            submitReply(this);\n                        });\n                    }\n                });\n\n\t\t\t\t$('.write_comment').on('submit',function(){\n\t\t\t\t\t$('.comment_textarea').each(function(){   \n\t\t\t\t\t\tvar id = $(this).attr('id');\n\t\t\t\t\t\tvar value = $(this).val();\n\t\t\t\t\t\tlocalStorage.setItem(id, value);\n\t\t\t\t\t});   \n\t\t\t\t});\n\n\t\t\t\tvar c = getUrlParameter(\"code\");\n\n\t\t\t\tif (c) {\n\t\t\t\t\t$('.comment_textarea').each(function(){    \n\t\t\t\t\t\tvar id = $(this).attr('id');\n\t\t\t\t\t\tvar value = localStorage.getItem(id);\n\n\t\t\t\t\t\t$(this).val(value);\n\t\t\t\t\t}); \n\t\t\t\t} else {\n\t\t\t\t\t$('.comment_textarea').each(function(){    \n\t\t\t\t\t\tvar id = $(this).attr('id');\t\t\t\t\t\t\n\t\t\t\t\t\tlocalStorage.removeItem(id);\n\t\t\t\t\t});   \n\t\t\t\t}\n            });\n\n            function child_toggle(id,count) {\n                var start_index;\n                $(\".comment_row\").each(function( index ) {\n                    if ($( this ).attr('id') == \"cid\" + id ) start_index = index;\n                    if ( start_index + count \u003e= index ) {\n                        if ($( this ).attr('id') == \"cid\" + id ) {\n                            $(this).find('.comment').toggleClass('hide');\n                            $(this).find('.commentreply').toggleClass('hide');\n                            commentfold = $(this).find('.commentfold').html();\n                            if (commentfold.indexOf('[-]') !== -1 ) \n                                $(this).find('.commentfold').html('[+'+(count+1)+']');\n                            else \n                                $(this).find('.commentfold').html('[-]');\n                        } else {\n                            if ($(this).css(\"display\") == \"grid\") {\n                                $(this).css(\"display\",\"none\");\n                            } else {\n                                $(this).css(\"display\",\"grid\");\n                            }\n                            $( this ).toggleClass('hide');\n                        }\n                    }\n                });\n            }\n\n            async function delete_item(id) {\n                if(window.confirm(\"삭제하시겠어요?\")) {\n\t\t\t\t\ttry {\n\t\t\t\t\t\tlet response = await fetch('/api/topics/' + id, {\n\t\t\t\t\t\t\tmethod: 'DELETE'\n\t\t\t\t\t\t});\n\n\t\t\t\t\t\tif(!response.ok) {\n\t\t\t\t\t\t\tthrow new Error(\"Network response was not ok\");\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tlet data = await response.json();\n\n\t\t\t\t\t\tif (data.status) {\n\t\t\t\t\t\t\talert(\"삭제했습니다.\");\n                            window.location.href = \"/\";\n\t\t\t\t\t\t} else {\n                            if (data.code == 101) {\n                                window.location.href = \"/login?code=101\u0026return=/topics?id=\" + id;\n                            } else {\n                                alert(\"삭제 실패했습니다.\");\n                            }\n\t\t\t\t\t\t}\n\t\t\t\t\t} catch(error) {\n\t\t\t\t\t\tconsole.error('Error:', error);\n\t\t\t\t\t}\n                }\n            }\n            async function delete_comment(id, topic_id) {\n                if(window.confirm(\"삭제하시겠어요?\")) {\n\t\t\t\t\ttry {\n\t\t\t\t\t\tlet response = await fetch('/comments/' + id, {\n\t\t\t\t\t\t\tmethod: 'DELETE'\n\t\t\t\t\t\t});\n\n\t\t\t\t\t\tif(!response.ok) {\n\t\t\t\t\t\t\tthrow new Error(\"Network response was not ok\");\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tlet data = await response.json();\n\n\t\t\t\t\t\tif (data.status) {\n\t\t\t\t\t\t\talert(\"삭제했습니다.\");\n                            window.location.href = \"/topic?id=\"+topic_id;\n\t\t\t\t\t\t} else {\n                            if (data.code == 101) {\n                                window.location.href = \"/login?code=101\u0026return=/comment?id=\" + id;\n                            } else {\n                                alert(\"삭제 실패했습니다.\");\n                            }\n\t\t\t\t\t\t}\n\t\t\t\t\t} catch(error) {\n\t\t\t\t\t\tconsole.error('Error:', error);\n\t\t\t\t\t}\n                }\n            }\n            function scrollToComments(event) {\n                event.preventDefault();\n                const commentsSection = document.getElementById(\"comment_thread\");\n\n                if (commentsSection) {\n                    history.pushState({ scrollY: window.scrollY }, \"\", window.location.href);\n                    commentsSection.scrollIntoView({ block: \"start\" });\n                }\n            }\n            window.onpopstate = function (event) {\n                if (event.state \u0026\u0026 event.state.scrollY !== undefined) {\n                    window.scrollTo({ top: event.state.scrollY });\n                }\n            };\n            window.onload = function () {\n                const params = new URLSearchParams(window.location.search);\n                if (params.get(\"go\") === \"comments\") {\n                    const commentsSection = document.getElementById(\"comment_thread\");\n                    if (commentsSection) {\n                        setTimeout(() =\u003e {\n                            commentsSection.scrollIntoView({ block: \"start\" });\n                        }, 300);\n                        params.delete(\"go\");\n                        const newUrl = window.location.pathname + \"?\" + params.toString();\n                        history.replaceState(null, null, newUrl); // URL 업데이트\n                    }\n                }\n            };"
+       },
+       {
+        "src": "/vendor/jquery.shorten.min.js",
+        "tag": "script",
+        "type": "text/javascript"
+       },
+       {
+        "src": "/assets/watch.js?20210630a",
+        "tag": "script"
+       }
+      ],
+      "comment": "Global site tag (gtag.js) - Google Analytics v4",
+      "tag": "head"
+     },
+     {
+      "children": [
+       {
+        "children": [
+         {
+          "children": [
+           {
+            "children": [
+             {
+              "children": [
+               {
+                "href": "/",
+                "tag": "a",
+                "text": "GeekNews"
+               }
+              ],
+              "class": "geeknews",
+              "tag": "span"
+             },
+             {
+              "href": "/new",
+              "tag": "a",
+              "text": "최신글"
+             },
+             {
+              "href": "/comments",
+              "tag": "a",
+              "text": "댓글"
+             },
+             {
+              "href": "/past",
+              "tag": "a",
+              "text": "예전글"
+             },
+             {
+              "href": "/ask",
+              "tag": "a",
+              "text": "Ask"
+             },
+             {
+              "href": "/show",
+              "tag": "a",
+              "text": "Show"
+             },
+             {
+              "href": "/plus",
+              "tag": "a",
+              "text": "GN⁺"
+             },
+             {
+              "href": "/weekly",
+              "tag": "a",
+              "text": "Weekly"
+             },
+             {
+              "href": "/write",
+              "tag": "a",
+              "text": "글등록"
+             },
+             {
+              "class": "curnavitem",
+              "tag": "span"
+             }
+            ],
+            "class": "ltd",
+            "tag": "div",
+            "text": "|"
+           },
+           {
+            "children": [
+             {
+              "action": "search",
+              "children": [
+               {
+                "class": "input",
+                "id": "q",
+                "maxlength": "20",
+                "name": "q",
+                "placeholder": "검색",
+                "tag": "input",
+                "type": "search"
+               }
+              ],
+              "class": "search-cse",
+              "method": "GET",
+              "tag": "form"
+             },
+             {
+              "href": "/login",
+              "tag": "a",
+              "text": "로그인"
+             }
+            ],
+            "class": "rtd",
+            "tag": "div"
+           }
+          ],
+          "tag": "nav"
+         }
+        ],
+        "tag": "header"
+       },
+       {
+        "children": [
+         {
+          "children": [
+           {
+            "children": [
+             {
+              "id": "msg",
+              "tag": "div"
+             },
+             {
+              "children": [
+               {
+                "children": [
+                 {
+                  "children": [
+                   {
+                    "children": [
+                     {
+                      "tag": "span",
+                      "text": "▲"
+                     }
+                    ],
+                    "class": "upvote",
+                    "href": "javascript:vote(22743, \u0026#34;up\u0026#34;);",
+                    "tag": "a"
+                   }
+                  ],
+                  "id": "vote22743",
+                  "tag": "span"
+                 }
+                ],
+                "class": "vote",
+                "tag": "div"
+               },
+               {
+                "children": [
+                 {
+                  "children": [
+                   {
+                    "tag": "h1",
+                    "text": "x86는 왜 Apple M 시리즈를 따라잡지 못했는가?"
+                   }
+                  ],
+                  "class": "bold ud",
+                  "href": "https://news.ycombinator.com/item?id=45019483",
+                  "tag": "a"
+                 },
+                 {
+                  "class": "topicurl",
+                  "tag": "span",
+                  "text": "(news.ycombinator.com)"
+                 }
+                ],
+                "class": "topictitle link",
+                "tag": "div"
+               },
+               {
+                "children": [
+                 {
+                  "id": "tp22743",
+                  "tag": "span",
+                  "text": "2"
+                 },
+                 {
+                  "href": "/user?id=neo",
+                  "tag": "a",
+                  "text": "GN⁺"
+                 },
+                 {
+                  "tag": "span",
+                  "text": "5시간전",
+                  "title": "2025-08-27 05:34"
+                 },
+                 {
+                  "id": "unvote22743",
+                  "tag": "span"
+                 },
+                 {
+                  "children": [
+                   {
+                    "href": "javascript:fav(22743, \u0026#34;favorite\u0026#34;)",
+                    "tag": "a",
+                    "text": "★ favorite"
+                   }
+                  ],
+                  "id": "fav22743",
+                  "tag": "span",
+                  "text": "|"
+                 },
+                 {
+                  "href": "topic?id=22743",
+                  "onclick": "scrollToComments(event)",
+                  "tag": "a",
+                  "text": "댓글 1개"
+                 }
+                ],
+                "class": "topicinfo",
+                "tag": "div",
+                "text": "P by |"
+               },
+               {
+                "children": [
+                 {
+                  "children": [
+                   {
+                    "children": [
+                     {
+                      "children": [
+                       {
+                        "children": [
+                         {
+                          "tag": "strong",
+                          "text": "Apple M 시리즈"
+                         },
+                         {
+                          "tag": "strong",
+                          "text": "x86 칩"
+                         }
+                        ],
+                        "tag": "li",
+                        "text": "의 뛰어난 전력 효율과 성능이 기존 대비 큰 관심을 받음"
+                       },
+                       {
+                        "children": [
+                         {
+                          "tag": "strong",
+                          "text": "x86 아키텍처"
+                         },
+                         {
+                          "tag": "strong",
+                          "text": "혁신"
+                         }
+                        ],
+                        "tag": "li",
+                        "text": "많은 개발자들이 가 왜 같은 수준의 을 보여주지 못하는지 궁금함"
+                       },
+                       {
+                        "children": [
+                         {
+                          "tag": "strong",
+                          "text": "x86 설계"
+                         },
+                         {
+                          "tag": "strong",
+                          "text": "호환성"
+                         }
+                        ],
+                        "tag": "li",
+                        "text": "는 오랜 기간 동안의 과 복잡성 때문에 변화가 제한적임"
+                       },
+                       {
+                        "children": [
+                         {
+                          "tag": "strong",
+                          "text": "SoC 통합"
+                         },
+                         {
+                          "tag": "strong",
+                          "text": "특화된 하드웨어 가속기"
+                         }
+                        ],
+                        "tag": "li",
+                        "text": "Apple은 과 를 통해 성능의 큰 향상을 이루었음"
+                       },
+                       {
+                        "children": [
+                         {
+                          "tag": "strong",
+                          "text": "효율성"
+                         },
+                         {
+                          "tag": "strong",
+                          "text": "Apple M 시리즈"
+                         }
+                        ],
+                        "tag": "li",
+                        "text": "x86 칩 제조사들도 개선을 시도 중이나, 구조적 한계로 인해 와 동일한 진보를 빠르게 이루기 어려움"
+                       }
+                      ],
+                      "tag": "ul"
+                     },
+                     {
+                      "tag": "hr"
+                     },
+                     {
+                      "tag": "h2",
+                      "text": "배경 설명"
+                     },
+                     {
+                      "children": [
+                       {
+                        "tag": "strong",
+                        "text": "M 시리즈 칩"
+                       },
+                       {
+                        "tag": "strong",
+                        "text": "x86 아키텍처"
+                       },
+                       {
+                        "tag": "strong",
+                        "text": "성능"
+                       },
+                       {
+                        "tag": "strong",
+                        "text": "전력 효율"
+                       },
+                       {
+                        "tag": "strong",
+                        "text": "Intel"
+                       },
+                       {
+                        "tag": "strong",
+                        "text": "AMD"
+                       }
+                      ],
+                      "tag": "p",
+                      "text": "Apple의 은 2020년 이후 맥북 및 데스크탑 제품군에 탑재되어, 기존 CPU 대비 뛰어난 과 로 많은 주목을 받음. 이러한 변화 이후 개발자, IT 업계 종사자들은 x86 계열의 과 칩이 왜 여전히 Apple의 M 시리즈에 못 미치는지에 많은 궁금증을 가짐."
+                     },
+                     {
+                      "tag": "h2",
+                      "text": "x86 아키텍처의 한계"
+                     },
+                     {
+                      "children": [
+                       {
+                        "children": [
+                         {
+                          "tag": "strong",
+                          "text": "과거의 호환성"
+                         },
+                         {
+                          "tag": "strong",
+                          "text": "기능 확장"
+                         }
+                        ],
+                        "tag": "li",
+                        "text": "x86 프로세서는 을 유지하는 동시에 을 해왔음"
+                       },
+                       {
+                        "tag": "li",
+                        "text": "수십 년간의 구조적 복잡성으로 인해 설계 혁신의 속도가 제한적임"
+                       },
+                       {
+                        "children": [
+                         {
+                          "tag": "strong",
+                          "text": "호환성"
+                         }
+                        ],
+                        "tag": "li",
+                        "text": "다양한 하드웨어 및 소프트웨어 생태계와의 은 중요한 장점이나, 근본적인 성능 개선에는 제약 요인으로 작용함"
+                       }
+                      ],
+                      "tag": "ul"
+                     },
+                     {
+                      "tag": "h2",
+                      "text": "Apple M 시리즈의 접근 방식"
+                     },
+                     {
+                      "children": [
+                       {
+                        "children": [
+                         {
+                          "tag": "strong",
+                          "text": "ARM 아키텍처"
+                         },
+                         {
+                          "tag": "strong",
+                          "text": "SoC(System-on-a-Chip)"
+                         }
+                        ],
+                        "tag": "li",
+                        "text": "Apple은 기반으로 완전히 새로운 설계를 진행함"
+                       },
+                       {
+                        "children": [
+                         {
+                          "tag": "strong",
+                          "text": "하드웨어 가속기"
+                         }
+                        ],
+                        "tag": "li",
+                        "text": "자체 설계한 (예: 머신러닝, 미디어 인코딩/디코딩 등 전용 유닛)로 특정 작업 시 특별한 효율성과 성능 제공함"
+                       },
+                       {
+                        "children": [
+                         {
+                          "tag": "strong",
+                          "text": "통합형 메모리 아키텍처(UMA)"
+                         },
+                         {
+                          "tag": "strong",
+                          "text": "대역폭"
+                         },
+                         {
+                          "tag": "strong",
+                          "text": "전력 효율"
+                         }
+                        ],
+                        "tag": "li",
+                        "text": "를 포함해 CPU·GPU·RAM을 단일 칩에 집적함으로써 과 면에서 큰 강점 보유함"
+                       }
+                      ],
+                      "tag": "ul"
+                     },
+                     {
+                      "tag": "h2",
+                      "text": "향후 전망"
+                     },
+                     {
+                      "children": [
+                       {
+                        "children": [
+                         {
+                          "tag": "strong",
+                          "text": "x86 제조사"
+                         }
+                        ],
+                        "tag": "li",
+                        "text": "Intel, AMD 등 들도 전력 효율 및 성능 개선에 투자 중임"
+                       },
+                       {
+                        "children": [
+                         {
+                          "tag": "strong",
+                          "text": "애플리케이션 호환성"
+                         },
+                         {
+                          "tag": "strong",
+                          "text": "시장 점유율"
+                         },
+                         {
+                          "tag": "strong",
+                          "text": "생태계 지원"
+                         }
+                        ],
+                        "tag": "li",
+                        "text": ", , 과 같은 요소로 인해 x86의 변화 속도는 상대적으로 느림"
+                       },
+                       {
+                        "children": [
+                         {
+                          "tag": "strong",
+                          "text": "노트북"
+                         },
+                         {
+                          "tag": "strong",
+                          "text": "데스크탑 시장"
+                         }
+                        ],
+                        "tag": "li",
+                        "text": "Apple M 시리즈 아키텍처가 및 에 새로운 표준을 제시함에 따라, 앞으로의 컴퓨팅 아키텍처 발전 방향에 대한 관심이 높아지고 있음"
+                       }
+                      ],
+                      "tag": "ul"
+                     }
+                    ],
+                    "id": "topic_contents",
+                    "tag": "span"
+                   }
+                  ],
+                  "tag": "div"
+                 }
+                ],
+                "class": "topic_contents",
+                "tag": "div"
+               }
+              ],
+              "class": "topic",
+              "tag": "div"
+             },
+             {
+              "children": [
+               {
+                "action": "/comments",
+                "children": [
+                 {
+                  "children": [
+                   {
+                    "class": "comment_textarea",
+                    "id": "contents",
+                    "name": "contents",
+                    "placeholder": "댓글 적기",
+                    "required": "",
+                    "rows": "5",
+                    "style": "width:100%",
+                    "tag": "textarea"
+                   }
+                  ],
+                  "class": "group",
+                  "tag": "div"
+                 },
+                 {
+                  "children": [
+                   {
+                    "tag": "div"
+                   },
+                   {
+                    "class": "comment_button",
+                    "tag": "input",
+                    "type": "submit",
+                    "value": "댓글 달기"
+                   },
+                   {
+                    "class": "inline watch",
+                    "id": "authmsg",
+                    "style": "display: none; grid-column: 1 / 2;",
+                    "tag": "div",
+                    "text": "인증 이메일 클릭후 다시 체크박스를 눌러주세요"
+                   }
+                  ],
+                  "class": "group comment_button_box watch_box",
+                  "tag": "div"
+                 },
+                 {
+                  "name": "tid",
+                  "tag": "input",
+                  "type": "hidden",
+                  "value": "22743"
+                 },
+                 {
+                  "id": "userid",
+                  "tag": "input",
+                  "type": "hidden",
+                  "value": ""
+                 }
+                ],
+                "class": "write_comment",
+                "method": "POST",
+                "onsubmit": "return replace2spaces(\u0026#39;contents\u0026#39;)",
+                "tag": "form"
+               }
+              ],
+              "class": "comment_form",
+              "tag": "div"
+             }
+            ],
+            "class": "topic-table",
+            "tag": "div"
+           },
+           {
+            "children": [
+             {
+              "id": "userid",
+              "tag": "input",
+              "type": "hidden",
+              "value": ""
+             },
+             {
+              "id": "verified",
+              "tag": "input",
+              "type": "hidden",
+              "value": "?\u0026gt;"
+             },
+             {
+              "children": [
+               {
+                "children": [
+                 {
+                  "children": [
+                   {
+                    "children": [
+                     {
+                      "tag": "span",
+                      "text": "▲"
+                     }
+                    ],
+                    "class": "upvote",
+                    "href": "javascript:votec(42986, \u0026#34;up\u0026#34;);",
+                    "tag": "a"
+                   }
+                  ],
+                  "class": "vote",
+                  "id": "votec42986",
+                  "tag": "span"
+                 }
+                ],
+                "class": "vote",
+                "tag": "div"
+               },
+               {
+                "children": [
+                 {
+                  "href": "/user?id=neo",
+                  "tag": "a",
+                  "text": "GN⁺"
+                 },
+                 {
+                  "href": "comment?id=42986",
+                  "tag": "a",
+                  "text": "5시간전"
+                 },
+                 {
+                  "id": "unvotec42986",
+                  "tag": "span"
+                 },
+                 {
+                  "children": [
+                   {
+                    "class": "commentfold",
+                    "tag": "span",
+                    "text": "[-]"
+                   }
+                  ],
+                  "href": "javascript:child_toggle(42986, 0);",
+                  "tag": "a"
+                 }
+                ],
+                "class": "commentinfo",
+                "tag": "div"
+               },
+               {
+                "children": [
+                 {
+                  "children": [
+                   {
+                    "children": [
+                     {
+                      "href": "https://news.ycombinator.com/item?id=45019483",
+                      "tag": "a",
+                      "text": "Hacker News 의견"
+                     }
+                    ],
+                    "tag": "h6"
+                   },
+                   {
+                    "children": [
+                     {
+                      "children": [
+                       {
+                        "tag": "p",
+                        "text": "수많은 훌륭한 댓글들이 각 회사에 대해 이야기하고 있음 – 예를 들어 Apple은 모바일을 중심으로 수직적이고 닫힌 생태계를 구축했고, Microsoft는 데스크탑 중심으로 수평적이고 개방적으로 접근했음. 수천 명이 수십 년간 쏟아부은 수많은 ‘작은 최적화’들이 있었음. Intel은 항상 ‘더 많은 것이 더 낫다’는 방식을 따랐고, ARM은 ‘덜 쓸수록 이득’이라는 철학이었음. Intel이 아주 오래 우세했으며, 솔직히 x86이 아닌 아키텍처가 단일 코어 정수 성능에서 경쟁하는 모습은 상상도 못했음. 더 오래 전에는 1MHz짜리 6502 칩이 거의 8비트임에도 4MHz Z80과 거의 맞먹는 성능을 보여주기도 했는데, 항상 \u0026#34;어떻게 이게 가능한 건가?\u0026#34;라는 의문이 남았음"
+                       }
+                      ],
+                      "tag": "li"
+                     },
+                     {
+                      "children": [
+                       {
+                        "children": [
+                         {
+                          "href": "https://www.youtube.com/watch?v=jYSMfRKsmOU",
+                          "tag": "a",
+                          "text": "여기 영상"
+                         }
+                        ],
+                        "tag": "p",
+                        "text": "배터리 효율성은 기술 스택 전반에 걸친 수많은 작은 최적화에서 나오며, 결국은 CPU 사용을 최소화하는 것이 핵심임. 그래서 ISA나 공정도는 배터리 수명에 큰 영향이 없음. CPU를 완전히 활용하여 고정된 작업을 수행할 때 AI340, M1 모두 비슷한 에너지 효율을 보여줌. 이런 상황이 배터리 수명에 영향을 주는 건 Blender 렌더나 대형 컴파일, 게이밍 같은 고부하 작업일 때임. 배터리 게임 벤치마크를 예로 들면, M1 Air는 에서 2.5시간 버팀. x86 노트북과 비슷하거나 오히려 더 짧은 수치임. 설정을 낮추어 CPU와 GPU를 대기 상태로 두면 바로 10시간 이상으로 늘어남. 5년 정도 된 Qualcomm 칩은 훨씬 느리고 효율도 떨어지지만, 발열도 적고 전력 소모도 미미함. 즉, M1이 빠른 것은 맞지만, 배터리 효율이 압도적인 이유는 철저히 CPU 외적인 설계 요소에 있음. AMD와 Intel이 놓치고 있는 부분임. 참고로, 크롬에서 탭을 많이 열면 노트북 하단이 뜨거워지고, 유튜브 영상을 틀면 팬이 도는 경우가 많음. 이는 리눅스에서 하드웨어 가속(특히 비디오 디코딩) 설정이 안 돼 있는 경우가 흔하며, fw16에서 GPU 비디오 디코딩을 직접 활성화한 뒤에는 유튜브에서 팬 소리를 듣지 못했음"
+                       },
+                       {
+                        "children": [
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "Apple의 낮은 전력 소모의 큰 이유는 iPhone임. Apple은 수년간 아이폰용 칩의 효율과 성능을 차근차근 개선해왔음. Intel이나 AMD는 데스크탑 위주였기에 전력 효율에 집중하지 않았음. Apple의 칩이 충분히 좋아짐에 따라 노트북으로 확장할 수 있었던 반면, x86은 더이상 경쟁할 수 없는 수준이었음. 그리고 아이폰은 역사상 가장 수익성이 좋은 제품이기에 Apple은 막대한 R\u0026amp;D와 인재 영입에 투자할 수 있었고, 그 결과 최고의 반도체 엔지니어 팀을 세울 수 있었음"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "Apple은 하드웨어와 OS, 그리고 자사 앱까지 수직적으로 통합되어 디바이스 전체를 최적화할 수 있음. 반면 Wintel 진영은 서로 책임을 미루기 바빠 어떤 문제가 생기면 명확한 해결이 쉽지 않음 – 예를 들어 노트북 슬립 모드 오작동과 같이 제조사, Microsoft, 하드웨어 벤더가 서로 책임을 전가하는 일이 빈번함"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "비디오 전송 업무에 오래 종사해 봤기에, 하드웨어 가속이 가능한 환경에서 소프트웨어 디코딩을 강제하는 의사결정자가 있다면, 이런 CPU 위에 맨살로 앉아 보라고 법으로 정하고 싶음. 사용자에게 몰아내는 그 피해가 실제로 크다고 생각함"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "Apple Silicon이 배터리 효율이 뛰어난 이유가 CPU 외적 요소만큼 CPU의 부하 효율성에도 있음. CPU가 빠르게 작업을 끝내고 슬립 상태로 돌입(race to sleep)할 수 있을수록 전력 효율이 높아짐. Apple Silicon은 부하 시 AMD와 Intel보다 2~4배 더 효율적이며, 최고속도도 더 높음. Apple 노트북이 효율적으로 느껴지는 또 다른 이유는 진정한 big.Little 구조를 채택한 덕임. 반면 AMD와 Intel의 작은 코어들은 면적 효율에만 집중되어 실제 실사용에선 효용성이 낮음. 인텔은 벤치마크용으로 작은 코어 수를 늘리지만, 실제 애플리케이션은 오히려 빠른 코어 여러 개를 선호함"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "Android 커널을 보면 차이가 명확함. 기본 Linux 커널과 비교하면 전체적으로 전력 관리를 위해 많은 서브시스템, 스케줄러까지 아주 세밀하게 튜닝됨"
+                           }
+                          ],
+                          "tag": "li"
+                         }
+                        ],
+                        "tag": "ul"
+                       }
+                      ],
+                      "tag": "li"
+                     },
+                     {
+                      "children": [
+                       {
+                        "tag": "p",
+                        "text": "AMD는 이제 M4 Pro와 거의 대등한 성능과 전력 효율을 가진 Max 395+ 칩을 보유하고 있음(Framework Desktop 등에서 사용됨). 아직 Apple을 완전히 능가하진 못했지만, AMD는 이제 충분히 경쟁력 있는 옵션을 만듦"
+                       },
+                       {
+                        "children": [
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "M4 Pro는 M3 Pro에 비해 전력 대비 성능 면에서 오히려 퇴보함. 아직 M4 Max의 다이샷이 공개되지 않아 많은 추정이 있는데, 아마 수율 문제로 M4 Pro를 사실상 M4 Max의 하위 등급으로 만든 결과 누설 전류 등 여러 문제와 트레이드오프가 생긴 것으로 보임. Hardware Canucks에서 395 칩의 모바일 버전 리뷰(Asus ROG Flow F13)도 참고할 만함. 395가 TDP 70W에서 동작하면 성능/전력 비율이 최적화됨. Cinebench R24 기준으로 M4 Pro가 더 높은 점수를 기록하며, 전력 소모도 약 30% 더 적음. 단일코어 벤치마크에서도 M4 Pro가 35% 우위임. GPU 성능은 프로덕티비티 앱에 따라 엇비슷하나, 게임은 x86+AMD 조합이 일반적으로 더 좋음. 배터리 수명은 웹 브라우징 기준 M4 Pro가 50% 더 좋고, 단순 동영상 재생 기준으로는 2배 이상 더 뛰어남. 풀로드 시는 395가 약간 앞서지만 실제로는 TDP를 크게 낮춰서 그런 결과임"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "새 노트북에 AMD Ryzen 9 365를 탑재했는데, 배터리 지속시간과 성능 모두 만족스러움. M3(일반)와 비슷한 느낌임"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "해당 칩 구매를 고민했으나, 지금은 Framework Desktop이나 아주 비싼 태블릿 등 극소수 제품에만 들어가 있어서 실질적으로 선택이 어려운 상황임"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "children": [
+                             {
+                              "href": "https://frame.work/laptop16?tab=whats-new",
+                              "tag": "a",
+                              "text": "상세 링크"
+                             }
+                            ],
+                            "tag": "p",
+                            "text": "Framework 16 모델에서 AMD Ryzen AI 9 HX 370, AI 7 350이 오늘부로 라인업에 들어감"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "14\u0026#34; HP Zbook Ultra G1A(우분투 인증), Asus Z13 등에서도 해당 칩을 사용할 수 있음. Asus Z13은 리눅스 호환성이 확실치 않음"
+                           }
+                          ],
+                          "tag": "li"
+                         }
+                        ],
+                        "tag": "ul"
+                       }
+                      ],
+                      "tag": "li"
+                     },
+                     {
+                      "children": [
+                       {
+                        "tag": "p",
+                        "text": "2020년형 MacBook Air M1 (16GB RAM, 512GB SSD)를 3년간 쓴 후, MacBook Pro M3 Pro (36GB RAM, 2TB)로 업그레이드해서 메인 머신으로 쓰고 있음(2대의 모니터를 TB4 독으로 연결). IT 분야에서 일하고 있고, 회사의 모든 신규 기기를 검수함. 가장 큰 특징은 실제로 M1 Air와 경쟁 가능한 비즈니스 노트북(ARM, AMD, Intel 불문)이 전혀 없었다는 점임. M3 Pro는 비교가 안 됨. 엄청난 가격과 호환성 문제도 있지만, 동료들은 MacBook에 Windows나 Linux를 설치한 후 Parallels로 VM을 돌려 씀. 웃긴 것은 Windows 11이나 Linux를 VM에서 돌리는 것이 Lenovo, HP, Dell 등의 비즈니스 노트북에서 기본으로 돌리는 것보다 더 빠르고, 조용하며 배터리도 오래 간다는 것임. 케이스마다 다르겠지만, IMHO 지금은 Mac이 진리임. Linux나 Windows를 써야 해도 말임"
+                       },
+                       {
+                        "children": [
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "MacBook Air M1 8GB로 개인 업무를 처리하고 있는데, Docker Desktop과 VS Code 모두 32GB RAM의 Windows T14보다 더 잘 돌아감(Windows의 각종 엔터프라이즈 제약 탓이 큼). Linux나 덜 제한적인 Windows면 더 나을 수도 있음. Nvidia Now로 게이밍도 가능한데, 진지한 게임용으로는 추천하진 않음"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "\u0026#34;요즘 Mac 말고 대안이 없다\u0026#34;는 말은 노트북만 쓰거나 싱글코어 성능만 중시할 때나 맞는 말임. 컴퓨팅 세계는 노트북뿐만 아니라 데스크탑, 워크스테이션, 영상/음악/3D 디자인 등 뛰어난 PCI 대역폭, 멀티 SSD/ GPU 확장성, 그리고 멀티코어 처리 성능 등 Mac으로는 도달할 수 없는 영역이 훨씬 많음"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "성능 대비 가격을 본다면, 노트북에서는 Apple(특히 MacBook)이 최강이지만 데스크탑 시장에서는 승부가 아님. Apple 하드웨어의 촉감, 완성도는 노트북 분야에서 중요한데, 데스크탑이나 움직임 없는 환경에선 다른 옵션이 많음"
+                           }
+                          ],
+                          "tag": "li"
+                         }
+                        ],
+                        "tag": "ul"
+                       }
+                      ],
+                      "tag": "li"
+                     },
+                     {
+                      "children": [
+                       {
+                        "tag": "p",
+                        "text": "Apple은 하드웨어와 소프트웨어 스택을 완성도 있게 최적화해왔음. 이를 할 수 있는 기업은 규모상 드물며, Apple은 같은 커널을 Watch부터 Mac Studio까지 사용함. x86은 오랜 레거시 덕분에, 모든 연산이 x86 명령어에서 RISC형 마이크로-오퍼레이션으로 번역됨. 이 ‘번역’ 페널티는 Apple이 덜 부담하며, Rosetta 2도 이런 방식으로 x86 코드의 ‘유사 네이티브’ 성능을 낼 수 있음. 또, Apple Silicon은 8-wide 슈퍼스칼라 설계(대형 out-of-order 버퍼), 통합 메모리, 패키징 등 다양한 구조 차이가 있음. AMD Ryzen AI Max 300도 같은 방식(유니파이드 메모리, 패키지 일체화)으로 따라잡으려 하지만, 근본적 차이로 인해 미세하게 부족함. 정말 극강의 전력 효율이 필요하면 Apple이 최선이며, 절대적인 최고 성능이 필요하다면 Ryzen Threadripper, EPYC, 기타 하이엔드 AMD 칩이 답임"
+                       },
+                       {
+                        "children": [
+                         {
+                          "children": [
+                           {
+                            "children": [
+                             {
+                              "href": "https://youtu.be/2jEdpCMD5E8?t=185",
+                              "tag": "a",
+                              "text": "출처1"
+                             },
+                             {
+                              "href": "https://youtu.be/ymoiWv9BF7Q?t=670",
+                              "tag": "a",
+                              "text": "출처2"
+                             }
+                            ],
+                            "tag": "p",
+                            "text": "Apple Silicon이 효율 좋은 이유는 소프트웨어 스택만의 덕이 아님. 동일 전력 한계(power envelope)에서 업계 표준 벤치마크(SPECint, SPECfp, Geekbench, Cinebench 등) 1T 결과가 월등함. x86도 마이크로-옵스를 적극 활용해 성능을 끌어올리고 있음. x86도 이미 6~9와이드 디코드 구조를 갖추었고, 4와이드라는 오해는 이제 구시대임. 대형 버퍼/L1/L2/L3 캐시는 어느 마이크로아키텍처나 도입할 수 있고, 중요성은 실제 이득이 얼마나 되느냐임. Ryzen AI Max 300(스트릭스 할로)는 여전히 1코어 성능/전력에서 Apple을 따라잡지 못함. 팬리스 iPad M4와 AMD 9950X, 인텔 285K 벤치마크 스코어를 보면, M4는 대략 7W로 1T 성능을 내지만 9950X, 285K는 1코어당 20W 이상 필요함. 공정의 이점만으로 이런 차이를 설명 불가임. 완전히 다른 수준임 ,"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "children": [
+                             {
+                              "href": "https://dougallj.github.io/applecpu/firestorm.html",
+                              "tag": "a",
+                              "text": "상세 설명"
+                             }
+                            ],
+                            "tag": "p",
+                            "text": "Apple CPU도 명령어를 마이크로-옵스로 디코딩함"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "x86 명령어를 RISC 스타일 마이크로-옵스로 변환하는 것이 ‘페널티’라는 주장은 잘못임. 모든 슈퍼스칼라 CPU(ARM, RISC-V 포함)가 다 하는 표준적 구조임. 이 신화는 RISC 진영이 x86은 슈퍼스칼라 설계가 불가능하다고 여겼던 역사에서 온 것임"
+                           }
+                          ],
+                          "tag": "li"
+                         }
+                        ],
+                        "tag": "ul"
+                       }
+                      ],
+                      "tag": "li"
+                     },
+                     {
+                      "children": [
+                       {
+                        "tag": "p",
+                        "text": "Apple은 자사의 소프트웨어/하드웨어 스택을 다수 사용자의 니즈에 맞추어 수십 년간 최적화해옴. 반면 Intel과 AMD는 훨씬 넓은 시장을 겨냥해야 함. Apple은 레거시 지원을 과감히 버리곤 했는데, Intel/AMD는 여전히 DOS 등 고대 백워드 호환성을 요구하는 기업 고객 요구가 큼. x86의 표준화, 더 많은 확장들로 인해 효율/성능 최적화의 한계도 빨리 다다르며, 더 이상 혁신적인 개선이 쉽지 않음. x86 플랫폼 소프트웨어는 최적화가 거의 안 돼 있음 – 언제나 다음 세대에 더 많은 코어나 클럭을 기다릴 수 있기 때문임. 결국 Apple 하드웨어는 목적에 최적화된 설계고, x86은 범용적이지만 특별화는 어려웠음. 80~90년대 SPARC/POWER/Itanium 시절도 생각나는데, 특수 목적 설계가 해당 용도에선 항상 범용 칩을 앞섰지만(대신 호환성 부족), Apple ARM vs x86 대립 구도도 비슷함"
+                       },
+                       {
+                        "children": [
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "Intel이야말로 백워드 호환성을 전략으로 택한 회사임. 내일이라도 기존과 완전히 다른 ‘레거시용’과 ‘현대용’ 설계를 나누기로 할 수 있었지만, 그러지 않았음. Apple은 세대를 넘나드는 강력한 아키텍처 전환을 성공적으로 해냄. OS도 직접 갖고 있고, 독립 개발자들의 소프트웨어 업그레이드를 강제할 수 있는 능력 덕분에, 비호환성 업데이트(성능 최적화 포함)도 가능해짐"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "Apple Silicon이 SPARC 같은 특수 칩이 아니라 범용 SoC/SiP임을 강조하고 싶음. Intel도 충분히 SoC/SiP에 투자할 잠재력이 있음. 솔직히, x86이 실제로 시장의 요구를 반영해 재탄생할 여지는 있다고 봄. Intel이 윈도우/MS와 손을 잡고 \u0026#34;새로운 방향으로 혁신적인 아키텍처를 만들겠다\u0026#34;고 하면, 초기에는 에뮬레이션으로 일시적 성능저하가 있을 수 있지만 언젠가는 업계가 따라올 것임. Apple은 이런 아키텍처 변환을 20년 간 두 번이나 단행했고, 그때마다 시장이 잘 따라감. 더군다나 지금은 프로세서, ISA, 컴파일러 분야에서 x86 등장 시기보다 훨씬 더 많은 걸 알고 있음. RISC, SoC, SiP가 이미 검증됐고, 고객들도 모바일부터 데이터센터까지 전력/성능 곡선 개선을 원함. Intel은 현 시장 방향에 R\u0026amp;D를 발빠르게 집중해야 하며, 기존 x86 라인은 남겨두되 혁신을 멈추지 말아야 함"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "Apple은 백워드 호환성을 ‘버렸다’고 보기보다, 매번 훌륭한 에뮬레이션 솔루션을 마련해 수년간 주요 소프트웨어가 전환기에 계속 돌아가게끔 했음. 40년된 구식 코드 부담을 짊어지는 것보다 낫다고 생각함"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "Apple이 주요 사용자 요구에 맞춰 하드웨어/소프트웨어 스택을 오랜 세월 최적화해온 것은 맞으나, 아키텍처가 바뀔 때마다 기존 최적화가 상당 부분 무의미해지지 않을까 궁금함. 그리고 ARM 소프트웨어도 x86만큼이나 최적화되어야 경쟁이 가능함"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "이런 복합적인 현실이 성능 격차의 ‘외관’이 아니라 진짜 현실임에 가까움"
+                           }
+                          ],
+                          "tag": "li"
+                         }
+                        ],
+                        "tag": "ul"
+                       }
+                      ],
+                      "tag": "li"
+                     },
+                     {
+                      "children": [
+                       {
+                        "tag": "p",
+                        "text": "비디오 재생 시 쿨러 팬이 도는 것은 Linux 환경에서 GPU 설정 문제가 큼. Chrome 역시 배경 프로세스, 비효율적 렌더링, 디스크 IO까지 전력 소모가 굉장함. Chrome 최신버전 사용 및 \u0026#34;메모리 세이빙\u0026#34; 기능 활성화가 도움 될 수 있음. 스케줄러 변경, 인터럽트 빈도 조절 등도 추가 최적화가 가능함. 내 경우 Windows에서 12배, 최적화 후 6배까지 Linux에서 배터리 수명이 줄어드는 경험이 있었음(아직도 많이 부족함). x86이 ARM보다 전력적으로 덜 효율적인 건 맞지만, 배터리가 빨리 닳는 진짜 원인은 대부분 Linux 파워 드라이버 등 시스템 설정 미비에 있다고 봄"
+                       },
+                       {
+                        "children": [
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "x86이 ARM보다 본질적으로 덜 효율적이라는 건 신화임. x86과 ARM은 시장 타깃이 달랐을 뿐이고, 과거 효율성 차이는 ISA 자체가 아니라 시장 상황, 제품 전략의 차이에서 기인한다고 봄"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "배터리 수명이 12배, 6배 차이난다는 건 뭔가 심각한 이상이 있음"
+                           }
+                          ],
+                          "tag": "li"
+                         }
+                        ],
+                        "tag": "ul"
+                       }
+                      ],
+                      "tag": "li"
+                     },
+                     {
+                      "children": [
+                       {
+                        "tag": "p",
+                        "text": "Apple의 칩은 크고 비싸면서도 전력 효율을 철저히 추구함. AMD와 Intel은 고성능용 칩일수록 고전력에 맞춰 최적화하고, 저전력 칩은 비용/면적에 신경을 씀. 칩 면적(비용)을 충분히 투자하면 Power-Performance-Area 삼각형에서 나머지 지표도 개선됨. 하지만 Apple 경쟁사들 입장에서는 큰/비싼 칩을 모바일용으로 만들어 배치하기 어려움"
+                       },
+                       {
+                        "children": [
+                         {
+                          "tag": "li",
+                          "text": "실제로 Apple의 성능 코어는 AMD Zen 코어와 크기가 차이 없으므로, ‘칩이 커서 빠르다’는 건 오해임. Apple Silicon이 커 보이는 것은 GPU가 함께 들어가 있기 때문임. x86에서 디스크리트 GPU를 함께 고려하면 오히려 M 시리즈보다 다이 면적이 더 커짐. 예를 들어 Intel Lunar Lake는 물리적으로 M4보다 크지만 CPU/GPU/NPU 모두 느리고 비효율적임. AMD Strix Halo도 M4 Pro보다 1.5배 크지만 효율과 싱글스레드 성능, GPU 성능은 떨어짐(멀티스레드만 조금 앞섬)"
+                         }
+                        ],
+                        "tag": "ul"
+                       }
+                      ],
+                      "tag": "li"
+                     },
+                     {
+                      "children": [
+                       {
+                        "tag": "p",
+                        "text": "Framework 같은 제품은 철학적으로 마음에 들지만, M1 Pro가 워낙 만족스러워 구입을 미루고 있음. 예전 Intel Mac 시절 Asus Zephyrus G14 같은 평가 좋은 노트북도 사봤지만, 실제로는 만족하지 못해 6개월도 안 되어 팔았고, Apple 생태계를 벗어나는 걸 주저하게 만드는 이유임. Apple 하드웨어의 완성도는 x86 노트북 어디서도 못 느꼈음"
+                       },
+                       {
+                        "children": [
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "최근 M1 MacBook Pro 15\u0026#34;에서 M4 Max Pro 16\u0026#34;으로 업그레이드했는데, 빌드 속도가 월등히 빨라진 점에 깊은 인상을 받음(4분 → 40초). 병렬 처리, Docker 활용이 많은 대형 프로젝트에서 여러 DB, Redis, Elasticsearch까지 때려도 훨씬 빠름. 고가지만 3년 리스하면 월 100유로 정도라 투자 가치 충분함. 예전엔 Intel i5 리눅스 랩탑을 썼는데, 느려 터져서 빌드 타임마다 노트북을 쓸 수 없었음. 하드웨어 품질, 트랙패드, 화면, 쿨링, 배터리, 디자인까지 모든 면에서 만족스러움. 고가지만 그만한 값어치가 있다고 봄. 사람들은 비싼 출퇴근 자동차는 아무렇지 않게 사면서, 하루종일 쓰는 하드웨어에는 비용을 아끼는 이 현실이 이해 안 됨"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "\u0026#39;폴리시(마무리 마감)\u0026#39;라는 말이 나오는데, 그 \u0026#39;유광 거울 같은\u0026#39; 디스플레이도 확실히 너무 반짝여서 실제 컨텐츠보다 내 얼굴이 더 잘 보임"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "나의 경우 오히려 Apple 하드웨어가 못 참겠음. 대신 Asus나 게이밍 랩탑에는 관심 없음"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "제조사들이 품질에 신경을 쓰지 않는 경우가 흔함. 예전에 잘 팔리는 Acer 랩탑도 써봤지만 여러 불편함으로 결국 팔고, MacBook Air로 갈아탄 뒤 오래 썼음. Asus NUC 미니PC도 드라이버가 기본으로 깔려 있지 않아 골치였음. 똑같은 제품이라도 하드웨어 구성에 따라 드라이버가 다르고, 초보자는 세팅 자체가 불가능할 듯"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "2020 Zephyrus G14도 리뷰 보고 샀으나, 2년까지는 쓸만했는데 그 뒤부터 통합 GPU가 항상 최대 속도로 돌아가고, 슬립 모드가 실제로는 \u0026#39;쓸데없이 뜨겁고 팬만 도는 상태\u0026#39;가 된 등 이상한 문제가 발생함(Windows 이슈일 수도 있음). 제조사도 새 모델 나온 뒤엔 펌웨어 업데이트에 더이상 신경 안 씀. 현재 Framework 16을 사용 중인데, 스크린/포트 등 직접 관리하거나 비주류 설정이 필요해서 샀고, 메인스트림 사용자에겐 비추임"
+                           }
+                          ],
+                          "tag": "li"
+                         }
+                        ],
+                        "tag": "ul"
+                       }
+                      ],
+                      "tag": "li"
+                     },
+                     {
+                      "children": [
+                       {
+                        "tag": "p",
+                        "text": "Apple의 하드웨어/소프트웨어는 극도로 최적화되어 산업 최고 수준의 부품으로 이루어져 있음. 대량 판매와 공급망 최적화로 가격도 경쟁력 있음. Framework는 모듈성과 유연성에 초점을 맞췄고 소프트웨어도 하드웨어에 비해 최적화되지 않음. 범용 컴퓨터로 Apple을 이기는 것은 불가능에 가깝고, 패러다임이 완전히 바뀌지 않는 이상 변하지 않을 것임. Framework는 커스텀 OS나 하드웨어 유연성이 중요한 특수 목적 사용자에게 적합함"
+                       },
+                       {
+                        "children": [
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "Apple은 대량 판매와 체계화된 공급망 덕에 하드웨어를 저렴하게 (비해) 팔 수 있다고 하지만, 독점적 생태계, 앱 검열 및 수수료, 수리 방해 등 부정적인 측면도 무시할 수 없음"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "OS 및 공급 체계를 통제하며, 필요하다면 수십억 달러를 들여 오직 자사 요구에만 최적화된 칩을 설계할 수 있었음. 모두가 x86이 ARM에 밀리리라 예상치 못했지만, 어쩌면 Intel의 강력한 마케팅 탓도 컸음"
+                           }
+                          ],
+                          "tag": "li"
+                         },
+                         {
+                          "children": [
+                           {
+                            "tag": "p",
+                            "text": "\u0026#34;Apple이 범용 노트북 시장에서 이길 수밖에 없다\u0026#34;는 건 싱글코어 위주 노트북에만 해당함. 진짜 무거운 작업이 필요한 곳에서는 Apple Silicon으로는 도달할 수 없는, 워크스테이션이나 서버가 필요함"
+                           }
+                          ],
+                          "tag": "li"
+                         }
+                        ],
+                        "tag": "ul"
+                       }
+                      ],
+                      "tag": "li"
+                     }
+                    ],
+                    "tag": "ul"
+                   }
+                  ],
+                  "class": "comment_contents",
+                  "id": "contents42986",
+                  "tag": "span"
+                 }
+                ],
+                "class": "commentTD",
+                "tag": "div"
+               },
+               {
+                "children": [
+                 {
+                  "class": "cmtreply u",
+                  "data-cid": "42986",
+                  "data-tid": "22743",
+                  "data-watch": "",
+                  "data-watchable": "",
+                  "href": "",
+                  "tag": "a",
+                  "text": "답변달기"
+                 }
+                ],
+                "class": "commentreply",
+                "tag": "div"
+               }
+              ],
+              "class": "comment_row",
+              "id": "cid42986",
+              "style": "--depth:0",
+              "tag": "div"
+             }
+            ],
+            "class": "comment_thread descendant",
+            "comment": "comments comments",
+            "id": "comment_thread",
+            "tag": "div"
+           }
+          ],
+          "tag": "article"
+         }
+        ],
+        "tag": "main"
+       },
+       {
+        "tag": "script",
+        "text": "document.addEventListener('keydown', function(event) {\n    if(event.key === \"Enter\" \u0026\u0026 (event.metaKey || event.ctrlKey)) {\n        var handled = false;\n        var replyForms = document.getElementsByClassName('write_reply');\n        if(replyForms.length \u003e 0) {\n            var replyForm = replyForms[0];\n            var replyContents = document.getElementById('reply_contents');\n            if (replyContents \u0026\u0026 replyContents.value.trim() !== \"\") {\n                if(replace2spaces('reply_contents')) {\n                submitReply(replyForm);\n                handled = true;\n            }\n            }\n        }\n\n        if (!handled) {\n            var forms = document.getElementsByClassName('write_comment');\n            if (forms.length \u003e 0) {\n                var form = forms[0];\n                var contents = document.getElementById('contents');\n                if (contents \u0026\u0026 contents.value.trim() !== \"\") {\n                    if(replace2spaces('contents')) {\n                        form.submit();\n                    }\n                }\n            }\n        }\n    }\n});"
+       },
+       {
+        "children": [
+         {
+          "children": [
+           {
+            "class": "u",
+            "href": "/guidelines",
+            "tag": "a",
+            "text": "사이트 이용법"
+           },
+           {
+            "class": "u",
+            "href": "/faq",
+            "tag": "a",
+            "text": "FAQ"
+           },
+           {
+            "class": "u",
+            "href": "/about",
+            "tag": "a",
+            "text": "About \u0026amp; ToS"
+           },
+           {
+            "class": "u",
+            "href": "/blog",
+            "tag": "a",
+            "text": "Blog"
+           },
+           {
+            "class": "u",
+            "href": "/lists",
+            "tag": "a",
+            "text": "Lists"
+           },
+           {
+            "class": "u",
+            "href": "/podcast",
+            "tag": "a",
+            "text": "Podcast"
+           },
+           {
+            "class": "u",
+            "href": "https://news.hada.io/rss/news",
+            "tag": "a",
+            "text": "RSS"
+           },
+           {
+            "class": "u",
+            "href": "/bookmarklet",
+            "tag": "a",
+            "text": "Bookmarklet"
+           },
+           {
+            "class": "u",
+            "href": "https://x.com/GeekNewsHada",
+            "rel": "me",
+            "tag": "a",
+            "text": "X (Twitter)"
+           },
+           {
+            "class": "u",
+            "href": "https://facebook.com/GeekNewsHada",
+            "tag": "a",
+            "text": "Facebook"
+           },
+           {
+            "class": "u keepall",
+            "href": "/slackbot",
+            "tag": "a",
+            "text": "Slack"
+           },
+           {
+            "class": "u keepall",
+            "href": "/jandibot",
+            "tag": "a",
+            "text": "잔디"
+           },
+           {
+            "class": "u keepall",
+            "href": "/discordbot",
+            "tag": "a",
+            "text": "Discord"
+           },
+           {
+            "class": "u keepall",
+            "href": "/teamsbot",
+            "tag": "a",
+            "text": "Teams"
+           },
+           {
+            "class": "u keepall",
+            "href": "/googlechatbot",
+            "tag": "a",
+            "text": "Google Chat"
+           },
+           {
+            "class": "u keepall",
+            "href": "/switbot",
+            "tag": "a",
+            "text": "Swit"
+           }
+          ],
+          "comment": "\u0026lt;a href=\u0026#39;release\u0026#39; class=u\u0026gt;Releases\u0026lt;/a\u0026gt;",
+          "tag": "div",
+          "text": "| | | |   긱뉴스봇 :"
+         },
+         {
+          "children": [
+           {
+            "action": "search",
+            "children": [
+             {
+              "class": "label",
+              "for": "q",
+              "tag": "label",
+              "text": "검색"
+             },
+             {
+              "class": "input",
+              "id": "q",
+              "maxlength": "30",
+              "name": "q",
+              "style": "width: 200px",
+              "tag": "input",
+              "type": "text"
+             }
+            ],
+            "class": "search-cse",
+            "method": "GET",
+            "tag": "form"
+           }
+          ],
+          "style": "width: fit-content; display: inline-block;",
+          "tag": "div"
+         }
+        ],
+        "tag": "footer"
+       }
+      ],
+      "tag": "body"
+     }
+    ],
+    "lang": "KR",
+    "tag": "html"
+   }
+  ],
+  "tag": ""
+ }
+]
