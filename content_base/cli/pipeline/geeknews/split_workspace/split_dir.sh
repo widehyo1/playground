@@ -58,3 +58,8 @@ find "$dest" -name "$prefix*" | grep -v ".tgz$" | while read f; do
     mkdir -p "$split_dir"
     tar --directory "$split_dir" -xzf "$tarfile"
 done
+
+find "$dest" -name "$prefix*" | grep -v ".tgz$" | while read f; do
+    echo rm "$f"
+    rm "$f"
+done
