@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 usage() {
   echo "Usage: ./split_dir [{-d|--directory} DIR] [{-p|--prefix} PREFIX] [{-l|--line} LINE] [--dest DEST]" >&2
@@ -46,10 +47,12 @@ dest="$(realpath "${dest:-.}")"
 
 printf "directory: %s, prefix: %s, dest: %s, line: %s\n" "$directory" "$prefix" "$dest" "$line"
 
-# 파일 리스트 만들고 split
-find "$directory" -maxdepth 1 -type f -printf "%f\n" | sort -n | split -l "$line" - "$prefix"
+mkdir -p "$dest" && cd "$dest"
 
-find "$dest" -name "$prefix*" | grep -v ".tgz$" | while read f; do
+# 파일 리스트 만들고 split
+find "$directory" -maxdepth 1 -type f -printf "%f\n" | sort -n | split -dl "$line" - "${prefix}_"
+
+find "$dest" -name "${prefix}_*" | grep -v ".tgz$" | while read f; do
     base=$(basename "$f")
     tarfile="$dest/${base}.tgz"
     tar --directory="$directory" --files-from="$f" -czf "$tarfile"
@@ -59,7 +62,4 @@ find "$dest" -name "$prefix*" | grep -v ".tgz$" | while read f; do
     tar --directory "$split_dir" -xzf "$tarfile"
 done
 
-find "$dest" -name "$prefix*" | grep -v ".tgz$" | while read f; do
-    echo rm "$f"
-    rm "$f"
-done
+find "$dest" -name "${prefix}_*" | grep -v ".tgz$" | xargs -I@ rm @
