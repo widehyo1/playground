@@ -5,7 +5,8 @@ out="bulk_data_xargs_v2.csv"
 
 date
 # find sample/ -name '*.html' \
-find html/ -name '*.html' \
+# find html/ -name '*.html' \
+find split_workspace/sp_128/dir_sp_128_00 -name '*.html' \
   | xargs -P "$(nproc)" -I {} bash -c '
       f="{}"
       url="https://news.hada.io/topic?id=$(basename "${f%%.*}")"

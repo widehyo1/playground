@@ -1,0 +1,2399 @@
+"https://news.hada.io/topic?id=9041","구글 Bard, 코드 생성과 디버깅 및 코드 설명 기능 지원 시작","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  구글 Bard, 코드 생성과 디버깅 및 코드 설명 기능 지원 시작
+
+     * C++, Go, Java, Javascript, Python, Typescript 를 포함한 20개 이상의 언어 지원
+     * 파이썬 코드를 Copy & Paste 없이 즉시 Google Colab으로 Export 가능
+     * 구글 Sheet용 함수 작성도 가능
+     * 코드 생성/디버깅 뿐만 아니라 코드에 대해서 설명하는 기능도 지원
+     * 특정 오픈소스의 내용을 길게 인용하는 경우 인용 링크도 제공
+
+   아직 코딩은 많이 약한거 같아요. gpt 3.5가 더 잘한다는 평이 많더라고요. 다만 왔다갔다하면서 쓰기에는 굳..
+"
+"https://news.hada.io/topic?id=9076","Copilot for Xcode","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Copilot for Xcode
+
+     * GitHub Copilot 및 ChatGPT 기능을 XCode에서 사용가능하게 해주는 Xcode Source Editor Extension
+     * GitHub이 직접 만든 Neovim for Copilot 의 LSP를 이용해서 연동
+     * Copilot 의 코드 추천, ChatGPT를 이용한 Prompt to Code 및 Chat 기능을 지원
+"
+"https://news.hada.io/topic?id=9102","Whisper Jax: 가장 빠른 Whisper API 구현체","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Whisper Jax: 가장 빠른 Whisper API 구현체
+
+     * OpenAI의 Whisper 음성인식 모델을 최적화해서 빠르게 구현
+     * TPU v4-8 에서 JAX 로 실행. A100 GPU 에서 PyTorch로 실행한 것에 비해 최대 70배 빠름
+     * CPU/GPU/TPU 에서 모두 실행 가능하며, 스탠드 얼론 또는 Inference 엔드포인트로 실행 가능
+"
+"https://news.hada.io/topic?id=9050","비상장 벤처/스타트업 복수의결권 허용 '벤처기업법' 법사위 통과","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  비상장 벤처/스타트업 복수의결권 허용 '벤처기업법' 법사위 통과
+
+   창업주에게 1주당 최대 10개 의결권을 가진 주식 발행 가능. 본회의 통과만 남아
+"
+"https://news.hada.io/topic?id=9110","더 나은 Git 워크플로우를 향해서","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          더 나은 Git 워크플로우를 향해서
+
+   깃을 보다 효율적으로 활용하기 위한 방법을 모아보았습니다.
+    0. 레포구조
+          + Git은 분산 버전 관리 시스템이라 중앙집중형, 깃허브/깃랩 방식, 계층형등 다양한 방식으로 구성 가능
+    1. 브랜치 구조
+          + 깃허브 플로우: Main을 두고 기능이나 버그 브랜치를 생성 후, 피드백을 받아 병합하는 형태
+          + 깃 플로우: 잦은 배포보다는 전통적인 개발에 유리
+               o Feature 브랜치를 만들어 Develop 브랜치에 병합
+               o 충분히 성숙한 Develop 브랜치는 Release(Stage) 브랜치를 만들며, 버그 수정만 하며 추후 Develp과 Master에 합침
+               o Release 준비가 되면 Master 브랜치에 병합하고, 핫픽스만
+          + 깃랩 플로우: 복잡한 깃 플로우와 너무 단순한 깃허브 플로우의 중간형태
+               o 깃 플로우에서 잠시 유지하는 Relseae 브랜치 대신, 쭉 유지하는 Stage 브랜치 사용
+               o 핫픽스는 Production과 Stage에, 버그 수정은 Stage와 Devlop에 반영
+          + Perforce Stream: 여러 릴리즈를 관리해야 할 때 유리
+               o Release에서 버그를 고치면 Main-Develop으로 전파
+               o Develop에서 기능을 만들면 충돌을 없애고 Main에 반영
+          + Trunk 기반: Main(Master)를 보다 효율적으로 쓰려는 시도로 빅테크들이 주로 사용
+               o Main을 오래 유지하며, 릴리즈 브랜치에서는 따로 버그 수정을 하지 않음
+               o 기능은 플래그를 사용해 Off 상태로 병합해 항상 최신 코드 유지
+    2. 커밋
+          + 컨벤션: 보통 Angluar 컨벤션을 많이 사용하나 협의를 통해 이모지 등을 사용할 수도 있음
+          + 단위: 최소 단위별로 해야 하지만 역시, 팀별로 최소단위에 대한 협의가 필요
+               o Hunk로 변경사항을 세분화해 스테이징 가능
+               o Delta단위로 변경 사항을 비교할 수 있다면 편함
+          + 투기적 커밋과 선형적 기록: 커밋을 자주해 컨텍스트는 유지하면서도 커밋기록을 선형적으로 유지하는 방법
+               o Stash나 프로토 타입 시도등 작업 저장이 필요할 때마다 저장
+               o Checkout이 필요한 곳마다 Checkout하고 계속 커밋 후 rebase를 통해 선형적으로 유지함
+               o git-branchless라는 툴을 사용하면 편함
+               o git sl: 익명 분기를 추적하여 커밋기록을 잘 시각화 해줌
+               o git prev와 git next: 전/후 단위로 체크아웃하기 쉬움
+               o git sync: Main으로 리베이스
+               o git move: 원하는 곳으로 커밋을 옮길 수 있음
+               o git restack: rebase나 commit --amend등으로 커밋 기록 순서가 깨지면 복원
+               o git undo: 취소 가능
+    3. 병합
+          + 패치 스택(Patch Stack): 기능[1/3], 기능[2/3], 기능[3/3]과 같이 쪼개서 리뷰하는 방식
+          + 일급 충돌: 깃과 호환되는 Jujutsu는 충돌을 커밋에 기록하여 한번 해결된 충돌이 나중에 일어나는 일이 적음
+          + 3 Way Diff: Jujusu의 경우 충돌이 발생시 Base-Ours를 Diff로, Theirs는 스냅샷으로 보여줘 직관적. 그러나 IDE/에디터 문법강조나 Base-Their Diff를 보고 싶은 니즈가 있을 수 있음
+          + 바이너리 충돌: 깃은 바이너리 파일이 충돌 발생하면 알아서 하라고 방치하지만, 개인적으로 간단한 툴을 만들어 Base와 Their의 파일을 생성하도록 함
+          + 패치와 메일: 보다 전통적인(?) 병합 방식에 대한 소개
+               o git request-pull은 풀리퀘스트를 생성하는 명령어
+               o git send-mail로 패치를 메일로 전송, git am으로 패치 적용이 가능
+    4. 기타 관리 방법
+          + Worktree: Git history는 공유된채로 SVN 브랜치처럼 작업파일만 여러곳에 체크아웃하여 작업들을 통시에 진행가능
+          + Git LFS: 대용량 파일을 관리하는 방법
+          + 부분 복제와 부분 체크아웃: 부분적으로 clone하여 다운로드 시간을 줄이고, 부분적으로 checkout하여 원하는 디렉토리만 작업 가능
+          + 스칼라: 마이크로소프트의 노력으로 거대한 레포지토리를 쉽게 관리하도록 만들어줌
+"
+"https://news.hada.io/topic?id=9083","Epic Systems - 수백조원 미국 디지털 헬스케어 시장의 이무기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Epic Systems - 수백조원 미국 디지털 헬스케어 시장의 이무기
+
+     * Epic Systems는 미국의 EHR(Electronic Health Record) 소프트웨어 기업으로, 병원들이 환자의 의료 기록을 전산화해서 저장/조회/분석할 수 있는 시스템을 개발해서 판매
+     * 1979년에 설립, 연매출이 평균적으로 5조원 가량에 달하지만 아직까지 기업 공개를 하지 않은 Private Company이며 창업자 Judith Faulkner가 지분의 47%를 보유하고 있는 신비스러운 회사
+          + 막대한 수익의 비결은 압도적인 시장 점유율(미국 내 EHR 시장 1위)과 주 고객인 대형병원들의 특수성에서부터 비롯
+          + 최대 경쟁사인 Cerner는 22년도에 오라클이 33조원에 인수, 앞으로 Epic Systems는 Oracle Cerner를 비롯해 많은 빅테크들의 도전을 받을 것
+"
+"https://news.hada.io/topic?id=9070","Ask GN: 이번 주말에 뭐 하시나요?","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Ask GN: 이번 주말에 뭐 하시나요?
+
+   이번 주말에 뭘 하려고 계획 중인지 편하게 얘기해 보아요.
+
+   읽을 책, 가볼 곳, 해볼 것.. 어떤 것이든 좋습니다.
+   도움 요청이나 피드백 요청도 좋습니다.
+   물론! 아무것도 하지 않고 쉬는 것도 훌륭합니다.
+
+   지난 주말에 계획하셨던 일의 회고도 한번 남겨봐 주세요.
+"
+"https://news.hada.io/topic?id=9032","Promptr - GPT의 코드 변경 추천을 쉽게 적용해주는 CLI 도구","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Promptr - GPT의 코드 변경 추천을 쉽게 적용해주는 CLI 도구
+
+     * ChatGPT에 소스코드를 제공하고 프롬프트 넣고 대답을 받아서 복사하는 단계를 자동화
+     * 리팩터링, 테스트 코드 작성등에 ChatGPT를 이용할 때 복사/붙여넣기 없이 바로 반영
+     * $ promptr -m gpt4 -p ""Cleanup the code in these files"" app/index.js app.js
+     * $ promptr -m gpt4 -p ""Alphabetize the method names in all of these files"" $(git ls-tree -r --name-only HEAD | grep "".js"" | tr '\n' ' ')
+"
+"https://news.hada.io/topic?id=9145","BackgroundRemover - 이미지/영상에서 배경지우기 오픈소스","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                BackgroundRemover - 이미지/영상에서 배경지우기 오픈소스
+
+     * 간단한 CLI 명령으로 JPEG/PNG/MOV/MP4 등에서 배경을 지워주는 도구
+     * Premier용 matte 파일 생성 지원
+     * mp4에서 배경 지우고 gif로 생성도 가능
+     * Python + Pytorch + Torchvision + ffmpeg
+"
+"https://news.hada.io/topic?id=9116","Scrcpy v2.0 - USB 또는 TCP/IP로 안드로이드 기기 원격 제어","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Scrcpy v2.0 - USB 또는 TCP/IP로 안드로이드 기기 원격 제어
+
+     * 컴퓨터의 키보드와 마우스를 이용해서 안드로이드 기기를 제어 및 녹화 가능(비디오/오디오 포워딩)
+     * 루트 억세스 필요 없음. 기기에 아무것도 설치되어 있지 않아도 가능(adb 를 이용)
+     * 경량, 빠른 시작 시간(1초내에 첫화면 표시)
+     * 30~120 fps, 1920x1080+, 35~70ms latency
+     * 리눅스, 윈도우, 맥 지원
+     * Android 5.0 이상이면 가능. 오디오는 API 30 이상(안드로이드 11+)
+     * 안드로이드 기기는 USB 디버깅 활성화 되어 있어야 함
+
+   음 기존 미러링에 비해서는 경량이라는 점이 차별화 포인트이려나요?
+"
+"https://news.hada.io/topic?id=9121","“나만의 상상이 작품이 된다” AI 이미지 생성기 완벽 입문 가이드","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 “나만의 상상이 작품이 된다” AI 이미지 생성기 완벽 입문 가이드
+
+     * 생성형 AI가 이미지 영역으로 확장하는 최근의 기술 변화를 살펴보고 달리, 보이지 등 주요 이미지 생성 AI 서비스의 특징을 알아본다.
+     * 대표적인 AI 이미지 생성 서비스인 미드저니를 기준으로 실제 이미지를 생성하는 방법을 단계별로 자세히 제시한다.
+
+주요 내용
+
+  Tech Trend
+
+     * “단어-이미지 관계를 이해한다” 성큼 다가온 AI 아트 시대
+
+  How To
+
+     * AI 이미지 생성 분야 핵심 용어와 개념 13가지
+     * ‘현존 최고 AI 이미지 생성기’ 미드저니로 나만의 작품 만들기 8단계
+
+  Tech Solution
+
+     * 상상을 현실로 만드는 AI 이미지 생성기 10가지
+"
+"https://news.hada.io/topic?id=9114","코딩 가능한 AI Bot들 비교: Bing, Claude+, CoPilot, GPT-4, Bard ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         코딩 가능한 AI Bot들 비교: Bing, Claude+, CoPilot, GPT-4, Bard
+
+     * Leetcode 214 Shortest Palindrome으로 테스트
+     * GPT-4: 모든 테스트 통과
+     * Bing: 모든 테스트 통과. GPT-4보다 훨씬 더 간단해 보이고 효율적인 코드 생성. 간단한 설명도 제공. 최고의 결과물
+     * Claude+: 테스트 통과 못함(121개중 1개만 통과)
+     * Bard: 테스트 통과 못합(121개중 2개만 통과)
+     * CoPilot: 모든 테스트 통과
+
+   이거도 케바케 인거 같아요. 다만, 바드는 아무리 봐도 개인정보 수집해서 내놓는거 같더라구요..
+
+   탭나인은 끼워주지도 않는군요. 딴거 써야겠습니다.ㅠㅠ
+
+   수정했나보네요.
+   지금은 Latest 라고 되어 있습니다.
+
+   원문은 뭔가 결론이 이상하네요. Bing 이 가장 적절하다고 해야할 듯 한데 least 라고 표현을 해서 아마도 오타인듯?
+"
+"https://news.hada.io/topic?id=9106","Mercury OS - 새로운 OS에 대한 제안 (2019)","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Mercury OS - 새로운 OS에 대한 제안 (2019)
+
+     * ""데스크탑 메타포와 앱 에코시스템은 비인간적임(inhumane)""
+     * 제프 래스킨(매킨토시의 진짜 설계자)의 원칙에 따라 인간과 컴퓨터의 상호작용에서 좀 더 인간적인 관점을 제공
+     * 앱과 폴더 같은 것 없이, 사용자의 요구와 의도에 따라 유동적(Fluid)으로 대응
+          + 자연어로 정의 가능한 Module 이 기본 단위. 요구에 따라 알맞는 UI를 생성
+          + Flow를 통해서 Module 들이 연결되고 다음 행위들로 이어짐. 무한 반복 가능
+          + 앱과 폴더 대신 의도에 맞는 Space 를 생성. 싱글 Module 부터 다수의 Flow 까지 확장 가능
+
+   와 좋네요.
+   저도 현재의 폴더 구조가 문제 많다고 생각해서 더 나은 UI 개념이 나와야 한다고 생각하는데,
+   아이튠즈/아이폰에서 폴더 구조 없다고 불편해 하는 사람들 보면 더 나은 구조로 넘어가는데 한참 걸릴 거 같아요.
+
+   시대가 시대라 그런가, ""안 될 것 같다""라고 선뜻 말하기가 어렵네요
+
+   SF에 흔히 나오는 그냥 지나가면서 말로 명령을 내리면 모든 작업을 수행하는 그런 컴퓨터가 실제로 나올 수 있을까요?
+   아니면 Hack 버튼을 누르면 자동으로 시스템이 해킹되는 노트북이라던가...
+
+   2019년에 제안된 것이긴 한데, 흥미로워서 올려봅니다.
+   분명 언젠가는 지금의 데스크탑 및 앱 같은 것들을 대체할 개념이 나올것이라고 생각해요.
+   여기 Module에서 제안한 것들도 언젠가 LLM이 OS에 기본으로 포함이 된다면, 충분히 자연어로 동작가능할 것 같고요.
+   이게 제안된 시점엔 지금 수준의 LLM이 나오지 않았을 때라 잘 상상이 안되었지만, 지금이라면 충분히 가능할 듯
+"
+"https://news.hada.io/topic?id=9117","EyeCandy - 시각적 테크닉 효과들 모음","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       EyeCandy - 시각적 테크닉 효과들 모음
+
+     * 영화/광고 등에서 사용하는 다양한 시각효과들을 카테고리 별로 정리
+     * 클로즈업, 콜라쥬, 컨베이어, 이중 노출, Fisheye, 무한 줌, 하이퍼랩스, 롱테이크, 로우앵글, 마스킹, 반사, 스크린 인 스크린, 화면 분할, 슬로우모션, 스탑모션, 타임랩스, 틸트 쉬프트, 타이포그래피, 와이드 샷,..
+
+   몇가지 기초적인 것들의 설명 - 영화 속 카메라는 어떻게 움직이는가 (https://youtu.be/ramDgHoBSvc)
+"
+"https://news.hada.io/topic?id=9053","Rye - 원스탑 Python 환경 관리자","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Rye - 원스탑 Python 환경 관리자
+
+     * Flask 제작자가 파이썬 부트스트래핑을 위해 만든 도구
+     * poetry/pip/pipenv/pyenv/venv/virtualenv/pdm/hatch 등의 실험적인 대체제
+     * 특정 파이썬 버전 설치 및 관리, pyproject.toml 관리 및 의존성 추가/삭제, virtualenv 관리등을 알아서 처리
+
+   파이썬은 버전관리 툴만해도 상당하군요 이것도 언젠가 통일 될 날이 올 수 있을지 궁금하네요
+
+   실제로 쓰이기보다는 파이썬 패키징 시스템이 이랬으면 좋겠다는 청사진을 제시하는 목적으로 개인적으로 혼자 만들어서 쓰던 도구를 공개했다고 알고 있습니다.
+
+   https://github.com/mitsuhiko/rye/discussions/6
+
+   그래서 ""실험적인"" 이라고 적어놓은 거 였군요. 링크 고맙습니다!
+
+   댓글 수정이 안 되는군요. “실제로 쓰이기보다는” → “실제로 쓰이는 걸 목표로 했다기보다는” 정도가 맞겠습니다.
+"
+"https://news.hada.io/topic?id=9135","난 다시는 구글의 스마트홈 에코시스템에 투자하지 않을꺼에요","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    난 다시는 구글의 스마트홈 에코시스템에 투자하지 않을꺼에요
+
+     * 스마트홈 구축을 위해 구글에 많은 돈을 들였지만, 실망한 사람의 이야기
+     * ""구글은 스마트홈 에코시스템을 계속 스스로 파괴하고 있다(Self-sabotaging). 미래가 불투명한 제품으로 스마트홈을 구축하지 말 것""
+          + 최근 Nest Hub 2세대는 수면 트래킹을 구독형 유료로 제공
+          + 또한 타사 스마트 디스플레이 지원 기능을 없앰(Lenovo Smart Display등)
+     * Fuscia OS 로 업그레이드 하고나서 사용자 경험은 더 안 좋아짐
+     * Sonos 와의 특허 다툼으로 기능도 제한됨
+     * Google Nest Secure 홈 모니터링 기능은 2017년에 출시했다가 2020년에 플러그 뽑더니 2023년부터 단종
+     * 구글이 무슨 생각하는지 이해해보려 했지만.. 보안 시스템의 업그레이드 사이클은 10년이상의 단위로 생각해야 함
+     * 1~2개의 실패한 제품은 실수겠지만, 3개부터는 패턴임
+
+   구글은 창업 이래로 이런 점에서 변한게 없네요. 이것저것 건드려보는데 그렇다고 제대로 건드리지도 않다가 손 놓고 런한 서비스가 대체 몇개인지 ㅋㅋ
+
+   네스트 써모미터와 카메라 정도 사용 중인데, 개별 앱으로 제어하면 그럭저럭 괜찮습니다. 구글이 네스트 허브에 너무 욕심을 부리는 것 같아요.
+
+   구글은 점점 뒤로 가네요.......
+
+   여러 IoT 클라우드 연동을 개발해봤는데, 스마트싱스가 제일 경험이 좋았습니다.
+
+   구글홈은 개발해 놓고 잊고 있으면 가끔 연동 명세가 바뀌어서 곤란한 경우가 있었어요.
+"
+"https://news.hada.io/topic?id=9100","Mojo - AI 개발자를 위한 새로운 프로그래밍 언어","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Mojo - AI 개발자를 위한 새로운 프로그래밍 언어
+
+     * LLVM을 만든 크리스 래트너가 새로 창업한 회사인 Modular에서 만드는 AI 개발용 언어
+     * Python의 사용성과 C의 성능을 결합
+     * 언어 자체에서 AI 하드웨어를 모두(다중코어, 벡터유닛, 가속기 등) 활용 가능(C++/CUDA 같은 복잡함 없이)
+     * 전체 Python 에코시스템을 그대로 활용 가능(Numpy, Matplotlib 를 Mojo 코드내에서 심리스하게 이용)
+     * 기존 AI 모델을 쉽게 확장(전처리/후처리 및 오퍼레이션 교체): Kernel Fusion, Graph Rewrites, Shape Functions등
+     * JupyterHub 기반의 Playground 제공
+     * MLIR(Multi-Level Intermediate Representation)을 이용
+
+   구문만 보면 흡사 javascript와 typescript를 보는 것 같네요
+
+   엘릭서도 나름 nx 같은 시도를 하곤 있던데... 경쟁자들이 만만치 않군요 ㅠㅠ
+
+   어마어마 하군요, 파이썬 뻠프 받네요.
+
+   HN 에는 크리스 래트너가 직접 댓글을 달아주고 있네요
+   https://news.ycombinator.com/item?id=35790367
+
+   Julia 와의 비교가 많지만, 전혀 다른 접근이라고.
+   일단 Python 에코시스템을 그대로 활용한다는 점이 훌륭하네요.
+"
+"https://news.hada.io/topic?id=9035","Writefull - 학술논문 작성을 도와주는 AI","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Writefull - 학술논문 작성을 도와주는 AI
+
+   학술논문 작성할 때 귀찮을 수 있었던 부분들을 꽤 많이 도와줍니다.
+     * Title Generator: 초록(abstract)를 입력하면 제목을 추천
+     * Abstract Generator: 서론과 결론을 입력하면 초록을 생성
+     * Paraphraser: 표절 시비를 피하면서 인용할 수 있도록 문장 내용을 바꿔줌
+     * Academizer: 비 학술적인 표현들로 작성된 문장을 학술적인 표현으로 바꿔줌
+     * GPT Detector: 특정 문단이 GPT-3, ChatGPT 등의 AI로 생성된 것인지 확인해줌
+
+   웹버전을 기본 제공하고 Overleaf, MS Word 확장 프로그램 형태로도 제공되네요.
+
+   무료 플랜으로 쓸 수도 있고 프리미엄 플랜에는 지원 언어나 사용 횟수 등에 제한이 없어지는 이점이 있다고 합니다.
+
+   GPT detector 는 굳이 필요없는뎅...
+
+   굳이 필요없을수도 있고 필요할 수도 있지 않을까요?
+
+   개인적으로는 석사 졸업논문 작성할때 도움을 많이 받은 툴입니다.
+
+   저도 다음 학술대회에 논문 투고할 때 써보려구요. 실험삼아 전에 작성했던 논문을 집어넣어봤는데 결과물들이 만족스러웠습니다.
+"
+"https://news.hada.io/topic?id=9147","Vector Database란?","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Vector Database란?
+
+     * AI 어플리케이션들은 Vector Embeddings에 의존
+          + 임베딩은 AI 모델에 의해 생성되며, 많은 수의 속성/피쳐가 있어서 관리하기가 어려움
+          + AI 및 ML에서 이 피쳐들은 패턴, 관계 및 기본 구조를 이해하는데 필수적인 데이터의 다양한 디멘젼들을 표현
+     * Pinecone 같은 벡터DB는 이런 임베딩 데이터를 최적화 하여 보관하고 쿼리하기 위해 특화된 DB
+     * 벡터DB를 통해서 AI에 시맨틱 정보 검색, 장기 메모리 등의 고급 기능들을 구현 가능
+          + 임베딩 모델을 통해서 인덱싱할 콘텐츠의 벡터 임베딩을 생성
+          + 벡터 임베딩들을 벡터DB에 삽입. 임베딩이 어디에서 생성되었는지 오리지널 콘텐츠에 대한 레퍼런스를 포함
+          + 어플리케이션이 쿼리를 하면, 같은 임베딩 모델을 이용하여 쿼리에 대한 임베딩을 생성하고, 이 임베딩으로 DB를 검색해서 비슷한 벡터 임베딩을 찾음
+          + 이 임베딩들은 오리지널 콘텐츠에 연결되어 있음
+
+Vector Index 와 Vector DB의 차이점
+
+     * FAISS(Facebook AI Similarity Search) 같은 벡터 인덱스도 벡터 임베딩 검색을 개선하지만, DB의 기능을 가지고 있지는 않음
+     * Vector DB는 여러가지 장점을 가짐
+          + 데이터 관리 기능: 데이터의 삽입, 삭제, 갱신이 쉬움
+          + 메타데이터 저장 및 필터링: 각 벡터에 대한 메타데이터 저장이 가능
+          + 확장성: 분산 및 병렬처리 기능을 제공
+          + 실시간 업데이트 지원
+          + 백업 및 컬렉션 기능(일부 인덱스만 골라서 백업)
+          + 에코시스템 연동: ETL(Spark), 분석도구(Tableau, Segment), 시각화(Grafana) 등과 연동. AI 도구와의 연동(LangChain, LlamaIndex, ChatGPT Plugins)
+          + 데이터 보안 및 접근 권한 관리
+
+Vector DB는 어떻게 동작하는가 ? (소제목만 옮깁니다)
+
+     * 알고리듬 : ANN, Random Projection, Product Quantization, Locality-sensitive hashing, Hierarchical Navigable Small World (HSNW)
+     * 유사성 측정
+     * 필터링
+     * 데이터베이스 오퍼레이션
+
+요약
+
+     * NLP, 컴퓨터 비전 및 다른 AI 어플리케이션에서 벡터 임베딩이 폭발적으로 성장하면서 벡터 데이터베이스가 등장
+     * 프로덕션 시나리오에서 벡터 임베딩을 관리할 때 발생하는 문제점을 해결하기 위해 특수하게 만들어진게 벡터 데이터베이스
+     * 기존의 스칼라 기반 데이터 베이스 및 스탠드얼론 벡터 인덱스에 비해 상당한 이점을 제공
+"
+"https://news.hada.io/topic?id=9018","Ubuntu 23.04 Lunar Lobster Release","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Ubuntu 23.04 Lunar Lobster Release
+
+   9개월 서포트
+   참고로 18.04 lts 는 5월31일 서포트 종료
+
+   Linux 6.2 커널
+   로그인 관리 확장 - Azure AD 로그인.
+   크로스 플랫폼 개발을 위한 워크플로우 개선
+   최신 툴체인 업데이트
+   dotnet core 7
+   Open JDK v17
+
+   이번 릴리즈에서 또 많이 언급 되는 것 중 하나가, Flutter 랑 Subiquity 로 새로 개발된 인스톨러 더군요.
+
+   https://www.youtube.com/watch?v=oqohY6wKtcs
+   https://github.com/canonical/ubuntu-desktop-installer
+"
+"https://news.hada.io/topic?id=9097","Deno 1.33: Deno 2가 온다","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Deno 1.33: Deno 2가 온다
+
+     * Deno 2를 준비하는 릴리즈
+     * 자체 KV 데이터베이스
+     * deno.json 설정 평탄화로 더 읽고 쓰기 쉽게
+     * dynamic import 시에 더 적은 퍼미션 체크
+     * npm 및 Node 호환성 개선
+     * 성능 개선
+     * CLI 향상
+     * Deno.run API deprecate(Deno.Command API를 대신 사용)
+
+   생각보다 사람들이 관심이 없는 듯 한데 꾸준히 발전중이군요
+"
+"https://news.hada.io/topic?id=9080","On the Road to Failure - 최대 규모 실패 또는 사기였던 기업들의 피치덱 모음","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         On the Road to Failure - 최대 규모 실패 또는 사기였던 기업들의 피치덱 모음
+
+    1. Worldcom
+    2. Enron
+    3. Bear Stearns
+    4. Lehman Brothers
+    5. Theranos
+    6. Greensill Capital
+    7. Fyre Festival
+    8. Wirecard
+    9. Celsius Network
+   10. Nikola
+   11. FTX
+   12. Silvergate Bank
+   13. Silicon Valley Bank
+   14. Credit Suisse
+
+   방금 들어가 보니 제일공화국은행(?) 추가됐습니다. ^^;
+
+   회사들 목록 옆에 'New'라고 달린 게 참 거시기하네용.
+"
+"https://news.hada.io/topic?id=9105","h2oGPT - 완전한 오픈소스 GPT","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         h2oGPT - 완전한 오픈소스 GPT
+
+     * 상업적으로도 이용 가능한 소스코드 와 모델을 공개
+     * 인스트럭션 데이터셋을 만들기 위한 코드
+     * 일반 하드웨어/엔터프라이즈용 GPU 에서 파인튜닝 가능한 코드 (최대 20B 파라미터까지)
+     * LoRA 및 8-bit 양자화 코드 포함
+     * GPU 서버에서 챗봇을 실행하기 위한 코드(파이썬 클라이언트용 API 엔드포인트 포함)
+"
+"https://news.hada.io/topic?id=9119","Ask GN: 이번 주말에 뭐 하시나요?","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Ask GN: 이번 주말에 뭐 하시나요?
+
+   이번 주말에 뭘 하려고 계획 중인지 편하게 얘기해 보아요.
+
+   읽을 책, 가볼 곳, 해볼 것.. 어떤 것이든 좋습니다.
+   도움 요청이나 피드백 요청도 좋습니다.
+   물론! 아무것도 하지 않고 쉬는 것도 훌륭합니다.
+
+   지난 주말에 계획하셨던 일의 회고도 한번 남겨봐 주세요.
+
+   3d 프린터를 하나 사서 가지고 놀예정입니다
+   요즘은 출력속도가 빨라져서 꽤 쓸만해 진것 같아요.
+   정작 사본건 처음이라 삽질을 좀 할듯
+
+   혹시 어떤 프린터 구매하셨나요?
+
+   Bambulab X1CC 입니다. 출력속도는 정말 빠르긴 하더라고요. 멀티컬러 지원도 좋고요.
+   아직 필라멘트가 안와서 많이 출력은 못 해보긴 했는데, 별 세팅 없이도 잘 찍혀서 좋습니다.
+
+   3D 프린터 계속 관심은 두고 있는데,
+   결국 구매 타이밍을 못 잡고 이리저리 알아만 보다가 끝나고 있어요.
+
+   싼거 사자니 기능이 아쉽고 비싼거 사자니 또 확 비싸지는 것 같아서 어렵네요. ㅠㅠㅋ
+
+   아무튼 답변 고맙습니다.
+   한 번 찾아봤는데, 생긴 것도 깔끔하고 기능도 좋아 보이네요.
+
+   이런 제품도 고민해봐야겠습니다.
+"
+"https://news.hada.io/topic?id=9088","ARR $1B를 만드는 Squarespace의 흥미로운 점들","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ARR $1B를 만드는 Squarespace의 흥미로운 점들
+
+     * 매출의 32%는 이커머스 : 웹 사이트 빌더 같지만, 저가형 Shopify 및 Woocommerce 경쟁업체임
+     * 매출 증가는 가격 인상에서 비롯되었지만, 이탈율(Churn)은 제한적이었음. SMB 대상의 저렴한 제품에서 적당한 가격인상은 이탈이 크게 생기지 않음
+     * 수익의 28%는 미국 이외의 지역에서 발생
+     * 신규 가입자 증가는 약 3% 밖에 되지 않음. 이미 많이 Mature
+     * 일관된 EBITDA 증가. 지난 분기 28%, 작년 17%로 최고치 기록. 상당한 현금을 만들어 내는 중
+     * 온라인 식당 예약 업체인 Tock을 2021년에 $400m에 인수
+     * 1800명의 직원. 즉 직원 1명당 $500,000(6.7억원)이 넘는 매출이 발생
+     * ARR의 4배 밖에 안되는 시총 $4B에 거래 되고 있음. 성장 규모가 10% 밖에 안되기 때문. 하지만 매우 효율적. 창업자는 지분 35%를 소유중
+"
+"https://news.hada.io/topic?id=9036",""As an AI Language Model" 검색하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ""As an AI Language Model"" 검색하기
+
+   Amazon에서 이 문장을 검색하면 AI가 작성한 리뷰 및 책까지 다 검색된다고..
+
+   점점 더 많은 리뷰들이 자동으로 작성되지 않을까 생각됩니다. 이제 정말 뭘 믿어야할지..
+"
+"https://news.hada.io/topic?id=9020","mox - 최신식 메일 서버 오픈소스","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          mox - 최신식 메일 서버 오픈소스
+
+     * 자신의 도메인용 메일 서버를 쉽게 설치/운영 가능
+     * SMTP, IMAP4, Automatic TLS(Let's Encrypt)
+     * SPF, DKIM, DMARC 지원
+     * 웹 관리자 인터페이스 제공
+     * Reputation Traking
+     * Bayesian Spam Filtering
+     * 평판 낮은 센더 또는 이상한 메일 발송자 대한 속도 저하 기능(Greylisting과 비슷)
+     * Prometheus 메트릭 제공
+     * 현재 지원하지 않는 것
+          + Webmail, SMTP Relay, Forwarding(외부주소로), POP3, Autoresponders 등
+     * Go 오픈소스
+
+   저는 Synology NAS를 개인적으로 사용하면서, 자체적으로 지원하는 MailPlus를 사용하고 있습니다. 도메인 연결해서 사용하는데, 로그인 시도가 많네요. 국가와 로그인 시도 차단, 스팸 어세신 정의, 화이트 도메인 등록 해두고 사용하는데, 아직까진 괜찮은 것 같습니다. Let’s encrypt 갱신이 귀찮을뿐..
+
+   요즘 자체 메일 서버에 대한 관심이 생겨서 (개인 도메인에 개인 메일 서버를 운영하는 꿈이 있습니다...) 찾아보고 있는데,
+   항상 개인 메일 서버는 포기하고 저렴한 메일 서비스를 쓰라는 말로 가득하네요.
+
+   그렇게 힘든가...
+
+   저도 관심은 많았는데..
+   스팸 차단을 위해서 대형 이메일 서버들끼리 연합(?)하고 신규 이메일 서버들을 꺼리게 되면서,
+   이메일 서버 셀프 호스팅은 점점 고달파 진다는게 중론이긴 하더군요.
+
+   특히나 지메일이 이런 신규 서버들 운영을 힘들게 하는데 엄청 악명이 높기도 하고요.
+
+   이게 구축/운영까지는 문제가 없는데 보안이슈가 생겼을때 문제 좀 심각해지고
+   장애가 났을 때의 대응을 쉽사리 할 수없다는게 두번째 문제입니다.
+
+   메신저는 서버에 문제가 생기면 발송이 안됐다고 나오지만 메일은 그냥 발송 후 n분 뒤에야 발송에 실패했다고 나오는데 자동화된 서버에서 보낸 메일이라면 다시 보내달라고 요청할수도 없어지니까요.
+
+   이런 이슈 격정하면서 쓰느니 그냥 gmail쓰세요 하게되는거죠
+
+   두 분 다 답변 고맙습니다.
+   역시 개인 메일 서버는 고민거리가 배로 늘어나나 보네요.
+
+   꿈은 꿈으로 놔둬야 하나 봅니다...
+
+   개인 도메인에 메일 서비스 연결해주는 서비스나 찾아봐야겠어요. ㅠㅠㅋ
+
+   좀 늦은것 같지만 전 Migadu 쓰고있습니다.
+
+   이것도 좀 찾아본게 있는데 적당하거나 쓸법한거 추천 드립니다.
+     * 다음 스마트워크
+     * MS 365 Personal ( 노트북/태블릿 구매 사은품 1년짜리를 중고시장에서 구매해서 등록/ 월 2000원꼴 )
+     * iCloud 1,100원 플랜
+
+     * Naver Works
+     * NHN 두레이
+       무료 플랜으로도 가능하지 않을까 싶어요.
+"
+"https://news.hada.io/topic?id=9044","QEMU 8.0.0 릴리즈","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             QEMU 8.0.0 릴리즈
+
+     * KVM with Linux v5.12+ 에서 Xen 게스트 지원
+     * Cortex-A55/R52 ARM CPU 에뮬레이션 지원
+     * AArch32 ARMv8-R 및 FEAT_EVT, FEAT_FGT 에뮬 지원
+     * v2 VFIO 마이그레이션 프로토콜로 업데이트
+     * RISC-V 에 추가 ISA/Extension 지원 및 OpenTitan, PolarFire, OpenSBI 머신 지원
+"
+"https://news.hada.io/topic?id=9115","Grasshopper - 로드테스팅을 위한 오픈소스 파이썬 라이브러리","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Grasshopper - 로드테스팅을 위한 오픈소스 파이썬 라이브러리
+
+     * Locust 기반으로 확장 기능을 추가한 자동화된 로드 테스팅 도구
+     * 테스트 중에 Check 기능을 통해서 특정 조건 확인 가능
+     * 커스텀 트렌드 기능으로 멀티 HTTP 호출로 구성된 시간 제한 걸린 액션에 대해서도 트래킹 가능
+     * 타이밍 Thresholds 지원
+     * InfluxDB(시계열 DB)에 데이터 저장 및 Grafana 연동
+     * PyTest와 연동 가능
+"
+"https://news.hada.io/topic?id=9023","Bark - 트랜스포머 기반의 Text-To-Audio 모델","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Bark - 트랜스포머 기반의 Text-To-Audio 모델
+
+     * 매우 사실적인 다국어 음성 생성 가능
+     * 음악, 배경 소음 및 간단한 음향 효과 포함
+     * 웃음, 한숨, 울음 같은 비언어적 커뮤니케이션도 연출 가능
+     * 영어/한국어 및 독일어/프랑스어/일본어/중국어 등을 지원
+     * 페이스북의 EnCodec 코덱을 사용
+     * Bark는 CC-BY 4.0 NC 라이센스 이며, Suno 모델 자체는 상업용도로 이용 가능
+
+   Bark's generations sometimes differ from my prompts. What's happening?
+   Bark is a GPT-style model. As such, it may take some creative liberties in its generations, resulting in higher-variance model outputs than traditional text-to-speech approaches.
+
+   이 부분이 무섭네요 ㄷㄷ 가끔 프롬프트와 다르게 생성되는 이유가 모델의 창의적 자유?를 위해서라고..
+
+   한국어 생성을 꽤 잘 하는게 신기하네요.
+"
+"https://news.hada.io/topic?id=9016","VideoLDM - Latent Diffusion Model을 이용한 고해상도 Text-to-Video 합성 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      VideoLDM - Latent Diffusion Model을 이용한 고해상도 Text-to-Video 합성
+
+     * LDM은 압축된 저차원 Latent 공간에서 Diffusion Model을 학습해서 많은 컴퓨팅 리소스없이도 고해상 이미지 합성이 가능함
+     * 이 LDM을 고해상 비디오에 적용한 NVidia 의 논문
+     * LDM을 이미지 전용으로 사전학습하고, Temporal Dimension을 도입, 인코딩된 이미지 시퀀스를 미제 조정해서 이미지 생성기를 비디오 생성기로 전환
+     * 확산모델 업샘플러를 얼라인하여 temporally consistent한 초고해상 비디오 모델로 바꿈
+"
+"https://news.hada.io/topic?id=9104","LLaMA 모델의 간략한 역사","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            LLaMA 모델의 간략한 역사
+
+     * 2023년 2월에 출시된 LLaMA는 이미 다양한 파인튜닝 모델이 출시됨
+     * 각 모델을 살펴보고 비교
+          + LLaMA : (7B, 13B, 33B, 65B), CommonCrawl/C4/GitHub/Wikipedia/Gutenberg & Book3/ArXiv/StackExchange
+          + Alpaca : 52k GPT-3 instructions
+          + Vicuna : 70k ChatGPT conversations
+          + Koala : 117k cleaned ChatGPT conversations
+          + GPT4-x-Alpaca : 20k GPT4 instructions
+          + WizardLM : 70k instructions synthesized with ChatGPT/GPT-3
+          + OpenAssistant : 600k human interactions (OpenAssistant Conversations)
+     * LLaMA 모델을 로컬에서 돌리기 위한 소프트웨어들
+"
+"https://news.hada.io/topic?id=9134","EU, 애플이 USB-C에 동일한 기능을 지원해야 한다고 경고","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   EU, 애플이 USB-C에 동일한 기능을 지원해야 한다고 경고
+
+     * EU의 법안 때문에 아이폰에 USB-C가 도입될 예정
+     * MFi(Made for iPhone) 인증을 받은 제품이나 애플의 공식 충전기만 더 빠르게 충전하는 등의 제한을 하지 말라고 이미 경고
+     * 동일한 기능을 제공하지 않는다면 EU에서 아이폰 판매를 금지하게 될 것
+
+   저런 제한은 안전과도 관련된 거긴 한데 저는 솔직히 인증 제품으로 쉽게 필터링 할 수 있는게 소비자 입장에서도 좋다고 생각해요. usb-c 는 이미 소비자 입장에선 이전의 usb들과 달리 it just works 수준이 전혀 아니라서 넘 복잡합니다. 단자 모양만 억지로 맞춰놓으니 말이죠. 제품 설명서 주의 사항에는 “동봉된 케이블이나 어댑터를 쓰지 않아서 생긴 문제는 사용자 책임이다” 라는 경고가 들어가 있는 경우가 이미 많기도 하고요.
+
+   문제는 MFi는 애플 기종에""만"" 대응되는 인증이라는거죠. PD 충전 관련 인증들이 이미 나와있고 발전되고있는 상황인데 애플이 거기에 따라가거나 참여하는 방향이 더 적합하다고 봅니다. 그게 아니라면 몇십만원에 독점적으로 충전기 팔고, MFi 인증 받으려면 거액을 애플에 내야하고 그런 악행이 USB-C에 와서도 똑같이 유지되는거죠.
+
+   믿을 건 EU밖에 없다...
+
+   EU형들만 믿을께!
+
+   EU, USB-C를 표준 충전 포트로 만드는 법안 도입 합의
+   EU가 아이폰 포함 소비자기기의 공용충전포트로 USB-C를 쓰도록 하는 법을 통과
+   밍치 궈, 애플이 아이폰 15부터는 USB-C를 도입할 것이라고 주장
+   애플, 아이폰도 USB-C로 변경할 것
+"
+"https://news.hada.io/topic?id=9086","Vercel, Storage 서비스들 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Vercel, Storage 서비스들 공개
+
+     * 프론트엔드 클라우드용으로 최적화된 다양한 스토리지들을 파트너업체들과 함께 제공
+     * Vercel KV: 서버리스 Redis (by Upstash)
+     * Vercel Postgres: 서버리스 SQL DB (by Neon)
+     * Vercel Blob: 엣지에서 파일 업로드 및 서빙 (by Cloudflare R2)
+
+   프레임웍이 인프라에 맞추는게 아니라, 인프라를 프레임웍에 맞추는 시대....
+
+   말씀대로 Vercel 은 대놓고 Framework Defined Infrastructure 를 표방하고 있습니다 ㅎㅎ https://vercel.com/blog/framework-defined-infrastructure
+
+   개인적으로 상당히 좀 별로더라고요.
+     * 기존 SaaS 와 협업하는건 좋은데 (모든 걸 다 직접 만들 순 없으니깐요)
+     * 기존 SaaS 에서 그냥 wrapper 인 것들이 기존 요금보다 2,3배 쳐서 받는 점: https://service-markup.vercel.app/
+          + (특히 egress가 공짜인게 강점인 Cloudflare R2를 쓰면서 egress 가격을 추가한 점은 거의 범죄 수준 같은 느낌이 드네요...)
+     * 심지어 해당 기존 SaaS들도 원래 Vercel Integration 을 재공해서 쓰기가 그렇게 어렵지 않은 상황에서
+     * 별도의 Wrapper 라이브러리인 @vercel JS 패키지로 제공해서 추후 다른 redis/postgres/s3 서비스로 이주하기 힘들게 만들어놓은 점이 매우 좋지 않게 보이네요.
+
+   그래도 기대되는 점은 서버리스 Postgres 서비스인 Neon을 썼다는 점이네요.
+
+   해당 서비스는 몇 안되는 100%호환 서버리스 Postgres라 좀 관심이 갔었는데요.
+   작년에 런칭하기도 했고, 스타트업 특성상 금방 서비스 접을 수도 있는 리스크도 없지 않고, DB 서비스라 좀 보수적으로 접근하려다 보니 좀 꺼려졌었는데. 잘되가는 Vercel 등에 업고 발전을 기대해 볼 수 있겠네요.
+"
+"https://news.hada.io/topic?id=9141","Show GN: 틸노트 챗 - 내 노트나 파일을 기반으로 인공지능으로 대화하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Show GN: 틸노트 챗 - 내 노트나 파일을 기반으로 인공지능으로 대화하기
+
+   안녕하세요. 내 노트나 파일을 기반으로 ChatGPT를 활용해서 대답을 해주는 챗봇을 만들어 봤습니다.
+     * 노트나 파일을 OpenAI의 text embedding을 활용해 pinecone DB에 저장
+     * 질문 시 관련 맥락을 역시 embedding model을 활용해 검색
+     * 해당 맥락과 질문을 ChatGPT turbo 3.5 api를 활용해서 보내서 대답을 받는 방식입니다.
+
+   저의 경우 개인적인 질문이나 나에게 맞는 맥락이 필요할 때 유용하게 사용할 수 있었습니다.
+
+   한번 활용해 보시고 재미있으시면 피드백 주시면 감사하겠습니다.
+
+   파일은 md, txt, pdf 등이 가능하고 또는 노트를 작성하시고 임베딩 후 질문하시면 됩니다. (다만 서버 사양 등 때문에 어느 정도 제약은 걸어놨습니다.)
+
+   그럼 좋은 저녁 되세요~
+"
+"https://news.hada.io/topic?id=9034","검색 엔진은 어떻게 작동하는가","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            검색 엔진은 어떻게 작동하는가
+
+     * 나이브한 텍스트 검색 로직 구현
+     * 데이터베이스의 WHERE .. LIKE, REGEXP 문을 사용하는 텍스트 검색
+     * 데이터베이스의 FULLTEXT 인덱스를 사용하여 검색을 구현하는 방법
+     * 역 인덱스 직접 구현하기
+     * TF-IDF와 BM25를 직접 구현하여 문서 스코어링
+
+   좋은 글 공유 감사합니다.
+
+   감사합니다!
+
+   저자이신가요? 예전에 fuzzy search 글을 읽었던 기억이 나네요. 좋은 글 매번 감사드립니다!
+"
+"https://news.hada.io/topic?id=9022","Google DeepMind 발표 - 딥마인드와 브레인팀을 합쳐서 하나의 조직으로","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Google DeepMind 발표 - 딥마인드와 브레인팀을 합쳐서 하나의 조직으로
+
+   두개의 조직을 합쳐서 차세대 AI 혁신 및 제품 개발 예정
+"
+"https://news.hada.io/topic?id=9028","LlamaAcademy - GPT에게 코딩하는 법 가르치기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    LlamaAcademy - GPT에게 코딩하는 법 가르치기
+
+     * LLaMA, LoRA, LangChain을 활용하여 GPT에게 API 문서를 읽는 법을 학습시키기
+     * API 문서에 대해서 LlamaAcademy를 실행하면 새로운 LLaMA 모델이 생성
+     * 해당 모델을 서버에서 호스팅하면, 사용자들에게 해당 API에 대한 호출 코드를 작성해주는 게 가능
+
+   GPT에게 코딩하는 법을 가르치는 GPT...?
+
+   이름은 LlamaAcademy 인데, 실제로 동작은 GPT-3.5 와 GPT-4에게 다 시키는게 흥미롭네요 ㅎㅎ
+
+   이제 다른 직업을 빨리 찾아봐야...
+   GeekNews 부터 자동화를.. 😅
+
+   긱뉴스 자동화 작업중입니다. 완전은 아니고 반자동 정도로.. ㅎㅎ
+
+   이제 링크만 넣어주면 자동으로 제목 붙이고 요약하고 번역해서 발행되나요? +_+
+
+   비슷하게 생각은 하고 있는데요. 아무래도 사람이 요약하는 것보다 떨어져서..
+   메인 기능 보다는 서브 기능으로 만들어볼까 합니다.
+"
+"https://news.hada.io/topic?id=9065","Thoughtworks Technology Radar, Volume 28 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Thoughtworks Technology Radar, Volume 28 공개
+
+   테크닉/도구/플랫폼/개발언어 및 프레임워크 분야의 최신 트렌드들을 Hold/Assess/Trial/Adopt 4단계로 시각화 및 설명
+
+실용적인 AI의 급부상
+
+     * ChatGPT와 같은 도구의 등장으로 기술 업계 및 세상 사람들이 생각했던 AI가 할 수 있는 것에 대한 인식을 완전히 바꾸어 버렸음
+     * 이 기회를 탐색하는 것과 동시에 그들의 한계와 위험성에 대해 유의할 것을 권장
+
+접근 가능한 접근성
+
+     * 접근성은 새로운 관심사는 아니지만, 이 분야에서 아이디어와 도구가 확산되면서 제품팀/기술팀이 더 쉽게 해결할 수 있게 되었음
+     * 이제는 접근성을 진지하게 고려하지 않거나, 제품에 접근성을 포함시키지 않는 것에 대해서는 변명의 여지가 거의 없음
+
+Lambda Quicksand
+
+     * 서버리스 함수는 매우 유용할 수 있디지만, 나쁜 습관을 조장하고 잘못된 결정을 내려서 복잡도를 증가시킬 수 있음
+     * 서버리스를 최대한 활용하려면 사용처를 명확히 하고 잠재적인 결과를 인지해야 함
+
+엔지니어링의 엄격함과 분석 & AI의 만남
+
+     * AI와 같은 Hype 트렌드들은 고품질 데이터에 의존
+     * 데이터가 없다면, 정확성이 떨어지고 나아가 사용자로부터의 신뢰를 잃을 위험이 있음
+     * 이는 모델 검증, 지속적인 검증 및 모니터링과 같은 단단한 엔지니어링 프랙티스를 통해서만 효과적으로 수행이 가능
+     * 다행스럽게도 이런 도구들이 점점 확대되고 있으므로 각 팀은 성장하는 에코시스템을 활용하는 것을 권장
+
+선언할까? 프로그래밍할까?
+
+     * 개발자들이 특정작업에 대해서 선언적 사양(Declarative Specification) 과 다목적 범용 언어중 하나를 선택하는 것은 중요한 고려 사항
+     * 명확한 답을 할 수 없기 때문에 새로운 상황에 직면했을 때 장점과 위험성에 대해서 생각해보는 것이 중요
+
+[Techniques]
+
+  Adopt
+
+    1. Applying product management to
+       internal platforms
+    2. CI/CD infrastructure as a service
+    3. Dependency pruning
+    4. Run cost as architecture fitness function
+
+  Trial
+
+    5. Accessibility annotations in designs
+    6. Bounded low-code platforms
+    7. Demo frontends for API-only products
+    8. Lakehouse architecture
+    9. Verifiable credentials
+
+  Assess
+
+   10. Accessibility-aware component test design
+   11. AI-aided test-first development
+   12. Domain-specific LLMs
+   13. Intelligent guided accessibility tests
+   14. Logseq as team knowledge base
+   15. Prompt engineering
+   16. Reachability analysis when testing infrastructure
+   17. Self-hosted LLMs
+   18. Tracking health over debt
+   19. Zero trust security for CI/CD
+
+  Hold
+
+   20. Casual management of webhooks
+   21. Lambda pinball
+   22. Planning for full utilization
+
+[Platforms]
+
+  Adopt
+
+   23. Contentful
+   24. GitHub Actions
+   25. K3s
+
+  Trial
+
+   26. Apache Hudi
+   27. Arm in the cloud
+   28. Ax
+   29. DuckDB
+   30. Feature Store
+   31. RudderStack
+   32. Strapi
+   33. TypeDB
+
+  Assess
+
+   34. Autoware
+   35. Cozo
+   36. Dapr
+   37. Immuta
+   38. Matter
+   39. Modal
+   40. Neon
+   41. OpenLineage
+   42. Passkeys
+   43. Spin
+
+  Hold
+
+   44. Denodo as primary data transformation tool
+
+[Tools]
+
+  Adopt
+
+   45. DVC
+
+  Trial
+
+   46. Akeyless
+   47. Apicurio Registry
+   48. EventCatalog
+   49. FOSSA
+   50. Gitleaks
+   51. Helmfile
+   52. IBM Equal Access Accessibility Checker
+   53. Ktlint
+   54. Kubeflow
+   55. Mend SCA
+   56. Mozilla SOPS
+   57. Ruff
+   58. Soda Core
+   59. Steampipe
+   60. Terraform Cloud Operator
+   61. TruffleHog
+   62. Typesense
+   63. Vite
+
+  Assess
+
+   64. axe Linter
+   65. ChatGPT
+   66. DataFusion
+   67. Deepchecks
+   68. Design token translation tools
+   69. Devbox
+   70. Evidently
+   71. Giskard
+   72. GitHub Copilot
+   73. iamlive
+   74. Kepler
+   75. Kubernetes External Secrets Operator
+   76. Kubeshark
+   77. Obsidian
+   78. Ory Kratos
+   79. Philips’s self-hosted GitHub runner
+
+[Languages and Frameworks]
+
+  Adopt
+
+   80. Gradle Kotlin DSL
+   81. PyTorch
+
+  Trial
+
+   82. dbt-unit-testing
+   83. Jetpack CameraViewfinder
+   84. Jetpack DataStore
+   85. Mikro ORM
+   86. Per-app language preferences
+   87. Quarto
+   88. River
+   89. Stencil
+   90. Synthetic Data Vault
+   91. Vitest
+
+  Assess
+
+   92. .NET 7 Native AOT
+   93. .NET MAUI
+   94. dbt-expectations
+   95. Directus
+   96. Ferrocene
+   97. Flutter for embedded
+   98. Fugue
+   99. Galacean Engine
+   100. LangChain
+   101. mljar-supervised
+   102. nanoGPT
+   103. pandera
+   104. Qwik
+   105. SolidJS
+   106. Turborepo
+   107. WebXR Device API
+
+   Thoughtworks Radar 27호 발간
+   Thoughtworks Radar 26호 (39p PDF)
+   ThoughtWorks Radar 23호 발간
+   ThoughtWorks Radar 22호 발간 [32p PDF]
+   ThoughtWorks가 6개월마다 발행하는 기술뉴스 - Radar Vol.21
+"
+"https://news.hada.io/topic?id=9049","넷플릭스, 스페인에서 지난 분기에 백만명 사용자 감소. 계정 공유 금지의 여파","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              넷플릭스, 스페인에서 지난 분기에 백만명 사용자 감소. 계정 공유 금지의 여파
+
+   스페인은 2월에 공유제한 기능을 도입. 감소한 1백만명중 2/3가 다른 사람의 계정 사용중
+
+   Netflix, 캐나다/뉴질랜드 등 4개국에서 계정 공유 제한 시작
+"
+"https://news.hada.io/topic?id=9085","Little Book of Deep Learning [143p PDF]","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Little Book of Deep Learning [143p PDF]
+
+     * 작은(Little) 모바일 기기의 화면에서 읽기 좋게 편집된 François Fleure 교수의 딥러닝 기초 서적
+
+I. Foundations
+
+    1. Machine Learning
+       1.1 Learning from data
+       1.2 Basis function regression
+       1.3 Under and over-fitting
+       1.4 Categories of models
+    2. Efficient Computation
+       2.1 GPUs, TPUs, and batches
+       2.2 Tensors
+    3. Training
+       3.1 Losses
+       3.2 Autoregressive models
+       3.3 Gradient descent
+       3.4 Backpropagation
+       3.5 Training protocols
+       3.6 Training data
+
+II. Deep Models
+
+    4. Model Components
+       4.1 The notion of layer
+       4.2 Linear layers
+       4.3 Activation functions
+       4.4 Pooling
+       4.5 Dropout
+       4.6 Normalizing layers
+       4.7 Skip connections
+       4.8 Attention layers
+       4.9 Token embedding
+       4.10 Positional encoding
+    5. Architectures
+       5.1 Multi-Layer Perceptrons
+       5.2 Convolutional networks
+       5.3 Attention models
+
+III. Applications
+
+    6. Prediction
+       6.1 Image denoising
+       6.2 Image classification
+       6.3 Object detection
+       6.4 Semantic segmentation
+       6.5 Speech recognition
+       6.6 Text-image representations
+    7. Synthesis
+       7.1 Text generation
+       7.2 Image generation
+
+   와드가 늘어만 갑니다. ㅋㅋ
+
+   감사합니다
+
+   나이가 나이인지라 노안 온 지 좀 됐는데, 일단 글씨가 크니 참 좋네요 ^^
+
+   좋은 자료 감사합니다.
+"
+"https://news.hada.io/topic?id=9098","EVA - AI-Relational DB 시스템","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       EVA - AI-Relational DB 시스템
+
+     * 간단한 SQL 문장으로 강력한 AI기반 어플리케이션을 개발하기 위한 데이터베이스
+     * AI 중심의 쿼리 최적화로 AI 파이프라인을 가속
+     * 딥러닝 모델을 이용하여 정형(테이블, 피쳐 벡터) 및 비정형(비디오, 팟캐스트, PDF등) 데이터에 대해서 동작
+     * 비정형 데이터 분석에 맞춰진 AI 지향적인 SQL과 유사한 쿼리 언어 지원
+     * 이미지 분류, 객체 인식, OCR, 텍스트 감정 분류, 얼굴 인식 등 비정형 데이터를 위한 분석하기 위한 모델도 함께 제공
+     * 파이썬으로 구현된 아파치 라이센스 오픈소스
+"
+"https://news.hada.io/topic?id=9094","Amazon, Alexa용 개선된 LLM 개발 중","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Amazon, Alexa용 개선된 LLM 개발 중
+
+     * Andy Jassay CEO가 실적 발표에서 알렉사용으로 더 ""일반적이고 많은 능력을 가진"" LLM을 개발하고 있다고 밝혀
+     * 이미 Alexa용 LLM이 있지만, 더 뛰어난 것을 만드는 중
+     * 새로운 LLM을 통해서 ""세계 최고의 개인 비서""를 만드는 목표를 달성하는데 도움이 될 것이라고 믿음
+
+   이런 기사를 보며 계속 드는 생각은.. ""Siri""는 어디갔나..
+
+   애플 사내에서도 시리를 버린자식쯤으로 취급한다고 기사를 봤네요 ㅠ
+"
+"https://news.hada.io/topic?id=9021","Linux 홈 서버를 Idle시 슬립하고, 필요시 깨워서 동작하게 설정하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Linux 홈 서버를 Idle시 슬립하고, 필요시 깨워서 동작하게 설정하기
+
+     * Raspberry Pi 같은 기기에 Ubuntu를 설치하고 필요시 깨워서 동작하고 슬립하게 만들기
+          + SSH, 타임머신 백업 등등의 요청이 들어왔을때만 가동
+     * wake-on-LAN 유니캐스트 패킷을 지원하는 기기 필요
+     * Suspend-on-Idle 을 직접 구현함
+          + 로그인된 SSH 세션이 없고, 동작중인 타임 머신 백업이 없을때
+          + 더 많은 메트릭이 필요하다면 가장 유명한 Circadian 같은 걸 고려할 듯
+     * ARP Stand-in 을 구현
+
+   CNCF 발표들을 보니, wasm 을 kubernetes 와 엮어보려는 시도가 요즘 많은 것 같습니다.
+
+   댓글을 잘못 달았네요. https://news.hada.io/topic?id=9019 여기에 달려고 했습니다 머쓱..
+"
+"https://news.hada.io/topic?id=9031","OpenAI, 브랜딩 가이드라인 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          OpenAI, 브랜딩 가이드라인 공개
+
+     * xxxxGPT 라는 이름을 사용하지 말고, Powered by GPT-4 / ChatGPT / DALL·E 같은 형식을 사용
+          + Built on/with, Developed on/with 모두 가능
+     * 정확한 모델 명을 사용 : GPT-3, GPT-4, ChatGPT, DALL·E
+          + Chat GPT, ChatGPT4 는 틀린 이름임
+     * 날짜 버전명 모델을 사용 : GPT-4 Mar 14
+          + Ada, Davinci, GPT-3.5-Turbo 같은 엔진 클래스명 사용하지 말 것
+          + 모델명을 거론할 때 OpenAI를 대신 사용하지 말 것
+     * 생성된 콘텐츠에는 Written with, Created With 를 쓸 것
+          + Written by, Created by 는 안 됨
+
+   온갖 GPT가 이제 작명에 고심하겠네요
+"
+"https://news.hada.io/topic?id=9039"," 만화로 보는 Python 프로그래밍 언어 이야기 2","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      만화로 보는 Python 프로그래밍 언어 이야기 2
+
+     * 1989년 12월 귀도 반 로섬은 크리스마스 휴가기간 동안 드디어 파이썬 개발 시작
+     * 여러 아이디어를 ABC언어에서 가져왔다
+     * 1990년 12월, 개발에 착수한지 1년만에 아메바(Amoeba) 운영체제에서 파이썬 언어가 동작
+     * 1991년 2월 MIT라이선스로 파이썬 0.9.0 버전을 외부에 공개
+     * 유즈넷( USENET) 뉴스그룹에 comp.lang.python을 통해 커뮤니티와 소통
+     * 1994년 함수형 프로그래밍 도구와 문자열 처리가 개선된 파이썬 1.0을 출시
+     * 2001년에는 파이썬 소프트웨어 재단(PSF) 설립
+     * 2008년에는 파이썬 3.0을 릴리스
+     * 통계나 머신 러닝을 공부하는 과학자나 엔지니어들이 파이썬을 많이 사용
+     * 2018년 파이썬 프로젝트 수석 디자이너에서 물러나고 은퇴 발표
+     * 2020년 은퇴를 번복하고 마이크로소프트에 입사해서 더 빠른 파이썬(Faster 파이썬) 프로젝트 수행 중
+
+   (그리고 한 리크루터로 부터 메시지를 받게 되는데....)
+"
+"https://news.hada.io/topic?id=9033","MouthPad - 입천장에 붙여서 혀로 움직이는 입력장치 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    MouthPad - 입천장에 붙여서 혀로 움직이는 입력장치
+
+     * 혀로 사용하는 핸즈프리 Intraoral(구강 내) 터치패드
+     * 사용하기 쉽고 매우 직관적
+     * 컴퓨터, 스마트폰, 태블릿에 블루투스로 연결하여 5시간 연속 사용 가능(충전 2시간)
+     * 별도의 소프트웨어 없이 대부분의 OS지원
+     * 신뢰할 수 있는 치과용 레진재료로 제작
+     * 7.5g
+
+   신체에 마비가 오면 가장 늦게 마비되는 곳이 얼굴이니... 엄청 좋은 아이디어 같네요.
+
+   잘 상용화되어 저렴한 값에 보급될 수 있으면 좋겠습니다.
+
+   제목만 봤을땐 재미로 만든 프로젝트일줄 알았는데 손을 쓰기 힘든 상황을 위한 진지한 프로젝트였네요. 발상이 대단한데요
+
+   관련 HN 뉴스 댓글에서 봤는데 https://news.ycombinator.com/item?id=35684828
+
+   MacOS에는 카메라를 이용해서 얼굴/머리의 움직임으로 포인터를 이동 가능하며,
+   웃기, 입벌리기, 혀내밀기, 눈 깜박이기, 눈썹올리기, 입술 오므리기 등을 통해서 왼쪽/오른쪽/이중클릭/삼중 클릭등도 가능합니다.
+   https://support.apple.com/ko-kr/guide/mac-help/mchlb2d4782b/mac
+"
+"https://news.hada.io/topic?id=9139","Arc browser란? 웹을 재구성 가능한 구성 요소로 취급하는 새로운 브라우저","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Arc browser란? 웹을 재구성 가능한 구성 요소로 취급하는 새로운 브라우저
+
+   Arc는 웹을 리믹스 가능한 구성 요소로 취급하는 새로운 브라우저
+     * Chrome과 같은 엔진 기반, 더 나은 UI 및 다양한 기능 제공
+     * 사이드바: Arc의 핵심 기능으로, 탭과 북마크를 효율적으로 구성
+     * 웹의 운영 체제로 설계: Spaces, 내장 미디어 컨트롤, 화면 속 화면 모드 (PIP), 노트, 이젤 (easel은 원래 그림 그릴 때 쓰는 거치대를 뜻함), Boosts 기능 등 정리 기능 포함
+     * 현재 대기자 리스트를 통해 사용가능하고 Mac에서만 사용 가능.
+
+   웹의 정보를 수집하고 편집할 수 있게 만들어 주는 웹 브라우저입니다.
+   최근 많이 들어 봤는데 궁금해서 정리해 봤습니다.
+
+   지난 주에 깜빡하고 못 올렸는데요, Arc 브라우저 초대장이 새로 발급되어 공유드립니다 ^^
+
+   https://arc.net/gift/96cfbcc2
+
+   (5장 남아있습니다~)
+
+   몇달전에 써본적있는데 너무 느려서 지운기억이 나네요.
+
+   포스트 모더니즘 같은 브라우저네요.
+
+   맥 전용이네요...
+
+   혹시 초대장 필요하시면 아래 링크 참고해주세요~ (현재 5장 남아있습니다)
+
+   https://arc.net/gift/14825a23
+
+   지금 보니 모두 소진되었네요. ^^;
+   6일 후에 새로 발급되는거 같은데, 필요하신 분 계시면 여기 답변 달아주시면 재생성되면 공유드리겠습니다~
+
+   이젤은 무엇인가요? 검색해도 잘 모르겠어서요
+
+   정보를 수집할 수 있는 화이트 보드 같은거라고 보시면 됩니다.
+   이 유튜브를 보면 자세히 설명되어 있어요. 아마 만드신 분이 설명하는 영상인것 같습니다.
+   https://www.youtube.com/watch?v=ukquBSOpmTk
+"
+"https://news.hada.io/topic?id=9030","griptape - LLM 워크플로우를 위한 파이썬 프레임워크 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   griptape - LLM 워크플로우를 위한 파이썬 프레임워크
+
+     * 순차적 LLM 파이프라인을 작성하고 복잡한 유스케이스를 위한 대규모 DAG 워크플로우 구축
+     * Chain of Thought 기능으로 LLM을 보강하고, 외부 도구와 연동(계산기, 웹검색, 스프레드시트 편집기, API 커넥터)
+     * AI 파이프라인에 메모리를 추가해서 컨텐스트를 보존 및 요약에 사용
+"
+"https://news.hada.io/topic?id=9042","애플, WWDC 에서 개인 일상기록용 저널링 앱 공개 예정","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    애플, WWDC 에서 개인 일상기록용 저널링 앱 공개 예정
+
+     * 내부 코드명 ""Jurassic"" 으로 iOS 17에 기본 탑재될 것으로 예상
+     * 정신 건강용 도구로 포지셔닝할 계획 (규칙적인 일기 쓰기가 우울증과 불안감에 도움이 된다는 연구결과에 따라)
+     * 위치, 연락처, 운동 및 아이폰에 로컬로 저장된 다양한 개인 정보를 이용 가능할 것
+     * All Day People Discovery 기능으로 근접도를 추적하여 직장 동료와 친구를 구분 가능
+     * 다른 앱에서는 할 수 없는 방식으로 하루 종일 사용자의 활동을 모니터링 가능할 것으로 보여, 비슷한 저널링 앱 개발자들에게는 안좋은 일이 될 것
+
+   타격 받을 회사가 한둘이 아닐것 같네요. 퀄리티에 따라 다르겠지만..
+"
+"https://news.hada.io/topic?id=9013","Ask GN: 이번 주말에 뭐 하시나요?","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Ask GN: 이번 주말에 뭐 하시나요?
+
+   이번 주말에 뭘 하려고 계획 중인지 편하게 얘기해 보아요.
+
+   읽을 책, 가볼 곳, 해볼 것.. 어떤 것이든 좋습니다.
+   도움 요청이나 피드백 요청도 좋습니다.
+   물론! 아무것도 하지 않고 쉬는 것도 훌륭합니다.
+
+   지난 주말에 계획하셨던 일의 회고도 한번 남겨봐 주세요.
+
+   해야하는데 하고 몇 년째 미루어 두었던 책장 정리를 이사하고 한 달이 지나 드디어 했습니다.
+   개발, 인문, 정치, 철학, 소설 등으로 분류해 놓으니 기분이 무척 좋네요.
+   덩달아 책장에 분류표를 붙이려고 라벨기까지 구매했습니다.
+
+   LLM를 긱뉴스에 붙여보려고 계속 공부를 하고 있습니다. 범위 및 방식을 많이 고려하게 되네요.
+
+   와~ 안그래도 ask gn에 물어보고 제안하고 싶은 주제였는데요. 저는 매일 긱뉴스를 보지만 과거에 읽은 내용이 필요해서 찾아봐야 하는 경우가 많았습니다. 하지만 검색을 해도 정확한 키워드를 기억하지 못하는 경우 어떤 글이였는지 찾지 못해 답답한 경우가 있었거든요. 그래서 '적당히 멍청하게 물어봐도 찾아주는 서비스가 있으면 좋겠다' 라는 아이디어를 떠올렸었습니다
+"
+"https://news.hada.io/topic?id=9095","LLaMA-Adapter V2: LLaMA를 효율적으로 파인 튜닝하는 도구","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               LLaMA-Adapter V2: LLaMA를 효율적으로 파인 튜닝하는 도구
+
+     * 단 120만개의 학습가능한 파라미터를 통해서 LLaMA를 1시간만에 Instruction-Following & MultiModal 모델로 학습가능
+     * Alpaca는 7B개의 파라미터와 13G 저장공간, 3시간이 필요하지만,
+       LLaMA-Adapter는 1.2M개의 파라미터와 4.7M 저장공간, 1시간이면 됨
+
+   LoRA와 유사한 PEFT 방식을 이용했고 무엇보다 Visual Context를 지원한다는게 주요한 내용아닌가요? 이미 LLaMA의 PEFT 접근의 SFT (Instruction Fine Tune)은 너무 많아서...
+"
+"https://news.hada.io/topic?id=9045","Apple, Epic 게임즈와의 반독점 소송에서 승소","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Apple, Epic 게임즈와의 반독점 소송에서 승소
+
+     * 애플의 앱스토어 운영방식이 반독점법을 위반하지 않았다고 판결
+     * 10건중 9건이 Apple에 유리하게 결정됨
+     * 인앱구매시 외부 결제용 링크를 허용하라는 판결에 대해서는 여전히 인정
+     * 애플과 에픽 모두 이 판결에 대해 항소(애플은 외부 결제 링크 관련, 에픽은 반독점 소송을 재시도)
+
+   외부 결제 링크 허용만으로 이미 에픽이 크게 이겼지 않나 하고 생각했는데 그렇진 않나 보네요
+
+   이게 싫은 사용자들은 안드로이드 쓰면 되지 않을까요. 앱 사이드로딩도 그렇고...
+
+   전 그래서 안드로이드 쓰는데
+
+   ㅠㅠ
+
+   애플 생태계 내에서는 다른 선택지가 전혀 없는 상태에서 애플의 시장 점유율이 너무 높아졌으니,
+   소비자 입자에선 1+1으로 무조건 선택하던가, 꼬우면 안드로이드나 다른거 쓰던가~ 란 느낌이라 거의 독점 수준인 것 같은데...
+
+   아무리 이렇게 생각해도 법적으론 아닌가보네요.
+
+   아무튼 거대한 생태계는 약간 인질극 처럼 느껴집니다.
+
+   Epic vs. Apple, 애플은 다른 인앱결제 방법을 허용해야 한다고 판결
+"
+"https://news.hada.io/topic?id=9062","Editable - 확장 가능한 Rich 텍스트 에디터 프레임워크","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Editable - 확장 가능한 Rich 텍스트 에디터 프레임워크
+
+     * contenteditable 속성 대신 커스텀 렌더러를 사용해서 브라우저/플랫폼 호환성을 회피
+     * 안정성, 제어 가능성, 성능에 중점을 둔 설계
+     * 현재는 렌더링에 React를 이용
+          + Vue, Solid-js, SvelteJS 등과 비교해 봤지만 현재로선 가장 개발자 경험이 좋고 유연하며 에코시스템이 훌륭
+          + 하지만, 성능 개선을 위해 차후에는 네이티브 DOM 렌더링으로 리팩터링 필요
+     * 다양한 플러그인 지원
+          + 단축키, 마크다운, 컨텍스트 메뉴, 얼라인, 코드블락, 폰트, 헤딩, 이미지, 링크, 리스트, 멘션, 테이블,..
+
+   Typora 오열
+
+   페이스북의 Lexical도 생각나는 군요
+   https://news.hada.io/topic?id=6380
+
+   slate 의 스트럭쳐를 그대로 썼다고 하는군요, 새로운 설계를 하지 않아도 되는 것과, 만약 slate 형태로 데이터를 저장중이라면 에디터를 변경하기에도 유용할 것 같습니다.
+   텍스트에디터가 브라우저, OS 호환성이 정말 쉽지않은데 새로운 접근이네요.
+   안드로이드에서 한글입력도 잘 되고, Selection 클래스가 정말 쓰기 어려웠는데, 아예 새로 만들어 놓은걸 보니 개발할때 편할 것 같네요. (실제로 getSelection() 을 해보니 선택된 영역이 잡히지가 않습니다)
+   처음 로딩할 때 성능개선이 필요해 보이긴 하지만 크리티컬할 것 같진 않습니다.
+"
+"https://news.hada.io/topic?id=9068","유럽에서 ChatGPT로: 출처 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          유럽에서 ChatGPT로: 출처 공개
+
+     * AI에 관한 새로운 EU 법안 초안에 따르면 ChatGPT같은 인공지능 도구 제조업체는 시스템 구축에 사용된 모든 저작권 자료를 공개해야 함.
+     * 뉴스 미디어 연합 등 기존 저작물을 만들었던 작가, 출판 저작자, 기타 창작자들의 보상 요구에 대한 목소리가 반영된 것.
+     * 또한 AI가 EU 법안을 준수하는 콘텐츠를 만들도록 적절한 보호 장치를 추가하는 내용도 포함되어 있음.
+
+   취지가 아예 이해 안되는건 아니지만 솔직히 기술 발전의 관점에서는, 특히 스타트업 하는 사람 입장에서는 ""유럽이 유럽했네""라는 말이 절로 나오겠네요.
+     * 아카이브
+     * HN 스레드
+
+   ""공개적으로 사용 가능한 데이터""란 말로 저작권을 무시하는 행위에 대한 법이라는 말도 있네요.
+   창작자 입장에서는 좋을 수 있지만, 이게 어떤 효과를 불러올지는 잘 모르겠군요.
+
+   게시글 읽으실 때는 아카이브로 들어가시는게 편하실겁니다. (페이월이라..)
+"
+"https://news.hada.io/topic?id=9133","Intel OEM Private Key 유출: UEFI Secure Boot에 타격","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Intel OEM Private Key 유출: UEFI Secure Boot에 타격
+
+     * 지난 4월 MSI가 랜섬웨어 그룹의 사이버 공격을 받아서 1.5TB의 데이터가 유출
+     * 그룹이 400만달러를 요구했으나, MSI가 지불하지 않음
+     * 몸값을 받기 위해 일부 공개된 데이터 중에 Intel이 OEM에게 제공한 Private Key(KeyManifest)가 유출
+     * 이 키는 Intel Boot Guard에 대한 것으로, 운영체제 시작전에 프로그램을 검증해서 멀웨어 실행을 방지하는 UEFI Secure Boot 메커니즘과 관련이 있음
+     * 인텔의 11/12/13세대 프로세서에 영향을 주며, MSI의 166+개 제품에 연관
+
+   허허....
+"
+"https://news.hada.io/topic?id=9040","면접관 관점에서 본 좋은 개발자 블로그","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         면접관 관점에서 본 좋은 개발자 블로그
+
+   수많은 개발자의 사례로 인해 개발자 블로그는 취업 스펙이 되어버린 듯하다. 사실 과거에 블로그는 개인 기록의 목적이 강했고, 열심히 노력하는 근성, 의욕, 의지에 대한 어필의 장이 되기도 했다.
+
+   개발 문화는 과거 sourceforge, code project, google code가 있어왔고 최근에는 github, gitlab, bitbucket을 비롯한 오픈 소스 코드 저장소가 매우 일반화되었다. 이 중 개발자 이력서에 github와 함께 blog가 필수로 첨부해야 될 존재로써, 스펙으로써 작용하게 된 것은 개발자 전체에 좋은 문화가 일반화되었다고 볼 수도 있겠지만 그만큼 부담스러운 요소로써 느껴지는 분들도 많은 것 같다.
+
+   그래서 그런 분들을 위해, 부담스럽지 않게 자신에게도 도움이 되면서 이력서 첨부해도 도움이 되는 블로그를 쓰는 방법을 전달하고자 한다.
+
+   그래도 나름 수십번 면접관으로 들어간 입장에서는, github이나 블로그나 눈에 빡 들어오는 것 없으면 솔직히 안봅니다. 업무 시간 중에 이력서 검토하는데, 하나 하나 자세히 볼 시간이 없어요. 특히 노션으로 되어 있는 포트폴리오 가장 싫어 합니다. 이력서 자체에 한 눈에 잘 들어오게 본인의 이력을 정리하는게 가장 좋은 것 같아요.
+
+   노션보다는 그냥 docx나 한글이 낫던가요 ㅎㅎ
+
+   노션도 미사여구 없이 핵심만 간추린다면 읽기 좋은 형태를 충분히 갖출 수 있다고 생각하는데, 잘 된 사례를 본 적이 없어서 저도 갈 수록 선입견이 생기고 있습니다...
+
+   노션 페이지마다 댑스 5개씩 넣은걸 이력서라고 제출한 친구가 기억 나네요
+
+   아 노션 진짜 싫어요 ㅋㅋㅋㅋ
+"
+"https://news.hada.io/topic?id=9136","AI 인프라 비용 딜레마의 현재와 미래","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         AI 인프라 비용 딜레마의 현재와 미래
+
+     * AI 모델 계산 비용이 비싼 이유는 무엇인가?
+     * GPU에 대한 시간 및 비용 논쟁
+     * AI 인프라에 대한 고려 사항들
+          + 외부 인프라 대 자체 인프라
+          + 클라우드 대 데이터 센터 구축
+          + 클라우드 서비스 제공업체들 비교 : 가격, 가용성, 컴퓨팅 딜리버리 모델, 네트워크 상호 연결, 고객 지원
+          + GPU들 비교: 훈련 vs. 추론, 메모리 요구사항, 하드웨어 지원, 지연시간 요구사항, 급격한 변화(Spikiness)
+          + 모델 최적화 및 스케줄링
+     * AI 인프라 비용은 어떻게 진화할까?
+     * a16z의 ""Navigating the High Cost of AI Compute"" 글의 번역 & 요약 입니다.
+"
+"https://news.hada.io/topic?id=9069","제품 스쿼드의 스크럼 프로세스 개선기 2부","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        제품 스쿼드의 스크럼 프로세스 개선기 2부
+
+     * IT 서비스를 개발하는 제품 스쿼드의 스크럼 프로세스를 개선하기 위한 회고 글 2부
+     * 1부에서는 레몬베이스 제품 스쿼드의 과거 스크럼 방식과 그로 인해 발생한 문제점을 소개
+     * 이번 2부에서는 스쿼드 내에서 해당 문제점들을 어떻게 해결했고, 현재는 어떤 방식으로 일하는지를 자세히 설명
+     * 요약
+          + 충분한 커뮤니케이션의 부재와 잘못된 스크럼 관리 문제점을 개선
+          + 커뮤니케이션 문제는 심리적 안전감을 높여 해결
+          + 구조화된 스크럼 관리를 통해 업무 프로세스 개선
+               o Pager 리뷰 미팅
+               o 백로그 리파인먼트 미팅
+               o 스프린트 플래닝
+               o 데일리 스크럼
+               o 스프린트 리뷰
+               o 스프린트 회고
+"
+"https://news.hada.io/topic?id=9143","Databerry - 나만의 LLM Agent를 만드는 노코드 플랫폼","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Databerry - 나만의 LLM Agent를 만드는 노코드 플랫폼
+
+     * 내 개인 데이터 기반 Semantic 검색을 가능하게 해주는 커스텀 챗봇을 손쉽게 제작
+     * 어디서든 데이터 로딩 가능 : 텍스트, 웹페이지, 워드/엑셀/파워포인트/PDF/마크다운. 곧 웹사이트/노션/Airtable 지원 예정
+     * 각 데이터 스토어에 대해서 ChatGPT 플러그인 자동 생성
+     * 벡터 DB로 Qdrant, Embedding은 OpenAI 를 활용
+     * Next.js + Joy UI + LangChainJS + PostgreSQL + Prisma
+"
+"https://news.hada.io/topic?id=9063","tuql - SQLite DB에서 GraphQL 서버를 자동생성하는 도구","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                tuql - SQLite DB에서 GraphQL 서버를 자동생성하는 도구
+
+     * 정형화된 SQLite DB를 GraphQL 엔드포인트로 변환
+     * 객체 간의 관계를 추론 : belongsTo, hasMany, belongsToMany 를 지원
+     * 객체를 생성,수정,삭제 하고, n:n 관계를 연결하는데 필요한 기본 Mutation을 생성
+     * Javascript 오픈소스
+"
+"https://news.hada.io/topic?id=9126","StarCoder, BigCode 프로젝트가 공개한 코드용 LLM","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  StarCoder, BigCode 프로젝트가 공개한 코드용 LLM
+
+     * 80+개의 프로그래밍 언어에 대해서 1조개의 토큰으로 훈련된 15.5B 모델
+     * 효율적인 생성을 위해 MQA를 새용하여, 8192 토큰 컨텍스트 윈도우를 가짐
+          + StarCoderBase : 80개 이상의 언어 데이터를 가진 The-Stack v1.2(6TB) 데이터셋으로 훈련
+          + StarCoder : Python에 대해서 좀 더 훈련한 모델
+     * Chat Demo 및 VSCode 용 확장 제공
+
+   트위터 공지 글에 있는 논문 링크입니다. :)
+
+   https://drive.google.com/file/d/1cN-b9GnWtHzQRoE7M7gAEyivY0kl4BYs/view
+
+   HuggingFace Chat에서 바로 사용할 수 있게 공개도 되어있네요. :)
+   https://huggingface.co/chat/?model=bigcode/starcoder
+
+   SantaCoder - 11억개(1.1B) 파라미터로 학습한 코드 생성 모델
+"
+"https://news.hada.io/topic?id=9093","Ask GN: 이달의 구인 - 멤버를 찾고 계신가요 ? (2023년 5월)","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Ask GN: 이달의 구인 - 멤버를 찾고 계신가요 ? (2023년 5월)
+
+   현재 근무중인 스타트업에서 같이 일할 멤버를 찾고 계시다면
+   회사 소개 / JD / 위치 / 리모트 가능 여부 / 연락방법(이메일,웹사이트) 등을 적어주세요.
+   ""멤버가 직접 1개의 댓글로 홍보를 작성""하시면 됩니다. (서치펌 등은 불가)
+
+   이 글은 매월 첫번째 월요일에 등록됩니다.
+   해당 회사의 공고에 관심있으시면 기재된 메일등으로 연락하시기 바랍니다.
+
+   작성 예)
+
+   하다 | 프론트엔드 개발자, 디자이너 | 서울 역삼 | Remote 가능 | https://hada.io | jobs@hada.io
+   하다는 긱뉴스를 개발 및 운영하는 스타트업 입니다. 저희는 이러 저러 해서 엄청 좋은 회사입니다~~
+   [1] 프론트엔드 개발자 JD : 내용 또는 URL
+   [2] 디자이너 JD : 내용 또는 URL
+
+   29CM | 2023 SS 개발자 공개채용 | 서울 성수동
+   https://careers.29cm.co.kr/2023/tech-ss
+
+   백엔드, 프론트엔드, 모바일(iOS/AOS), 머신 러닝, SRE, 데이터 엔지니어, 데이터 분석, 프로덕트 오너, 프로덕트 디자이너 등 개발과 프로덕트 직군을 중심으로 채용을 진행합니다.
+
+   (과제가 있는) 개발 직군의 경우에는 별도의 서류 심사 과정 없이 바로 과제 전형을 진행하며, 통과하지 못하는 경우에도 지원자분들의 성장에 도움이 될 수 있도록 과제에 대한 피드백을 제공합니다.
+   기존에 29CM에 대해 관심은 있으셨으나 정보가 제한되어 망설이고 계셨다면, 금번 공채에서는 서류/과제전형 합격자 분들을 대상으로 29CM 엔지니어링 리더와의 커피챗도 가능하니 참고해주세요.
+
+   STCLab | Rust 개발자 | 서울 강남구 | https://stclab.com | hwansoo.kim@stclab.com
+
+   안녕하세요, STCLab이라는 회사에서 Cloud Native 제품을 만들고 있습니다. 최근 Rust 기반으로 AWS, Kubernetes 와 연동하는 제품을 만드는 신규사업을 진행중에 있습니다.
+
+   본 제품은 하반기에 오픈소스 프로젝트화 될 예정이며, Rust로 클라우드 제품, 오픈소스 프로젝트 만드는것에 관심있으시거나, 풀스택(Backend - Rust, Frontend - Typescript)에 관심있으신 분은 지원 또는 연락 주세요!(hwansoo.kim@stclab.com)
+
+   [1] Senior SW Engineer, Core-Cloud Native Product - https://www.wanted.co.kr/wd/156638
+   [2] SW Engineer, Fullstack Cloud Native Product - https://www.wanted.co.kr/wd/156636
+
+   [🍋 레몬베이스는 회사와 구성원의 건강한 성장을 기술로 실현하는 SaaS 스타트업입니다.]
+
+   사람은 깨어 있는 시간의 70%를 일터에서 보냅니다. 그 시간이 돈을 벌기 위한 수동적인 시간이 아니라, '나와 조직의 성장과 성공을 위해 주도적으로 활용하는 시간'이 될 수 있도록 레몬베이스는 성장하고 성과를 내는 방식을 기술을 통해 혁신하고 있습니다.
+
+   레몬베이스 팀은 이 문제를 지속적인 성과관리(Continuous Performance Management)로 해결할 수 있다고 믿습니다. 레몬베이스를 통해 일 년에 한두 번이 아니라 일 년 내내 목표를 스스로 설정하고, 그 과정을 실시간으로 공유하고, 또 1:1 미팅을 통해 코칭을 주고받으며, 더 자주 동료들로부터 칭찬과 피드백을 받을 수 있습니다.
+
+   2023년, 70억원 규모의 시리즈A 투자를 유치해 누적 투자액이 140억원으로 늘어난 레몬베이스는 현재 카카오엔터테인먼트, 컴투스, 롯데제과, 버킷플레이스, 쏘카, 카카오스타일 등 시대를 선도하는 수많은 기업과 함께 성과관리를 혁신하고 있습니다.
+
+   ""회사와 구성원의 건강한 성장""이라는 미션을 가진 레몬베이스와 함께 성장할 미래의 크루를 찾고 있습니다. 레몬베이스 팀의 여정에 동참해 주실 분들을 기다립니다 :)
+
+   *팀 소개 / 채용페이지 : https://www.lemonbase.team/
+   *엔지니어링 그룹 페이지 : https://www.lemonbase.team/group_engineering
+   ✔️ Backend Engineer : https://www.lemonbase.team/recruit/be
+   ✔️ Backend Engineer (산업기능요원) : https://www.lemonbase.team/recruit/be_sip
+   ✔️ Frontend Engineer : https://www.lemonbase.team/recruit/fe
+   ✔️ Frontend Engineer (산업기능요원) : https://www.lemonbase.team/recruit/fe_sip
+   ✔️ QA Manager : https://www.lemonbase.team/recruit/qa
+
+   <<민병철교육그룹에서 React.js 웹 프론트엔드 개발자를 찾습니다>>
+
+   민병철교육그룹(BCM)은 8년 연속 소비자 선호도 1위를 달리는 1:1 영어회화 앱 ‘민병철유폰’ 서비스를 제공하는 에듀테크 기업이에요 :)
+
+   우리는 이용자가 '매일매일 꾸준히' 학습할 수 있는 최고의 영어교육 UX를 만든다는 미션 하에 끊임없이 서비스와 조직구조에 지속적인 변화를 그리며 성장하고 있으며,
+   수백명의 자체 강사들을 효율적으로 배정하고, 10분 전 수업취소 시에도 대응이 가능한 데이터 기반의 민첩한 서비스를 운영하고 있답니다.
+
+   민병철교육그룹에서 함께 최고의 영어교육 UX를 만들어갈 Winning Team의 동료가 되어주세요 :)
+
+   🤎고용형태 : 정규직
+   🤎근무지 : 선릉역 도보 5분 / 어디서나 근무할 수 있는 WFA 제도(Work From Anywhere; 자율근무환경제도)
+   🤎지원방식: 이메일지원 (recruit@bcm.co.kr)
+
+   JD가 궁금하다면 ▶ bit.ly/3Ayefno
+   '민병철유폰' 서비스가 궁금하다면 ▶ https://app.uphone.co.kr
+   '민병철교육그룹'의 기업문화가 궁금하다면 ▶ http://bcm.co.kr
+
+   그 외 궁금한 사항은 이메일 또는 카카오톡 채널을 통해 언제든, 편히 문의 주세요 :)
+   이메일 ▶ recruit@bcm.co.kr
+   카카오톡 채널 ▶ @bcmrecruit (민병철교육그룹 채용)
+
+   [저와 차세대 AGI의 형태인 AIvilization을 같이 개발할 사람을 찾습니다]
+
+   현재 전세계는 하루가 다르게 바뀌어가고 있습니다. 특히 LLM을 활용하여 그 위에 AGI를 구축하고자 하는 시도가 많이 생겨나고 있습니다. LangChain, BabyAGI, AutoGPT, CAMEL, generative agents 등 LLM이 도구를 사용하고 여러 LLM들끼리 협업하고 소통하는 일이 이젠 놀라운 순간이 아닙니다.
+
+   저는 이러한 시도들보다 한 차원 더 높은 시도를 해보고자 합니다. 바로 AI로 이뤄진 문명을 구축하는 것입니다. 마치 인간처럼 새로운 AI를 이 문명에 invite하고, 서로 talk하고, 도구를 build하고, 도구를 use 하는 것입니다. 문명의 시작에는 기본적인 AI 하나만 존재하지만 유저의 요청을 수행하면서 점점 새로운 AI가 추가되고 각자 전문성이 생기게 됩니다. 고도로 발전된 AI 문명은 수백 개의 AI와 함께 어떤 유저의 요청이라도 다 수행해낼 것입니다. 이 AI문명은 온라인에서 사람의 삶을 혁신적으로 바꿔줄 서비스를 1분에 하나씩 만들어낼 수 있습니다.
+   우리는 이 AI문명을 AIvilization이라고 부르기로 했습니다.
+
+   전세계 최초로 AI문명을 같이 개발할 사람을 찾습니다.
+   DM 혹은 adldotori@gmail.com 으로 편하게 연락 부탁드립니다.
+
+   자세한 내용은 아래 블로그를 참고해주세요.
+   https://www.t4eh0.com/lets-develop-aivilization/
+"
+"https://news.hada.io/topic?id=9043","Weights & Biases, LLMOps 도구 W&B Prompts 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Weights & Biases, LLMOps 도구 W&B Prompts 공개
+
+     * LLM 기반의 어플리케이션 개발을 도와주는 도구 모음
+          + LLM 실행 플로우를 시각화 및 검사
+          + LLM의 입력/출력 분석
+          + 중간 결과 확인
+          + 프롬프트 관리 및 저장
+     * 1라인으로 LangChain / OpenAI 와 연동 가능
+     * LLM 평가용 OpenAI Evals와 연동하는 W&B Launch
+     * 기존 W&B Experiments 와 W&B Tables 와 연동
+"
+"https://news.hada.io/topic?id=9090","Show GN: Caveduck - 대화형 AI 캐릭터 제작 및 공유 플랫폼","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Show GN: Caveduck - 대화형 AI 캐릭터 제작 및 공유 플랫폼
+
+     * 안녕하세요. 사이드 프로젝트로 제작한 대화형 AI 캐릭터 제작 및 공유 서비스 소개드립니다.
+     * 현재 gpt-3.5-turbo 모델을 통해 대화를 생성합니다. 향후 다양한 LLM을 지원하여 유저가 본인의 취향에 맞게 선택할 수 있는 기능을 도입할 예정입니다.
+     * 자신이 만든 캐릭터를 비공개 상태로 대화하거나, 다른 사용자들이 이용하도록 공개할 수 있습니다. 자신이 제작한 공개 캐릭터를 다른 사용자가 사용할 경우 보상을 받을 수 있는 수익 공유 모델이 추후 적용될 수 있습니다.
+     * 현재 모든 서비스를 무료로 이용해보실 수 있습니다. OpenAI 사용료로 인해 향후에는 인당 사용 제한 및 유료 플랜이 적용될 수 있습니다.
+     * 아직 부족한 부분이 많은데 계속 보완해나갈 예정입니다. 재밌게 사용해보시면 좋겠습니다.
+
+   해외에서는 캐릭터 기반의 챗봇 서비스가 슬슬 많아지는 것 같은데, 이제 한국어 서비스도 나왔군요.
+   공개 축하드립니다~
+
+   그리고 제한을 걸더라도 로그인 없이 잠깐 테스트해 볼 수 있으면 다른 분들도 더 활발히 테스트를 해주실 것 같습니다.
+   아무래도 회원 가입을 싫어하는 분이 많으셔서요. :)
+
+   피드백 감사합니다! 아무래도 편하게 써보시기에는 그게 좋을 것 같네요. 해당 기능을 빨리 도입해보겠습니다 :)
+"
+"https://news.hada.io/topic?id=9055","crul - 모든 웹페이지 또는 API를 무료로 쿼리해주는 도구","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  crul - 모든 웹페이지 또는 API를 무료로 쿼리해주는 도구
+
+     * 웹페이지의 내용을 읽거나, API를 호출하여 테이블 형태로 파싱
+     * 다양한 정렬, 필터링, 컬럼 제어등 기능 제공
+     * S3, Kafka, Splunk 등 30개 이상의 데이터 저장소로 Export 지원
+     * 스케줄링 가능(인터벌 지정)
+     * 이전 결과에서 변경된 부분만 추출 가능(Incremental Changes)
+     * 웹페이지 스크릿샷 저장 가능
+     * MacOS 데스크탑 앱 또는 Docker 이미지로 제공
+     * 차후에 오픈소스로 공개하는 것을 목표
+
+   curl로 잘못봤네요 ㅋㅋ
+
+   저두요..ㅋㅋㅋㅋ curl에 대한 재조명 그런건가 했어요ㅋㅋ
+"
+"https://news.hada.io/topic?id=9087","Whisper.cpp 1.4.0 릴리즈 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Whisper.cpp 1.4.0 릴리즈
+
+     * 정수형 양자화(integer quantization) 지원: ggml Whisper 모델을 기본 16bit 실수형 가중치를 4,6,8bit 정수형 가중치로 전환 가능
+          + 디스크 크기 및 메모리 사용량을 줄여서 일부 아키텍처에서 더 빠르게 실행
+          + llama.cpp 프로젝트에 기여된 코드에 의해서 가능해진 것
+     * cuBLAS를 이용하여 NVIDIA GPU 지원
+
+   Whisper.cpp - OpenAI Whisper의 고성능 C/C++ 구현체
+"
+"https://news.hada.io/topic?id=9026","2023 Google 검색 플레이북","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          2023 Google 검색 플레이북
+
+     * 4개의 플레이북 콘텐츠(PDF)로 구성 : 검색, 스마트 입찰, 광고 소재, 커버리지
+     * Google 검색 광고를 운영하여 최적의 성과를 낼 수 있는 방법을 ‘Google 검색 하우스'의 형태로 정리
+     * 비즈니스 목표에 따라 어떤 스마트 입찰 전략이 적합한지 알아보고, 효과적인 스마트 입찰 전략을 위해서는 어떤 작업이 필요한지
+     * 검색의 순간마다 이용자에게 가장 매력적인 메시지를 전달할 수 있도록 광고 소재를 어떻게 최적화할 수 있는지 소개
+     * 커버리지 개선을 위한 키워드 매칭 전략에 대해 설명. 확장 검색을 활용한 효과적으로 광고 노출 범위를 확대하는 방법
+     * Google 검색 광고를 운영하며 발생하는 여러 가지 고민들을 클릭 한 번에 해결할 수 있는 검색 최적화 점수에 대해 소개. 추천 사항을 적용하여 검색 광고를 고도화할 수 있는 방법
+"
+"https://news.hada.io/topic?id=9132","MPT-7B, 상업적으로 이용 가능한 오픈소스 LLM","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     MPT-7B, 상업적으로 이용 가능한 오픈소스 LLM
+
+     * 1조개의 토큰으로 학습된 트랜스포머
+     * LLaMA-7B와 비슷한 품질이지만 오픈소스, 상업적 이용 가능
+     * 추가로 3개의 파인튜닝 모델도 공개
+          + MPT-7B-Instruct, MPT-7B-Chat, MPT-7B-StoryWriter-65K+(65K 토큰 지원)
+     * MosaicML 플랫폼에서 9.5일간 약 ~$200K 비용으로 학습했고, 자신만의 MPT 모델을 훈련, 파인튜닝, 디플로이 가능
+     * MPT: Mosaic Pretrained Transformers
+
+   요즘 상업적 사용 가능한 오픈소스 LLM 모델이 엄청나게 출시하는걸 보면
+   LLM계의 Stable Diffusion이 되기 위해 경쟁하는 것 같네요.
+
+   우승 승자가 누가 될지 기대됩니다. +_+
+
+   일단 ChatGPT로 먼저 연동해서 개발하고, 나중에 가장 발전된 오픈소스로 교체하는게 좋은 대안일 것 같아요.
+"
+"https://news.hada.io/topic?id=9077","개발자를 위한 ChatGPT 프롬프트 엔지니어링","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       개발자를 위한 ChatGPT 프롬프트 엔지니어링
+
+     * OpenAI와 Andrew Ng이 같이 만든 약 1.5 시간짜리 짧은 강의로 당분간 무료 공개
+     * 초보자용이지만, 고급 머신러닝 엔지니어들에게도 유용
+
+주요 내용
+
+     * LLM은 어떻게 동작하는가
+     * 프롬프트 엔지니어링 모범 사례
+     * LLM API를 어플리케이션에서 어떻게 사용하는 지
+          + Summarizing (e.g., 사용자 리뷰 요약 하기)
+          + Inferring (e.g., 감정 분류, 토픽 추출)
+          + Transforming text (e.g., 번역, 철자 및 문법 교정)
+          + Expanding (e.g., 이메일 자동 작성)
+     * 효율적인 프롬프트 작성법
+     * 커스텀 챗봇 만들기
+
+   다음에 봐야지...하면서 안보게 되는..ㅠㅠ
+"
+"https://news.hada.io/topic?id=9060","Microsoft, Phone Link for iOS 앱을 통해 Windows 11과 iMessage 연동 기능 릴리즈 시작","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Microsoft, Phone Link for iOS 앱을 통해 Windows 11과 iMessage 연동 기능 릴리즈 시작
+
+     * 안드로이드만 지원하던 Phone Link 앱이 iOS도 지원. 지원하는 기능은 다소 제한적
+     * Windows 11 PC에 설치된 Phone Link앱을 통해 아이폰과 블루투스로 연결
+     * 아이폰으로 걸려온 전화를 받거나, 메시지를 보거나, 연락처 정보 보기등 가능
+     * iCloud 연동을 통해서 아이폰의 사진도 윈도우 PC의 Photo 앱에서 접근 가능
+"
+"https://news.hada.io/topic?id=9075","버튼이 돌아온다 - 자동차 제조사들이 운전자가 터치스크린을 싫어한다는 것을 인정하기 시작","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           버튼이 돌아온다 - 자동차 제조사들이 운전자가 터치스크린을 싫어한다는 것을 인정하기 시작
+
+     * 지난 10년간 대시보드 디자인을 뒤덮은 터치스크린에서 벗어나 버튼과 노브로 회귀중
+     * 규제 문제 또는 회사 책임성의 문제가 아니라 소비자 반발의 결과
+     * 터치스크린은 안전에도 좋지 않지만, 현대적으로 보이고 비용도 저렴했기에 많이 사용되었음
+     * 포르쉐는 2024년형 카이엔의 내부에 일부 버튼들을 다시 살렸음
+     * 폭스바겐도 차세대 EV에서 버튼들을 다시 추가할 예정
+     * 현대 역시 최신 코나 버전에서 의도적으로 물리적 버튼과 다이얼을 채택
+
+   관련 업계에 있습니다.
+   개발자도 버튼과 노브가 직관적이고 편합니다....ㅠㅠ
+
+   핸들이 없는 자율주행차 나오기전엔 버튼이 나을거 같아요
+
+   시각과 촉각으로 피드백을 얻는건데
+   눈으로 볼 수 없는 상황에서 햅틱조차 없으면 실패한 ux라고 봅니다.
+"
+"https://news.hada.io/topic?id=9027","제 기술중 90%의 가치가 0으로 떨어졌는데, 나머지 10%의 레버리지는 1000배 상승했어요","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          제 기술중 90%의 가치가 0으로 떨어졌는데, 나머지 10%의 레버리지는 1000배 상승했어요
+
+     * ""TDD의 아버지"" 켄트 벡이 자신의 트윗에 대해 자세히 설명한 글
+
+     ""그동안 ChatGPT 사용을 꺼려왔는데, 오늘 그걸 극복해 봤어요. 이제 왜 내가 꺼려했는지 이해하게 되었습니다.
+     제 기술중 90%의 가치가 0으로 떨어졌는데, 나머지 10%의 레버리지는 1000배 상승했어요. 재보정이 필요해요.""
+     * 첫번째, 어떤 기술이 90%인지, 어떤게 10%에 속하는지에 대한 답은 없습니다.
+          + 우린 3X: Explore/Expand/Extract 에서 Explore(탐색) 영역으로 돌아왔음
+          + 알아내는 유일한 방법은 많은 아이디어를 조금씩 시도하는 것
+     * 두번째, 내 기술의 90%가 (경제적으로) 가치가 없다고 결론을 내린 이유?
+          + 몇가지 경험을 바탕으로 거칠게 추정한 것인데, 예전에 나와 고객에게 가치가 있다고 입증된 기술들이 대부분 복제가 가능함
+     * 세번째, 기술 혁명은 다음과 같이 진행됨
+         1. 예전에 비쌌던 것의 비용을 획기적으로 줄임
+         2. 갑자기 저렴해진 것에서 가치 있는 것을 발견
+          + ChatGPT를 통해서 랩을 작성하게 해봤는데, 예전엔 내가 이런걸 쓸꺼라고 생각도 해보지 않았음. 즉 내가 할수 있는 일의 영역이 1000배 확장 된 것
+     * 네번째, 모두가 ""그래, 하지만 ChatGPT는 그리 좋지않아"" 라고 말함
+          + 하지만, 기술 혁명은 절대적 가치가 아니라 성장률(Growth Rate)에 관한 것이라는 것을 상기시켜 주고 싶음
+          + 내가 크고, 당신이 작더라도 당신이 빠르게 성장한다면 나를 능가하는 것은 시간 문제임
+          + 내 스킬은 계속 향상되겠지만, ChatGPT는 더 빠르게 향상되고 있음. 이건 시간의 문제임
+     * 앞으로 할 일은?
+
+     시도해 볼 수 있는 것을 모두 시도해 보세요. 전 이미 제 예술에 대한 모델을 훈련시켜봤습니다. 도움을 받아서 다양한 작업을 시도하고 뭐가 잘 되는지 확인할 것입니다.
+     * (원글에는 처음 트윗의 내용을 기반으로 해서, ChatGPT에게 찬성/반대 양쪽으로 500자 블로그 포스팅을 작성시켜본 내용이 있습니다. 흥미로운 것은 둘다 ChatGPT를 칭찬합니다.)
+
+   랩을 작성하게 했다니.. 개발자가 랩까지 하게 된다면 1000배 확장이란 말이 과언이 아니군요.
+
+   10%씩이나 남았다구....?
+   그나마 켄트 벡이라서...?
+
+   지식으로 가진게 많을수록 버려지는게 많다는 의미 같네요.
+   지식을 머리속에 담을 필요가 없어진거죠. ChatGPT한테 물어보면 되니,,,
+
+   zzz
+"
+"https://news.hada.io/topic?id=9108","Microsoft, Outlook과 Teams에서 외부 링크를 Edge로 여는 것을 기본값으로 교체예정","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Microsoft, Outlook과 Teams에서 외부 링크를 Edge로 여는 것을 기본값으로 교체예정
+
+     * Microsoft 365 관리자들에게 보낸 공지를 통해 알려짐
+     * 이제 아웃룩에서는 Windows 의 기본 웹브라우저 설정을 무시하고 Edge 브라우저에서 링크를 열도록 강제할 것이며, Teams에도 곧 적용 예정
+     * 이미 Windows 11의 위젯/검색에서도 기본 브라우저를 무시하고 Edge로 오픈하고 있음
+
+   이건 선 넘은거 아닌가요
+
+   마이크로소프트가 또....
+
+   그냥 기본브라우저 설정을 이용해도 되는데.. IE시절의 버릇 나오네요.
+"
+"https://news.hada.io/topic?id=9111","Microsoft, Private ChatGPT를 10배 비싼 가격에 제공할 준비중","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Microsoft, Private ChatGPT를 10배 비싼 가격에 제공할 준비중
+
+     * 은행, 헬스케어, 초대형 기업 같이 정보유출에 민감하거나 개인정보가 중요한 곳들 대상
+     * ChatGPT를 별도의 전용 서버에서 운영
+     * 자원을 많이 필요로 하기 때문에, 현재 일반 버전의 ChatGPT보다 10배 쯤 비쌀수도
+     * OpenAI 역시 비슷한 구독모델을 준비중
+     * 삼성/JPMorgan/Verizon의 경우 이미 직원들이 ChatGPT / Bard를 사용하지 못하게 금지했거나 할 예정이므로, 이런 회사들 대상으로는 적합
+"
+"https://news.hada.io/topic?id=9052","Simple LLM Finetuner - 초보자 친화적인 UI를 가진 LLM 튜닝 도구 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Simple LLM Finetuner - 초보자 친화적인 UI를 가진 LLM 튜닝 도구
+
+     * 다양한 LLM에 대해서 LoRA 메소드(PEFT 라이브러리 이용)로 쉽게 파인튜닝 가능
+     * 데이터셋 관리, 파라미터 커스터마이징, 훈련 및 모델의 추론 능력 평가
+     * 일반 소비자용 NVIDIA GPU(16G VRAM 이상)로도 가능
+     * Linux 또는 WSL
+"
+"https://news.hada.io/topic?id=9144","macOS Internals ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            macOS Internals
+
+     * Mac OS X의 프리릴리즈 부터 Swift 까지 진화를 추적해서 맥과 아이폰을 더 깊이 이해하기
+     * Ars Technica 에서 2014년까지 OS X 리뷰를 담당했던 John Siracusa 가 정리한 글들을 시간순 및 하이라이트로 정리
+          + 프리릴리즈 : Mac OS X DP2 (1999년 12월) ~ Mac OS X Public Beta (2000년 10월)
+          + 릴리즈 : Mac OS X 10.0 Cheetah (2001년 4월) ~ OS X 10.10 Yosemite (2014년 10월)
+
+하이라이트
+
+     * Quartz 2D: PDF-based drawing
+     * Packaged Applications and Frameworks
+     * The Window Server
+     * Project Builder, better known as Xcode
+     * Memory on macOS
+     * Rendezvous, now known as Bonjour and Zeroconf
+     * GPU-accelerated display compositing
+     * ""Sherlocking""
+     * Spatial window management and Exposé
+     * launchd
+     * Extended file attributes
+     * Spotlight
+     * GPU-accelerated window drawing
+     * DTrace and Instruments
+     * FSEvents
+     * Core Animation
+     * Time Machine
+     * LLVM, Clang, and Objective-C Blocks
+     * GCD: Grand Central Dispatch
+     * The Recovery Partition
+     * Hidden scroll bars and natural scroll direction
+     * Modernized Document Model
+     * Automatic Termination
+     * App Sandboxing and Entitlements
+     * ARC: Automatic Reference Counting
+     * FileVault whole disk encryption
+     * Document revision storage
+     * iCloud
+     * Gatekeeper, code signing, and quarantine
+     * Objective-C 2.0 syntax
+     * Power Nap
+     * Finder Tags
+     * App Nap and Background Tasks
+     * Compressed Memory
+     * iCloud Drive
+     * App Extensions
+     * Handoff
+     * Swift
+
+   99년 기사 링크가 살아있다니! 감격스럽습니다. ㅠㅠ
+
+   이거 쭈욱 봤는데 시간흐름으로 정리되서 좋더군요
+   상당수 예전에 본거긴 하지만 추억이 새록새록 ㅎㅎ
+
+   아쉬운 한글로 된 글들이 이렇게 쌓이고 아카이빙 된게 없다는 거네요 ㅜㅜ
+   예전에 애플포럼이나 알비포럼에 관련 글들 써놓은 것도 다 사라져서 더 아쉽네요. 뉴스레터 하면서 아카이빙에 대한 고민도 많아지네요
+
+   맞아요. 국내 사이트들은 양도 살짝 부족한데, 그나마도 시간이 지나면 유지되는게 거의 없어서 아쉬워요.
+   게다가 사이트 개편만 하면 왜 URL을 다 바꾸는지 ㅎㅎ
+
+   하이라이트에 있는 링크들은 리뷰 기사의 특정 페이지 링크를 포함하고 있는데, 중요한 것 찾아보기 좋네요
+"
+"https://news.hada.io/topic?id=9015","Atlassian Intelligence AI 도구 공개 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Atlassian Intelligence AI 도구 공개
+
+     * 가상 팀 동료처럼 동작하는 AI 기능을 기존 사용자들이 추가 비용 없이 이용 가능
+     * Jira/Confluence 에 미팅 요약, 글 초안 작성, 새 Jira 작성등에 AI 기능이 들어감
+     * 다른 도구에 있는 정보들을 자동으로 습득하여 사용자에게 제공
+     * 대화형 질문에 응답하기(Confluence 먼저 도입)
+"
+"https://news.hada.io/topic?id=9089","Show GN: 공포 온라인 방탈출 게임 - 인피니티 큐브: Night House","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Show GN: 공포 온라인 방탈출 게임 - 인피니티 큐브: Night House
+
+   평소 방탈출 카페를 즐겨하기도 해서, 웹상에서 즐길 수 있는 방탈출 게임을 만들었습니다.
+
+   NextJS, Node 기반으로 만들었고 Canvas 없이 HTML로 모두 만들었습니다.
+
+   불끄고 하면 꽤 무섭습니다 ㅋㅋ 즐겨주세요. 약 60분 분량입니다.
+
+   속는셈치고 구매해봤는데, 꽤 재밌네요. 너무 억지스럽지도 않고요. 이후 출시되는 게임들도 꽤 기대가 됩니다.
+
+   곧 출시 예정인 게임들에 대해서 이메일로 알림을 보내주면 좋지 않을까 싶습니다. 버튼 누르면 개봉일 날 알려주는 형태로..
+
+   좋은 피드백 감사드립니다 ㅎㅎ
+
+   소스를 공개해서 여러가지 버전이 나오도록 하는 건 어떨까요?
+
+   잘봤습니다 흥미롭네요 ^^
+
+   감사합니다 ㅎㅎ
+
+   게임은 state 관리가 특히 더 어려울 것 같은데 어떤 라이브러리 쓰셨나요?
+
+   주로 Mobx state tree를 사용했습니다
+
+   오 ㅋㅋㅋㅋㅋㅋ 다른 온라인 방탈출 퀄이 별로던데 이건 되게 재밌네요 문제 하나 막혀서 힌트 얻으러 갑니다...
+
+   와 감사합니다. 힌트방에 언제든 오셔도 좋습니다 ㅎㅎ
+"
+"https://news.hada.io/topic?id=9109","It's A(door)able","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            It's A(door)able
+
+   아쉽게도 모바일은 안 되네요
+
+   ㅋㅋㅋㅋㅋ 하다가 실소 터졌네요.
+
+   잘 만든거 같아요 귀엽습니다.
+
+   첨엔 이게 뭔가 했어요. 아이디어가 신박하네요.
+"
+"https://news.hada.io/topic?id=9012","Pop-Shoot : 80년대 스타일의 슈팅 게임","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Pop-Shoot : 80년대 스타일의 슈팅 게임
+
+   JS로 작성된 오픈소스 게임. 다양한 아이템. 총 5스테이지 & 보스
+
+   맙소사 마우스로 조종하는 슈팅게임이라니...
+
+   게임은 여기 : https://kiwphi.github.io/pop-shoot/
+"
+"https://news.hada.io/topic?id=9084","'AI의 대부' 제프리 힌튼 교수, 구글을 떠나며 AI의 위험성에 대해 경고 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               'AI의 대부' 제프리 힌튼 교수, 구글을 떠나며 AI의 위험성에 대해 경고
+
+     * 딥러닝 개념을 고안한 그는 2013년부터 구글에서 일해왔음
+     * 구글을 떠나는 이유는 회사와의 문제가 아니라, AI의 위험성에 자유롭게 말하기 위한 것
+
+     ""AI가 사람보다 더 똑똑해지는 시점이 30~50년 또는 그 보다 멀다고 생각했지만, 이제 더이상 그렇게 생각하지 않는다""
+     ""나쁜 사람들이 AI를 악용하는 것을 어떻게 막을수 있을지 모르겠다""
+     ""나는 AI를 통제할 수 있다고 여겨질때 까지는, AI를 더 확장해야 한다고 생각하지 않는다""
+"
+"https://news.hada.io/topic?id=9058","Show GN: Tilnote Saver - chatgpt 채팅, 선택한 텍스트 하이라이트, 이미지를 클릭 한 번에 노트에 저장","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Show GN: Tilnote Saver - chatgpt 채팅, 선택한 텍스트 하이라이트, 이미지를 클릭 한 번에 노트에 저장
+
+   안녕하세요. 저는 클라우드 노트인 tilnote를 만들고 있는 wislan 이라고 합니다.
+
+   요즘 chatgpt를 어떻게 사용하면 잘 활용할 수 있을지 생각해 보면서 주말에 이것 저것 만들어 보고 있습니다. (chatgpt notification, chatgpt 글자 자르기, tts 등)
+
+   이번에는 chatgpt의 채팅 내역을 클라우드 노트에 한 번에 저장할 수 있는 크롬 확장 프로그램을 만들어 보았습니다.
+     * 채팅 탭이나 개별 채팅 내역을 클릭 한 번에 노트에 저장.
+     * 저장한 노트는 블로그 글로 공유, 마크다운 파일 다운로드, 에디터로 편집이 가능.
+     * 어떤 사이트에서라도 마우스 우클릭으로 선택한 텍스트와 이미지 한 번에 저장.
+
+   저는 나중에 다시 쓸 채팅이 있을 때 저장을 해두고 제 생각을 적거나 추가적인 학습을 하거나 팩트 체크를 하는 용도로 많이 씁니다. 이 '편집 가능성'이 chatgpt의 활용성을 많이 높여줄 수 있다고 생각합니다.
+
+   그리고 제가 정말 유용하게 쓰는 기능을 하나 더 붙여놓았는데요.
+   바로 마우스 우클릭을 하면 선택한 텍스트나 이미지를 바로 저장할 수 있습니다.
+
+   저는 정보를 캡처한다고 표현하는데 유용한 정보들을 쉽게 저장하고 다시 찾아볼 수 있습니다.
+
+   크롬 확장 앱은 아니지만 안드로이드의 경우 PWA (프로그레시브 웹앱)을 설치하고 공유를 누르면 Web Share Target API를 통해 선택한 텍스트나 이미지를 바로 저장할 수 있습니다.
+
+   저는 매우 유용하게 사용하고 있는데요. 혹시 필요하신 분들이 있을까 공유해 봅니다.
+   한번 틸노트 세이버를 활용해 보세요~
+
+   메모 했다가 집에 가서 다운 받아 써보겠습니다. 감사합니다.
+
+   감사합니다 ^^
+"
+"https://news.hada.io/topic?id=9054","WASP - React/Node/Prisma 기반의 Rails와 비슷한 웹프레임워크 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             WASP - React/Node/Prisma 기반의 Rails와 비슷한 웹프레임워크
+
+     * 풀 스택 웹앱을 더 빠르게 개발할수 있게 지원하는 오픈소스
+     * Auth (깃헙, 구글, 이메일), Job 스케줄링, 이메일 전송 기능 내장
+     * Typesafe RPC 레이어 제공
+     * CLI를 통해서 다양한 플랫폼에 쉽게 배포 가능 (Fly.io, Heroku, Netlify, Railway)
+
+   순간 White Anglo Saxon Protestants인줄 알았습니다 ㅎㅎ;;
+
+   ㄷㄷ 노린 거 아닌가요
+
+   Rect > React
+"
+"https://news.hada.io/topic?id=9101","애플, WWDC에서 15인치 맥북에어 발표할 듯","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       애플, WWDC에서 15인치 맥북에어 발표할 듯
+
+   M2 기반으로 GPU수에 따른 여러개의 모델이 될 것
+"
+"https://news.hada.io/topic?id=9137","Mac 에서 Android Nearby Share 수신 가능한 앱 NearDrop","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Mac 에서 Android Nearby Share 수신 가능한 앱 NearDrop
+
+   그동안 안드로이드 폰에서 맥으로 파일을 전송할때 에어드랍이 안되서
+   이메일, 메신저, sendanywhere 등을 이용했는데
+   이 NearDrop 을 이용하면 동일한 네트워크상에 있는
+   안드로이드폰에서 맥북으로 바로 전송할 수 있게 되었네요.
+
+   지금은 맥에서 수신만 가능하지만, 그래도 유용한것 같아요.
+
+   유사한 기능을 하는 웹앱으로 ShareDrop도 있습니다.
+
+   https://www.sharedrop.io/
+
+   이런 해킹을 보면 정말 재미있네요.
+
+   이제 리눅스에서만 되면....
+
+   수정합니다. 동일한 네트워크 --> 동일한 WiFi Lan
+"
+"https://news.hada.io/topic?id=9146","Apple, iPad용 Final Cut Pro 및 Logic Pro 출시","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Apple, iPad용 Final Cut Pro 및 Logic Pro 출시
+
+     * 멀티 터치로 사용자의 워크플로를 향상
+     * 월 6900원 또는 년 69000원의 구독모델로 이용 가능
+     * iPad용 Final Cut Pro
+          + 영상 녹화, 편집, 최종화 및 공유를 모두 하나의 휴대기기에서 처리할 수 있는 강력한 툴
+          + 실시간 그리기로 애플 펜슬을 이용하여 영상에 직접 그림을 그리거나 글씨 쓰기 가능
+          + 애플 펜슬 호버기능으로 화면 터치 안하고 장면 검토 및 프리뷰
+          + M2 iPad Pro에서는 ProRes 녹화 가능
+          + 머신 러닝을 사용한 빠른 컷 기능 및 음성 분리
+     * iPad용 Logic Pro
+          + 작곡, 비트 제작, 녹음, 편집 및 믹싱을 할 수 있는 정교한 툴 컬렉션을 제공하여 크리에이터가 장소에 구애받지 않고 전문적인 음악을 창작 가능
+          + iPad Pro의 5개 스튜디오급 마이크로 녹음
+          + 애플 펜슬로 정밀 편집 및 세부적인 트랙 자동화
+          + 완전히 새로운 사운드 브라우저
+          + 100가지가 넘는 악기 및 이펙트 플러그인
+          + 비트 제작 및 프로덕션 툴
+          + Mac 과 iPad용 Logic Pro간 프로젝트 쉽게 이동 가능
+"
+"https://news.hada.io/topic?id=9061","Opera One 브라우저 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Opera One 브라우저 공개
+
+     * 기존 오페라 브라우저를 대체할 용도로 완전히 재설계
+     * 멀티스레디드 Compositor를 UI에 적용한 크로미엄 기반의 브라우저 : 유려한 애니메이션과 세련된 시각효과 적용
+     * Modular 디자인 : 각각의 기능들이 작은 모듈처럼 UI에 적용 - 사이드바, 탭 모듈, 어드레스바 등
+     * 직관적인 탭 내비게이션 : 콘텍스트 기반 자동 탭 그룹 지원. 탭 그룹 단위 Collapse 가능
+     * 사이드바에 워크스페이스, AI(ChatGPT, ChatSonic), 미디어 플레이어(Spotify, Apple Music, Tidal,..), 메신저(페이스북, 왓츠앱, 텔레그램,..) 등의 기능에 즉시 접근
+     * 얼리억세스 개발자 버전
+
+   잠깐 만져보니 UI가 빠릿한 느낌이라 마음에 듭니다.
+   다만 아직 살짝 아쉬운 부분도 있긴 하네요.
+
+   디자인은 좀 다르지만, 기능들은 Edge가 떠오르네요. 탭 그룹이나 사이드바...
+   아무튼 과연 오페라가 점유율을 올릴 수 있을지 기대가 됩니다.
+"
+"https://news.hada.io/topic?id=9017","LLaVA: Visual Instruction Tuning ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    LLaVA: Visual Instruction Tuning
+
+     * ""LLaVA : Large Language and Vision Assistant""
+     * 범용적인 시각 및 언어 이해를 위해 비전 인코더와 Vicuna를 결합한 대규모 멀티 모달 모델
+     * 멀티모달 GPT-4 수준의 능력 및 과학 질문/답변에 있어서 SOTA 정확도를 추구
+     * 논문과 코드, 데모 공개
+"
+"https://news.hada.io/topic?id=9131","Github 코드 검색을 일반적으로 사용할 수 있습니다.","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Github 코드 검색을 일반적으로 사용할 수 있습니다.
+
+     * 미리보기로 제공되던 Github code search가 정식 공개됨.
+     * 기존 코드 검색보다 약 2배 빠르고 기호 검색, 정규식 검색 등 더 복잡한 검색 수행 가능.
+     * 코드를 탐색하는 UI 또한 크게 개선하여 연결된 코드를 찾는게 쉬워짐.
+
+   이거 진짜 너무 편합니다. 속도부터 비교가 안됩니다.
+     * 기술 설명 블로그
+     * HN 스레드
+
+   솔직히 기존 검색은 있는 것도 찾지 못해서 결국 저장소를 복제해야 검색이 가능했는데,
+   새로운 검색은 내가 원하는 걸 정확하게 찾아줘서 너무 편하네요.
+
+   기존 검색 같은 경우에는 codespace로 열어서 검색하면 저장소 복제까지는 필요 없었습니다.
+   저는 https://news.hada.io/topic?id=1579를 주로 사용했어요.
+"
+"https://news.hada.io/topic?id=9118","Killport - 특정 포트 에서 실행중인 프로세스를 죽이는 CLI툴 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Killport - 특정 포트 에서 실행중인 프로세스를 죽이는 CLI툴
+
+     * 특정 포트에서 리스닝 하고 있는 프로세스를 찾아서 죽여주는 도구
+     * Linux/macOS 지원
+     * 여러개의 포트에 대해서 동시 실행 가능 killport 8045 8046 8080
+     * Rust 오픈소스
+
+   직관적인 명령어로 간단히 할 수 있다는 게 좋은 것 같네요.
+
+   RIIR 에 의미가 있는것이 아닐까 추정합니다...
+
+   터미널을 잘 안쓰시는 사람이 많아지는구나 라는 생각이 드네요.
+
+   ~/.bashrc 마지막에 이런걸 만들어주면 굳이 설치하지 않아도...
+killport() {
+  if [ $# -ne 0 ]; then
+    for port in ""$@""; do
+      pids=$(lsof -ti "":$port"")
+      if [ -n ""$pids"" ]; then
+        echo ""Processes listening on port $port: $pids""
+        echo ""$pids"" | xargs kill -9 >/dev/null 2>&1
+        echo ""Processes listening on port $port have been terminated""
+      else
+        echo ""No process found listening on port $port""
+      fi
+    done
+  else
+    echo ""No arguments provided""
+  fi
+}
+
+   lsof -t -i TCP:8080 | xargs kill -9
+
+   가끔 VS Code 터미널에 켜둔 웹팩 서버가 안 꺼질 때가 있어서
+   위의 쉘 명령어 입력해서 프로세스 종료하는데요
+
+   이런 유틸도 있었군요 😮
+
+   와우 너무 좋네요 !!!
+
+   솔직히 왜 1.1k stars 인지 모르겠어요
+"
+"https://news.hada.io/topic?id=9046","Google Authenticator, 구글 계정과 동기화 지원","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Google Authenticator, 구글 계정과 동기화 지원
+
+     * 구글이 2010년에 릴리즈한 2FA용 인증기 앱
+     * 그동안은 설치된 기기를 바꾸거나 분실한 경우 처리가 복잡했음
+     * 이제 구글 계정에 OTP코드를 동기화하여 저장 지원
+     * iOS & Android 앱 모두 지원(업데이트 필요)
+
+   MS Authenticator 써보세요 좋아용!
+
+   드디어... 휴대폰 바꿀때 ,재빠르게 처분하는 타입인데, 깜빡하고 백업안해둿더니 메일보내서 재설정 여간 귀찮은게 아니었는데 ㅜㅜ
+
+   Google 계정에 사용하는 OTP를 Google 계정에 동기화... 🤔
+
+   아무튼 엄청나게 기다리던 업데이트긴 한데, 이미Authy 에 등록해 둔 게 너무 많네요. 빨리 좀 해주지....
+
+   10년 넘게 지원을 안 해줘서.. Authy로 잘 쓰고 있긴한데 넘어 가야 할까 봐요.
+   아이콘도 이쁘게 바뀌었네요.
+
+   너무 오래되어서 기억이 잘 안나는데 뭔가 치명적인 버그가 있어서 Authy로 넘어간 기억이...
+   Authy desktop에서 지원되는게 넘 편해서 지금 굳이? 이런 느낌도 있습니다.
+"
+"https://news.hada.io/topic?id=9014","Show GN: 외부 저장소 소스에서 Docker 이미지를 생성 및 등록하는 코드","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Show GN: 외부 저장소 소스에서 Docker 이미지를 생성 및 등록하는 코드
+
+   정식 이미지가 없는 etesync-server와, AMD64만 제공하고 공식 ARM 이미지가 없는 restic을 손쉽게 사용하려는 목적에서 작성했던 코드입니다. 일정 시간마다 스케줄된 액션에서 지정한 저장소의 새로운 릴리즈가 탐지되면 자동으로 이미지를 Docker Hub에 등록합니다.
+
+   jq를 이때 처음 써봤는데 아주 만족스러웠습니다. 각 이미지 별로 Docker Hub 저장소는 다음과 같습니다.
+     * restic-arm64
+     * etesync-server
+
+   저는 Docker Compose를 통해 사용하고 있습니다.
+"
+"https://news.hada.io/topic?id=9138","당신 자신만을 위해 만든 가장 흥미로운 기술은?","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       당신 자신만을 위해 만든 가장 흥미로운 기술은?
+
+     * 치매에 걸리신 할머니가 하루에 두번씩 아빠한테 전화를 하시는데 항상 같은 내용을 말씀하세요. 그 전화를 친척들한테 순차적으로 돌리도록 구성했어요. 아무도 못받으면 아빠가 미리 녹음해둔 사랑한다는 내용의 음성 메시지를 재생해요.
+          + Twilio를 이용해 리라우팅 로직을 구현
+          + 다음 순번의 전화 번호를 알려주는 API 엔드포인트와 관리용 프론트엔드(친척 명단 관리, 휴식 시간, 음성메시지 업로드) 개발
+     * 라즈베리 파이에서 실행하는 ""TV 채널"" 앱이 내 스케줄에 맞춰서 로컬 비디오 콘텐츠를 서빙합니다.
+          + 5TB 하드가 붙어 있어서 1000개 가량의 비디오를 저장
+          + 자체 스케줄이 있어서 아침에 텔레비전 강좌부터, 오래된 TV프로그램, 저녁엔 코미디, 영화, 심야 콘텐츠 등을 방송하고, 마지막엔 ""내일 아침에 방송을 재개합니다.""라고 끝남
+          + 드라이브에 저장된 수천개의 유튜브 클립으로 각 프로그램 사이 공백 시간을 채우거나, 다음 쇼 시작이 언제인지 알려주는 타이틀 카드를 표시
+          + 나만의 채널을 가진다는 ""판타지""
+          + 댓글에 Plex용 dizqueTV 로 비슷하게 구현이 가능하다고
+     * 내 아파트 아래쪽에 기차가 다녀서, 라즈베리 파이 위에 컴퓨터 비전 앱을 구현해서 지나는 기차를 찍어서 기록하고 볼 수 있게 해놨어요. TrainBot
+     * 나는 시각장애인 개발자인데, 종종 내 스크린리더가 잘 지원해주지 않는 일들을 위해 도구를 만들고 있어요.
+          + HN의 댓글들을 구조화된 방식으로 읽어주는 애드온을 작성. 일반적인 스크린리더는 선형적으로 읽어주기 때문에, 이 애드온은 코멘트의 레벨을 인식해서 레벨단위로 이전/이후 댓글로 옮겨다니는게 가능. 그래서 최상위 코멘트만 먼저 체크하고, 관심있는 대댓글을 확인
+          + Juypter 에디트 박스를 스크린 리더와 동작하게 만드는 애드온
+          + BlindCompass - 거리를 걸어다닐 때 쓰는 직접 만든 iOS앱. 시각장애인은 어느 방향으로 향하는 지를 잃어버리기 쉬운데, 내가 향하는 방향을 유추 가능한 두가지 피치로 표현해 주는 앱. 방향이 맞다면 그 소리를 유지하게만 하면 됨. 소스코드
+     * 자동화된 수경 재배 하우스(텐트)를 만들었어요
+          + pH, 공기/물 온도, 수위, 습도 등을 측정하고 자동으로 보정
+          + 처음엔 심층 수경 재배법(DWC)을 사용하다가, 나중엔 박막식 수경재배(Nutrient Film Technique)로 전환
+          + 훨씬 더 많은 채소와 허브를 생산하며, 손이 거의 가지 않음
+          + 모두 Arduino Nano RP2040 Connect로 구동
+          + 현재는 시스템을 단일 보드에 통합하기 위한 첫번째 PCB를 설계중
+     * 6년간 장거리 연애를 했음(페루와 독일)
+          + 서로 다른 시간대에 있어도 잠들 때 다른 사람이 가까이 있는게 좋아서, 한명이 자는 동안 한명은 PC에서 작업하더라도 Skype를 계속 연결해뒀음
+          + 안타깝게도 인터넷이 자꾸 끊겨서 Skype 통화도 끊어졌음. 근데 자는 사람에게 전화해서 깨우고 싶지는 않았음
+          + 채팅에서 비밀 단어를 보내면, 상대방의 Skype를 호출해서 자동으로 전화를 걸어주는 작은 스크립트를 작성
+          + 관계는 건강하게 유지 되었고, 이제는 결혼한지 10년 되어서 행복하게 함께 사는 중
+     * 내가 사는 타운홈 단지에는 정문에 콜박스라는 게 있었음
+          + 배달/택배/청소/시댁&처가 등이 방문하면 이 콜박스에서 나에게 전화가 오고, 누군지 목소리를 듣고 9번을 눌러서 문을 열어줘야 했음
+          + 그래서 Twilio 앱을 만들어서 이 콜박스의 전화를 수신하게 만듬
+          + 입력코드를 여러개 만들어서 나눠준 다음, 입력한 번호에 따라서 누군지 바로 알수 있게 했음
+          + 시간대 제한 기능을 넣어서 음식 배달은 한밤중에는 안열리게 하거나, 파티용 임시 입력코드를 넣거나
+          + 유료 앱을 만들까 했는데, 아무도 돈을 안낼 것 같았음. YC 스타트업중 Doorport가 비슷한 하드웨어를 만든다고 했을때 기뻤지만 소프트웨어 쪽으로 피봇한뒤 Acquihired 됨
+          + 댓글에 비슷한 기능으로 FreshBuzzer, ButterflyMX 같은게 있다고
+     * 베이 지역(SF)으로 이사했는데, 근처의 모든 이벤트(Meetup, Eventbrite 등)의 이벤트를 수집하는 앱을 작성
+          + 하루에 약 100개 씩 되므로 다 참석이 불가능
+          + ChatGPT 한테 이 이벤트들에 대해서 약 20개의 파라미터로 평가를 요청
+          + 이벤트의 위/경도를 가져와서 집에서 운전거리를 측정
+          + 개인적인 관심사와 운전 선호도를 기반으로 매일 10개의 가장 흥미로운 이벤트를 표시해주도록 함
+          + 댓글에 베이 근처의 콘서트만 정리해서 보여주는 The List
+     * 매주 40~70명이 모이는 Hacknight 모임을 공동 주최
+          + Meetup API에서 이름과 아바타를 가져와서 Anki 로 플래시 카드 덱을 만드는 스크립트를 작성
+          + 이벤트 몇시간 전에 GitHub Actions로 스크립트를 실행해서 구글 드라이브로 덱을 가져옴
+          + 밋업전에 덱을 검토해서, 사람의 얼굴과 이름을 외워둠
+          + 새로운 사람을 만나면 이름도 모르는 것처럼 소개하는 척 하지만, 그 사람의 이름을 기억하고 남에게 소개해주면 좋음
+          + 이름을 잘 까먹는 편이고, 그러면 사람들에게 다가갈 때 친근감이 떨어지기 때문
+          + 커뮤니티를 조직할 때 이름을 기억하는 것은 정말 중요함
+          + (Meetup.com 이 API를 잠그고 망가뜨리기 전까지는 잘 동작했고, 최고의 Hack이었어요)
+          + 댓글에 Pingboard 는 Know Your Coworkers 라는 게임을 가지고 있다고
+     * 하루에 약 1000개의 기사를 수집해서, 훑어볼 300개를 골라주는 Smart RSS Reader 를 만들었어요
+          + 작성자는 공개를 안했는데, 댓글에 다양한 비슷한 도구들 Embit, FeedPaper, MoFeed, Matcha
+     * 엄마가 오래된 가족 비디오를 모두 디지털화 해서 가족 및 친지들과 공유하고 싶어 하셨는데, ""그냥 유튜브에 올리면 되니?"" 라고 물어보심
+          + 다행히 전화여서 내 놀란 표정을 못보셨는데, 난 빅테크들이 이런 것을 색인화 하는게 싫음. 그래서 코드를 하나 작성했음
+          + 완전히 무료/오픈소스. 클라우드 네이티브. 모든 기기 및 안 좋은 네트워크에서도 재생 가능
+          + 90세 넘어가는 내 이모도 폰/컴퓨터에서 사용 가능
+          + 모든 데이타는 암호화 되어있음
+          + S3/B2의 버켓을 이용한 개인 Youtube
+          + 오픈소스 이름은 Yuebing
+     * 내 장모님은 93세 이신데, 그녀가 아는 기술은 라디오/TV 를 켜거나 채널을 바꾸는 정도임
+          + 60년대 이전의 음악을 좋아하셔서, 라즈베리 파이와 FM 트랜스미터를 연결해서 그녀만의 라디오 방송국을 만들어 드렸음
+          + 어떤 노래들을 좋아하는지 알려주면, 그 방송국에서 재생할 다양한 플레이리스트를 작성
+          + 라디오의 깜짝 요소는 그대로 살리면서, 그분께서 싫어하는 것은 하나도 없음
+          + 이 작은 FM 송신기는 놀라울 정도로 강력해서 이웃들도 좋아하고, 그들의 요청도 점차 들어오고 있음
+          + 댓글에 FM송신기 필요없이 라즈베리 파이의 GPIO 핀 하나로 FM 송신이 가능하다고...
+     * 매일 새벽 3시가 되면 고양이가 침실 문에 와서 야옹거리고 문을 긁어요
+          + 동작감지형 Air Sprayer를 써봤는데 잘 안됨
+          + 그래서 직접 만들기로 함. 3D 프린터로 케이스와 트리거를 만들고, ESP32 와 RF 트리거를 연동, 나만의 ""동작 감지""로직을 작성
+          + 이번엔 어두운 곳에서도 잘 동작하는 초음파 센서를 탑재했음
+          + 이제 고양이도 울거나 긁으면 스프레이가 쏴진다는 걸 알아서, 아내와 내가 잠을 잘 수 있게 되었어요
+
+   좋은 글 소개해주셔서 정말 감사합니다. 동기 부여도 되고, 재밌는 아이디어도 많이 얻었네요. 시간가는 줄 모르고 읽었어요.
+   사소한 불편이나 사소한 아이디어를 그냥 흘려보내는 일이 많은데, 이것들을 실현했다는 게 존경스럽네요!
+   아이디어 노트 한켠에 갇혀있는 저의 소소한 꿈들도 실현해봐야겠어요.
+
+   와 정말 낭만적으로 사시는 분들이 많군요.. 뭉클해집니다.
+
+   아파트iot앱(전등,냉난방)의 api호출을 분석해서 모바일웹 만들고 구글어시스턴트에도 연결하고 하다가 다른집의 iot를 보고 컨트롤할수있는 취약점을 발견. 그냥 내비뒀어요
+
+   저는 회사위로 비행기가 다녀서 찍는거 만들었었습니다.
+   그래서 비행기 기종이 무엇인지 알아맞추는 모델도 만들었는데요. (ML 공부겸)
+   단지 군용기도 다녀서 사진은 공개를 못하는..ㅎㅎ
+
+   3년전 팬데믹때 집에만 있으니 초등학생 딸아이가 타자연습 하고 싶다고 해서 원하는 문장과 문구로 연습할 수 있는 앱을 만들고 아이 이름을 붙여서 스토어에도 올려보니 의외로 초보용 앱으로 팔리더군요.
+   내 가족을 위해서 필요한 것을 만들수 있다는 게 뭉클한 내용이네요. 아이디어를 버리지말아야겠어요
+
+   너무 재미있습니다. @@
+
+   GPIO로 FM 송신이 되는건 너무 신기한데요 !!!
+
+   재미도 있고 마음 따뜻해지는 프로젝트가 많네요...
+
+   의미를 모르고 하루하루 쫓기는 중에 큰 위로와 자극이 되는 주제네요:) 많은 돈을 번 성공 신화만 올려다보다가, 이 일을 시작한 초심을 다시 생각해보게 되었습니다.
+
+   저에게는 개발자/엔지니어들의 가장 멋져 보이는 순간들의 모음집으로 보입니다. 이런 다방면의 문제 해결을 위한 다양한 접근 방식 중 지금 시대에 정말 유용한것이 프로그래밍이라고 생각해요 👍👍👍
+
+   각 댓글의 답글에 비슷한 기능을 구현하기 위한 다양한 방법들을 제시하고 있으니, 흥미로운 부분은 원문을 꼭 챙겨보세요.
+   HN의 Moderator인 dang도 좋은 댓글이 많으니, 뒷 페이지들까지 잘 확인해보라고 얘기하고 있네요. 정말 재미납니다.
+"
+"https://news.hada.io/topic?id=9019","Firefly - BEAM 언어들을 위한 새로운 컴파일러 & 런타임","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Firefly - BEAM 언어들을 위한 새로운 컴파일러 & 런타임
+
+     * WASM을 위해 설계된 BEAM(Erlang Virtual Machine)의 다른 구현체
+          + Erlang / Elixir 같은 언어를 X86, ARM, WASM 네이티브 코드로 컴파일 가능
+     * BEAM 에서 실행되는 바이트코드가 아닌 실행파일 또는 동적/정적 라이브러리로 컴파일해서 쉽게 배포 가능
+     * 기존 BEAM 언어용 도구들을 그대로 사용 가능
+     * Erlang OTP(Open Telecom Platform)과 기능/성능이 거의 동일
+
+   바이너리 배포를 하면 핫스왑은 안 되겠죠...?
+"
+"https://news.hada.io/topic?id=9078","Microsoft, Rust로 Windows 커널 코드를 수정하느라 바쁨","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Microsoft, Rust로 Windows 커널 코드를 수정하느라 바쁨
+
+     * 최근 열린 BlueHat IL 2023 컨퍼런스에서 MS의 고위 임원이 발표
+     * Microsoft 내부에서 메모리 안전성과 보안때문에 몇년전부터 Rust에 관심이 많았음
+     * 내부의 C++ 데이터 타입들을 Rust로 전환하는 것을 목표
+     * Win32 GDI가 약 36000 라인의 Rust 코드로 변경되었고, 성능 저하가 없었음. 모든 테스트를 통과
+     * 조만간 배포될 커널부터 Rust 코드가 들어가게 될 것
+
+   https://windowslatest.com/2023/05/…
+
+   요런 소식도 있네요
+
+   '좋아요' 단추가 없어 좋다고 덧글 남깁니다.
+
+   마소는 도입이 좀 빡셀것이라 생각했는데, 도입이 굉장히 빠르네요.
+
+   머지않아 기존 C 사용하는 임베디드 분야도 rust로 대체 될 것 같습니다.
+
+   진짜 Rust가 미래가 되겠네요.
+
+   대기업이 주로 쓰는 언어를 바꾸기란 쉽지 않을텐데....
+
+   이야, 꽤 급진적인데요?
+
+   대기업이 의사결정까지 도달하는데 시간이 걸려서 그렇지 한번 결정되면 일사천리로 진행되죠.
+   이미 MS love Linux. 할때부터 예전 MS와는 분위기가 다른듯요.
+
+   google에 이어 MS도 rust 선호한다는 뉴스! rust 시도해 보고 있다는 linux 쪽에서도 좋은 뉴스 나오면, 시스템 프로그래밍 대세 언어가 rust로 바뀌겠군요.
+"
+"https://news.hada.io/topic?id=9103","Linux Kernel Module 프로그래밍 가이드","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Linux Kernel Module 프로그래밍 가이드
+
+     * 2001년부터 공개한 책을 최신 5.x 커널 버전까지 포함하도록 업데이트 (기존엔 2.6.x 커널까지)
+     * TeX로 작성되어 오픈소스(OSL)로 공개되어 있으며, PDF로도 제공(123p)
+     * 커널 모듈이란 무엇인가 부터 캐릭터 디바이스 드라이버, /proc 파일 시스템, sysfs, 태스크 스케줄링, 인터럽트 핸들러, 가상 입력 드라이버 및 최적화 까지
+
+   표지가 인상적이네요
+"
+"https://news.hada.io/topic?id=9092","Ask GN: 이달의 구직 - 같이 일할 팀을 찾습니다 (2023년 5월)","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Ask GN: 이달의 구직 - 같이 일할 팀을 찾습니다 (2023년 5월)
+
+   일할 곳을 찾고 계시다면, 간단히 정보를 남겨 주세요.
+
+     지역 :
+     리모트 필요 :
+     기술 :
+     이력서 :
+     이메일 :
+
+   위 정보는 구인을 위해서만 이용해 주세요
+
+   ~~
+
+   혹시나 봇들이 이메일 주소를 크롤링하는 경우가 있을 수 있으니 '[at]' 이나 '[앳]' 등을 써서 이메일 주소를 난독화 해주셔도 좋습니다.
+   가능하면 자신의 깃헙/링크드인 URL을 남겨 주세요.
+   HN의 Who wants to be hired 를 참고 했습니다.
+"
+"https://news.hada.io/topic?id=9037","Show GN: 와들, 원하는 상품 찾아주는 생성형 AI 기반 대화형 쇼핑"아씨오" 출시","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Show GN: 와들, 원하는 상품 찾아주는 생성형 AI 기반 대화형 쇼핑""아씨오"" 출시
+
+   GPT를 기반으로 한 대화형 쇼핑 서비스 ""아씨오(ACCIO)"" 출시
+     * 구체적인 조건을 반영한 상품 찾기
+     * 의도와 상황에 맞는 상품 추천
+     * 상품에 대한 질문, 여러 조건으로 비교
+     * 실시간 정보 검색을 반영한 상품 탐색
+
+   매주 업데이트를 통해 더 빠르고 편리한 쇼핑 플랫폼으로 발전하고 있습니다.
+"
+"https://news.hada.io/topic?id=9024","iOS 17의 앱 사이드로딩은 유럽에서만 가능하게 될 것","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    iOS 17의 앱 사이드로딩은 유럽에서만 가능하게 될 것
+
+     * iOS 17에서 앱 사이드로딩(앱 스토어 외부에서 앱을 설치하는 것)이 가능해 질 것이라는 루머가 계속 나오고 있음
+     * 아마도 유럽에서의 반독점 문제 때문에 불거진 것이므로, 유럽내에서만 사용 가능할 것
+     * 또한, 개발자는 이렇게 사이드로딩이 가능하려면 추가 비용을 내야 될 수도 있음
+     * 애플은 이 기능을 조용히 공개하고 싶어하므로, WWDC 키노트가 아닌 보도자료 끝자락에서 보게 될 수도 있음
+"
+"https://news.hada.io/topic?id=9048","Google Authenticator 동기화는 암호화를 사용하지 않습니다","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Google Authenticator 동기화는 암호화를 사용하지 않습니다
+
+     * Google 인증기의 클라우드 동기화 기능을 분석한 결과, 종단간 암호화되지 않은 것으로 파악됨.
+     * 동기화된 모든 2차 인증 코드는 구글 서버에 암호화 없이 저장되어 보안 위험에 노출될 수 있음.
+          + 구글 계정이 해킹되는 순간 모든 2차 인증 코드도 같이 유출됨.
+          + 구글이 모든 2차 인증 코드를 확인할 수 있음.
+     * 당분간 클라우드 동기화 기능은 사용하지 않는 것을 추천.
+     * 유사한 서비스인 Authy는 2차 인증 코드를 서버로 전송하기 전에 암호화를 진행함.
+
+   그냥 Authy 써야겠군요... 구글이 구글했다
+
+   구글도 동기화를 한다기에 옮겨볼까 생각했는데 그냥 Authy를 계속 써야겠네요..
+
+   역시 그냥 Authy 에 머물러야 ㅠ
+     * HN 스레드
+
+   2차 인증 코드를 백업한다면 종단간 암호화가 필수라고 생각했는데...
+   이러면 아직 사용하기는 어렵겠네요.
+
+   내용 중 ""구글이 모든 2차 인증 코드를 확인할 수 있다"" 에 대한 건, 구글이 그렇게 한다기보다는...
+   구글에서 데이터 유출 사고가 발생하거나 법적 문제로 인해 데이터가 유출될 수 있다 정도입니다.
+"
+"https://news.hada.io/topic?id=9130","Next.js 13.4 릴리즈 App Router 안정화, Server Actions alpha 추가","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Next.js 13.4 릴리즈 App Router 안정화, Server Actions alpha 추가
+
+     * App Router (Stable)
+     * Turbopack (Beta)
+          + 13에서 추가된 Turbopack이 Beta 단계로 변경
+          + 안정화및 피드백을 위해 Vercel.com 및 Next.js 대규모로 운영되는 Vercel 고객을 대상으로 도그 푸딩(dogfooding) 진행
+     * Server Actions (Alpha)
+          + 리액트 생태계에서는 폼 상태관리에 대해 많은 의견이 있음
+          + 리액트 공식 문서에서는 ""비제어 컴포넌트(uncontrolled components)""를 추천
+          + Next.js 서버에서 form에 대한 액션 함수를 할당할 수 있는 기능을 추가 (Server Actions)
+          + 서버 컴포넌트에서 form의 props중 action을 통해 함수 할당 가능
+          + 해당 함수는'use server';를 작성하여 서버 함수로 동작
+          + next 패키지를 통해 페이지 이동, 캐싱 등 서버 함수 사용 가능
+
+   리액트 공식 문서에서는 제어 컴포넌트를 추천하지 않나요?
+
+   제어 컴포넌트로 하면 스크립트를 사용해야 하고
+   그럴려면 클라이언트 컴포넌트로 만들어야 하는데 이러면
+   캐시나 이런면에서 손해를 봄.
+
+   요번에 추가된 server action은 컴포넌트내 함수에서
+   'use server'를 선언할 수 있게 되어
+   mutation 시에도 서버 컴포넌트를 유지하면서 사용할 수 있게 한것 같습니다.
+
+   요번 nextjs는 스크립트 사용을 최소화 하고 전체적인 전략이나 이런게 보면 볼수록
+   Remix 비슷하네요.
+
+   서버 코드와 클라이언트 코드가 섞여 있는게
+   옛날 PHP 생각이 나네요
+
+   번역이 서툴러 이상한 의역해버렸네요. 원문은 Server Actions의 첫 문단입니다.
+
+   The React ecosystem has seen a lot of innovation and exploration of ideas around forms, managing form state, and caching and revalidating of data. Over time, React has become more opinionated about some of these patterns. For example, recommended “uncontrolled components” for form state.
+"
+"https://news.hada.io/topic?id=9064","Bullet Train - Ruby on Rails 기반 SaaS Framework","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Bullet Train - Ruby on Rails 기반 SaaS Framework
+
+     * MIT 라이센스 오픈소스
+     * 차세대 Scaffolding : 자신만의 필드 추가 가능
+     * 사용자 인증, Role, 팀/멤버쉽 및 초대
+     * Tailwind CSS 테마
+     * REST API 제공
+     * Outgoing Webhook
+"
+"https://news.hada.io/topic?id=9081","Startup Playbook","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Startup Playbook
+
+     * YC에서 10년간 있었고, 현재 OpenAI의 CEO인 Sam Altman이 작성했던 스타트업 플레이북
+     * 아이디어 생성, 팀 꾸미기, 제품 만들기, 실행에 이르는 스타트업 초기단계의 가이드
+
+목차
+
+     * Part 1: 아이디어
+     * Part 2: 훌륭한 팀 만들기
+     * Part 3: 훌륭한 제품 만들기
+     * Part 4: 훌륭하게 실행하기
+          + 성장
+          + 집중 및 강도(Intensity)
+          + CEO가 할 일
+          + 인력 채용과 관리
+          + 경쟁자들
+          + 돈 벌기
+          + 투자받기
+     * 마무리
+
+   2016년에 첫 버전이 나왔고, 차후에 스타트업을 확장하는 방법에 대한 파트2가 만들어 질수도 있다고 했지만.. 아직 안나왔습니다.
+   (이미 YC와는 관계가 없어져서 아마 안나올 수도...)
+"
+"https://news.hada.io/topic?id=9025","GPTCache - LLM 질의에 대한 답변을 캐싱하는 라이브러리","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  GPTCache - LLM 질의에 대한 답변을 캐싱하는 라이브러리
+
+     * LLM의 답변을 캐시하여 조직의 LLM 비용을 줄이고 답변 속도를 빠르게
+     * 시맨틱 캐싱 전략을 통해서 비슷하거나 관련된 질의를 찾아서 캐시 히트율을 높임
+          + 임베딩 알고리듬을 통해 질의를 임베딩으로 변환하고 벡터 스토어를 통하여 이 임베팅에 대한 연관 검색을 수행
+     * LLM Adapter : OpenAI ChatGPT 및 LangChain 지원 (Bard/Anthropic/LLaMA 등도 지원 예정)
+     * MultiModal Adapter : OpenAI Image Create, OpenAI Audio Transribe, HuggingFace Stable Diffusion
+     * Embedding Generator : OpenAI, ONNX, HuggingFace, Cohere, fastText, SentenceTransformers
+     * Cache Storage : SQLite, PostgreSQL, MySQL, SQLServer,..
+     * Vector Store : Mulvus, Zilliz Cloud, FAISS, Hnswlib
+     * Cache Manager : LRU, FIFO
+"
+"https://news.hada.io/topic?id=9074","DeepFloyd IF - 오픈소스 Text-to-Image 모델 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  DeepFloyd IF - 오픈소스 Text-to-Image 모델
+
+     * Stability AI 의 새 이미지 모델
+     * 언어 이해도가 기존 모델에 비해 높고, 포토리얼리즘한 이미지를 생성
+     * T5 Transformer 기반 Frozen 텍스트 인코더와 3단계 픽셀 디퓨전 모듈의 결합
+          + 64x64, 256x256, 1024x1024px
+     * Zero-shot FID 스코어 6.66 (COCO 데이터셋)
+"
+"https://news.hada.io/topic?id=9124","RedPajama 3B, 7B 모델 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         RedPajama 3B, 7B 모델 공개
+
+     * 완전한 개방형 언어 모델을 만들기 위한 프로젝트
+     * 3주전 공개한 RedPajama-Data-1T 데이터셋을 기반으로 3B(완료), 7B(프리뷰) 파라미터의 RedPajama-INCITE 모델들을 공개
+          + Base 모델
+          + Instruction-Tuned 모델
+          + Chat 모델
+     * 3B 모델은 동급에서 가장 강력. 크기가 작아서 빠르고 5년전 출시된 RTX 2070 같은 장비에서도 실행 가능
+     * 명령어 튜닝 버전의 7B 모델은 HELM 벤치마크에서 LLaMA 7B 보다 3점 더 높음
+     * 7B 모델(훈련 80% 완료)은 이미 Pythia 7B 모델을 뛰어넘음
+     * 몇주내로 7B 훈련이 완료되면, LLaMA 7B를 넘어설 것
+     * 3B 모델은 8000억개의 토큰으로 안정화 되었고, 7B 모델은 1조개의 토큰으로 훈련완료중이며 개선중
+
+   연구나 AI 발전에 중요한 사건이지만,
+   이런 모델들은 상업적으로 이용 시 문제가 되는 부분에 대한 해결책을 제시하지 않을 가능성이 높습니다.
+   상업적으로는 모델 사용과 더불어 튜닝이나 추가적인 필터를 구비해야하는 등의 작업이 꼭 동반되어야할 것 같아요.
+
+   RedPajama - LLaMA 데이터셋을 재작성하는 오픈소스 프로젝트
+"
+"https://news.hada.io/topic?id=9079","Stability AI, 세계 최초의 오픈소스 RLHF LLM 챗봇 StableVicuna 공개 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Stability AI, 세계 최초의 오픈소스 RLHF LLM 챗봇 StableVicuna 공개
+
+     * Vicuna v0 13B를 명령어 파인튜닝 및 RLHF 훈련
+     * 3개의 데이터셋을 이용하여 SFT(Supervised Fine-Tuning)
+          + OpenAssistant Conversations Dataset(OASST1)
+          + GPT4All Prompt Generations
+          + Alpaca
+     * HuggingFace에서 LLaMA모델에 대한 가중치 델타로 다운로드 가능(오리지널 LLaMA 데이터 필요)
+"
+"https://news.hada.io/topic?id=9112","OpenLLaMA - LLaMA의 개방형 복제본","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       OpenLLaMA - LLaMA의 개방형 복제본
+
+     * 다른 용도의 이용이 가능하도록 아파치 라이센스로 만들어진 LLaMA의 복제본
+     * Together가 릴리즈한 RedPajama 데이터셋을 활용
+     * JAX 기반의 파이프라인인 EasyLM을 통해 훈련
+     * 200B/300B 토큰 기반의 OpenLLAMA 7B를 공개
+
+   HN댓글에 ""llama.cpp + 8GB RAM에서 OpenLLaMA 사용하기"" 코맨드를 올려놨네요
+   https://news.ycombinator.com/item?id=35798888
+  git clone https://github.com/ggerganov/llama.cpp && cd llama.cpp && cmake -B build && cmake --build build
+  python3 -m pip install -r requirements.txt
+
+  cd models && git clone https://huggingface.co/openlm-research/open_llama_7b_preview_200bt/ && cd -
+  python3 convert-pth-to-ggml.py models/open_llama_7b_preview_200bt/open_llama_7b_preview_200bt_transformers_weights 1
+  ./build/bin/quantize models/open_llama_7b_preview_200bt/open_llama_7b_preview_200bt_transformers_weights/ggml-model-f16.bin models/open_llama_7b_preview_200bt_q5_0.ggml q5_0
+  ./build/bin/main -m models/open_llama_7b_preview_200bt_q5_0.ggml --ignore-eos -n 1280 -p ""Building a website can be done in 10 simple steps:"" --mlock
+"
+"https://news.hada.io/topic?id=9122","SSDiff - 웹사이트 간의 픽셀단위 비교 도구","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      SSDiff - 웹사이트 간의 픽셀단위 비교 도구
+
+     * 웹사이트 스크린샷의 픽셀단위 비교를 통해서 일치하는지 확인하는 도구
+     * 새로운 스택을 사용하거나 해서 웹사이트 마이그레이션이 잘 되었는지 확인하는데 사용
+     * 비슷하게 생긴 웹페이지들간에 차이점 확인
+     * Puppeteer + Pixelmatch + Sharp
+"
+"https://news.hada.io/topic?id=9071","KV.js - JS를 위한 고급 인메모리 캐슁 모듈","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      KV.js - JS를 위한 고급 인메모리 캐슁 모듈
+
+     * Redis/Memcached 가 부담스러울 때 사용 가능한 JavaScript로 작성된 빠른 인메모리 데이터 스토어
+     * 멀티 데이터 타입 지원 : 스트링/리스트/셋/정렬 셋/해쉬/Geospatial 인덱스
+     * 140개 이상의 함수 지원 : SET, GET, EXPIRE, DEL to INCR, DECR, LPUSH, RPUSH, SADD, SREM, HSET, HGET,..
+
+   https://github.com/WICG/kv-storage
+
+   구글에서 실험적으로 출시한 kv storage가 생각나네요
+"
+"https://news.hada.io/topic?id=9099","Mozilla, AI로 가짜 리뷰와 사기를 알려주는 Fakespot 인수","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Mozilla, AI로 가짜 리뷰와 사기를 알려주는 Fakespot 인수
+
+     * AI 엔진을 이용하여 아마존, eBay, 월마트, BestBuy, Shopify 등에서 가짜 리뷰를 확인해주는 브라우저 확장
+          + 진짜로 작성한 리뷰인지 분석
+          + 가짜 리뷰가 많은 상품을 제외시키거나 적은순으로 소팅
+          + 써드파티 셀러의 신뢰도 평가
+          + 좋은 리뷰들만 모아서 요약 제공
+     * 브라우저 확장으로 설치 가능(크롬, Firefox, Safari)
+     * iOS/Android 용 FakeSpot Pro Browser 앱도 제공
+"
+"https://news.hada.io/topic?id=9113","Lamini - LLM 훈련용 instruction 셋을 만들어주는 데이터 생성기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Lamini - LLM 훈련용 instruction 셋을 만들어주는 데이터 생성기
+
+     * 자신만의 instruction-following LLM을 파인튜닝 가능하게 해주는 오픈소스
+     * 71k instruction 데이터셋(CC-BY 라이센스로 상업용도 사용 가능)
+     * 데이터 생성기 코드 제공 (100개의 데이터 포인트만으로 70k+ 데이터 포인트 생성 가능)
+          + 이 100개의 데이터포인트 원형을 커스터마이징 해서 자신의 도메인에 맞게 조정 가능
+"
+"https://news.hada.io/topic?id=9056","HuggingChat - 오픈소스 ChatGPT 대체제","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     HuggingChat - 오픈소스 ChatGPT 대체제
+
+     * OpenAssistant LLaMA 30B SFT 6 모델을 사용
+     * ChatGPT가 지원하는 다양한 작업들을 비슷하게 수행
+     * 웹 인터페이스를 통해 사용하거나, Hugging Face API를 통해서 기존 앱/서비스등과 연동 가능
+
+   ChatGPT랑 답변을 비교해 보니 아직 차이가 크긴 하네요.
+
+   What is HuggingFace? 라는 질문에...
+
+   HuggingChat은 최근에 ImageCorr21M 이란 데이터 세트를 공개한 유럽에 위치한 기계학습 연구 그룹이라는,
+   약간 맞는 것 같으면서도 이상한 말을 하는데...
+
+   ChatGPT는 좀 더 정확하게 NLP 개발에 집중하는 회사이자 오픈소스 커뮤니티라고 해주네요.
+
+   저번에 테스트했을 때도 느낀 거지만, 이 친구는 아직 갈 길이 먼 것 같습니다.
+
+   Open Assistant - 모두를 위한 대화형 AI 공개
+"
+"https://news.hada.io/topic?id=9142","Show GN: Infisical Launch Week – 개발자를 위한 오픈소스 Secrets Manager","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Show GN: Infisical Launch Week – 개발자를 위한 오픈소스 Secrets Manager
+
+   안녕하세요 여러분!
+
+   개발자를 위한 오픈소스 비밀 관리자인 Infisical을 보여드리고 싶었습니다.
+
+   지난 주에 우리는 출시 주간을 가졌고 다음과 같은 놀라운 기능을 많이 출시했습니다.
+    1. 이제 몇 번의 클릭만으로 Infisical을 자체 호스팅할 수 있습니다: https://infisical.com/docs/self-hosting/overview
+    2. 환경 간 비밀의 차이를 쉽게 확인할 수 있습니다. https://twitter.com/infisical/status/1653095854822264832
+    3. 언어에 구애받지 않는 CLI 외에도 Python 및 NodeJS용 SDK 두 개를 소개합니다: https://infisical.com/docs/documentation/getting-started/sdks
+    4. 자체 호스팅을 원하지 않는 경우 Infisical Cloud를 사용할 수도 있습니다: https://infisical.com/
+
+   귀하의 의견을 듣고 싶습니다. 현재 비밀 및 환경 변수를 어떻게 관리하고 있습니까?
+
+   hashicorp vault alternative인가 보네요
+
+   유용해 보이네요. 저희 팀은 wiki.js에 기반한 사내 위키에 관리자 권한을 가진 사람들만 볼 수 있는 문서를 만들고 그곳에 비밀번호 같은 걸 적어두고 있습니다.
+   이런 서비스로 전환하면 여러모로 편해지겠네요.
+
+   스크린샷을 보니 commit이란 말이 보이는데 Infisical은 버전 관리 시스템에 기반한 걸까요?
+"
+"https://news.hada.io/topic?id=9107","Replit Code - 10일만에 훈련된 오픈소스 코드 생성 LLM","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Replit Code - 10일만에 훈련된 오픈소스 코드 생성 LLM
+
+     * Replit이 새로운 코드 생성 LLM을 상업적 이용이 가능한 오픈소스로 공개.
+     * 2.7B 매개변수로 가볍고 빠르며, 10일만에 훈련이 완료됨.
+     * 동급 모델 대비 40%의 성능 향상, 파인튜닝된 모델은 Codex보다 성능이 좋음.
+     * The Stack 데이터셋으로 훈련되었으며, 20여개 언어를 생성할 수 있음.
+     * Hugging Face에서 바로 데모 사용 가능.
+
+   요즘 상업적 이용이 가능한 오픈 소스 LLM이 많이 늘어나는 느낌입니다. LLaMA에 자극된건지...
+
+   그리고 모델 크기 대비 성능이 상당히 좋아진 부분이 마음에 드는군요.
+   이 정도면 일반적인 (GPU 없는) 개발용 컴퓨터에서 로컬로 돌릴 수 있는 수준 아닐까 싶습니다.
+     * 데모
+     * 팟캐스트
+     * 공개 트윗
+     * 저장소
+     * HN 스레드
+"
+"https://news.hada.io/topic?id=9073","ChatPDF - PDF와 대화하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ChatPDF - PDF와 대화하기
+
+     * PDF를 업로드 하거나 PDF의 URL을 넣은 뒤, PDF의 내용에 대해 대화 가능
+     * 업로드하면 PDF의 모든 문장에 대해서 시맨틱 인덱스를 생성하고, 질문에 답변할 때 관련 문장을 찾아서 ChatGPT API로 답변하는 형식
+     * 무료 버전에서 하루에 PDF 3개 / 50개 질문까지 지원. (PDF는 최대 120p 까지, 10MB 이하)
+"
+"https://news.hada.io/topic?id=9128","OpenAI Shap-E - 텍스트/이미지를 통한 3D 객체 생성","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  OpenAI Shap-E - 텍스트/이미지를 통한 3D 객체 생성
+
+     * ""Shap-E: Generating Conditional 3D Implicit Functions"" 논문의 구현 코드
+     * 점들의 구름으로 나타내었던 Point-E에 비해 더 빠르고 더 좋은 품질의 복잡한 3D 모델을 생성
+
+   게임, 제품, 건축, 디자인 모든 3d 모델링 연관 산업들이 경계하겠네요 stable diffusion처럼 LoRA 학습이 가능하면 좋겠어요!
+
+   오늘도 어김없이 등장하는 아보카도 의자
+
+   OpenAI, 3D 모델을 생성하는 AI Point-E 공개
+   이게 4달전인데, 한단계 더 나아갔네요
+"
+"https://news.hada.io/topic?id=9029","ScreenLog.js - 개발자 콘솔의 내용을 화면에 띄워주는 라이브러리","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ScreenLog.js - 개발자 콘솔의 내용을 화면에 띄워주는 라이브러리
+
+     * 특정버그가 개발자 도구가 열려있을 때는 발생이 안되거나 또는 console.log 를 사용하지 못하는 상황등에 사용
+     * 스크립트를 추가하고 screenLog.init(); 호출만 해주면 개발자 콘솔의 내용을 그냥 스크린에 출력
+     * 폰트 색상, 크기, 배경색상 등을 지정 가능
+
+   브라우저 개발자 도구(web inspector)의 시작이 Firebug였고, Firefox외 다른 브라우저에서 쓸 수 있는 경량 버전이 FirebugLite였고, FirebugLite가 녀석처럼 뷰포트안에 로그 출력하는 거였... 기술이라는게 원래 돌고 도는 거지만 너무 빨리 돌고도네요.
+
+   https://getfirebug.com/
+
+   개발자 도구 띄웠을 때 실행이 정지되는 몇몇 사이트 디버깅할 때 유용할 것 같네요
+
+   임베디드 장치에 들어가는 웹 브라우저를 디버깅할 때 방법이 마땅치 않아서
+   특정 키를 누르면 직접 만든 (...) 간이 콘솔이 뜨게 했었는데...
+
+   역시 라이브러리로도 있었군요.
+
+   오래되었지만 필요한 상황에서는 변함없이 유용한 라이브러리 같습니다.
+"
+"https://news.hada.io/topic?id=9120","AI Incident Database","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          AI Incident Database
+
+     * 현재까지 2000건이 넘는 AI 관련된 사고를 수집해서 보여주는 DB사이트
+     * GMF Taxonomy 에 의한 분류 및 회사별로 확인 가능
+"
+"https://news.hada.io/topic?id=9059","ChatGPT, 이제 채팅 기록 끄기 및 모델 학습에 사용여부 선택 가능 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ChatGPT, 이제 채팅 기록 끄기 및 모델 학습에 사용여부 선택 가능
+
+     * 채팅 기록에 남기지 않도록 선택하면, 사이드바에서도 보이지 않고, OpenAI의 모델을 개선하는데 사용하지도 않음
+     * 기록 저장을 비활성화 하여도 30일간은 유지한 뒤에 완전 삭제하고, 그 기간중 어뷰징 확인이 필요할 때만 사용
+     * 기업들을 위한 ChatGPT Business 구독 모델도 작업중이며 곧 출시 예정
+          + 기본적으로 사용자의 데이터가 모델 학습에 사용되지 않음. 데이터에 대한 상세 제어가 가능
+     * 새로운 Export 기능으로 ChatGPT가 어떤 정보를 저장하는 지를 살펴 볼수 있음
+
+   마소랑 OpenAI는 AI 모델의 비즈니스 버전에서는 데이터 저장 안 하는 쪽으로 가나 보네요.
+   무료 사용 / 일반 사용자한텐 데이터 수집해서 학습에 쓰고...
+"
+"https://news.hada.io/topic?id=9129","구글, "(AI에 대해서) 우린 해자가 없음, OpenAI도 마찬가지"","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                구글, ""(AI에 대해서) 우린 해자가 없음, OpenAI도 마찬가지""
+
+     * 최근 유출된 내부 문건의 내용 (회사가 아닌 구글 직원의 의견임)
+     * ""AI 경쟁에서 구글은 승리하지 못할 것이며, OpenAI 역시 마찬가지. 둘이 다투는 동안 제3자가 조용히 먹어치우는 중""
+       → ""오픈소스 AI가 더 빠르게 발전하고, 미래를 주도할 것""
+     * 품질면에서 우리의 모델이 오픈소스 모델보다 약간 앞서지만, 그 갭은 줄어들고 있음
+     * 오픈소스 모델은 더 빠르고, 더 커스터마이징 가능하며, 더Private 하고, 더 많은 기능을 제공
+     * LLM에 Stable Diffusion Moment가 오고 있다
+     * LoRA는 엄청 강력한 기술이고, 더 많은 관심을 기울여야 함
+     * 오픈소스와 직접 경쟁하자는 것은 지는 제안임
+     * 생태계를 소유하는 것: 오픈소스가 우리를 위해 일하게 해야함
+
+   Stable Diffusion Moment라는 말이 재미있네요.
+
+   대기업이 이미지 생성 AI 공개했을 때는 아~ 그렇구나~ 수준으로 끝났지만,
+   오픈소스 모델로 나온 순간 엄청나게 달려들어서 순식간에 발전시키는 모습이...
+
+   최근 LLM에서도 보이는 것 같긴 합니다.
+
+   오픈소스 모델은 ... 더 ""비""공개적이고?? 더 공개적이고 아닐까요?
+
+   더 개인적이고 정도면 적당할것 같은데요..
+
+   그냥 원문 표현으로 바꿨습니다. 저게 참 애매 ㅠ
+
+   원문을 보니 more private로 되어 있네요. 개인정보와 관련해서 더 비공개 적이라는 것 같습니다.
+"
+"https://news.hada.io/topic?id=9125","OpenAI CEO 샘 알트먼, "원격 근무의 시대는 끝났다"","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   OpenAI CEO 샘 알트먼, ""원격 근무의 시대는 끝났다""
+
+     * ""사무실에서 근무하면 새로운 제품을 만들 수 있지만, 원격 근무는 혼란을 만든다""
+     * ""기술 업계의 가장 큰 실수는, 모두가 완전 원격 근무를 할수 있을 것이라고 생각한 것""
+     * ""원격 근무에 대한 '실험'은 끝났고, 우리는 아직 완전 원격 근무를 지원하는 기술을 가지지 못했다. 특히 스타트업 들에겐""
+     * 물론 OpenAI의 몇몇 최고의 인력은 원격으로 일하고 있으며, 계속 지원할 것
+
+   전 FE 엔지니어 인데요. 코로나때 신규 프로젝트를 재택으로 하면서 좋았던 경험을 가지고 있습니다.
+
+   Product owner, 관리나 기획을 하는 입장에서는 자신의 생각을 팀원들과 얼라인하려는 노력이 online에서는 더욱 힘들다고 생각합니다.
+   집중해서 일하는 사람 돌려 세워 궁금한점 현황파악 말로 전달하는 요구사항을 할 수 없기 때문이죠.
+
+   Online의 장점은 정확한 명문화에 있다고 생각합니다.
+   글로 남겨지는 히스토리는 한번더 생각하게 하고 고쳐적게 합니다.
+   그러면서 정교하고 정중하게 가다듬어진다고 생각합니다.
+
+   따라서 저처럼 끝단 실무를 하는 입장에서는 online이 유리합니다.
+   그렇기 때문에, 회사의 고위직일 수록 원격 근무에 부정적인 견해를 가진다고 생각합니다.
+
+   물론 Online이 장점만이 있는 것이 아닙니다.
+   어느정도 구성원들의 integrity에 의존해야 하는 부분이 그것 입니다.
+   같이 일했던 동료가 나중에 알고 보니 알바를 하고 있었다는 것을 알면 기분이 묘해 집니다.
+   커밋수나 line of code로 생산성을 평가해야 하는 구시대적인 망상이 다시 떠오를 수 밖에 없는 지점 같습니다.
+
+   시니어 개발자들 끼리면 굳이 대면 안해도... 개발자라도 회사생활이란게 업무자체 보다는 대인관계에서 오는 안겪어도 되는 스트레스 지수가 훨씬 높기 때문에, 나랑 상관도 없는 타인의 관심사, 가정사, 세상사 다 들어야되고, 꼰대짓거리, 모지리짓거리, 몸냄새, 쉰내, 담배, 커피 섞인 역겨운 입냄새, 기계식 키보드에 손가락 힘 이빠이 살인충동 생기는 소음공해... 와... 생각만 해도 벌써 입맛이 떨어지고 두통이 막 생김...
+
+   기계식 키보드는 정말 스트레스이긴 합니다. 그렇게 수시간 짜놓고 커밋 올려둔거보면.... 에휴...
+
+   그 정도면 정신병원을 가보시는게.. (비꼬는 것 아니고 진심어린 의견입니다)
+
+   여기서 언급된 펜타닐 마켓이란 무엇인가요? slang인가요?
+
+   샌프란시스코가 요즘 펜타닐 과다복용자가 급증하면서 문제가 되고 있어서 그런듯 합니다.
+
+   “The more unclear and early the product is, the more in-person time the team needs to grind together""
+   저는 이 문장이 매우 중요하다고 생각하는데요,
+   충분히 명확하고 궤도에 오른 작업(혹은 팀)은 remote 로 일하는것에 큰 문제는 없을 수 있지만,
+   아직 미성숙하고 불분명한 일에 대해서는 in-person 으로 일하는게 더욱 필요하다고 생각해요.
+   긴밀하게 협업하지 않더라도 더 자주 대면하고 생각을 더 자주 공유하는것과, 한 팀으로써 rapport 를 쌓는것도 중요한 일이라고 생각하고 있었거든요.
+   remote 로 불가능한 일은 아니지만 비슷하거나 더 효과적으로 할 수 있을지 잘 모르겠습니다.
+
+   저희도 작은 팀이고, 빠른 의사교환 때문에라도 대면으로 작업하는게 더 좋더라고요.
+   기술적으로 발전이 덜 되었다는 것에 동감합니다. 기술적으로 해결이 될지는 잘 모르겠기도 합니다만 ㅎ
+
+   캡슐로 들어가기전엔 힘들겠네요.
+"
+"https://news.hada.io/topic?id=9051","영국 시장경쟁국, Microsoft 와 Activision Blizzard 합병에 반대 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            영국 시장경쟁국, Microsoft 와 Activision Blizzard 합병에 반대
+
+     * ""클라우드 게임 시장의 혁신과 경쟁을 방해한다""라고 말하며 이 합병건에 대해 반대한다고 선언
+     * 합병할 경우 마이크로소프트가 액티비전의 게임을 자사 클라우드 게임 플랫폼인 XBox Game Pass에만 독점 공급할 가능성이 있다는 것
+     * 마이크로소프트는 이미 글로벌 클라우드 게임 시장의 60~70%를 차지하고 있으며, XBox 와 최고의 PC운영 체제인 Windows, 글로벌 클라우드 컴퓨팅 인프라(Azure 와 Xbox Cloud Gaming)를 보유하고 있어서 클라우드 게임 시장에서 이미 중요한 강점을 보유중
+
+   마이크로소프트가 액티비전블리자드를 인수
+   마이크로소프트-액티비전 거래의 시사점
+   마이크로소프트의 액티비전 블리자드 인수 관련 투자자 컨퍼런스 콜 내용
+"
+"https://news.hada.io/topic?id=9096","NewsBytes - AI가 생성하는 Podcast","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      NewsBytes - AI가 생성하는 Podcast
+
+     * 글로벌 헤드라인들을 가져다 약 5분 분량의 팟캐스트로 자동 생성해주는 오픈소스
+     * 동작 방식
+          + 기사 스크래핑 : BeautifulSoup + BoilerPy3
+          + 기사 요약 : ChatGPT
+          + 팟캐스트 생성 : pydub + ElevenLabs
+          + 팟캐스트 퍼블리싱 : PodGen
+     * 현재 운영중으로 Spotify, Apple, Google 팟캐스트를 통해 구독 가능
+
+   만들어 보고 있었는데 참고할 만 하네요.
+"
+"https://news.hada.io/topic?id=9072","WASM 세계에서 Rust GUI가 급성장중","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        WASM 세계에서 Rust GUI가 급성장중
+
+     * Rust의 크로스플랫폼 특성과 소프트웨어 배포가 쉬운 WebAssembly 특성의 결합등이 원인
+     * 최근 많이 사용되는 툴킷들 비교 및 WASM 번들링 팁 소개
+          + Dioxus : React와 비슷한 인터페이스 아키텍처
+          + Tauri : Electron과 비슷하게 웹을 이용하여 데스크탑앱 작성
+          + Xilem : Rust 언어 아키텍처와 잘 얼라인된 데이터-퍼스트 아키텍처
+          + Iced : 단순성 및 타입 안전성에 중점을 둔 크로스플랫폼 GUI 라이브러리
+          + Egui : 가장 사용하기 쉬운 GUI 라이브러리
+          + Kas : “efficient retained-state toolkit”
+          + Slint : 임베디드 시스템, 마이크로컨트롤러 및 데스크탑을 타겟
+          + Yew : React와 비슷한 웹용 GUI 프레임워크
+          + Bracket : rltk(Roguelike Toolkit)에서 리브랜딩. 웹/데스크탑용 Rogukelike 같은 게임개발에 최적화
+          + Vizia : Declarative & Reactive GUI 프레임워크
+          + Leptos : Isomorphic web framework
+          + Perseus : state-driven web development framework
+          + Sauron : Versatile web framework for Client/Server web app
+          + MoonZoon : 풀 스택 프레임워크
+          + Relm4 : Elm 과 GTK4-RS에서 영감받은 idomatic GUI 라이브러리
+          + Fltk-rs : Fast Light Toolkit용 Rust 바인딩
+          + Makepad : UI Framework + IDE
+
+   기존 잘 쓰이는 걸 대체하려면 뭔가 하나쯤은 뛰어난 장점이 있어야 하는데 아직 없어서 대체하려면 시간이 더 필요할 것 같아요
+   그냥 rust로 이런게 가능하다고? 이지, 실무에서 react보다 낫다고 할 만한 장점이 보이질 않아서 도입하지 못했네요.
+
+   새로 진행하는 프로젝트에서 사용하는 것은 어떤거 같나요?
+
+   안녕하세요 아직 개념이 없어서 그런데 react와 webassembly가 많이 다르지 않나요?? 어떤 부분 대체하시려고 했는지 물어봐도 될까요 ㅠㅠ
+"
+"https://news.hada.io/topic?id=9127","아마존 Prime Video, 서버리스에서 EC2/ECS로 이관하여 90% 비용 절감","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            아마존 Prime Video, 서버리스에서 EC2/ECS로 이관하여 90% 비용 절감
+
+     * 고객들이 시청하는 스트림에 대한 모니터링 도구를 초기에는 AWS Step Functions로 구축하여 빠르게 구현했음
+     * 그러나 서비스가 확장하면서 병목 및 비용문제가 발생(함수 호출 및 프레임 임시 저장용 S3 버킷 등)
+     * 분산 마이크로서비스 형태에서 Monolithic 으로 변경
+          + S3 버킷을 쓸 필요가 없어짐
+          + 상위 아키텍처는 동일하게 유지
+     * 인프라 비용이 90% 절감 되었고, 확장 능력도 훨씬 좋아짐
+          + EC2로 옮기면서 Compute Saving Plans 도 적용 가능해짐 (년단위 약정으로 할인)
+     * 마이크로서비스와 서버리스는 대규모에 적합하긴 하지만, 사용에 대한 여부는 사례별로 결정해야 함
+
+   서버리스로 비용을 아낄 수 있다는 의미는 EC2나 클러스터 VM의 성능을 대부분 사용하지 못하는 상황에서나 나올법한 일인 것 같습니다.
+
+   어쨌든 큰 하드웨어를 사서 작게 쪼개어 비싸게 파는 행위라는건 변하지 않는 것 같더라구요.
+   최대한 작은단위로 쪼개놔야 이윤이 극대화될테니 서버리스로 유도하는것도 이해가 갑니다.
+
+   FaaS가 진짜 돈 빨아먹는 하마라...
+
+   k8s를 잘 다룰 수 있다면 그렇죠. k8s를 잘 다룰 수 있는 팀을 셋업하고 유지하는 비용을 포함해서 생각해봐야 할 듯...
+
+   클라우드 서비스들이 다 그렇지만, 초기의 빠른 성장 과정에서는 유연한 가상화 구조가 유리하지만, 경험이 쌓이고 안정화되면서 스케일이 커지면 이 사례처럼 최적화를 하는 게 비용과 운영 측면에서 유리해지더군요.
+
+   최근 있었던 AWS 서밋에서도 서버리스를 통한 비용 절감을 많이 강조하던데...
+   서버리스에서 컨테이너로 옮기는 게 더 저렴하다는 글이 올라오는 게 신기하네요.
+
+   물론 최근 서버리스를 가볍게 써봤는데, 비싼 것 같긴 합니다...
+
+   최적화를 거치면 월 10달러 내외의 단일 서버로 제공이 가능한 간단한 API가,
+   요청 호출이 많다는 이유로 서버리스에서는 월 100달러 이상 나오더군요.
+
+   바로 해당 기능은 일반 서버로 이전했습니다. -_-
+
+   서버리스보다 저렴한건 다 알긴 하겠지만.. 90% 라는 숫자와 이 글 자체가 아마존 서비스에서 나왔다는게 흥미롭긴 하네요.
+   AWS는 서버리스를 더 많이 팔고 싶어할텐데 ㅎ
+"

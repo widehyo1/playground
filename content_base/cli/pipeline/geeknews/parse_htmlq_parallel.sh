@@ -1,10 +1,11 @@
 #!/bin/bash
 # bench_parallel.sh
 
-out="bulk_data_parallel.tsv"
+out="bulk_data_parallel.csv"
 
 date
-find html/ -name '*.html' | parallel -j$(nproc) '
+# find html/ -name '*.html' | parallel -j$(nproc) '
+find split_workspace/sp_128/dir_sp_128_00/ -name '*.html' | parallel -j$(nproc) '
   f={};
   url="https://news.hada.io/topic?id=$(basename "${f%%.*}")";
   title=$(htmlq "div.topictitle.link h1" -t -f "$f");

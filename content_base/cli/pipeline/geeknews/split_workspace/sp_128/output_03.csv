@@ -1,0 +1,1139 @@
+"https://news.hada.io/topic?id=436","애플, 사설 수리점들에 공인부품 제공하는 프로그램 발표","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     애플, 사설 수리점들에 공인부품 제공하는 프로그램 발표
+
+   애플 인증받은 기술자가 있다면 무료로 참가가능.
+   부품,도구,교육,수리 매뉴얼,검사 도구를 AASP와 같은 가격에 제공받을수 있음.
+   미국에서 시작해서 점차 나라를 확대해 갈 예정
+
+   이제 애플스토어는 새 물건만 잘팔고, 사설 수리점에서 보증기간 지난 폰들도 고쳐가면서 오래쓰면 될듯.
+"
+"https://news.hada.io/topic?id=416","Salsify - 실시간 비디오를 위한 새로운 아키텍처","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Salsify - 실시간 비디오를 위한 새로운 아키텍처
+
+   비디오 코덱과 전송 프로토콜을 공동으로 제어해서 불안정한 네트워크 환경에 더 잘 대처함.
+
+   Skype,Facetime,WebRTC 는 코덱과 프로토콜을 별도로 제어하므로 상대적으로 불안정.
+   테스트 결과 Salsify 가 딜레이는 4.6배 줄고, SSIM (구조적 유사도 지수) 60% 개선.
+
+   아직은 논문+리눅스 온리 수준의 구현이라, 소리는 처리하지 않음
+"
+"https://news.hada.io/topic?id=515","GeekNews Helper Greasemonkey script","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  GeekNews Helper Greasemonkey script
+
+   GeekNews 기사 링크를 새탭열기로 바꿔주는 Greasemonkey script 입니다.
+
+   우왕 ㅎㅎ 감사합니다~!
+"
+"https://news.hada.io/topic?id=449","Excel 에서 VLOOKUP 을 대체할 XLOOKUP","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Excel 에서 VLOOKUP 을 대체할 XLOOKUP
+
+   VLOOKUP과 비교했을때
+   1. 근사값 매칭이 기본
+   2. 기존과 달리 3번째 인자가 컬럼 추가/삭제시 같이 변함
+   3. 왼쪽 컬럼도 리턴 가능
+   4. 5번째 서치모드 인자를 주면 뒤부터 찾는 것도 가능
+   5. HLOOKUP 으로도 이용가능
+
+   배경설명이 재미나네요.
+   VLOOKUP 은 엑셀1 부터 있었고, 엑셀 전체에서 SUM 과 AVERAGE 다음인 3번째로 많이 쓰는 함수라고
+"
+"https://news.hada.io/topic?id=468","Homebrew가 MongoDB를 설치 못하도록 삭제","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Homebrew가 MongoDB를 설치 못하도록 삭제
+
+   최근의 MongoDB 라이센스 변경으로 더 이상 오픈소스가 아니기 때문에 Homebrew 에선 더 이상 사용 불가
+"
+"https://news.hada.io/topic?id=472","RegEx Crossword - 정규식 십자말 퍼즐","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      RegEx Crossword - 정규식 십자말 퍼즐
+
+   복잡한 정규식을 십자말 퀴즈로 배워봅니다. 기초부터 차근차근 전문가 수준까지
+"
+"https://news.hada.io/topic?id=406","Backblaze B2 와 Cloudflare 를 이용한 개인 무료 이미지 호스팅 만들기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Backblaze B2 와 Cloudflare 를 이용한 개인 무료 이미지 호스팅 만들기
+
+   B2는 S3와 비슷한 서비스로. 첫 10GB 까지 무료로 저장가능.
+   Cloudflare Worker 는 10분에 천개, 24시간마다 10만개의 리퀘스트 가능.
+   Cloudflare 와 B2는 Bandwidth-Alliance 로 묶여서 서로간에 Egress 비용이 무료.
+
+   무료 티어들을 잘 섞은 재미난 서비스
+
+   처음에 공개되었을때 Cloudflare 의 Terms of Service 위반이 아닌가 해서 말이 있었는데,
+   CEO 인 매튜 프린스가 이런 서비스 OK! 라고 해줘서 문제 없게 되었음.
+
+   해당 댓글 - https://news.ycombinator.com/item?id=20791660
+"
+"https://news.hada.io/topic?id=473","My favorite CSS hack","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          My favorite CSS hack
+
+   웹페이지 CSS 디버깅을 위한 팁.
+   레벨별로 색을 다르게 주어서 구분할수 있게 하는 CSS 코드.
+
+   정말 훌륭한건 댓글에 있는 팁.
+   이 CSS 코드를 북마클릿에 등록해서 어떤 사이트에서든 이 CSS 코드를 삽입해줌.
+
+   https://gist.github.com/vcastroi/e0d296171842e74ad7d4eef7daf15df6
+
+   북마크에 등록하고 써보는데 정말 훌륭. 한번 누르면 켜지고, 다시 누르면 꺼짐
+
+   감사합니다!!
+"
+"https://news.hada.io/topic?id=507","Apple Watch Series 5 발표","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Apple Watch Series 5 발표
+
+   Always-On Retina Display 로 항상 시간 확인 가능,
+   컴파스 내장,
+   국제 응급 전화 기능,
+   18시간 배터리,
+   Apple Watch Studio 를 통해서 구매할때부터 케이스와 밴드를 골라서 구매 가능
+"
+"https://news.hada.io/topic?id=493","차근차근 오픈소스에 기여해보기 (동기부여 편)","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       차근차근 오픈소스에 기여해보기 (동기부여 편)
+
+   오픈소스 기여를 왜 하는가, 어떻게 하는가, 어떤 프로젝트에 기여해야 하는가
+"
+"https://news.hada.io/topic?id=462","Modern applications at AWS","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Modern applications at AWS
+
+"https://news.hada.io/topic?id=438","Wikipedia 가 Brave 인증 퍼블리셔로 합류","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Wikipedia 가 Brave 인증 퍼블리셔로 합류
+   아마존 CTO가 직접 쓴 ""AWS가 현대적인 어플리케이션을 개발 하는 법""
+
+   소제목만 봐도 명확히 알수 있네요.
+   Brave 브라우저 사용자로부터 BAT을 받을수 있게 됨.
+
+
+   - Architectural patterns: Microservices
+   Brave 브라우저 관련해서는 http://www.itworld.co.kr/insight/110187 참고하세요.
+   - Data management: Purpose-built databases
+
+   - Operational model: As serverless as possible
+   - Security: Everyone's responsibility
+   최근의 블록체인 관련 기사 ( BAT는 블록체인 기반 토큰 입니다) 중에서는 가장 관심 가는 기사네요.
+"
+"
+"https://news.hada.io/topic?id=506","iPhone 11 Pro 와 iPhone 11 Pro Max 발표","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  iPhone 11 Pro 와 iPhone 11 Pro Max 발표
+
+   Super Retina XDR 디스플레이,
+   A13 Bionic 칩,
+   울트라 와이드/와이드/텔레포토 3개의 카메라,
+   미드나이트 그린 색상 추가,
+   18w 어댑터 기본 제공,
+   iPhone XS 보다 4시간 더 오래가는 배터리,
+   Face ID 30% 빨라짐,
+   Spatial Audio 지원,
+   e-Sim + Nano-Sim 듀얼 지원 ( 홍콩/중국판은 물리 듀얼 심 )
+"
+"https://news.hada.io/topic?id=458","한글 문장 분리기 · The Missing Papers","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     한글 문장 분리기 · The Missing Papers
+
+   패턴기반의 한글 문장 분리 python 라이브러리.
+   github repo: https://github.com/likejazz/korean-sentence-splitter
+
+     여기에서 밥을 먹어요. 여기에서 자요. 여기에서 게임을 해요. 여기에서 쉬어요. 여기에서 놀아요.  여기에서 목욕을 해요. 여기는 따뜻해요. 여기는 재미있어요. 여기는 어디예요? 여기는 ‘찜질방’이에요.
+"
+"https://news.hada.io/topic?id=486","자바스크립트 console.log 사용시 작은 팁","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      자바스크립트 console.log 사용시 작은 팁
+
+   변수 출력시 console.log( { 변수명 } ) 으로 출력하면, 변수이름까지 같이 출력 됨.
+"
+"https://news.hada.io/topic?id=509","애플 코리아, AppleCare+ 판매 시작","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        애플 코리아, AppleCare+ 판매 시작
+
+   아이폰,아이패드,애플워치의 기술 지원 보증 기간이 AppleCare+ 구입일로부터 2년까지로 연장되며, 최대 2건의 우발적인 손상에 대한 보증이 추가로 제공
+   우발적인 손상의 경우, 화면 손상은 건당 40,000원, 기타 손상은 건당 120,000원의 본인 부담금이 부과
+"
+"https://news.hada.io/topic?id=433","GitLab.com 의 스케일링 문제를 디버깅하면서 배운 6가지 교훈","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 GitLab.com 의 스케일링 문제를 디버깅하면서 배운 6가지 교훈
+
+   1. Wireshark 에 모르던 기능들이 많다
+   2. NTP 시간 동기화
+   3. 로그에 SA용 정보남기기
+   4. 비공식 설정 사용시 기록 남기기
+   5. MaxStartups 의 퍼포먼스 영향은 작다
+   6. 정확한 에러 발생빈도를 가능한 빨리 측정하기
+"
+"https://news.hada.io/topic?id=461","How to learn things at 1000x the speed - 더 많이 배울수록, 더 빨리 배우게 됩니다.","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   How to learn things at 1000x the speed - 더 많이 배울수록, 더 빨리 배우게 됩니다.
+
+   Learning 을 잘하는 Generalist 가 된 개발자의 이야기.
+
+   사람이 뭔가를 사용할 때 예전의 경험을 모두 끌어내 사용하기 때문에, 하나에 익숙해지면 다른것도 금방 배우게 된다. 이건 다시 말해 잘 설계된 객체는, 사용자가 예전의 경험을 이용해서 금방 배우게 한다는 것이고, 잘못 설계된 객체는 예전의 경험을 사용하지 못하게 한다는 것.
+
+   이걸 학습에 반영해서 , 최고의 강의자료를 통해서 배우게 되면, 단지 빠르게 배우는 것뿐만 아니라, 다른 자료에 있는 쓸데 없는 것들은 제외할수 있게 되어서 빠르게 배울수 있다는 것.
+
+   [글쓴이의 공부 프로세스]
+
+   1. 최고의 학습자료를 찾는다.
+   2. 그 자료의 모든걸 배운다.
+   3. 이제 그 것에 대한 기본을 알고 있으므로, 거기서 누락된 스킬에 대해서 최고의 자료를 찾을 능력이 생기게 됨. 이미 초보는 아니니까.
+   4. 여기서 그만. 마스터가 되고 싶은게 아니니까.
+
+   이런 단계를 통해 한 도메인에 익숙해 져서, 도메인 전문가와 흥미로운 대화를 나눌수 있을정도로 배우는 것. 이렇게 하고 나면 다른 도메인에도 그걸 활용 할수 있게 됨.
+"
+"https://news.hada.io/topic?id=426","당근마켓, 글쓰기 화면에서 카테고리 자동 추천하는 모델 만들기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   당근마켓, 글쓰기 화면에서 카테고리 자동 추천하는 모델 만들기
+
+   글 제목 1000만개의 데이터를 페이스북의 fasttext 로 학습하고 quantize 3.3MB 짜리 모델 생성하여 적용
+"
+"https://news.hada.io/topic?id=513","iPhone 11에 새로 추가된 Apple U1 칩의 기능","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    iPhone 11에 새로 추가된 Apple U1 칩의 기능
+
+   U1 칩은 UWB(Ultra Wide Band)용 신규 칩셋. 필쉴러 발표화면에는 있었지만 상세히 설명하지는 않았음.
+
+   애플 홈페이지의 설명은 다음과 같다.
+
+   ""UWB 기술은 공간 인식을 위해서 이용되며, 다른 U1 칩이 내장된 애플 기기의 위치를 정확히 알수있습니다.. 거실용 GPS라고 보면 됩니다.. AirDrop 사용시 아이폰을 보내고 싶은 사람의 기기쪽으로 향하면 그 기기가 리스트 상위에 뜹니다""
+
+   ""이것은 아이폰에 새로운 감각(Sense)를 추가하는것과 같으며, 놀라운 새 기능들을 만들어 줄것입니다. 이건 시작일 뿐입니다.""
+
+   UWB는 애플이 AR/MR을 사용할때, 그리고 차후에 Apple Glass 가 객체의 공간적인 위치를 파악하는데 도움을 줄수 있음. 이미 애플은 UWB 관련 많은 특허를 가지고 있음.
+
+   비슷한 성능의 Decawave DW1000 UWB칩은 약 10cm 정도 오차범위의 정확도를 가지며, 290미터 범위까지 6.8Mbps 데이터를 전송가능. U1이 이것을 라이센스했는지는 밝혀지지 않음.
+
+   U1칩에 대해 자세히 발표하지 않은것은 아마도 ""지원하는 iOS 가 발표되지 않았기"" 때문이 아닐까
+
+   글 뒤쪽에 아마도 U1 칩이 애플워치,에어팟,에어팟 케이스,맥북프로 및 앞으로 나올 Apple Glass 에도 들어갈거라고 예상을 했는데, 이렇게 되면 내 애플 장비들이 정확히 어디있는지를 알수 있게 될듯.
+
+   에어팟이나 에어팟케이스가 몸에서 멀어지면 알람을 주면서 11시 방향 3.7미터 쯤에 있어요 라고 알림을 줄지도 ?
+"
+"https://news.hada.io/topic?id=432","DevOps 는 어떤 일을 하나요?","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          DevOps 는 어떤 일을 하나요?
+
+   [영문] DevOps컨설턴트의 자기 소개글.
+
+   쭉 읽어보기에 좋음.
+
+   - Configuration Management
+   - CI/CD
+   - Security and Access Control
+   - Infrastructure as Code
+   - Load Balancer and Reverse Proxying
+   - Application Development
+   - Database
+   - Human Mindset
+
+   글 마지막에 있는 DevOps Roadmap 도 참고
+
+   https://roadmap.sh/devops
+"
+"https://news.hada.io/topic?id=413","Flutter, 왜 선택하지 못했나","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Flutter, 왜 선택하지 못했나
+
+   Flutter를 새로운 프로젝트에 사용해 보려고 조사했던 내용과 적용하려고 했던 이유, 그리고 적용하지 못했던 이유
+
+   아
+"
+"https://news.hada.io/topic?id=388","Toil 없애기 - Toil 이란 무엇인가","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Toil 없애기 - Toil 이란 무엇인가
+
+   시스템 관련해서 많이 나오는 Toil 을 이해하기 위해 읽어야할 글
+   번역하기 뭐한데, 비슷한 단어로 표현하면 ""잡일""
+
+   보통 사람들이 얘기하는 ""내가 하기 싫어하는 일"" 만은 아니고,
+   실제 서비스를 운영하는데 있어서
+   - 수동으로 해야하고
+   - 반복적으로 해야하는데
+   - 자동화는 가능하고
+   - 전술적이고
+   - 지속적인 가치는 없지만
+   - 서비스가 커짐에 따라 점점 더 커지는
+   그런 일을 Toil 이라고 명명하고, 이것은 없애야 한다.
+
+   ""정상 운영시에도 운영자가 시스템을 뭔가 손대야 한다면, 버그가 있는 것이다.
+   정상 이라는 것의 정의는 시스템이 성장함에 따라 바뀐다""
+
+   적으면서 보니 CTO 가 없애줘야할 것이군요. 그래서 Chief Toil Officer !!
+"
+"https://news.hada.io/topic?id=465","자바스크립트 개발자를 위한 타입스크립트 저장소","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       자바스크립트 개발자를 위한 타입스크립트 저장소
+
+   타입 스크립트 입문서로 4장 선공개 이후 더 공개한다고
+
+   현재 6장까지는 공개되어 있네요. 작년부터 공개된거 같은데 그 이후는 공개를 안하신듯 ?
+"
+"https://news.hada.io/topic?id=446","구글, 서브도메인 또는 서브폴더를 빌려주는 사이트들에 검색 트래픽을 안주기 시작","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              구글, 서브도메인 또는 서브폴더를 빌려주는 사이트들에 검색 트래픽을 안주기 시작
+
+   트래픽을 올리기 위해 사이트 원래 콘텐츠 외의 외부 컨텐츠를 가져와서 보여주던 사이트들이 영향을 받기 시작했음.
+
+   예를 들어 아래와 같은 주소들
+
+   http://coupons.businessinsider.com
+   http://coupons.cnn.com
+   http://accuweather.com/coupons/
+   http://pcworld.com/couponcodes
+   http://puzzles.usatoday.com
+"
+"https://news.hada.io/topic?id=439","jQuery 에서 바닐라 Javascript 로 넘어가기 위한 Cheat Sheet","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             jQuery 에서 바닐라 Javascript 로 넘어가기 위한 Cheat Sheet
+
+   ES6 지원브라우저가 96%가 넘어서, 이제 jQuery를 벗어나도 괜찮은 시점!
+"
+"https://news.hada.io/topic?id=481","From Nand to Tetris","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          From Nand to Tetris
+
+   논리연산부터 컴퓨터구조,어셈블러,가상머신,고수준언어,컴파일러,OS까지 만들어보기.
+   Coursera 에도 동명의 과정이 있음.
+"
+"https://news.hada.io/topic?id=418","윈도 10에서 크롬 브라우저를 처음 실행할 때 벌어지는 일","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    윈도 10에서 크롬 브라우저를 처음 실행할 때 벌어지는 일
+
+   32개 요청, 7.26MB 다운로드를 시작으로 많은 일이 벌어집니다.
+
+   파이어폭스를 처음 설치할 때 일어나는 일: https://twitter.com/jonathansampson/status/1165858896176660480
+"
+"https://news.hada.io/topic?id=441","Dqlite – High-Availability SQLite","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Dqlite – High-Availability SQLite
+
+   C로 구현된 Raft 를 이용해서 고성능을 추구한 분산형 SQLite.
+   IoT 기기에 사용하기 좋음.
+"
+"https://news.hada.io/topic?id=500","Senior 소프트웨어 엔지니어의 체크리스트","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Senior 소프트웨어 엔지니어의 체크리스트
+
+   체크리스트 라기 보다는 시니어 개발자가 지켜야할 Principle 인듯.
+   쥬니어 개발자들이 읽어보기에도 괜찮습니다.
+   깃헙에 공개되어있으니 번역판을 만들어봐도 될것 같네요.
+
+   깃헙 https://github.com/littleblah/senior-engineer-checklist
+"
+"https://news.hada.io/topic?id=471","Human speech may have a universal transmission rate: 39 bits per second","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Human speech may have a universal transmission rate: 39 bits per second
+
+   국가 별 언어 음절 속도와 관계없이 전달되는 정보량은 초당 32비트로 동일하다고!
+
+   마지막 문단 내용에 다른데서 본거랑 비슷한 내용이 있네요
+
+   ""오디오를 120% 속도로 들어도 이해하는 데는 문제가 없다""
+
+   사람이 보통 책 읽는 속도가 오디오 보다 평균적으로 약 180%정도 빠르기 때문에,
+   오디오북을 130~150% 정도로 들으면 보는것과 비슷한 효과를 낼수 있다고 합니다.
+   물론 그 이상한 목소리 톤에 익숙해 진다는 전제하에요..
+
+   갑자기 눈으로 글을 보는 것과 귀로 소리를 듣는 것이 뇌에서 처리하는 속도가 같을까 궁금???
+
+   제가 예전에 봤던 글에서는 비슷했다고 본 거 같아요.
+   (그 글을 찾아보려고 했는데 글 제목이 기억이 안나네요 ㅠ)
+"
+"https://news.hada.io/topic?id=428","카본 나노튜브로 만든 16비트 RISC-V 프로세서","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      카본 나노튜브로 만든 16비트 RISC-V 프로세서
+
+   쓸 만하다기보다는 가능성을 확인한 수준 같습니다.
+"
+"https://news.hada.io/topic?id=442","트위터 CEO @jack 계정 해킹되었다가 복구됨","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      트위터 CEO @jack 계정 해킹되었다가 복구됨
+
+   지난주에 유튜버들을 해킹했던 그룹과 동일한것 같다고
+   해커가 Discord 링크를 올렸는데, 해당 서버도 Discord 에 의해 바로 폐쇄
+"
+"https://news.hada.io/topic?id=397","넷플릭스, 수작업 큐레이션 기능 "Collections" 테스트중","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  넷플릭스, 수작업 큐레이션 기능 ""Collections"" 테스트중
+
+   기존 알고리즘 추천방식이 아닌 사내 전문팀에 의한 컬렉션. 별도의 제목을 가짐.
+   현재는 iOS 에서 (아마도 미국내의) 일부 사용자에게만 공개됨.
+
+   다소 삐딱하게 보자면,
+   이제 영화보다 넷플릭스 오리지널들이 너무 많아져서 추천효율이 떨어지니
+   그걸 해결하기 위한 방법이 아닐까 합니다.
+
+   추천 알고리즘이 너무 엉망인 느낌을 계속 받습니다.
+   태거를 이용한 태깅도 그다지 효율적이거나 제대로 핵심을 찌르는 태깅은 아니고 기계적인 느낌이구요.
+
+   어떤면에서는 사람에 의한 인위적인 큐레이션이 나을듯도 합니다. (멜론dj처럼 되려나요 ㅡ.ㅡ;;)
+
+   말씀하신대로 멜론DJ처럼 될꺼 같아요. 넷플릭스가 하면 좀 다를지 지켜보는 것으로..
+"
+"https://news.hada.io/topic?id=512","Google Express 가 Google Shopping 으로 통합","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Google Express 가 Google Shopping 으로 통합
+
+   웹,앱 모두 Shopping 으로 이름 변경 예정.
+
+   - 기본 Google Express 의 주문내역등 정보는 모두 이관 됨
+   - 추가로 이제 타 온라인 쇼핑몰들의 물건을 구글 쇼핑에서 검색하게 됨
+   - Google Shopping Cart 아이콘이 붙은 상품은 바로 주문 가능
+   네이버 체크아웃이랑 비슷하게 동작하며, Google Guarantee 제도로 보장함
+
+   * 위 내용은 Google Express 사용자에게 온 메일에서 발췌했습니다. 별도 공지 웹페이지는 없네요. 위의 링크는 구글쇼핑 홈 입니다.
+
+   Google Guarantee : https://support.google.com/googleshopping/answer/9128896
+
+   - 고객이 상품을 못받거나, 잘못오거나,늦게오거나 하면 구글이 책임지고 환불해주는 정책
+"
+"https://news.hada.io/topic?id=492","Apple 9월 10일(한국 시간 11일 2시) 이벤트 유튜브로 실시간 중계 예정 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Apple 9월 10일(한국 시간 11일 2시) 이벤트 유튜브로 실시간 중계 예정
+
+   항상 애플 홈페이지에서 진행되던 것을 작년 트위터에 이어 올해는 유튜브로도 확장
+
+   현재 약 500명 대기중이라고 나오는데, 신기해서 확인하러들 많이 들어가 보는듯
+"
+"https://news.hada.io/topic?id=440","OverVue, Vue 개발자를 위한 프로토타이핑 도구","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     OverVue, Vue 개발자를 위한 프로토타이핑 도구
+
+   동적으로 Vue 어플리케이션을 생성하고 미리보기 하면서 수정가능
+"
+"https://news.hada.io/topic?id=411","내 영어를 더 멋지게 quillbot","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          내 영어를 더 멋지게 quillbot
+
+   AI 를 이용해서 내가 만든 영어문장을 멋지게 다듬어 줍니다.
+   영어 메일이나 문장 자주 쓰시는분들 이용해보세요.
+
+   이거 너무 좋은것 같습니다. 외국 회사에 있다보니 항상 영어를 써야 하는데 메일쓸때 정말 유용한것 같습니다.
+   공유 감사드립니다.
+
+   주소가 잘 못 된 것 같습니다. https://quillbot.com/
+
+   감사합니다. 수정했습니다. 저는 아니고 모더레이터가.. ^^;
+
+   아이고.. 잘한다고 했는데 고쳐주셔서 감사합니다.
+"
+"https://news.hada.io/topic?id=390","SingleFile - 웹페이지를 HTML 파일 하나로 저장해주는 도구","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                SingleFile - 웹페이지를 HTML 파일 하나로 저장해주는 도구
+
+   크롬,파이어폭스 확장 및 CLI 로도 제공.
+   HTML과 CSS는 minify 해서 임베드 하고
+   이미지나 폰트들은 Data URI 로 변환해서 파일내에 저장.
+"
+"https://news.hada.io/topic?id=497","Sunsetting Python 2","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Sunsetting Python 2
+
+   Python 2 지원이 2020년 1월 1일로 종료. 2000년 릴리즈 되고 나서 20년만.
+"
+"https://news.hada.io/topic?id=401","Windows 95 UI Kit - 부트스트랩4 기반의 윈도우95 테마","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Windows 95 UI Kit - 부트스트랩4 기반의 윈도우95 테마
+
+   새로운 디자인 트렌드에 지치셨나요? 25년전으로 돌아가 봅시다.
+"
+"https://news.hada.io/topic?id=396","PacVim - 팩맨 게임을 통해 배우는 Vim","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       PacVim - 팩맨 게임을 통해 배우는 Vim
+
+   OSX/Linux 또는 Docker 를 통해 설치가능. Waka Waka
+"
+"https://news.hada.io/topic?id=387","구글, iOS/Android 에서 실시간 손(Hand) 트래킹 가능한 오픈소스 공개 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             구글, iOS/Android 에서 실시간 손(Hand) 트래킹 가능한 오픈소스 공개
+
+   핸드 제스처 나 수화 인식 등에서 사용가능
+   ""BlazePalm"" 모델을 구축, 실시간으로 손바닥인지를 평균 95%정도로 인식
+   기존에 공개한 MediaPipe 프레임워크를 통해 파이프라인 구축
+"
+"https://news.hada.io/topic?id=393","QCon NY 2019 - Key points 와 Lessons Learned 총괄 정리본","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           QCon NY 2019 - Key points 와 Lessons Learned 총괄 정리본
+
+   시니어들의 기술컨퍼런스 QCon. 각 세션의 주요 내용 요약 및 트위터 피드백 정리
+"
+"https://news.hada.io/topic?id=392","filepond - 파일 업로드를 위한 바닐라 JS 라이브러리","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   filepond - 파일 업로드를 위한 바닐라 JS 라이브러리
+
+   React,Vue,Angular,jQuery 어댑터 포함
+   로컬에서 이미지 최적화후 프리뷰 & 업로드
+   Async/Sync 업로딩
+   파일당 크기,전체 크기, 파일 타입 제한
+   폴더 업로드 및 폴더 내부의 파일 필터링
+   파일 메타데이터 추가해서 전송
+"
+"https://news.hada.io/topic?id=403","트래킹 방지에 대한 구글의 변명 분석 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          트래킹 방지에 대한 구글의 변명 분석
+
+   구글의 방식은 Safari/Firefox 에 비해 뒤떨어져있음.
+   쿠키 차단이 개인정보 보호에 좋지 않다는 구글의 글에 대한 반박
+   ""구글이 사업적 이익을 보호하면서 의미있는 개인정보 보호 방법을 제공할 가능성은 낮다""
+
+   이 글은 크롬팀이 공개한 ""Building a more private web"" 글 에 대한 반론임
+   https://www.blog.google/products/chrome/building-a-more-private-web/
+"
+"https://news.hada.io/topic?id=419","devhub, GitHub 의 변경 사항을 모바일, 웹 그리고 데스크탑에서","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               devhub, GitHub 의 변경 사항을 모바일, 웹 그리고 데스크탑에서
+
+   여러 플랫폼을 지원하는 깃허브 변경 사항 알리미. 여러 플랫폼 아니라 다중 팬모드, 메뉴바 모드등을 지원
+"
+"https://news.hada.io/topic?id=389","Git 커맨드라인 환경에서 GUI 부럽지 않게 사용할 수 있는 몇가지 팁","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Git 커맨드라인 환경에서 GUI 부럽지 않게 사용할 수 있는 몇가지 팁
+
+   간단한 alias를 통해
+   1. branch 목록에서 선택 checkout 하기
+   2. 커밋 로그 목록 및 해당 커멧 선택시 상세 보기
+   3. 소스 변경 내용 더 상세하게 보기
+   4. stash 목록 보고 apply 혹은 drop
+
+   https://github.com/jonas/tig
+
+   tui 프로그램이있죵...
+"
+"https://news.hada.io/topic?id=421","Iosevka - 프로그래밍용 얇은 폰트","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Iosevka - 프로그래밍용 얇은 폰트
+
+   자기가 원하는 것만 넣어서 TTF/WOFF로 빌드해 사용가능
+
+   예를 들어, 0 안쪽에 슬래시 넣거나 점으로 표현하거나를 선택 가능하고,
+   화살표 모양도 여러가지 중에서 선택
+
+   아 빌드가 가능한거였군요... 사용을 하고 있습니다만. `brew`로 설치되는 것으로 설치해서 사용중이네요...
+"
+"https://news.hada.io/topic?id=394","Getting Closure on React Hooks 내부 동작 방식의 이해 (한글)","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Getting Closure on React Hooks 내부 동작 방식의 이해 (한글)
+
+   JSConf.Asia 2019 에서 Shwan Wang이 발표한 세션 정리. 원본 영상은 React Hooks의 기본 개념이 있는 사용자를 대상으로 직접 Hook을 구현하면서 동작하는 방식(발표자는 멘탈 모델이라고 표현)을 직관적으로 이해하기 위해 작성
+"
+"https://news.hada.io/topic?id=487","Let's Encrypt 무료 인증서가 전체 웹도메인의 30%에서 사용되고 있음","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Let's Encrypt 무료 인증서가 전체 웹도메인의 30%에서 사용되고 있음
+
+   3.5억개의 SSL커넥션 분석결과, 4700만개가 Let's Encrypt고, DigitCert,Comodo,Google,GoDaddy 순
+
+   인증서 장사가 많이 영향 받고 있는듯.
+"
+"https://news.hada.io/topic?id=448","Vim Conference 2019 가 일본 도쿄에서 열린다","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Vim Conference 2019 가 일본 도쿄에서 열린다
+
+   Vim 컨퍼런스 2019 가 일본 도쿄에서 열립니다. 키노트에는 Neovim 메인테이너가 나옵니다
+"
+"https://news.hada.io/topic?id=511","An American Phrase Book [2013]","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     An American Phrase Book [2013]
+
+   미국인들이 주로 쓰는 구문의 속뜻 알아보기. 몇몇은 한국이랑 비슷 하군요.
+
+   언제 점심 함 해요! = 다신 보고 싶지 않아요
+"
+"https://news.hada.io/topic?id=399","구글이 점점 당신의 웹사이트를 움켜잡고 있다 - AMP의 폐해","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   구글이 점점 당신의 웹사이트를 움켜잡고 있다 - AMP의 폐해
+
+   5년전 시작한 AMP가 모바일에서 데스크탑으로 확장하고
+   SSR(서버사이드 렌더링) 까지 도입하면서 구글의 야심은 점점 커져감
+
+   글쓴이가 AMP 도입하면서 트래픽이 늘었지만, 실수로 AMP를 제거했더니 트래픽이 급감 했다고
+
+   ""구글이 정말로 사용자를 고려했다면, 특정 포맷을 가지는가 여부가 아닌 속도에 따라 페이지 랭크를 고려해야 했다.""
+
+   이제 결론은 이렇다. ""Get AMP, or get left behind""
+"
+"https://news.hada.io/topic?id=405","Sourcery - 비즈니스용 웹사이트 쉽게 만들기 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Sourcery - 비즈니스용 웹사이트 쉽게 만들기
+
+   회사/가게이름 입력하면 구글지도에서 전화/사진 등 정보를 찾아서 웹사이트를 손쉽게 만들어줌. 한국도 가능.
+
+   - 구글지도의 사용자 정보가 바뀌면 홈페이지도 알아서 바뀌는 형태
+   - 구글캘린더 연동해서 보여주기 가능
+   - 상품 판매 및 다양한 연결이 가능
+   - Open Hours 지정 가능
+   - 인스타/페이스북 연결 및 비디오 링크 가능
+   - 커스텀 도메인도 가능 ( 현재는 설정엔 없고 별도 신청 해야함 )
+
+   위 기능들은 다 무료고, 유료버전은 아직 만드는 중.
+
+   아는 가게들(주로 식당)을 테스트로 넣어보니 잘 되네요.
+
+   오너를 인증하기 위해서는 전화 또는 문자를 받아야 하는데,
+   한국 전화 번호 넣어도 인증 전화는 잘 걸려 옵니다.
+"
+"https://news.hada.io/topic?id=484","Implicit Backdoor) 백도어가 될만한 코드를 숨겨두기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Implicit Backdoor) 백도어가 될만한 코드를 숨겨두기
+
+   워닝은 뜨지만 백도어는 아닌 코드를 오픈소스 등에 넣어두면
+   다른 사람이 백도어 역할을 할 수 있는 코드로 바꾸는 실수(?)를
+   할만한 코드를 심어둔다는 나쁜(!?) 아이디어
+
+   컨트리뷰션 능력도 없지만 더 망설이게 만드네요.
+"
+"https://news.hada.io/topic?id=434","Typescript 3.6 릴리즈","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Typescript 3.6 릴리즈
+
+   제네레이터, 이터레이터에서도 타입 체킹이 가능 해짐
+"
+"https://news.hada.io/topic?id=475","프로젝트 관리 기반의 협업툴: Airtable","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       프로젝트 관리 기반의 협업툴: Airtable
+
+   엑셀과 비슷한 UI를 가진 프로젝트 관리 도구
+"
+"https://news.hada.io/topic?id=483","MS PowerToys - 윈도우10을 좀 더 쓰기 편하게","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    MS PowerToys - 윈도우10을 좀 더 쓰기 편하게
+
+   Win95용 PowerToys 이름을 그대로 재 사용.
+   - 창 레이아웃 정렬
+   - 단축키 가이드
+   두개의 기능을 먼저 공개
+
+   * 차후에 Batch File Renamer, AniGIF 스크린 레코더 등 다양한 도구들을 추가로 공개 예정
+"
+"https://news.hada.io/topic?id=422","MS, 10월 2일에 Surface 이벤트 개최 (NY)","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    MS, 10월 2일에 Surface 이벤트 개최 (NY)
+
+   새로운 듀얼스크린 장비인 Centaurus 가 공개될지도 모른다고.
+
+   Surface Book 도 업데이트 된지 오래되었고,
+   Surface Pro 도 드디어 USB-C 를 추가하게 될지도 모름.
+   Surface Go 도 1년이 넘어서 마니어 리프레시 될것 같다고.
+
+   저도 USB-C 포트 달린 Pro 버전 나오길 기다리는 중!
+"
+"https://news.hada.io/topic?id=503","회사에 궁금한 점은 없으신가요? - Reverse Interview 한글 번역","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              회사에 궁금한 점은 없으신가요? - Reverse Interview 한글 번역
+
+회사에 궁금한 점은 없으신가요?
+
+   인터뷰를 마치고 한번씩은 들어봤을 질문이다. 이 때 어떠한 질문을 하면 좋을까?
+   적절한 질문들을 항목별로 정리해둔 Reverse Interview Question 목록이다.
+   검색으로 스스로 찾을 수 있는 질문인지 확인해보고, 당신 상황에서 어떤 질문이 흥미로운지 생각해보고 질문하자
+
+질문(카테고리만, 상세 질문들은 링크에)
+
+     * 역할 (The Role)
+     * 기술 (Tech)
+     * 팀 (The Team)
+     * 미래의 동료들 (Your Potential Coworkers)
+     * 회사 (The Company)
+     * 충돌 (Conflict)
+     * 사업 (The Business)
+     * 원격 근무 (Remote Work)
+     * 사무실 근무 (Office Work)
+     * 보상 (Compensation)
+     * 휴가 (Time Off)
+     * 기타
+"
+"https://news.hada.io/topic?id=404","EIP 를 이용한 빠른 이미지 로딩 기법","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         EIP 를 이용한 빠른 이미지 로딩 기법
+
+   1. P-JPEG 이미지 생성
+   2. 2번째 DHT 위치 오프셋 찾기
+   3. HTTP Range Request 를 이용해서 두단계로 불러오기
+
+   굉장히 복잡하게 로딩을 하는 실험적인 방법이긴 한데,
+   이미지가 많은 사이트에서는 한번 고려해보고 테스트 해볼만.
+"
+"https://news.hada.io/topic?id=482","Apple Music 웹 클라이언트 공개 (베타)","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Apple Music 웹 클라이언트 공개 (베타)
+
+   드디어 무거운 iTunes 없이 음악 감상 가능
+"
+"https://news.hada.io/topic?id=491","구글의 코드리뷰 가이드 [한글 번역]","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          구글의 코드리뷰 가이드 [한글 번역]
+
+     * 구글의 Engineering Practices Documentation의 일부분인 Code Review Developer Guide의 요약 번역본
+     * 두 파트로 구성
+          + 코드를 리뷰하는 방법: 코드 리뷰어를 위한 가이드
+          + CL 작성자용 가이드: 리뷰를 받는 코드 작성자를 위한 가이드
+
+코드를 리뷰하는 방법
+
+     * 코드 리뷰의 대원칙
+     * 코드 리뷰에서 중점적으로 볼 점
+     * 리뷰 중인 CL 헤쳐보기
+     * 코드 리뷰의 속도
+     * 코드 리뷰에 의견 작성하는 법
+     * 반대 의견에 대처하는 방법
+
+코드 리뷰를 통과하기 위한 CL 작성자용 가이드
+
+     * 좋은 CL 설명문 쓰는 법
+     * 작게 쪼개기
+     * 리뷰어의 의견에 대처하는 방법
+"
+"https://news.hada.io/topic?id=427","Shape Up - 작은 조직이 훌륭하게 일하는 법 [PDF]","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Shape Up - 작은 조직이 훌륭하게 일하는 법 [PDF]
+
+   작은 팀이 6주 단위로 스프린트,스크럼,백로그,칸반 같은거 없이
+   제품을 어떻게 만들어 내는지를 설명.
+
+   개발팀이 성장하면서 나타나는 문제
+   - 팀원들은 프로젝트가 영원히 끝나지 않는것처럼 느끼게 됨
+   - 프로덕트 매니저들은 제품에 대해서 전략적인 고민을 할 시간이 없음
+   - 창업자들은 ""왜 우리 초기때처럼 기능을 만들어 내지 못하지?""
+
+   이런 고민에 대해 Basecamp 가 지난 15년간 고민하고 해결하면서 일 해온 방식들을 정리한 문서
+   웹에서도 읽을수 있고, 영문이지만 134p 짜리 무료 책 PDF 로도 제공
+
+   부제는 Stop Running in Circles and Ship Work that Matters
+   목차로 보면
+
+   1. Shaping - 업무를 형상화 하기. 너무 단단하지 않고, 너무 추상적이지 않게
+   2. Betting - 6주동안 할것을 선택
+   3. Building - 만들기
+
+   거창하지 않고, 스타트업에 알맞는 방식 인듯
+"
+"https://news.hada.io/topic?id=467","Android 10 정식 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Android 10 정식 공개
+
+   라이브캡션,스마트회신,사운드 앰프, 제스쳐 네비게이션,다크모드
+   더 나은 개인 보안,구글플레이를 통한 보안 업데이트,포커스모드,패밀리링크
+
+   소개 웹 페이지에도 다크모드를 적용했네요.
+"
+"https://news.hada.io/topic?id=490","GitDuck - 다른 개발자가 코딩하는걸 보면서 배우기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    GitDuck - 다른 개발자가 코딩하는걸 보면서 배우기
+
+   자신의 개발화면과 소스코드를 같이 녹화해서 공유하는 서비스.
+
+   현재는 OSX + VS Code 만 지원하지만, JetBrains 등도 지원예정이라고.
+
+   신규 개발자 부트캠프용으로도 괜찮을듯
+"
+"https://news.hada.io/topic?id=453","Angular loves WebComponent (CustomElement)","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Angular loves WebComponent (CustomElement)
+
+   Angular로 만든 Component를 WebComponent로 빌드하고,
+   WebComponent를 Angular에서 불러오고,
+   심지어 Lazy Load까지 하는 방법에 대하여.
+"
+"https://news.hada.io/topic?id=423","Talespin, VR을 이용한 교육 프로그램 - 직원 해고하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Talespin, VR을 이용한 교육 프로그램 - 직원 해고하기
+
+   기자가 체험해본 Barry 라는 60대 가상 직원 VR로 해고하기.
+
+   직원 교육에 쓰는 VR 서비스인데, 직원들이 경험해 보기 힘든 상황을 만들어서 교육.
+   할 업무들 순서 파악부터, 피드백 주기 또는 해고하기 등..
+
+   조지 클루니가 주연한 ""Up in the air"" 의 미래판을 보는 느낌
+
+   https://ko.wikipedia.org/wiki/인_디_에어
+
+   https://www.talespin.company/virtual-human/
+
+   에서 동영상으로 잠깐 볼수 있습니다.
+"
+"https://news.hada.io/topic?id=510","구글, "nofollow" 자리에 sponsored 와 ugc 속성 추가","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                구글, ""nofollow"" 자리에 sponsored 와 ugc 속성 추가
+
+   A 태그의 rel=""nofollow"" 에 추가로 스폰서링크인지, 사용자가 만든 콘텐츠인지를 명시할 수 있도록 추가
+
+   - rel=""sponsored"" : 해당 링크가 광고,스폰서 나 별도의 보상을 받는 경우
+   - rel=""ugc"" : User Generated Content. 코멘트나 포럼의 글처럼 사용자가 작성한 콘텐츠 내에 있는 링크일 경우 명시
+
+   rel=""ugc sponsored"" 처럼 복합사용도 가능
+
+   왜 nofollow 가 중요한지는 https://xguru.net/2099 글을 한번 읽어보세요.
+"
+"https://news.hada.io/topic?id=429","MS, 리눅스 커널에 exFAT 을 추가할수 있도록 스펙 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   MS, 리눅스 커널에 exFAT 을 추가할수 있도록 스펙 공개
+
+   윈도우를 비롯해 SD카드와 USB드라이브에서 사용중인 exFAT을 이제 리눅스에서 공식적으로 사용할수 있도록 지원할 예정.
+
+   Microsoft ♥ Linux
+"
+"https://news.hada.io/topic?id=451","Netflix 로 영어를 비롯한 다양한 언어 배우기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Netflix 로 영어를 비롯한 다양한 언어 배우기
+
+   크롬 확장을 설치하면 자막단위 이동/반복과 단어장 보기가 가능.
+   공식자막과 번역자막을 같이 보면서 확인하고 자막 단위 자동 멈춤도 지원.
+
+   배우고자 하는 언어별/국가별로 배우기 좋은 타이틀 리스트도 가지고 있음.
+"
+"https://news.hada.io/topic?id=408","쿠팡 디지털 제품 가격추적 사이트 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           쿠팡 디지털 제품 가격추적 사이트
+
+   google firebase를 이용했고 현재 기능은 아래와 같습니다.
+
+   - 가전/디지털 카테고리의 4점 이상 제품으로 한정
+   - 최근 30일 평균 가격보다 낮은 제품만 표시
+   - 매일 아침 7시에 업데이트
+
+   종종 들어가서 잘 보고 있습니다. 카테고리를 확장하실 계획은 없나요 ? ^^
+"
+"https://news.hada.io/topic?id=437","소프트웨어 엔지니어링 졸업생들은 스타트업 관련 기술을 가지고 있지 않다.","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                소프트웨어 엔지니어링 졸업생들은 스타트업 관련 기술을 가지고 있지 않다.
+
+   대학에서 배우는 소프트웨어 공학은 큰 회사에서 필요로 하는 것들에 포커스 되어있음.
+
+   커리큘럼이 바뀌어야 한다는 얘기.
+
+   우리나라도 별반 다르지 않은것 같은데, 그나마 변화가 빠른 미국도 이렇구나 라는 생각이 들어서 공유합니다.
+"
+"https://news.hada.io/topic?id=412","직관적인 UX를 위한 4개의 규칙","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           직관적인 UX를 위한 4개의 규칙
+
+   예제가 이해하기 쉬움
+   1. 변경이 반영되는곳에 버튼을 두기
+   2. 드롭다운 금지
+   3. 중요한걸 눈에 띄게 만들기
+   4. 예제로 설명하기
+"
+"https://news.hada.io/topic?id=459","Curl Cookbook - 주로 쓰는 Curl 명령들 정리","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Curl Cookbook - 주로 쓰는 Curl 명령들 정리
+"
+"https://news.hada.io/topic?id=489","선호하는 인터뷰 질문들 40개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            선호하는 인터뷰 질문들 40개
+
+   CXO 부터 팀장,팀원 수준까지 적용하능한 다양한 질문들. 복사해두고 쓰고 싶은게 많네요.
+"
+"https://news.hada.io/topic?id=508","Apple TV+ 11월 1일 전세계 100개국에서 동시 런칭","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Apple TV+ 11월 1일 전세계 100개국에서 동시 런칭
+
+   월 $4.99 지만, 새 애플 기기를 산다면 1년간 무료.
+   오리지널 프로그램 See,The Morning Show,Dickinson 등 공개
+
+   가입후 7일무료, 패밀리 6명까지 사용가능
+"
+"https://news.hada.io/topic?id=443","Baseline Interpreter : Firefox 70 에 추가된 빠른 자바스크립트 인터프리터","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Baseline Interpreter : Firefox 70 에 추가된 빠른 자바스크립트 인터프리터
+
+   C++ 인터프리터와 JIT 사이에서 속도를 빠르게 만들어주는 중간 단계.
+   결과적으로 페이지로딩이 2~8%, 개발자도구가 2~10% 향상.
+
+   웹브라우저 개발자를 제외하면, 대다수의 개발자들이 알아야 할 부분은 아니지만,
+   요즘 브라우저들이 어떻게 Javascript 로 가득찬 웹사이트들을 빠르게 로딩하는지를 알수 있게 단계별로 잘 설명한 글.
+
+   [영문] 1713 words, 약 17분 ( 100 WPM, Words Per Minute 가정 )
+"
+"https://news.hada.io/topic?id=410","Super Mario 64 디컴파일 되다","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Super Mario 64 디컴파일 되다
+
+   Nintendo 64 디컴파일 프로젝트의 일부. 완벽한 변수명과 문서화는 아직 진행중.
+   이 프로젝트의 진행을 위해 QEMU 에 IRIX 지원이 구현되고 있음
+   ( N64가 IRIX 기반이라서 )
+"
+"https://news.hada.io/topic?id=504","Augmented-UI - 사이버펑크 스타일의 웹 디자인 CSS ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Augmented-UI - 사이버펑크 스타일의 웹 디자인 CSS
+
+   영화에서 종종 보이던 UI를 웹 브라우저에서!
+"
+"https://news.hada.io/topic?id=431","WTF - 터미널용 개인 대쉬보드","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           WTF - 터미널용 개인 대쉬보드
+
+   터미널 주 사용자를 위해 캘린더,Todo,CI,GitHub,JIRA,Trello,Twitter,날씨 등 다양한 서비스 상태와 데이터를 한번에 보여주는 대쉬보드.
+
+   꽤 많은 모듈을 지원
+
+   BambooHR,CircleCI,Clocks,CmdRunner,Crypto Currencies(Bittrex등)
+   Data Dog,Feed Reader,Gerrit,Git,GitHub,GitLab,Gitter
+   Google Apps ( Analytics, Calendar, Spreadsheets ), Hacker News,
+   Jenkins, Jira, Kubernetes, Logger, Mercurial, NBA Score, New Relic,
+   OpsGenie,Pagerduty,Power,Resource Usage,Rollbar,Security,Spotify,Textfile
+   Todo, Todoist, Transmission, TravisCI, Trello, Twitter, VictorOps OnCall,
+   Weather Services, Zendesk
+"
+"https://news.hada.io/topic?id=407","자바스크립트 스타일 가이드 Standard 모듈이 npm install 시에 광고 노출을 테스트중","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         자바스크립트 스타일 가이드 Standard 모듈이 npm install 시에 광고 노출을 테스트중
+
+   매월 300만번 설치된다는 Standard.
+   이제 콘솔에서 npm 설치시에 후원하는 회사의 광고를 보여주겠다고 해서 논란 중
+
+   이슈 제목이 ""npm install funding"" 인데
+
+   이것도 나름 재미난 시도이면서 오픈소스 기여자들에게 수익을 돌릴수 있는 테스트가 될것도 같지만.. 받아들이는 분위기는 그렇지 않은듯
+
+   ""콘솔에서까지 광고를 봐야 하나?""
+"
+"https://news.hada.io/topic?id=485","STEGASURAS) 문장에 정보 숨기기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         STEGASURAS) 문장에 정보 숨기기
+
+   일정 길이 이상의 문장에 내가 원하는 암호문을 숨겨 놓은 새로운 문장을
+   만들어주는 알고리즘.
+   아이이어가 재밌고, 한글도 일단 동작은 하지만 영어에 비해서
+   새로운 문장이 자연스럽지는 않은듯.
+   NLP를 쓰면서 한글에 대한 학습이 부족한 것으로 보임.
+
+   블록체인과 슬랙공간을 이용한 콘텐츠 DRM에 대해 잠깐 고민한 적이
+   있는데 유사한 아이디어가 벌써 이정도로 나오고 있었다는 느낌
+"
+"https://news.hada.io/topic?id=435","애플, 9월10일 스페셜 이벤트 개최한다…아이폰11 발표","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    애플, 9월10일 스페셜 이벤트 개최한다…아이폰11 발표
+
+   ‘아이폰11’ 내지 ‘아이폰XI’라는 이름이 확실시되는 2019년 아이폰은 아이폰XS/XS 맥스 후속 모델은 트리플 카메라, 아이폰XR 후속 모델에는 듀얼 카메라가 탑재되는 것으로 예측
+"
+"https://news.hada.io/topic?id=466","임베디드를 위한 TypeScript, STS (Static Type Script)","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             임베디드를 위한 TypeScript, STS (Static Type Script)
+
+   Typescript 의 서브셋으로 C 를 임베디드에 사용하는 것 처럼 컴파일, 링크하여 실행파일 만들 수 있음, 아주 작은 디바이스에서도 동작 가능하다고
+"
+"https://news.hada.io/topic?id=463","PWA Asset Generator - Puppeteer를 활용한 PWA용 리소스 자동생성","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           PWA Asset Generator - Puppeteer를 활용한 PWA용 리소스 자동생성
+
+   구글,MS,애플(?)의 스펙들을 만족하는 아이콘,스플래시,Manifest 등을 자동으로 생성해줌
+
+   - https://app-manifest.firebaseapp.com
+   - https://realfavicongenerator.net
+
+   추가사이트
+
+   이미지가 포함된 설명자료는 여기서 볼수 있습니다.
+   https://itnext.io/pwa-splash-screen-and-icon-generator-a74ebb8a130
+"
+"https://news.hada.io/topic?id=417","프로그래밍 언어 제작자와의 인터뷰 [pdf]","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        프로그래밍 언어 제작자와의 인터뷰 [pdf]
+
+   컴퓨터월드 2008~10년 연재분 모음.
+   Ada,C#,C++,Closure,Erlang,Haskell,Javascript,Lua,Obj-C,Perl,Python,Scala,Tcl 등등
+"
+"https://news.hada.io/topic?id=420","중국 판매자들, 더 이상 미국으로의 저렴한 배송 불가","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     중국 판매자들, 더 이상 미국으로의 저렴한 배송 불가
+
+   USPS 가 중국에서 도착하는 우편물에 대해 미국내 우편과 같은 가격을 매기게 해주지 않으면 UPU를 떠나겠다고 통보.
+
+   10월 17일 이후로는 중국 판매자들도 미국내 판매자들과 똑같은 배송비용을 물어야 함.
+
+   알리익스프레스와 Wish.com 같은 중국 상품 판매자에게는 안좋고,
+   eBay 에서 미국내 물품을 파는 판매자들에게는 희소식
+
+   UPU ( Universal Postal Union ) 에 대해서는 아래글 참고
+
+   중국업체 물류비를 한국 우체국이 보조하는 이유는?
+   http://www.newstof.com/news/articleView.html?idxno=598
+"
+"https://news.hada.io/topic?id=447","Google Ads에 Apple Card 등록했다가 광고 어카운트 차단됨","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Google Ads에 Apple Card 등록했다가 광고 어카운트 차단됨
+
+   등록한 것 만으로 몇시간후 갑자기 차단. 애플카드는 가상번호를 발급받는 카드여서 그랬을거라고 추측중.
+
+   당분간 확인전까지는 애플카드 사용자는 중요한 계정에는 넣지 말아야
+   물론, 국내에선 받을일 없으니 조심할일도 없겠지만..
+"
+"https://news.hada.io/topic?id=499","ReactEurope 2019 비디오","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ReactEurope 2019 비디오
+
+   첫째, 둘째날 비디오가 있습니다. 페이스북을 제외하고 리엑트 관련 큰 행사입니다.
+"
+"https://news.hada.io/topic?id=502","구글, 파슬 스마트워치 지적재산 4천만달러에 인수 (Jan, 2019)","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                구글, 파슬 스마트워치 지적재산 4천만달러에 인수 (Jan, 2019)
+
+   좀 오래된 소식인데 잘 알려지지 않은 것 같아서 뒤늦지만 올립니다.
+
+   - 패션브랜드 '파슬(Fossil)'의 스마트워치 지적재산(IP)을 4천만달러에 인수
+   - 스마트워치IP를 다뤄 온 연구개발부서도 그 IP와 함께 구글로 이관
+   - 잔류하는 연구개발부서 인력 200여명은 앞으로도 제품 개발에 주력
+   - 애플워치에 비해서 상대적으로 열세인 웨어러블 시장에 본격 진입
+   - 구글은 웨어OS가 인공지능(AI)이 주도할 미래에 핵심이 될 것이라 강조
+"
+"https://news.hada.io/topic?id=452","핀테크 Bi-Weekly 리포트 8월 04주차 [PDF]","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    핀테크 Bi-Weekly 리포트 8월 04주차 [PDF]
+
+   한국인터넷진흥원과 한국핀테크산업협회가 함께 제작한 핀테크 위클리 리포트
+
+   o 5년전 글로벌 핀테크 리더 기업 50곳, 지금 모습은?
+   o 확산하는 소비자 대출에서의 핀테크 영향
+   o RPA 실전, 일본 사례로 보는
+   o 국내 은행의 RPA 도입 현황
+   o 중국 인터넷 전문은행의 현재
+   o 기업들의 블록체인 지출 지속 증가
+"
+"https://news.hada.io/topic?id=477","2020 and Beyond Programming Trend Predictions ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             2020 and Beyond Programming Trend Predictions
+
+   2020년 프로그래밍 기술 트랜드이라고!
+   - Rust Will Become Mainstream
+   - GraphQL Adoption Will Continue to Grow
+   - Progressive Web Apps Are a Force to Reckon With
+   - Web Assembly Will See More Light
+   - React Will Continue to Reign
+   - Always Bet on JavaScript
+
+   written by Indrek Lasn
+"
+"https://news.hada.io/topic?id=495","MS가 2015년에 인수한 Wunderlist, 개발자가 다시 되 사고 싶다고 밝혀","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             MS가 2015년에 인수한 Wunderlist, 개발자가 다시 되 사고 싶다고 밝혀
+
+   MS는 2017년에 이미 Wunderlist 를 Retire 하고, To-Do 앱으로 이전 하겠다고 했지만, 아직 진행은 되지 않은 상태.
+"
+"https://news.hada.io/topic?id=501","블록체인 이슈문답 (삼성 클레이튼폰, 라인 암호화폐 거래소 등)","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  블록체인 이슈문답 (삼성 클레이튼폰, 라인 암호화폐 거래소 등)
+
+   원래 기사 제목은 『삼성전자, 블록체인 ‘클레이튼’ 지원 폰 출시』 인데, 실제로 기사에서 Q&A 형식으로 언급하는 주요 내용은 다음과 같습니다.
+
+   - 카카오 클레이튼 지원 삼성폰 출시
+   - 라인 암호화폐 거래소 일본 라이센스 취득
+   - IMF 총재, 스위스중앙은행 총재의 암호화폐 발언
+   - 독일 버거킹 비트코인 결제
+"
+"https://news.hada.io/topic?id=454","Leon Sans - JS코드로 HTML5 Canvas위에 그리는 폰트","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Leon Sans - JS코드로 HTML5 Canvas위에 그리는 폰트
+
+   구글에 계신 한국인 디자이너 김종민님의 작품.
+   좌표값으로 되어있어, 다양한 형태 및 효과 및 애니메이션을 만들수 있음.
+
+   새로 태어난 아기의 이름인 Leon 을 딴 Sans Serif 폰트.
+"
+"https://news.hada.io/topic?id=391","Sourcehut, Bitbucket 의 Mercurial 지원종료로 인한 망명자들 환영","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Sourcehut, Bitbucket 의 Mercurial 지원종료로 인한 망명자들 환영
+
+   Sourcehut 은 Git 과 Mecurial 을 호스팅하고 있으며, 100% 무료이고 오픈소스 기반.
+   ( Sourcehut 의 유료버전은 sr.ht 에서 따로 호스팅하여 운영함 )
+"
+"https://news.hada.io/topic?id=398","구글 포토, 이제 사진속의 글자로 검색 가능","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        구글 포토, 이제 사진속의 글자로 검색 가능
+
+   기존에 사람,장소,물건 등을 지원하던것에 추가로 OCR을 통한 글자 인식 및 검색이 가능
+
+   원래 이것저것 되던게 있어서인지 얼만큼 추가가 된건지 모르겠는데
+   제 경우 ""커피"" 라고 검색하면 ""The Coffee Bean"" 이라는 간판만 찍힌 사진이 나오긴 하네요.
+   ""Bean"" 으로 검색하면 해당 간판이 나오는데, ""콩"" 으로는 검색이 안되네요.
+"
+"https://news.hada.io/topic?id=395","미국 7개 출판사, 아마존 Audible의 새 Speech-To-Text 기능을 중지하기 위해 고소","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        미국 7개 출판사, 아마존 Audible의 새 Speech-To-Text 기능을 중지하기 위해 고소
+
+   오디오북의 내용을 머신러닝을 통해 글자로 보여주는 Audible Captions 기능이 저작권 침해라고 주장
+
+   이북을 팔고 오디오로 읽어주는건 이미 킨들에도 있는 기능인데
+   반대로 오디오북을 사서 글자로 보여주는건 저작권 침해라고 주장하는 것
+
+   기사대로라면 Text-To-Speech 는 로컬에서 가능하지만.
+   Speech-To-Text 는 AWS Transcribe 를 써서 서버로 보내는거니까 다르다는 건데..
+
+   예전 킨들에 TTS 넣을때도 출판사가 반발이 있어서 출판사 요청이 있으면 특정 책은 TTS를 불가능 하게 했는데, 이번에도 그렇게 할지 궁금.
+"
+"https://news.hada.io/topic?id=498","Reverse Interview - 면접시 회사에 물어볼 질문들","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Reverse Interview - 면접시 회사에 물어볼 질문들
+
+   대부분의 회사들이 면접시에 ""저희에게 질문 있으세요 ?"" 라고 하는데,
+   여기 있는 것들 중 몇개 외워가면 좋을 듯.
+
+   질문들이 세세하고 좋네요. 구직자들이 인터뷰를 통해 자기 현상태를 돌아보기도 하는 것처럼, 회사들이 자가 진단하고 개선할 점을 찾기에도 좋겠어요.
+"
+"https://news.hada.io/topic?id=424","디자이너를 위한 컬러 도구 모음 58가지","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         디자이너를 위한 컬러 도구 모음 58가지
+
+   색상 관련 웹사이트 및 앱 들 리스트
+
+   Muzli, Colorable, Color Leap, Picular, Colourcode, Palettte App, Colorinspire,
+   ColorSpace, Pigment, Adobe Color, Color & Fonts, HueSnap, Culrs, Eva Design System,
+   Scale, Site Palette, BrandColors, ColorWise, HTML Color Codes, ColorBox, Coolors.co,
+   Color — Cloudflare Design, Instant Duotone Effect Generator, Color Tool — Material Design, Blendy 등등등 58개
+
+   제가 아는 색상들 숫자보다 도구숫자가 많은듯..
+"
+"https://news.hada.io/topic?id=414","내가 시니어 개발자에게 1년간 배운 것들","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         내가 시니어 개발자에게 1년간 배운 것들
+
+   블룸버그 개발자의 정리본.
+
+   - 이름 짓는법
+   - 레거시 코드와 다음 개발자
+   - 문서화와 주석
+   - Atomic 커밋
+   - 쓰레기 코드 지우는데 자신감 가지기
+   - 코드리뷰
+   - 테스팅
+   - 위험 제거하기
+   - 설계 하는법
+   - 유지보수를 염두에 두고 설계하기
+   - 디플로이 하기
+   - 뭔가 잘못되었을 때는
+   - 전쟁 이야기
+   - 모니터링
+
+   올해는 두명의 시니어 개발자 옆에 앉게 되었다고.. 내년을 기대해 볼만한 포스트.
+"
+"https://news.hada.io/topic?id=460","Just Delete Me - 다양한 웹사이트의 탈퇴하기 링크만 모아둔 페이지","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Just Delete Me - 다양한 웹사이트의 탈퇴하기 링크만 모아둔 페이지
+
+   탈퇴 난이도에 따라 Easy,Medium,Hard,Impossible 로 분류해놓음.
+
+   GitHub 에 공개되어 있으니, 포크해서 한국 버전 만들어도 좋을듯
+   https://github.com/justdeleteme/justdelete.me
+"
+"https://news.hada.io/topic?id=464","Apache 재단에 700만원을 후원하면 생기는 일","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Apache 재단에 700만원을 후원하면 생기는 일
+
+   아파치재단의 후원자 리스트에 이상한 웹사이트들이 등록되어있는 이유를 알아봅니다.
+
+   A 태그와 PageRank, rel=nofollow 에 대한 설명
+
+   재미져요.^^
+
+   이거 재미있고 유용하네요!
+"
+"https://news.hada.io/topic?id=514","[중복] 구글 코드 리뷰 가이드 요약 번역본","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        [중복] 구글 코드 리뷰 가이드 요약 번역본
+"
+"https://news.hada.io/topic?id=494","Firefox 가 9월말부터 미국사용자 대상으로 DNS-over-HTTPS 를 기본 활성화 예정","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Firefox 가 9월말부터 미국사용자 대상으로 DNS-over-HTTPS 를 기본 활성화 예정
+
+   청소년 보호 모드나 기업내 설정이 있을경우 자동으로 꺼지도록 할 것이라고.
+"
+"https://news.hada.io/topic?id=409","Postwoman, API request builder","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Postwoman, API request builder
+
+   이름에서 무엇을 하는지 알 수 있는 API request builder
+"
+"https://news.hada.io/topic?id=445","페이스북 안드로이드 앱이 시스템 라이브러리를 스캔해서 페북에 업로드한다는 제보","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              페이스북 안드로이드 앱이 시스템 라이브러리를 스캔해서 페북에 업로드한다는 제보
+
+   Global Library Collector 라는 모듈이 주기적으로 시스템 라이브러리를 스캔한뒤
+   메타데이터와 실제 라이브러리 파일까지도 압축해서 페이스북의 서버로 전송하고 있다고
+
+   페이스북 안드로이드 앱이 데이터와 배터리를 잡아먹는 이유중 하나가 이게 아닐까 하는 생각도 드네요.
+
+   남의 라이브러리를 다른 앱이 스캔해서 가지고 간다는 것도 매우 이상하구요.
+
+   Android Framework이 앱의 Background 작업을 제한하는 방향으로 바뀐지 한참 되어서 딱히 배터리를 잡아먹는 이유는 아닐 것 같다는 생각이 드는데요?
+
+   아 그러면 그냥 사용중에 네트웍트래픽을 많이 잡아먹는거만 문제것네요.
+"
+"https://news.hada.io/topic?id=470","특별한 세이브 시스템을 가진 비디오 게임들 [2016]","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     특별한 세이브 시스템을 가진 비디오 게임들 [2016]
+
+   * 드래곤 나이트 4 - 당신의 모험을 기록하고 싶은데요.
+   * Ori and Blind Forest - 세상에 대가 없이 얻을 수 있는 힘은 없다.
+   * 황금의 태양 시리즈 - 잃어버린 시대를 되찾기 위한 부활의 주문.
+   * 젤다의 전설 - 무쥬라의 가면 / 풍래의 시렌 시리즈 - 우리는 무엇을 남기고, 무엇을 잃을것인가?
+   * 원샷 - 유일하게 돌이킬 수 없는 한가지에 대하여
+"
+"https://news.hada.io/topic?id=450","타오바오 NAS는 왜 저렴하게 판매되는가?","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        타오바오 NAS는 왜 저렴하게 판매되는가?
+
+   사기성 코인의 채굴기로 비싸게 팔렸던 모델이 푼돈이라도 건져보고자 헐값에 나온것
+"
+"https://news.hada.io/topic?id=474","실리콘밸리 컨텐츠 기반 협업툴 : 큅(Quip) ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       실리콘밸리 컨텐츠 기반 협업툴 : 큅(Quip)
+
+   원페이지 에서 콘텐츠,할일/일정 관리, 프로젝트 관리, 대화를 한번에 처리하는 협업툴
+"
+"https://news.hada.io/topic?id=505","Android 앱의 크기를 줄이는 10가지 방법","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Android 앱의 크기를 줄이는 10가지 방법
+
+   1. 사용하지 않는 리소스 삭제
+   2. 필요한 종속성만 추가
+   3. 여러 개의 APK를 화면 밀도에 맞춰 생성
+   4. 여러 ABI(application binary interface)를 지원하는 여러 개의 APK 생성
+   5. 특정 ABI를 지원하는 하나의 APK를 생성
+   6. 사용하지 않는 선택적(alternative) 리소스 삭제
+   7. 리소스 축소(shrinkResources) 사용
+   8. 셰이프 드로어블(shape drawable) 사용
+   9. WebP 사용
+   10. VectorDrawable 사용
+"
+"https://news.hada.io/topic?id=430","유튜브 Kids, 4세이하/5-7세/8-12세로 나이 세분화하는 옵션 제공 시작","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              유튜브 Kids, 4세이하/5-7세/8-12세로 나이 세분화하는 옵션 제공 시작
+
+   기존 자녀보호 기능에는 ""승인된 콘텐츠 전용"" 보기만 있어서 추가한듯
+
+   상세 옵션 설명은 이미 한글로 번역되어 있음
+
+   https://support.google.com/youtubekids/answer/6172308?hl=ko
+"
+"https://news.hada.io/topic?id=415","로그 분석 서비스 대명사 "스플렁크"의 대안 10가지","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     로그 분석 서비스 대명사 ""스플렁크""의 대안 10가지
+
+   1. 엘라스틱서치(ELK 스택)
+   2. 로그신(Logsene)
+   3. 로그자이오(Logz.io)
+   4. 큐박스(Qbox)
+   5. 그레이로그(Graylog)
+   6. 인사이트옵스(InsightOps)
+   7. 로글리(Loggly)
+   8. 페이퍼트레일(Papertrail)
+   9. 솔라윈드(SolarWinds)
+   10. 스모 로직(Sumo Logic)
+
+   많은 조직에서 스플렁크의 대체제를 찾거나 만들고자 하지만 ( 물론 저도 시도했었.. )
+   끝내는 ELK로 만족하거나 다시 스플렁크로 가는게 현실이죠.
+
+   제대로 써본적은 없지만 스플렁크가 대단하긴 한듯
+"
+"https://news.hada.io/topic?id=469","R 로 법의학 문제들 해결하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            R 로 법의학 문제들 해결하기
+
+   목차부터 흥미로움
+
+   2-DNA 검증
+   3-총기 : 총알
+   4-총기 : 탄피
+   5-지문
+   6-신발 자국 증거
+   7-깨진 유리 조각 : 화학성분
+
+   CC by-nd-nd 로 무료 공개된 서적 [영어]
+"
+"https://news.hada.io/topic?id=444","NPM 이 터미널에서 광고 보여주는 패키지 금지하겠다고 발표","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   NPM 이 터미널에서 광고 보여주는 패키지 금지하겠다고 발표
+
+   얼마전 유명한 Standard 패키지가 설치시 광고 표시하겠다고 한 것에 대한 답변.
+
+   관련해서 Standard 개발자가 만들었던 Funding 패키지도 개발 중단
+   - Funding 은 Standard 가 터미널에서 광고를 보여주고 펀딩을 받을수 있도록 했던 패키지
+
+   [영문] 530 words, 약 5분 ( 100 WPM, Words Per Minute 가정 )
+
+   관련 링크 : 자바스크립트 스타일 가이드 Standard 모듈이 npm install 시에 광고 노출을 테스트중
+
+   https://news.hada.io/topic?id=407
+"
+"https://news.hada.io/topic?id=478","구글의 Code Review 가이드","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          구글의 Code Review 가이드
+
+   구글의 코드리뷰 프로세스와 정책들. 두 개의 큰 문서로 구성
+   1. 코드 리뷰 하는 법
+   2. CL (ChangeList) 작성 가이드
+
+   이 문서는 더 상위인 Google's Engineering Practices Documentation 의 일부.
+   현재는 Code Review Developer Guide 만 있으나 더 추가될 예정인듯
+
+   https://google.github.io/eng-practices/
+"
+"https://news.hada.io/topic?id=400","소프트웨어 아키텍처 가이드 by 마틴파울러","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        소프트웨어 아키텍처 가이드 by 마틴파울러
+
+   아키텍처에 대한 설명과 함께 마틴파울러 홈페이지의 아키텍처 글들을 어플리케이션/엔터프라이즈 로 나누어 분류
+"
+"https://news.hada.io/topic?id=488","내가 프로페셔널 소프트웨어 엔지니어로서 일주일간 구글링 한 것들","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  내가 프로페셔널 소프트웨어 엔지니어로서 일주일간 구글링 한 것들
+
+   개발자의 검색기록 보기. 남의 기록 보는 재미가 있군요.
+
+   자신의 검색기록을 보려면 Google 의 내 활동 페이지를 보면 됩니다.
+   구글검색이 상품코드 19 네요.
+   https://myactivity.google.com/myactivity?product=19
+
+   제 검색기록 몇개 보니..
+
+   google search history - 검색 기록 보려고 찾았네요.
+   console.table - console.log 글 보다가 추가로 확인차
+   아이폰 xs 뒷면 as - 아이폰 떨어뜨려서 뒷판을 깨먹었.. ㅠ
+   match.com 주가 - 페이스북 데이팅 발표후 주가가 얼마나 떨어졌나 보려고
+   Jeffrey Katzenberg - 내년에 오픈한다는 모바일 비디오 서비스 Quibi 조직도를 보다가, 의장이 궁금해 졌어요
+   Lego 75252 - ISD 가 새로 나왔다는 소식을 듣고
+   Youtube KPOP classic - 누가 유튜브 탑골공원 함 가보라 그래서..
+   Preta Porte Kickstarter - 킥스타터 들어갔는데 한글판이 나온다네요 ㅠ
+"
+"https://news.hada.io/topic?id=456","How to GraphQL - 풀스택 튜토리얼","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       How to GraphQL - 풀스택 튜토리얼
+
+   기초 ~ 고급사용법.
+   프론트엔드 - React+urql/Apollo
+   백엔드 : node,elixir,ruby,java,python,scale
+
+   분야별로 정리된 무료+오픈소스 강좌들
+"
+"https://news.hada.io/topic?id=480","페이스북 Dating, 미국 및 19개국에서 런칭","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      페이스북 Dating, 미국 및 19개국에서 런칭
+
+   연인을 찾아주는 데이팅 서비스.
+   - Opt-In을 통해 자신의 데이팅 프로필을 별도 생성가능
+   - 만드는 순간부터 페이스북에서 내 선호도,관심사 하는 것을 반영해 이미 옵트인한 상대 추천
+   - 기본적으로 이미 페이스북 친구인 사람은 매칭 안 하지만, Secret Crush 기능을 통해 9명까지 사람을 페이스북/인스타그램에서 선택 가능. 상대가 옵트인 상태라면 크러쉬 노티를 받게됨. 둘이 서로 크러쉬 리스트에 넣었다면 바로 매치.
+   - 페이스북과 인스타그램 연결
+"
+"https://news.hada.io/topic?id=425","Netflix의 DevOps 패턴을 Windows에 적용하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Netflix의 DevOps 패턴을 Windows에 적용하기
+
+   Toil 가득이던 윈도우서버 관리를 자동화
+   - Packer로 이미지 생성
+   - Chocolatey 윈도우 패키지 매니저 사용
+   - Titus 와 Spinnaker 를 이용한 Continuous Delivery
+
+   Toil 이란 무엇인가 링크 > https://news.hada.io/topic?id=388
+"
+"https://news.hada.io/topic?id=455","Dark Patterns - 사용자를 어렵게 만드는 나쁜 패턴들 모음","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Dark Patterns - 사용자를 어렵게 만드는 나쁜 패턴들 모음
+
+   웹사이트/앱에서 사용되는 속임수들로 사용자가 원하지 않은 동작을 하게 하거나, 하고자 하는 동작을 못하게 하는 패턴들 모음
+
+   대부분의 사람들이 웹페이지를 꼼꼼히 다 읽어보거나 하지 않기 때문에
+   처할수 있는 많은 위험들을 정리한 페이지
+
+   이것들 보고 따라 하라는 것은 절대 아닙니다
+
+   첫페이지 동영상에 ""아마존 탈퇴하는법"" 을 설명하는데
+   이렇게 찾기 어려우리라고는 상상도 못했네요.
+"
+"https://news.hada.io/topic?id=402","깃 소스 코드에서 밴당한 C 표준 라이브러리 함수 목록","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     깃 소스 코드에서 밴당한 C 표준 라이브러리 함수 목록
+
+   밴당한 함수를 쓰면 컴파일 타임 에러가 난다고 합니다.
+
+   strcpy,sprintf 둘 다 C 쓰던 시절에 많이 쓰던 것들이라 깜놀
+   근데 저 함수 써서 C 코딩하던게 15년쯤 전이네요..
+"
+"https://news.hada.io/topic?id=476","페이스북 사용자 4억명의 전화번호 정보가 담긴 유출 서버가 발견됨","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  페이스북 사용자 4억명의 전화번호 정보가 담긴 유출 서버가 발견됨
+
+   페이스북의 고유 숫자ID와 전화번호가 담겨있었고, 누구나 접근할수 있게 열려있었다고.
+
+   미국 1.3억명,영국 1800만,베트남 5천만 사용자의 정보가 담겨 있었음. 현재는 오프라인.
+
+   페이스북 대변인은 해당 데이터가 페이스북이 전화번호 접근을 차단하기 전에 긁어간 데이터 라고 설명
+"
+"https://news.hada.io/topic?id=386","MS Web Template Studio 2.0 공개 - VS Code 용 웹앱 생성 Wizard","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         MS Web Template Studio 2.0 공개 - VS Code 용 웹앱 생성 Wizard
+
+   프론트엔드 : React, Angular, Vue.js
+   백엔드 : Node, Flask
+
+   MS가 잘하는 ""마법사""를 이용해서 웹앱 기본틀을 빠르게 만드는 프로토타이핑 도구.
+
+   이번 버전부터는 MS App Service 에 호스팅 까지 가능
+   ( Web TS가 오픈소스로 공개되어 있으니 AWS 에 하는것도 가능은 할듯 )
+
+   MS Web TS의 특이점은 MS의 Garage Internship 프로그램에 의해 개발됨.
+   Garage Internship 은 6-8 명의 스타트업스타일 인턴들이 팀으로 개발하고,
+   그걸 다음 기수 인턴들이 물려받아서 확장하는 형태.
+"
+"https://news.hada.io/topic?id=496","Appwrite - 프론트엔드/모바일 개발자를 위한 오픈소스 백엔드 PaaS","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Appwrite - 프론트엔드/모바일 개발자를 위한 오픈소스 백엔드 PaaS
+
+   인증,유저,DB,File,팀 관리,Task(크론),WebHook 등을 지원. Docker로 손쉽게 설치가능.
+
+   저는 링크 클릭하면 서버가 없다고 나오네요. 앞에 www 가 없는게 공식 URL인 듯 합니다.
+   https://appwrite.io/
+
+   php 로 개발되어 있네요! 자체 웹프레임워크도 같이 만들고. 대단하네요…
+
+   모바일용 백엔드라고 하지만, 아직 iOS/Android 용 SDK와 도움말은 미완성 상태
+"

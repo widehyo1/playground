@@ -1,0 +1,1269 @@
+"https://news.hada.io/topic?id=596","CloudFlare, 개인용 모바일 VPN 인 WARP(무료) 와 WARP Plus발표","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            CloudFlare, 개인용 모바일 VPN 인 WARP(무료) 와 WARP Plus발표
+
+   1.1.1.1 DNS를 이용하며, 핸드폰의 모든 트래픽을 암호화해서 정보를 보호하는 목적
+   무료버전도 전송량 제한등은 없음.
+   월 $4.99인 WARP Plus 유료버전은 클라우드플레어의 가상 백본망인 Argo 를 이용하여 더 빠름 ( 약 30% )
+
+   넷플릭스 등의 지역제한등이 걸린 서비스를 사용가능하게 해주는 용도는 아님
+"
+"https://news.hada.io/topic?id=555","notion 학생 공짜","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              notion 학생 공짜
+"https://news.hada.io/topic?id=559","Pure Bash Bible - Bash 만으로 터미널에서 다양한 일 하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Pure Bash Bible - Bash 만으로 터미널에서 다양한 일 하기
+
+
+   예전에 evernote에서 갈아타볼라고 notion을 보다가 이리저리 귀찮아서 포기했는데 notion for student가 나왔습니다.
+   문자열 처리/배열/Loop/파일핸들링/변수처리/인자처리/조건문/수식 등 카테고리별 정리
+   여기저기 들리는 얘기로는 ac 도메인을 가진 이메일만 있으면 된다네요.
+"
+   또 여기저기 보이는 글로는 학생의 경우 로그인 방식이 좀 이해가 안됩니다.(일회용 비번을 이메일로 보낸다나 어쩐다나)
+
+   기존 계정(이메일)을 학생 계정으로 전환해봤습니다.
+   이메일 주소 변경해서 이메일로 전달된 인증 코드를 입력한 후에 plan 메뉴에서 바꿔줘야 학생으로 활성화되는군요. (정확하게는 personal plan의 하단에 표시됨)
+
+   로그인은 기본은 google 계정으로 로그인하도록 되어있습니다.
+   그게 아니라면 이메일 주소로 로그인해야 하는데 이 때 1회용 로그인 인증코드가 메일로 발송되고 그걸 써야 로그인됩니다. 매우 귀찮아요.
+   그러나 학생 이메일 계정이 google apps (혹은 gmail)를 사용하도록 되어있는 경우라면 google 계정으로의 로그인이 가능합니다. 당연하겠지만요.
+
+   결론은 방송통신대 화이팅 ㅎㅎ
+"
+"https://news.hada.io/topic?id=581","iOS 앱 개발 PM(프로젝트 매니저)가 알아야 할 것들","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    iOS 앱 개발 PM(프로젝트 매니저)가 알아야 할 것들
+
+   기술적인 백그라운드가 없는 PM에게 iOS 개발이 어떻게 이루어 지는지를 설명하는 가이드 [영문]
+
+   안드로이드도 이런게 있으면 좋을것 같네요
+"
+"https://news.hada.io/topic?id=554","효율적으로 spring boot app을 docker image로 만들기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                효율적으로 spring boot app을 docker image로 만들기
+
+   요약하면,
+   jar를 복사하는 방식을 사용하면 코드 변경시마다 layer를 새로 생성하게 됨
+   jar 파일 사이즈만큼의 layer를 새로 생성하므로 스토리지와 빌드 시간이 낭비됨
+   그래서 아예 변경사항이 거의 없을 library와 meta-inf와 classes로 분리
+   변경될 image layer의 크기는 줄일 수 있지만 이 작업은 번거롭고 귀찮음
+   => jib 이란 걸 쓰자
+
+   마이크로 서비스 단위로 쪼갤 경우 큰 의미가 있겠나 싶기도 합니다만
+   docker layer의 caching에 대해서 항상 생각해둘 필요는 있을 것 같습니다.
+"
+"https://news.hada.io/topic?id=519","nanoSQL - JS개발자를 위한 유니버설 DB 레이어","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    nanoSQL - JS개발자를 위한 유니버설 DB 레이어
+
+   브라우저DB(인덱스DB,WebSQL,로컬스토리지)부터
+   MySQL,SQLite,Mongo,Redis,Dynamo등 다양한 DB를 한가지 API로 접근 가능
+   Typescript 로 개발됨.
+"
+"https://news.hada.io/topic?id=575","Taking Serverless to the Next Level [발표슬라이드]","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Taking Serverless to the Next Level [발표슬라이드]
+
+   서버리스를 다음 레벨로 확장하기
+
+   Infrastructure as code -> Automate Deployments -> Project to product ->
+   Event-driven Microservices -> Focus on Your Team -> Don't reinvent the wheel
+
+   AWS Serverless 팀의 Principal Engineer, Danilo Poccia 의 발표
+   한글로도 출판된 ""AWS Lambda 인 액션"" 의 저자
+
+   발표 동영상 : https://www.youtube.com/watch?v=hpuCLKAyUv4
+"
+"https://news.hada.io/topic?id=597","일본 시뮬레이션 게임 역사","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             일본 시뮬레이션 게임 역사
+
+   시뮬레이션 게임에 대한 역사(?)를 정리한 글을 번역
+   마지막에 시뮬레이션을 무시한 결과도 흥미롭고,
+   덕업일치의 중요성도 알게된 글
+
+   오 재미나네요. 어콰이어,DnD,워게임 등의 보드게임 얘기가 많이 나와서 흥미롭게 읽었습니다.
+
+   「주사위 눈을 속이는 자는 그에 대한 벌을 받는다」
+"
+"https://news.hada.io/topic?id=541","“한국형 아마존고” 신세계아이앤씨, 셀프 매장 연다","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      “한국형 아마존고” 신세계아이앤씨, 셀프 매장 연다
+
+   국내 최초로 자동 결제 기술인 ‘저스트 워크 아웃(Just Walk Out)’ 기술을 선보인다. 아마존의 무인 매장인 ‘아마존고’와 같이 매장 내 설치된 카메라와 센서를 활용해 고객의 쇼핑 동선을 추적하고 상품 정보를 인식한다. 신세계아이앤씨는 컴퓨터 비전 기술 고도화를 통해 실제 아마존의 무인 매장인 아마존고 보다 적은 카메라 30여대 만으로 고객의 쇼핑 동작을 인식한다.
+"
+"https://news.hada.io/topic?id=557","Starship","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Starship
+
+   Oh-my-zsh 과 같이 셸 커스텀용 rust로 구성되었으며, bash, zsh, fish 에서 사용가능
+"
+"https://news.hada.io/topic?id=610","Tesla, 소프트웨어 버전 10.0 OTA 배포 시작","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Tesla, 소프트웨어 버전 10.0 OTA 배포 시작
+
+   넷플릭스/유튜브/스포티파이 지원,스마트 호출,노래방,식당&POI추천,컵헤드(게임)등 다양한 기능과 새로운 UI 제공
+
+   Smart Summon(스마트 호출) : 비오거나 물건 많을때 내쪽으로 차량 호출하기
+"
+"https://news.hada.io/topic?id=529","Textmate 2.0 릴리즈","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Textmate 2.0 릴리즈
+
+   2.0 알파버전 나오고 6년이 지났네요.
+   이젠 Sublime 을 지나서 VSCode 쓰는지라.. 사람들이 많이 돌아갈지는..
+"
+"https://news.hada.io/topic?id=624","테슬라 V10의 Smart Summon 기능이 충돌 사고를 내고 있다고 제보중","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              테슬라 V10의 Smart Summon 기능이 충돌 사고를 내고 있다고 제보중
+
+   지난주 배포된 신기능인 스마트호출이 제대로 완성되지 않고 배포된 것 같다는 불만들이 있다고.
+"
+"https://news.hada.io/topic?id=583","Keyhut POS : DOS 용 무료 Point-of-Sale 프로그램","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Keyhut POS : DOS 용 무료 Point-of-Sale 프로그램
+
+   실제로 잘 동작하는 DOS용 2.7M 짜리 POS 프로그램.
+   향수가 느껴지는 웹사이트.
+   다른 언어 버전 포팅을 위해 Hex Editor 프로그램을 별도로 제공
+   ( 현재 사이즈가 DOS 의 제한에 걸려서 더 이상 뭔가를 추가할수가 없다고.. )
+
+   태국에서 비슷한 걸 실제로 쓰더라구요.
+"
+"https://news.hada.io/topic?id=643","다크모드 웹 페이지 디자인","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             다크모드 웹 페이지 디자인
+
+   iOS,MacOS에서 다크모드 인식,끄고 켜는 방법,전환시 애니메이션 방법 등을 정리한 문서 [한글]
+"
+"https://news.hada.io/topic?id=518","ECMAScript 버전별 새 기능 과 예제 정리 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ECMAScript 버전별 새 기능 과 예제 정리
+
+   ES2015(ES6) ~ ES2019(ES10)
+   각 버전별 새로 추가된 피쳐들과 그 피쳐 설명용 예제를 정리한 문서
+   새 버전 나올때 마다 추가됨
+"
+"https://news.hada.io/topic?id=564","Facebook NPE Team 이 만든 새 소셜 앱 Bump","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Facebook NPE Team 이 만든 새 소셜 앱 Bump
+
+   캐나다 앱스토어에만 출시. 같은 학교의 학생들을 매치메이킹 해주는 앱
+
+   페이스북은 올해 7월 NPE(New Product Experimentation) 팀을 만들었다고 발표
+
+   https://tech.fb.com/npe-team-from-facebook/
+
+   NPE 팀은 Bump 외에도 Aux 라는 음악 공유앱을 캐나다에 8월 출시했지만 현재는 삭제되었음
+"
+"https://news.hada.io/topic?id=640","유명한 Device들의 이미지 & 스케치 파일 모음","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      유명한 Device들의 이미지 & 스케치 파일 모음
+
+   페이스북 디자인팀 제공 - 애플/구글/Dell/MS/삼성/소니 등의 스마트폰,노트북,워치 포함. 총 255MB
+"
+"https://news.hada.io/topic?id=598","iOS 13에서 사용가능한 160개의 Shortcuts (단축어) 모음","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                iOS 13에서 사용가능한 160개의 Shortcuts (단축어) 모음
+
+   WorkFlow(애플이 인수하여 Shortcuts가 됨) 의 전 직원이 만든 유용한 단축어들
+
+   Airtable 로 리스트를 구성한게 독특하네요.
+
+   Calendar / Routines / Text Editing / On the Go / Lifestlye / Web / Files /
+   Personal / Entertainment / Photo & Video / Instagram / GIFs / Video
+   등으로 그룹 지어놔서 보기 편함
+"
+"https://news.hada.io/topic?id=521","Emoji-Button - 바닐라JS로 만든 이모지 선택 버튼","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Emoji-Button - 바닐라JS로 만든 이모지 선택 버튼
+
+   검색 가능. 최근에 사용한 이모지 리스트업 기능.
+   코드 한줄로 일반 버튼을 이모지 선택 버튼으로 변경.
+"
+"https://news.hada.io/topic?id=618","checkm8, 아이폰4S~아이폰X 까지 가능한 Bootrom exploit","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               checkm8, 아이폰4S~아이폰X 까지 가능한 Bootrom exploit
+
+   애플 기기 초기에 실행되는 부트롬의 결함을 공격하는 방식.
+   메모리위에 올라간걸 패치하는 방식이라 재부팅하면 원래상태로 돌아감
+   새로운 탈옥도구를 만드는 기초가 될 수 있을거라는 평가
+"
+"https://news.hada.io/topic?id=600","디자이너들을 위한 크롬 확장 10가지","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          디자이너들을 위한 크롬 확장 10가지
+
+   Window Resizer/Loom/Toybox/Muzli/SVG Grabber/Page Ruler/Dark Mode Dev Tools/ColorZilla/Fontface Ninja/Custom Cursor
+"
+"https://news.hada.io/topic?id=562","Memcached 1.5.18 릴리즈로 재시작시에도 캐쉬 유지","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Memcached 1.5.18 릴리즈로 재시작시에도 캐쉬 유지
+
+   -e 옵션으로 파일 지정시, SIGUSR1으로 종료하면 현재 캐쉬를 파일에 저장하고 종료후 재시작시 읽어서 캐쉬를 복원
+
+   캐쉬파일을 지정하는 -e 옵션에는 빠른 램디스크 등을 지정하는게 필요하고
+   당연하겠지만 -m 옵션으로 지정하는 메모리 용량 이상의 공간이 필요
+"
+"https://news.hada.io/topic?id=550","GQL, Graph Query Language 국제 표준 발표","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   GQL, Graph Query Language 국제 표준 발표
+
+   그래프DB 를 위한 표준 쿼리 언어. Cypher 와 오라클의 PGQL/SQL 에서 많은 것을 가져왔음.
+
+   GQL 프로젝트는 SQL 이후 최초의 ISO / IEC 국제 표준 데이터베이스 언어 프로젝트.
+   한국,중국을 포함한 10개국이 찬성 ( 5개국은 기권, 일본만 반대.. )
+   GQL 은 SQL 의 경쟁자가 아니며 서로를 보완하는 것.
+   SQL표준을 유지 보수하는 워킹그룹에서 GQL 도 개발 및 유지보수 할 것.
+"
+"https://news.hada.io/topic?id=556","All contributors","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            All contributors
+
+   Github 레포에 표형식으로 컨트리뷰터들의 프로필과 어떤 일을 했는지를 README 파일에 추가해주는 서비스.
+
+   우옹, 이슈나 PR에 코멘트를 달면 README 프로필 업데이트를 PR로 만들어서 등록해주네요.
+   news.hada.io 내부 깃헙에도 바로 적용했습니다
+"
+"https://news.hada.io/topic?id=607","iPadOS 로 할 수 있는 것들 [동영상,60초]","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      iPadOS 로 할 수 있는 것들 [동영상,60초]
+
+   앱 스위치, Swipe 타이핑, 웹페이지 풀 캡쳐, USB 드라이브 파일 관리, 비디오 편집
+
+   이제 xcode만 나오면...
+
+   ssh 잘되는 VS Code for iOS 가 나오면..
+"
+"https://news.hada.io/topic?id=516","구글, 오리지널 기사의 랭킹 점수를 더 높게 올리도록 변경","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    구글, 오리지널 기사의 랭킹 점수를 더 높게 올리도록 변경
+
+   노력과 시간이 들어간 최초의 글이 더 오래 검색 결과 상단에 머무르도록 수정.
+
+   구글은 순위 알고리듬을 개선하기 위해 1만명 이상의 Search Rater 들을 전세계에 두고 있음.
+   Search Rater 들은 검색 순위를 직접 바꾸지는 않지만, 그들의 평가 결과에 따라 검색 순위 알고리듬이 영향을 받게됨. 이들에게 주는 가이드라인 문서도 수정했음
+
+   5.1 ""이 기사가 아니였다면 알려지지 않았을 정보를 제공하는 글을 Original 이라고 하며, 이런 조사 리포트는 고수준의 기술,시간과 노력이 필요합니다."" 이런 Original 글 에는 최고의 점수인 ""Very High Quality"" 를 주세요.
+
+   2.6.1 이런 오리지널 리포트인지 판별하는데에는 퍼블리셔의 전반적인 평판을 고려해서 해주세요. 예를 들어 퓰리처상을 탄 잡지라면 좋은 평판을 가지고 있다는 증거입니다.
+
+   Search Quality Evaluator Guideline
+   - 이 문서는 Rater 들에게 제공되는 가이드라인으로
+   구글이 실제로 검색결과에서 어떤 문서를 더 중요하다고 판단하는 지를 알 수 있는 자료
+
+   https://static.googleusercontent.com/media/guidelines.raterhub.com/…
+"
+"https://news.hada.io/topic?id=639","Minecraft Earth - 모바일과 AR로 확장된 마인크래프트","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Minecraft Earth - 모바일과 AR로 확장된 마인크래프트
+
+   모바일을 통한 증강현실로 실물크기의 창조물을 만들어 봅시다.
+
+   어드벤처라고 불리우는 미니게임들을 지원하며,
+   테이블탑 사이즈의 작은 모델을 만들거나, 실제 사이즈를 만드는 두가지 모드를 지원한다고 합니다.
+
+   포켓몬고, 해리포터에 이은 새로운 AR 경험이 되겠네요.
+
+   Early Access 는 10월에 시작하며, 연말까지 전세계 오픈 예정
+"
+"https://news.hada.io/topic?id=533","마이크로소프트 C++ STL 구현 오픈 소스로 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      마이크로소프트 C++ STL 구현 오픈 소스로 공개
+
+   C++17 라이브러리 기능이 다 구현된 것 같습니다. 라이선스는 아파치 2.0(with LLVM 예외)입니다.
+"
+"https://news.hada.io/topic?id=576","Serverless 를 1년 반동안 운영하며 배운 것들","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Serverless 를 1년 반동안 운영하며 배운 것들
+
+   서버리스로 구현 가능한 것들부터, 잘 운영하기 위해 필요한 도구, 주의해야할 점 등의 경험 공유 [영문]
+"
+"https://news.hada.io/topic?id=525","fselect - SQL Query 로 하드에서 파일 찾기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    fselect - SQL Query 로 하드에서 파일 찾기
+
+   fselect path, size from /usr where size > 10M order by size desc limit 10
+
+   파일 시스템에 있는 정보 컬럼부터 exif 및 mp3 tag 정보까지 다양하게 사용가능
+
+   SUM,LENGTH,COUNT,AVG,YEAR,MIN,MAX 등 함수도 지원
+
+   name, path, abspath, size, fsize, uid, gid, accessed, created, modified, mode, user, group, sha1, sha256, sha512 등의 컬럼
+
+   지원하는 필드 리스트
+
+   이미지의 width,height
+   mp3 의 title,artist,album 등 태그
+   exif 의 lat,lon,model 등
+
+   find 보다 훨씬 유용하게 사용가능
+
+   https://github.com/jhspetersson/fselect/blob/0.6.5/src/field.rs#L89
+
+   ""name"" => Ok(Field::Name),
+   ""path"" => Ok(Field::Path),
+   ""abspath"" => Ok(Field::AbsPath),
+   ""size"" => Ok(Field::Size),
+   ""fsize"" | ""hsize"" => Ok(Field::FormattedSize),
+   ""uid"" => Ok(Field::Uid),
+   ""gid"" => Ok(Field::Gid),
+   ""user"" => Ok(Field::User),
+   ""group"" => Ok(Field::Group),
+   ""created"" => Ok(Field::Created),
+   ""accessed"" => Ok(Field::Accessed),
+   ""modified"" => Ok(Field::Modified),
+   ""is_dir"" => Ok(Field::IsDir),
+   ""is_file"" => Ok(Field::IsFile),
+   ""is_symlink"" => Ok(Field::IsSymlink),
+   ""is_pipe"" | ""is_fifo"" => Ok(Field::IsPipe),
+   ""is_char"" | ""is_character"" => Ok(Field::IsCharacterDevice),
+   ""is_block"" => Ok(Field::IsBlockDevice),
+   ""is_socket"" => Ok(Field::IsSocket),
+   ""mode"" => Ok(Field::Mode),
+   ""user_read"" => Ok(Field::UserRead),
+   ""user_write"" => Ok(Field::UserWrite),
+   ""user_exec"" => Ok(Field::UserExec),
+   ""user_all"" | ""user_rwx"" => Ok(Field::UserAll),
+   ""group_read"" => Ok(Field::GroupRead),
+   ""group_write"" => Ok(Field::GroupWrite),
+   ""group_exec"" => Ok(Field::GroupExec),
+   ""group_all"" | ""group_rwx"" => Ok(Field::GroupAll),
+   ""other_read"" => Ok(Field::OtherRead),
+   ""other_write"" => Ok(Field::OtherWrite),
+   ""other_exec"" => Ok(Field::OtherExec),
+   ""other_all"" | ""other_rwx"" => Ok(Field::OtherAll),
+   ""suid"" => Ok(Field::Suid),
+   ""sgid"" => Ok(Field::Sgid),
+   ""is_hidden"" => Ok(Field::IsHidden),
+   ""has_xattrs"" => Ok(Field::HasXattrs),
+   ""is_shebang"" => Ok(Field::IsShebang),
+   ""width"" => Ok(Field::Width),
+   ""height"" => Ok(Field::Height),
+   ""mime"" => Ok(Field::Mime),
+   ""line_count"" => Ok(Field::LineCount),
+   ""duration"" => Ok(Field::Duration),
+   ""mp3_bitrate"" | ""bitrate"" => Ok(Field::Bitrate),
+   ""mp3_freq"" | ""freq"" => Ok(Field::Freq),
+   ""mp3_title"" | ""title"" => Ok(Field::Title),
+   ""mp3_artist"" | ""artist"" => Ok(Field::Artist),
+   ""mp3_album"" | ""album"" => Ok(Field::Album),
+   ""mp3_year"" => Ok(Field::Year),
+   ""mp3_genre"" | ""genre"" => Ok(Field::Genre),
+   ""exif_altitude"" | ""exif_alt"" => Ok(Field::ExifGpsAltitude),
+   ""exif_datetime"" => Ok(Field::ExifDateTime),
+   ""exif_latitude"" | ""exif_lat"" => Ok(Field::ExifGpsLatitude),
+   ""exif_longitude"" | ""exif_lon"" | ""exif_lng"" => Ok(Field::ExifGpsLongitude),
+   ""exif_make"" => Ok(Field::ExifMake),
+   ""exif_model"" => Ok(Field::ExifModel),
+   ""exif_software"" => Ok(Field::ExifSoftware),
+   ""exif_version"" => Ok(Field::ExifVersion),
+   ""is_binary"" => Ok(Field::IsBinary),
+   ""is_text"" => Ok(Field::IsText),
+   ""is_archive"" => Ok(Field::IsArchive),
+   ""is_audio"" => Ok(Field::IsAudio),
+   ""is_book"" => Ok(Field::IsBook),
+   ""is_doc"" => Ok(Field::IsDoc),
+   ""is_image"" => Ok(Field::IsImage),
+   ""is_source"" => Ok(Field::IsSource),
+   ""is_video"" => Ok(Field::IsVideo),
+   ""sha1"" => Ok(Field::Sha1),
+   ""sha2_256"" | ""sha256"" => Ok(Field::Sha256),
+   ""sha2_512"" | ""sha512"" => Ok(Field::Sha512),
+   ""sha3_512"" | ""sha3"" => Ok(Field::Sha3),
+"
+"https://news.hada.io/topic?id=609","iOS 13에서 스위프트 사용률","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           iOS 13에서 스위프트 사용률
+
+   약 두 배 늘어났다고 합니다.
+
+   최근에 Jetbrains 가 실시한 설문조사에서도 절반이상의 개발자가 Swift Only 로 개발하며,
+   Obj-C 와 혼용한다는 사용자를 합치면 84%가 넘는다고
+
+   https://www.jetbrains.com/lp/devecosystem-2019/swift-objc/
+"
+"https://news.hada.io/topic?id=588","Adblock Radio - 인터넷 라디오와 팟캐스트의 광고 차단기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Adblock Radio - 인터넷 라디오와 팟캐스트의 광고 차단기
+
+   머신러닝을 이용해서 광고의 핑거프린트와 매칭하여 찾는 방식.
+   node.js + sqlite 로 구현되어 있음
+
+   기술적 성취와는 별개로..
+   팟캐스트 같은 경우는 아직 유료화 형태가 잘 이루어져 있지 않아서
+   괜찮은 유료화 방안이 나오길 기대합니다.
+
+   Adblock Radio 를 이용한 웹 라디오 플레이어 Buffer
+   https://github.com/adblockradio/buffer
+"
+"https://news.hada.io/topic?id=592","Nginx 2줄 설정으로 접속자의 IP주소 보여주기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Nginx 2줄 설정으로 접속자의 IP주소 보여주기
+
+   Show My IP 를 내 서버에 구현하기
+
+   location /ip {
+   default_type text/plain;
+   return 200 $remote_addr;
+   }
+
+   https://www.myip.com/ ??
+
+   바퀴는 깔끔하게 다시 만들어야 제맛이죠..
+
+   https://hada.io/ip
+
+   해봤는데 잘되네요.
+"
+"https://news.hada.io/topic?id=542","게임 덜하고 동영상 엔터테인먼트 즐기는 ‘Z세대’","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      게임 덜하고 동영상 엔터테인먼트 즐기는 ‘Z세대’
+
+   ‘디지털 네이티브’라고 불리는 Z세대(1990년대 중반-2000년대 초반)는 전체의 96%가 스마트폰을 보유하고 있고 커뮤니케이션, 쇼핑, 은행 업무 등 일상생활 전반에서 모바일을 활용한다.
+
+   Z세대, ‘트위치·아프리카 TV·토스’ 선호…쇼핑 앱 이전 세대와 확연히 다른 성향
+"
+"https://news.hada.io/topic?id=545","jsonbox.io - HTTP 기반 무료 JSON 저장소","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    jsonbox.io - HTTP 기반 무료 JSON 저장소
+
+   HTTP Post 로 JSON 데이터를 읽고 쓰는 서버. 오픈소스로 공개 되어 있고, 서버는 무료로 사용가능 ( REQ당 100KB 이하 )
+
+   이 글이 올라온 해커뉴스에 달린 댓글 중에
+   https://news.ycombinator.com/item?id=21002916
+
+   “이게 기존의 http기반 저장 솔루션보다 뭐가 좋은데?”
+
+   라고 까칠하게 댓글을 달자, 한 유저가 정말 맘에 쏙드는 댓글을 달았다.
+
+   “아니 안좋아.
+   근데 괜찮아.
+
+   누구든지 어떤것이라도 최고 수준의 제품이 아닌 것을 만들고 공유할 수 있어. 이건 누군가가 다른 사람들이 쓸 수 있도록 공개한, 유용하고, 잘 작성된 오픈소스 앱이어서 논의되고 축하받을 가치가 있어 ( HN의 업보트는 그들을 축하 하는 것과 같지 )
+
+   솔직히, 이게 만약 아주 품질이 좋지 않은 코드일지라도 공유되기에 충분히 좋아. HN 은 스타트업을 위한 모든 것이 올라오는 곳이고, 뭔가를 만들면서 더 빨리 공개하고 더 자주 공개하는 방식( release-early-release-often )을 취하고 있어. 이런게 정확히 여기 첫페이지에 올라올 만한 가치가 있는 프로젝트이고, 내가 이 곳에서 보고 싶은 것들이기도 해.
+
+   개발자에게 축하를""
+
+   이런 댓글이 오고 가는 해커뉴스가 너무 좋고, 우리나라에도 이런곳이 있으면 좋겠어서 GeekNews 를 시작했습니다.
+
+   여기에도 다양한 국내 개발자들의 오픈소스가 올라오기를!
+"
+"https://news.hada.io/topic?id=526","Ansible 로 iOS 호환 VPN 서버 띄우기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Ansible 로 iOS 호환 VPN 서버 띄우기
+
+   OpenBSD + IKEv2 로 별도의 iOS 앱 필요없이 VPN 사용
+
+   예전에 openvpn 구성하는게 구찮아서 ansible playbook 만들어놓은게 있는데
+   언젠가 돌려보니 뭐가 바뀌었는지 모르겠지만 안되더군요. 으하하하.
+   시간되면 다듬어서 공유해야겠습니다.
+   뭐든 계속 쓸거면 신경써서 관리해야 하는 것 같아요.
+"
+"https://news.hada.io/topic?id=567","캘리포니아, GDPR과 비슷한 CCPA 소비자정보보호 법안 2020년 1월1일 부터 발효","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           캘리포니아, GDPR과 비슷한 CCPA 소비자정보보호 법안 2020년 1월1일 부터 발효
+
+   실리콘밸리 모든 회사들이 충격. 이걸 막기 위해 수많은 로비가 진행되었지만 거의 수정없이 통과됨.
+
+   CCPA ( California's Consumer Privacy Act ) 법안 은 EU 의 GDPR과 비슷하게
+   소비자가 각 회사가 보유한 개인에 대한 정보가 뭔지를 알 권리, 삭제할 권리, 정보 판매를 거부할 권리를 가지게 됩니다.
+
+   GDPR 로 큰 벌금을 받은 사례로 볼때, 6개월후엔 실리콘 밸리 회사들도 이런 상황에 직면하게 될듯.
+
+   실제 법안은 여기
+   https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml/…
+
+   - 각 회사는 자신이 수집한 정보,비즈니스 목적, 그리고 데이터를 공유하는 써드파티를 공개해야 함
+   - 각 회사는 소비자 요청에 의해 해당 데이타를 지울수 있도록 해야함
+   - 소비자는 판매되는 자신의 정보 데이터를 Opt-Out 할 수 있으며, 각 회사는 이런 소비자에 대해 서비스 가격이나 서비스 수준을 변경하는 등의 보복 행위를 할수 없음
+   - 각 회사는 데이터 수집을 허용함에 따른 인센티브를 줄 수는 있음
+   - 캘리포니아 당국은 해당 법률 위반시 각 회사에 벌금을 부과할 수 있음
+"
+"https://news.hada.io/topic?id=574","Strange Loop 2019 컨퍼런스 발표 동영상 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Strange Loop 2019 컨퍼런스 발표 동영상 공개
+
+   전체 80개 세션의 유튜브 플레이 리스트
+
+   Strange Loop 는 code-heavy 한 컨퍼런스로, Agile 이나 Testing 등 프로세스 관련은 다루지 않음.
+   마케팅 세션들은 일절 없고, 키노트는 스폰서들에게 팔지 않음.
+   Academic 과 Industry 가 잘 조화된 컨퍼런스
+   St. Louis 출신들이 만들어서 항상 거기서 진행
+
+   https://www.thestrangeloop.com
+   2020년은 10월 1~3일 예정
+"
+"https://news.hada.io/topic?id=553","와이파이 20주년! 와이파이 6가 온다.","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         와이파이 20주년! 와이파이 6가 온다.
+
+   와이파이 6란 최신 규격 802.11ax의 새 이름이다. 와이파이 6가 되면 뭐가 좋아질까?
+"
+"https://news.hada.io/topic?id=536","더 나은 웹 검색 결과 UX 제안","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           더 나은 웹 검색 결과 UX 제안
+
+   검색결과에 페이지의 크기와 광고 게재 여부, 트래커가 있는지등을 표시하면 어떨까 하는 제안
+   구글은 당연히 안할테고.. DuckDuckGo 는 충분히 할만하겠네요.
+"
+"https://news.hada.io/topic?id=560","iPhone 11 Pro Camera Review","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      iPhone 11 Pro Camera Review
+
+   프로 사진작가의 리뷰(영어) 사진만 봐도,초광각 렌즈 와 나이트 모드 훌륭하군요.
+
+   사진관련한 일을 한다면 무조건 11 Pro 를 사라고 추천하네요.
+"
+"https://news.hada.io/topic?id=530","리눅스 커널 부팅시간을 300ms 로 줄이기 [slide pdf,영문]","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                리눅스 커널 부팅시간을 300ms 로 줄이기 [slide pdf,영문]
+
+   자동차 후방카메라가 전원켜고 2초안에 동작해야 해서 개선을 시도.
+   처음에 3초였던걸 300ms까지 줄임.
+   인텔 리눅스 SE 팀이 발표한 자료.
+"
+"https://news.hada.io/topic?id=527","프랑스와 독일이 페이스북의 Libra 블록하기로 동의","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     프랑스와 독일이 페이스북의 Libra 블록하기로 동의
+
+   공동 성명에서 두 나라는 ""한 회사가 국가의 주권에 부여된 화폐 권력을 주장할 수 없다."" 라고 말했다.
+
+   “no private entity can claim monetary power, which is inherent to the sovereignty of nations”
+"
+"https://news.hada.io/topic?id=590","웹사이트 로딩 속도 비교 툴 - 일반 크롬 vs uBlock Origin","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                웹사이트 로딩 속도 비교 툴 - 일반 크롬 vs uBlock Origin
+
+   두가지 환경에서 Req 숫자, 전체 페이지 크기,로딩 속도 등을 비교해서 보여줍니다.
+"
+"https://news.hada.io/topic?id=628","리눅스 커널 5.4에 exfat 지원 추가됨","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        리눅스 커널 5.4에 exfat 지원 추가됨
+
+   예전에 유출된 삼성의 코드가 그대로 들어감
+   코드가 구려서 일단 staging driver 형태로 merge됨
+"
+"https://news.hada.io/topic?id=630","인스타그램이 스냅챗 관련 내용을 포스팅하는 인플루언서에게 인증마크를 제거하겠다고 위협","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            인스타그램이 스냅챗 관련 내용을 포스팅하는 인플루언서에게 인증마크를 제거하겠다고 위협
+
+   FTC 조사에 의하면, 내부에서 ""프로젝트 볼드모트"" 라고 부르며 진행했다고.
+
+   또한 인스타그램에서 #snapchat 해쉬태그는 숨겨져 있으며, 스냅챗 프로필 링크를 인스타그램 Bio에 넣는 것도 불가능
+"
+"https://news.hada.io/topic?id=637","픽셀4에 차량사고 감지시 자동 신고기능이 들어갈 것","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      픽셀4에 차량사고 감지시 자동 신고기능이 들어갈 것
+
+   사고 발생시 사고유무를 확인하고, 응답이 없으면 911이나 지정한 연락처로 연락 및 위치전송
+   발성이 힘든 상황일 경우를 위해, 터치 조작을 이용한 사고상황설명을 지원하는 기능도 포함
+   미국내 픽셀4에서만 사용가능할 것 으로 예측됨
+
+   애플워치의 넘어짐 감지랑 비슷한 방식인가 보네요.
+   꽤 좋아 보이는데.. 애플도 다음 버전에 베껴가겠죠?
+"
+"https://news.hada.io/topic?id=579","WeWork 이사회 멤버들이 Adam Neumann 에게 CEO에서 내려와 의장이 될것을 요구할 예정","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        WeWork 이사회 멤버들이 Adam Neumann 에게 CEO에서 내려와 의장이 될것을 요구할 예정
+
+   IPO 상장 연기 및 Adam 의 괴상한 행동과 약물사용건이 이슈.
+
+   The Information 에 의하면, 월요일 아침에 바로 미팅 예정이라고
+   https://theinformation.com/articles/…
+"
+"https://news.hada.io/topic?id=641","코드로 만드는 Design System","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         코드로 만드는 Design System
+
+   스타트업조직에서 실사용자인 디자이너들이 프론트 개발자 도움 받아 직접 디자인 시스템을 설계, 유지, 보수하고 컴포넌트의 스켈레톤 코드를 작성함으로써 디자인 효율화에 성공.
+"
+"https://news.hada.io/topic?id=531","만화로 배우는 머신러닝 [영문,파트1]","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         만화로 배우는 머신러닝 [영문,파트1]
+
+   구글 AI팀이 만든 만화. AI와 머신러닝에 대한 기초 설명부터 시작합니다.
+   파트 2는 Deep Learning 에 대해 다룰 예정
+"
+"https://news.hada.io/topic?id=566","개발자가 알아야할 크롬 77 버전의 변경점","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        개발자가 알아야할 크롬 77 버전의 변경점
+
+   Native Lazy 로딩 지원
+   formdata 이벤트와 Form-Associated 속성을 제공해서 커스텀 폼을 구성하기가 더 쉬워짐.
+   Largest Contentful Paint (LCP) API 제공으로 가장 큰 엘리먼트의 렌더링 시간을 알수 있음.
+   Contact Picker API ( 연락처 불러오기 )
+
+   그외 개발자 도구에서는
+   - CSS만 복사하는 Copy Style 메뉴가 추가
+   - Layout Shift Regions 체크박스가 추가되어서 레이아웃 변경되는 부분만 하일라이트 가능
+   - Lighthouse 5.1
+   - 브레이크포인트 에디터 열기용 단축키 추가 : Control+Alt+B or Command+Option+B
+"
+"https://news.hada.io/topic?id=611","Facebook Horizon - 오큘러스가 만든 소셜 VR 서비스","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Facebook Horizon - 오큘러스가 만든 소셜 VR 서비스
+
+   자신의 아바타를 만들고 Wing Striker 멀티플레이어게임 즐기고, World Builder 로 창작하기
+
+   페이스북 & VR 버전의 세컨드 라이프
+
+   2020년 공개 예정으로 현재는 베타테스터로 등록 가능
+"
+"https://news.hada.io/topic?id=572","구글 어시스턴트가 한국을 포함한 9개 국가에서 새로운 음성을 선보입니다","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                구글 어시스턴트가 한국을 포함한 9개 국가에서 새로운 음성을 선보입니다
+
+   모든 음성은 딥마인드(DeepMind)의 첨단 웨이브넷(WaveNet) 기술을 기반으로 하여, 높낮이와 띄어 읽기를 자연스럽게 구현합니다.
+
+   전에 잘 안써봐서 그런지 어떻게 바뀐 건지 잘 모르겠네요..ㅎ
+"
+"https://news.hada.io/topic?id=625","DevOps Topologies","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           DevOps Topologies
+
+   우리 조직에 맞는 DevOps 팀 구조는 ?
+
+   Dev+Ops,
+   Shared Ops,
+   Ops as IaaS,
+   DevOps-as-a-Service,
+   Temp DevOps Team,
+   DevOps Advocates,
+   SRE Team,
+   Container-Driven,
+   DB Capability
+
+   그리고 DevOps 안티 패턴들
+
+   A: Dev vs Ops
+   B: DevOps Silo
+   C: No Ops Needed
+   D: Tools Team
+   E: SysAdmin
+   F: Embedded Ops
+   G: Dev vs DBA
+"
+"https://news.hada.io/topic?id=532","개발자들은 오픈소스 프로젝트를 어떻게 홍보 하는가 [논문,영어]","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  개발자들은 오픈소스 프로젝트를 어떻게 홍보 하는가 [논문,영어]
+
+   100개의 유명 GitHub프로젝트를 조사 한 결과
+   트위터>유저미팅>블로그>이벤트>RSS>뉴스레터>페이스북 순
+   3.4절에 Hacker News 의 홍보 효과를 논한 부분이 흥미로움
+   - HN첫페이지에 등록되면 1만~10만 PV가 하루나 이틀 사이에 쏟아짐
+   - HN 포스트로 홍보가 잘 된 오픈소스 프로젝트들은 GitHub Star 를 많이 받음
+
+   논문의 결론 3가지
+   1. 오픈소스 프로젝트를 관리하는데 홍보는 중요함. 예를 들어, 적어도 한개 또는 두개 이상의 홍보채널을 사용해야함
+   2. 트위터 계정은 꼭 필요하고, 유저 미팅과 블로그 가 그 다음
+   3. HackerNews 같은 소셜뉴스 어그리게이터 홍보도 고려해야함. ( HN 에 올린 포스트중 10% 정도만 성공하고 있음을 참고 )
+
+   여기 GeekNews 가 국내 오픈소스 개발자들이 만드신 프로젝트 홍보의 장이 되길 바라고 있습니다 ;)
+"
+"https://news.hada.io/topic?id=563","아마존, Rivian 에 10만대의 배달용 전기트럭 주문","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    아마존, Rivian 에 10만대의 배달용 전기트럭 주문
+
+   Rivian 은 작년 11월에 테슬라보다도 먼저 전기 픽업 트럭을 공개한 회사로
+   올해 2월에 아마존이 리드해서 약8천억원을 투자 받고,
+   4월에는 Ford 로 부터도 약6천억원 투자를 받았음.
+
+   아마존은 2040년까지 Carbon-Neutral(탄소중립, 탄소 배출량 0)을 실현 예정
+
+   Rivian 은 약간 베일에 쌓인 회사인데, 최대 주주는 사우디아라비아의 대기업인 Abdul Latif Jameel 이라고 함.
+   ( 이 회사는 Jameel 패밀리의 가족회사인데 Forbes에 의하면 아랍에서 4번째로 부자인 가족.. )
+
+   https://techcrunch.com/2018/12/…
+   https://en.wikipedia.org/wiki/Abdul_Latif_Jameel
+"
+"https://news.hada.io/topic?id=605","/e/ - 구글을 걷어내고 개인정보 보호에 주력한 안드로이드 기반의 OS","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                /e/ - 구글을 걷어내고 개인정보 보호에 주력한 안드로이드 기반의 OS
+
+   LineageOS를 포크. 모든 구글서비스는 제거하고 MicroG 프로젝트로 대체.
+   검색은 구글 대신 Qwant 를 사용. 구글드라이브는 NextCloud 기반의 자체 클라우드로 지원
+
+   현재 약 85개의 핸드폰에 설치가 가능하고, EU에서는 삼성 S7/S9 리퍼폰을 /e/ 가 설치된채로 구매가능.
+
+   Mandrake Linux 배포본의 개발자였던 Gael Duval 이 만듬
+
+   구글 서비스 대체 프로젝트 MicroG - https://microg.org/
+   개인정보를 보호하는 검색엔진 Qwant - https://www.qwant.com/
+   셀프호스팅 가능한 클라우드 솔루션 NextCloud - https://nextcloud.com/
+"
+"https://news.hada.io/topic?id=613","트위터, 미국과 일본에서 Reply 숨기기 기능 테스트 적용 시작 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  트위터, 미국과 일본에서 Reply 숨기기 기능 테스트 적용 시작
+
+   내 특정트윗에 대한 Reply 를 개별적으로 숨길 수 있음. 상관없는 광고나 부적절한 답글들을 가리는 용도로 사용가능
+"
+"https://news.hada.io/topic?id=544","Procella - Youtube 의 데이터베이스 엔진","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Procella - Youtube 의 데이터베이스 엔진
+
+   구글이 최근에 공개한 ""Procella: Unifying serving and analytical data at YouTube"" 논문에 대한 해석글
+
+   - 이미 구글은 Dremel (BigQuery), Mesa, Photon, F1, PowerDrill , Spanner 등이 있지만 Youtube 에는 잘 맞지 않음.
+   - 프로셀라는 유튜브의 다양한 non-OLTP 작업에 대한 SQL 인터페이스를 제공
+   - Presto 와 비슷하게 동작하며 Borg(쿠버네티스의 전신) 와 Colossus(GFS 의 새 버전) 를 사용
+   - 데이터는 컬럼 기반으로 저장되며, 이를 위한 ""Artus"" 라는 Columnar 포맷을 소개.
+   - 표준 SQL 구문인 CREATE , ALTER 등을 사용
+
+   필자가 보기엔 Procella 는 Presto 와 비슷하지만, Presto 가 Java 기반이어서 C++ 로 작성한 인프라가 많은 구글에는 맞지 않았을거 같다는 얘기도..
+"
+"https://news.hada.io/topic?id=535","폭스바겐 그룹, 독자적인 차량용 OS 개발 예정","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       폭스바겐 그룹, 독자적인 차량용 OS 개발 예정
+
+   2025년까지 5천~만명 단위의 조직을 만들고, 12개 모든 VW그룹 브랜드에서 사용할 OS를 개발할 계획
+   인포테인먼트 시스템은 Android 를 사용할 예정
+
+   애드몬드 인근에 300명 규모 개발센터 만들고 MS 지원 받아 '21년에 출시할 커넥티드카 타겟으로 S/W 개발중으로 알고 있는데, '25년에 만명 규모로 키우겠다니 대담한 계획이네요.
+
+   재미난건 글 맨 처음에 녹색 박스 부분
+
+   ""이 기사를 쓰기위헤 폭스바겐이 워싱턴DC부터 프랑크푸르트로의 비행기,호텔 3박을 제공했음""
+
+   뭘 받았는지 정확히 명시를 하는군요.
+
+   근데 정작 기사는 너무 뭉뚱그려져 있어서 무슨 OS를 어떤 기반으로 하겠다는건지는 잘 안나와 있네요.
+"
+"https://news.hada.io/topic?id=552","Publisheet - 엑셀 파일을 인터랙티브 웹 페이지로 만들기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Publisheet - 엑셀 파일을 인터랙티브 웹 페이지로 만들기
+
+   웹에서도 셀 편집시 수식은 반영됨. 무료 사용자는 업로드후 3일간만 보임. 갯수는 제한 없음. 암호걸기 가능
+
+   비슷한 솔루션들
+
+   https://www.spreadsheetconverter.com/
+   https://www.spreadsheetweb.com/
+
+   엑셀 기반은 아니지만, 웹에서 계산식 페이지가 필요할때 쓰는 비슷한 도구들
+
+   https://www.calculoid.com/
+   https://www.calconic.com/
+   https://ucalc.pro/en
+   https://www.calcapp.net/lp/website-calculators/
+
+   https://www.publisheet.com/demos/quotation-demo
+   데모를 봐서는 견적서 보내기 용으로 괜찮을 수도 ?
+   3일후에는 견적이 유효하지 않은 것으로..
+"
+"https://news.hada.io/topic?id=522","Filesize.js - 파일명 크기를 읽기 쉬운 포맷으로 변경","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Filesize.js - 파일명 크기를 읽기 쉬운 포맷으로 변경
+
+   filesize(265318) = ""259.1 KB""
+"
+"https://news.hada.io/topic?id=565","Microsoft, 새 글꼴 Cascadia Code 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Microsoft, 새 글꼴 Cascadia Code 공개
+
+   Cascadia Code는 원래 Windows Terminal을 개발하면서 함께 만들었던 글꼴인데 요번에 SIL Open Font License로 공개함. 코드에디터나 터미널 등에서 쓰기 좋으며, 합자(Ligature)를 지원함.
+
+   공식 블로그 소개글: https://devblogs.microsoft.com/commandline/cascadia-code/
+
+   요즘 터미널에서 즐겨쓰는 powerline gylph 패치하는 법...
+
+   https://hanselman.com/blog/…
+
+   그리고... 그렇게 패치된 버전 다운로드:
+
+   https://github.com/microsoft/cascadia-code/…
+
+   요는... 조만간 정식으로 포함될 듯... ;)
+
+   링크도움 : https://devblogs.microsoft.com/commandline/cascadia-code/
+
+   VSCode 에 적용해보니 Ligature 는 좋은데 글자 높이가 Menlo 보다는 낮아서 익숙하지는 않네요. 터미널에는 쓰면 딱 좋을듯
+
+   맥터미널도 되려나요? 문서는 ms에서만 되는 것 처럼 나와서
+
+   적용해봤는데 iterm 에서는 잘 됩니다
+"
+"https://news.hada.io/topic?id=642","Vim 을 종료하는 간단한 방법들","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Vim 을 종료하는 간단한 방법들
+
+   매우 매우 창의적이고 간단한 방법들 모음
+"
+"https://news.hada.io/topic?id=616","구글뮤직 대신 유튭뮤직이 앞으로 구글안드로이드에 기본탑재 예정","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   구글뮤직 대신 유튭뮤직이 앞으로 구글안드로이드에 기본탑재 예정
+
+   기사의 GPM은 Google Play Music의 약어입니다.
+   그리고 최근에 유튭 뮤직에서 디바이스에 포함된 음악재생 기능이 추가되었다고 하네요.
+"
+"https://news.hada.io/topic?id=548","Asciiker - ASCII 문자열로 렌더링 하는 온라인 다중접속 3D 게임 데모","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Asciiker - ASCII 문자열로 렌더링 하는 온라인 다중접속 3D 게임 데모
+
+   모든 화면이 아스키문자열로만 되어있음. Q/E키로 카메라 회전도 가능. 점프!도 됨
+
+   모바일에서도 훌륭한 속도. 좌상/우상단을 누르면 카메라 회전
+
+   https://reddit.com/r/asciicker/…
+
+   개발자가 레딧에 소개한바에 의하면 순수 Javascript 로 만 개발
+
+   http://asciicker.com/x1
+   http://asciicker.com/x2
+   http://asciicker.com/x3
+   http://asciicker.com/x4
+   http://asciicker.com/x5
+   http://asciicker.com/x6
+   http://asciicker.com/x7
+   http://asciicker.com/x8
+   http://asciicker.com/x9
+   http://asciicker.com/x10
+
+   를 거치면서 발전해 왔음
+
+   http://asciicker.com/x11 부터는 멀티플레이어 접속을 지원
+
+   http://asciicker.com/x12 에서 지형을 업그레이드
+
+   http://asciicker.com/x13 * 현재 버전부터는 반자동으로 생성된 맵을 테스트 하는 것
+
+   Pure 자바스크립트를 Minify 안했기 때문에 코드 살펴보기에도 좋음
+
+   헐.. 물에 물결만 있는줄 알았더니, 나무 나 집등이 반사되어 보이는 표현도 해놨네요.
+"
+"https://news.hada.io/topic?id=601","iOS 13.1, 개인용 자동화 지원","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          iOS 13.1, 개인용 자동화 지원
+
+   특정 시간, 장소에 도착 여부 또는 앱 열기와 같은 이벤트를 기반으로 동작을 실행 가능.
+
+   세가지의 트리거 지원
+   - 이벤트 트리거 : 시간(일출,일몰,특정시간,반복), 알람(다시 알리기,중단), 애플워치(운동 종류,조건)
+   - 이동 트리거 : 도착(위치,시간범위), 떠날 때(위치, 시간범위 ), 출퇴근(집/직장,출발 몇분전), CarPlay(연결,해제)
+   - 설정 트리거 : 에어플레인 모드,Wi-Fi,블루투스,방해금지,NFC
+
+   안드로이드의 Tasker 수준으로 발전하면 좋겠네요.
+
+   숏컷 모음 사이트들 ( 아직 개인용 자동화 관련은 없지만 곧 추가될 것으로 기대됩니다 )
+   https://shortcutsgallery.com/
+   http://www.matthewcassinelli.com/siri-shortcuts/
+   https://routinehub.co/
+   https://sharecuts.app/
+   https://shareshortcuts.com/
+"
+"https://news.hada.io/topic?id=622","CSS Photo Filter Playground","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      CSS Photo Filter Playground
+
+   다양한 사진필터를 적용해보고 해당 필터를 CSS Code 로 바로 받을수 있음.
+"
+"https://news.hada.io/topic?id=584","MS .NET Core 3.0 출시","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          MS .NET Core 3.0 출시
+
+   대폭적인 성능향상, C# 8, F# 4.7, 닷넷 코어 앱이 이제 실행파일을 가짐, 고성능 JSON API, 라즈베리 Pi 지원
+
+   닷넷 코어를 잘 안보다가 봤는데.. 지원 OS 목록이 놀랍군요.
+
+   Alpine: 3.9+
+   Debian: 9+
+   openSUSE: 42.3+
+   Fedora: 26+
+   Ubuntu: 16.04+
+   RHEL: 6+
+   SLES: 12+
+   macOS: 10.13+
+   Windows Client: 7, 8.1, 10 (1607+)
+   Windows Server: 2012 R2 SP1+
+"
+"https://news.hada.io/topic?id=594","자전거 사고로 정신잃은 사람을 위해 애플워치가 911 을 불러주다","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  자전거 사고로 정신잃은 사람을 위해 애플워치가 911 을 불러주다
+
+   62세 남자가 자전거를 타다가 넘어지면서 헬멧이 부서질정도로 넘어지고 정신을 잃음.
+   애플워치의 넘어짐 감지 (fall-detection) 기능은 착용자가 넘어진후 60초 동안 움직임이 없으면 자동으로 경고를 하게 되어있음.
+   애플워치가 바로 911 신고 및 아들에게도 알려서, 앰뷸런스가 1분만에 도착
+   한적한 곳에서 일어난 사고라 애플워치 아니었으면 사고가 난 것도 알지 못했을 것이라고
+"
+"https://news.hada.io/topic?id=591","TCP 소켓이 쓰러지지 않아","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            TCP 소켓이 쓰러지지 않아
+
+   닫혔어야 할 TCP 소켓이 계속 남아있는 경우에 대한 분석 [한글]
+"
+"https://news.hada.io/topic?id=549","AirSim - 자율주행 자동차/드론을 위한 MS의 오픈소스 시뮬레이터","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                AirSim - 자율주행 자동차/드론을 위한 MS의 오픈소스 시뮬레이터
+
+   Unreal엔진 기반 플랫폼으로, 자율주행 차량을 위한 딥 러닝, 컴퓨터 비전 및 강화학습을 실험하는 것을 목표로 함
+
+   데이터 추출 및 차량을 제어하는 API 도 제공
+   Windows 와 Linux 를 지원하며, PX4 같은 Flight Controller 하드웨어도 지원
+
+   Unity 실험 버전도 있음
+"
+"https://news.hada.io/topic?id=537","GitHub Action으로 Pull Request 시 자동 이미지 압축하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               GitHub Action으로 Pull Request 시 자동 이미지 압축하기
+
+   mozjpeg 과 libvips 로 PNG/JPG 을 최적화. 이미지 퀄리티 조정 가능 (기본은 80)
+
+   Calibre 가 무료로 공개.
+
+   https://github.com/marketplace/actions/image-actions 에서 설치 가능
+"
+"https://news.hada.io/topic?id=635","HEAD - HTML5 의 head 태그에 대한 모든 것","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    HEAD - HTML5 의 head 태그에 대한 모든 것
+
+   head 블록 안의 모든 meta,link 태그들에 대한 설명과 상세 링크 모음 [한글]
+"
+"https://news.hada.io/topic?id=632","Sticky Footer - Flexbox 로 구현한 하단 푸터","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Sticky Footer - Flexbox 로 구현한 하단 푸터
+
+   CSS만으로 콘텐츠 길이에 상관없이 페이지 가장 하단에 위치하는 푸터 구현하기
+
+   와 퍼블리셔분들 이걸로 스트레스 받으시던데 알려드려야겠내요.
+
+   보통 Sticky 를 쓰면 페이지 위치에 상관없이 떠있는 것들을 의미하는데 여기서는 다르게 쓴듯합니다.
+
+   여기 news.hada.io 도 콘텐츠가 작으면 푸터가 위로 올라오는데.. 한번 써봐야 겠네요.
+"
+"https://news.hada.io/topic?id=615","Google Search News","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Google Search News
+
+   구글이 검색관련 변경사항을 TV뉴스형태로 알려주는 유튜브 채널 개설.
+
+   첫 뉴스의 내용은
+   - 서치콘솔 변경
+   - no follow 의 확장 관련 ( sponsored 와 ugc )
+   - review 검색 결과를 rich 하게 만들기
+   - 새로운 메타태그
+
+   마지막엔 날씨뉴스까지..
+"
+"https://news.hada.io/topic?id=636","TensorFlow 2.0 정식 릴리즈","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         TensorFlow 2.0 정식 릴리즈
+
+   사용편의성을 높이고 단순화. Keras를 메인 고수준 API로 하며, 즉시 실행을 통합하고, 어떤 플랫폼에서든 유연한 모델을 구축할 수 있도록 변경하여 생산성을 향상
+
+   2.0의 주요 변경사항과 모범사례는 이펙티브 텐서플로 2.0 (한글) 에서 보시면 됩니다.
+
+   https://www.tensorflow.org/guide/effective_tf2?hl=ko
+"
+"https://news.hada.io/topic?id=571","구글 검색 결과가 최초 보도 뉴스를 보다 상위에 노출하도록 개선되었습니다","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                구글 검색 결과가 최초 보도 뉴스를 보다 상위에 노출하도록 개선되었습니다
+
+   구글은 최초 보도 뉴스를 보다 정확하게 인식하여 검색결과에서 더 좋은 위치에 오랫동안 머물 수 있도록 검색 순위 산정 방식을 업데이트하고 검색 품질 평가자 가이드라인에 변경사항을 게시했습니다. 이에 따라 최신 뉴스를 찾는 독자는 관련 뉴스 중 최초 보도 뉴스를 확인할 수 있고, 게시자는 자사의 최초 보도 뉴스를 더욱 많이 노출할 수 있습니다.
+"
+"https://news.hada.io/topic?id=602","아마존, Alexa 가능한 안경 Echo Frames 발표","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    아마존, Alexa 가능한 안경 Echo Frames 발표
+
+   귀에 직접 빔포밍 하는 마이크로스피커와 마이크 내장, 블루투스로 핸드폰과 연결.
+   현재 안드로이드만 지원.
+   초대에 의해서만 구입가능, 아마존의 새로운 기기들을 미리 만나는 Day 1 Editions 중 하나
+
+   또 다른 Day 1 Editions 제품으로는 Echo Loop 가 있음. 알렉사 가능한 스마트 반지..
+
+   https://www.amazon.com/dp/B07JPK4XJ6/
+"
+"https://news.hada.io/topic?id=570","Generated Photos - 무료로 사용가능한, AI로 생성된 10만개의 얼굴들","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Generated Photos - 무료로 사용가능한, AI로 생성된 10만개의 얼굴들
+
+   UI등에서 사람 얼굴이 필요할때 사용가능
+"
+"https://news.hada.io/topic?id=540","Git Quick Stats - 깃 저장소의 간단한 통계를 보는 커맨드라인 도구","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Git Quick Stats - 깃 저장소의 간단한 통계를 보는 커맨드라인 도구
+
+   기여 통계 부터 Author별 통계, 시간/일/월/주별 커밋들 보기등. 결과를 JSON 으로 출력가능
+"
+"https://news.hada.io/topic?id=620","checkm8 개발자 axi0mX 원격 인터뷰 - 이건 게임체인저가 될 것","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               checkm8 개발자 axi0mX 원격 인터뷰 - 이건 게임체인저가 될 것
+
+   이미 생산된 ROM 코드를 우회하는 것이라 애플도 막기 어려운 결함이기 때문
+
+   - Checkm8 (체크메이트) 는 리모트에서는 실행불가하며 폰을 테더링 해야만 가능.
+   - 아이폰 4S 부터 아이폰 X 까지 11세대의 아이폰을 지원.
+   - 메모리에서 동작하기 때문에 재부팅하면 exploit 을 다시 실행해야함.
+   - Secure Enclave 나 Touch ID 를 바이패스 하지는 않음 ( 남의 폰을 암호 뚫고 들어가서 데이터를 보는것은 불가능 하다는 의미 )
+
+   axi0mX 의 생각 ( 왜 게임체인저 인지 )
+
+   - iOS 9 이후로는 탈옥이 어려워 졌지만, 체크메이트의 배포로 이제 쉬운 탈옥이 가능해졌다. 지난 탈옥 도구들은 사용자가 구형 OS버전을 사용하도록 강제했지만, 곧 최신 OS 를 사용하는 탈옥이 가능해 질 것이다.
+"
+"https://news.hada.io/topic?id=621","Firebase 팀이 개발자를 뽑는 법","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Firebase 팀이 개발자를 뽑는 법
+
+   구글에 인수되기전에 Firebase 가 시행했던 채용 절차를 상세히 설명
+
+   이상적인 지원자 : friendly, smart, and motivated , generalist, pragmatic problem solvers
+
+   인터뷰 절차 ( 24명팀을 만들기 위해 약 1000명을 인터뷰 )
+   1. 전화 인터뷰 : 약 1000명, 40% 이하 통과
+   2. 기술 과제 시험 : 약 400명, 25% 통과율
+   3. 사내 면접 및 레퍼런스 체크 : 약 100명, 40% 통과
+   4. 최종 오퍼 : 약 40명, 60% 정도 채용
+
+   기술 과제 시험은 Goldmine 이라고 불리는 최적화 문제를 집에서 개인이 자신의 개발환경과 인터넷을 이용하여 푸는것. 총 6시간 정도가 소요되도록 구성
+
+   사내 면접은
+   1. 4명의 팀 멤버(창업자중 한명, 같이 일할 사람 한명을 꼭 포함 )와 각각 45분간 진행
+   2. 자신이 만든 GoldMine 과제를 한시간 설명
+   3. 팀 멤버랑 같이 점심 식사
+
+   그 외에도 상세한 것들을 적어놔서 회사들이 참고하기 좋을듯
+"
+"https://news.hada.io/topic?id=586","Grid Garden - CSS Grid 를 배우는 웹게임","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Grid Garden - CSS Grid 를 배우는 웹게임
+
+   총 28단계로 구성된 정원에 물주기 게임
+
+   비슷하게 CSS Flex Box 를 배우는 웹게임 : https://flexboxfroggy.com/
+"
+"https://news.hada.io/topic?id=644","자율주행 TaaS 스타트업 ‘코드42’, 대기업 4사로부터 300억 규모 투자 유치","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             자율주행 TaaS 스타트업 ‘코드42’, 대기업 4사로부터 300억 규모 투자 유치
+
+   시드는 현대차가 대고 기아, LG, CJ 등이 참가한 시리즈 A에서 300억 투자유치 성공. 현대, 기아가 자동차 연동, LG가 차량 단말, CJ이가 물류 분야에서 자율주행차 협업하겠다는 의미로 들립니다. 국내에 이 정도 그림의 스타트업이 있었나 싶네요.
+"
+"https://news.hada.io/topic?id=614","GPU.JS 2.0 - 자바스크립트에서 GPU 가속 기능 이용하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  GPU.JS 2.0 - 자바스크립트에서 GPU 가속 기능 이용하기
+
+   gpu.createKernel()로 GPU 에서 실행가능한 함수를 생성. 단 함수내에서는 JS의 몇몇 Subset 만 이용 가능
+"
+"https://news.hada.io/topic?id=631","Mesh Spreadsheet - JS로 작성된 포터블 스프레드쉬트","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Mesh Spreadsheet - JS로 작성된 포터블 스프레드쉬트
+
+   실제로는 스프레드쉬트 모양을 한 JS 코드 에디터.
+   셀 단위로 JS 코드를 넣어서 계산을 할 수 있음.
+"
+"https://news.hada.io/topic?id=577","Shiori - Go 로 만들어진 북마크 매니저","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Shiori - Go 로 만들어진 북마크 매니저
+
+   Pocket 의 클론 버전. 코맨드라인 또는 웹앱으로 사용가능.
+   싱글 바이너리 형태.
+   sqlite3 또는 MySQL DB 이용가능.
+   웹페이지 북마크 저장시 오프라인 저장본 자동 생성
+   Firefox 와 Chrome 용 확장 제공
+"
+"https://news.hada.io/topic?id=558","Securing software, together: GitHub + Semmle","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Securing software, together: GitHub + Semmle
+
+   코드 보안에 대한 걸 제공하는 Semmle이 Github와 같이 가기로 했다고...
+
+   요즘 GitHub의 행보를 보면, MS가 인수한 회사중에 가장 잘 한거 같다는 생각이 듭니다.
+   30조짜리 LinkedIn 보다는 8조짜리 GitHub 이 더 MS의 행보에 맞아 보여요.
+"
+"https://news.hada.io/topic?id=619","10개의 Culture-Fit 인터뷰 질문들","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        10개의 Culture-Fit 인터뷰 질문들
+
+   회사의 문화와 맞는 사람을 뽑을 때 할 질문들, 답변에서 봐야할 것, 추가 질문 리스트 [영문]
+
+   1. 왜 우리회사에서 일하고 싶은가요 ?
+   2. 이전 회사의 문화를 설명해 주세요.
+   3. 문제를 해결한 사례에 대해서, 무슨 이슈였고 어떻게 접근했는지 설명해주세요.
+   4. 수행하신 팀프로젝트는 무엇이고, 어떤 일을 담당하셨고, 뭘 만드셨나요 ?
+   5. 상급자로부터 어떻게 Manage 받고 싶으신가요 ?
+   6. 최고의 하루(근무일)는 어떤 모습인가요? 설명해주세요.
+   7. 고객만족을 위해 하셨던 일을 하나만 말씀해주세요.
+   8. 동료와의 관계형태는 어떤 방식을 선호하시나요 ?
+   9. Work-Life 밸런스는 어떻게 유지하시나요 ?
+   10. 일을 제외하고, 어떤 것에 열정이 이 있으신가요 ?
+"
+"https://news.hada.io/topic?id=638","아마존 역사에서 가장 중요한 제프베조스의 2002년 사내 메일","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   아마존 역사에서 가장 중요한 제프베조스의 2002년 사내 메일
+
+   지금의 AWS가 있게한 메일로 시작해서 다양한 조직의 구조에 대해서 설명한 글
+
+   제프 베조스의 2002년 메일 내용
+   1) 모든 팀은 서비스 인터페이스로 데이터와 기능을 공개하세요.
+   2) 팀들은 이 인터페이스로 통신 하세요.
+   3) 직접 링킹, 다른팀 저장소에 직접 억세스, 공유메모리, 백도어 등, 다른 어떤 통신방법도 허용되지 않습니다. 네트워크를 통한 서비스 인터페이스 호출만 허용합니다.
+   4) 어떤 기술을 사용하는가는 중요하지 않습니다. HTTP, Corba, Pubsub, 커스텀 프로토콜 다 괜찮습니다.
+   5) 모든 서비스 인터페이스는 예외없이 기초부터 모두 외부에서 사용 가능하도록 설계되어야 합니다. 즉, 팀들은 인터페이스를 외부 개발자가 이용가능하도록 계획하고 설계해야 한다는 것입니다. 예외는 없습니다.
+   6) 이를 지키지 않는 사람은 해고 될것입니다.
+   7) 고맙습니다. 좋은 하루 되세요!
+
+   조직 구조의 형태
+   Functional : Apple
+   Divisional : Amazon
+   Function + Divisonal = Hybrid : Netflix
+
+   사내 커뮤니케이션 프레임워크
+   - 동기 vs 비동기
+   - Co-located 동기 / 비동기
+   - Distributed 동기 / 비동기
+   - Remote 비동기
+"
+"https://news.hada.io/topic?id=546","Slack, 외부 협업을 위한 Shared Channels 기능 공식 런칭","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Slack, 외부 협업을 위한 Shared Channels 기능 공식 런칭
+
+   협업할 일이 있을때 회사간에 공유하는 채널을 열고 기존 채널과 똑같이 메시징 가능. 현재는 각 채널은 두개의 회사끼리만 지원.
+
+   댓글 썼는데 로그인창이 떠서 날아갔네요. 영어 게시물에 대한 링크는 최소화하고 한글 게시물 링크가 많았으면 합니다. 응원하겠습니다.
+"
+"https://news.hada.io/topic?id=580","GitHub 봇들의 대화","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             GitHub 봇들의 대화
+
+   - 봇이 의존성부분에서 취약점 발견
+   - 봇이 수정을 위한 PR 보냄
+   - CI 가 PR 을 검증
+   - 봇이 PR 머지
+   - 봇이 머지를 GIF로 축하
+
+   봇이 문제점 찾아서 사람에게 Assign하고 PR올라오면 검증하고 따봉해주는 것도 곧 나오겠네요. 모두 자동화하면 진짜 개발자들 다 실업자행 ㅋ
+
+   따봉이 임팩트 있네요 ㅋㅋㅋ
+
+   ㅎㅎㅎㅎㅎ 대박 ㅋㅋㅋ
+
+   봇들이 즐겁게 일하는거 같아 보기 좋네요 ㅋㅋ
+"
+"https://news.hada.io/topic?id=517","Javascript 개발환경을 윈도우즈 10으로 변경하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Javascript 개발환경을 윈도우즈 10으로 변경하기
+
+   윈도우에서 Node + Bash 개발환경 구성하기 풀 가이드
+
+   1. WSL 활성화
+   2. Ubuntu 설치 - 이제 bash로 창이 열림
+   3. Powershell 을 이용해서 WSL2 로 업그레이드
+   4. Windows Terminal (Preview) 설치
+   5. 터미널에서 Copy/Paste 를 위해 Ctrl+C/V 바인딩
+   6. 터미널 Default Profile 설정하기 - 배경색/폰트/컬러스킴/초기폴더
+   7. Zsh/Oh-My-Zsh 설치
+   8. Node 설치
+   9. zsh 자동 추천 설치
+   10. Git 설정
+   11. VS Code 와 WSL 연동 : Remote WSL 확장
+   12. 탐색기에서 WSL 폴더 열기 : \\wsl$
+   13. Docker 설치
+
+   순서만 보면 이제 OSX에서 웹 개발환경 구성하는 것과 많이 차이가 없어질듯
+"
+"https://news.hada.io/topic?id=534","Photopea - 웹 기반 PSD 이미지 에디터 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Photopea - 웹 기반 PSD 이미지 에디터
+
+   Photoshop 에서 보던 레이어/레이어 마스크/블렌딩/브러쉬 등을 지원
+   PSD/XCF/Sketch/CDR 등 유명 이미지 에디터의 파일 오픈 가능
+   PSD/SVG/JPG/PNG 로 저장가능.
+
+   포토샵 파일을 간단히 수정해야 하는데 설치가 안된 컴퓨터에서 사용하기 좋을듯
+"
+"https://news.hada.io/topic?id=569","SortableJS - Drag & Drop 으로 재정렬 가능한 리스트","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                SortableJS - Drag & Drop 으로 재정렬 가능한 리스트
+
+   Shared,Cloning,Filter,Nested,MultiDrag 등 다양한 기능 제공.
+   Vue/React/Angular/jQuery 등 많은 프레임워크 지원.
+
+   Shared - 두개의 리스트간에 서로 아이템을 이동할수 있음
+   Cloning - 서로 다른 리스트 간에 이동시 아이템을 복사
+   Handle - 드래그를 시작하는 핸들을 따로 지정 가능
+   Filter - 특정 아이템만 드래그 불가능 하게 설정 가능
+   Nested - 여러 서브 단계로 이루어진 리스트도 가능
+   MultiDrag - 여러개의 아이템을 멀티로 선택후 같이 드래그
+"
+"https://news.hada.io/topic?id=573","if(kakao) 2019 개발자 컨퍼런스 발표자료 및 동영상 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 if(kakao) 2019 개발자 컨퍼런스 발표자료 및 동영상 공개
+
+   전체 50개 세션의 발표자료 PDF 와 발표 동영상 MP4.
+   특이하게 MP4 파일로 직접 올려둬서 다운 받아서 보는게 편할듯.
+"
+"https://news.hada.io/topic?id=599","Workbox - Progressive Web App을 위한 자바스크립트 라이브러리 모음","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Workbox - Progressive Web App을 위한 자바스크립트 라이브러리 모음
+
+   npm 으로 제공되며 Precaching / Runtime caching / Request routing / Background sync 등의 기능을 편하게 구현
+"
+"https://news.hada.io/topic?id=524","뷰소스콘 2019, 브라우저밴더들 중심 컨퍼런스","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       뷰소스콘 2019, 브라우저밴더들 중심 컨퍼런스
+
+   브라우저밴더들이 웹 생태계에 어떻게 활동하는지 알 수 있는 컨퍼런스.
+
+   - 가고싶다
+"
+"https://news.hada.io/topic?id=528","내가 개발자로 시작했을 때 DevOps는 존재하지 않았다","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    내가 개발자로 시작했을 때 DevOps는 존재하지 않았다
+
+   ""What is Devops?"" 글에 대한 다른 접근. 90년대에 개발을 시작한 글쓴이의 경험과 변화에 기반한 설명
+
+   글 끝에 있는 필자가 생각하는 DevOps 인 것과 아닌 것의 정의가 중요.
+
+   글 뒷부분 DevOps is / is NOT 의 간단 번역
+
+   DevOps is…
+   - 컨셉
+   - 마인드셋
+   - 각 개인들이 이해하고 수용하는 공통된 태도
+   - 보살피고 반복적으로 개선되어야 하는 문화
+   - 공유하기
+   - 멘토링
+   - 배우기
+   - 모든 아이디어를 포용하고 열려있기
+   - 반복적
+   - 연속적
+   - 협력적
+   - 소프트웨어를 자신있게 개발 및 제공하는 멋진 방법
+
+   DevOps is NOT… ( 것이 아님. 아래 것들이 아니라는 것에 주의 )
+   - 쉽게 달성되거나 구현되는 것
+   - 제품이나 툴 체인
+   - 직책 또는 역할
+   - 클라우드 인프라 제공자
+   - 책
+   - 기술
+   - 프로그래밍 언어
+   - 마케팅 캠페인
+   - CI/CD
+   - Kubernetes
+   - 컨테이너
+   - 오픈소스 소프트웨어
+   - Infrastructure as Code
+   - 자동화
+   - 가지고 놀만한 것!!!
+
+   저도 인 것과 아닌 것에 대해서 격하게 동의합니다만 현실은(국내만 봤을 때) 뭔가 보이는 것 손에 잡히는 걸 원하는 것 같아요. 그래서 아닌 것들에 집착하게 되고 그것들 혹은 그것만 있으면 다 될거라고 생각하는 것 같고요. ㅠ
+"
+"https://news.hada.io/topic?id=626","무엇이 좋은 Product Manager 를 만드는가 ?","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    무엇이 좋은 Product Manager 를 만드는가 ?
+
+   기초,중급,뛰어남의 3단계로 정리된 PM의 스킬들
+
+   기초 스킬
+   - 요구사항 작성
+   - 고객 피드백 받기
+   - 데이터 인사이트
+   - 팀 미팅 진행
+
+   중급 PM
+   - 고객 인사이트 얻기
+   - 기본 설계 지식
+
+   뛰어난 PM
+   - 고객 혁신 : 고객의 기대를 뛰어넘는 것들을 제시
+   - 비젼과 전략 : 창업자 수준의 비젼을 가지고 전략을 수립
+   - 중요한 결정을 내리기
+
+   그리고, 뛰어난 PM을 위해서는 Founder's Feel 을 가져야 하는데 어떻게 이걸 만들수 있을까
+
+   - 고객과의 다양한 대화를 통해서 구조화 되지 않은 데이터를 캡쳐하게 되는데, 충분한 대화를 나눈다면, 거기서 고객 혁신과 제품 비전에 대한 것들이 어떤 본능과 비슷한 형태를 이루게 됨. 이것이 Founder's Feel
+
+   필자는 ""PM 은 제품의 CEO"" 라는 구식 개념 보다는 ""기능별 오너를 가지는 작은 그룹으로 이루어진 프로덕트 팀"" 이 더 낫다는 얘기를 합니다. 이것은 제품, 디자인, 엔지니어링, 마케팅, 데이터 사이언스 등의 리더들이 비젼을 이해하는 전문가로서 협업 하는것 을 의미합니다.
+"
+"https://news.hada.io/topic?id=578","오늘밤 망원경없이 인공위성을 찾아보세요","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         오늘밤 망원경없이 인공위성을 찾아보세요
+
+   현재 위치정보에 기반하여 하늘에 뜬 인공위성(ISS등)을 보여줍니다.
+   자신의 집주소를 넣으면 스트리트뷰를 통해 어느쪽으로 인공위성이 지나가는지 알려줍니다. 해당시간에 알람 받는 것도 가능
+
+   앞으로 5개정도의 각 위성이 보이는 날짜와 시간을 찍어주니까 편함
+   녹색 버튼 누르면 주소입력 가능.
+   ISS가 오늘밤 7:51에 지나간다는군요.
+"
+"https://news.hada.io/topic?id=612","페이스북 Like 갯수 숨기기 시작","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          페이스북 Like 갯수 숨기기 시작
+
+   작성자는 Like 한 숫자를 볼 수 있지만, 다른사람은 볼 수 없음. 호주부터 적용 시작
+
+   이젠 단순 Like 가 돈이되는게 아닌 진짜 소통이 되는가 아닌가의 여부가 의미를 가지게 되겠네요~
+"
+"https://news.hada.io/topic?id=523","Can I Email - 이메일에서 HTML태그 사용가능한지 확인","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Can I Email - 이메일에서 HTML태그 사용가능한지 확인
+
+   HTML 이메일을 보낼 때, 각종 이메일 클라이언트가 지원하는지 여부 확인.
+   Can I Use 의 이메일 버전.
+"
+"https://news.hada.io/topic?id=629","KDE 가 GitLab 을 채택","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           KDE 가 GitLab 을 채택
+
+   2600명의 컨트리뷰터를 가진 오픈소스 커뮤니티 KDE가 Phabricator 에서 GitLab 으로 변경
+
+   꽤 많은 오픈소스 커뮤니티들이 GitLab 을 채택중
+
+   KDE : https://invent.kde.org/public/
+   GNOME : https://gitlab.gnome.org/explore/
+   FreeDesktop : https://gitlab.freedesktop.org/explore/
+   Devian : https://salsa.debian.org/public
+   Haskell : https://gitlab.haskell.org/public
+"
+"https://news.hada.io/topic?id=582","Gooey 로 모든 언어 및 CLI 도구의 GUI 만들기 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Gooey 로 모든 언어 및 CLI 도구의 GUI 만들기
+
+   몇줄의 Python 코드와 JSON 만으로 UI를 가진 .exe 또는 .app 생성.
+   간단하게 만든 CLI 를 배포용으로 만들기 좋음
+
+   Python 사용자의 경우 파이썬 객체를 CLI 로 만들어주는 Python Fire 와 연계하면
+   파이썬 객체->CLI->Gooey UI 로 만드는 것도 가능
+
+   https://github.com/google/python-fire
+
+   오! click이나 invoke를 이용해서 cli를 만들고 있었는데 이건 편하겠군요.
+
+   개인적으로 플젝할때 사용해봐야겠네요.
+"
+"https://news.hada.io/topic?id=585","My Talk at Microsoft","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          My Talk at Microsoft
+
+   RMS가 자신이 왜 MS에서 발표를 했는지와 MS에 제안한 내용들을 직접 정리.
+
+   발표엔 없지만, MS 부사장에게 한 제안은
+
+   ""Windows 소스코드를 GNU GPL 로 공개하시죠""
+"
+"https://news.hada.io/topic?id=617","그라운드X, 개발자 생태계 확장 나섰다","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         그라운드X, 개발자 생태계 확장 나섰다
+
+   그라운드X는 오는 11월 7일부터 10일까지 나흘간 제주창조경제혁신센터와 함께 ‘제주 블록체인 해커톤 2019’ 개최한다고 27일 밝혔다.
+"
+"https://news.hada.io/topic?id=633","Raspberry Pi4로 4K 듀얼 디스플레이 지원","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Raspberry Pi4로 4K 듀얼 디스플레이 지원
+
+   HEVC(H265) 비디오를 4K로 재생, 심지어 두개의 화면에 다른 비디오를 재생하는 디지털 사이니지 를 저렴하게 구현.
+"
+"https://news.hada.io/topic?id=604","Cloudflare, QUIC 과 HTTP/3 지원 시작","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Cloudflare, QUIC 과 HTTP/3 지원 시작
+
+   크롬 카나리버전, CURL 에서 HTTP/3 사용가능. 파이어폭스도 곧 나이틀리 에서 지원 예정 [한글]
+
+   ""HTTP/3은 여러가지 특징 중 전송 계층에 스트림을 기본 구조로 도입하는 새 인터넷 전송 프로토콜인 QUIC을 사용합니다. QUIC 스트림은 동일 QUIC 연결을 공유 하므로 새 스트림을 만들 때 추가적인 핸드쉐이크나 슬로우 스타트가 필요하지 않습니다. QUIC 스트림은 독립적으로 전달되어 어떤 스트림에 패킷 손실이 있는 경우에도 다른 스트림에는 영향이 없습니다. 이는 QUIC 패킷이 UDP 데이터그램 위에 캡슐화되어 있기 때문 입니다.""
+"
+"https://news.hada.io/topic?id=520","Headroom.js - 웹페이지 상단 헤더를 스크롤에 따라 숨겨주는 위젯","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Headroom.js - 웹페이지 상단 헤더를 스크롤에 따라 숨겨주는 위젯
+
+   아래로 스크롤하면 숨겼다가, 위로 스크롤 하면 다시 나오게 하기
+"
+"https://news.hada.io/topic?id=606","아마존, 저대역폭 장거리 무선 프로토콜 Sidewalk 발표","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   아마존, 저대역폭 장거리 무선 프로토콜 Sidewalk 발표
+
+   900Mhz를 사용, 집 안팎의 모든 IoT 기기를 연결하기 위해 개발. 1.5Km 거리에서도 연결 가능한 수준.
+
+   블루투스와 WiFi 는 거리가 짧고, 5G 는 전력소모가 많고 복잡하기 때문
+
+   Sidewalk 의 첫번째 제품은 Ring Fetch 라고 부르는 Dog Tag 가 될것이라고.
+   ( 강아지가 특정 영역을 벗어나면 알람을 주는 기기 )
+"
+"https://news.hada.io/topic?id=561","The Pragmatic Programmer, 20th Anniversary Edition","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           The Pragmatic Programmer, 20th Anniversary Edition
+
+   실용주의 프로그래머 의 20주년 기념판이 나왔네요.
+   국내에서도 많이 팔렸던 책이니 이미 번역하고 계시겠죠 ?
+"
+"https://news.hada.io/topic?id=543","구글 검색, 유튜브 비디오에서 주요 순간 검색 지원","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      구글 검색, 유튜브 비디오에서 주요 순간 검색 지원
+
+   콘텐츠 생성자가 주요 순간에 대한 타임스탬프 정보를 제공할 경우, 검색 결과에서 해당 정보를 보여줌.
+
+   현재는 영문 검색 에서만 보이며, 타임스탬프 정보를 제공 하기 위해서는 구글에 Early Adopter 신청이 필요함.
+"
+"https://news.hada.io/topic?id=589","iPadOS","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 iPadOS
+
+   이제 iOS에서 분리되어버린 iPadOS. 애플이 직접 설명합니다. [한글]
+"
+"https://news.hada.io/topic?id=627","document.designMode - 웹 페이지를 맘대로 바꾸기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  document.designMode - 웹 페이지를 맘대로 바꾸기
+
+   크롬 개발자 콘솔에서 입력시 현재 웹페이지 내용 편집이 가능해지는 옵션.
+
+   document.designMode = 'on'
+   꽤 많은 브라우저에서 지원 됨
+"
+"https://news.hada.io/topic?id=634","SocialSizes - 소셜 미디어용 이미지 사이즈 템플릿","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   SocialSizes - 소셜 미디어용 이미지 사이즈 템플릿
+
+   페이스북/트위터/인스타그램/유튜브 등에서 사용하는 모든 이미지 사이즈 템플릿.
+   Sketch와 XD, Photoshop용 템플릿 파일 제공
+"
+"https://news.hada.io/topic?id=593","CentOS Stream 발표","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            CentOS Stream 발표
+
+   아치 리눅스와 비슷한 롤링 릴리스 방식으로 페도라와 레드햇 엔터프라이즈 리눅스 중간 단계에 위치한다고 합니다.
+
+   음 쓰기 불편하겠네요.
+   롤링으로 해버리면 컨피그나 버전을 고정해서 관리를 해야되니...
+"
+"https://news.hada.io/topic?id=547","Inkscape 1.0 Beta 1 릴리즈","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Inkscape 1.0 Beta 1 릴리즈
+
+   윈/맥/리눅스 를 지원하는 오픈소스 벡터 그래픽 에디터. SVG,AI,EPS,PDF,PS등을 지원
+
+   2003년 발표되어 15년 동안 발전 되어온 도구
+
+   드디어 1.0 ㅋㅋㅋ 저도 한참 전에 패치 몇개 했는데
+"
+"https://news.hada.io/topic?id=623","JSON for Modern C++","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          JSON for Modern C++
+
+   C++11 로만 작성된 메모리 효율적이고 빠른 JSON 구현. json.hpp 파일 하나로 만들어져서 인클루드 하면 끝.
+
+   속도로만 보면 RapidJSON http://rapidjson.org/ 이 훨씬 빠르지만,
+   이 모던C++용 구현체가 API 형태가 더 쓰기 편하다는 평가
+"
+"https://news.hada.io/topic?id=608","구글 Variable Fonts 지원 시작","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        구글 Variable Fonts 지원 시작
+
+   웹상에서 폰트 크기를 줄이기 위해 몇개의 마스터 스타일을 지정하고, 축(axis)를 추가함으로써 수십개 이상의 파생된 인스턴스들을 생성하는 것.
+   CSS 를 통해서 각 Variation 을 선택 가능.
+
+   @supports (font-variation-settings: 'wdth' 200) {
+   @font-face {
+   /* https://github.com/TypeNetwork/Amstelvar */
+   font-family: AmstelvarAlpha;
+   src: url('../fonts/AmstelvarAlpha-VF.ttf');
+   font-weight: normal;
+   font-style: normal;
+   }
+
+   #font-amstelvar {
+   font-family: AmstelvarAlpha;
+   font-variation-settings: 'wdth' 400, 'wght' 98;
+   }
+   }
+"
+"https://news.hada.io/topic?id=603","아마존, 노이즈리덕션 내장한 무선 이어폰 Echo Buds 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  아마존, 노이즈리덕션 내장한 무선 이어폰 Echo Buds 공개
+
+   $129.99, 알렉사 지원, 5시간 음악재생. 15분 충전 2시간 사용. 20시간 지원 충전케이스 포함.
+   Bose 사의 Active Noise Reduction 내장으로 노이즈켄슬링 보다는 덜하지만, 잡음을 많이 줄여줌
+"
+"https://news.hada.io/topic?id=539","파이어폭스, 2020년부터 4주간격으로 릴리즈할 계획","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     파이어폭스, 2020년부터 4주간격으로 릴리즈할 계획
+
+   파이어폭스는 기존에 6-8주간격으로 릴리즈를 했었으나 2020년 1분기부터 4주간격으로 진행할 계획이라고 했습니다. 그 때까진 1주씩 점진적으로 릴리즈 주기를 줄여나갈 것이라고 했습니다.
+   다만 Firefox ESR(Extended Support Release)버전의 릴리즈 주기는 기존과 동일하게 진행할 것이라고 했습니다.
+
+   오호! 좋은 소식이네요 :)
+
+   크롬의 경우도 6주 간격 릴리즈인데, Firefox 의 새 피쳐 대응이 조금 빨라지겠군요.
+   https://chromium.googlesource.com/chromium/src/…
+"
+"https://news.hada.io/topic?id=551","Modern C 2판, CC 라이센스로 공개 [책]","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Modern C 2판, CC 라이센스로 공개 [책]
+
+   C17 버전을 기초로 함. 324페이지 PDF. 책의 예제코드는 MIT 라이센스로 공개
+"
+"https://news.hada.io/topic?id=538","Wi-Fi 6 공식 런칭","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Wi-Fi 6 공식 런칭
+
+   이번주 출시하는 아이폰 11/11 Pro 는 이미 지원. 3.5Gbps 에서 9.6Gbps 로 속도 상승.
+   다중 접속 환경에 최적화 되어서 여러 기계가 물려 있는 공공 Wi-Fi 등 혼잡한 네트웍 상황에서 속도를 증가시킴
+
+   실제로는 인증마크를 부여하는 ""Wi-Fi CERTIFIED 6"" 프로그램이 오늘 시작하는 것임
+
+   오늘 Wi-Fi Alliance 의 공식 발표는
+
+   ""Wi-Fi CERTIFIED 6™ delivers new Wi-Fi® era""
+   https://wi-fi.org/news-events/newsroom/…
+
+   인증 프로그램이 오늘 공식으로 시작됨
+
+   애플은 연합의 멤버이고 기능상 지원하고 있지만 지난 몇년간 공식 인증을 받지는 않았음.
+"
+"https://news.hada.io/topic?id=568","JS 디버깅할때 유용한 콘솔 메소드 - console.log 를 넘어서","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                JS 디버깅할때 유용한 콘솔 메소드 - console.log 를 넘어서
+
+   assert,count/countReset,group/groupEnd,table,time/timeEnd
+"
+"https://news.hada.io/topic?id=595","OSSU 오픈소스 소사이어티 대학교 - Computer Science 독학하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              OSSU 오픈소스 소사이어티 대학교 - Computer Science 독학하기
+
+   온라인으로 전산학을 배우는 사람들을 위한 커리큘럼 자료
+
+   따로 Data Science 독학하기도 있음
+   https://github.com/ossu/data-science
+"

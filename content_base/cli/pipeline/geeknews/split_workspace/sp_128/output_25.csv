@@ -1,0 +1,2449 @@
+"https://news.hada.io/topic?id=3270","M1 맥에서 MS윈도우 ARM버전 가상화 성공","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       M1 맥에서 MS윈도우 ARM버전 가상화 성공
+
+   - QEMU를 사용해서 에뮬레이션 없이 M1 맥OS에 윈도우 ARM64버전을 실행
+   - 윈도우 ARM64 버전은 내부에서 x86 윈도우 어플리케이션을 에뮬레이션 하여 실행 가능
+   ㅤ→ Rosetta 2 만큼 빠르진 않지만 거의 비슷한 성능
+   ㅤ즉, M1 ARM macOS → QEMU → Windows ARM64 → MS의 x86에뮬레이션 → x86 윈도우 앱 실행
+
+   애플이 x86 윈도우 앱을 에뮬레이션해줄 일은 없으니,
+   ARM버전 윈도우를 올리고 그 안에 MS가 만든 x86 에뮬레이션 코드를 사용하는 거군요.
+   ARM에서 x86 에뮬레이션이 작동하는 방식
+   - https://docs.microsoft.com/ko-kr/windows/…
+"
+"https://news.hada.io/topic?id=3244","eDEX-UI - SF느낌의 크로스플랫폼 터미널","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       eDEX-UI - SF느낌의 크로스플랫폼 터미널
+
+   - 영화 Tron Legacy 에서 보던 느낌의 미래풍 터미널 UI
+   - 터미널 좌우 : 시스템(CPU,RAM,SWAP,Process)/네트웍(GeoIP,연결,전송량) 모니터링 UI
+   - 터미널 하단 : 디렉토리 뷰어 + 온스크린 키보드 내장
+   - 터치 디스플레이 지원
+   - 테마 지원 : 다양한 화면 개인화, 키보드 레이아웃, CSS 인젝션 가능
+
+   인간지능 추천 링크 - https://news.hada.io/topic?id=2727
+   삐릿삐릿
+
+   감사합니다! :)
+
+   영화나 드라마에서 해커 화면 보여줄 일 있으면, 이거만 그냥 띄워 놔도 분위기 만들어줄 것 같네요.
+
+   영화 매트릭스 느낌나는 스크린샷에 제일 눈이 가네요. ^^
+"
+"https://news.hada.io/topic?id=3274","SpinKit - CSS로만 된 로딩 스피너 모음","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      SpinKit - CSS로만 된 로딩 스피너 모음
+
+   - CSS animation / transform / opacity 만 활용해서 만든 Spinner 들
+   - Plane, Chase, Bounce, Wave, Pulse, Flow, Swing, Circle, Circle Fade, Grid, Fold, Wander
+"
+"https://news.hada.io/topic?id=3288","DwarFS - 높은 압축률의 읽기 전용 파일시스템 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      DwarFS - 높은 압축률의 읽기 전용 파일시스템
+
+   - 중복된 데이터에 대해서 높은 압축률을 달성하는걸 목표
+   - SquashFS(리눅스 배포본에서 많이 사용하는 읽기전용 파일시스템) 보다 압축이 우수하고 파일 시스템 구축속도가 4배 빠름
+   - 파일 접근 속도가 빠르고 CPU도 적게 사용
+   - 유사성 해쉬함수를 사용한 파일 클러스터링
+   - 압축해제된 파일시스템 크기를 줄이기 위한 블록단위 세그먼트 분석. 압축된 파일시스템 사용시 메모리가 절약되어 캐시에 더 많은 데이터를 저장할수 있게되고 잠재적으로 더 높은 캐쉬 적중율을 보임
+   - 파일 시스템 생성 도구 및 FUSE 드라이버 모두에 고도의 다중 스레드 구현
+   - 커스텀 필터링 및 정렬 기능을 위해 Lua 지원
+
+   개발자는 수천개의 Perl 설치본 때문에 용량을 많이 먹어서 시작했다고 하는데.. (왜 그게 필요한지는 저도 잘..)
+   중복 파일이 많은 도커 이미지 / npm 저장소 용으로 쓰면 딱일듯한 파일 시스템 이네요
+"
+"https://news.hada.io/topic?id=3262","스타트업/인디개발자가 Reddit을 활용하는 법","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       스타트업/인디개발자가 Reddit을 활용하는 법
+
+   - 아이디어 검증 : 개발전부터 먼저 아이디어 던져보고 피드백 받기.
+   ㅤ→ /r/webdev
+   - 초기 사용자 모집 : MVP 완성후 타겟이 일치하는 작은 서브레딧에 공개
+   ㅤ→ NoCode도구를 만들었다면 /r/startups(51만명) 보다는 /r/nocode(3700명) 그룹이 더 피드백 받거나 사용자 모집이 쉬움
+   - 트래픽 끌어내기 : 제품에 대한 콘텐츠를 만들기
+   ㅤ→ 제품에 대한 비밀스런 정보들, 성장시킨 법, 상세한 사용자 통계, 돈을 얼마나 버는지 등등의 정보를 정리
+   ㅤ→ 사용자 많은 /r/Entrepreneur, /r/Programming, /r/Marketing 같은 곳에 공개
+   ㅤ→ 각 서브레딧의 룰은 꼭 체크하고, 글 마지막에 제품/블로그 링크 넣을 것
+
+   어제 올린 "" 무료 일러스트 공개해서 하루만에 15만뷰 받기 https://news.hada.io/topic?id=3255 "" 글과도 연결되는 글이네요.
+"
+"https://news.hada.io/topic?id=3355","M1 맥에서 FFmpeg 빌드하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           M1 맥에서 FFmpeg 빌드하기
+
+   몇 시간의 고생 끝에 M1 맥에서 성공적으로 arm64 네이티브 FFmpeg를 빌드 했습니다. 빌드 스크립트를 올려두었으니 필요하신 분은 확인하시면 됩니다.
+
+   빌드 시간은 얼마나 걸리는지 궁금하군요.
+
+   같은 옵션에 arch만 x86_64로 바꾸고 인텔 맥북 프로 16인치(i7-9750H)에서 165초 걸렸네요.
+
+   디펜던시 빌드 시간 제외 (외부 라이브러리 빌드도 인텔과 비교 불가능할 정도로 훨씬 빠릅니다)
+   제 M1 맥 미니에서 다음 옵션으로 약 70초 걸렸습니다.
+   --prefix=/Users/ssut/dev/ffmpeg-build/workdir/sw --extra-cflags=-fno-stack-check --arch=arm64 --cc=/usr/bin/clang --enable-fontconfig --enable-gpl --enable-libopus --enable-libtheora --enable-libvorbis --enable-libmp3lame --enable-libass --enable-libfreetype --enable-libx264 --enable-libx265 --enable-libvpx --enable-libaom --enable-libvidstab --enable-libsnappy --enable-version3 --pkg-config-flags=--static --disable-ffplay --enable-postproc --enable-nonfree --enable-runtime-cpudetect
+
+   이제 정말 맥북만 오면.... 다 해볼 수 있겠군여! 'ㅁ'! 감사합니당!
+"
+"https://news.hada.io/topic?id=3312","DuckDB - Embedded OLAP DB 오픈소스","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     DuckDB - Embedded OLAP DB 오픈소스
+
+   ""SQLite for Analytics""
+   - 복잡한 분석쿼리에 최적화된 임베디드 RDBMS
+   - C++11로 작성된 의존성 없는 싱글 바이너리로 호스트 프로세스내에서 실행
+   - Python/R/Java/C/C++/Node.js API 제공
+   - SQLite 처럼 한개의 파일에 DB저장
+   - 적합한 Usecase
+   ㅤ→ CSV/Parquet 등의 tabular 데이터 처리 및 저장
+   ㅤ→ 여러 큰 테이블들을 Join & Agggreate 하는 인터랙티브 데이터 분석
+   ㅤ→ 여러개의 대형 테이블에 동시에 큰 변경을 할 때 (여러 줄을 추가 또는 컬럼 추가/삭제/변경 등)
+
+   임베디드 DB에서 OLTP는 SQlite, OLAP는 DuckDB 로 양분하는 걸 목표로 하는듯 한데
+   20년전에 나와서 이젠 임베디드 쪽은 장악해 버린 SQLite 와는 달리 0.1 나온지 1년반 정도 밖에 안된 신참 오픈소스 입니다. ^^
+   몇일 전에 node.js API가 새로 추가되어서 다양하게 쓰기 편해진 듯
+
+   볼때마다 느끼지만 OLTP 와 OLAP 의 차이를 명확히 모르겠어요. ㅠ.ㅠ 뭔가 속시원히 설명을 해주는 내용도 없는듯하고요.
+
+   맞아요 보통 접하는 설명이 트랜잭션이랑 분석(이름 그대로)이다보니 유명 RDB들은 넣고 빼는 것도 빠르고 분석 작업도 빠르잖아요. 예로 오라클이나 포스트그리가 어느쪽에 특화되었다 할 것이 딱히 없는데다가... 빅데이터 시대의 분석은 어차피 그런 녀석들에서는 이미 아득히 멀어져 있다는 느낌이 드는데 지금도 oltp olap 구분하는게 어떤 의미가 있는지 잘 모르겠다는 얘기였습니다 ^^;
+
+   OLTP는 넣고 빼고 지우고 등등에 특화
+   OLAP는 들어가 있는 놈들을 요리조리 만져서 분석하는것
+   정도로 보시면 어떨까요?
+
+   음.. 제가 설명하는 방식은
+   - OLTP 는 가로 : 한 줄 단위로 뭔가가 추가되는 것 (새로 주문이 들어옴)
+   - OLAP 는 세로 : 특정 컬럼 전체를 읽어서 계산하거나 변경하거나 하는 것 (일 매출 평균 계산)
+
+   OLTP는 가로
+   OLAP는 세로네요
+"
+"https://news.hada.io/topic?id=3238","1MB Club","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                1MB Club
+
+   전송 받는 모든 웹사이트 내용의 크기가 1MB 이하인 웹사이트들 모음
+   예)
+   - https://text.npr.org/
+   - https://lite.cnn.com/en
+   - https://craigslist.org/
+   - https://news.ycombinator.com/
+
+   긱뉴스도 웹 폰트때문에 조금 커지긴 하지만 506kb 로 1MB Club 범주내에 들어갑니다. ^^;
+"
+"https://news.hada.io/topic?id=3359","GitHub Universe 2020의 주요 신규 기능 정리","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   GitHub Universe 2020의 주요 신규 기능 정리
+
+   - 회사들도 GitHub 스폰서 후원 가능
+   - 다크모드
+   - PR 오토머지 설정 가능
+   - Discussions 기능이 모든 퍼블릭 Repo에 가능
+   - Dependency Graph를 통한 리뷰
+   - 워크플로우에 필수 리뷰어 지정 가능
+   - 워크플로우 시각화 지원
+   - GitHub Enterprise Server 3.0 발표 : Actions, Packages, CodeQL, 모바일 지원, Secret Scanning
+
+   다크모드 지원후에는 색맹들을 위한 접근성 지원 모드도 추가할 예정이라는 GitHub CEO의 트윗이 있었습니다.
+   - https://twitter.com/natfriedman/status/1330924323952091137
+"
+"https://news.hada.io/topic?id=3236","애플 HomePod, checkra1n으로 탈옥 되다","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     애플 HomePod, checkra1n으로 탈옥 되다
+
+   - 아이폰X 이후에 적용된 T2 보안 칩이 탈옥된 후에도 HomePod은 계속 해킹이 불가능했는데, 기본 탈옥을 성공
+   - HomePod에 2222 포트로 SSH 연결해서 superuser 로 로그인 됨
+   - 아직 일반 사용자용 탈옥도구까지는 먼 얘기지만, 애플외의 기기와는 잘 연결되지 않는 HomePod을 다목적 블투스피커로 사용할수 있는 가능성이 열림
+
+   해커들, 애플 보안칩 T2를 Jailbreak https://news.hada.io/topic?id=2944
+"
+"https://news.hada.io/topic?id=3263","MuscleWiki - 근육 부위별 운동 가이드 위키 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     MuscleWiki - 근육 부위별 운동 가이드 위키
+
+   - 남성/여성의 근육 부위별로 운동/스트레칭/바디웨이트/케틀벨 운동을 어떻게 하는지를 상세하게 정리
+   - 해부도에서 부위 클릭시
+   ㅤ→ 해부학적인 설명
+   ㅤ→ 운동하는 법 영상 : 짧은 GIF 형식 과 설명
+   ㅤ→ 사이트내에서 구글 자동번역으로 한국어도 지원
+
+   이런 좋은 자료는 도대체
+   어디서 검색해서 가져 오는것 입니까 !!
+   세상엔(?) 좋은 사람들이 많네요.
+   감사합니다.
+
+   ㅎㅎ 고맙습니다. 기본적으로는 https://xguru.net/2222 에 있는 각종 뉴스레터에서 가져옵니다~
+"
+"https://news.hada.io/topic?id=3296","AWS re:Invent 2020의 주요 발표들","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       AWS re:Invent 2020의 주요 발표들
+
+   EC2
+   - mac : 맥 인스턴스
+   - G4ad : AMD GPU 기반 인스턴스
+   - D3/D3en : 고밀도(Dense) 스토리지 인스턴스
+   - R5b : 3배의 EBS성능 제공하는 메모리 최적화 인스턴스
+   Lambda
+   - 100ms 에서 1ms 단위 빌링으로 변경. 최소 실행시간 없음
+   - Container 이미지 지원 : 최대 10GB, 베이스 이미지(파이썬,Node,Java,.NET,Go,Ruby)제공.
+   Container
+   - EKS Distro : EKS 클러스터를 원하는 곳에 설치
+   - ECR Public : 공개 컨테이너 레지스트리
+   - AWS Proton : 컨테이너 및 서버리스 배포를 관리 자동화 도구
+   Customer Engagement
+   - Amazon Connect : 클라우드 컨택센터(2017) 개선
+   ㅤ→ Contact Lens Real Time : 머신러닝을 이용해서 실시간으로 인사이트를 도출하는
+   ㅤ→ Connect Wisdom : 지식 검색 & 추천. 써드파티 연결 지원(Salesforce, ServiceNow 등)
+   ㅤ→ Connect Voice ID : 음성 화자인식
+   ㅤ→ Connect Customer Profile : 고객 프로필 연계
+   ㅤ→ Connect Tasks : 업무 자동화
+   Database
+   - Amazon QuickSight : 자연언어 쿼리(Natural Language Query) 추가
+   - EBS io2 Volume : 100x higher durability and 10x more IOPS/GiB than io1
+   - EBS gp3 Volume : 고성능 SSD 볼륨. gp2보다 20% 저렴
+   Front-end Web and Mobile Development
+   - AWS Amplify Admin UI : 더 쉬운 앱 백엔드 개발
+   Machine Learning
+   - Amazon DevOps Guru : 자동으로 운영 문제를 찾고 해결책을 추천해주는 도구
+   - Amazon Lookout : 장비의 센서데이터 분석을 통해서 장비의 이상을 감지해주는 서비스
+   - Amazon Lookout for Vision : 비젼 기술로 제품의 결함을 판별하여 주는 서비스
+   - AWS Panorama Appliance : 카메라를 통해 제품 생산 품질, 공장 프로세스 모니터링 등을 가능하게 해주는 하드웨어 장비
+   - Amazon Monitron : 간단하고 효율적인 장비 컨디션 모니터링
+   Storage
+   - S3 Multi-Destination Replication : 여러 데스티네이션으로 복제 지원
+   - S3 is Now Strongly Consistent : 모든 리젼/모든 S3개체에 바로 적용되고, 추가 비용 없음
+
+   - AWS Amplify 서비스는 구글의 Firebase와 비슷한 서비스로 아래 데모를 보시면 쉽게 이해할 수 있습니다.
+   React로 정적페이지를 만들어 CLI로 쉽게 호스팅하고 백엔드도 서버리스로 쉽게 구성해서 현대적인 아키텍쳐로 애플리케이션을 개발하고 운영가능합니다.
+   https://youtu.be/GiYG57uMmxM
+   - AWS Amplify Admin UI를 사용하면 Firebase 콘솔처럼 Web UI를 사용해서 백엔드를 생성하고 관리할 수 있습니다.
+   https://www.youtube.com/watch?v=iabegXf05DE
+"
+"https://news.hada.io/topic?id=3243","iOS App을 M1 mac에서 실행하기 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         iOS App을 M1 mac에서 실행하기
+
+   - iMazing이라는 mac App으로 iOS App의 실행 파일(.ipa)를 추출 가능
+   - 추출한 ipa 파일은 M1 mac에서 실행 가능
+   - iOS 기기와 mac은 동일한 Apple ID로 로그인 되어 있어야 함
+
+   iOS와 macOS에서 동시에 지원 중인 App이라면, https://news.hada.io/topic?id=3239 을 기다리지 않고 바로 사용도 가능할 것 같습니다. :D
+"
+"https://news.hada.io/topic?id=3335","Radicle - P2P 방식의 GitHub 대체제","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Radicle - P2P 방식의 GitHub 대체제
+
+   - 탈중앙화 방식 오픈소스 협업 개발 도구
+   ㅤ→ 중앙 서버가 없고, 코드에 대한 어떤 센서쉽도 없는 하나의 네트웍을 생성
+   - Git 을 확장한 Radicle Link 로 peer-to-peer 디스커버리
+   ㅤ→ 코드 저장 및 공유는 Git을 그대로 이용
+   - Upstream : 오픈소스 데스크탑용 클라이언트
+   ㅤ→ 맥/리눅스 지원
+   ㅤ→ 자신의 유니크한 디바이스 ID를 생성해줌
+   - 후원자/커뮤니티를 통한 비용 후원은 Ethereum을 이용해서 받도록 지원(예정)
+   차후 계획
+   - 2021년 초 : 이더리움 연동
+   - 2021년 중반 : 버그 리포팅, 코드 리뷰, 토론등의 코드협업 기능 제공(역시 모두 로컬에서 동작)
+   * 현재는 퍼블릭 레포만 가능, 프라이빗도 지원 예정
+"
+"https://news.hada.io/topic?id=3320","Game UI Database","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Game UI Database
+
+   - 325개의 게임과 11569장의 스크린샷이 등록된 게임 인터페이스 DB
+   - 장르,테마,2D/3D/Retro,GamePad/Mouse/Touch, 카메라 등으로 필터링
+   ㅤ→ 카메라 : First/Third Person, Isometric/Grid, Side View, TopDown
+   - 80+개 스크린타입 별 보기 : 인벤토리, 리더보드, 튜토리얼, 팝업메뉴, 상점, 미션로그, HUD 등
+   - 질감 및 패턴 별 보기 : 나무, 종이, 하프톤, 잉크&페인트 등
+
+   비슷하지만 조금 다른, 스크린 샷 및 동영상으로 볼 수 있는 사이트도 있습니다.
+   - Interface in Game - 게임 인터페이스 모음 https://news.hada.io/topic?id=1981
+   두개 사이트를 같이 보면 좋을 듯. ""Assassin's Creed : Origins"" 페이지 비교
+   - https://www.gameuidatabase.com/gameData.php?id=184
+   - https://interfaceingame.com/games/assassins-creed-origins/
+"
+"https://news.hada.io/topic?id=3305","구글 지도, 커뮤니티 피드 기능 추가","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          구글 지도, 커뮤니티 피드 기능 추가
+
+   - 탐색 탭에서 지역소식/추천 을 보는 기능
+   - 최신 리뷰, 사진, 지역 전문가, 로컬 소식지들이 올린 글을 페이스북의 뉴스피드 처럼 보고, 좋아요를 누를 수 있게 됨
+   ㅤ→ 사람/장소 등을 팔로우 하는 것도 가능
+   ㅤ→ 해당 비즈니스 소유자(프로필을 만든)와 대화 가능 : 페이스북 비즈니스 페이지와 비슷
+
+   구글이 지역 가이드(Local Guide) 서비스를 꽤 오래 잘 유지 하고 있는데, 이들한테 SNS같은 기능을 만들어줬네요.
+   남긴 리뷰/사진들로 좋아요를 많이 받거나, 각 가게에 대한 답변을 남기면 레벨도 올라가고 하면서 소소한 보상도 줍니다.
+   구글답지 않게 Gamification 이 잘 된 서비스에요.
+   - Local Guides Connect - 공식 커뮤니티 : https://www.localguidesconnect.com/
+   - 자신의 가이드 홈 : https://maps.google.com/localguides/home
+"
+"https://news.hada.io/topic?id=3316","개발자 입장에서 가볍게 써보는 M1 맥 미니 사용기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      개발자 입장에서 가볍게 써보는 M1 맥 미니 사용기
+
+   지난주 토요일에 M1 맥 미니를 받고 일주일간 짧게 사용해본 경험을 나눠봅니다.
+
+   애플이 대단하긴 하네요.. 짧은시간에 진짜 많은 소프트웨어가 대응되고..
+
+   우와 화면 전환 시 반짝이지도 않는 것이 놀랍네요
+   좋은 내용 감사합니다!
+
+   제 맥북 프로는 일본에서 열심히 건너오고 있습니다. 이런 글 볼때마다 계속 배송현황을 보게 되네여 ㅋㅋㅋ
+
+   저도 기다리는 동안 힘들어 죽는 줄 알았습니다. ㅎㅎㅎ 기다린 보람이 분명 있을 거예요!
+
+   후후.. 한가지 소소한 소망이 있다면 제가 도착할 때쯤에는 딱 Jetbrain 사에서 실리콘 최적화를 끝내줬으면 좋겠네여 ㅋㅋㅋ. Notion도 어제인가 대응해줬는데, 부디 오기 전까지만 와줬으면 좋겠네요.
+
+   Notion, Slack, Discord 등. 요즘 앱 대부분이 Electron 기반이다보니 대응이 빠른 것 같습니다. Jetbrains 쪽도 보니까 이미 구동은 성공했더라고요.
+
+   첫 세대 제품은 거르는 거랬는데… 걸러야 하는데… (내적 갈등 심화)
+
+   이번 제품은 안 거르셔도 될 것 같습니다. :) 솔직히 여기서 더 올라갈 성능, 더 개선될 전성비가 있나 싶을 정도로 완벽한 것 같습니다.
+
+   정말 다양하게 써보시고 분석해주셨네요. 사고 싶게 만드는 글입니다 ㅎㅎ
+
+   감사합니다. 오늘 일어나서 보니 정말 두서없이 의식의 흐름대로 적은 게 눈에 띄네요 ㅎㅎ
+
+   우아..재밌게 잘 읽었습니다
+   정말 하나 질러야겠습니다
+
+   저도 못 참고 넘어갔네요. 주문하니 12/30 이후에 온다고.. ㅠ
+
+   부러워여~
+"
+"https://news.hada.io/topic?id=3307","maddy - 올인원 메일 서버 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           maddy - 올인원 메일 서버
+
+   - SMTP(송신 MTA, 수신 MX), IMAP, DKIM, SPF, DMARC, DANE, MTA-STS 등의 주요 이메일 기능을 다 묶어서 구현한 메일 서버
+   - 기존 Postfix, Dovecot, OpenDKIM, OpenSPF, OpenDMARC 등 여러 오픈소스들을 대체해서 한개의 설정으로 관리 가능
+   - Go로 작성된 오픈소스
+   * DKIM : DomainKeys Identified Mail
+   * SPF : Sender Policy Framework
+   * DMARC : Domain-based Message Authentication, Reporting & Conformance
+   * DANE : DNS-based Authentication of Named Entities
+   * MTA-STS : RFC 8461 - SMTP MTA Strict Transport Security
+   * IMAP 저장소는 아직 베타, 안정적으로 사용하려면 Dovecot 을 사용하는 걸 추천
+
+   도커도 그렇고 go로 만들어지는 오픈소스들이 많은것 같아요
+
+   아무래도 의존성없는 하나의 바이너리가 만들어지는게 이런 편리성을 내세운 도구들에는 잘 맞는것 같아요.
+
+   자신의 서비스에서 이메일을 기능으로 제공해줘야 할때 쓸만하겠네요.
+   docker-mailserver 와 rainloop-webmail 로 개인용 메일 서버를 만들었던 글도 참고하세요.
+   - 개인용 이메일 서비스 만들기 삽질기 https://news.hada.io/topic?id=2302
+"
+"https://news.hada.io/topic?id=3281","Ubuntu Web Remix","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Ubuntu Web Remix
+
+   - 개인정보 보호에 중점을 둔 구글 크롬 OS/크로미엄 OS의 오픈소스 대체제
+   - 크롬 대신 Firefox 를 사용
+   - 웹앱을 쉽게 설치하기 위한 wapp 포맷을 생성, 누구나 패키징해서 배포 가능
+   - wapp용 앱스토어 http://store.ubuntuweb.co/ 공개
+   - /e/ 클라우드 서비스와 기본 연동 : https://e.foundation/
+   - 실험적이지만 Anbox 를 내장해서 안드로이드 앱도 실행 가능
+   - Raspberry Pi 4 용도 출시 예정
+   - 현재는 크롬OS와 비슷하게 부팅시간 2초
+"
+"https://news.hada.io/topic?id=3317","Alacritty - GPU 가속되는 터미널 에뮬레이터","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Alacritty - GPU 가속되는 터미널 에뮬레이터
+
+   - 성능에 중점을 둔 터미널 오픈소스
+   - 윈도우/맥/리눅스
+   - vi 모드 지원 : ctrl+shift+space
+   ㅤ→ 화면 이동 및 명령어 입력등의 단축키 사용 가능
+   ㅤ→ 커서 움직임은 기본적으로 vi 방식을 따르지만 개인화 가능
+   ㅤ→ v키를 눌러서 글자 선택을 시작하고 y키로 클립보드에 복사 가능.
+   ㅤㅤalt-v 단어단위 선택, shift-v 라인선택, ctrl-v 블록선택
+   ㅤ→ URL에서 엔터쳐서 열기 가능 (어떤 앱으로 열건지 설정 가능)
+   - 스크롤 버퍼의 내용 검색 지원 : ctrl+shift+f , ctrl+shift+b(뒤로)
+
+   Windows Terminal도 GPU 가속을 쓰는데, 쉐이더를 프로그래밍해서 멋진 스킨들을 만들 수 있게 해뒀더라고요. 이것도 비슷한 기능이 있는지 궁금하네요.
+"
+"https://news.hada.io/topic?id=3343","Netlify에서 접근성 테스트하는 방법","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Netlify에서 접근성 테스트하는 방법
+
+   Netlify 프런트엔드 팀은 새로운 제품을 만들 때,
+   항상 유저가 접근할 수 있는 걸 최우선으로 하는 데,
+   Netlify 프런트엔드 팀이 어떻게 접근성을 테스트하는가에 대한 글입니다.
+   표준 템플릿을 마련해두고,
+   storybook-addon-a11y 를 활용하고 있네요.
+   storybook을 적극적으로 사용하는 조직이 많아지는 듯 합니다.
+"
+"https://news.hada.io/topic?id=3234","SVGBox - API for Web Icons","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       SVGBox - API for Web Icons
+
+   - img 태그에서 직접 사용 가능한 SVG 아이콘들 2500개
+   ㅤ→ Material UI, 소셜/웹/앱 아이콘, 로딩 애니메이션, Heroicons, 국기
+   - Cloudflare CDN 으로 제공되어 어디에서나 무료로 빠르게 사용 가능
+   - Fill Color 지정 가능 : Hex,RGB,HSL,Tailwind Pallete,HTML5 Common Color 로 지정
+"
+"https://news.hada.io/topic?id=3261","Salesforce가 Slack 인수 협상을 진행중","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Salesforce가 Slack 인수 협상을 진행중
+
+   - 시총 18조원($17B) 보다 높은 가치로 논의가 되고 있다는 WSJ의 기사
+   - 뉴스 이후 슬랙 주가는 장외에서 37% 상승해서 $22.5B, 실제로 인수가 진행되면 25조원 이상이 필요할 듯
+   - 올해 60% 주가가 오른 세일즈포스는 현재 시총 250조원(뉴스 이후 5% 하락)
+   ㅤ→ 2019년 Tableau를 16조원 정도에 인수한 이후 가장 큰 인수가 될 듯
+   - MS가 2016년에 Slack을 $8B에 인수하려고 했으나 (빌게이츠의 반대로) 실패하고 Teams에 집중
+   - 세일즈포스는 이미 내부에 5만명의 직원대상으로 Slack을 도입해서 사용중
+
+   슬랙 주가가 37%나 상승하긴 했지만, 3월초 주가와 비교해서는 10% 밖에 안 오른것입니다.
+   3월초 대비 현재 Zoom 의 주가는 280% 올랐거든요.
+   슬랙이 업무용 소프트웨어 시장에서 아주 힙하진 않은 상태이기 때문에, 저 딜이 성사되지 않을까 생각도 듭니다.
+   Microsoft Teams is now officially bigger than Slack https://news.hada.io/topic?id=73
+   Slack, EU에 MS Teams를 경쟁법(반독점법) 위반으로 신고 https://news.hada.io/topic?id=2512
+
+   저희는 회사에서 팀즈를 쓰는데요(팀즈 긱뉴스 봇 기다립니다 흐흐)
+   팀즈가 어떻게 이렇게 많은 기능을 짧은 시간에 제공했나 놀라웠는데, 사용해보니 뒷단은 SharePoint 가 제공하는 부분이 많은 것 같아요. 뭔가 기능 사용하다가 항목의 링크 복사하기를 눌러보면 SharePoint 사이트가 주소가 나오고 그 링크로 웹브라우저에서 접근하면 진짜 쉐어포인트 사이트가 나오는 기능들이 좀 있거든요.
+   사실 이전에는 SharePoint 를 협업용으로 사내에서 몇년간 사용한 적도 있어서 반갑기도 하면서, 팀즈가 아직은 약간 얼기설기 부족한 부분을 노출하는 것들도 있어서 아쉽기도 하고 그렇네요.
+"
+"https://news.hada.io/topic?id=3342","Apple AirPods Max 출시","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Apple AirPods Max 출시
+
+   국내 정발가는 71.9만원입니다...
+
+   어제 주문한 건 당일날 온다고 적혀있었는데, 오늘은 12~16주후에 온다고 알려주네요. 도대체 얼마나 팔린거지 =ㅁ=..
+
+   헐.. 예상보다 훨씬 많이 팔렸나 보네요.
+
+   와우~ 역시 가격이~ 그래도 멋지긴 합니다. 제가 헤드폰 타입이 아니긴 해서 그렇지~~
+
+   무선 이어폰 시장도 소비자의 가격 저항을 무너트렸던 애플인데.. 과연 무선 헤드폰도 똑같이 통할까는 모르겠습니다.
+
+   를 알아보기 위해 직구를 했습니다(...)
+
+   멋지십니다. 전 QC35가 고장나면 그때쯤에나..
+
+   (-_-)=b
+
+   하이파이 오버이어 헤드폰
+   - 맞춤형 어쿠스틱 디자인
+   - H1칩, 그리고 컴퓨테이셔널 오디오를 파워할 첨단 소프트웨어를 조합해
+   ㅤ→ 적응형 EQ
+   ㅤ→ 액티브 노이즈 캔슬링
+   ㅤ→ 주변음 허용 모드
+   ㅤ→ 공간 음향을 갖춘 획기적인 청음 경험을 구현
+   - AirPods Max는 광학 및 위치 센서를 이용해 사용자의 머리에 착용된 상태를 자동 감지.
+   ㅤ→ 착용 상태가 되면, AirPods Max는 오디오를 재생
+   ㅤ→ 벗거나 사용자가 한쪽 이어컵을 간단히 들어올리면 일시 정지
+   - 20시간 재생
+"
+"https://news.hada.io/topic?id=3280","MS, 안드로이드 앱을 윈도우10에서 실행하게 개발중이라는 소문","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  MS, 안드로이드 앱을 윈도우10에서 실행하게 개발중이라는 소문
+
+   - ""Project Latte""
+   - WSL(Windows Subsystem for Linux) 과 비슷한 방식으로 가상화
+   - 앱개발자가 큰 변경없이 패키징해서 MS Store에 등록까지 가능할 것으로 예상된다고
+   - 그래픽이 가장 큰 걸림돌인데 Wayland를 활용한 WSL-G가 나오면 가능해 질 것
+   - MS에 문의했으나 노코멘트
+"
+"https://news.hada.io/topic?id=3255","무료 일러스트 공개해서 하루만에 15만뷰 받기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       무료 일러스트 공개해서 하루만에 15만뷰 받기
+
+   - ProductHunt가 아니라 Reddit에 올린게 큰 성공
+   - 특히 r/InternetIsBeautiful 서브레딧은 방문자가 1500만명이 넘고, 링크만 올리는 것도 가능하며 사람들도 우호적임
+   - 유행어나 마케팅 문구 없이 ""I made .."" 라고 표현한게 잘 바이럴 됨
+   ㅤ→ ""I made 100 high-quality illlustrations, totally free. Will continue to add a new one each day. Use it anywhere without attribution""
+   ㅤ→ 24400개의 업보트, 700개의 코멘트, 147000뷰
+
+   무료 일러스트 Scale by Flexiple : https://2.flexiple.com/scale/all-illustrations
+   뭔가를 공개하는데 ProductHunt가 가장 좋은 것 같지만, Reddit 도 서브레딧을 잘 찾으면 훌륭하다는 거네요.
+   완전히 무료인데 얘네가 얻는건 뭘까요?
+   이 Flexiple은 프리랜서 디자이너/개발자를 고용하는걸 도와주는 웹사이트 입니다.
+   이렇게해서 사람들의 트랙션을 만들어 내는거죠. 들어갔다가 여긴 뭐지? 하고 저처럼 홈화면을 한번이라도 보게될테니까요.
+   제가 긱뉴스에 해외 바이럴 사례를 계속 찾아서 올리는건..
+   국내에서도 해외에 이렇게 디자인/오픈소스/서비스를 만들어서 공개하는 성공 사례가 많아졌으면 해서입니다. ^^;
+   Redddit 을 잘 쓴 사례로 아래 글도 참고하세요
+   - 무명 게임을 바이럴하기 : Spellbreak의 성장 교훈 https://news.hada.io/topic?id=2794
+   ㅤ→ Reddit을 메인으로 활용한 건 아니지만, Reddit 같은 high upside channel 에 대해서 이야기 합니다.
+   ㅤ→ 이 SpellBreak 의 발표자료는 제가 긱뉴스 팟캐스트에서 슬라이드 하나씩 설명한 것도 있으니 같이 보시면 좋습니다.
+   ㅤ→ https://news.hada.io/podcast/…
+   새로운 콘텐츠 아이디어를 찾는 방법들 https://news.hada.io/topic?id=2888
+   - 이 글의 3번째 항목에서도, Reddit 을 활용하는 방법을 얘기합니다.
+"
+"https://news.hada.io/topic?id=3348","AutoML을 이용한 이미지 분류모델 파이프라인 생성","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     AutoML을 이용한 이미지 분류모델 파이프라인 생성
+
+   - 당근마켓이 “중고거래와 관련 없는” 혹은 “선정적인” 사진인지 판단하기 위해 이미지 인식 모델을 개발
+   - Google Cloud AutoML Vision Edge 를 사용
+   ㅤ→ WebUI에서 기본적인 이미리 라벨링 기능 제공
+   ㅤ→ 중복 사진을 자동으로 필터링
+   ㅤ→ 훌륭한 모델 Evaluation UI
+   - 데이터셋 만들기 전략 : 운영부서 협업, 키워드 검색, 유사 이미지, 유사 게시글 활용
+   - 만들어진 모델을 서버와 클라이언트 배포 : TF Serving AWS EKS & TF Lite
+   - 파이프라인 자동화 : Kubeflow
+   ""이번엔 이미지 분류 모델만 AutoML을 적용 했지만,
+   서비스에 필요한 다른 종류의 모델이 AutoML로 제공 된다면 기꺼이 사용하고 싶습니다.
+   모델 개발이 자동화된 점도 좋았지만 “데이터 전처리”, “모델 평가”, “모델 배포” 단계에서 어떤 코딩도 필요 없다는게 정말 편하다고 생각했습니다.
+   파이프라인 코드 외에 작성한 코드가 거의 없기 때문에, 유지보수 업무도 최소화 되었습니다.""
+"
+"https://news.hada.io/topic?id=3356","팀튜링(김국현님) 인공지능 소개 만화 1~10화","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       팀튜링(김국현님) 인공지능 소개 만화 1~10화
+
+   김국현님이 KDI에서 인공지능에 대한 만화를 연재하고 계셨네요.
+   현재 10화까지 나와 있는데, 내용이 괜찮은 것 같아 링크를 공유해 봅니다.
+   목차는 다음과 같습니다:
+   제1화. 계산과 기호, 그리고 알고리즘
+   제2화. 신경의 네트워크, 그리고 함수
+   제3화. 기호와 연결, 그리고 집념
+   제4화. 표현과 특징, 그리고 딥러닝
+   제5화. 개념의 기억과 역전파
+   제6화. 눈의 탄생, 그리고 CNN
+   제7화. 인식에서 행동으로. 강화학습
+   제8화. 듣고 말하는 일에 관하여
+   제9화. 창작하는 인공지능, LSTM에서 GAN까지
+   제10화. 인공지능 이후의 세계 - SOTA 트랜스포머를 넘어서
+
+   와 좋네요. 링크 고맙습니다~! 아마도 10화가 끝인듯 하네요.
+   계간지인 e경제정보리뷰 의 올해 3호 주제가 ""인공지능"" 이라
+   거기에 특집으로 1~10화로 나뉘어 들어간듯 합니다.
+   https://eiec.kdi.re.kr/publish/reviewMain.do?ridx=4
+"
+"https://news.hada.io/topic?id=3318","크롬 88 변경사항","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               크롬 88 변경사항
+
+   - Digital Goods API 지원 : 웹앱에서 인앱결제용 디지털 상품을 조회/구매/내역 관리
+   ㅤ→ Android Play Billing API와 연결
+   - target=_blank 가 rel=noopener 로 기본 동작
+   - 폼 컨트롤과 스크롤바에 다크모드 지원
+   - addEventListener()에 AbortSignal 옵션 추가 → 이벤트 unsub 가능
+   - CSS aspect-ratio thrtjd cnrk
+   - CSS :not()에 복합 셀렉터 가능 → :not(.a + .b .c)
+   - V8 8.8 적용 : SharedArrayBuffer, Atomics 추가
+   - FTP, Web Components v0 제거
+   - 크롬88은 2020/12/3 현재 베타 버전 - https://www.chromestatus.com/features#milestone%3D88
+
+   아 webcomponents v0제거라니... chrome://downloads도 쓰는것 같았는데;;;
+"
+"https://news.hada.io/topic?id=3241","Docker에서 Podman으로 전환하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Docker에서 Podman으로 전환하기
+
+   - Podman : RedHat이 만든 리눅스용 Docker 대체제
+   ㅤ→ 데몬이 없는 OCI 컨테이너 도구 : 커널에 직접 컨테이너를 실행해서 데몬과 상관없이 독립적으로 운영가능
+   - 도커와 CLI 수준에서 호환 가능 : alias docker=podman
+   ㅤ→ 도커 이미지도 그대로 사용 가능
+
+   fedora desktop 에서 docker 보다 가볍게 돌아갈 것 같아서 썼는데
+   volume 을 사용하면 permission 문제로 non super user로 제대로 사용하기가 어렵더라구요..
+   결국 moby-engine 을 사용중이긴 합니다만 확실히 아직 커뮤니티나 문서가 부족한 느낌입니다.
+
+   redhat 이 늦게나마 정신차려서 만들고는 있긴한데 고민이긴하네요.. 실사용으로 하기에는 음..
+
+   Podman : https://podman.io/
+   Podman 설치 및 사용법 [한글] : https://chhanz.github.io/container/2020/03/02/podman/
+   Centos8 & Centos7 컨테이너 비교 (Podman & Docker) : https://blog.naver.com/tkdldjs35/221977555582
+
+   https://reddit.com/r/docker/…
+   차이점을 검색하다 보니 몇 달 전 글이긴 한데 overlayfs 를 지원하지 않는다는 게 docker-compose 보다 더 근본적인 문제가 될 수 있는 부분일 것 같긴 하네요.
+   근데 docker 이미지를 그대로 사용하는데 overlayfs 를 못쓴다는게 무슨 말인가.. 싶어요. 이미지의 레이어 구조와 overlayfs 같은 스토리지 구조는 서로 독립적인 것인가 싶기도 하네요.
+
+   링크해주신 네이버 블로그 포스트 내용 중에 docker-compose 대체제가 아직 podman 쪽에는 없다는 내용이 있네요. 그러면 좀 치명적인데? 라는 생각이 들어요.
+
+   아 지금은 podman-compose 프로젝트가 나름 열심히 개발 진행중에 있습니다.
+   https://github.com/containers/podman-compose
+"
+"https://news.hada.io/topic?id=3257","MS의 Pluton 보안칩, 인텔/AMD/퀄컴에 도입 예정","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    MS의 Pluton 보안칩, 인텔/AMD/퀄컴에 도입 예정
+
+   - Xbox와 Azure Sphere에 이미 도입된 플루톤 칩은 TPM(Trusted Platform Module)과 같은 풀스택 Chip-to-Cloud 보안기능을 제공
+   - TPM이 CPU와 별도로 있기 때문에 공격가능한 점을 없애기 위해 SoC에 내장
+   - 또한, TPM의 슈퍼셋으로 Secure HArdware Cryptography Key (SHACK) 같이 보안키가 하드웨어 외부로 전혀 노출되지 않는 기술이나, Project Cerberus 처럼 하드웨어 RoT(Root of Trust) 등도 가능해질 예정
+   - 이는 최근 M1칩 안에 내장되어버린 애플의 T2 보안칩과 비슷한 행보
+
+   Pluton 에 대한 자세한 소개 https://azure.microsoft.com/en-us/blog/anatomy-of-a-secured-mcu/
+"
+"https://news.hada.io/topic?id=3294","아마존, EC2 Mac 인스턴스 발표","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          아마존, EC2 Mac 인스턴스 발표
+
+   - 맥 미니 와 AWS Nitro를 결합, EC2위에서 macOS/iOS/iPadOS/tvOS/watchOS/Safari 용 앱의 빌드/테스트/패키징을 지원
+   - 8세대 6코어 인텔 i7(커피레이크) 32GB 장비를 사용하는 Dedicated Host
+   - M1 장비는 이미 작업중이고, 2021년에 도입 예정
+   - VPC 내부에서 실행. ENA(Elastic Network Adapter) 제공
+   - macOS 10.14(Mojave) 와 10.15(Catalina) 를 SSH / VNC로 접속 지원
+   - EC2 Mac AMI 는 ENA Driver, AWS CLI, CloudWatch Agent, CloudFormation 스크립트 등을 기본 내장해서 EC2에 최적화
+   ㅤ→ 그냥 이용하거나, 커스터마이즈 가능 ( Homebrew-AWS Repo https://github.com/aws/homebrew-aws 참고 )
+
+   이야 틈새 시장처럼 맥 코로케이션 해주는 서비스들도 있는데 아마존이 여기까지 들어왔군요! 가격은 왠지 비쌀듯한 걱정이 되네요.
+
+   기본 가격이 시간당 $1.083 이어서 1년하면 $9,487 이네요.
+   세이빙플랜 하면 한 27~8% 할인해주긴 할텐데 그래도 비싸긴 하네요.
+   MacStadium 이 싱글 맥 미니 한대가 듀얼코어 i5에 8GB램 이긴 하지만 월 $59 부터고,
+   EC2 사양과 비슷한 32GB i7 6코어는 월 $139 정도 합니다.
+   https://www.macstadium.com/pricing
+"
+"https://news.hada.io/topic?id=3333","모던 JavaScript 튜토리얼 [한국어]","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        모던 JavaScript 튜토리얼 [한국어]
+
+   상세한 설명과 함께 JavaScript 기본~고급 개념을 다루는 가이드
+   파트1. 프로그래밍 언어로서의 JS (호스트 환경에 종속되지 않는 Core JS)
+   ㅤ→ 기본, 코드품질, 객체, 자료구조와 자료형, 함수, 프로토타입, 클래스, 에러핸들링, 프라미스와 async/wait, 제너레이터, 모듈..
+   파트2. 브라우저에서 동작하는 JS (페이지를 다루는 방법)
+   ㅤ→ 문서, 이벤트 기초, UI 이벤트, 폼과 컨트롤, 문서와 리소스 로딩..
+   파트3. 추가 주제
+   ㅤ→ 프레임과 윈도우, 바이너리 파일, 네트워크 요청, 쿠키와 저장소, 애니메이션, 웹컴포넌트, 정규 표현식
+   * 현재 67% 번역이 완료되었고, 번역에 참여 가능 https://github.com/javascript-tutorial/ko.javascript.info#readme
+
+   앗 이 사이트가 그동안 여기에 소개가 안되었었나요?! 꽤 유명하다고 생각했는데
+   좋은 사이트 소개 감사합니다 :)
+"
+"https://news.hada.io/topic?id=3303","gping - 그래프가 내장된 ping","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         gping - 그래프가 내장된 ping
+
+   - 서버의 ping 시간을 그래프로 그려주는 오픈소스 유틸리티
+   - 여러대의 서버를 지정하면 비교해서 그리기 가능
+   - -b 옵션으로 표시할 핑단위 지정. 기본값은 100
+   - Rust 코드. 윈/맥/리눅스 지원
+   > gping google.com facebook.com
+"
+"https://news.hada.io/topic?id=3251","Mozilla - Privacy Not Included","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Mozilla - Privacy Not Included
+
+   - 좀 더 안전한 제품을 살 수 있도록, 각 전자기기 및 제조사의 개인정보 보호 관련 정보를 제공하는 웹사이트
+   - 제품에 대한 기본 정보/가격과 함께 혹시나 잘 못 되었을 경우 생길수 있는 문제점들을 리스팅
+   - ⚠ 아이콘이 있는 제품은 주의해서 구매해야함
+   → 개인정보 보호 : 카메라/마이크/위치 정보
+   → 회원가입 필요 여부 : 이메일/전화번호/써드파티 계정
+   → 데이터 수집 여부 : 개인정보/생체정보/소셜
+   → 데이터 사용 용도
+   → 데이터 제어 가능 여부 : 삭제요청
+   → 제조사의 개인정보 관련 트랙레코드 : 평점과 개인정보 유출사고 내역등
+   → 오프라인 사용 가능 여부
+   → 개인정보 관련 문서들 링크
+   → Security - 이 제품이 모질라의 최소 보안 표준을 준수하는지 : 암호화/강력한 암호 요구/보안업데이트/취약점관리/개인정보 보호 정책
+   → AI 사용 여부
+   → AI가 개인정보를 사용해서 판단을 내리는지
+   → AI가 어떻게 동작하는지 회사가 볼수 있게 하는지 여부
+"
+"https://news.hada.io/topic?id=3275","애플 CPU의 트릭들 - 메모리 리오더링, JS지원, Ref 카운팅","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 애플 CPU의 트릭들 - 메모리 리오더링, JS지원, Ref 카운팅
+
+   1. 흑마법처럼 보이는 애플의 인텔코드 실행 속도는 기본적으로 Arm과 Intel 아키텍쳐의 결합
+   2. 두 CPU는 기본적으로 ""메모리 오더링""이 달라서 에뮬레이션 속도가 느린데, 애플이 한 해결책은 인텔의 방식도 넣어 버린 것. x86코드를 실행할때는 인텔의 메모리 오더링을 따르게 만듬
+   3. 자바스크립트 최적화된 명령어들을 추가하고, L1캐쉬를 두배로 함으로써 웹브라우징을 할때 더 빠르고 배터리가 오래가게 만듬
+   4. 인텔 맥북에어의 듀얼코어는 빠를때는 3.8Ghz 이고, 느린모드에서는 1.2Ghz로 동작해서 전력을 아꼈지만, 인텔은 다운클럭에서 실행되도록 설계한게 아님.
+   애플은 성능과 효율용 프로세서를 각각 4개씩 넣어서 최적화. 저전력모드에서는 성능 프로세서 4개를 끄고 효율 프로세서 만으로 동작.
+   컴파일 같은 작업을 할때는 4개의 프로세서 전부를 활용해서 정말 빠름.
+   5. 인텔이 무어의 법칙에서 3년 뒤쳐짐. 애플 실리콘은 TSMC의 최신 5나노 공정을 사용하는데, 인텔은 10나노/7나노 공정을 사용하고, 심지어 많은 인텔 제품들은 더 오래된 14/10나노 공정을 사용함 .
+   6. Swift 언어는 안드로이드의 ""가비지 콜렉션"" 대신, ""레퍼런스 카운팅""을 사용함. 애플은 레퍼런스 카운팅 속도를 두배로 올리기위해 CPU에 뭔가를 해뒀음.
+
+   왜 ARM칩엔 JavaScript 이름이 붙은 명령어가 있나요? https://news.hada.io/topic?id=3057
+
+   레퍼런스 카운팅이 가비지 콜렉션의 기본 인데... 뭔 소린지... 갑자기 신뢰도가 확...
+
+   관련해서 이런 얘기가 있네요.
+   https://twitter.com/catfish_man/status/1326238434235568128?s=21
+   단순 NSObject 를 Retain/Release 하는 속도 자체가 5배 빠르다고.
+   레퍼런스 카운팅하는 명령 자체도 메모리 오더링 구조 차이때문에, 더 빠르게 동작한다는 듯
+
+   Java에서는 대개 Reference Counting이 아니라 Mark-and-Sweep처럼 다른 스타일의 가비지 콜렉션을 쓰니까요.
+
+   어? 했는데.. 가비지콜렉션도 그럼 그만큼 빠르겠지라고 생각해주면 되것죠.. ㅋㅋ
+"
+"https://news.hada.io/topic?id=3283","M1 맥에서 Docker 사용하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           M1 맥에서 Docker 사용하기
+
+   M1 맥에서 vftool을 이용해 ubuntu linux를 띄우고 macOS에서 docker를 사용하는 방법을 소개합니다.
+
+   오 고맙습니다. 테스트 해보고 싶지만 M1 맥이 없.. ㅠ
+"
+"https://news.hada.io/topic?id=3304","State of CSS 2020 보고서","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         State of CSS 2020 보고서
+
+   - 102개국 11492명 대상 설문조사
+   선호 기술
+   - 전처리기 : PostCSS 92% > SaSS 88% > Stylus 41%
+   - CSS 프레임워크 : Tailwind 87% > PureCSS 71% > Bulma 61% > Ant Design 60%
+   - CSS 방법론 : Atomic CSS 83% > BEM 82% > ITCSS 78% > SMACSS 67%
+   - CSS-in-JS : CSS Modules 87% > Styled Components 82% > Emotion 80% > Styles System 80%
+   그외 많이 쓰는 도구들
+   - Stylelint, PurgeCSS, Prettier, Autoprefixer
+   - 에디터는 VS Code, 브라우저는 크롬
+   가장 많이 보는 블로그 : CSS-Tricks, dev.to , Smashing magazine
+   조사한 대상 정보
+   - 연봉 : $50~100K 30.6% , $30~50K 20.5%, $100~200K 16.2%
+   - 경력 : 5~10년 30%, 10~20년 28.6%, 2~5년 25%
+   - 회사크기 : 100~1000명 21.5%, >1000 16.2%, 20~50 13.9%
+   - 젠더 : 남성 85.4%, 여성 11.2%
+   - Job Title : 프론트엔드 개발자 43%, 풀스택 개발자 27.5%, 웹 개발자 17.2%, 웹 디자이너 3.4%, CTO 3.1%
+   - CSS 숙련도 : 전문가 61.3%, 중급 21.9%, 고급 12.4%, 초급 4.1%
+   - JS 숙련도 : 전문가 45.6%, 중급 23.2%, 고급 18.2%, 초급 11.8%
+   - 백엔드 숙련도 : 고급 31.1%, 중급 22.6%, 초급 22.3%, 전문가 14.7%
+"
+"https://news.hada.io/topic?id=3363","VSCode Tinder","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             VSCode Tinder
+
+   Tinder라는 데이팅 서비스가 있는데요.
+   상대방 사진이 나타나면 마음에 들거나 안들면 왼쪽/오른쪽으로 스와이프를 하는데요
+   코드와 폰트, 테마를 보고 고르는 유사한 컨셉입니다 ㅎㅎ
+   https://marketplace.visualstudio.com/items?itemName=benawad.vsinder
+
+   이건 뭐에요 뭘 보고 좌우를 골라야 하는건가요? 사람 얼굴인가요? ^^;;;;
+
+   코드랑 폰트랑 테마여 (...) 프로그래머에게 프로필 사진은 코드면 충분하다는 교훈을 주는군여!
+
+   어디서 본 사람인데? 했더니
+   VS Code 용 인스타그램 스토리 기능 만든 개발자군요.
+   - Stories for VS Code https://news.hada.io/topic?id=3140
+
+   ㅋㅋㅋ 재밌네요~~ 성능이랑 최적의 이슈 제외하고, 그냥 취향으로만 선택하면 되나요? ㅎㅎ
+
+   누구는
+   def love():
+   love()
+   를 올렸다고 합니당 ㅋㅋ
+"
+"https://news.hada.io/topic?id=3282","Times가 선정한 2020년 최고의 발명품 100가지","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Times가 선정한 2020년 최고의 발명품 100가지
+
+   매년 선정하는 ""우리 삶을 바꾸는 100가지 혁신들""
+   ACCESSIBILITY
+   → Logitech Adaptive Gaming Kit : 장애가 있는 게이머를 위한 컨트롤러
+   → LUCI : 안전경로를 찾아서 충돌을 방지하는 전동 휠체어
+   → Earlens Contact Hearing Solution : 고막에 음파를 직접 전달하는 보청기
+   → Martin Bionics Socket-Less Socket : 편안한 의족/의수 장착을 위한 소켓없는 소켓
+   ARTIFICIAL INTELLIGENCE
+   → Embodied Moxie : 어린이용 사회성/정서적 기술 향상 로봇
+   → Beewise Beehome : 2백만마리 꿀벌이 살 수 있는 AI기반 미래형 꿀벌집
+   → TrialJectory : 암 진단 가이드 앱
+   → BrainBox AI : AI 날씨예보로 기상조건을 예측하여 건물 난방을 제어하는 기기
+   → Krisp : 원격회의용 잡음 제거 앱
+   AUGMENTED AND VIRTUAL REALITY
+   → Pico Interactive Neo 2 Eye VR Headset : 기업용 시선 추적 기술 내장 VR 헤드셋
+   → Augmedics xvision : CT스캔을 3D시각화해서 환자 몸위에 보여주는 외과용 증강현실 헤드셋
+   → Virti : 교육하기 어려운 상황을 시나리오로 만들어 주는 증강/가상 현실 기반 교육 플랫폼
+   BEAUTY
+   → Dyson Corrale : 머리가 상하지 않게 1초에 100번씩 온도를 조절하는 무선 고데기
+   → Pour Moi Climate-Smart 3-Step Rotating System : 기후에 따라 조절하는 스킨케어
+   → ManiMe : 3D 모델링으로 손톱사진을 올리면 주문 제작해주는 젤네일 스티커
+   → L’Oréal Perso : 셀카를 업로드 하면 자신의 피부와 현재 습도/햇빛 노출정도에 맞게 커스터마이징 해서 나오는 스마트 화장품병
+   CONNECTIVITY
+   → Owl Labs Meeting Owl Pro : 온/오프 하이브리드 미팅시, 회의실에서 말하는 사람에게 렌즈/마이크의 초점을 이동해주는 360도 카메라
+   → Roland GO:LIVECAST : 마이크 조절/입력 선택/카메라 전환기능 등을 가지고 있는 라이브 스트리밍 전용 기기
+   → Vocera Smartbadge : 의사들이 목에 걸고 음성 명령을 통해서 쉽게 서로간에 의견을 나눌수 있게 도와주는 기기
+   CONSUMER ELECTRONICS
+   → Insta360 One R : 카메라 모듈을 교체해서 커스터 마이즈 가능한 차세대 액션 캠
+   → Microsoft Surface Duo : 듀얼 화면 안드로이드 스마트폰
+   → Miller Engineering Dark Skys DS-1 Planetarium : 침실 천장에 4백만개의 별을 보여주는 프로젝터
+   → MOON UltraLight : 스마트폰 카메라에 붙여서 적당한 빛을 쏴주는 클립형 라이트
+   → Sony a7C : 소형 풀프레임 미러리스 카메라
+   → Lexon Oblio : 충전하면서 UVC 라이트를 쏴서 폰의 박테리아를 소독해주는 충전장치
+   → KEEP : 온도 및 습도제어 기능과 생체인식 락을 통해서 대마초와 처방약을 안전하게 저장하는 장치. 누군가 열려고 하면 폰으로 알림도 전송
+   → Nuheara IQbuds2 MAX : 음악을 들으면서도 앞에 사람과의 대화는 가능한 능동형 소음제거 기능을 가진 무선 이어폰.
+   DESIGN
+   → Ammunition x Gantri 3-D Printed Lights : 3D 프린팅을 통해서 가격을 낮춘 고급 디자인의 조명기기
+   → Cuzen Matcha : 자동으로 찻잎을 갈아서 자기 믹서로 적당히 휘저어 최적의 거품 말차를 만들어 주는 기기
+   → Allbirds Tree Dasher : 유칼립투스,피마자 기름, 사탕수수 등의 자연재료로 만들어서 탄소배출량을 1/3로 줄인 런닝화
+   EDUCATION
+   → Van Robotics ABii : 초등학생들의 수학 및 읽기능력 교육을 위한 로봇 교사
+   → Duolingo ABC : 어린어 언어 교육용 앱
+   → Outlier.org : MasterClass 개발팀이 만든 저가격 고품질의 교육 과정
+   → Kiri Toys : RFID가 내장된 블록을 통해서 단어를 가르치는 놀이형 교육도구
+   ENTERTAINMENT
+   → Microsoft Xbox Series S : 게임패스와 함께 즐기는 차세대 콘솔 (근데 왜 S 를 ??)
+   → Nvidia GeForce Now : 비싼 장비 없이 즐기는 클라우드 게이밍
+   → Sony Playstation 5 : 햅틱 피드백센서가 내장된 컨트롤러, 훌륭한 차세대 콘솔
+   → Nintendo Animal Crossing New Horizons : 간단함을 내세운 게임임에도, 2600만명이 즐기고, 조 바이든이 대통령 선거 캠페인까지 진행한 동물의 숲
+   → LG 65-in. GX OLED 4K TV (65GX) : 밝고 선명하고 얇은 하이엔드 TV. 알렉사 & 구글어시스턴트 호환
+   → Samsung Sero : 바퀴달린 43인치 버티컬 TV. 폰에서 보던 소셜미디어/스트리밍/게이밍 콘텐츠를 세로로 즐기는 TV
+   EXPERIMENTAL
+   → Climate TRACE : 머신러닝, 적위선 위성 사진 등을 이용해서 환경 오염원을 실시간 추적
+   → Vollebak Full Metal Jacket : 박테리아를 죽이기 위해 구리 섬유로 만든 풀 메탈 재킷
+   → ZeroAvia : 무공해 수소 전기 비행기
+   → MIT Media Lab AlterEgo : 머리속으로 생각한 것을 컴퓨터에 입력해주는 인터페이스
+   FINANCE
+   → Remitly Passbook : 이민자들을 위해서 사회보장번호 없이 여권이나 외국인등록증 등으로 은행계좌 개설을 할수 있는 앱
+   → Upsolve : 복잡한 서류작업엇이 개인 파산 신청을 도와주는 앱
+   → FairShake : 기업에 대한 클레임 제기 프로세스를 자동화 해주는 무료 서비스. 10~20%의 성공수수료를 받음
+   FITNESS
+   → Nike Air Zoom Alphafly Next% : 마라톤 2시간 돌파를 가능하게 했던 런닝화
+   → Hydrow : 로잉머신계의 펠로톤. 실제 강들 위에서 인터랙티브하게 조정운동 가능.
+   → Supernatural by Within : 오큘러스를 사용하는 VR기반 피트니스 앱
+   FOOD AND DRINK
+   → The Greater Good Fresh Brewing Co Pinter : 다양한 팩을 꼽아서 1주일내에 맥주를 만들어 주는 간단한 가정용 홈 브루잉 키트
+   → Air Vodka : 곡물 발효가 아닌 이산화탄소를 에틸알코올로 변환하는 과정을 통해 증류하는 방법을 찾은 보드카. 한병 만들때마다 이산화탄소 1파운드를 제거하는 탄소네거티브
+   → Impossible Pork : 콩으로 만든 돼지 고기 대체품
+   HOME HEALTH
+   → Oura Ring : 심박수,활동수준,수면,체온을 추적하는 웨어러블 반지. NBA가 선수들에 도입.
+   → Willo : 실리콘 트레이를 입에 물면 손을 쓰지않고 자동으로 양치를 해주는 기기
+   → FEND by Sensory Cloud, Inc. : 약물없이 소금/칼슘 기반의 미스트를 코로 흡입해서 질병예방을 도와주는 기기
+   HOUSEHOLD
+   → Narwal T10 : 자동 충전 및 세척 스테이션을 가진 로봇 청소기. 대걸레를 자동으로 세척하고 건조.
+   → CHEF iQ Smart Cooker : 200가지 레시피와 내부의 압력을 가변으로 조정 및 발효 모드 등의 기능을 가진 멀티 쿠커
+   → Gardyn : AI로 거실에서 과일/채소/허브등을 수직형태로 키우는 실내형 정원
+   → Sepura : 음식물 쓰레기를 냄새 안나게 처리해주는 기기
+   MEDICAL CARE
+   → Nella NuSpec Reusable Vaginal Speculum by Ceek Women's Health : 여성 골반검사를 위한 더 나은 검경도구
+   → mRNA Vaccines : 유전 물질 기반 백신
+   → Provizio SEM Scanner by Bruin Biometrics : 욕창이 생기기 전에 알아내서 예방하도록 도와주는 스캐너
+   → Under the Weather IntubationPod : 의료 종사자를 보호하기 위한 투명 덮개
+   → OraSure OMNIgene Oral : 가정용 COVID-19 샘플 수집키트
+   → Carrier OptiClean : 이동식 고효율 HEPA 필터 공기청정기
+   OUTDOORS
+   → Bontrager WaveCel : 더 안전한 헬멧
+   → CasusGrill : 골판지,대나무,용암석 등으로 만든 1회용 BBQ 그릴. 불꽃없이도 섭씨 315도까지 가열
+   → YETI V Series : 진공 단열 패널로 되어 몇일동안 차갑게 온도유지가 가능한 스테인리스 아이스 박스
+   → CrazyCap : UVC 광선을 사용해서 60초만에 물을 살균하는 충전식 병 뚜껑
+   → Yakima CBX Solar : 태양열 패널을 내장해서 USB포트가 달린 자동차 루프 캐리어
+   PARENTING
+   → Yoto Player : 오디오 카드를 꼽으면 음악과 책을 재생하는 스피커
+   → Cradlewise Smart Crib : 아기가 울때, 아기의 수면 스케줄에 따라 움직여서 더 재울지, 깨울지를 결정하는 AI기반 스마트 침대 및 요람
+   → Mifold Hifold Fit-and-Fold Highback Booster Seat : 쉽게 휴대가 가능한 어린이용 자동차 부스터 시트.
+   → Cybex e-PRIAM : 전기 모터가 내장된 유모차. 내리막을 감지하고 브레이크를 적용하거나, 오르막에서 자동으로 힘을 줘서 부모를 도와줌
+   PRODUCTIVITY
+   → reMarkable 2 : 종이에 쓰는 느낌을 가진 e잉크 태블릿
+   → Sarcos Robotics Guardian XO Full-Body Powered Exoskeleton : 90키로그램을 쉽게 들어올릴수 있게 하는 웨어러블 로봇 쉘
+   → Guardhat HC1 Communicator : 착용자의 위치를 실시간으로 모니터링하여 위험물질 근접을 감지하고, 핸즈프리 음성통화를 제공하는 산업노동자용 안전모
+   → 3M Post-it Flex Write Surface : 어디서든 마커펜으로 필기가 가능한 대형 화이트 보드 스티커. 유성매직으로 써도 물로 잘 지워짐.
+   SOCIAL GOOD
+   → Flare : 911같은 의료시스템이 없는 케냐에서 500대 이상의 구급차에 연중무휴 24시간 액세스할수 있는 앱
+   → Fairphone 3+ : 재활용 플라스틱으로 만들어지고, 부품을 쉽게 교체해 오래 쓸수 있게 만든 폰
+   → Skysource WEDEW : 신선한 식수를 생산하는 이동식 발전기. 나무/땅콩껍질 같은 버려진 식물/동물성 재료를 넣으면 가열하면서 발생되는 수증기를 식수로 응축
+   → LIXIL Sato Tap : 비누홀더가 달린, 들고 다닐수 있는 손씻기 스테이션
+   → Loon : 풍선을 띄워서 인터넷을 제공하는 구글의 문샷프로젝트
+   STYLE
+   → B2, Pli, RunMask : 세척가능한 B2 마스크, 플라스틱병을 재활용해서 만든 Pli 마스크, 운동중에 사용가능한 RunMask
+   → Renewcell Circulose : 버려진 옷에서 면을 회수해서 만든 원료로 다시 섬유를 만들어 옷을 만들어 냄
+   → CuteCircuit SoundShirt : 30개의 소형 햅틱모터로 청각장애인이 촉각으로 노래를 경험할 수 있게 만들어주는 의상
+   SUSTAINABILITY
+   → Heliogen HelioHeat : 40만개 거울이 햇빛을 거대한 돋보기 타워로 반사하여 한점에서 섭씨 1천도까지 열을 발생시켜, 태양열로 강철을 녹이고, 시멘트, 전기를 만들어 내는 기술
+   → FarmWise Titan FT-35 : 제초제 대신 기계학습과 컴퓨터비전을 사용하는 무게 3톤짜리 잡초 제거 로봇. 경로를 따라 이동하며 1cm 정확도로 잡초만 뽑아냄.
+   → Pivot Bio PROVEN : 공기에서 질소를 포착해서 식물이 사용할 수 있는 형태로 변환해주는 미생물 생물 비료
+   → Tom’s of Maine Recyclable Tube : 고밀도 폴리에틸렌으로 된 재활용 가능 튜브를 사용하는 치약
+   TRANSPORTATION
+   → Gocycle GXi : 작게 접어지지만, 시속 30km로 최대 80km까지 갈수 있는 전기 자전거. 탈착식 소형배터리로 쉽게 재충전
+   → Hunter Board : 서스펜션을 내장하고, 시속 54km 까지 속도를 낼수 있는 전동 스케이트 보드. 배터리 교체 가능
+   → NASA Ingenuity Helicopter : 내넌 화성에 착륙할 Perseverance 탐사선에 들어가 있는 헬리콥터. 분당 2400회 회전하는 2개의 역회전 블레이드를 내장. 빠르고 무거운 물건이동에 적합.
+   → Dimer GermFalcon : 음료수 카트 크기의 항공기 내부를 소독장치. SARS 및 MERS에 효과적이었음. (코로나는 아직 미 테스트)
+   → CLIP : 기존 자전거 앞바퀴에 부착하는 모터로 시속24km 까지 가속해주는 4.5kg짜리 기기. 탈착식으로 자리에 가져가 충전 가능
+   WELLNESS
+   → Callaly Tampliner : 불편함을 해소한 차세대 탐폰
+   → Johns Hopkins Coronavirus Resource Center : 존스 홉킨스 코로나 바이러스 정보 센터
+   → Hatch Restore : 침대용 전등이면서 백색 소음 및 명상 가이드를 통해 수면을 도와주는 기기
+   → Tombot Jennie : 실제 강아지와 비슷하게 생기고 느끼고 행동하는 정서 지원 로봇
+   SPECIAL MENTIONS
+   → Solar Water Solutions Adaptive Nozzle Valve System : 태양열을 이용하여 물을 정수하는 기술
+   → Truepic Foresight : 딥페이크 같은 위조된 사진인지 여부를 판단해주는 소프트웨어
+   → Perfect Day Milk Protein : 단백질을 만들어내는 진균류(fungi)를 이용한 비건용 유제품
+   → City Transformer Electric Vehicle : 매우 작은 2인승 전기 자동차
+   → Samsung The Terrace TV : 비,눈,폭염을 견딜수 있고 아주 밝아서 화창한 날에도 시청 가능한 실외용 TV
+   → Ethique Concentrates : 샴푸/컨디셔너/로션의 95%는 물이기 때문에 작은 고형물체에 뜨거운 물만 넣으면 사용가능한 환경 친화적인 제품
+   → Nite Ize TRU Zip : 이빨없는 지퍼로 만들어진 밀봉 방수/방진 팩
+   → Solar Foods Solein : 재생에너지로 공기에서 추출한 수소와 이산화 탄소 거품을 미생물에게 공급해서 생산한 단백질 분말.
+   → Zauben Model Z : 울과 재활용 플라스틱으로 만든 8피트 높이의 벽에 공기를 자연적으로 정화하는 열대식물을 넣은 공기청정기
+   → Perfect Corp. YouCam Makeup : 셀카를 찍은 뒤 메이크업 및 머리색,액세서리를 가상으로 시착해 보게 만들어주는 앱
+   → Yap Lab Outlinx QR Smart Stickers : 제품에 대한 기록을 할수 있는 가상 메모장으로 연결되는 QR 스마트 스티커
+   → Rocean One : 향이 첨가된 탄산수를 만들어주는 기기 ( SodaStream 과 Keurig 커피머신의 중간 쯤)
+   → Flare Safety Jewelry : 위험 알림 기능이 있는 블루투스 팔찌. 불편한 상황일때 전화오는것 처럼 꾸며주는 기능 제공
+   → Infinite Objects Video Prints : 최대 24시간 길이의 동영상을 영구 재생하는 사진 액자
+   → TiVo Stream 4K : HDMI에 연결하는 스마트 TV 기기
+   → Yale Smart Delivery Box : 안전하게 택배 배달을 받을수 있게 해주는 스마트 박스. WiFi로 잠기는 보안장치가 있고, 배송이 도착하는 시간에 자동으로 열리도록 설정가능. 물건이 도착하면 스마트폰으로 알려줌
+   → Matatalab Pro Set : 5세 어린이에게 프로그래밍을 가르치는 세트. 로봇을 프로그래밍해서 움직이게 지시하는 방식.
+   → DouxMatok Incredo Sugar : 설탕과 동일한 단맛을 유지하면서 설탕함량을 30~50% 줄인 감미료
+   → LG Wing : T자 모양으로 열리는 두번째 화면을 가진 스마트폰
+   → Lenovo Flex 5G : 세계 최초의 5G 내장 PC 노트북. 최대 24시간의 배터리 수명
+
+   LG만 모르는 잘 만든 디바이스 LG Wing
+
+   이거를 꼭 정리해봐야 하나 싶었는데, 이렇게 하니까 하나하나 찬찬히 보게되네요.
+   저는 가장 맘에 드는거 하나 뽑으라면 3톤짜리 잡초 제거로봇 ""FarmWise Titan FT-35"" 인듯 합니다.
+"
+"https://news.hada.io/topic?id=3361","Adobe, Flash Player 마지막 업데이트 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Adobe, Flash Player 마지막 업데이트 공개
+
+   - 2020년 12월 8일, 중국 이외 지역의 마지막 업데이트 공개
+   - 중국에서는 현지 파트너사에서 기술 지원 예정
+   - 지난 20년동안 Flash Player 컨텐츠를 제작하고 사용한 모든 고객과 개발자에게 감사를 표함
+   - Adobe는 2020년 12월 31일 이후 더 이상 Flash Player 지원하지 않음
+   - 또한 2021년 1월 12일부터 Flash Player에서 컨텐츠 재생 차단됨
+   - 시스템 보호를 위해 모든 사용자가 Flash Player를 즉시 제거할 것을 권장
+
+   드디어 가는 군요... 안녕~
+   근데, 예전에 올려주신것과 같은 웹기술 대체제들이 많아서 ㅎㅎ
+   HTML5 기술로 만든 플래시 플레이어 - 와플래시 게임 아카이브 https://news.hada.io/topic?id=3071
+
+   지금이야 이렇게 퇴출되는 신세지만, 웹 역사에 한 획을 그었다고 생각합니다.
+   이젠 정말 안녕~
+"
+"https://news.hada.io/topic?id=3279","k6 - 현대적인 로드 테스팅 도구","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          k6 - 현대적인 로드 테스팅 도구
+
+   ""유닛 테스팅처럼 성능 테스팅하기""
+   - ES6 JavaScript 스크립팅 지원
+   - 테스트로직과 설정옵션이 모두 JS코드
+   - CI와 연동하기 쉬운 자동화 옵션
+   ㅤ→ check : assert 처럼 동작하지만 실행을 중단하지는 않고, 결과값을 저장하고 계속 진행
+   ㅤ→ threshold : 실패율, 응답시간, 응답시간 범위내 성공율 등으로 pass/fail 조건 설정 가능
+   - HTTP/1.1, HTTP/2, WebSocket 지원
+   - HTML Form, Cookies, Crypto, 커스텀 메트릭, 환경변수, 테스트를 위한 로컬파일 로딩 등 지원
+   - 로컬, k6 Cloud(유료), 클러스터(지원예정) 에서 실행 가능
+   - 브라우저 세션을 녹화한 HAR(HTTP Archive format) 파일을 읽어서 k6 스크립트로 변환 가능
+   - InfluxDB (+Grafana) 나 JSON 으로 메트릭 저장 또는 k6 Cloud에 업로드도 가능
+"
+"https://news.hada.io/topic?id=3341","글 잘 쓰기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 글 잘 쓰기
+
+   글 쓰기는 개인적으로 계속 연습하고 있는데요. 위 강좌 'Wrting Well'에서는 스텝-바이-스텝으로 차근차근 매력적인 글을 쓰는 방법에 힌트를 줍니다.
+   물론 프로그래밍 입문서를 읽었다고 바로 프로그래머가 되는 게 아니고. 수학의 정석을 읽었다고 수학을 정석적으로 할 수 있는게 아닌 것처럼. 이 글을 읽는다고 해서 바로 글을 잘 쓰지는 못할 것 같습니다만. 글을 쓰는 걸 시작하기에는 좋은 글인 것 같습니다.
+   인트로 페이지의 마지막 인용문이 인상 깊네요.
+   > 사람들이 글을 잘 쓰지 못하면, 생각도 잘 하지 못할 것이며. 생각을 잘 하지 못하면, 타인이 대신 생각할 것입니다. - 조지 오웰
+"
+"https://news.hada.io/topic?id=3340","소프트웨어 엔지니어링의 주요 기능이었던 맞춤법 검사기.","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     소프트웨어 엔지니어링의 주요 기능이었던 맞춤법 검사기.
+
+   옛날 MS-DOS 시절, 기본 메모리 640k와 그 중에서도 256k는 시스템에 할당해줘야 하여 얼마 있지도 않는 메모리를 쥐어 짜가며 맞춤법 검사기를 작성하는 게 얼마나 어려운 일지 설명하다가. 글 마지막에는 오늘날에 맞춤법 검사기를 만드는 건 Python 튜토리얼의 첫 단계 정도의 연습용밖에 안 될 거라는 글입니다.
+   조금 충격적인 건 이 글이 작성된 시기는 2008년인데, 12년 전 글이네요 블로그 부제가 글쓴이의 생각을 가장 잘 들어내는 것 같습니다.
+   '21세기의 프로그래밍 : 기술에 관한 것이 아닙니다. 아이디어를 구현할 수 있다는 것입니다.'
+
+   최근에 [게임 엔진 블랙 북: 울펜슈타인 3D]라는 책을 봤는데, 2장 전체가 당시 하드웨어의 열악한 상황을 설명하는 데 쓰였더군요. 2장의 요약 문단 내용은 다음과 같습니다.
+   ---
+   PC가 게임 프로그래밍을 어렵게 만든 것은 분명하다. 정말 악몽과도 같았다. CPU는 잘못된 일을 하는 데에 능숙했고, 최고의 그래픽 인터페이스는 더블 버퍼링이나 정사각형 픽셀을 허용하지 않았다. 게다가 메모리 모델은 개별 16비트 레지스터 2개로 구성된 주소로 표준 1MiB만 허용했으며 near/far 포인터는 표준 C 사용을 허락하지 않았다. 마지막으로 기본 사운드 시스템은 사각파만 생성할 수 있었으며 사운드 카드를 설치한 사용자는 세 가지 주요 브랜드 중 하나를 선택해야만 했다.
+   이 모든 불리한 조건에도 불구하고 개발자 팀은 야수를 길들이고 게임 애호가들에게 힘을 불어넣기 위해 모였다. 이 중 한 팀이 그들 스스로를 이드 소프트웨어라고 불렀다.
+   ---
+
+   정말 멋진 책이져. 👍
+"
+"https://news.hada.io/topic?id=3319","JsDiff - 자바스크립트 라이브러리 쉽게 비교 하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     JsDiff - 자바스크립트 라이브러리 쉽게 비교 하기
+
+   - 비교할 라이브러리 들을 넣으면 비교그래프를 보여줌
+   ㅤ→ 지난 5년간 NPM 다운로드 추이
+   ㅤ→ 구글 트렌드
+   ㅤ→ 깃헙 통계 : Star, Age, Issue, PR
+   ㅤ→ ThoughtWorks TechRadar 에서의 위치 (Assess,Trial,Adopt,Hold)
+"
+"https://news.hada.io/topic?id=3249","Firefox 83, Warp JIT 적용","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Firefox 83, Warp JIT 적용
+
+   저는 오늘 firefox 83 업데이트 설치 알림이 떠서 설치를 했는데요, 릴리스 노트를 보니 가장 상단에 ""page load performance by up to 15%, page responsiveness by up to 12%, and reduced memory usage by up to 8%"" 라는 내용이 있어서 검색해보니, 위와 같은 기술 블로그(Mozilla Hacks) 포스트가 있었습니다.
+   Firefox 의 Javascript 엔진인 SpiderMonky 에 JIT (WarpBuilder) 가 적용되어서 상당한 수준의 성능 향상이 기대된다는게 Firefox 83 릴리스 노토에 실린 내용이고 링크한 기술 블로그는 좀더 상세하게 동작 방식을 설명하는 내용입니다.
+
+   일반적으로 페이지 모음이라고 느껴지는 사이트들은 별로 그런 경우가 없는데, ""웹앱이다""라는 느낌을 주는 싱글페이지 앱이나 위지위그 에디터 등이 들어가 있는 사이트들은 파이어폭스에서 크롬보다 더 굼뜨다는 느낌을 자주 받는데요, (아마 개발사들이 크롬/사파리 위주로 개발을 하는 탓이 더 클 것 같지만...)
+   파이어폭스 자체 성능이 개선되면 이런 부분에서도 체감 성능이 더 좋아지길 기대해봅니다.
+
+   파이어폭스 파이팅!
+"
+"https://news.hada.io/topic?id=3287","TakeNote - 개발자를 위한 웹 기반 노트앱 오픈소스","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    TakeNote - 개발자를 위한 웹 기반 노트앱 오픈소스
+
+   - 플레인 텍스트로 메모 작성
+   - 마크다운 프리뷰
+   - 노트 연결 가능 {{uuid}}
+   - 코드 구문강조 지원
+   - 모든 동작에 대한 키보드 단축키 지원
+   - 멀티커서 편집 (CodeMirror)
+   - 노트 단위 드래그 앤 드롭 지원 (카테고리 이동,삭제,즐겨찾기)
+   - 검색 지원
+   - TypeScript, React, Redux, Node, Express, Codemirror, Webpack, Jest, Cypress, Feather Icons, ESLint, Mousetrap
+   - 기본적으로 메모는 브라우저 로컬에 저장 (데모버전 - https://takenote.dev/app )
+   - 코드에는 GitHub 레포지토리에 자동싱크를 지원하는 Node/Express 서버가 포함되어 있음
+   ㅤ→ 개발자라면 자신의 서버에 배포하고, GitHub OAuth 연동을 하면 Private Repo에 노트를 싱크 가능
+   - TakeNote 개발자는 이 코드로 별도 서비스를 만들지 않겠다고 선언
+   ㅤ→ 상세한 내용은 블로그에 정리 https://www.taniarascia.com/building-takenote/
+   ㅤ→ 서버를 유지보수 하고 싶지 않고,
+   ㅤㅤ누군가의 프라이빗 데이터를 책임지고 싶지 않으며,
+   ㅤㅤGitHub OAuth 는 기본적으로 모든 Private Repo에 접근이 가능하기 때문에 이런 권한을 요구하기는 어려움.
+   ㅤㅤ또한, 좋은 모바일 경험을 주기가 어렵다는 걸 깨달았다고
+
+   simplenote 도 괜찮습니다
+   https://simplenote.com/
+
+   이런 용도의 노트라면 이전부터 있던 BoostNote는 어떨까요
+   https://boostnote.io
+
+   흑 이거 아이폰 클라이언트에선 노트 한글입력 모아쓰기가 안되네요 ㅠ
+
+   오 이거 괜찮네요. 고맙습니다. 함 써봐야 겠어요.
+
+   저는 OneNote를 주로 쓰고 있는데 이런 노트들은 얼마나 오래 서비스가 유지되고 업데이트 될까가 가장 신경쓰이더군요.
+
+   전 에버노트에 적어둔게 꽤 많아서 OneNote 로 한번 옮겨봤는데.. 도무지 쓸수없는 상태로 되더군요 ㅠ
+   그래서 가능하면 오픈소스 중에서 심플한 솔루션을 찾아보는 중이에요.
+
+   혹시 정하시면 알려주실 수 있으실까요?
+   저도 이번에 업데이트되면서 유료 결제 안하고 버티면서 전에 올라온 https://hackernoon.com/the-best-75-evernote-alternatives-complete-revi… 에서 몇 개 테스트 해봤는데 이거다 싶은게 없네요 ㅠ
+
+   GitHub Private Repo 에 노트를 저장하는 싱크 기능은 굉장히 혹하긴 하네요.
+   컨트리뷰터가 50명 가량 되는데, 모바일 버전까지 나오게 발전하면 좋겠어요.
+   전 에버노트가 여전히 메인 이었는데, 이번에 업데이트된 iOS 앱이 너무너무너무 맘에 안들어서 다시 한번 이사가보려고 하는중입니다.
+
+   저도 에버노트 이번 업데이트가 애매해서... 노션 써보고 있어요. 이번에 타임라인 기능도 새로 나온 김에요
+"
+"https://news.hada.io/topic?id=3278","개발자 관점의 애플 Air M1 리뷰","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          개발자 관점의 애플 Air M1 리뷰
+
+   - Xcode : 속도 빠름. 샘플용 PDF뷰어 iOS앱 컴파일 속도 비교시
+   ㅤ→ Air M1 - 8:49 (따뜻했지만 조용함)
+   ㅤ→ MBP 16 2019 2.4Ghz 8-Core i9 32GB - 7:31 (팬소리 큼)
+   ㅤ→ Hackintosh 3.6Ghz 8-Core i9 64GB - 4:47 (200W 파워 사용)
+   ㅤ→ MacBook 12 2017 1.4Ghz 2-Core i7 16GB - 41:02 (팬리스)
+   ㅤ→ M1 을 외부팬이 달린 쿨링독에 설치하고 해보니 8:49 가 8:33 으로 줄어듬 (쓰로틀링은 크지 않다는 것)
+   ㅤ→ 다만 iOS 14 아래 버전은 테스트가 불가능 - WebKit 이 크래쉬되고, 속도도 엄청 느림
+   ㅤ→ 해결되지 않으면 M1 만으로 iOS 12,13 까지 지원하는 것은 어려울수 있음.
+   - Docker : 현재 사용 불가능하지만 도커팀이 작업중
+   ㅤ→ ARM Linux를 통해서 우회하는 방법이 있긴 하지만, 내년 1분기에는 ARM기반 컨테이너를 실행하는 방법이 나올것으로 예상
+   - Virtualization : 현재 가상화 솔루션은 동작 불가능.
+   ㅤ→ VMware 와 Parallels팀이 작업중. VirtualBox 는 (아마도 또는 근시일내엔) 불가능 할 것
+   ㅤ→ 다양한 시도를 하고 있으니 언젠가는 ARM기반 윈도우는 실행가능해 질 것 같음
+   ㅤ→ 예전 버전 macOS를 실행하는 것은 훨씬 문제가 많음. VMWare 나 Parallels가 완벽한 x64 에뮬레이션을 하지 않는 이상 어려울 거고, 된다해도 느릴 것.
+   ㅤ→ 16GB 램은 부족함. 병렬로 테스트 돌리면 스와핑과 함께 성능이 엄청 떨어짐. 가상머신이 돌면 더 그럴 것. 32GB 버전을 기다려야
+   - Android Studio : IntelliJ가 JetBrains Runtime을 포팅중
+   ㅤ→ 현재 Rosetta 2 로 Gradle 빌드는 엄청 느림 ( 동적으로 코드를 생성하는데, 선컴파일해두는 Rosetta 2 와 나쁜 조합 )
+   - Homebrew : 현재 Rosetta 2 에서 동작함 (모든 것에 arch -x86_64 를 붙이는 것으로)
+   ㅤ→ 점점 ARM 지원 소프트웨어들이 늘어나고 있음
+   - Applications : 대부분의 앱들이 그냥 동작하고, 로제타가 동작하는지 알기 어려움.
+   ㅤ→ 큰 어플들은 처음에 뜨는데 오래걸리지만 그다음엔 빠름(MS Word의 경우 약 20초)
+   ㅤ→ 몇몇 앱들은 실패하기도 함.
+   ㅤ→ 실제 코드와 로제타로 변환된 바이너리의 저장 위치 때문에 문제가 생기기도 함
+   ㅤ→ Electron 기반 앱들은 Rosetta 로 실행되면 느림. V8 컴파일러가 로제타의 선컴파일을 방해하기 때문. Electron 11 은 이미 애플실리콘을 지원하고, 슬랙은 이미 베타를 이를 적용하여 내놨음.
+   ㅤ→ 구글이 ARM용 크롬을 내놨지만, 아직 사파리 보다는 느림
+
+   air를 하나 사서 개발용 말고 취미용으로 하나 써보고 싶네요.
+
+   번역하다 놓쳤는데, 사파리 속도에 대해서 ""날라다닌다"" 라는 표현을 쓰네요.
+   다들 웹브라우징이 정말 빠르다 라고 한목소리로 얘기를 하고 있어서 얼른 써보고 싶습니다.
+   왜 한국은 아직도 출시예정일이 안나올까요..
+
+   애플 Rosetta Translation 환경에 대해서 https://news.hada.io/topic?id=3277
+"
+"https://news.hada.io/topic?id=3327","RealWorld - 풀스택 실전 블로그 예제코드 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      RealWorld - 풀스택 실전 블로그 예제코드
+
+   - Medium 블로그 서비스를 클론해서 거의 모든 프레임워크로 똑같이 만들어 보는 오픈소스 프로젝트
+   ㅤ→ 같은 API 스펙이라 프론트/백엔드 스택은 마음대로 매칭 가능
+   - 프론트 (29가지): React/Redux, Angular, Vue, Elm, Svelte/Sapper, Next, Ember, Riot..
+   - 백엔드 (41가지): Node/Express, Go/Gin, NextJS, Django, Laravel, Flask, Spring, Rails, AWS Lambda/DynamoDB, Scala/Play, CakePHP, Kotlin/http4k, Vert.x ..
+   - 모바일 : NativeScript(Angular)
+   * 실제 클론 사이트 보기 : https://demo.realworld.io/
+
+   와... 오픈소스로 할 수 있는 진짜 가치있는 일 중 하나인것같네요..
+"
+"https://news.hada.io/topic?id=3347","Supabase 공개 베타 시작 - 오픈소스 Firebase 대체제","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 Supabase 공개 베타 시작 - 오픈소스 Firebase 대체제
+
+   - 백엔드를 쉽게 만들기
+   - Postgres 기반에 Elixir를 이용한 실시간 DB엔진
+   ㅤ→ 웹소켓으로 변경을 실시간 반영
+   - Auth API(사용자 관리) 제공
+   - GraphQL 과 비슷한 CRUD API 지원
+   - 관리도구에서 스프레드쉬트 스타일 DB편집 및 SQL 에디터 제공
+   - Storage ,Functions, Local Emulator, Multicloud, Self Hosted 등의 기능 및 환경도 추가 예정
+
+   안녕하세요, Supabase 공동 설립자입니다. 공유해 주셔서 감사합니다. 우리는 최근 베타 버전을 출시했으며 진정한 파이어베이스 경쟁자가되기 위해 열심히 노력하고 있습니다 : https://supabase.io/beta
+   어떻게 개선 할 수 있는지 beta@supabase.io에 피드백을 남겨주세요 :)
+
+   혹시 회사 내에 이런 서비스를 구축할 수 있는 솔루션도 있을까요? (on-premise로)
+
+   이 supabase 자체가 오픈소스여서 이걸로 구축 가능합니다.
+   https://github.com/supabase/supabase
+   PostgreSQL 기본 설치하고, 몇개의 추가 컴포넌트만 올리면 됩니다.
+   다만.. 각 컴포넌트별 도커이미지들이 있긴 한데, 조합하려면 조금 귀찮긴 할듯..
+   https://hub.docker.com/u/supabase
+
+   이 링크를 공유해 주셔서 감사합니다
+   도커 이미지는 꽤 오래되었지만 로컬에서 실행할 수있는 더 나은 에뮬레이터를 개발 중입니다.
+   우리는 내년 가을에 엔터프라이즈 고객을 위해 완벽하게 지원되는 온 프레미스 배포 작업을 진행하고 있습니다.
+   지금은 필요한 모든 도구를 github에서 사용할 수 있습니다. :)
+
+   예전에 parse.com 이란 놈도 있었는데 조용히 사라진 것 같습니다
+
+   parse 는 페이스북이 인수한 뒤에 나중에 문을 닫으면서 오픈소스로 따로 떨어져 나왔습니다.
+   https://parseplatform.org/
+
+   Firestore 만 구현한 SapphireDB, RethinkDB 등 보다 더 폭넓게 Firebase 전체를 대체하기 위해서 만든 오픈소스
+   SapphireDB - 실시간 동기화를 지원하는 오픈소스DB https://news.hada.io/topic?id=1308
+
+   예, 우리는 파이어베이스의 모든 기능을 갖추기 전에해야 할 일이 아직 남아 있습니다. 1 월에는 스토리지와 기능에 대해 작업 할 것입니다.
+"
+"https://news.hada.io/topic?id=3260","Big Sur 게이트, 사람 바보 취급하는 애플코리아","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Big Sur 게이트, 사람 바보 취급하는 애플코리아
+
+   - 2014년형 맥북프로를 빅서로 업데이트 했더니 벽돌이 됨(부팅 불가)
+   - 애플스토어(가로수길) 가서 물으니 메인보드가 나갔다고 함 : 50만원 유상수리
+   - 찾아보니 2014년형 맥북프로가 다 비슷한 증상이 나타난다는 해외 사례들이 많음
+   - 다시 가서 물어보니 I/O보드가 고장난거라 끄면 부팅은 된다고(와이파이 불가)
+   - 이 와중에 애플코리아 직원들의 고압적인 태도 와 OS업데이트는 고객의 선택이라고 말함
+   - 작성자 분은 스토어에서 맥북을 부숴버림
+   * 2014년 맥북프로는 Big Sur 업데이트 할때 I/O보드가 고장나는 경우가 있으니 조심하세요.
+
+   위 글의 업데이트가 올라왔습니다.
+   https://www.clien.net/service/board/park/15655791
+
+   좀 걸리더라도 첫번째 열받으신 다음 내 세금으로 대신 싸워주는 소비자원을 바로 찾으셨으면 더 좋았을텐데 싶습니다. 5~10분만 전화통화하는데 써도 많이 해결이 되는데 ...
+
+   덜덜 시끄러운 일이 있었군요. 커널쪽이 싹 바뀌어서 ㅜㅜ
+   지니어스바에서도 잘 모르는 게 많다보니 에휴
+
+   지니어스바는 정말 복불복인듯 해요.
+
+   제 2015년 맥북프로도 아직 업데이트 안하고 있는데.. 그냥 하지 말아야 겠네요..
+"
+"https://news.hada.io/topic?id=3302","TSMC, 2022년 하반기부터 3나노 공정 생산 가능","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     TSMC, 2022년 하반기부터 3나노 공정 생산 가능
+
+   - 1평방 밀리미터당 2.5억개의 트랜지스터가 탑재되며, 실제론 3억개까지 가능할 수도
+   - 애플이 사용하는 5나노 공정은 1평방 밀리미터당 1억 3300만개의 트랜지스터를 수용
+   - 인텔의 10나노 노드보다 최소 2.5배 집적도가 높고, AMD의 새 Radeon RX 6000 칩 보다 3배 더 복잡한 GPU를 구현 가능
+   - 현재 AMD가 Radeon 6800/6900에 사용하는 Navi 21 GPU는 7나노 공정으로 270억개의 트랜지스터를 사용하는데, 3나노 GPU라면 같은 크기에 약 800억개의 트랜지스터 수용 가능
+   - 하지만 AMD 가 TSMC를 통해 2022년에 내놓을 Zen 4는 5나노여서 2022년엔 3나노 AMD제품은 안 나올 것
+   - 인텔의 7나노 공정은 2022년말로 밀렸으며, 아마도 2023년까지 미뤄질수 있음.
+   - 인텔의 7나노는 평방 밀리미터당 약 2~2.5억개의 트랜지스터를 제공하는 것으로 추정
+   - 삼성은 2022년 하반기 목표로 3나노 공정 계획을 세워서 TSMC와의 격차를 줄인다고 발표
+"
+"https://news.hada.io/topic?id=3328","GitHub의 Octoverse 2020 리포트","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       GitHub의 Octoverse 2020 리포트
+
+   - 개발자 5600만명
+   - 포춘50개 회사중 72%가 깃헙 엔터프라이즈 사용
+   - 올해 6천만개의 신규 레포 생성
+   - 북미 34%, 아시아 30%, 유럽 26%, 남미 4.9%, 아프리카 2%
+   - JavaScript>파이썬>자바>TypeScript>C#>PHP>C++>C>Shell>Ruby
+   ㅤ→ 작년에 이어 파이썬이 2위
+   ㅤ→ TypeScript가 7위에서 4위로 점프
+   - 세가지 주요 깃헙 사용 패턴을 별도 상세 리포트(PDF)로 발간
+   ㅤ1. Work 와 Play 밸런스 찾기
+   ㅤ2. 건강한 오픈소스 커뮤니티 만들기
+   ㅤ3. 세상의 소프트웨어를 더 안전하게
+
+   내용중에 타입 스크립트의 성장속도가 대단하네요 만들어진지 8년 만에 Top4 라니..
+   타입스크립트는 MS의 Anders Hejlsberg에 의해 설계되었다고 하는데, C#의 리드 아키텍트이자 델파이, 터보 파스칼의 창시자이면서 MS에서 2012년부터는 TypeScript 프로그래밍 언어 핵심 개발자로 일하고 있다고 합니다.
+   강력한 type checking 및 compile-time error check 기능으로 엔터프라이즈 수준에서 성공시킨 만큼 얼마전 은퇴가 지겹다고 MS에 합류한 귀도 반 로섬과 함께 python에 type checking을 도입한 superset 언어로 typethon이 나오면 어떨까 하는 발칙한 상상을 해봅니다~ ㅋ
+
+   오~typethon 기대됩니다
+
+   GitHub의 Octoverse 2019 리포트 https://news.hada.io/topic?id=884
+"
+"https://news.hada.io/topic?id=3315","Apple M1칩은 왜 그렇게 빠를까?","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Apple M1칩은 왜 그렇게 빠를까?
+
+   - M1은 한개의 CPU가 아니라, 대형 실리콘 패키지에 여러개의 칩들을 넣은 전체 시스템. CPU는 그중의 하나 일뿐
+   ㅤ→ CPU,GPU,메모리,IO콘트롤러 등을 묶은 SoC(System on a Chip)
+   - 범용 코어를 많이 넣는 대신, 특정 작업에 특화된 칩들을 넣음
+   ㅤ→ CPU : OS와 앱들을 실행
+   ㅤ→ GPU : 그래픽 작업을 수행. 앱의 UI, 2D/3D 게임등
+   ㅤ→ ISP(Image Processing Unit) : 이미지 프로세싱 속도 증가
+   ㅤ→ DSP(Digital Signal Processor) : CPU보다 더 수학집약적인 기능을 수행. 음악파일 압축 해제와 같은
+   ㅤ→ NPU(Neural Processing Unit) : 머신러닝, 음성인식, 카메라 처리등을 가속
+   ㅤ→ Video Encoder/Decoder : 저전력으로 비디오 파일/포맷 처리
+   ㅤ→ Secure Enclave - 암호화, 인증, 보안
+   ㅤ→ UMA(Unified Memory Architecture) : CPU,GPU 및 다른 코어들이 빠르게 정보 교환
+   ㅤ이런 칩들이 이미지/비디오 편집 및 큰 비디오 인코딩에서 성능이 뛰어난 이유 임
+   - Unified Memory Architecture(UMA)는 뭐가 특별한거야 ?
+   ㅤ→ 이 전의 CPU/GPU 통합 칩들은 느렸음
+   ㅤㅤㅤ둘은 서로 다른 메모리 영역을 서로 다른 방식으로 사용.
+   ㅤㅤㅤ게다가 GPU는 발열이 심하니까 큰 쿨링팬이 있는 거대한 카드들이 고성능을 보임
+   ㅤㅤㅤ하지만 이러면 서로간에 많은 데이터를 복사해야 하다보니 PCIe 같은 버스가 필요해짐
+   ㅤ→ Unified Memory 는 CPU/GPU를 위해 따로 할당하지 않음 그냥 같이 씀.
+   ㅤㅤㅤShared Memory 와 다르게 CPU와 GPU가 동시에 접근이 가능하며, 위치 정보 교환만으로 접근해서 복사가 필요없어짐
+   - 이 SoC 방식이 좋으면 다른 제조사들은 왜 안하지 ?
+   ㅤ→ 하고 있음. AMD가 CPU/GPU를 같은 실리콘 다이에 올린 APU형태를 만들기 시작
+   ㅤ→ 하지만 실제로 하기는 어려움. 왜나면 SoC 는 전체 컴퓨터를 하나의 칩에 올리는 것이기 때문에 HP나 델 같은컴퓨터 제조사에 더 어울림
+   ㅤ→ 인텔과 AMD의 비즈니스 모델은 사람들이 PC마더보드에 꼽는 범용 CPU기반인데,
+   ㅤㅤ 새로운 SoC 시장은 서로 다른 벤더의 피지컬 제품들을 가져와서 조립하는게 아니라, IP(Intellectual Property)를 조립하는 것
+   ㅤ→ 과연 인텔,AMD,Nvidia 가 Dell 이나 HP에 IP를 라이센스 줄 수 있을까 ?
+   ㅤ→ 물론 인텔과 AMD가 완성된 SoC를 판매할수 있지만, CPU제조사/PC제조업체/MS 간에 이해의 충돌(뭘 넣어야 할지 등)이 발생 가능
+   ㅤ→ 하지만 애플에겐 간단한 이슈. 그들은 자신이 모든걸 만듬. ""They control the whole widget""
+   - CPU를 빠르게 만드는 가장 근본적인 도전
+   ㅤ→ M1의 빠른 범용 CPU 코어인 Firestorm 은 진짜로 빠름. 이게 기존 AMD/Intel 등과 비교했을때 느렸던 기존 ARM과의 차이
+   ㅤ→ Firestorm은 대부분의 인텔/AMD Ryzen 코어를 속도면에서 다 이기는데, 상식으로는 일어나지 않을 일.
+   ㅤ→ 빠른 CPU를 만드는 전략은 뭔가 ?
+   ㅤㅤㅤ1. 순차적으로 더 빠르게 명령을 실행
+   ㅤㅤㅤ2. 여러개의 명령을 병렬로 실행
+   ㅤㅤ80년대엔 쉬웠음. 그냥 클럭주파수를 높이면 명령이 빨리 실행됨.
+   ㅤㅤ컴퓨터는 클럭 사이클당 뭔가를 하는데, 이 ""뭔가""는 아주 작아서, 명령 하나가 몇개의 클럭 사이클이 필요하기도 함
+   ㅤㅤ하지만, 현대에 와서는 클럭 주파수를 높이는 데에는 한계가 있음.
+   ㅤㅤ""무어 법칙의 끝""
+   ㅤㅤ따라서, 이젠 최대한 많은 명령을 병렬로 실행하는 것이 중요
+   - Multi-core or Out-of-Order processors?
+   ㅤ→ 병렬실행엔 두가지 접근 방법이 있다
+   ㅤㅤㅤ1. 더 많은 CPU코어를 넣는 것 (개발자 관점에서는 쓰레드를 더 추가하는 것 )
+   ㅤㅤㅤㅤㅤ이론적으로는, 프로세서의 코어는 여러개의 쓰레드를 실행할 수 있음(소프트웨어 쓰레드)
+   ㅤㅤㅤㅤㅤ이건 쓰레드간에 전환하며 실행하는 거라, I/O 나 네트웍에서 뭔가를 대기하는 상황에서나 사용
+   ㅤㅤㅤㅤㅤ하드웨어 쓰레드는 속도가 빨라지지만, 개발자가 이를 활용하기 위한 코드를 작성해야함.
+   ㅤㅤㅤㅤㅤ서버/클라우드에서는 이 모델이 적합.
+   ㅤㅤㅤㅤㅤ그래서 Ampere 같은 회사가 128코어를 가지는 Altra Max 같은 클라우드용 ARM CPU를 만드는 것.
+   ㅤㅤㅤㅤㅤ애플은 이것의 정확히 반대임. 애플은 싱글 사용자를 위한 기기를 만드는 회사
+   ㅤㅤㅤㅤㅤ데스크탑 소프트웨어들은 대부분 많은 코어를 활용하도록 만들어지지 않음.
+   ㅤㅤㅤㅤㅤ게임은 8코어에서는 성능 향상이 되겠지만, 128 코어는 낭비일뿐.
+   ㅤㅤㅤㅤㅤ그래서, 더 적은수의 강력한 코어를 필요로 하게 됨
+   ㅤㅤㅤ2. 비순차 실행 (Out-of-Order Execution, OoO )은 더 많은 명령을 병렬로 실행하지만 다중쓰레드 처럼 명시해서 사용할 필요가 없음
+   ㅤㅤㅤㅤㅤ개발자 관점에선 그냥 각 코어들이 빠르게 동작하는 것처럼 보임
+   ㅤㅤㅤㅤㅤ특정 위치의 메모리 장소에서 데이터를 가져오는 것은 느림
+   ㅤㅤㅤㅤㅤ하지만, 1바이트를 가져오나 128바이트를 가져오나 Delay 차이는 없음
+   ㅤㅤㅤㅤㅤ데이터는 데이터버스를 통해서 이동하는데, 이 버스가 넓으면 동시에 여러 바이트를 읽어올수 있음
+   ㅤㅤㅤㅤㅤCPU는 실행할때 여러 덩어리의 명령어들을 한번에 실행하게 되는데, 이 명령어들은 순차적으로 실행하게 작성되어 있음
+   ㅤㅤㅤㅤㅤ최신 마이크로프로세서들은 Out-Of-Order 실행을 함.
+   ㅤㅤㅤㅤㅤ즉 여러개의 명령어들을 분석해서, 서로간에 의존성이 있는지를 알아냄.
+   ㅤㅤㅤㅤㅤㅤㅤㅤ01: mul r1, r2, r3 // r1 ← r2 × r3
+   ㅤㅤㅤㅤㅤㅤㅤㅤ02: add r4, r1, 5 // r4 ← r1 + 5
+   ㅤㅤㅤㅤㅤㅤㅤㅤ03: add r6, r2, 1 // r6 ← r2 + 1
+   ㅤㅤㅤㅤㅤ위 명령에서 1과2는 의존성이 있지만, 3번은 앞과 전혀 상관이 없음.
+   ㅤㅤㅤㅤㅤ이러면 Out-of-Order 프로세서들은 의존성이 없는 3번 명령을 병렬로 실행할수 있음.
+   ㅤㅤㅤㅤㅤ실제로는 CPU가 한두개가 아닌 수백개의 명령어들간에 의존성을 파악할 수 있음.
+   ㅤㅤㅤㅤㅤCPU는 명령어를 노드 그래프로 연결하고 그걸 분석해서 병렬로 수행할수 있는 명령과, 실행전에 결과를 기다려야 하는 위치를 알아낼수 있음.
+   ㅤㅤㅤㅤㅤM1의 Firestrom 코어가 엄청난 속도를 내는 이유는 아주 뛰어난 Out-of-Order 실행을 하기 때문.
+   ㅤㅤㅤㅤㅤIntel/AMD 를 포함한 주류시장의 다른 누구보다도 뛰어날 것 같음.
+   - 왜 AMD 와 Intel 의 Out-of-Order 실행은 M1보다 느릴까 ?
+   ㅤ→ 앞에서 얘기한건 실제로는 ROB(Reorder Buffer) 라고 하며 일반적인 기계어 코드 명령이 아님(CPU가 실행하기 위해 메모리에서 가져오는)
+   ㅤㅤ이 명령어들은 CPU Instruction Set Architecture(ISA)라고 하며, 우리가 x86, ARM, PowerPC 라고 부르는 것들임.
+   ㅤ→ CPU는 내부에서 프로그래머가 모르는 완전히 다른 명령어 세트인 micro-operations (마이크로 명령어, micro-ops or μops)로 실행되며, ROB는 이 micro-ops 로 가득 차 있음
+   ㅤ→ ARM/x86 명령어는 공개 API, micro-ops 는 비공개 API라고 생각하면 됨.
+   ㅤ→ CISC 는 명령어가 크고 복잡하기 때문에 micro-ops를 꼭 써야하지만, RISC는 쓸지말지 선택할 수 있음.
+   ㅤㅤ(예를 들어, 작은 ARM CPU들은 micro-ops를 안써도 됨. 그렇다고 OoO를 못하는건 아님)
+   ㅤ→ 이게 왜 중요할까 ? ""빠른 속도는 ROB를 얼마나 빨리,많이 채울수 있는지""가 중요
+   ㅤ→ 더 빠르게 채울수록, 더 많은 명령어를 병렬로 실행할수 있는 기회가 많아져서 성능이 향상
+   ㅤ→ 기계어 코드들은 디코더에 의해서 micro-ops 로 분할이 됨.
+   ㅤ→ 인텔/AMD 코어는 4개의 디코더가 있는데,
+   ㅤㅤ애플은 '미친' 8개의 디코더가 있고, ROB가 3배 더 커서 기본적으로 3배더 많은 명령어들을 담을 수 있음
+   - 그럼 왜 인텔과 AMD는 더 많은 명령어 디코더를 안 넣어 ?
+   ㅤ→ 여기서 RISC의 반격이 시작됨. M1 Firestorm 코어에 ARM RISC가 있다는게 중요.
+   ㅤ→ x86 명령어의 길이는 1~15바이트이고, RISC는 고정 사이즈
+   ㅤ→ 모든 명령어의 길이가 같으면 그냥 8개의 다른 디코더에다 잘라서 던지면 그만임
+   ㅤ→ 하지만, x86은 한 명령어의 다음 명령어가 언제 시작하는지를 모르기때문에 실제로 각 명령어를 분석하는 수 밖에 없음
+   ㅤ→ 인텔과 AMD는 이 문제를 brute-force 하게 처리하는 방법은 모든 명령어의 시작마다 디코딩 하는것
+   ㅤㅤ즉, 잘못된 추측이나 실수를 계속 버려야 한다는 것.
+   ㅤㅤ그래서 더 많은 디코더를 추가하기가 어렵지만, 애플은 아주 쉬움
+   ㅤ→ 이게 기본적으로 동일한 클럭 주파수에서 AMD/Intel CPU보다 두 배 많은 명령을 처리할수 있게 하는 것
+   ㅤ→ 현실에선 x86은 복잡한 CISC는 잘 안쓰고 RISC 처럼 짧은 명령을 주로 쓰기는 하지만, 저 15바이트짜리 명령어를 처리는 해야하기 때문에 복잡성은 있음.
+   - 근데 AMD의 Zen3 코어가 아직 더 빠르자나 ?
+   ㅤ→ 벤치마크에서 Zen3 가 Firestorm 보다 빠르긴 한데, Zen3는 5Ghz고 파이어스톰은 3.2Ghz
+   ㅤ→ 애플이 클럭주파수를 높이지 않는건 칩이 뜨거워 지기 때문.
+   ㅤ→ 기본적으로 Zen3 보다 Firestorm 코어가 우수함
+   ㅤ→ Zen3는 더 많은 전력을 소비하고 열을 내면서 게임에 사용할수 있지만, ""애플은 그걸 하지 않기로 한 것임""
+   ㅤ→ 애플이 더 높은 성능을 원한다면 더 많은 코어를 추가할 것. 이를 통해 더 높은 성능을 더 적은 전력으로 낼수 있음
+   - 미래
+   ㅤ→ AMD/Intel 이 두가지 부분에서 자신들을 코너에 몰아 넣은 것
+   ㅤㅤ1. 이기종 컴퓨팅 및 SoC 설계를 밀어줄 비즈니스 모델이 없음
+   ㅤㅤ2. 복잡한 x86 CISC 명령어들이 레거시가 되어 OoO 성능을 개선하기 어렵게 만듬
+   ㅤ→ 물론 게임 오버는 아님. 더 클럭을 올리고 냉각을 더 하고, 더 많은 코어를 사용하고..
+   ㅤ→ 인텔은 더 안 좋음. 이미 코어속도에서 Firestorm에 밀리는데다가 SoC에 넣은 GPU가 후짐.
+   ㅤ→ 많은 코어는 당연히 서버에 좋지만, 아마존과 Ampere가 128코어로 공격하고 있음. 인텔/AMD는 양쪽을 다 싸워야 하는 상황
+   ㅤ→ 다행스럽게도 AMD/Intel 과 달리 Apple은 칩을 시장에 판매하지 않음
+   ㅤ→ 당장은 안그렇겠지만, PC사용자들은 천천히 애플로 이동하게 될 것이고, 애플은 PC마켓에서 더 많은 비중을 차지 하게 될 것
+
+   글 진짜 잘 쓰신다
+
+   너무 이해하기 쉽게 잘 정리해주심에 감사드립니다. 쵝오!
+
+   좋은 내용 감사합니다.
+
+   고맙습니다!!
+
+   M1 기기가 사고 싶었는데 그게 아니라 주식을 사야겠네요..
+   좋은 글 감사합니다!
+
+   저도 애플 주식이 미래가치가 높을거라는 거에 한표입니다.
+   언젠가 정말 애플Car 가 나오게 될거 같아요.
+
+   Weak memory model이 점점 중요해지고 있군요.. 애플은 이제 정말 칩부터 조립, 하드웨어, OS, 앱까지 전부 다 만들 수 있는 (잡스가 꿈꾸던) closed 회사가 되고 있네요.
+   저도 다음 기기는 m1 맥미니나 맥북에어로 생각하고 있습니다..
+
+   저도 2015년 맥북프로에서 m1으로.. 연말 아니면 내년초에 온다고 하네요!
+
+   오늘 확인해 보니, 국내 출시됐어요!
+
+   와! 구루님 정말 최고!!
+
+   고맙습니다 ;)
+
+   저 글안에 저자가 적은 RISC/CISC 비교글도 있는데 완전 강추드립니당. 왜 그런 명령어 구조를 가지게 됐을까? 라는 걸 술술 풀어서 설명해줘용.
+
+   기본적으로 글을 잘 쓰는 사람인거 같아요. 이 글도 꽤 긴데 잘 읽히더라구요.
+
+   와 좋은 내용 감사합니다.
+
+   고맙습니다!
+
+   컴퓨터 아키텍처 수업을 다시 듣는 기분이네요 ㅎㅎ
+   결국 애플은 애플이 가장 잘하는 걸 계속 더 잘할 수 밖에 없는 구조죠
+
+   인텔과 AMD는 이제 어쩌나요..
+   오늘 올린 긱뉴스 팟캐스트 16화에서 M1칩의 Memory-Order 트릭에 대해서 간단히 소개했는데 그것과는 또 다르게 자세한 글이네요.
+   - https://news.hada.io/podcast/22
+   다음주 팟캐스트에서도 또 얘기하게 될 듯 ^^;
+"
+"https://news.hada.io/topic?id=3325","Reveal 2020 - 쿠팡 개발자 컨퍼런스","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Reveal 2020 - 쿠팡 개발자 컨퍼런스
+
+   - 쿠팡의 첫 번째 개발자 컨퍼런스
+   - 2020년 12월 11일 오전 10시 30분부터 오후 7시까지 온라인 개최
+   - 원활한 스트리밍 제공을 위하 참가 인원 제한됨 (참가 등록 필수)
+   - 각 세션 발표 자료와 영상은 Reveal 2020 사이트와 쿠팡 유튜브 채널에서 공개 예정
+   - CTO와 함께하는 토크콘서트
+   - 머신러닝을 통한 SCM 수요예측
+   - 쿠팡의 데이터 플랫폼 확장
+   - 집요한 실험으로 완성해가는 개발자와 디자이너의 약속
+   - Apache Flink: 로켓처럼 빠른 실시간 스트리밍 데이터처리
+   - 리테일 시스템의 핵심 두 가지: 로켓배송 서플라이어와 상품 가격관리에 대하여
+   - 자체 관리형 MySQL 플랫폼을 클라우드에서 구축하는 방법 (프래그머틱 사고법)
+   - 쿠팡 소프트웨어 엔지니어들의 라이프사이클
+   - WMS(Warehouse Management System) - 쿠팡에서 물류시스템의 역할
+   - 폐기율 ‘Zero’를 위한 효과적인 신선식품 재고 예측
+
+   온라인 컨퍼런스인데 참가인원 제한이 특이하네요. 일단 등록완료 ㅎㅎ 고맙습니다.
+"
+"https://news.hada.io/topic?id=3301","M1 맥북프로, 맥북에어 전파인증 완료. 출시 임박 (출시일 예상)","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 M1 맥북프로, 맥북에어 전파인증 완료. 출시 임박 (출시일 예상)
+
+   애플 실리콘 M1이 탑재된 랩탑 계열의 전파 인증이 통과되었습니다.
+   기존 제품의 사례들을 바탕으로 예상되는 판매 일정은 다음과 같습니다.
+   전파인증 : 12월 1일
+   공식홈페이지 판매 : 12월 4일 (전파인증 +3일 예상)
+   도착 : 12월 22일 (공홈판매 후 +18일 예상)
+
+   이제 주문 가능합니다
+   맥미니 - 12/9 부터 수령 가능
+   맥북에어 - 12/22 부터 수령 가능
+   맥북프로 - 12/18 부터 수령 가능
+
+   시간이 죽죽 밀리네요. 기다리셨던 분들이 많으신듯
+   CTO옵션하면 내년으로..
+
+   애플코리아 전파인증 현황을 알려주는 (비공식) 트위터봇이 있다는게 재미나네요
+   https://twitter.com/applekorea_rra
+   이제 다시 고민하면 될거 같아요 맥북프로냐 에어냐...
+   전 맥북프로 16인치 팬소리에 넘 질려서 ㅡ.ㅡ+
+
+   좀 전에 M1 Mac mini(A2348)도 올라왔내요.
+   https://rra.go.kr/ko/license/A_b_popup.do?app_no=202017210000324670
+"
+"https://news.hada.io/topic?id=3272","10 Ways to hide your Bot Automation from Detection | How to make Selenium stealth","                                                                                                                                                                                                                                                                                                                                                                                                                                                                           10 Ways to hide your Bot Automation from Detection | How to make Selenium stealth
+
+   1. Navigator.Webdriver 플래그 제거
+   2. 브라우저 드라이버 EXE의 난독 화 JavaScript
+   3. 해상도, 사용자 에이전트 및 기타 세부 사항 변경
+   4. 사실적인 페이지 흐름과 함정 피하기
+   5. 프록시를 사용하여 IP 주소 변경
+   6. 임의 지연 사용
+   7. Do not use a Headless Browser
+   8. 캡차
+   9. Hold cookies
+   10. 백 오프
+"
+"https://news.hada.io/topic?id=3353","세상(?)의 모든 Tutorial을 모은 사이트","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       세상(?)의 모든 Tutorial을 모은 사이트
+
+   이 사이트에 있는 글들을 전부 타이핑한 사용자들은 과연 어떤 사람인지 궁금하네요.
+   Academic
+   Computer Science
+   Big Data & Analytics
+   Python Technologies
+   Web Development
+   Databases
+   Sports
+   Digital Marketing
+   Engineering Tutorials
+   Monuments
+   Machine Learning
+   Mainframe Development
+   Scripts
+   Microsoft Technologies
+   Mathematics
+   Management
+   Computer Programming
+   Java Technologies
+   Mobile Development
+   DevOps
+   Soft Skills
+   Latest Technologies
+
+   우아 위키 토튜리얼 인가요..
+   대단한 사이트 입니다
+
+   https://www.tutorialspoint.com/about/about_team.htm
+   인도 사람이군요.
+   14년 됬네요. 사이트가..
+"
+"https://news.hada.io/topic?id=3331","Apple Silicon 맥용 IntelliJ 패치","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Apple Silicon 맥용 IntelliJ 패치
+
+   아직 Apple Silicon 대응 IntelliJ 배포가 나오지 않은 상태에서 IntelliJ 내부 JBR(JetBrainsRuntime)을 arm64용 openjdk(zulu)용 파일로 교체하여 IntelliJ를 Apple Silicon 네이티브로 실행할 수 있게 해주는 패치 방법을 소개합니다.
+
+   오오오. 감사합니다! 👍
+"
+"https://news.hada.io/topic?id=3264","11년동안 작업한 Line Rider 트랙","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        11년동안 작업한 Line Rider 트랙
+
+   - 2006년에 나온 Line Rider 는 선을 그리면 라이더가 따라서 이동하는 간단한 플래시 게임
+   - 2008년부터 만들기 시작해서 11년간 만들어낸 Omniverse II 트랙을 공개 (4분짜리 유튜브 영상)
+   - 중학생때 Line Rider를 알고, 고등학생때 트랙을 만들기 시작, 나중엔 프로그래밍을 배우고 공대에 가서 Line Rider 자체를 여러번 재개발해보고 최종적으로 웹버전으로 만들어서 https://www.linerider.com/ 의 공식 버전이 됨 (현재는 소프트웨어 엔지니어 이자 미디어 아티스트)
+   - 사용한 기법들을 하나 하나 설명하는 굉장히 긴 글
+
+   https://www.youtube.com/watch?v=WeW0xvOjvHc 이 Omniverse II 영상은 꼭 한번 보시기 바랍니다.
+   트랙은 https://www.linerider.com/ 에서 누구나 그려볼수 있긴 한데.. 왜 11년일까 이해하실수 있습니다.
+   그리고 Omniverse II 트랙은 아래 링크에서 직접 실행해볼수 있습니다.
+   - https://linerider.com//…
+"
+"https://news.hada.io/topic?id=3332","애플, 16코어 이상 애플 실리콘 칩 테스트중","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       애플, 16코어 이상 애플 실리콘 칩 테스트중
+
+   - 고급형 맥북프로/아이맥을 위한 고성능 16코어 + 고효율 4코어 CPU 버전을 개발 중이라는 루머
+   ㅤ→ 고성능 코어를 8~12코어만 넣은 버전이 같이 나올수도
+   - 2021년말~2022년에 나올 아이맥 및 절반크기의 맥프로를 위해서는 고성능 32코어 짜리를 테스트 중
+   - 현재 M1기반 맥북들은 GPU도 7~8개의 코어만 가지고 있지만,
+   ㅤ고성능 노트북과 중급 데스크탑엔 GPU도 16~32코어 를 테스트중이며,
+   ㅤ2022년에 나올 최고사양 컴퓨터는 64~128코어 GPU를 테스트하고 있음
+
+   WWDC 애플실리콘 발표에서 개발자들의 우려가,
+   M1 맥북 출시와 함께 애플 실리콘에 대한 기대로 바뀌었지요.
+   고성능 애플 실리콘 맥 출시가 기대를 환호로 바꿔주길 바랍니다.
+
+   제가 맥을 꽤 오래쓰면서도 아이맥/맥프로 에는 관심이 없었는데, 32코어가 나오면 혹할듯 합니다.
+
+   32코어 CPU에 128코어 GPU 를 가진 맥프로는 어떤 속도가 날지..
+
+   벌써 무섭군요..
+"
+"https://news.hada.io/topic?id=3360","Google Fuchsia OS 오픈소스 모델 변경","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Google Fuchsia OS 오픈소스 모델 변경
+
+   - 보안,업데이트,성능을 우선시하는 다목적 오픈소스 OS로 다양한 기기에 사용가능
+   - 이제 외부에서 기여 가능
+   ㅤ→ 공개 메일링리스트 생성
+   ㅤ→ 거버넌스 모델 추가
+   ㅤ→ 이슈트래커 오픈
+   - 아직 일반적인 제품이나 개발용도로는 적합하지 않음.
+   ㅤ→ 제한적인 x64 기반 하드웨어 또는 에뮬레이터에서 테스트 가능
+
+   https://ko.wikipedia.org/wiki/구글_퓨시아
+   ""구글 퓨시아(영어: Google Fuchsia)는 구글에서 개발하는, 지르콘(Zircon)이라는 이름의 마이크로커널을 기반으로 하는 컴퓨터 운영 체제이다.
+   마젠타(Magenta)라는 이름의, LK(Little Kernel)라는 운영체제에서 파생된 새로운 커널을 기반으로 하고 있었으며
+   언론들은 이것이 임베디드 시스템부터 스마트폰, 태블릿, 개인용 컴퓨터까지 모든 장치에서 구동할 수 있을 것으로 짐작하였다.""
+   맥OS 개발팀에 14년간 있었던 Bill Stevenson이 작년에 Fuchsia팀으로 옮겨갔습니다.
+   https://9to5google.com/2019/01/22/google-fuchsia-poaches-mac-veteran/
+   Google Nest Hub (예전 Home Hub) 장비가 Fuschia OS 기반으로 알려져 있습니다.
+   https://9to5google.com/2018/10/10/google-home-hub-fuchsia-os/
+"
+"https://news.hada.io/topic?id=3276","Multiavatar - 멀티 컬처럴 아바타 생성기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Multiavatar - 멀티 컬처럴 아바타 생성기
+
+   - 다양한 인종, 문화, 연령대, 세계관 및 삶의 방식을 표현하는 오픈소스 아바타 생성기
+   - 48개의 고유 아바타 (16개 캐릭터 * 3개의 버전/테마 )
+   - 각 아바타는 환경 / 의상 / 얼굴 / 입 / 눈 / 탑(머리/모자) 등의 6가지로 구성
+   - 48^6 = 12,230,590,464 개의 아바타 조합 생성이 가능
+"
+"https://news.hada.io/topic?id=3334","Boltstream - 라이브 비디오 스트리밍 서비스 오픈소스","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Boltstream - 라이브 비디오 스트리밍 서비스 오픈소스
+
+   - Django + nginx
+   - RTMP 라이브 스트리밍
+   - 여러개를 동시 전송 가능
+   - HLS 기반 재생 지원
+   - HLS AES-128 을 이용한 재생 또는 초 단위 과금 구현 가능
+   - 라이브 스트림 캡쳐 가능 (nginx-vod-module)
+   - WebVTT를 이용한 타임 메타데이터
+   ㅤ→ 채팅 룸 메시지 동기화
+   ㅤ→ 스포츠 경기 중계 동기화
+"
+"https://news.hada.io/topic?id=3354","이맥스와 함께하는 개발환경","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             이맥스와 함께하는 개발환경
+
+   클래식 에디터를 사용하기로 마음을 먹고 vim로 시작해 emacs로 변절하게 되었습니다.
+   이맥스를 사용해서 개발환경을 구축하는 방법에 대한 글입니다.
+   지금은 개인적인 이유로 IDE를 더 많이 사용하지만 아직도 이맥스에서 쾌적함을 느낍니다.
+
+   너무 많은 모드를 적어주셔서 도리어 emacs에 거부감을 가지는 분들이 많을까 걱정되네요 :-D
+   언어별 모드 + vc-mode 만해도 개발할때 충분하지 않나 싶고요, flycheck정도만 추가해도 괜찮습니다.
+
+   우아 댓글들이 후끈들하시네여
+   좋은글 감사합니다
+
+   예전에 emacs 도 써본적은 있는데, 제 업무 패턴은 각 서버에 접속해서 일하는 경우도 많아서 결국은 vim 을 쓰게 되네요. emacs 는 IDE 처럼 주로 사용하는 개인 환경에 세팅해놓고 쓰면 좋은데 그렇지 않으면 vim 이 나은 것 같더라고요.
+
+   순수 emacs를 5년째 사용하고 있습니다.
+   몇몇 언어 (e.g. 파이썬, OCaml, ...) 에 대해서는 IDE 만큼의 생산성을 가진다고 개인적으로 느낍니다.
+   하지만 c/c++나 java 같이 IDE가 엄청나게 발달해 있는 경우는 조금 어렵네요. 그래도 웬만한건 다 mode가 지원되어서 쓰기 좋습니다.
+   무엇보다 재밌습니다. 그리고 커맨드가 유닉스 기본과 겹치는 부분이 많다보니 tmux나 bash에도 종종 써먹곤 합니다.
+
+   써보진 않았지만 누군가가 손가락 건강(?)을 위해서는 emacs가 좋은 선택은 아니라는 이야기도 읽었는데 어떤 의견이신지 궁금합니다. :-)
+
+   이맥스 유저는 아닙니다만, Ctrl + CV가 많은 작업을 며칠 하다 보니 그 뒤부터 새끼손가락이 아프기 시작하더군요. 그래서 이맥스를 쓰려면 Alt(Command) 키를 Ctrl 키 대신에 쓰는 것이 필수일 듯 합니다. 엄지손가락을 쓰면 좀 나으니까요.
+
+   Capslock -> ctrl
+   Command(alt) -> meta
+   보통 이렇게 매핑해서 사용합니다.
+
+   한 3시간 이상 장시간 작업하면 새끼 손가락이 조금 아프긴합니다 ㅎㅎ..
+
+   *nix 에서는 tweak 으로 caps lock에 ctrl을 맵핑해서 사용하면 괜찮습니다.
+
+   아 컨트롤도 매핑해야 하죠. HHKB를 오래쓰다보니 까먹었네요 ㅎㅎ
+
+   meta키를 command키로 변경해서 사용하기때문에 괜찮습니다. 아무 문제없습니다 :)
+   개인적으로 그런 걱정은 vim 에서 매번 esc키를 매번 누를 걱정과 비슷한것 같습니다 :)
+   실제로 esc키는 거의 사용하지 않죠..
+
+   쓰기 어려운 https://www.spacemacs.org/ 설치해서 vim과 혼용해서 쓰는 것도 좋은 거 같아요
+
+   개인적으로는 https://github.com/hlissner/doom-emacs 를 추천합니다.
+"
+"https://news.hada.io/topic?id=3247","Data Discovery Platform(DDP)의 모든 것","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Data Discovery Platform(DDP)의 모든 것
+
+   Nemo, Amundsen, DataHub 등이 필요한 이유와 제공하는 기능들을 정리
+   ""왜 DDP가 필요한가요? 그게 무슨 일을 하죠?""
+   ㅤ→ 조직 내에서 필요한 데이터가 어디 있는지 빠르게 검색하고, 어떤 건지 이해하고, 사용 방법을 배우게 도와 주는 플랫폼
+   [ 데이터를 찾을 때 주로 묻는 질문들 ]
+   ㅤ→ ""_____"" 데이터는 어디서 찾을수 있나요? : 어떤 단어로 검색해야할지도 모를 때도 있음. click, page view 등의 단어로 테이블/컬럼명을 검색
+   ㅤ→ 이 데이터는 뭔가요? : 이 테이블은 어떤 컬럼을 가지고 있나요, 어떤 데이터형이고, 이 값들이 뭘 의미하나요 ?
+   ㅤ→ 누구한테 접근 권한을 요청해야 하죠 ? : 데이터의 오너십과 권한 정보 역시 메타데이터의 일부가 되어야 함
+   ㅤ→ 이 데이터는 어떻게 생성 되었나요? 신뢰할수 있는 건가요? : 누가 만들고, 어떤 경로로 생성되었나요? 분석가가 월간으로 수작업한건가요? 회사내에서 얼마나 쓰이죠? 이 데이터의 계보는 ?
+   ㅤ→ 이 데이터를 어떻게 사용해야 하죠? : 어떤 컬럼들이 관련이 있나요? 어떤 테이블이랑 조인해야 하죠? 데이터를 정리하려면 어떤 필터를 써야하죠? 이 테이블을 주로 사용 하는 사람은 누군가요? (그 사람에게 물어 보면 되니까) 어떤 컬럼을 주로 사용하죠 ?
+   ㅤ→ 이 데이터가 얼마나다 리프레시 되나요? : 종종 지연된다면 얼마나 자주 일어나나요? 데이터의 기간은 얼마나 되나요? 몇주밖에 되지 않았으면 머신러닝에 적합하지 않을거 같아요.
+   [ 데이터를 찾고, 이해하고, 사용하기 위한 기능들 ]
+   - 데이터를 검색 또는 더 똑똑한 방법들로 찾기
+   ㅤ→ 원하는 데이터를 찾기위한 기본 방법은 컬럼명,테이블과 컬럼 설명, 사용자가 입력한 설명이나 코멘트 등의 메타데이터를 ElasticSearch 에서 검색
+   ㅤ→ 많은 검색결과가 있다면 이에 대한 우선순위를 매기는게 필요함. Lyft와 Spotify의 경우는 테이블이 얼마나 많이 사용되는가로 순위를 결정. 즉, 쿼리로그를 파싱하여 테이블 사용량을 ElasticSearch의 랭킹정보로 넣음.
+   ㅤ→ Facebook 의 Nemo는 이걸 더 확장. 검색어를 spaCy로 자연어 파싱, 소셜그래프 검색에 사용하는 Unicorn 으로 kNN기반 스코어링등을 통해서 랭킹을 결정
+   ㅤ→ 또 다른 방법은 추천을 통한 것. 조직과 팀내에서 가장 많이 접근하고 사용하는 데이터를 추천
+   - 데이터를 스키마, 미리보기, 통계, 계보(Lineage)로 이해하기
+   ㅤ→ 테이블을 이해하는 기본 정보는 데이터 스키마 : 컬럼명, 데이터 타입, 설명(Description)
+   ㅤ→ 사용자가 읽기 권한이 있다면 데이터의 미리보기(100줄 정도)를 제공 가능
+   ㅤ→ 미리 계산된 컬럼 단위의 통계도 제공 : 컬럼별 Row수, Null인 Row수, 최대/최소/평균/중간값/표준편차, 고유한 Row수, 날짜 컬럼이라면 데이터의 전체 기간 범위
+   ㅤ→ 데이터 계보를 제공해서 앞뒤 의존성 관계도 확인 : ETL 작업(Airflow 로 스케줄링 되는)의 경우 스케줄/지연 여부등을 확인할수 있음.
+   - 다른 사용자의 이용형태를 통해서 데이터 사용법을 배우기
+   ㅤ→ 테이블을 찾고 나면, 어떻게 테이블을 이용하도록 도와줄수 있을까 ? 간단한 방법은 그 테이블과 관련된 사람들을 보여주는 것
+   ㅤ→ 데이터 소유자는 권한을 부여해 줄수도 있고, 자주 사용하는 사람들은 데이터에 대한 소개나 특이점을 알려줄 수 있음 : Amundsen 과 DataHub는 테이블에 사람을 엔티티로 연결하는게 가능
+   ㅤ→ 하지만 이렇게 그 데이터를 잘 아는 전문가만을 활용하는건 병목현상이 생길수 있으니, 추가적인 메타데이터를 연결해주는게 더 Scalable 한 방식
+   ㅤ→ 사용자가 가장 관련성이 높은 컬럼을 찾을수 있도록, 각 열의 사용통계를 제공하는게 가능.
+   ㅤ→ 또한 해당 테이블과 조인할 테이블이 어떤건지 알기 위해, 주로 조인되는 테이블 목록과 조인하는 열들을 제공하면 편리. 이런 데이터들은 쿼리 로그 파싱을 필요로 함
+   ㅤ→ 데이터 사용에 대한 더 자세한 정보를 제공하기 위해서는 해당 테이블에 대한 최근 쿼리를 제공하는게 가능하고, 이를 통해서 실제로 어떤 데이터를 필터링 하는지를 알 수 있음.
+   ㅤ→ 데이터 계보(Lineage)도 유용. 현재 테이블을 사용하는 다운스트림 테이블에 대해 알수 있고, 그걸 생성하는 쿼리도 보여줌. 이를 통해서 테이블이 다른 유스케이스에 어떻게 이용되는지를 확인 가능
+   ㅤ→ 이렇게 알게된 다운스트림 테이블이 내 목적과 일치할 경우 그걸 이용하면 계산/저장 비용을 줄일 수 있게됨.
+   ㅤ→ Twitter 의 Data Access Layer , Uber의 Databook, Netflix 의 Metacat 등이 Lineage를 지원
+   ㅤ→ 데이터를 실제로 사용하기 전에, 얼마나 자주 업데이트 되는지도 알고 싶어함. 데이터가 어떤 시간단위로(일/시 등) 파티션 되어있는지 명시하는 것이 도움이 됨.
+   ㅤ→ DDP는 Airflow 같은 플랫폼과 연계해서, 스케줄링된 ETL 작업들을 조사하고, 얼마나 걸리는지 등을 볼 수 있음.
+   [ 각 DDP 들의 상위 비교 ]
+   ㅤ→ 모두 ElasticSearch 또는 Solr 기반의 free-text 검색 지원. Amundsen 과 Lexikon 은 홈페이지에서 추천 기능을 제공
+   ㅤ→ 모두 기본 테이블 정보(스키마,설명)는 표시. Amundsen 과 Databook 은 데이터 미리보기와 컬럼통계를 제공
+   ㅤ→ 대부분의 플랫폼이 데이터 Lineage 기능은 내장. Amundsend이 현재는 지원안하는데 2020 로드맵에 있음
+   ㅤ→ 5개의 플랫폼이 오픈소스로 공개
+   [ 오픈소스 DDP들 비교 ]
+   - DataHub (LinkedIn) : https://github.com/linkedin/datahub
+   ㅤ→ 2020년 2월에 공개
+   ㅤ→ 검색, 테이블스키마, 오너십, 계보 기능 지원
+   ㅤ→ Dataset, User, Group 세개의 엔티티 지원. Schemas/Jobs/Metrics/Dashboards 등의 엔티티 추가 예정
+   ㅤ→ Hive, Kafka, RDB 메타데이터 지원 ( 내부에선 더 많이 지원하며, 더 공개될 수도 있음 )
+   ㅤ→ Expedia, TypeForm 등이 채택했으며 MS,Morgan Stanley, Orange Telecom, ThoughtWorks 등도 POC 중
+   - Amundsen (Lyft) : https://github.com/amundsen-io/amundsen
+   ㅤ→ 2019년 10월에 공개
+   ㅤ→ 검색, 추천, 미리보기/컬럼통계/소유자/주사용자 들이 잘 표현된 테이블 상세 페이지 지원. 계보기능은 없지만 추가예정
+   ㅤ→ Data Quality System 과의 연동도 제공 예정 (아마도 Great Expectations - https://greatexpectations.io/)
+   ㅤ→ 훌륭한 커뮤니티가 있음 : BigQuery/Redshift/Apache Atlas 등의 연동등을 개발해서 기여함
+   ㅤ→ 15종 이상의 데이터 소스( Redshift, Cassandra, Hive, Snowflake 및 각종 RDB), Tableau,Redash, Mode Analytics 대시보드, Airflow 등과 연동을 지원
+   ㅤ→ 문서화도 잘 되어있고, Docker 로 로컬에서 테스트 가능
+   ㅤ→ Asana, Instacart, iRobot, Square 를 포함 30개 이상의 조직이 도입.
+   ㅤ→ 2020 7월에 Linux AI 재단의 새 인큐베이션 프로젝트로 조인.
+   - Metacat (Netflix) : https://github.com/Netflix/metacat
+   ㅤ→ 2018년 6월에 공개
+   ㅤ→ 검색, 스키마 보기, 비용과 공간을 분석하는 메트릭 포함.
+   ㅤ→ 테이블/파티션 변경에 대한 노티 알림 기능이 있음. 비용등의 문제로 지워질때 알림을 받는게 가능.
+   ㅤ→ Hive, Teradata, Redshift, S3, Cassandra, RDS 연동 지원
+   ㅤ→ 스키마/메타데이타의 버저닝/검증 기능 작업중이라고 밝힌바 있음.
+   ㅤ→ 오픈소스 이긴 하지만, 문서가 하나도 없어서 도입한 회사는 없음.
+   - Marquez (WeWork) : https://github.com/MarquezProject/marquez
+   ㅤ→ 2018년 10월에 공개
+   ㅤ→ 데이터 품질과 계보에 집중
+   ㅤ→ 데이터 거버넌스, Great Expectations 를 통한 데이터 품질, 데이터셋과 잡에 대한 카탈로그 지원
+   ㅤ→ WebUI 및 Airflow 컴포넌트 및 Java/Python 클라이언트 제공
+   ㅤ→ Docker로 로컬에서 테스트 가능하지만 문서는 많지 않음
+   - Apache Atlas (Hortonworks) : https://atlas.apache.org/
+   ㅤ→ 2015년 7월에 Data Governance Initiative의 일부로 시작
+   ㅤ→ 2018년 6월에 1.0이 공개되고 현재 2.1
+   ㅤ→ 주 목표는 데이터 거버넌스로 조직이 보안/컴플라이언스 요구사항을 준수하도록 도와주는 것.
+   ㅤ→ 자원에 대한 태깅, 다운스트림 데이터셋에 대한 태그 전파, 메타 데이터 접근에 대한 보안등 풍부한 기능을 가지고 있음
+   ㅤ→ 메타데이터 변경 알림 기능도 가능
+   ㅤ→ free-text 검색, 스키마 상세 보기, 데이터 계보 지원
+   ㅤ→ 고급 검색 기능으로 SQL 과 비슷한 구문으로 검색하는 것도 지원
+   ㅤ→ HBase, Hive, Kaflka 등의 메타데이터 소스와 연동 지원
+   ㅤ→ 메타데이터를 REST API로 생성/수정도 가능
+   ㅤ→ 문서화도 잘 되어있음
+   * ING가 Atlas 와 Amundsen 을 같이 도입한 사례는 흥미로움 https://medium.com/wbaa/…
+   * 완전한 DDP는 아니지만 오픈소스 Whale 은 데이터웨어하우스의 내용을 마크다운으로 인덱싱 하는 초간단 DDP 도구로 검색,수정,버저닝등을 지원
+   ㅤ→ 개발자용 DDP 도구로 살펴볼만함. https://github.com/dataframehq/whale
+
+   * 머신러닝처럼 섹시하진 않지만, 데이터 디스커버리는 데이터 사이언스 워크플로우의 중요한 첫 단계
+
+   오 정말 좋은 정리네요. Amundsen 한 번 써봐야겠습니다.
+
+   Nemo - 페이스북의 데이터 디스커버리 플랫폼 https://news.hada.io/topic?id=3024
+   국내에 잘 없는 DDP 구축 사례
+   - 베이글코드의 Amundsen 을 활용한 DDP 구축 사례 https://medium.com/bagelcode/…
+"
+"https://news.hada.io/topic?id=3240","EFF, Cover Your Tracks 새 버전 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     EFF, Cover Your Tracks 새 버전 공개
+
+   - 자신의 브라우저가 핑거프린팅/트래킹 방지를 잘 수행하고 있는지 확인하는 웹사이트
+   ㅤ→ 상세한 항목별 테스트 결과를 점수와 함께 확인
+   ㅤ→ 10년전 공개했던 Panopticlick를 요즘 기술들을 반영하여 업그레이드
+   - EFF가 제공하는 Privacy Badger 확장을 설치하면 트래킹 방지 가능
+   * Electronic Frontier Foundation(EFF, 전자 프런티어 재단) : 표현의 자유, 저작물의 자유로운 사용, 개인 프라이버시 보호, 정보 투명성을 위한 활동을 하는 국제적인 비영리 단체
+
+   Cover Your Tracks 바로 가기 : https://coveryourtracks.eff.org/
+   최근 youtube-dl 게시중단 사건에서 저장소를 원복하는데에도 EFF가 큰 역할을 했습니다.
+   - GitHub, youtube-dl 저장소 복원 https://news.hada.io/topic?id=3213
+   확장을 쓰더라도 트래커는 방지할 수 있지만, 핑거프린팅은 완전 차단은 어렵긴 합니다. (IP기반 핑거프린팅 기법 같은 경우)
+   brave 브라우저 같은 경우, 핑거프린팅 방지 관련해서 좀 더 차단을 하고 있긴 하니까 참고 하세요.
+   - Fingerprinting Defenses 2.0 https://brave.com/privacy-updates-4/
+   - Fingerprinting, and Privacy Budgets https://brave.com/brave-fingerprinting-and-privacy-budgets/
+"
+"https://news.hada.io/topic?id=3352","표준프레임워크 오픈커뮤니티 10주년 기념 세미나","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       표준프레임워크 오픈커뮤니티 10주년 기념 세미나
+
+   - 전자정부 표준프레임워크 오픈커뮤니티 10주년 기념 세미나
+   - 2020년 12월 16일 오후 7시 유튜브 생중계
+   - 사전 참가신청 후, 행사 당일 접속 URL 안내 예정
+   - 10주년 기념 축하 영상(신규 로고 공개)
+   - 표준프레임워크 4.0 버전에 도입되는 Spring 5 알아보기, 이일민
+   - 더 나은 개발자로 성장하기 위한 Tip, 백기선
+   - 10주년 축하 이벤트 with 유병은 언더뮤지션 (평일에는 IT 직장인, 주말에는 뮤지션)
+   - 표준프레임워크 오픈커뮤니티와 성장한 이야기 1: 개발자에서 스타트업 대표로, 김경하
+   - 표준프레임워크 오픈커뮤니티와 성장한 이야기 2: 평범한 회사원에서 경험과 지식을 나누는 슈퍼개발자로, 이기하
+   - 표준프레임워크 오픈커뮤니티와 성장한 이야기 3: 개발자가 크면 무엇이 될까요?, 장미영
+
+   역사 속으로 조용히 사라지게 될 듯...
+
+   전자정부 클라우드 플랫폼 이라면
+   파스타 인가봅니다
+   저희도 회사에서 쓸만한지 검토해보려고 찾아보고 있습니디
+
+   전자정부 표준프레임워크가 10년이나 됐군요.
+   최근에 전자정부 클라우드 플랫폼 개발한다는 소식 들었는데, 프레임워크는 어떻게 되는건지 궁금하내요.
+"
+"https://news.hada.io/topic?id=3289","browserslist 쾌속 가이드","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          browserslist 쾌속 가이드
+
+   은근슬쩍 FE개발환경에 크게 자리잡은 browserslist를 빠르게 파악할 수 있도록 정리해봤습니다.
+
+   브라우저리스트 글도 재밌게 읽었지만
+   '하루 25분 실행하기: 하루를 대하는 14년차 개발자의 자세'을 읽고나서는 존경하게 되었습니다 ㅎ
+   역시 딸가진 아빠는 뭔가 다른것 같아요
+   조금 릴렉스 하셔도 좋을것 같습니다
+   응원하겠습니다
+
+   과분한 말씀 부끄럽습니다.
+   감사합니다!
+
+   오오. UI가 친숙해서 목록을 봤더니, 누구나 원하는 개발자되기를 쓰셨던 분이군용! 'ㅁ 'b 잘 읽었었습니당!
+
+   넵 감사합니다.
+
+   브라우저 호환성 관련 내용이다 보니 문득 생각난 것인데, 위 블로그는 왜 본문 내용이 MS Edge에서는 안 보이는 걸까요? 정확히 말하자면 MS Edge에서는 링크를 클릭하는 순간 본문 내용이 순간적으로 나타났다가 도로 사라집니다. Chrome이나 Firefox에서는 이런 현상이 없는데, 오묘하군요.
+
+   헉! 제보 감사합니다. 몰랐습니다.
+"
+"https://news.hada.io/topic?id=3357","터미널 기반 글 작성 & 코딩 워크플로우","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         터미널 기반 글 작성 & 코딩 워크플로우
+
+   데이터 인포메이션/바이오 메디컬 연구자가 독특하게 구성한 자신의 터미널 작업 환경 설정과 도구들을 공유
+   - 터미널 : Alacritty
+   - 쉘 : zsh & oh-my-zsh, tmux
+   - 파일 검색 : fzf & ripgrep
+   - 파일 리스트 : lsd(LSDeluxe)
+   - 파일 탐색기 : ranger
+   - 파일 보기 : bat
+   - 에디터 : neovim
+   - 마크다운 작성 : pandoc
+   - 과학 문헌 관리 : zotero
+   - 컬러 팔레트 : gruvbox-dark
+   - 폰트 : Fantasque Sans Mono
+   * neovim, alacritty, tmux, zsh 설정 파일 공유
+   * vim-floaterm 으로 neovim 안에서 Floating Terminal 을 구현
+   * tmux 에 resurrect/continuum, neovim 에 obsession 플러그인을 이용, 터미널을 재시작해도 tmux/vim 화면을 그대로 복원
+"
+"https://news.hada.io/topic?id=3321","Got Your Back - Gmail 백업/리스토어 도구","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Got Your Back - Gmail 백업/리스토어 도구
+
+   - Gmail API를 이용해서 메일을 내려받거나 복원
+   ㅤ→ 구글 Takeout으로 백업한 mbox도 복원 가능
+   ㅤ→ 다른 계정으로도 복원 가능
+   ㅤ→ 같은 계정으로 재 복원해도 중복 안 생김
+   ㅤ→ 검색을 이용해서 특정 메일만 백업가능 ""is:important OR is:starred"" (지메일의 검색어 구문 그대로 사용)
+   - 윈도우/맥/리눅스 지원 코맨드라인 툴
+   - Google Workspace 관리자는 사용자 암호를 몰라도 전체 사용자의 메일 백업/리스토어 가능
+   ㅤ→ 메일을 사용자 메일함이 아닌 구글 그룹으로 복원하기 지원 (그룹에서 백업은 지원안함. 쓰기만 가능)
+"
+"https://news.hada.io/topic?id=3233","twelve70 - 남자들을 위한 옷/신발 선택 도구","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     twelve70 - 남자들을 위한 옷/신발 선택 도구
+
+   - ""오늘 뭐 입지 ?""
+   - 상의/하의/외투/신발 중 하나를 디자인/색상으로 선택하면, 나머지들을 색상에 맞게 추천
+   - 추천을 디지털 옷장에 저장 및 날짜 스케줄링 가능
+
+   음.. 아이디어는 재미난데, 솔직히 몇번 해보니 추천하는 스타일이 맘에는 안드네요 ㅎㅎ
+   남자들의 경우 신발이 여러 색상으로 다양하게 있지는 않으니 그 부분은 뭔가 개선이 필요할 듯
+   실제 브랜드 옷을 가져다 해보면 좀 더 재미날거 같긴 합니다.
+   이런 아이디어도 있다 느낌으로 올려봅니다.
+"
+"https://news.hada.io/topic?id=3235","google sheet를 이용한 api 목업 기능 구현(한국어)","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  google sheet를 이용한 api 목업 기능 구현(한국어)
+
+   구글 스프레드시트 문서로 데이터를 입력하여 mockup api를 만들수 있도록 구현
+   공개 보기 설정을 해 둔 상태의 스프레드시트 만 사용가능
+   npm에 계시 됨
+   swagger 기반 playground(?): https://api.fureweb.com/
+"
+"https://news.hada.io/topic?id=3345","Chrome Dev Summit 2020","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Chrome Dev Summit 2020
+
+   다가오는 Chrome Dev Summit 2020이
+   국내시간 12월 10일, 11일 새벽 2시 30분부터 5시 30분까지 이어집니다.
+   올해는 콘퍼런스가 모두 온라인으로 열려서,
+   유튜브 링크만 있으면 누구나 참여할 수 있습니다.
+   Chrome에 관심있는 분들이라면 참여해보시면 좋겠습니다.
+"
+"https://news.hada.io/topic?id=3306","GraphQLEditor - GraphQL 비쥬얼 편집기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    GraphQLEditor - GraphQL 비쥬얼 편집기
+
+   - 블록 형태의 비주얼 편집 기능으로 간편하게 GraqhQL을 작성
+   - 스키마 버저닝 지원
+   - Fake 백엔드 자동 생성해서 즉시 테스트 가능
+   - 문서 자동 생성 기능
+   - 실시간 협업 지원
+"
+"https://news.hada.io/topic?id=3362","MS Excel에 Lambda 함수 추가","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         MS Excel에 Lambda 함수 추가
+
+   =LAMBDA(x, y, x+y) → =myLambda(1,3) → 4
+   - 엑셀 수식(포뮬러)를 이용해서 커스텀 함수를 생성할 수 있게 됨
+   ㅤ→ 기존에 커스텀 함수는 VBA/JavaScript 등에서만 가능
+   - 재귀호출 가능
+   - 셀에서 테스트해본 후, Name Manager 를 통해서 Lambda의 이름과 함수 내용 지정하면, 엑셀 수식 어디서나 사용할수 있게 됨
+   - 베타 버전에 적용
+"
+"https://news.hada.io/topic?id=3311","csv-parser - 스트리밍 csv 파서","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        csv-parser - 스트리밍 csv 파서
+
+   - csv-spectrum ACID 테스트 통과하면서도 가장 빠른 파서를 목표로 개발
+   - CSV를 초당 9만줄씩 JSON으로 변환하는 Node.JS용 모듈
+   - browserify 로 브라우저 안에서도 사용 가능
+
+   데이터들이 CSV로 많이 존재하고, 그걸 어떻게하면 빠르게 읽을까가 또 중요한 이슈다 보니 관련 도구들이 많이 나오네요.
+   이렇게 파싱한 JSON들을 빠르게 파싱하기 위한 라이브러리는 아래에
+   * simdjson - JSON을 GB/초 단위로 파싱하기 https://news.hada.io/topic?id=2632
+   * 세계에서 제일 빠른 JSON 파서 만들기 https://news.hada.io/topic?id=2728
+"
+"https://news.hada.io/topic?id=3285","205Byte로 짠 플래피 버드","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           205Byte로 짠 플래피 버드
+
+   - Canvas에서 동작하는 Flappy Bird 게임
+   - 마우스 클릭하면 점프
+   - 원래는 341바이트로 시작했는데 많은 사람들이 댓글로 코드골프에 참여하면서, 용량이 계속 줄고 SVG 버전으로도 변환
+   아래는 브라우저 주소창에 붙여 넣기 가능한 dataurl 버전들
+   - 오리지널 버전 (341바이트)
+   data:text/html,
+   - 최종본 (205바이트)
+   data:text/html,
+   - SVG 버전 (227바이트)
+   data:text/html,
+   - jsfiddle에서 바로 실행해보기 : https://jsfiddle.net/5gjbtn74/
+
+   HN에 아래와 같은 다양한 정보들이 같이 올라왔네요 https://news.ycombinator.com/item?id=25251518
+   - SNES 용 Super Mario World 에 손으로 코드 인젝션해서 플래피 버드 실행하기 : https://www.youtube.com/watch?v=hB6eY73sLV0
+   - 플래피버드 안에서 플래피버드 https://www.lexaloffle.com/bbs/?tid=29323
+   ㅤZ 는 바깥쪽 새 점프, X 는 안쪽 새 점프
+   - 부트섹터에서 실행하는 플래피버드 fbird https://github.com/nanochess/fbird
+   - 140바이트 짜리 JavaScript 버전 https://www.dwitter.net/h/FlappyBird
+"
+"https://news.hada.io/topic?id=3269","JSX Lite - Write components once, run everywhere","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            JSX Lite - Write components once, run everywhere
+
+   - JSX의 서브셋으로 작성한 웹UI 컴포넌트를 Vue, React, Solid, Angular, Svelte, Liquid 에서 다 쓸 수 있게 컴파일 해주는 오픈소스 도구
+   - Figma/Sketch 에서 디자인을 가져와서 변환 가능
+   - https://www.builder.io/ 에서 Drag & Drop UI 편집 지원
+   - 현재 알파단계로 곧 Stable 릴리즈 예정, ReactNative 지원 및 VS Code 플러그인도 개발중
+"
+"https://news.hada.io/topic?id=3266","ex-구글러를 위한 개발도구 가이드","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ex-구글러를 위한 개발도구 가이드
+
+   - 구글내의 개발환경에 익숙한 개발자가 퇴사후 다른 회사에 갈때 쓰게 될 개발 도구들에 대한 가이드
+   - 양쪽의 개발도구를 비교해서 볼 수 있는 재미난 글
+   구글 내부 ↔ 외부
+   - 기능/버그 트래커 : Issue Tracker ↔ GitHub Issues, JIRA
+   - 코드 읽기 : Code Search ↔ 에디터, OpenGrok, Hound, Sourcegraph
+   - 코드 작성 : Critique, IntelliJ, Emacs, Vim, VS Code ↔ Critique 제외한 전부
+   - 테스트 코드 : Blaze ↔ Bazel
+   - 코드 리뷰 : Critique ↔ GitHub PRs, Gerrit, Phabricator, Reviewable
+   - 배포 : Borg ↔ Kubernetes
+   - 모니터링 : Borgmon, Dapper, Viceroy ↔ Prometheus, Grafana, Lightstep, Honeycomb, Sentry
+
+   Google Diaspora 라는 표현이 적절하네요.
+   저도 10년전에 KTH에 있을때 거기서 썼던 지라/컨플루언스/Git(GitLab) 등의 도구에 손에 익은 분들이 다른데 가서도 다 그걸 쓰는걸 본 적이 있어서 공감이 갑니다.
+   구글은 자체 도구가 워낙 방대하다보니 이런 글들이 나올 수가 있군요.
+   글 중간에 있는 xg2xg 저장소 링크도 유용합니다.
+   ""xg2xg - by ex-googlers, for ex-googlers - a lookup table of similar tech & services""
+   - https://github.com/jhuangtw/xg2xg
+"
+"https://news.hada.io/topic?id=3246","dog - 쓰기 편한 DNS 클라이언트 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         dog - 쓰기 편한 DNS 클라이언트
+
+   - UDP/TCP(포트 53) 및 DoT(DNS-Over-TLS, 포트 853), DoH(DNS-Over-HTTPS, 포트 443)를 지원하는 CLI용 오픈소스 DNS 클라이언트
+   - 내용을 읽기 쉬운 컬러풀한 출력
+   - JSON 출력을 지원. jq등과 연동하여 자동화 스크립트에서 사용 가능
+   - 윈도우/맥/리눅스 지원
+
+   저는 새로운 툴을 보면 설치 페이지부터 보는데, 배포가 단순해서 봤더니 rust 로 개발된 도구네요.
+   go lang 이나 rust 로 개발된 도구이 대부분 배포 방법이 단순한 것 같아요.
+   https://dns.lookup.dog/installation
+   compiling dog from source : dog is written in Rust. You will need rustc version 1.45.0 or higher. The recommended way to install Rust for development is from the official download page, using rustup.
+"
+"https://news.hada.io/topic?id=3250","What is Lambda Layers and how to use it with Java runtime?","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       What is Lambda Layers and how to use it with Java runtime?
+
+   What is Lambda Layers and how to use it with Java runtime?
+"
+"https://news.hada.io/topic?id=3339","1.5는 Ruby에서 0과 무한대 사이의 중간값입니다. ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     1.5는 Ruby에서 0과 무한대 사이의 중간값입니다.
+
+   부동소수점에 대한 재미있는 사실을 짚은 글. '1.5는 Ruby에서 0과 무한대 사이의 중간값입니다.' 라는 글입니다.
+   루비의 이진 검색을 쓰다가 실수로 우연히 '0과 Float::무한대' 를 입력하여 찾아낸 결과를 왜 그렇게 나왔는가 추적하는 글입니다. 중간에 부동소수점 시각화 사이트도 알려줘서 쉽게 이해할 수 있습니다! 'ㅁ'!
+"
+"https://news.hada.io/topic?id=3252","까치가 병뚜껑을 물어오면 음식으로 바꿔주는 기계를 만들다","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    까치가 병뚜껑을 물어오면 음식으로 바꿔주는 기계를 만들다
+
+   - 인공지능 & 로봇 분야에서 일하는 Hans Forsberg가 야생 까치를 위해 만든 자동 음식 공급장치
+   - 라즈베리파이 3 + 아두이노 UNO
+   - 디스펜서는 3D 프린터로 출력하고 4.5v DC 모터와 연결 : 디자인은 Thingiverse에 공개
+   - 동작영상, 제작과정 및 처음에 어떻게 까치가 병뚜껑을 물어오게 트레이닝 했는지 등은 유튜브로 공개
+   - 현재는 메탈디텍터로 병뚜껑을 인식하고 있으며, 카메라 기반으로 AI기반 범용 감지기를 통해서 다른 물건들로도 실험할 예정
+
+   까마귀로 비슷한 실험을 했던 TED 영상이 있었습니다.
+   A thought experiment on the intelligence of crows - https://ted.com/talks/…
+"
+"https://news.hada.io/topic?id=3322","초보 Bug Bounty Hunter를 위한 자료 모음","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     초보 Bug Bounty Hunter를 위한 자료 모음
+
+   1. 기초 : 스탠포드 CS253 웹 보안 강의, HTTP/Network 기초, 자동화
+   2. 셋업 : 테스트용 가상서버(VM/Docker등) 구축 하기,
+   3. 도구 : 패킷 스니퍼(Burp Suite, Zap Proxy, Wireshark), Recon, OSINT, 포트스캐너
+   4. 분야별 자료들
+   ㅤ→ Labs & Testing 환경
+   ㅤ→ 취약점 : XSS, CSRF, XXE, IDOR..
+   ㅤ→ 모바일 해킹 : Android, iOS
+   ㅤ→ 관련 유튜브 채널/팟캐스트/스트리머/책/트위터 계정들
+"
+"https://news.hada.io/topic?id=3349","CentOS 프로젝트가 CentOS Stream에 집중하기로 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   CentOS 프로젝트가 CentOS Stream에 집중하기로
+
+   - CentOS Stream이 이제 CentOS의 미래임
+   ㅤ→ Red Hat Enterprise Linux(RHEL)의 업스트림(개발) 브랜치
+   ㅤ→ RHEL 8을 리빌드한 CentOS Linux 8 은 내년말에 종료
+   - CentOS SIG는 이제 RHEL의 차기버전에 대해서만 작업하는 단일 목표를 가지게 됨
+   - 현재 CentOS Linux 8 사용자는 CentOS Stream 8 로 변경을 고려할 것
+
+   Fedora → RedHat Enterprise → CentOS Linux 였는데
+   Fedora → CentOS Stream → RedHat Enterprise 가 되는 거군요.
+
+   Rawhide → CentOS Stream → RHEL 인 것 같습니다.
+   https://fedoraproject.org/wiki/Releases/Rawhide?rd=Rawhide
+"
+"https://news.hada.io/topic?id=3329","쿠팡이츠 배달단가 모니터링 (파이썬 OCR 자동화 데이터 분석)","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  쿠팡이츠 배달단가 모니터링 (파이썬 OCR 자동화 데이터 분석)
+
+   쿠팡은 배달단가가 수시로 변하나 보네요.
+   Python을 이용해서 쿠팡 배달단가를 모니터링하고 시각화 하였습니다
+   PyAutoGUI로 특정영역 스크린샷을 찍고 pytesseract로 그 이미지에 문자를 인식하는 방식으로 구현하였습니다.
+
+   개발자 최종 루트에 치킨집 뿐만 아니라 치킨배달도 생겻군요 ㅎㅎ
+
+   오 저도 이거 클리앙에서 재밌게 봤습니다. ㅋㅋ
+
+   오오 재미있네요. 그래프로 변동내역까지 ㅎㅎ
+"
+"https://news.hada.io/topic?id=3350","SpaceX의 Starship 사용자 가이드 [6p, PDF]","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   SpaceX의 Starship 사용자 가이드 [6p, PDF]
+
+   - ""우주로 물건/사람을 보낼 고객""들을 위한 우주선 사용자 가이드
+   - 완전히 재사용 가능한 우주 운송시스템
+   - 1단 Super Heavy(부스터)와 2단 Starship(우주선) 으로 구성
+   - 인공위성, Payload(탑재물), 승무원, 화물을 탑재하여 지구궤도 및 달,화성 까지 수송할수 있도록 설계
+   ㅤ→ 외경 9m, 직경 8m, 높이 22m 까지의 페이로드 탑재 가능
+   ㅤ→ 화성과 달까지 100톤의 화물을 보낼수 있도록 설계
+   - 그외에 탑재 관련 스펙들, 받게 되는 하중, 충격, 출발 장소 등이 잘 나와있습니다
+
+   달에 가는 아르테미스 프로젝트용 로켓으로는 일단 우위에 있는 것 같네요.
+
+   현재는 Falcon 9 로 한번에 스타링크 위성 60개씩을 쏘아올린다고 하는데,
+   Starship 으로 쏘면 400개씩도 가능하다고 하더군요.
+   그래서 우주로 위성이든 물건이든 보내는데 SpaceX의 가성비가 최고라고..
+   자신들의 주요 상품인 우주 화물 운송 사업을 이용할 고객들,
+   예를들어 NASA 를 포함해서 우리나라 같이 위성을 발사해야할 국가 및 회사들을 위한 기초 가이드가 되겠습니다.
+   우주 운송 같은 거창한 일인데 사용자 가이드는 너무 심플하네요 ^^
+"
+"https://news.hada.io/topic?id=3336","프론트엔드 체크리스트","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              프론트엔드 체크리스트
+
+   - 웹 개발자가 서비스 런칭 전에 체크할 것들 정리
+   - HEAD,HTML,웹폰트,CSS,JavaScript,이미지,접근성,성능,SEO 각 분야별 체크 항목
+   ㅤ→ High 47개 : 꼭 해야하는 것
+   ㅤ→ Medium 25개 : 안하면 SEO 나 성능에 안 좋은 영향
+   ㅤ→ Low 16개 : 가능하면 넣을 것
+   - 각 항목에 대한 설명 및 해결방법은 깃헙 Repo에서 확인 가능 :
+   ㅤ→ https://github.com/thedaviddias/Front-End-Checklist
+
+   감사합니다. 제 웹페이지들에서도 이것 저것 체크해보고 있습니다!
+   그런데 hada.io 의 메타 태그 중
+   content 부분에서 세미콜론을 구분자로 사용하는 것이 브라우저에 잘 인식될지 모르겠습니다. 저는 콤마로 구분시켜서 코딩했습니다. chrome 을 넣어주는 것은 좋은 것 같습니다! 모르고 있었는데 hada.io 에서 보고 알았네요.
+   https://www.w3schools.com/tags/tag_meta.asp
+   https://stackoverflow.com/a/8942455/252047
+
+   아 정작 저도 쓰던대로 가져다 쓰고 있어서 신경을 안쓴 부분이네요. 저도 콤마로 변경을 ㅎㅎ
+"
+"https://news.hada.io/topic?id=3346","Chrome Developers","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Chrome Developers
+
+   Chrome Extensions, Chrome Apps 등을 구현하는 개발자들을 위한
+   Chrome Developers 사이트가 오픈했습니다.
+   국내에서는 그렇게 활발한 시장은 아니지만
+   관심있는 분이라면 살펴보시면 좋을 듯 합니다.
+"
+"https://news.hada.io/topic?id=3309","TimescaleDB vs. Amazon Timestream 성능 비교","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                TimescaleDB vs. Amazon Timestream 성능 비교
+
+   - ""TimescaleDB가 인서트는 6000배, 쿼리는 5~175배 빠르고, 비용은 150~200배 저렴""
+   - ""아마존 Timestream은 느리고, 비싸고, 백업/복원/갱신/삭제 같은 주요 기능도 빠져있다""
+   - 10억개 메트릭 인서트 : 5분 vs. 300+시간
+   - Amazon Timestream 은 $336, 완전 관리형 TimescaleDB 사용시 $2.18, 자체 VM으로 TimescaleDB 오픈소스 실행시 $1.50
+   - Amazon Timestream 의 240페이지 개발 가이드 확인 결과
+   ㅤ→ Recovery/Restore 란 말은 안나옴. Backup 이란 단어는 한번 나오는데, 백업이 없다고 얘기하는 것 ""개발자가 직접 알아서 저장하세요""
+   ㅤ→ 데이터의 DELETE/UPDATE 방법이 없음. 지우려면 테이블을 Drop 해야 하고, 그 마저도 복원할 방법이 없음
+   ㅤ→ TimescaleDB는 PostgreSQL 기반이라 pg_dump/pg_restore/pg_basebackup 같은 도구를 그대로 사용 가능
+   * 테스트한 Time Series Benchmark Suite 는 GitHub에 공개
+
+   엄청 공격적인 글이네요.
+   Timescale측은 계속 시계열DB에서만큼은 AWS가 기존 오픈소스 가져다 돈 버는 것을 경계했어서..
+   Timescale License(TSL)을 통해서 완전히 무료로 공개하지만 as-a-Service 만드는 것만 금지하고 있습니다.
+   경쟁이 재미납니다.
+   - TimescaleDB 2.0 공개 https://news.hada.io/topic?id=3112
+   - Timescale, 멀티노드 TimescaleDB를 무료로 공개 https://news.hada.io/topic?id=2138
+   전 AWS Kinesis 가 Kafka 에 비해 성능이 넘 떨어지니까, MSK(Managed Streaming For Apache Kafka)를 내놓았다고 보는데..
+   과연 시계열DB쪽은 ?
+"
+"https://news.hada.io/topic?id=3330","내가 2020년에 배운 52가지","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           내가 2020년에 배운 52가지
+
+   2014년부터 매년 새로 배운 52가지를 정리하는 Tom Whitwell의 재미난 리스트. 일부만 발췌 번역
+   1. 대부분 도시는 암컷나무에서 떨어지는 열매를 처리하기가 비싸기 때문에 수컷나무만 심는다. 수컷나무는 꽃가루를 만들기 때문에 그게 알레르기성 질환이 더 많아지는 이유중 하나
+   2. 중국에서 🙂는 행복을 의미하지 않는다. 경멸/조롱/불쾌한 행위이기 때문에 대신 😁😄😀 를 사용할 것
+   4. 애플 에어팟이 독립 비즈니스라면 2016년 창업, 13조 매출, 125% 성장, 30~50% 마진율을 가진 세계 최고의 스타트업
+   6. 지난 10년간 가장 많이 팔린 서적 10권의 주인공은 모두 여성. 그중 탑7책의 작가도 여성
+   7. 2월에 Zoom Technologies 주식(티커: ZOOM)이 50% 상승했는데. 화상대화하는 그 줌(티커:ZM) 이 아님 https://news.hada.io/topic?id=1786
+   9. 돈이 심리치료보다 사람들을 더 행복하게 만듬
+   13. 사용자가 케냐의 모바일 대출앱 OKash를 다운로드 하면 연락처 접근권한을 가짐. 대출 상환이 밀리면 가족,동료등 모든 연락처에 메시지를 보내서 사용자가 빚을 갚도록 부끄럽게 만듬
+   16. 19세기에 영국에서 수영이 인기를 끌자, 시립수영장은 개구리를 전시해서, 수영을 하는 사람들이 그 동작으로 부터 배울수 있도록 했음
+   17. 투발루(Tuvalu) 국가 수익의 10%는 twitch.tv 와 같은 .tv 도메인 수익에서 나옴
+   18. 네팔 GDP의 10%는 에베레스트 등반가들이 내는 것
+   20. 비행기 보딩패스는 인스타그램에 올리지마세요 https://news.hada.io/topic?id=2863
+   24. 아프리카 스마트폰의 40%는 중국 심천의 폰회사 Transsion이 만듬. 에티오피아에 공장이 있으며, 스와힐리어 및 암하라어 키보드가 있고, 카메라와 플래시 및 이미징 소프트웨어가 어두운 스킨 톤에 최적화 되어있음
+   25. '스톡홀름 증후군' 이라는 문구는 1973년 경찰을 비난한 은행강도사건에서 여성 인질의 신용을 떨어뜨리기 위해 경찰 정신과 의사가 발명한 단어
+   27. 2004년 VC들은 첫만남부터 펀딩까지 기간이 평균 90일이었는데, 현재는 단 9일
+   31. 바코드가 1952년에 특허를 받았을때는 둥근 모양이었음
+   37. 인간은 입체적인 후각을 가지고 있고, 두개의 콧구멍은 두 귀처럼 작동해서 무의식적으로 냄새의 근원으로 이동하도록 도와줌
+   40. 일부 테스트장비는 수천년된 로마 난파선에서 채취한 납으로 만들어짐
+   45. 2014년에 국제 에너지 기구는 앞으로 50년간 태양광의 가격이 어떻게 떨어질지를 예측한바 있는데, 6년이 지난 지금, 우리는 예상보다 40년 앞서 있음
+   46. 체중 1kg를 감량하면 그중 840g이 이산화탄소로 배출됨
+
+   13번 17번 재밌네요
+
+   46번은 다이어트를 하지말아야(?) 할 이유군요!!
+
+   저도 이게 제일 먼저 눈에 들어오던데요 흐흐흐
+
+   생각해볼 꺼리들이 좀 있네요 ㅎㅎ
+
+   13번은 정말 충격적이군요..
+"
+"https://news.hada.io/topic?id=3239","Is Apple silicon ready ?","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Is Apple silicon ready ?
+
+   다양한 앱별로 현재 애플 M1 디바이스에서 실행되는지 여부를 알려주는 웹사이트입니다. M1칩 성능이 기대이상이어서, 이제 남은 고민거리를 주로 사용하는 앱의 실행여부가 관건인데, 저는 이 페이지를 한동안 찾아보게 될 것 같습니다.
+
+   비슷한 사이트들이 여러개 나오기 시작하네요.
+   Apps Optimized for Mac with M1 https://apps.apple.com/us/story/id1540024103
+   Does it ARM ? https://doesitarm.com/
+   Games on Apple Silicon https://docs.google.com/spreadsheets/d/…
+
+   이걸 보면서 일본에서 오고 있는 CTO 16기가 맥북 프로를 기다려봐야겠네요 ㅋㅋㅋ
+
+   처음엔 이름만 보고 ""No"" 같은거 써있는 스태틱 유머 페이지 일거라 생각했는데, 꽤 쓸모 있습니다.
+   개발도구 랑 언어쪽은 아직 미지원이 많네요.
+   요즘 긱뉴스 팟캐스트 때문에 비디오 도구 들을 많이 쓰는데,
+   OBS Studio / Premiere / After Effect 미지원이 아직 큰 걸림돌인듯 합니다.
+
+   iOS App의 파일을 추출하면 M1 mac에서 바로 실행된다고 합니다.
+   https://news.hada.io/topic?id=3243
+   macOS에서도 App Store에 있는 앱들만 설치/실행 가능해지는 것은 아닐까 하는 불안감도 생기네요 ㅎㅎ
+"
+"https://news.hada.io/topic?id=3338","온라인 최고의 고급 컴퓨터 과학 과정은 무엇인가요?","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      온라인 최고의 고급 컴퓨터 과학 과정은 무엇인가요?
+
+   해커 뉴스에 올라온 '온라인에서 최고의 고급 ( 입문의 반대 의미로 사용했습니다 ) 컴퓨터 과학 과정이 무엇인가요?' 라는 글입니다.
+   해커 뉴스의 독특한 점은 단순 News 뿐만이 아닌 이런 질문들도 올릴 수 있다는 점인데요. 상세한 질문은 허용되지 않지만, 이런 포괄적인 질문은 허용됩니다. 많은 프로그래머들이 각자 괜찮았던 것들을 말해서 다양한 시각을 접하는 데 좋은 것 같습니다. 'ㅁ'!
+
+   저도 HN에 Ask 보는거 좋아합니다. 긱뉴스도 Ask 항목을 오픈 할 예정입니다. 조금만 기다려주세요 ^^
+
+   기대됩니다!!
+
+   오오.. 기대되네요! 😍
+"
+"https://news.hada.io/topic?id=3351","NHN FORWARD 2020 - NHN 온라인 기술 콘퍼런스","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   NHN FORWARD 2020 - NHN 온라인 기술 콘퍼런스
+
+   - TOAST, PAYCO, HANGAME 등으로 알려진 NHN의 테크 컨퍼런스
+   - 2020년 12월 14일부터 12월 15일까지 온라인 개최
+   - 일단, 바로, 쉽게? AI @ NHN
+   - OCR(광학 문자 인식), OMR 카드 리더기
+   - 강화 학습 기초: #1 강화 학습 이해하기
+   - 강화 학습 기초: #2 Value-Based 강화 학습 이해하기
+   - 내가 만든 WebFlux가 느렸던 이유
+   - 대전 게임 매치 메이킹 만들기
+   - 오픈 소스 메인테이너로 성장하기(feat. TOAST UI)
+   - 일본의 데이터 센터와 베어 메탈 클라우드 서비스
+   - 캐시 성능 향상을 위한 시도
+   - 포스트 코로나, 고객을 이해하기 위한 데이터 활용 전략
+   - 프런트엔드 타임 존 뽀개기: 글로벌 서비스를 위한 타임 존 좌충우돌 개발기
+   - Java 실시간 게임 서버 성능을 10배 올린 3가지 썰
+   - Kotlin과 Coroutine으로 만들어 보는 Non-Blocking API
+   - PAYCO 디자인, 소통의 시작
+   - RabbitMQ and Cloud Messaging Platform
+   - Welcome to JAMstack
+   - Xcode가 익숙하지 않은 개발자를 위한 iOS 앱 개발 트러블 슈팅
+   - 강화 학습 기초: #3 Value Function 근사 방법
+   - 강화 학습 기초: #4 Policy-Based 강화 학습 이해하기
+   - 비주얼 검색 서비스의 인프라 관리(feat. Ansible)
+   - 커피 볶는 애니메이터: 카페 가지 말고 홈 카페 가자~!
+   - 12K만큼 사랑하는 오픈 소스 에디터 개발 이야기
+   - DevOps 관점에서 본 마이크로서비스로의 여정
+   - Gamebase 상품성 증대를 위한 노력
+   - 더 나은 내일을 위한 리팩터링
+   - 신입 루키에서 NHN 개발자까지: 렙업만이 살길
+   - 어쩌면 바둑을 잘 두게 될지도 몰라: 한게임 바둑에서의 바둑 AI 한돌 서비스 및 수익 모델 사례
+   - 일본의 AWS 클라우드 브로커 사업을 지원하는 데이터 처리 기반과 기계 학습 활용 사례
+   - 자연어 처리 기술을 활용한 문제 생성 시스템
+   - Docker? ARM! 되고 말고!
+   - EasyCache에서의 워크플로 엔진 도입 이야기
+   - MSA 환경에서 API 문서 관리하기: 생성부터 배포까지
+   - 개발자 CISA가 알려주는 정보 시스템 감사
+   - 똑똑한 고스톱 AI 만들기
+   - 읽기 좋은 Kotlin 가이드
+   - 천천히 읽어 보는 Chrome 개발자 도구 설명서
+   - 프리한 토크: 음악과 수학, 둘이 무슨 관계야?
+
+   와 이번 달에 하는 국내 개발자 컨퍼런스 중에서는 세션이 가장 많네요.
+   게다가 핸즈온랩과 프런트엔드 상담소까지 해서 나름 알찬듯
+   - Reveal 2020 - 쿠팡 개발자 컨퍼런스 https://news.hada.io/topic?id=3325
+   - 2020 Woowa Tech Concert - 2020 우아콘 https://news.hada.io/topic?id=3324
+
+   H3 가 참 좋았는데 말이죠 ㅎㅎ
+
+   어이쿠 ㅎㅎ 감사합니다. 벌써 거의 10년전이네요 ^^;
+
+   소개드린 세 이벤트 사이트 중에는 NHN이 가장 구성이 알찬 것 같습니다.
+   역시 프론트엔드가 강한 회사 ㅎㅎ
+"
+"https://news.hada.io/topic?id=3256","Seasonal.css - 매일 변하는 컬러 스킴","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Seasonal.css - 매일 변하는 컬러 스킴
+
+   - 1년 365일 매일 다른 색상을 보여주는 CSS 라이브러리
+   - CSS 변수를 사용하여 다른 부분에도 적용 가능
+   - bg,bgdark,fg,hl,hldark 5가지 색상
+   - express + node.js 로 동적으로 값을 생성
+
+   node 코드가 실행 되어야 해서 편하기 쓰기는 어려울것 같은데 컨셉은 재미나네요.
+   뭔가 재미성 사이트에는 적용해 볼만 할 듯.
+"
+"https://news.hada.io/topic?id=3286","CloudQuery - 클라우드 인프라를 SQL로 조회하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    CloudQuery - 클라우드 인프라를 SQL로 조회하기
+
+   - AWS/GCP 등의 클라우드에서 인프라 정보를 가져다 SQL로 조회 가능하게 만들어주는 오픈소스
+   - SQLite/PostgreSQL/MySQL/MSSQL에 저장
+   - Go로 작성되어 리눅스/맥/윈도우 지원
+   → SELECT * FROM aws_elbv2_load_balancers WHERE scheme = 'internet-facing';
+   → SELECT * from aws_s3_buckets
+   ㅤㅤㅤJOIN aws_s3_bucket_encryption_rules ON aws_s3_buckets.id != aws_s3_bucket_encryption_rules.bucket_id;
+   - 현재 지원 AWS 테이블 : autoscaling, directconnect, ec2, ecr, efs, elasticbeanstalk, elbv2, emr, ecs, fsx, iam, rds, redshift, s3
+   → SELECT gcp_storage_buckets.name
+   ㅤFROM gcp_storage_buckets
+   ㅤㅤㅤJOIN gcp_storage_bucket_policy_bindings ON gcp_storage_bucket_policy_bindings.bucket_id = gcp_storage_buckets.id
+   ㅤㅤㅤJOIN gcp_storage_bucket_policy_bindings_members ON gcp_storage_bucket_policy_bindings_members.bucket_policy_binding_id = gcp_storage_bucket_policy_bindings.id
+   ㅤWHERE gcp_storage_bucket_policy_bindings_members.name = 'allUsers' AND gcp_storage_bucket_policy_bindings.role = 'roles/storage.objectViewer';
+   - GCP 테이블 : compute, iam, storage
+   - Azure / DigitalOcean 은 지원 예정
+   - 각 플랫폼의 지원리소스도 계속 확장중
+"
+"https://news.hada.io/topic?id=3271","SQLite를 도큐먼트DB로 사용하기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          SQLite를 도큐먼트DB로 사용하기
+
+   - SQLite의 Generated Columns 와 JSON 관련 함수를 사용해서 Document DB처럼 사용하는 방법
+   - GENERATED ALWAYS 와 json_extract 를 조합
+   > CREATE TABLE t ( body TEXT, d INT GENERATED ALWAYS AS (json_extract(body, '$.d')) VIRTUAL);
+   > INSERT INTO t VALUES(json('{""d"":""42""}'));
+   > SELECT * FROM t WHERE d = 42;
+   {""d"":""42""}|42
+
+   이렇게도 사용가능할까요? RDBMS의 장점을 취하면서도 마이너한 필드 추가, 변경의 NoSQL 확장성을 가져갈 수 있을것 같은데요
+   1. 일단은 SQLite 를 사용한다.
+   2. 필드를 추가해야 할 경우에 이처럼 도큐먼트 DB로 사용한다.
+
+   언급된 제너레이티드 컬럼과 동일하지는 않을 수 있는데, postgresql, mysql 도 이미 json 타입 컬럼과 해당 타입에 대한 쿼리가 제공되어서 비슷하게 사용할 수는 있을 것 같습니다.
+
+   말씀하신대로 커스텀한 사용자 필드 추가나 그런 용도로 사용할수 있을거 같아요.
+
+   으음.. 도큐먼트 DB중에는 SQLite처럼 임베디드 타겟으로 나온 DB가 없을까용? SQLite가 근본이 SQL이라서 부담감이 있어서요 OTL. MongoDB의 Lite 버전. MangoDB라던가(...)
+
+   단순 키밸류용으로는 RocksDB https://github.com/facebook/rocksdb
+   말씀하신것처럼 도큐먼트DB용으로는 UnQLite https://unqlite.org/
+   정도가 빠르고 쓰기편하다고 합니다.
+
+   오오. 감사합니당. 이제 SQLite 말고 얘네들도 한번씩 써봐야 겠네요.
+"
+"https://news.hada.io/topic?id=3258","iPhone OS 1.0과 iOS 14를 트리맵으로 비교해 보기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  iPhone OS 1.0과 iOS 14를 트리맵으로 비교해 보기
+
+   내부 파일 시스템의 기능별 바이너리를 묶어서 트리맵으로 표현
+   iPhone OS 1.0
+   - UIKit 13%
+   - 배경화면과 벨소리 6%
+   - ICU(유니코드) 5%
+   - SpringBoard 2%
+   iOS 14
+   - 머신러닝에 활용되는 자원들이 많음 : 얼굴인식, Deep CNN, 문자인식..
+   - iPhone OS 3.1 부터 적용된 dyld shared cache 기능으로 프레임웍들이 분산되어 있음
+   - Health 관련기능이 꽤 큼
+   - 카메라/사진 관련 많은 기능들 : 효과, Memories(추억), 비디오 처리..
+   - 계속 추가되어온 기능들 : HomeKit, Watch, CarPlay, Spotlight, Emoji, News, iWork, Wallet, Shortcuts, ARKit, ...
+   - 폰트가 전체의 6%
+   - Linguistic(언어) 데이터가 8%
+   - ICU 크기는 3배가 커졌지만, 전체의 0.5% 밖에 안됨
+   * 용량을 비교해보면, iPhone OS 1.0 의 전체 크기는 iOS14 의 배경화면들 사이즈 밖에 안됨
+
+   Android OS도 이런식으로 분석한 결과가 있으면 흥미로운 비교가 되겠네요.
+"
+"https://news.hada.io/topic?id=3291","pip 20.3 부터 새로운 dependency resolver (버전 의존성 해결자)가 도입되며 기본으로 쓰입니다.","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   pip 20.3 부터 새로운 dependency resolver (버전 의존성 해결자)가 도입되며 기본으로 쓰입니다.
+
+   1. 의존성을 해결할 때의 모순이 많이 줄었습니다.
+   과거(pip 20.0)에는 pip install ""six<1.12"" ""virtualenv==20.0.2"" 의 결과로 six==1.11가 설치되었는데, virtualenv==20.0.2는 six>=1.12.0,<2를 필요로 했었기에 이는 잘못된 동작입니다.
+   지금(20.3)부터는 아무것도 설치하지 않고 설치가 거부됩니다.
+   2. 엄격(깐깐)해집니다.
+   - 하위 의존성이 호환되지 않는 두 패키지를 한번에 설치하려할 경우, 설치가 거부됩니다.
+   3. 이러한 결과로, 아래 두 명령이 같은 패키지를 설치하지 않을 수 있습니다.
+   - pip install x && pip install y
+   - pip install x y
+   4. Constraints(lockfile), editable, == match require hash-checking 등 여러가지 변경사항도 생겼습니다.
+   새 dependency resolver는 --use-deprecated=legacy-resolver 로 끌 수 있으며, 이는 2021년 1월까지 (pip 21.0 release candidate) 지원됩니다.
+   기존에 있던 미봉책(workaround)들이 작동하지 않을 수 있습니다. 본문에 여러가지 해결방안이 나와있으니 참고해보세요.
+"
+"https://news.hada.io/topic?id=3253","DevTerm - 오픈소스 포터블 터미널 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         DevTerm - 오픈소스 포터블 터미널
+
+   - A5노트북 크기의 스크린, 키보드, 감열식 프린터 내장 Retro 터미널
+   - 64비트 ARM(라즈베리 Pi CM3)
+   - 16:6 6인치 IPS 스크린, 미니 트랙볼, QUERTY 키보드(65% 크기), 게임패드
+   - 802.11ac, 블루투스 5.0
+   - 40Pin GPIO포트, 40Pin MIPI 스크린 포트, 52핀 확장 인터페이스(Mini PCI-E 커넥터 사용)
+   - 헤드폰잭, 스피커, TF카드(MicroSD), USB-C 충전포트, USB-A 3개, microHDMI 출력
+   - 58mm 200dpi 감열식 프린터 (영수증)
+   - 18650 배터리 두개 이용 (별도 구매)
+
+   이거 귀엽긴 한데, 모니터가 저렇게 돼 있으면 거북목 문제 생기는거 아닌가요? 허허
+
+   태블릿처럼 들고 쓴다는 얘기인지? 그것도 힘들것 같습니다만
+
+   네 화면각도 때문에 실사용은 힘들거라는 얘기가 많습니다. 그냥 계산기 느낌이라.. ^^;
+
+   오잉 프린터가 위에 붙어있어서 매장 계산대 단말기 같은 느낌을 확 주는데요.. ㅋ
+
+   딱히 쓸모는 없을 것 같은데.. 가지고 싶네여. 저는 처음 컴퓨터를 XP로 시작해서, 저런 레트로에 계속 끌립니다. 가지지 못한 것에 대한 끌림인가..
+
+   저 학부 때 sony vaio c1 (정확한지 모르겠는데 제 기억과 모양은 비슷한 듯해요) 쓰는 친구가 있어서 자주 봤었는데 약간 그 느낌이 들어요 저는.
+   미니 노트북인데도 상당히 잘 썼던 기억이 나네요.
+
+   아... 그러고보니 어릴 때 갖고 있던 MSX 도 생각나고.. 추억에 잠기게 만들긴 하네요 ^^;
+
+   ㅋㅋㅋㅋㅋㅋㅋㅋㅋ... 제 추억은 너무나도 짧아서 ;ㅁ; 전부 새롭네요 ㅋㅋ
+   브라운관으로 보는 스타리그가 가장 추억이 돋는데, 아직은 살아 있어 시간이 더 지나야 할 것 같습니다.
+
+   ""가지지 못한 것에 대한 끌림"" 딱 그게 맞는듯 합니다.
+   어릴때 레고를 못 가져봐서, 돈이 생긴 어른이 되어서야 사는 것과 비슷..
+
+   딱히 쓸모가 있을거 같지는 않은데, 레트로 감성을 자극해서 하나쯤 있으면 가지고는 놀만하겠다? 싶은 기기네요.
+   영수증 출력에나 쓰는 감열식 프린터를 붙인게 특이하지만.. 키보드는 좀 에러인듯
+"
+"https://news.hada.io/topic?id=3324","2020 Woowa Tech Concert - 2020 우아콘","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   2020 Woowa Tech Concert - 2020 우아콘
+
+   - 배달의민족의 우아한형제들이 개최하는 테크콘서트
+   - 2020년 12월 16일부터 18일까지 온라인 개최 예정
+   - 송재하, 배달의민족 지난 4년간의 History Key Milestones
+   - 김영한, 배달의민족 마이크로서비스 여행기
+   - 권용근, 배달의민족 프론트 서버의 사실과 오해
+   - 박주희, 배달의민족 데이터베이스 IDC 탈출기
+   - 이재일, 우리의 치킨이 식어 있는 이유
+   - 이주호, AWS 침해대응업무에 SOAR 한 스푼 얹기
+   - 정우성, 클라우드 인프라 소개
+   - 이동욱, 수십억건에서 QueryDSL 사용하기
+
+   페이지에 가서봐도 세션에 대한 설명이나 참가 방식에 대한 소개가 없군요.
+   각 세션 소개가 조금만이라도 나와있었으면 하는 아쉬움이 ㅎ
+   같이 올려주신 쿠팡 개발자 컨퍼런스엔 세션 내용이 있어서 둘간에 나름 비교가 되네요 ^^;
+   정보 고맙습니다!
+
+   쿠팡콘에 비해 우아콘은 티저 페이지 느낌이 강하내요.
+   아마도 행사 전후로 상세 내용 등이 업데이트 될 것 같아요.
+
+   네 조금 아쉬운게 티저페이지라면 이거를 본 사용자들이 다시 돌아올수 있도록 하는 장치(이메일 등록등)가 있어야 한다고 생각해요.
+   이 페이지를 여기 긱뉴스 통해서라도 한번 본 사용자들은 아마도 다시 안들어가 볼 확률이 클거라...
+   ""이메일 주소를 남겨주시면 행사소식을 전달해드리며, 경품추첨에도 참가됩니다.""
+   라는 폼 정도는 있어야 하지 않았나 생각해 봅니다.
+"
+"https://news.hada.io/topic?id=3268","create-node-cli - Node.js로 CLI 쉽게 만들기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 create-node-cli - Node.js로 CLI 쉽게 만들기
+
+   - create-react-app 의 node + CLI 버전
+   - 자동 인자 파싱, 도움말, 웰컴 메시지 지원
+   - CLI 이름/커맨드/설명/버전/라이센스/제작자정보(이름,이메일,URL) 입력하여 생성. 이 정보는 재사용 가능
+"
+"https://news.hada.io/topic?id=3242","시간의 흐름과 강화 학습의 관계","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           시간의 흐름과 강화 학습의 관계
+
+   “‘즐거운 일에는 시간이 빨리간다’는 사실은 누구나 알고 있지요.”
+   “하지만 실제로는 이렇다는 겁니다. 곧, 당신의 예상 보다 더 즐거운 일일때 시간은 빨리간다는 것이죠.”
+"
+"https://news.hada.io/topic?id=3273","이제 React.js 를 버릴 때가 왔다","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         이제 React.js 를 버릴 때가 왔다
+
+   1. React는 UI 라이브러리였지만 SSR덕분에 SEO가 가능한 SPA로 사용하면서 문제가 시작
+   2. hooks는 멍청한 선택
+   3. SSR은 느리고, 반대로 검색엔진이 똑똑해졌다
+   4. 좋은 대체품들이 많이 나왔다
+   ""React 보다 더 좋고 쉬우며 편한 기술이 많이 있는데, 굳이 React 로 모든걸 만들어야할 필요가 있을까?""
+
+   제목이 너무나 자극적이네요. 힙한 친구들은 꼭 이런글 보고나면 당장 갖다버려야될 리액트를 쓰고 있는 우린 글렀어!! 다 갖다 버리고 svelt로 옮겨야해!! 이런단 말이예요 ㅜㅜ
+
+   react를 점점 쓸 필요가 없어진다는 것에는 동감하는데 svelt, elm을 추천하는 얘기가 나오는 것을 보니 확 별로네요..
+   c# blazor, c++, rust wasm 등이 프론트엔드의 다음 세대를 이끌지 않을까 싶습니다. 하지만 지금은 아직 개발자가 많은 react, angular을 써야 하는건 어쩔 수 없겠지요..
+
+   다른 건 유망있지만, C++ 프론트엔드....요... 아직은 개발하면서 굉장히 고통스러울 일밖에 상상이 안 되네여. ;ㅁ; 괜찮고 널리 퍼지며 버전관리가 프로젝트 내에서 적당히 되는 패키지 매니저부터 있어야 할 듯한..
+
+   스벨트가 매력적이고 좋은 기술인 건 맞는데, 요새 유독 스벨트와 다른 기술을 비교하며 스벨트의 위상을 높이려는 글들이 많네요. 굳이 그럴 필요가 있는지 🤔
+"
+"https://news.hada.io/topic?id=3323","구글, 폰으로 스트리트뷰 영상 촬영 기능 추가 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       구글, 폰으로 스트리트뷰 영상 촬영 기능 추가
+
+   - 구글 스트리트 뷰 앱에 ""Connected Photos"" 기능으로 베타 공개
+   - ARCore 호환 안드로이드 폰 사용자들 대상
+   ㅤ→ 예전엔 특수한 360도 카메라가 필요했었음
+   - 구글 지도에 이 스트리트 뷰 영상을 반영
+   ㅤ→ 자체 스트리트 뷰는 파란색 실선
+   ㅤ→ 이 UGC 영상은 파란색 점선으로 표시
+   ㅤ→ 얼굴과 번호판을 Blur 처리하는 정책은 그대로 준수
+   - 캐나다 토론토, 뉴욕, 텍사스 오스틴 및 나이지리아, 인도네시아, 코스타리카 등 일부 지역에서 업로드 가능 해짐(확대 예정)
+
+   이러면 나중에 상점 주인이 상점 내부 찍은 영상도 보여주게 만들수 있겠군요.
+"
+"https://news.hada.io/topic?id=3358","Cube.js - 오픈소스 분석 API 플랫폼","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Cube.js - 오픈소스 분석 API 플랫폼
+
+   - BI 도구를 직접 개발하거나 사용자에게 제공하는 분석 기능을 만들 수 있게 해주는 오픈소스
+   ㅤ→ 각종 대쉬보드 및 MixPanel, GoogleAnalytics 등의 기능을 직접 구현 가능
+   - 기본적으로 AWS Athena, Google BigQuery 같은 서버리스 쿼리 엔진과 잘 어울리게 설계되었으나,
+   ㅤMySQL,PostgreSQL,Presto,SQlite 등과도 잘 연결
+   - Cube.js Backend
+   ㅤ→ Schema : 분석용 ORM처럼 동작해서 카운팅부터 코호트/퍼널분석등을 위한 데이터 모델링 가능
+   ㅤ→ Query Orchestration and Cache : 쿼리를 재사용 가능한 단위로 잘게 쪼개서 쿼리 실행을 최적화
+   ㅤ→ API Gateway : 분석결과를 요청 시간제한 없이 받아갈수 있는 롱 폴링 API 제공
+   - Cube.js Frontend
+   ㅤ→ Javascript Client : API Gateway 와 연동해서 쿼리 결과를 읽어올수 있는 코어 함수들
+   ㅤ→ Cube.js API 용 React, Angular, Vue 바인딩 제공
+   ㅤ→ Chart.js, D3.js, Google Chart 등 많은 차트지원
+   - 뛰어난 쿼리 성능, 멀티테넌시 지원
+   - 참고하기 좋은 다양한 예제들 : 각 샘플들은 구축하는 방법을 알려주는 가이드가 작성되어 있어서 참고하기 쉬움
+   ㅤ→ WebSocket을 이용한 실시간 대시보드 - https://real-time-dashboard.cube.dev/
+   ㅤ→ React/GraphQL 기반 대쉬보드 - https://react-dashboard.cube.dev/
+   ㅤ→ D3/Material UI 대쉬보드 - https://d3-dashboard.cube.dev/
+   ㅤ→ Snowplow를 이용한 Mixpanel 같은 이벤트 분석도구 만들기 - https://cube.dev/blog/building-an-open-source-mixpanel-alternative-1/
+   ㅤ→ AWS Lambda, Athena, Kinesis 를 활용한 AWS Web Analytics - https://cube.dev/blog/…
+   ㅤ→ Snowplow, Athena, React 를 이용한 Google Analytics 대체제 샘플 - https://web-analytics.cube.dev/
+   ㅤ→ Drill Down Table API - https://cube.dev/blog/introducing-a-drill-down-table-api-in-cubejs/
+
+   국내에선 쿠팡이 cube.js 를 이용하는 것으로 알려져 있습니다.
+"
+"https://news.hada.io/topic?id=3293","Salesforce, Slack 인수 발표","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Salesforce, Slack 인수 발표
+
+   - CRM분야 1위 기업인 Salesforce가 업무용 메시지 앱 Slack을 277억달러(약 30조원)에 인수
+   - Salesforce Cloud, Customer 360와 Slack 통합해 향상된 커뮤니케이션 및 협업 제공
+   - 인수 후에도 현재 CEO인 Stewart Butterfield가 계속해서 Slack팀을 이끌 것
+   - 최근 코로나19로 인한 원격근무로 커뮤니케이션 시장의 급격한 성장
+   - Salesforce의 인수로 엔터프라이즈 환경에서 시너지를 낼 것으로 기대됨
+
+   Salesforce가 Slack 인수 협상을 진행중 https://news.hada.io/topic?id=3261
+   일주일전에 얘기 나올때만해도 슬랙의 시총이 18조원이었는데.. 그 사이 엄청 올라갔네요.
+   Teams 랑 경쟁이 심화되고 있어서 좋은 타이밍에 인수되었다고 생각합니다.
+
+   30조원 이라니~~ 엄청나네요~ 조건도 꽤 괜찮은 것 같구요~~
+"
+"https://news.hada.io/topic?id=3248","누구나 원하는 개발자되기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             누구나 원하는 개발자되기
+
+   적지 않은 시간 개발자 채용에 관여해왔습니다. 그동안 많은 지원자를 만나면서 느꼈던 점들을 정리해봤습니다 :)
+
+   반대로 회사는 구직자에게 어떻게 회사를 어필할지도 고민해보면 좋겠습니다.
+
+   좋은 글 올려주셔서 감사합니다. 글 중에서 제가 특히 공감갔던 것은 [성과라는 스토리에 대한 어필]과 [발표나 교육을 염두에 둔 마음가짐]이었습니다. 실제로 저도 기존에 이미 잘 안다고 생각하던 것도 글을 쓰거나 발표를 하려고 준비하다 보면 새롭게 알거나 더 깊이 알 수 있는 경우가 많았고, 이번에 취업에 성공할 때도 가장 컸던 것이 면접에서 이전 프로젝트에서의 성과를 제대로 어필할 수 있었기 때문이라고 생각하거든요.
+
+   공감해주셔서 감사합니다. 핵심을 제대로 짚어주셨네요 :)
+"
+"https://news.hada.io/topic?id=3254","2021년 디지털트랜스포메이션 트렌드 분석 보고서","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      2021년 디지털트랜스포메이션 트렌드 분석 보고서
+
+   국내외 매체/기관들이 분석한 2021년 디지털 트랜스포메이션 전략, 소비자트렌드, 비즈니스, 마케팅, 테크 트렌드 자료들을 정리
+   컨슈머 트렌드
+   - 트렌드 키워드
+   - 비즈니스 트렌드
+   - MZ세대 트렌드
+   - '예측불허' VUCA시대
+   - 미국 식품 트렌드
+   - 화장품 트렌드 키워드
+   리테일 & 마케팅 트렌드
+   - 디지털 마케팅 트렌드 10대 키워드
+   - 브랜드가 주목할 3가지 흐름
+   - 글로벌 마케팅 트렌드
+   - 리테일 트렌드 플레이북
+   - 소셜 미디어 트렌드
+   - SEO 트렌드
+   테크 트렌드
+   - 디지털 트렌스포메이션 8대 트렌드
+   - ICT 10대 트렌드
+   - 가트너 기술 트렌드
+   - 디지털 비즈니스 혁신 5가지
+   - 기업이 겪을 변화 12가지
+   - 포브스 주목해야할 기술 5가지 트렌드
+   - AI 10대 트렌드
+   - AI 챗봇 트렌드
+   - UX 디자인 트렌드
+   - 디지털 디자인 및 그래픽 디자인 트렌드
+"
+"https://news.hada.io/topic?id=3298","Screenity - 스크린/카메라 녹화용 크롬 확장 ","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Screenity - 스크린/카메라 녹화용 크롬 확장
+
+   - 온라인 강의등을 녹화하기 위한 오픈소스
+   - 크롬 탭/데스크탑/특정 앱/카메라 모두 무제한 녹화 가능
+   - 선긋기,글자입력,화살표 표시등 지원
+   - 클릭 하이라이트, 마우스 강조 또는 녹화에서 숨김 가능
+   - 커스텀 카운트다운, 마우스 호버시에만 컨트롤 보이기 등 다양한 개인화 지원
+   - mp4, gif, webm 으로 저장 및 Google Drive에 직접 저장 지원
+   - 녹화본의 일부 잘라내기 지원
+   * 비디오 녹화를 지원하는 여러 크롬 확장들 중 가장 기능이 많은 오픈소스
+
+   개발자인 Alyssa는 꽤 유명합니다. https://alyssax.com/
+   예전에 소개한 다른 오픈소스인 Animockup 의 개발자이기도 합니다.
+   - Animockup - 앱/웹의 애니메이션 목업 만들기 https://news.hada.io/topic?id=1768
+   다른 커미터인 Christian Heilmann 은 제가 좋아하는 개발자인데요. https://www.christianheilmann.com/
+   제가 예전에 개발자 에반젤리스트 활동할때 많이 참고한, Developer Evangelist Handbook 책을 쓴 사람이기도 합니다.
+   - http://developer-evangelism.com/
+"
+"https://news.hada.io/topic?id=3310","NAND GAME - 바닥부터 컴퓨터를 만드는 게임","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      NAND GAME - 바닥부터 컴퓨터를 만드는 게임
+
+   Not And 게이트로 다른 논리 게이트를 만들어보고, 그 논리 게이트로 사칙연산을 만들어보고, 그 사칙연산으로 메모리를 만들어보고, 그 메모리로 컴퓨터를 만드는 게임입니다.
+   논리 게이트를 배치하는데 최적화된 뷰를 제공해주고, 특히 곧 바로 테스트 결과가 나와서 어떤 게 문제인지 바로바로 잡아 주기 때문에 '조금만 더 고치면..' 이라는 생각 때문에 빠져나가기가 쉽지 않았습니다. 그리고 만약 지금 만든게 논리 게이트가 가능한 한 최소보다 더 많이 썼으면 '성공은 했는데, 이것보다 더 작게 만들 수 있어!' 라고 메시지가 나와 도전 욕구도 샘솟고요.
+   즐겁게 컴퓨터 사이언스를 배울 수 있을 것 같아 추천드립니다. 'ㅁ'b. 개인적으로는 영어를 몰라도 쉽게 접근 가능하지만, 다만 저는 논리 게이트에 대한 사전 이해가 있었기 때문에 가능한 걸지도 모르겠습니다.
+"
+"https://news.hada.io/topic?id=3267","PHP 8.0 릴리즈","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              PHP 8.0 릴리즈
+
+   - 두개의 JIT 엔진으로 속도 개선 : Tracing JIT + Function JIT
+   - 타입 시스템 과 에러처리 개선
+   - Named arguments
+   ㅤ→ htmlspecialchars($string, double_encode: false);
+   - Attributes
+   ㅤ→ #[Route(""/api/posts/{id}"", methods: [""GET""])]
+   - Constructor property promotion
+   ㅤ→ __construct( public float $x = 0.0 ) {}
+   - Union Type
+   ㅤ→ private int|float $number
+   - Match expression
+   ㅤ→ match (8.0) { '8.0' => ""Oh no!"", 8.0 => ""This is what I expected"", };
+   - Nullsafe operator
+   ㅤ→ $country = $session?->user?->getAddress()?->country;
+   - Saner string to number comparisons
+   ㅤ→ 0 == 'foobar' // false (예전엔 true 였음)
+   - 추가 : WeakMap 클래스, Stringable 인터페이스, str_contains(), str_starts_with(), str_ends_with() 함수들
+
+   지금은 empty(“0”) => true 인데 8에서는 과연?!
+
+   8에서도 그대로네요 ㅎㅎ
+"
+"https://news.hada.io/topic?id=3313","Kubernetes v1.20 부터 Docker가 deprecated 될 예정","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              Kubernetes v1.20 부터 Docker가 deprecated 될 예정
+
+   Kubernetes의 container runtime 중 하나인 docker 가 현재 stable 인 1.19의 다음 버전인 1.20부터는 deprecated 될 예정이고, 2021년 말 릴리즈 예정인 v1.22 에서는 runtime 으로 아예 docker는 삭제된다고 합니다.
+
+   kubernetes에서 gpu를 사용하려면 docker를 이용한 방법으로 안내하고 있는데, docker를 빼 버릴거면 어떻게 할지 궁금하네요.
+
+   https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker
+
+   깜짝 놀라서 봤는데 결국 OCI 표준의 이미지는 처리할거라 도커가 빠지는거지 도커 이미지가 안되는게 아니네요; 십년감수. 그래도 몇몇 이슈가 있을 수 있다는데, 우리가 그 케이스에 안빠지길 기도..해야..겠...
+"
+"https://news.hada.io/topic?id=3259","고성능 TypeScript를 위한 팁","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          고성능 TypeScript를 위한 팁
+
+   - 실행성능이 아닌 ""컴파일 및 편집 시 성능""을 높이기 위한 팁들
+   - TypeScript 팀이 직접 정리
+   → 잘 컴파일 되는 코드 작성법
+   → 프로젝트 참조 사용법
+   → tsconfig.json 과 jsconfig.json 설정
+   → 다들 빌드도구 설정
+   → (느려진) 원인 조사하는 법
+"
+"https://news.hada.io/topic?id=3284","AlphaFold - 단백질 접힘 문제의 솔루션","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       AlphaFold - 단백질 접힘 문제의 솔루션
+
+   - DeepMind에서 개발한 단백질 접힘 문제를 해결하는 신경망 모델
+   ## 단백질 접힘 문제
+   - 단백질은 아미노산이 사슬 형태로 연결되어 입체적으로 접힌 복잡한 구조
+   - 단백질을 구성하는 아미노산과 접혀있는 구조에 따라 여러가지 기능을 함
+   - 그러나 아미노산의 배열만 가지고 단백질의 구조를 예측하는 것은 매우 어려움
+   ## AlphaFold
+   - 단백질 데이터 뱅크의 약 170,000개 단백질 구조 데이터와 그 밖에 구조가 알려지지 않은 단백질 데이터를 학습
+   - 약 128개의 TPUv3 코어를 사용해 몇 주간 학습
+   ## CASP(Critical Assessment of protein Structure Prediction)
+   - 1994년에 최초로 개최된 2년마다 열리는 세계 단백질 구조 예측 대회
+   - 아직 구조가 알려지지 않은 단백질의 구조를 예측
+   - AlphaFold의 초기버전이 2018년에 열린 CASP13에 참가
+   - 2020년에 열린 CASP14에서 AlphaFold가 평균 92.4 GDT로 1위
+   - 이는 원자 1개의 너비 정도의 오차
+   ## 기대효과 및 전망
+   - 올해 AlphaFold는 ORF3a, ORF8 등 코로나 바이러스 단백질을 예측함
+   - 앞으로 여러 생물학적 문제 해결과 신약 개발 등에 기여할 것이 기대됨
+
+   건강관리 잘해야겠네요. 생명연장의 꿈이 이뤄질때까지... 이번 생에 하고 싶은 게 너무 많습니다 ;ㅁ;
+
+   세포 노화를 되돌리는데 단백질을 사용한다는 기사가 나왔던데
+   인공지능이 생명연장의 꿈을 이루는데 큰일을 할지도 모르겠네요.
+   노화한 피부세포 다시 젊게 만드는 '세포 역노화' 기술 나왔다
+   http://m.dongascience.donga.com/news.php?idx=41855
+   세포 노화를 되돌리는 전략으로 ‘역분화’ 기술이 가장 널리 연구되고 있다. 역분화는 피부세포처럼 특정신체 조직으로 자란 세포에 ‘야마나카 전사인자’라는 단백질 4종을 추가해 특정세포로 분화하기 이전의 젊은 상태로 되돌리는 기술이다
+"
+"https://news.hada.io/topic?id=3295","Please - 속도/확장성에 집중한 멀티 언어 빌드시스템","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Please - 속도/확장성에 집중한 멀티 언어 빌드시스템
+
+   - Go 로 작성되어 병렬 빌드&테스트를 빠르게
+   - Blaze/Bazel(구글), Buck(페이스북), Pants(트위터) 등의 도구에서 영향 받음
+   - Python, C++, Go, Java, Protobuf & gRPC, Shell Script 빌드가능
+   ㅤ→ 여러 언어를 쓰는 모노레포 빌드 및 CI 에 적합. 테스트를 쉽게 샌드박싱 가능
+   - 리눅스, macOS, FreeBSD 지원
+"
+"https://news.hada.io/topic?id=3364","Cydia, 애플의 앱 스토어 독점 행위에 반대하여 애플 고소","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Cydia, 애플의 앱 스토어 독점 행위에 반대하여 애플 고소
+
+   탈옥 유저를 위한 앱 스토어이면서 아이폰을 위한 최초의 앱 스토어인 Cydia(Jay Freeman)측이 애플의 앱 스토어 독점 행위를 맹렬히 비난하며 애플을 고소했다는 소식입니다.
+"
+"https://news.hada.io/topic?id=3297","Java & Spring 개발자가 Ruby on Rails를 해보고 마주친 생각들","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Java & Spring 개발자가 Ruby on Rails를 해보고 마주친 생각들
+
+   Ruby on Rails 의 강점
+   - 낮은 진입 장벽
+   - Ruby 언어의 강력함
+   - rails console
+   - 테스트 코드 작성의 편리성
+   - 날짜 관련
+   - DB 스키마 관리
+   - 이메일 발송 Preview
+   - 비동기 로직 처리를 위한 sidekiq
+   Spring 의 강점
+   - 선언적인 API endpoints routing
+   - 선언적인 DB 트랜잭션 관리
+   - Container 와 DI
+   - DB Entity layer 와 Query layer 의 명확한 분리
+   - cloud platform, MSA
+   - Static Type (Java, Kotlin)
+   - 개발 생태계
+   - openapi 문서 작성의 편의성
+   다른 이야기
+   - 생산성
+   - Case convention
+   ""이전에는 Rails 만이 갖고 있던 강점들이 두드러졌으나, 시간이 지나면서 Spring 진영이 매우 빠른 속도로 진보하여 Rails 의 강점이 더 이상 Rails 만의 강점이라고 하기 어려워 진 것 같습니다.
+   하지만 Ruby on Rails 도 Spring 만큼 성숙한 Framework 이며 오픈소스 커뮤니티만으로도 지속적인 진보를 이뤄내고 있습니다.""
+
+   지금이야 강점이 많이 희석 되어가고 있지만 처음 릴리즈되고 퍼지던 시기를 돌아보면 정말 많은 언어와 개발 환경에 영향을 크게 끼친 프레임워크인듯합니다
+
+   한때, Ruby에 꽂혀서 Rails까지 많이 했었는데요~ 강점도 강점이지만, 그냥 개발 철학이 꽤나 매력적이라는 생각이 들었습니다. 오랜만에 다시금 관련 내용을 찾게 보게 됐네요~ ^*
+"
+"https://news.hada.io/topic?id=3245","rehex - 리버스 엔지니어를 위한 오픈소스 Hex 에디터","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   rehex - 리버스 엔지니어를 위한 오픈소스 Hex 에디터
+
+   - 크로스 플랫폼(윈도우/맥/리눅스) UI
+   - 1TB+ 이상 파일 지원
+   - 정수/실수형 디코딩
+   - 머신코드 디스어셈블
+   - 원하는 바이트 블럭에 코멘트 작성 지원
+   - 선택 영역 좌우 diff 비교 지원
+
+   다른 무료 Hex Editor
+   - HxD Editor - https://mh-nexus.de/en/hxd/
+   - wxHex Editor - https://www.wxhexeditor.org/home.php
+   유료 Hex 에디터로는 얼마전에 올라온 010 Editor 같은게 있습니다
+   - 010 Editor - 전문가용 Text + Hex Editor - https://news.hada.io/topic?id=3209
+"
+"https://news.hada.io/topic?id=3292","curl로 접속할 때 Hostname을 바꿔서 접속하는 법을 원작자가 정리해주었습니다.","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            curl로 접속할 때 Hostname을 바꿔서 접속하는 법을 원작자가 정리해주었습니다.
+
+   HTTP/1.1부터 Host헤더로 접속을 원하는 서버의 도메인을 지정할 수 있습니다.
+   이를 사용해 curl --header ""Host: www.example.com"" http://127.0.0.1 로 http 서버의 virtualhost 를 테스트할 수 있습니다.
+   하지만 https가 등장하면 어떨까요? (SNI필드나 인증서를 제대로 확인하려면?)
+   curl --resolve example.com:443:127.0.0.1 https://example.com/
+   curl --connect-to example.com:443:host-47.example.com:443 https://example.com/
+   이 3가지 방법에 대한 설명은 본문에서 참고하셔서, 적절하게 섞어쓰시면 됩니다.
+
+   좋은 팁이군요. 감사합니다. 저는 --resolve 옵션으로 $(dig +short FQDN|head -n 1) 을 주로 썼었는데 --connect-to 는 미처 몰랐네요.
+"
+"https://news.hada.io/topic?id=3314","Docker(container)의 작동 원리: namespaces and cgroups","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Docker(container)의 작동 원리: namespaces and cgroups
+
+   Kubernetes에서 공식적으로 Docker 지원이 빠지게 되는데 이게 어떻게 가능한 건지, Container != Docker인 이유를 설명합니다.
+"
+"https://news.hada.io/topic?id=3344","Get creative with Chromebooks","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Get creative with Chromebooks
+
+   Google이 얼마 전부터 Chromebook을 밀어준다는 느낌은 들었지만,
+   이제 Creative 기능들까지 지원한다는 소식입니다.
+   Project Fugu의 발전과 Chrome OS의 발전이
+   Web Capacity를 더 넓히는 느낌이 드네요.
+"
+"https://news.hada.io/topic?id=3265","hCaptcha가 인터넷의 15% 사이트에서 사용중","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      hCaptcha가 인터넷의 15% 사이트에서 사용중
+
+   - 구글의 reCAPTCHA가 독점하고 있는 캡차 시장의 점유율을 가져간 것
+   - 사람과 봇을 구분하기 위해 꽤 많은 행동 데이터를 가져가는 구글과 달리 프라이버시와 보안을 둘 다 잡은 것이 주효했음.
+   - reCAPTCHA가 엔터프라이즈에 대해 과금을 시작하면서 많이 이전을 했고, 큰 CDN업체인 CloudFlare 가 reCAPTCHA에서 hCaptcha로 전환
+
+   CloudFlare 와 hCaptcha 는 서로 도와주는 관계인데요.
+   hCaptcha도 무료는 아니지만, Cloudflare 가 자신들의 서버리스 환경인 Worker로 부하를 분산하도록 해주고, 비용을 할인?받고 있습니다.
+   - Cloudflare, 구글 reCAPTCHA에서 hCaptcha로 변경 https://news.hada.io/topic?id=1859
+   - 구글의 reCAPTCHA v3 는 어두운 부분이 있다 https://news.hada.io/topic?id=5
+"
+"https://news.hada.io/topic?id=3277","애플 Rosetta Translation 환경에 대해서","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     애플 Rosetta Translation 환경에 대해서
+
+   - Rosetta 는 애플실리콘에서 x86_64 명령으로 된 앱들을 실행할수 있게 해주는 번역 프로세스
+   - 사용자에게 Rosetta는 보이지 않음. 실행파일이 인텔 명령어들만 가지고 있을때 macOS가 자동으로 Rosetta를 실행해서 번역을 시작
+   - 번역이 끝나면 시스템이 오리지널 대신 번역된 실행파일을 실행함. 이 번역시간은 실행이 걸리므로 앱이 실행/동작하는게 느릴 수 있음
+   - 시스템은 앱의 arm64 명령어 실행을 선호함. 바이너리가 arm64 와 x86_64를 둘다 가지고 있을때 사용자는 강제로 Rosetta 로 실행되도록 지정 가능. 예를 들어 특정 플러그인이 arm64를 지원 안하거나 할때
+   - 시스템은 같은 프로세스 안에서 arm64 와 x86_64 코드를 섞는 것을 방지함. Rosetta 는 동적로딩 하는 코드 모듈을 포함해서 전체적으로 적용됨.
+   번역 될수 없는 것
+   - JIT를 컴파일러를 포함한 앱들을 다 번역하지만 아래 것들은 번역하지 않음
+   ㅤ→ 커널 확장
+   ㅤ→ x86_64 컴퓨터플랫폼을 가상화하는 Virtual Machine
+   - 로제타는 모든 x86_64 명령어를 번역하지만, AVX,AVX2, AVX512 같은 최신 또는 프로세서 기능들은 지원 안함.
+   ㅤ→ 이런 함수들이 코드에 있다면, sysctlbyname 함수 등으로 실제 가능한지 확인 후에 호출해야함.
+   - 로제타로 번역된 바이너리로 실행되는지 확인하려면 sysctlbyname 함수에 sysctl.proc_translated 플래그를 줘서 확인 가능
+
+   공식문서인데 정리가 잘 되어 있어서 간단히 번역해서 올려둡니다.
+   Rosetta 는 Emulation 이 아닌 ""Translation"" 이라는게 중요.
+"
+"https://news.hada.io/topic?id=3326","나만의 유튜브 추천 알고리즘 만들기","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          나만의 유튜브 추천 알고리즘 만들기
+
+   - 유튜브 API로 나한테 도움이 되는 비디오만 찾아서 보기
+   - 조회수/구독자 비율로 최신 비디오의 랭킹을 생성
+   ㅤ→ 구독자가 많으면 조회수가 높으므로, 구독자 적은 채널에 가중치
+   ㅤㅤ단, 5000명 이상의 채널. 그리고 최대 비율은 5로 설정
+   ㅤ→ 일주일에 한번, 지난 7일간 올라온 비디오만.
+   ㅤㅤ( 올라온지 오래되면 조회수가 높으므로 )
+   ㅤ→ 조회수/구독자 비율을 등록일수로 나눈게 최종 메트릭
+   * 실제로 GPT-3로 검색해보니 단순히 구독자 많은 채널의 재미없는 비디오보다, 구독자가 적지만 유용하고 재미난 비디오를 더 찾을수 있었음.
+   - 코드는 깃헙에 공개 : https://github.com/chris-lovejoy/YouTube-video-finder
+   - 동작방식
+   ㅤ1. 검색어와 기간을 이용해서 유튜브 비디오 검색
+   ㅤ2. 비디오 관련 지표들 추출
+   ㅤ3. 위 함수로 비디오 랭크 생성
+   ㅤ4. 관련 비디오 정보를 DataFrame에 저장
+   ㅤ5. 탑 5개의 비디오를 출력
+   - AWS Lambda 에 업로드 해서 자동으로 실행하게 하려했으나 실패
+   - 현재는 그냥 로컬에서 스크립트를 실행중
+
+   실제로 요즘 유튜브에서 기술관련 영상을 검색해보면, 인도에서 만든 개념소개 영상들이 너무 많이 나오고 그것들이 실제로 구독자도 조회수도 많지만 재미없는게 많은데요. 이런 방식으로 테스트 해보면 좋을거 같기는 합니다.
+"
+"https://news.hada.io/topic?id=3308","Stripe, 금융 기능을 API로 제공하는 Treasury 서비스 공개","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Stripe, 금융 기능을 API로 제공하는 Treasury 서비스 공개
+
+   - 자신의 플랫폼/마켓플레이스에 금융서비스를 쉽게 붙이게 해주는 Banking-as-a-Service
+   - 한번의 연동으로 Stripe 를 이용한 플랫폼 내에서 쉽게 돈을 예치/송금/수신 할수 있음
+   - 미국내에선 골드만삭스, 해외에선 Citi, Barclays 등과 연계해서 글로벌 금융기능을 제공
+   * Shopify를 이용하는 상점들이 서비스 내부에서 금융 기능을 다 수행할 수 있게 되는 것
+   ㅤ→ https://www.shopify.com/balance
+
+   Treasury 서비스를 활용한 Shopify Balance를 국내 상황과 비교해서 예를 들어보면,
+   네이버 스마트스토어를 개설하면서 은행 계좌는 은행에 가서 별도로 개설해야 하는데
+   그걸 그냥 네이버에서 한번에 계좌개설까지 다 해주고,
+   스마트스토어에서 나온 판매 비용은 그 계좌로 이체도 해주고,
+   상점 주인은 그 계좌에서 다른 비용도 낼 수 있게 하는거네요.
+   이거 처음부터 하려면 네이버는 금융쪽과 연계하는 API를 열심히 개발해야 하는건데,
+   Stripe 의 Treasury 를 사용하면 한 방에 끝! 이란 얘기
+"
+"https://news.hada.io/topic?id=3237","Dev Fonts - 개발자용 폰트 모음","                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Dev Fonts - 개발자용 폰트 모음
+
+   - 30종의 코딩용 폰트
+   - 주로 사용하는 개발 언어와 에디터 테마를 지정해서 폰트 적용한 코드 예제 보기 가능
+   - Ligature 지원 여부 별도 표시
+
+   Javasciprt가 아닌 ""Java""로 언어를 바꿨을 때 syntax highlighting이 제대로 안되는 것 같아요!
+"
