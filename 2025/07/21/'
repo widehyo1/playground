@@ -1,0 +1,56 @@
+import random
+import string
+
+def generate_random_string(length):
+    characters = string.ascii_letters
+    return ''.join(random.choice(characters).lower() for i in range(length))
+
+def main():
+    words  = [generate_random_string(random.randint(10, 20)) for _ in range(20)]
+
+    chars = set()
+    for word in words:
+        chars |= set(word)
+
+    bit_mapper = {char: idx for idx, char in enumerate(sorted(list(chars)))}
+
+    bit_arr = [str(bin(to_bit(word, bit_mapper)))[2:].zfill(len(chars)) for word in words]
+
+    get_info(bit_arr)
+    column_bits = [''.join(bit_arr[row_idx][col_idx] for row_idx in range(len(words))) for col_idx in range(len(chars))]
+    print('before')
+    print('\n'.join(column_bits))
+    print('after')
+    sorted(column_bits, key=lambda column: sum(1 if char == '1' else 0 for char in column))
+    print('\n'.join(column_bits))
+    get_info(column_bits)
+
+
+def to_bit(word, bit_mapper):
+    print(f"{word=}, {bit_mapper=}")
+    result = 0b0
+    for char in word:
+        print(f"{char=}")
+        print(0b1 << bit_mapper[char])
+        result |= 0b1 << bit_mapper[char]
+    return result
+
+def get_info(bit_arr):
+    n = len(bit_arr)
+    m = len(bit_arr[0])
+
+    row_info = {}
+    for row_idx, bits in enumerate(bit_arr):
+        row_info[row_idx] = sum(1 if char == '1' else 0 for char in bits)
+
+    col_info = {}
+    for col_idx in range(m):
+        col_info[col_idx] = sum(1 if bit_arr[idx][col_idx] == '1' else 0 for idx in range(n))
+
+    print(bit_arr)
+    print('\n'.join(bit_arr))
+    print(f"{row_info=}")
+    print(f"{col_info=}")
+
+if __name__ == '__main__':
+    main()
