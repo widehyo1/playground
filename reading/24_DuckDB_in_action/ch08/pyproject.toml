@@ -1,0 +1,17 @@
+[project]
+name = "ch08"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dagster>=1.11.12",
+    "dagster-duckdb>=0.27.12",
+    "dagster-webserver>=1.11.12",
+    "dbt>=1.0.0.40.6",
+    "dbt-duckdb>=1.9.6",
+    "dlt>=1.17.0",
+    "duckdb>=1.4.0",
+    "ipython>=9.5.0",
+    "pandas>=2.3.2",
+]

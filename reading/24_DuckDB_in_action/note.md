@@ -620,3 +620,261 @@ D SELECT distinct function_name
 │           81 rows            │
 └──────────────────────────────┘
 ```
+
+---
+
+uv add ipython
+uv run ipython
+
+uv add ipdb
+
+import ipdb
+bk = ipdb.set_trace()
+ipdb > where
+ipdb > help
+
+```py
+In [12]: con.sql('SELECT count(*) FROM over_10m WHERE "GDP ($ per capita)" > 10000')
+Out[12]: 
+┌──────────────┐
+│ count_star() │
+│    int64     │
+├──────────────┤
+│           20 │
+└──────────────┘
+```
+
+```py
+In [15]: %lsmagic
+Out[15]: 
+Available line magics:
+%alias  %alias_magic  %autoawait  %autocall  %autoindent  %automagic  %bookmark  %cat  %cd  %clear  %code_wrap  %colors 
+ %conda  %config  %cp  %cpaste  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %hist  %history  %killbgsc
+ripts  %ldir  %less  %lf  %lk  %ll  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %ls  %ls
+magic  %lx  %macro  %magic  %mamba  %man  %matplotlib  %micromamba  %mkdir  %more  %mv  %notebook  %page  %paste  %paste
+bin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %pip  %popd  %pprint  %precision  %prun  %psearch  %psource  %pushd  %
+pwd  %pycat  %pylab  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %rm  %rmdir  %ru
+n  %save  %sc  %set_env  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %uv  %who  %who_ls  %whos  %x
+del  %xmode
+
+Available cell magics:
+%%!  %%HTML  %%SVG  %%bash  %%capture  %%code_wrap  %%debug  %%file  %%html  %%javascript  %%js  %%latex  %%markdown  %%
+perl  %%prun  %%pypy  %%python  %%python2  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %
+%writefile
+
+Automagic is ON, % prefix IS NOT needed for line magics.
+```
+
+
+
+```py
+In [16]: def remove_spaces(field:str) -> str:
+    ...:     if field:
+    ...:         return field.lstrip().rstrip()
+    ...:     else:
+    ...:         return field
+    ...: 
+
+In [17]: con.sql("""
+    ...: SELECT function_name, function_type, parameters, parameter_types, return_type
+    ...: from duckdb_functions()
+    ...: where function_name = 'remove_spaces'
+    ...: """)
+Out[17]: 
+┌───────────────┬───────────────┬────────────┬─────────────────┬─────────────┐
+│ function_name │ function_type │ parameters │ parameter_types │ return_type │
+│    varchar    │    varchar    │ varchar[]  │    varchar[]    │   varchar   │
+├───────────────┴───────────────┴────────────┴─────────────────┴─────────────┤
+│                                   0 rows                                   │
+└────────────────────────────────────────────────────────────────────────────┘
+
+In [18]: con.create_function('remove_spaces', remove_spaces)
+Out[18]: <_duckdb.DuckDBPyConnection at 0x7739d0add4b0>
+
+In [19]: con.sql("""
+    ...: SELECT function_name, function_type, parameters, parameter_types, return_type
+    ...: from duckdb_functions()
+    ...: where function_name = 'remove_spaces'
+    ...: """)
+Out[19]: 
+┌───────────────┬───────────────┬────────────┬─────────────────┬─────────────┐
+│ function_name │ function_type │ parameters │ parameter_types │ return_type │
+│    varchar    │    varchar    │ varchar[]  │    varchar[]    │   varchar   │
+├───────────────┼───────────────┼────────────┼─────────────────┼─────────────┤
+│ remove_spaces │ scalar        │ [col0]     │ [VARCHAR]       │ VARCHAR     │
+└───────────────┴───────────────┴────────────┴─────────────────┴─────────────┘
+
+In [20]: con.sql("select length(remove_spaces(' foo '))")
+Out[20]: 
+┌────────────────────────────────┐
+│ length(remove_spaces(' foo ')) │
+│             int64              │
+├────────────────────────────────┤
+│                              3 │
+└────────────────────────────────┘
+
+In [21]: con.remove_function('remove_spaces')
+Out[21]: <_duckdb.DuckDBPyConnection at 0x7739d0add4b0>
+
+In [22]: from duckdb.typing import *
+
+In [23]: con.create_function(
+    ...: 'remove_spaces',
+    ...: remove_spaces,
+    ...: [(VARCHAR)],
+    ...: VARCHAR
+    ...: )
+Out[23]: <_duckdb.DuckDBPyConnection at 0x7739d0add4b0>
+
+In [24]: con.sql("""
+    ...: SELECT DISTINCT Region, length(Region) AS len1,
+    ...:        remove_spaces(Region) AS cleanRegion,
+    ...:        length(cleanRegion) AS len2
+    ...: FROM population
+    ...: WHERE len1 BETWEEN 20 AND 30
+    ...: LIMIT 3
+    ...: """)
+100% ▕██████████████████████████████████████▏ (00:00:02.34 elapsed)     
+
+┌───────────────────────────────┬───────┬──────────────────────┬───────┐
+│            Region             │ len1  │     cleanRegion      │ len2  │
+│            varchar            │ int64 │       varchar        │ int64 │
+├───────────────────────────────┼───────┼──────────────────────┼───────┤
+│ C.W. OF IND. STATES           │    20 │ C.W. OF IND. STATES  │    19 │
+│ LATIN AMER. & CARIB           │    23 │ LATIN AMER. & CARIB  │    19 │
+│ ASIA (EX. NEAR EAST)          │    29 │ ASIA (EX. NEAR EAST) │    20 │
+└───────────────────────────────┴───────┴──────────────────────┴───────┘
+```
+
+```py
+import duckdb
+import pandas as pd
+people = pd.DataFrame({
+"name": ["Michael Hunger", "Michael Simons", "mark Needham"],
+"country": ["Germany", "Germany", "Great Britain"]
+})
+duckdb.sql("""
+SELECT *
+FROM people
+WHERE country = 'Germany'
+""")
+params = {"country": "Germany"}
+duckdb.execute("""
+SELECT *
+FROM people
+WHERE country <> $country
+""", params).fetchdf()
+duckdb.sql("FROM people")
+duckdb.sql("FROM people").filter("country <> 'Germany'")
+con
+%history
+    con = duckdb.connect(database=':memory:')
+
+    con.execute("INSTALL httpfs")
+    con.execute("LOAD httpfs")
+
+    population = con.read_csv("https://bit.ly/3KoiZR0")
+con.sql('select count(1) from population')
+    population_table = con.table("population")
+con.sql('select dinstinct Region, length(Region) AS numChars from population')
+con.sql('select DISTINCT Region, length(Region) AS numChars from population')
+def remove_spaces(field:str) -> str:
+    if field:
+        return field.lstrip().rstrip()
+    else:
+        return field
+con.sql("""
+SELECT function_name, function_type, parameters, parameter_types, return_type
+from duckdb_functions()
+where function_name = 'remove_spaces'
+""")
+con.create_function('remove_spaces', remove_spaces)
+con.sql("""
+SELECT function_name, function_type, parameters, parameter_types, return_type
+from duckdb_functions()
+where function_name = 'remove_spaces'
+""")
+con.sql("select length(remove_spaces(' foo '))")
+con.remove_function('remove_spaces')
+from duckdb.typing import *
+con.create_function(
+'remove_spaces',
+remove_spaces,
+[(VARCHAR)],
+VARCHAR
+)
+con.sql("""
+SELECT DISTINCT Region, length(Region) AS len1,
+       remove_spaces(Region) AS cleanRegion,
+       length(cleanRegion) AS len2
+FROM population
+WHERE len1 BETWEEN 20 AND 30
+LIMIT 3
+""")
+con.sql("""
+select DISTINCT Region, length(Region) AS numChars
+from population
+""")
+con.sql("""
+UPDATE population
+SET Region = remove_spaces(Region);
+""")
+    population_table = con.table("population")
+con.sql("""
+UPDATE population_table
+SET Region = remove_spaces(Region);
+""")
+population.to_table("population")
+con.sql("""
+UPDATE population_table
+SET Region = remove_spaces(Region);
+""")
+con.sql("""
+UPDATE population
+SET Region = remove_spaces(Region);
+""")
+import locale
+def convert_locale(field:str) -> float:
+    locale.setlocale(locale.LC_ALL, 'de_DE')
+    return locale.atof(field)
+con.create_function('convert_locale', convert_locale)
+con.sql("""
+select "Coastline (coast/area ratio)" AS coastline,
+convert_locale(coastline) as cleanCoastline,
+"Pop. Densisy (per sq. mi.)" as popDen,
+convert_locale(popDen) as cleanPopDen
+from population
+limit 5
+""")
+con.sql("""
+select "Coastline (coast/area ratio)" AS coastline,
+convert_locale(coastline) as cleanCoastline,
+"Pop. Densisty (per sq. mi.)" as popDen,
+convert_locale(popDen) as cleanPopDen
+from population
+limit 5
+""")
+con.sql("""
+select "Coastline (coast/area ratio)" AS coastline,
+convert_locale(coastline) as cleanCoastline,
+"Pop. Density (per sq. mi.)" as popDen,
+convert_locale(popDen) as cleanPopDen
+from population
+limit 5
+""")
+%history
+```
+
+      - name: surface
+        description: "The surface of the court."
+        tests:
+          - not_null
+          - accepted_values:
+            values: ['Grass', 'Hard', 'Clay']
+
+
+Parsing Error
+  Invalid test config given in models/atp/schema.yml:
+        test definition dictionary must have exactly one key, got [('accepted_values', None), ('values', ['Grass', 'Har
+d', 'Clay'])] instead (2 keys)
+        @: UnparsedModelUpdate(original_file_path='mode...ne)

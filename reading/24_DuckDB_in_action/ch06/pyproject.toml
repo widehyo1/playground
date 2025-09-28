@@ -1,0 +1,15 @@
+[project]
+name = "ch06"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dlt>=1.17.0",
+    "duckdb>=1.4.0",
+    "ipdb>=0.13.13",
+    "ipython>=9.5.0",
+    "pandas>=2.3.2",
+    "polars>=1.33.1",
+    "pyarrow>=21.0.0",
+]
