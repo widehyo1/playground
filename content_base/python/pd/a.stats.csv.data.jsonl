@@ -1,0 +1,6 @@
+{"field":"name","type":"String","is_ascii":true,"min":"Accept","max":"sec-ch-ua-platform","sort_order":"Ascending","min_length":3,"max_length":25,"sum_length":187,"avg_length":12.4667,"nullcount":0,"sparsity":0.0,"cardinality":15}
+{"field":"value","type":"String","is_ascii":true,"min":"\"Microsoft Edge\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"","max":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7","sort_order":"Unsorted","min_length":1,"max_length":135,"sum_length":432,"avg_length":28.8,"nullcount":0,"sparsity":0.0,"cardinality":14}
+{"field":"qsv__rowcount","is_ascii":false,"qsv__value":15.0}
+{"field":"qsv__columncount","is_ascii":false,"qsv__value":2.0}
+{"field":"qsv__filesize_bytes","is_ascii":false,"qsv__value":686.0}
+{"field":"qsv__fingerprint_hash","is_ascii":false,"qsv__value":0.0}

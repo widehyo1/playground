@@ -1,14 +1,13 @@
 [tool.poetry]
-name = "text-viewer"
+name = "pd"
 version = "0.1.0"
 description = ""
-authors = ["widehyo <widehyo@mobigen.com>"]
+authors = ["widehyo@gmail.com <widehyo@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-textual = "^2.1.2"
-mypy = "^1.15.0"
+pandas = "^2.2.3"
 
 
 [build-system]

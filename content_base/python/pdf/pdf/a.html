@@ -1,0 +1,42 @@
+<html>
+<head>
+    <style>
+        table, td {{ border: 1px solid black; border-collapse: collapse; padding: 5px; }}
+        table, th {{ border: 1px solid black; border-collapse: collapse; padding: 5px; }}
+    </style>
+</head>
+<body>
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead><tr><th>Command</th><th>Description</th></tr></thead>
+  <tbody>
+    <tr><td>h or &lt;Left&gt; or CTRL-H or &lt;BS&gt;</td><td>[count] characters to the left.  |exclusive| motion.</td></tr>
+    <tr><td>l or &lt;Right&gt; or &lt;Space&gt;</td><td>[count] characters to the right.  |exclusive| motion.</td></tr>
+    <tr><td>0</td><td>To the first character of the line.  |exclusive|<br>motion.</td></tr>
+    <tr><td>&lt;Home&gt;</td><td>To the first character of the line.  |exclusive|<br>motion.</td></tr>
+    <tr><td>^</td><td>To the first non-blank character of the line.<br>|exclusive| motion.  Any count is ignored.</td></tr>
+    <tr><td>$  or &lt;End&gt;</td><td>To the end of the line.  |inclusive| motion.</td></tr>
+    <tr><td>f{char}</td><td>To [count]'th occurrence of {char} to the right.  The<br>cursor is placed on {char} |inclusive|.</td></tr>
+    <tr><td>F{char}</td><td>To the [count]'th occurrence of {char} to the left.<br>The cursor is placed on {char} |exclusive|.<br>{char} can be entered like with the |f| command.</td></tr>
+    <tr><td>t{char}</td><td>Till before [count]'th occurrence of {char} to the<br>right.  The cursor is placed on the character left of<br>{char} |inclusive|.<br>{char} can be entered like with the |f| command.</td></tr>
+    <tr><td>T{char}</td><td>Till after [count]'th occurrence of {char} to the<br>left.  The cursor is placed on the character right of<br>{char} |exclusive|.<br>{char} can be entered like with the |f| command.</td></tr>
+    <tr><td>;</td><td>Repeat latest f, t, F or T [count] times.</td></tr>
+    <tr><td>, or count] times. See also |cpo-;|</td><td>Repeat latest f, t, F or T in opposite direction<br>[count] times.<br>count] times. See also |cpo-;|</td></tr>
+    <tr><td>k or &lt;Up&gt; or CTRL-P</td><td>[count] lines upward |linewise|.</td></tr>
+    <tr><td>j or &lt;Down&gt; or CTRL-J or &lt;NL&gt; or CTRL-N</td><td>[count] lines downward |linewise|.</td></tr>
+    <tr><td>gk or g&lt;Up&gt;</td><td>[count] display lines upward.  |exclusive| motion.<br>Differs from 'k' when lines wrap, and when used with<br>an operator, because it's not linewise.</td></tr>
+    <tr><td>gj or g&lt;Down&gt;</td><td>[count] display lines downward.  |exclusive| motion.<br>Differs from 'j' when lines wrap, and when used with<br>an operator, because it's not linewise.</td></tr>
+    <tr><td>G</td><td>Goto line [count], default last line, on the first<br>non-blank character |linewise|.</td></tr>
+    <tr><td>&lt;C-Home&gt; or gg</td><td>Goto line [count], default first line, on the first<br>non-blank character |linewise|.</td></tr>
+    <tr><td>{count}%</td><td>Go to {count} percentage in the file, on the first<br>non-blank in the line |linewise|.</td></tr>
+    <tr><td>&lt;S-Right&gt; or w</td><td>[count] words forward.  |exclusive| motion.</td></tr>
+    <tr><td>&lt;C-Right&gt; or W</td><td>[count] WORDS forward.  |exclusive| motion.<br>If &lt;C-Right&gt; does not work, check out<br>|arrow_modifiers|.</td></tr>
+    <tr><td>e</td><td>Forward to the end of word [count] |inclusive|.<br>Does not stop in an empty line.</td></tr>
+    <tr><td>E</td><td>Forward to the end of WORD [count] |inclusive|.<br>Does not stop in an empty line.</td></tr>
+    <tr><td>&lt;S-Left&gt; or b</td><td>[count] words backward.  |exclusive| motion.</td></tr>
+    <tr><td>&lt;C-Left&gt; or B</td><td>[count] WORDS backward.  |exclusive| motion.<br>If &lt;C-Left&gt; does not work, check out<br>|arrow_modifiers|.</td></tr>
+    <tr><td>ge</td><td>Backward to the end of word [count] |inclusive|.</td></tr>
+    <tr><td>gE</td><td>Backward to the end of WORD [count] |inclusive|.</td></tr>
+  </tbody>
+</table>
+</body>
+</html>

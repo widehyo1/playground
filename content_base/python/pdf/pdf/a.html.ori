@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead><tr><th>Command</th><th>Description</th></tr></thead>
+  <tbody>
+    <tr><td>aw</td><td>"a word", select [count] words (see |word|).<br>Leading or trailing white space is included, but not<br>counted.<br>When used in Visual linewise mode "aw" switches to<br>Visual characterwise mode.</td></tr>
+    <tr><td>iw</td><td>"inner word", select [count] words (see |word|).<br>White space between words is counted too.<br>When used in Visual linewise mode "iw" switches to<br>Visual characterwise mode.</td></tr>
+    <tr><td>aW</td><td>"a WORD", select [count] WORDs (see |WORD|).<br>Leading or trailing white space is included, but not<br>counted.<br>When used in Visual linewise mode "aW" switches to<br>Visual characterwise mode.</td></tr>
+    <tr><td>iW</td><td>"inner WORD", select [count] WORDs (see |WORD|).<br>White space between words is counted too.<br>When used in Visual linewise mode "iW" switches to<br>Visual characterwise mode.</td></tr>
+    <tr><td>as</td><td>"a sentence", select [count] sentences (see<br>|sentence|).<br>When used in Visual mode it is made characterwise.</td></tr>
+    <tr><td>is</td><td>"inner sentence", select [count] sentences (see<br>|sentence|).<br>When used in Visual mode it is made characterwise.</td></tr>
+    <tr><td>ap</td><td>"a paragraph", select [count] paragraphs (see<br>|paragraph|).<br>Exception: a blank line (only containing white space)<br>is also a paragraph boundary.<br>When used in Visual mode it is made linewise.</td></tr>
+    <tr><td>ip</td><td>"inner paragraph", select [count] paragraphs (see<br>|paragraph|).<br>Exception: a blank line (only containing white space)<br>is also a paragraph boundary.<br>When used in Visual mode it is made linewise.</td></tr>
+    <tr><td>a] or a[</td><td>"a [] block", select [count] '[' ']' blocks.  This<br>goes backwards to the [count] unclosed '[', and finds<br>the matching ']'.  The enclosed text is selected,<br>including the '[' and ']'.<br>When used in Visual mode it is made characterwise.</td></tr>
+    <tr><td>i] or i[</td><td>"inner [] block", select [count] '[' ']' blocks.  This<br>goes backwards to the [count] unclosed '[', and finds<br>the matching ']'.  The enclosed text is selected,<br>excluding the '[' and ']'.<br>When used in Visual mode it is made characterwise.</td></tr>
+    <tr><td>a) or a( or ab</td><td>"a block", select [count] blocks, from "[count] [(" to<br>the matching ')', including the '(' and ')' (see<br>|[(|).  Does not include white space outside of the<br>parenthesis.<br>When used in Visual mode it is made characterwise.</td></tr>
+    <tr><td>i) or i( or ib</td><td>"inner block", select [count] blocks, from "[count] [("<br>to the matching ')', excluding the '(' and ')' (see<br>|[(|).<br>When used in Visual mode it is made characterwise.</td></tr>
+    <tr><td>a&gt; or a&lt;</td><td>"a &lt;&gt; block", select [count] &lt;&gt; blocks, from the<br>[count]'th unmatched '&lt;' backwards to the matching<br>'&gt;', including the '&lt;' and '&gt;'.<br>When used in Visual mode it is made characterwise.</td></tr>
+    <tr><td>i&gt; or i&lt;</td><td>"inner &lt;&gt; block", select [count] &lt;&gt; blocks, from<br>the [count]'th unmatched '&lt;' backwards to the matching<br>'&gt;', excluding the '&lt;' and '&gt;'.<br>When used in Visual mode it is made characterwise.</td></tr>
+    <tr><td>at</td><td>"a tag block", select [count] tag blocks, from the<br>[count]'th unmatched "&lt;aaa&gt;" backwards to the matching<br>"&lt;/aaa&gt;", including the "&lt;aaa&gt;" and "&lt;/aaa&gt;".<br>See |tag-blocks| about the details.<br>When used in Visual mode it is made characterwise.</td></tr>
+    <tr><td>it</td><td>"inner tag block", select [count] tag blocks, from the<br>[count]'th unmatched "&lt;aaa&gt;" backwards to the matching<br>"&lt;/aaa&gt;", excluding the "&lt;aaa&gt;" and "&lt;/aaa&gt;".<br>See |tag-blocks| about the details.<br>When used in Visual mode it is made characterwise.</td></tr>
+    <tr><td>a} or a{ or aB</td><td>"a Block", select [count] Blocks, from "[count] [{" to<br>the matching '}', including the '{' and '}' (see<br>|[{|).<br>When used in Visual mode it is made characterwise.</td></tr>
+    <tr><td>i} or i{ or iB</td><td>"inner Block", select [count] Blocks, from "[count] [{"<br>to the matching '}', excluding the '{' and '}' (see<br>|[{|).<br>When used in Visual mode it is made characterwise.</td></tr>
+    <tr><td>a" or a' or a`</td><td>"a quoted string".  Selects the text from the previous<br>quote until the next quote.  The 'quoteescape' option<br>is used to skip escaped quotes.<br>Only works within one line.<br>When the cursor starts on a quote, Vim will figure out<br>which quote pairs form a string by searching from the<br>start of the line.<br>Any trailing white space is included, unless there is<br>none, then leading white space is included.<br>When used in Visual mode it is made characterwise.<br>Repeating this object in Visual mode another string is<br>included.  A count is currently not used.</td></tr>
+    <tr><td>i" or i' or i`</td><td>Like a", a' and a`, but exclude the quotes and<br>repeating won't extend the Visual selection.<br>Special case: With a count of 2 the quotes are<br>included, but no extra white space as with a"/a'/a`.</td></tr>
+  </tbody>
+</table>
+</body>
+</html>

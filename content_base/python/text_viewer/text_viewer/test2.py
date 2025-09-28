@@ -68,6 +68,9 @@ class CombiningLayoutsExample(App):
         horizontal_scroll = self.query_one("#top-right", HorizontalScroll)
         horizontal_scroll.scroll_right(animate=True)
 
+def test2():
+    ...
+
 if __name__ == "__main__":
     app = CombiningLayoutsExample()
     app.run()

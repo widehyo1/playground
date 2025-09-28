@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Accept",
+    "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+  },
+  {
+    "name": "Accept-Encoding",
+    "value": "gzip, deflate, br, zstd"
+  },
+  {
+    "name": "Accept-Language",
+    "value": "ko,en;q=0.9,en-US;q=0.8"
+  },
+  {
+    "name": "Connection",
+    "value": "keep-alive"
+  },
+  {
+    "name": "DNT",
+    "value": "1"
+  },
+  {
+    "name": "Host",
+    "value": "data.molit.go.kr"
+  },
+  {
+    "name": "Sec-Fetch-Dest",
+    "value": "document"
+  },
+  {
+    "name": "Sec-Fetch-Mode",
+    "value": "navigate"
+  },
+  {
+    "name": "Sec-Fetch-Site",
+    "value": "none"
+  },
+  {
+    "name": "Sec-Fetch-User",
+    "value": "?1"
+  },
+  {
+    "name": "Upgrade-Insecure-Requests",
+    "value": "1"
+  },
+  {
+    "name": "User-Agent",
+    "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0"
+  },
+  {
+    "name": "sec-ch-ua",
+    "value": "\"Microsoft Edge\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\""
+  },
+  {
+    "name": "sec-ch-ua-mobile",
+    "value": "?0"
+  },
+  {
+    "name": "sec-ch-ua-platform",
+    "value": "\"Windows\""
+  }
+]

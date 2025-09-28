@@ -1,0 +1,7 @@
+field,type,is_ascii,sum,min,max,range,sort_order,min_length,max_length,sum_length,avg_length,mean,sem,stddev,variance,cv,nullcount,max_precision,sparsity,qsv__value
+name,String,true,,Accept,sec-ch-ua-platform,,Ascending,3,25,187,12.4667,,,,,,0,,0,
+value,String,true,,"""Microsoft Edge"";v=""123"", ""Not:A-Brand"";v=""8"", ""Chromium"";v=""123""","text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",,Unsorted,1,135,432,28.8,,,,,,0,,0,
+qsv__rowcount,,,,,,,,,,,,,,,,,,,,15
+qsv__columncount,,,,,,,,,,,,,,,,,,,,2
+qsv__filesize_bytes,,,,,,,,,,,,,,,,,,,,686
+qsv__fingerprint_hash,,,,,,,,,,,,,,,,,,,,7398a6b396436d367a5187065b4de8f78c718b8c858607d1cc9ad7e580ef84fb

@@ -1,6 +1,15 @@
+import os
+import textual as ttl
+
 from textual.app import App, ComposeResult
 from textual.containers import Container, Horizontal, VerticalScroll
-from textual.widgets import Header, Static
+# from textual.widgets import Header, Static
+from textual.widgets import (
+    Header as hd,
+    Static,
+)
+
+from text_viewer.nested.test import RefClass, ref_method
 
 
 class CombiningLayoutsExample(App):

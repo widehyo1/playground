@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "JSON Schema for a.csv",
+  "description": "Inferred JSON Schema from QSV schema command",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "name column from a.csv",
+      "minLength": 3,
+      "maxLength": 25,
+      "type": [
+        "string"
+      ],
+      "enum": [
+        "Accept",
+        "Accept-Encoding",
+        "Accept-Language",
+        "Connection",
+        "DNT",
+        "Host",
+        "Sec-Fetch-Dest",
+        "Sec-Fetch-Mode",
+        "Sec-Fetch-Site",
+        "Sec-Fetch-User",
+        "Upgrade-Insecure-Requests",
+        "User-Agent",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform"
+      ]
+    },
+    "value": {
+      "description": "value column from a.csv",
+      "minLength": 1,
+      "maxLength": 135,
+      "type": [
+        "string"
+      ],
+      "enum": [
+        "\"Microsoft Edge\";v=\"123\", \"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"123\"",
+        "\"Windows\"",
+        "1",
+        "?0",
+        "?1",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0",
+        "data.molit.go.kr",
+        "document",
+        "gzip, deflate, br, zstd",
+        "keep-alive",
+        "ko,en;q=0.9,en-US;q=0.8",
+        "navigate",
+        "none",
+        "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "value"
+  ]
+}
