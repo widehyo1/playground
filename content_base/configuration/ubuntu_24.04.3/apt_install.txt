@@ -1,4 +1,4 @@
 $ sudo apt install git
 $ sudo apt install vim-gtk3
 $ sudo dpkg -i microsoft-edge-stable_143.0.3650.96-1_amd64.deb
-
+$ sudo apt install sqlite3
