@@ -1,0 +1,19 @@
+set datafile missing "null"
+set datafile separator ","
+set key autotitle columnhead
+
+set style fill solid noborder
+set xlabel "weekly amount(million USD)"
+set xrange [0:72]
+set autoscale yfix
+set yrange [*:*] reverse
+set xtics 20
+set grid xtics
+set offset 0,1,0.5,0.5
+unset key
+
+plot '~/temp.dat' using ($3*0.5):0:($3*0.5):(0.4):yticlabel(2) with boxxyerrorbars notitle lc rgb "#56B4E9"
+
+pause -1 "Hit return to continue"
+
+

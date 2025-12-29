@@ -1,0 +1,15 @@
+set datafile missing "null"
+set datafile separator ","
+set key autotitle columnhead
+
+set style data histogram horizontal
+set style fill solid border -1
+set ylabel "weekly amount(million USD)"
+set yrange [0:72]
+set xtics rotate by -45
+set boxwidth 2
+unset key
+
+plot '~/temp.dat' using 3:xtic(2) ti col lc rgb "#56B4E9"
+
+pause -1 "Hit return to continue"
