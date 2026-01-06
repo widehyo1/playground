@@ -25,3 +25,25 @@ alias redis='redis-cli'
 alias ptw='npx prettier --write'
 ```
 
+
+```bash
+127.0.0.1:6379> 
+lpush books 'clean code'
+lpush books 'code complete'
+lpush books 'peopleware'
+
+127.0.0.1:6379> llen books
+(integer) 3
+
+127.0.0.1:6379> lindex books 1
+"code complete"
+
+lrange books 0 1
+lrange books 0 -1
+
+lpop books
+lrange books 0 -1
+rpop books
+lrange books 0 -1
+```
+
