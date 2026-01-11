@@ -22,8 +22,7 @@ alias redis='redis-cli'
 
 ```bash
 # node
-alias ptw='npx prettier --write'
-```
+alias ptw='npx prettier --write' ```
 
 
 ```bash
@@ -1677,4 +1676,44 @@ function showDetails(replies) {
 }
 
 main();
+```
+
+```bash
+SADD user:max:favorite_artists "Arcade Fire" "Arctic Monkeys" "Belle & Sebastian" "Lenine"
+SADD user:hugo:favorite_artists "Daft Punk" "The Kooks" "Arctic Monkeys"
+
+SINTER user:max:favorite_artists user:hugo:favorite_artists
+SDIFF user:max:favorite_artists user:hugo:favorite_artists
+SDIFF user:hugo:favorite_artists user:max:favorite_artists
+SUNION user:hugo:favorite_artists user:max:favorite_artists
+SRANDMEMBER user:hugo:favorite_artists
+SISMEMBER user:hugo:favorite_artists "Arctic Monkeys"
+SCARD user:max:favorite_artists
+SMEMBERS user:max:favorite_artists
+```
+
+```
+ZADD leaders 100 'Alice'
+ZADD leaders 100 'Zed'
+ZADD leaders 102 'Hugo'
+ZADD leaders 101 'Max'
+
+ZREVRANGE leaders 0 -1
+ZREVRANGE leaders 0 -1 WITHSCORES
+
+ZREM leaders 'Hugo'
+
+SETBIT visits:2015-01-01 10 1
+SETBIT visits:2015-01-01 15 1
+SETBIT visits:2015-01-02 10 1
+SETBIT visits:2015-01-02 11 1
+
+GETBIT visits:2015-01-01 10
+GETBIT visits:2015-01-02 15
+
+BITCOUNT visits:2015-01-01
+BITCOUNT visits:2015-01-02
+
+BITOP OR total_users visits:2015-01-01 visits:2015-01-02
+BITCOUNT total_users
 ```
