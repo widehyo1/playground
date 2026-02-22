@@ -1,0 +1,6 @@
+request = "POST"
+url = "http://localhost:8080/build"
+header = "Content-Type: application/json"
+silent
+data = "@/root/request.json"
+# verbose

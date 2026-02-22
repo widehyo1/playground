@@ -1,0 +1,5 @@
+{ "name": "rest_container",
+"dist": "ubuntu",
+"release": "jammy",
+"arch": "amd64"
+ }

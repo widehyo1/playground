@@ -1,0 +1,820 @@
+    1  2026-02-21 16:51:44 lxc-create -t download -n c1
+    2  2026-02-21 16:52:56 vim --version | less
+    3  2026-02-21 16:53:06 vi --version
+    4  2026-02-21 16:53:11 which vi
+    5  2026-02-21 16:53:16 ls -l /usr/bin/vi
+    6  2026-02-21 16:53:22 ls -l /etc/alternatives/vi
+    7  2026-02-21 16:53:34 ls -l /usr/bin/vim.basic 
+    8  2026-02-21 16:53:44 /usr/bin/vim.basic --version | less
+    9  2026-02-21 16:54:06 cp /home/user/.vimrc ~/.vimrc
+   10  2026-02-21 16:54:22 vi ~/.bashrc
+   11  2026-02-21 16:54:56 bash ~/.bashrc
+   12  2026-02-21 16:55:18 vi ~/.bashrc 
+   13  2026-02-21 16:55:47 bash ~/.bashrc
+   14  2026-02-21 16:55:54 vi ~/.bashrc
+   15  2026-02-21 16:56:35 lls
+   16  2026-02-21 16:56:37 lls -f
+   17  2026-02-21 16:56:48 vi ~/.bashrc
+   18  2026-02-21 16:57:28 catrc
+   19  2026-02-21 16:57:32 virc
+   20  2026-02-21 16:58:54 which lxc-attach 
+   21  2026-02-21 16:59:13 ls /usr/bin/lxc-* >> ~/.bashrc
+   22  2026-02-21 16:59:15 virc
+   23  2026-02-21 17:02:59 brc
+   24  2026-02-21 17:03:07 linfo
+   25  2026-02-21 17:03:10 lls
+   26  2026-02-21 17:03:12 lls -f
+   27  2026-02-21 17:03:19 linfo -n c1
+   28  2026-02-21 17:04:00 lstart -n c1v -d -l DEBUG
+   29  2026-02-21 17:04:04 lls -f
+   30  2026-02-21 17:04:20 lstart -n c1 -d -l DEBUG
+   31  2026-02-21 17:04:22 lls -f
+   32  2026-02-21 17:04:28 linfo -n c1
+   33  2026-02-21 17:04:37 brctl
+   34  2026-02-21 17:04:41 brctl show
+   35  2026-02-21 17:04:53 iptables -L -n -t nat
+   36  2026-02-21 17:05:12 lattach -n c1
+   37  2026-02-21 17:05:56 apt update
+   38  2026-02-21 17:06:11 apt install openssh-server
+   39  2026-02-21 17:06:28 vi /etc/ssh/sshd_config
+   40  2026-02-21 17:06:43 systemctl status ssh
+   41  2026-02-21 17:06:49 systemctl restart ssh
+   42  2026-02-21 17:07:22 history 3
+   43  2026-02-21 17:07:27 history 6
+   44  2026-02-21 17:07:35 vi /etc/ssh/sshd_config
+   45  2026-02-21 17:08:01 systemctl restart ssh
+   46  2026-02-21 17:08:05 lls -f
+   47  2026-02-21 17:08:16 lattach -n c1
+   48  2026-02-21 17:09:11 lls -f
+   49  2026-02-21 17:09:15 ssh 10.0.3.44
+   50  2026-02-21 17:09:31 lattach -n c1
+   51  2026-02-21 17:09:44 ssh 10.0.3.44
+   52  2026-02-21 17:10:28 apt info lvm2
+   53  2026-02-21 17:10:58 fdisk
+   54  2026-02-21 17:11:05 mount
+   55  2026-02-21 17:11:10 df -h
+   56  2026-02-21 17:11:47 lls
+   57  2026-02-21 17:11:49 lls -f
+   58  2026-02-21 17:11:53 lstop -n c1
+   59  2026-02-21 17:11:56 lls -f
+   60  2026-02-22 02:19:37 fdisk -l
+   61  2026-02-22 02:27:08 init 0
+   62  2026-02-22 03:10:37 lxc-create -t download temp
+   63  2026-02-22 02:32:24 fdisk -l
+   64  2026-02-22 02:33:08 fdisk -l /dev/sdb
+   65  2026-02-22 02:33:14 fdisk /dev/sdb
+   66  2026-02-22 02:34:40 pvcreate --help
+   67  2026-02-22 02:34:43 man pvcreate
+   68  2026-02-22 02:40:26 pvcreate /dev/sdb1
+   69  2026-02-22 02:40:35 man vgcreate
+   70  2026-02-22 02:43:57 vgcreate lxc /dev/sdb1
+   71  2026-02-22 02:44:12 lls
+   72  2026-02-22 02:44:14 lls -f
+   73  2026-02-22 02:44:28 man lxc-create
+   74  2026-02-22 02:46:59 lxc-create --bdev lvm --fssize 10G --name lvm_container
+   75  2026-02-22 02:47:34 lxc-create --bdev lvm --fssize 10G --name lvm_container --template ubuntu
+   76  2026-02-22 02:47:48 lxc-create -t
+   77  2026-02-22 02:48:22 which lxc-create
+   78  2026-02-22 02:48:29 man lxc-create
+   79  2026-02-22 02:48:39 cd /usr/share/lxc/templates/
+   80  2026-02-22 02:48:39 ls
+   81  2026-02-22 02:50:37 lxc-create --bdev lvm --fssize 10G --name lvm_container --template download
+   82  2026-02-22 02:51:10 lxc-create --bdev lvm --fssize 5G --name lvm_container --template download
+   83  2026-02-22 02:51:52 lls -f
+   84  2026-02-22 02:52:07 man pvs
+   85  2026-02-22 02:52:20 pvs -a
+   86  2026-02-22 02:52:28 vs
+   87  2026-02-22 02:52:31 pvs
+   88  2026-02-22 02:52:43 man vgs
+   89  2026-02-22 02:52:49 vgs -a
+   90  2026-02-22 02:52:51 vgs
+   91  2026-02-22 02:52:56 man lvs
+   92  2026-02-22 02:53:02 lvs -a
+   93  2026-02-22 02:53:04 lvs
+   94  2026-02-22 02:53:19 lls -f
+   95  2026-02-22 02:53:32 lstart -n lvm_container
+   96  2026-02-22 02:53:41 lls -f
+   97  2026-02-22 02:55:35 cat /var/lib/lxc/lvm_container/config 
+   98  2026-02-22 02:56:20 mount | grep lxc
+   99  2026-02-22 02:56:29 lsblk -f
+  100  2026-02-22 02:59:06 lattach lvm_container
+  101  2026-02-22 02:59:45 lvs
+  102  2026-02-22 03:00:45 grep -vi ^# /var/lib/lxc/lvm_container/config 
+  103  2026-02-22 03:00:57 grep -vi ^# /var/lib/lxc/lvm_container/config  | grep lxc
+  104  2026-02-22 03:01:49 ls -la /dev
+  105  2026-02-22 03:01:53 ls -la /dev/lxc
+  106  2026-02-22 03:02:07 ls -al /dev/mapper
+  107  2026-02-22 03:02:32 ls -al /dev/mapper/lxc-lvm_container 
+  108  2026-02-22 03:03:14 lxc-create --bdev lvm --fssize 3G --name lvm_container_2 --template download
+  109  2026-02-22 03:03:56 cd
+  110  2026-02-22 03:04:03 lxc-create --bdev lvm --fssize 3G --name lvm_container_2 --template download > a.txt
+  111  2026-02-22 03:04:07 cat a.txt
+  112  2026-02-22 03:04:14 lxc-create --bdev lvm --fssize 3G --name lvm_container_2 --template download | less
+  113  2026-02-22 03:04:20 lxc-create --bdev lvm --fssize 3G --name lvm_container_2 --template download
+  114  2026-02-22 03:04:28 lls -f
+  115  2026-02-22 03:04:41 alias
+  116  2026-02-22 03:05:00 man lxc-destroy
+  117  2026-02-22 03:05:10 lls
+  118  2026-02-22 03:05:18 ldestroy lvm_container_2
+  119  2026-02-22 03:05:19 lls
+  120  2026-02-22 03:07:02 lcreate -t download -- --list
+  121  2026-02-22 03:07:17 lcreate -t download -- --list > a.txt
+  122  2026-02-22 03:07:22 lls
+  123  2026-02-22 03:07:37 ldestroy --list
+  124  2026-02-22 03:07:43 ldestroy '--list'
+  125  2026-02-22 03:08:06 ldestroy -n=--list
+  126  2026-02-22 03:08:13 lls
+  127  2026-02-22 03:08:16 lls -f
+  128  2026-02-22 03:08:33 man ldestroy
+  129  2026-02-22 03:08:38 man lxc-destroy
+  130  2026-02-22 03:09:23 lls -f
+  131  2026-02-22 03:09:45 lxc-destroy -n --list
+  132  2026-02-22 03:09:49 lls -f
+  133  2026-02-22 03:10:07 lcreate -t download > a.txt
+  134  2026-02-22 03:10:10 ls
+  135  2026-02-22 03:10:13 cat a.txt
+  136  2026-02-22 03:10:23 script a.txt
+  137  2026-02-22 03:10:48 wc a.txt
+  138  2026-02-22 03:10:51 vi a.txt
+  139  2026-02-22 03:11:13 lls
+  140  2026-02-22 03:12:06 lcreate --bdev lvm --fssize 3G --name lvm_container_2 --template download -- -d debian -r bookworm -a amd64
+  141  2026-02-22 03:12:37 lls
+  142  2026-02-22 03:12:39 lls -f
+  143  2026-02-22 03:12:49 lvs
+  144  2026-02-22 03:12:58 ls -al /dev/lxc
+  145  2026-02-22 03:13:07 ls -al /dev/mapper
+  146  2026-02-22 03:13:26 lvdisplay
+  147  2026-02-22 03:13:34 lvs
+  148  2026-02-22 03:13:37 lvdisplay
+  149  2026-02-22 03:14:36 man lxc-copy
+  150  2026-02-22 03:18:51 vgs
+  151  2026-02-22 03:19:58 lxc-dopy --snapshot --name lvm_container_2 --newname container_2_copy
+  152  2026-02-22 03:20:02 lxc-copy --snapshot --name lvm_container_2 --newname container_2_copy
+  153  2026-02-22 03:20:09 lls -f
+  154  2026-02-22 03:20:30 man lxc-copy
+  155  2026-02-22 03:20:59 lxc-copy --snapshot --name lvm_container_2 --newname container_2_copy -F
+  156  2026-02-22 03:21:08 lls -f
+  157  2026-02-22 03:21:24 ldestroy -n c1
+  158  2026-02-22 03:21:28 lls -f
+  159  2026-02-22 03:21:34 lvs
+  160  2026-02-22 03:22:01 lls -f
+  161  2026-02-22 03:22:06 lstop lvm_container
+  162  2026-02-22 03:22:08 lls -f
+  163  2026-02-22 03:22:23 ldestroy -n lvm_container
+  164  2026-02-22 03:22:25 ldestroy -n lvm_container_2
+  165  2026-02-22 03:22:26 lls -f
+  166  2026-02-22 03:22:30 vg
+  167  2026-02-22 03:22:31 vgs
+  168  2026-02-22 03:22:32 lgs
+  169  2026-02-22 03:22:35 vgs
+  170  2026-02-22 03:22:42 lvs
+  171  2026-02-22 03:22:46 lvdisplay
+  172  2026-02-22 03:23:02 history | grep -C vgcreate
+  173  2026-02-22 03:23:12 history | grep -C 5 vgcreate
+  174  2026-02-22 03:25:36 ls /dev/lxc/
+  175  2026-02-22 03:25:48 vgs
+  176  2026-02-22 03:25:56 vgremove lxc
+  177  2026-02-22 03:25:59 pvs
+  178  2026-02-22 03:26:13 pvremove /dev/sdb1
+  179  2026-02-22 03:26:33 lsblk
+  180  2026-02-22 03:26:39 fdisk /dev/sdb
+  181  2026-02-22 03:27:09 lsblk
+  182  2026-02-22 03:27:21 init 0
+  183  2026-02-22 04:09:31 apt search btrfs
+  184  2026-02-22 03:31:22 man awk
+  185  2026-02-22 03:31:30 blkls
+  186  2026-02-22 03:31:34 lsblk
+  187  2026-02-22 03:31:50 fdisk -l
+  188  2026-02-22 03:31:58 fdisk /dev/sdb
+  189  2026-02-22 03:32:27 pvs
+  190  2026-02-22 03:32:34 lsblk
+  191  2026-02-22 03:32:46 pvcreate /dev/sdb1 
+  192  2026-02-22 03:32:51 pvs
+  193  2026-02-22 03:32:56 vgs
+  194  2026-02-22 03:33:05 vgcreate lxc /dev/sdb1
+  195  2026-02-22 03:33:08 bgs
+  196  2026-02-22 03:33:09 vgs
+  197  2026-02-22 03:34:20 cat a.txt
+  198  2026-02-22 03:35:08 lxc-create --bdev lxc --fssize 6G --template download -d ubuntu -r jammy -a amd64
+  199  2026-02-22 03:35:43 lxc-create --bdev lxc --fssize 6G --template download --dist ubuntu --realease jammy --arch amd64
+  200  2026-02-22 03:36:06 lxc-create --bdev lvm --fssize 6G --template download --dist ubuntu --realease jammy --arch amd64
+  201  2026-02-22 03:36:29 lxc-create --bdev lvm --fssize 6G --name lvm_container --template download --dist ubuntu --realease jammy --arch amd64
+  202  2026-02-22 03:36:52 lxc-create --bdev lvm --fssize 6G --name lvm_container --template download 
+  203  2026-02-22 03:37:35 lls -f
+  204  2026-02-22 03:37:39 pvs
+  205  2026-02-22 03:38:18 vgs
+  206  2026-02-22 03:38:22 lvs
+  207  2026-02-22 03:38:37 lstart -n lvm_container
+  208  2026-02-22 03:38:39 lls -f
+  209  2026-02-22 03:38:58 grep -C 3 debian a.txt
+  210  2026-02-22 03:39:43 lxc-create --bdev lvm --fssize 4G --name lxc_container_2 --template download -d debian -r bookworm -a amd64
+  211  2026-02-22 03:39:54 history | grep lcreate
+  212  2026-02-22 03:40:01 history | grep lxc-create
+  213  2026-02-22 03:40:33 history | grep lxc-create | grep debian
+  214  2026-02-22 03:40:46 grep -C 3 debian a.txt
+  215  2026-02-22 03:41:17 lls
+  216  2026-02-22 03:41:51 lcreate --bdev lvm --fssize 4G --name lvm_container_2 --template download
+  217  2026-02-22 03:42:13 lls -f
+  218  2026-02-22 03:42:19 pvs
+  219  2026-02-22 03:42:21 lgs
+  220  2026-02-22 03:42:25 lvs
+  221  2026-02-22 03:42:30 vgs
+  222  2026-02-22 03:42:38 pvs
+  223  2026-02-22 03:42:40 lvs
+  224  2026-02-22 03:42:43 vgs
+  225  2026-02-22 03:43:15 lcopy --snapshot --name lvm_container_2 --newname container_2_copy
+  226  2026-02-22 03:43:19 pvs
+  227  2026-02-22 03:43:23 lvs
+  228  2026-02-22 03:43:31 vgs
+  229  2026-02-22 03:45:13 lcopy --name lvm_container_2 --newname container_2_hard
+  230  2026-02-22 03:45:31 pvs
+  231  2026-02-22 03:45:35 lvs
+  232  2026-02-22 03:45:44 vgs
+  233  2026-02-22 03:46:30 fdisk -l
+  234  2026-02-22 03:46:39 lsblk
+  235  2026-02-22 03:47:02 lls -f
+  236  2026-02-22 03:49:20 lstop lvm_container
+  237  2026-02-22 03:49:25 lls -f
+  238  2026-02-22 03:49:32 ldestroy container_2_copy
+  239  2026-02-22 03:49:35 ldestroy container_2_hard
+  240  2026-02-22 03:49:41 ldestroy lvm_container_2
+  241  2026-02-22 03:49:42 ldestroy lvm_container
+  242  2026-02-22 03:49:43 lls
+  243  2026-02-22 03:49:48 fdisk -l
+  244  2026-02-22 03:49:56 pvs
+  245  2026-02-22 03:49:57 lgs
+  246  2026-02-22 03:49:59 lvs
+  247  2026-02-22 03:50:01 vgs
+  248  2026-02-22 03:50:16 vgremove lxc
+  249  2026-02-22 03:50:19 pvs
+  250  2026-02-22 03:50:31 pvremove /dev/sdb1
+  251  2026-02-22 03:50:35 lsblk
+  252  2026-02-22 03:50:41 fdisk /dev/sdb1
+  253  2026-02-22 03:51:09 lsblk
+  254  2026-02-22 03:51:15 fdisk /dev/sdb1
+  255  2026-02-22 03:51:25 fdisk /dev/sdb
+  256  2026-02-22 03:51:37 lsblk
+  257  2026-02-22 03:51:45 man truncate
+  258  2026-02-22 03:52:12 ls
+  259  2026-02-22 03:52:30 truncate --size 5G xvdz.img
+  260  2026-02-22 03:52:34 du -sh *
+  261  2026-02-22 03:52:38 ls
+  262  2026-02-22 03:52:40 ll
+  263  2026-02-22 03:52:50 du -sh .
+  264  2026-02-22 03:53:02 man modprobe
+  265  2026-02-22 03:54:56 modprobe -a
+  266  2026-02-22 03:55:05 man modprobe
+  267  2026-02-22 03:55:30 modprobe
+  268  2026-02-22 03:55:33 modprobe -c
+  269  2026-02-22 03:55:39 man modprobe
+  270  2026-02-22 03:56:44 modprobe loop
+  271  2026-02-22 03:56:53 which losetup
+  272  2026-02-22 03:56:57 man losetup
+  273  2026-02-22 04:00:41 losetup
+  274  2026-02-22 04:00:47 losetup --find
+  275  2026-02-22 04:01:02 losetup /dev/loop3 xvdz.img 
+  276  2026-02-22 04:01:07 losetup --all
+  277  2026-02-22 04:01:29 pvcreate /dev/loop3
+  278  2026-02-22 04:01:56 losetup --find
+  279  2026-02-22 04:02:35 dd if=/dev/zero of=/block_device bs=1k
+  280  2026-02-22 04:03:20 top
+  281  2026-02-22 04:03:24 jobs
+  282  2026-02-22 04:03:26 fg
+  283  2026-02-22 04:03:46 lsblk
+  284  2026-02-22 04:03:57 df -h
+  285  2026-02-22 04:04:31 rm -rf /block_device 
+  286  2026-02-22 04:04:33 df -h
+  287  2026-02-22 04:05:16 dd if=/dev/zero of=/block_device bs=1k count=50000
+  288  2026-02-22 04:05:21 df -h
+  289  2026-02-22 04:05:34 losetup --find
+  290  2026-02-22 04:05:53 losetup /dev/loop4 /block_device 
+  291  2026-02-22 04:06:04 pvcreate /dev/loop4
+  292  2026-02-22 04:06:06 pvs
+  293  2026-02-22 04:06:18 losetup --all
+  294  2026-02-22 04:06:28 losetup -D
+  295  2026-02-22 04:06:32 losetup --find
+  296  2026-02-22 04:06:39 losetup --all
+  297  2026-02-22 04:06:43 ls
+  298  2026-02-22 04:06:46 rm xvdz.img 
+  299  2026-02-22 04:06:50 ls /
+  300  2026-02-22 04:06:53 rm /block_device 
+  301  2026-02-22 04:06:54 ls
+  302  2026-02-22 04:08:48 apt search btrfs-tools
+  303  2026-02-22 04:08:58 apt search btrfs
+  304  2026-02-22 04:09:18 script a.txt
+  305  2026-02-22 04:09:35 cat a.txt
+  306  2026-02-22 04:09:38 vi a.txt
+  307  2026-02-22 04:09:49 less a.txt 
+  308  2026-02-22 04:09:59 cat a.txt | less
+  309  2026-02-22 04:10:08 cat --color a.txt 
+  310  2026-02-22 04:10:11 cat a.txt 
+  311  2026-02-22 04:10:20 cat a.txt | less
+  312  2026-02-22 04:10:37 cat --help
+  313  2026-02-22 04:10:59 man less
+  314  2026-02-22 04:12:27 less -N a.txt
+  315  2026-02-22 04:13:21 which mkfs
+  316  2026-02-22 04:13:29 modprobe btrfs
+  317  2026-02-22 04:13:35 lsmod | wc
+  318  2026-02-22 04:13:38 lsmod
+  319  2026-02-22 04:13:49 lsmod | grep btrfs
+  320  2026-02-22 04:14:21 man lsmod
+  321  2026-02-22 04:14:36 man mkfs
+  322  2026-02-22 04:17:07 file -s /dev/sdb
+  323  2026-02-22 04:17:23 fdisk /dev/sdb
+  324  2026-02-22 04:18:48 file /dev/sdb1
+  325  2026-02-22 04:19:04 mkfs -t btrfs /dev/sdb1
+  326  2026-02-22 04:19:29 file -s /dev/dev/sdb1
+  327  2026-02-22 04:19:36 file -s /dev/sdb1
+  328  2026-02-22 04:19:41 lsblk
+  329  2026-02-22 04:19:53 btrfs filesystem show
+  330  2026-02-22 04:20:13 mkdir btrfs_c1
+  331  2026-02-22 04:20:26 mount /dev/sdb1 btrfs_c1/
+  332  2026-02-22 04:20:34 cat /proc/mounts
+  333  2026-02-22 04:21:06 btrfs subvolume show /root/btrfs_c1/
+  334  2026-02-22 04:21:17 df -h
+  335  2026-02-22 04:21:40 btrfs filesystem df /root/btrfs_c1 
+  336  2026-02-22 04:22:34 lxc-create --bdev btrfs --lxcpath=btrfs_c1 --name btrfs_container --template download
+  337  2026-02-22 04:22:58 ls btrfs_c1/
+  338  2026-02-22 04:23:16 ls -al btrfs_c1/
+  339  2026-02-22 04:23:23 ls -l btrfs_c1/btrfs_container/
+  340  2026-02-22 04:23:27 ls -al btrfs_c1/btrfs_container/
+  341  2026-02-22 04:24:57 rmdir btrfs_c1/btrfs_container/
+  342  2026-02-22 04:24:59 ls
+  343  2026-02-22 04:25:02 cd btrfs_c1/
+  344  2026-02-22 04:25:03 ls -al
+  345  2026-02-22 04:25:04 cd ..
+  346  2026-02-22 04:25:05 ls
+  347  2026-02-22 04:25:40 lxc-create --bdev btrfs --lxcpath=btrfs_c1 --name btrfs_container --template download
+  348  2026-02-22 04:25:42 lls
+  349  2026-02-22 04:25:47 ls btrfs_c1/btrfs_container/
+  350  2026-02-22 04:25:53 rmdir btrfs_c1/btrfs_container/
+  351  2026-02-22 04:26:05 lxc-create --bdev btrfs --lxcpath=/root/btrfs_c1 --name btrfs_container --template download
+  352  2026-02-22 04:26:33 lls
+  353  2026-02-22 04:26:35 lls -f
+  354  2026-02-22 04:27:05 lls --lxcpath=/root/btrfs_c1 -f
+  355  2026-02-22 04:27:28 lxc-config lxc.lxcpath
+  356  2026-02-22 04:27:32 lconfig
+  357  2026-02-22 04:27:37 lconfig -l
+  358  2026-02-22 04:28:04 ls -al btrfs_c1/btrfs_container/
+  359  2026-02-22 04:28:17 btrfs subvolume list /root/btrfs_c1 
+  360  2026-02-22 04:28:36 lsblk
+  361  2026-02-22 04:28:44 pvs
+  362  2026-02-22 04:28:46 lvs
+  363  2026-02-22 04:28:48 vgs
+  364  2026-02-22 04:29:24 lcopy --lxcpath=/root/btrfs_c1 -s -n btrfs_container -N btrfs_cow_clone
+  365  2026-02-22 04:29:45 lls --lxcpath=/root/btrfs_c1 -f
+  366  2026-02-22 04:30:05 btrfs subvolume list /root/btrfs_c1 
+  367  2026-02-22 04:30:10 ls -al /root/btrfs_c1
+  368  2026-02-22 04:30:43 grep -v ^# /root/btrfs_c1/btrfs_container/config 
+  369  2026-02-22 04:31:32 lstart --lxc-path=/root/btrfs_c1 -n btrfs_container
+  370  2026-02-22 04:31:44 lxc-start --lxcpath=/root/btrfs_c1 -n btrfs_container
+  371  2026-02-22 04:32:03 lls --lxcpath=/root/btrfs_c1 -f
+  372  2026-02-22 04:32:16 lxc-start --lxcpath=/root/btrfs_c1 -n btrfs_container
+  373  2026-02-22 04:32:35 lxc-start --lxcpath=/root/btrfs_c1 -n btrfs_cow_clone
+  374  2026-02-22 04:32:41 lls --lxcpath=/root/btrfs_c1 -f
+  375  2026-02-22 04:32:56 lxc-start --lxcpath=/root/btrfs_c1 -n btrfs_cow_clone
+  376  2026-02-22 04:33:04 lxc-stop --lxcpath=/root/btrfs_c1 -n btrfs_cow_clone
+  377  2026-02-22 04:33:11 lxc-stop --lxcpath=/root/btrfs_c1 -n btrfs_container
+  378  2026-02-22 04:33:14 lls --lxcpath=/root/btrfs_c1 -f
+  379  2026-02-22 04:33:30 lsblk
+  380  2026-02-22 04:34:18 fdisk /dev/sdb
+  381  2026-02-22 04:34:33 lls --lxcpath=/root/btrfs_c1 -f
+  382  2026-02-22 04:34:50 lxc-stop --lxcpath=/root/btrfs_c1 -n btrfs_container
+  383  2026-02-22 04:35:04 lxc-destory --lxcpath=/root/btrfs_c1 -n btrfs_container
+  384  2026-02-22 04:35:13 lxc-destroy --lxcpath=/root/btrfs_c1 -n btrfs_container
+  385  2026-02-22 04:35:21 lxc-destroy --lxcpath=/root/btrfs_c1 -n btrfs_cow_clone
+  386  2026-02-22 04:35:26 lls --lxcpath=/root/btrfs_c1 -f
+  387  2026-02-22 04:35:55 lsblk
+  388  2026-02-22 04:36:05 mount
+  389  2026-02-22 04:36:17 umount /root/btrfs_c1 
+  390  2026-02-22 04:36:19 mount
+  391  2026-02-22 04:36:23 lsblk
+  392  2026-02-22 04:36:30 fdisk /dev/sdb
+  393  2026-02-22 04:36:38 lsbllk
+  394  2026-02-22 04:36:40 lsblk
+  395  2026-02-22 05:24:48 modprobe
+  396  2026-02-22 05:24:50 modprobe -h
+  397  2026-02-22 05:24:57 modprobe -a
+  398  2026-02-22 05:25:05 man modprobe
+  399  2026-02-22 05:25:36 modprobe zfs
+  400  2026-02-22 05:25:42 lsmod | grep zfs
+  401  2026-02-22 05:25:50 which zpool
+  402  2026-02-22 05:26:10 apt search zfs
+  403  2026-02-22 05:26:20 apt search ubuntu-zfs
+  404  2026-02-22 05:26:31 apt
+  405  2026-02-22 05:26:54 man apt
+  406  2026-02-22 05:27:17 apt-add-repository --help
+  407  2026-02-22 05:27:37 apt-add-repository ppa:zfs-native/daily
+  408  2026-02-22 05:28:09 apt update
+  409  2026-02-22 05:28:32 apt search ubuntu-zfs
+  410  2026-02-22 05:28:39 zpool
+  411  2026-02-22 05:28:58 man apt-add-repository 
+  412  2026-02-22 05:29:21 apt-add-repository -r ppa:zfs-native/daily
+  413  2026-02-22 05:29:37 apt update
+  414  2026-02-22 05:29:43 zpool
+  415  2026-02-22 05:30:00 apt install zfsutils-linux
+  416  2026-02-22 05:30:18 zpool
+  417  2026-02-22 05:30:22 man zpool
+  418  2026-02-22 05:32:27 man zpool-create
+  419  2026-02-22 05:33:18 man zpoolconcepts
+  420  2026-02-22 05:34:33 zpool list
+  421  2026-02-22 05:34:39 zpool create
+  422  2026-02-22 05:34:46 zpool create lxc
+  423  2026-02-22 05:34:59 zpool create -f lxc xvdb
+  424  2026-02-22 05:35:11 zpool create -f lxc sdb
+  425  2026-02-22 05:35:16 lsblk
+  426  2026-02-22 05:35:24 fdisk -l
+  427  2026-02-22 05:35:37 file -s /dev/sdb1
+  428  2026-02-22 05:35:42 file -s /dev/sdb9
+  429  2026-02-22 05:35:51 file /dev/sdb1
+  430  2026-02-22 05:35:57 zpool list
+  431  2026-02-22 05:36:15 zpool status
+  432  2026-02-22 05:36:31 man zpool-create
+  433  2026-02-22 05:36:59 zpool status
+  434  2026-02-22 05:37:15 zfs list
+  435  2026-02-22 05:37:26 df -h
+  436  2026-02-22 05:37:59 lcreate --bdev zfs --lxcpath=/lxc --name zfs_container --template download
+  437  2026-02-22 05:38:46 lls --lxcpath=/lxc -f
+  438  2026-02-22 05:38:59 ls -al /lxc
+  439  2026-02-22 05:39:03 ls -al /lxc/zfs_container/
+  440  2026-02-22 05:39:37 lcopy --lxcpath=/lxc -s -n zfs_container -N zfs_cow_clone
+  441  2026-02-22 05:39:49 lls --lxcpath=/lxc -f
+  442  2026-02-22 05:39:55 ls -al /lxc
+  443  2026-02-22 05:40:01 lsblk
+  444  2026-02-22 05:40:06 fdisk -l
+  445  2026-02-22 05:40:13 mount
+  446  2026-02-22 05:40:19 df -h
+  447  2026-02-22 05:40:39 lstart --lxcpath=/lxc --name zfs_container
+  448  2026-02-22 05:40:44 lstart --lxcpath=/lxc --name zfs_cow_clone
+  449  2026-02-22 05:41:13 lls vim --version | less
+  450  2026-02-22 05:41:35 lls --lxcpath=/lxc
+  451  2026-02-22 05:41:37 lls --lxcpath=/lxc -f
+  452  2026-02-22 05:41:53 lstart --lxcpath=/lxc --name zfs_cow_clone
+  453  2026-02-22 05:42:32 lstop --lxcpath=/lxc --name zfs_cow_clone
+  454  2026-02-22 05:43:02 ldestroy --lxcpath=/lxc --name zfs_cow_clone
+  455  2026-02-22 05:43:08 ldestroy --lxcpath=/lxc --name zfs_container
+  456  2026-02-22 05:43:38 zfs list
+  457  2026-02-22 05:44:05 lls --lxcpath=/lxc
+  458  2026-02-22 05:44:15 zpool destroy lxc
+  459  2026-02-22 05:44:18 zpool list
+  460  2026-02-22 05:44:22 zpool status
+  461  2026-02-22 05:44:32 lls -f
+  462  2026-02-22 05:44:54 lcreate --name autostart_container --template download
+  463  2026-02-22 05:45:22 lls -f
+  464  2026-02-22 05:45:39 cat /var/lib/lxc/autostart_container/config 
+  465  2026-02-22 05:46:01 echo "lxc.start.auto = 1" >> /var/lib/lxc/autostart_container/config
+  466  2026-02-22 05:46:03 cat /var/lib/lxc/autostart_container/config 
+  467  2026-02-22 05:46:12 lautostart --list
+  468  2026-02-22 05:46:21 man lxc-autostart
+  469  2026-02-22 05:47:09 lautostart --all
+  470  2026-02-22 05:47:14 lls -f
+  471  2026-02-22 05:47:28 lxc-stop --name autostart_container
+  472  2026-02-22 05:47:33 lls -f
+  473  2026-02-22 05:47:55 echo "lxc.start.delay = 5" >> /var/lib/lxc/autostart_container/config 
+  474  2026-02-22 05:47:58 cat /var/lib/lxc/autostart_container/config
+  475  2026-02-22 05:48:24 echo "lxc.group = high_priority" >> /var/lib/lxc/autostart_container/config 
+  476  2026-02-22 05:48:26 cat /var/lib/lxc/autostart_container/config
+  477  2026-02-22 05:48:36 lautostart --list
+  478  2026-02-22 05:48:49 lautostart --list --all
+  479  2026-02-22 05:48:59 lautostart --list --group high_priority
+  480  2026-02-22 05:49:00 lautostart --list --group high_priorit
+  481  2026-02-22 05:49:15 lxc-autostart --group high_priority
+  482  2026-02-22 05:49:24 lls -f
+  483  2026-02-22 05:49:59 ldestroy -n autostart_container
+  484  2026-02-22 05:50:07 lstop -n autostart_container
+  485  2026-02-22 05:50:10 lls -f
+  486  2026-02-22 05:50:20 ldestroy autostart_container
+  487  2026-02-22 05:50:22 lls -f
+  488  2026-02-22 05:51:10 hostname -f
+  489  2026-02-22 05:51:24 mkdir /tmp/export_to_container
+  490  2026-02-22 05:51:39 hostname -f > /tmp/export_to_container/file
+  491  2026-02-22 05:52:01 lcreate --name mount_container --template download
+  492  2026-02-22 05:52:40 cat /var/lib/lxc/mount_container/config 
+  493  2026-02-22 05:53:32 echo "lxc.mount.entry = /tmp/export_to_container/ /var/lib/lxc/mount_container/rootfs/mnt none ro,bind 0 0" >> /var/lib/lxc/mount_container/config
+  494  2026-02-22 05:53:35 cat /var/lib/lxc/mount_container/config
+  495  2026-02-22 05:53:58 ls /var/lib/lxc/mount_container/rootfs/
+  496  2026-02-22 05:54:00 ls /var/lib/lxc/mount_container/rootfs/mnt/
+  497  2026-02-22 05:54:26 lstart -n mount_container
+  498  2026-02-22 05:54:32 lattach -n mount_container
+  499  2026-02-22 05:54:58 ls /var/lib/lxc/mount_container/rootfs/mnt/
+  500  2026-02-22 05:55:12 linfo -n mount_contianer
+  501  2026-02-22 05:55:16 linfo -n mount_container
+  502  2026-02-22 05:55:49 ls -al /proc/6590/root/run
+  503  2026-02-22 05:56:10 lls -f
+  504  2026-02-22 05:56:18 lls stop -n mount_container
+  505  2026-02-22 05:56:20 lls -f
+  506  2026-02-22 05:56:36 ldestroy -n mount_container
+  507  2026-02-22 05:56:52 lstop -n mount_container
+  508  2026-02-22 05:57:01 ldestory -n mount_container
+  509  2026-02-22 05:57:08 ldestroy -n mount_container
+  510  2026-02-22 05:57:28 ls /tmp
+  511  2026-02-22 05:57:34 rmdir /tmp/export_to_container/
+  512  2026-02-22 05:57:41 rm -rf /tmp/export_to_container/
+  513  2026-02-22 05:57:42 ll
+  514  2026-02-22 05:58:11 lcreate -n hooks_container --template download
+  515  2026-02-22 05:58:36 lls -f
+  516  2026-02-22 05:58:46 lstart -n hooks_container
+  517  2026-02-22 05:58:48 lls -f
+  518  2026-02-22 06:00:42 cat /sys/fs/cgroup/lxc.monitor.hooks_container/cgroup.freeze 
+  519  2026-02-22 06:01:15 grep -Ir THAWED /sys/fs/cgroup/lxc.*
+  520  2026-02-22 06:01:37 grep -Ir THAWED /sys/fs/cgroup/lxc.monitor.hooks_container
+  521  2026-02-22 06:01:59 grep -Ir THAWED /sys/fs/cgroup
+  522  2026-02-22 06:02:07 man grep
+  523  2026-02-22 06:02:37 grep -Ir asdf
+  524  2026-02-22 06:02:39 grep -Ir asdf .
+  525  2026-02-22 06:02:41 grep -Ir asdf /
+  526  2026-02-22 06:03:07 lls -f
+  527  2026-02-22 06:03:22 lfreeze -n hooks_container
+  528  2026-02-22 06:03:25 lls -f
+  529  2026-02-22 06:03:45 lunfreeze -n hooks_container
+  530  2026-02-22 06:03:47 lls -f
+  531  2026-02-22 06:04:00 lmonitor -n hooks_container
+  532  2026-02-22 06:04:21 man lxc-cgroup
+  533  2026-02-22 06:05:08 lls -f
+  534  2026-02-22 06:05:26 lls -n hooks_container memory.limit_in_bytes
+  535  2026-02-22 06:05:32 lls -n hooks_container memory.
+  536  2026-02-22 06:05:34 lls -n hooks_container memory
+  537  2026-02-22 06:05:49 lcgroup -n hooks_container me
+  538  2026-02-22 06:05:53 lcgroup -n hooks_container memory
+  539  2026-02-22 06:05:59 lcgroup -n hooks_container memory.limit_in_bytes
+  540  2026-02-22 06:06:34 wc /proc/1/cgroup
+  541  2026-02-22 06:06:37 cat /proc/1/cgroup
+  542  2026-02-22 06:06:57 lxc-cgroup -n hooks_container
+  543  2026-02-22 06:07:06 lxc-cgroup -n hooks_container memory.linit_in_bytes
+  544  2026-02-22 06:07:37 cat /sys/fs/cgroup/memory.stat 
+  545  2026-02-22 06:07:50 wc /sys/fs/cgroup/memory.stat 
+  546  2026-02-22 06:07:58 cat /sys/fs/cgroup/memory.stat | less
+  547  2026-02-22 06:08:12 cd /sys/fs
+  548  2026-02-22 06:08:12 ls
+  549  2026-02-22 06:08:16 cd cgroup/
+  550  2026-02-22 06:08:17 ls
+  551  2026-02-22 06:08:23 cd lxc.monitor.hooks_container/
+  552  2026-02-22 06:08:23 ls
+  553  2026-02-22 06:08:38 cat memory.low
+  554  2026-02-22 06:08:42 cat memory.high
+  555  2026-02-22 06:08:47 cat memory.current
+  556  2026-02-22 06:09:11 lxc-cgroups -n hooks_container memory.current
+  557  2026-02-22 06:09:19 lxc-cgroup -n hooks_container memory.current
+  558  2026-02-22 06:09:31 lxc-cgroup -n hooks_container memory.min
+  559  2026-02-22 06:09:33 lxc-cgroup -n hooks_container memory.max
+  560  2026-02-22 06:09:38 lxc-cgroup -n hooks_container memory.oom.group
+  561  2026-02-22 06:09:46 cd ..
+  562  2026-02-22 06:09:46 ls
+  563  2026-02-22 06:09:50 cd lxc.pivot/
+  564  2026-02-22 06:09:50 ls
+  565  2026-02-22 06:09:55 cat memory.current 
+  566  2026-02-22 06:10:01 cd ..
+  567  2026-02-22 06:10:01 ls
+  568  2026-02-22 06:10:06 cd lxc.payload.hooks_container/
+  569  2026-02-22 06:10:07 ls
+  570  2026-02-22 06:10:10 cat memory.current 
+  571  2026-02-22 06:10:27 cat memory.stat
+  572  2026-02-22 06:10:47 lxc-cgroup -n hooks_container memory.stat
+  573  2026-02-22 06:10:51 cat memory.stat
+  574  2026-02-22 06:10:54 lxc-cgroup -n hooks_container memory.stat
+  575  2026-02-22 06:11:01 ll
+  576  2026-02-22 06:11:13 ls
+  577  2026-02-22 06:14:12 lattach -n hooks_container
+  578  2026-02-22 06:14:52 lxc-cgroup -n hooks_container memory.max 268435456
+  579  2026-02-22 06:14:57 lattach -n hooks_container
+  580  2026-02-22 06:15:34 cat /proc/cpuinfo 
+  581  2026-02-22 06:15:53 cat /proc/cpuinfo | grep processor
+  582  2026-02-22 06:16:13 cd
+  583  2026-02-22 06:16:27 lxc-cgroup -n hooks_container memory.max
+  584  2026-02-22 06:16:37 lxc-stop -n hooks_container
+  585  2026-02-22 06:16:46 lxc-start -n hooks_container
+  586  2026-02-22 06:16:50 lxc-cgroup -n hooks_container memory.max
+  587  2026-02-22 06:20:34 xq
+  588  2026-02-22 06:20:36 pip
+  589  2026-02-22 06:20:38 pip3
+  590  2026-02-22 06:21:39 apt search libvert-bin
+  591  2026-02-22 06:21:43 apt search libvert
+  592  2026-02-22 06:22:02 apt search python-libvert
+  593  2026-02-22 06:23:13 systemctl status libvirtd
+  594  2026-02-22 06:23:37 ls
+  595  2026-02-22 06:23:43 mkdir gitclone
+  596  2026-02-22 06:23:45 cd gitclone
+  597  2026-02-22 06:23:45 git
+  598  2026-02-22 06:24:04 git clone git://libvirt.org/libvirt.git
+  599  2026-02-22 06:25:43 git clone https://github.com/libvert/libvert.git
+  600  2026-02-22 06:26:35 apt install qemu-kvm libvert-daemon-system
+  601  2026-02-22 06:26:46 apt install qemu-kvm-x86 libvert-daemon-system
+  602  2026-02-22 06:26:59 apt update
+  603  2026-02-22 06:27:05 cd ..
+  604  2026-02-22 06:27:36 apt search qemu
+  605  2026-02-22 06:27:40 apt search qemu-kvm
+  606  2026-02-22 06:28:03 apt search qemu | less
+  607  2026-02-22 06:29:33 apt install libvirt
+  608  2026-02-22 06:30:18 cat /proc/cpuinfo
+  609  2026-02-22 06:30:59 egrep -c '(vmx|svm)' /proc/cpuinfo 
+  610  2026-02-22 06:32:47 apt install qemu-kvm
+  611  2026-02-22 06:33:54 apt install libvirt-daemon-system
+  612  2026-02-22 06:34:21 apt install libvirt-clients
+  613  2026-02-22 06:34:31 apt install libvirt-utils
+  614  2026-02-22 06:34:44 apt install bridge-utils
+  615  2026-02-22 06:34:53 apt install vert-manager
+  616  2026-02-22 06:35:00 apt install virt-manager
+  617  2026-02-22 06:35:23 which libvirtd
+  618  2026-02-22 06:35:29 man libvirtd
+  619  2026-02-22 06:36:08 systemctl libvirtd
+  620  2026-02-22 06:36:18 systemctl status libvirtd
+  621  2026-02-22 06:36:29 libvertd -d
+  622  2026-02-22 06:36:34 libvirtd -d
+  623  2026-02-22 06:36:45 libvirtd
+  624  2026-02-22 06:37:04 ls /run/libvirtd.pid 
+  625  2026-02-22 06:37:09 cat /run/libvirtd.pid
+  626  2026-02-22 06:37:26 libvirtd --version
+  627  2026-02-22 06:37:48 find / -name libvirt_lxc
+  628  2026-02-22 06:38:13 cd /usr
+  629  2026-02-22 06:38:13 ls
+  630  2026-02-22 06:38:14 cd lib
+  631  2026-02-22 06:38:15 ls
+  632  2026-02-22 06:38:23 ls libvirt/
+  633  2026-02-22 06:38:23 ls
+  634  2026-02-22 06:38:30 cd libvirt/
+  635  2026-02-22 06:38:30 ls
+  636  2026-02-22 06:38:47 cd /usr
+  637  2026-02-22 06:38:47 ls
+  638  2026-02-22 06:38:53 cd libexec/
+  639  2026-02-22 06:38:53 ls
+  640  2026-02-22 06:39:10 which virsh
+  641  2026-02-22 06:39:19 man virsh
+  642  2026-02-22 06:51:20 virsh uri
+  643  2026-02-22 06:51:39 virc
+  644  2026-02-22 06:52:07 virsh uri
+  645  2026-02-22 06:52:25 virsh --version
+  646  2026-02-22 06:52:26 virsh
+  647  2026-02-22 06:52:37 catrc
+  648  2026-02-22 06:52:57 virsh --connect lxc:/// list -all
+  649  2026-02-22 06:53:01 virsh --connect lxc:/// list
+  650  2026-02-22 06:53:04 virc
+  651  2026-02-22 06:53:22 virsh --connect lxc:/// list
+  652  2026-02-22 06:55:19 systemctl status virtlxcd
+  653  2026-02-22 06:55:38 apt install libvirt-daemon-driver-lxc
+  654  2026-02-22 06:55:50 systemctl status virtlxcd
+  655  2026-02-22 06:55:57 virsh --connect lxc:/// list
+  656  2026-02-22 06:56:05 systemctl
+  657  2026-02-22 06:56:58 ls /var/run
+  658  2026-02-22 06:56:59 ls
+  659  2026-02-22 06:57:03 cd /var/run
+  660  2026-02-22 06:57:03 ls
+  661  2026-02-22 06:57:07 cd libvirt/
+  662  2026-02-22 06:57:07 ls
+  663  2026-02-22 06:57:35 systemctl enable --now virtlxcd
+  664  2026-02-22 07:13:11 exit
+  665  2026-02-22 11:00:36 ls
+  666  2026-02-22 11:00:43 mkdir lxc-playground
+  667  2026-02-22 11:00:46 cd lxc-playground
+  668  2026-02-22 11:00:47 ls
+  669  2026-02-22 11:00:49 uv init
+  670  2026-02-22 11:01:02 virc
+  671  2026-02-22 11:01:28 brc
+  672  2026-02-22 11:01:59 cat /home/user/.bashrc
+  673  2026-02-22 11:02:09 virc
+  674  2026-02-22 11:03:02 curl -LsSf https://astral.sh/uv/install.sh | sh
+  675  2026-02-22 11:03:10 uv
+  676  2026-02-22 11:03:16 cd lxc-playground/
+  677  2026-02-22 11:03:17 uv init
+  678  2026-02-22 11:03:21 uv add lxc
+  679  2026-02-22 11:04:58 apt install build-essential
+  680  2026-02-22 11:05:21 ls
+  681  2026-02-22 11:05:23 uv add lxc
+  682  2026-02-22 11:07:15 apt install python3.10-dev
+  683  2026-02-22 11:07:27 uv add lxc
+  684  2026-02-22 11:08:22 apt install liblxc-dev
+  685  2026-02-22 11:08:28 uv add lxc
+  686  2026-02-22 11:08:48 uv add ipython
+  687  2026-02-22 11:08:51 ipython
+  688  2026-02-22 11:08:57 ipython3
+  689  2026-02-22 11:09:05 uv remove ipython
+  690  2026-02-22 11:09:11 uv pip list
+  691  2026-02-22 11:10:20 uv run python
+  692  2026-02-22 11:10:28 virc
+  693  2026-02-22 11:02:20 uv
+  694  2026-02-22 11:02:32 virc
+  695  2026-02-22 11:11:18 cat .bashrc 
+  696  2026-02-22 11:11:57 uvpy
+  697  2026-02-22 11:11:29 alias
+  698  2026-02-22 11:11:32 cd lxc-playground/
+  699  2026-02-22 11:11:37 ls
+  700  2026-02-22 11:11:39 vi main.py 
+  701  2026-02-22 11:45:34 uvpy main.py 
+  702  2026-02-22 11:46:00 lls -f
+  703  2026-02-22 11:46:27 uvpy main.py 
+  704  2026-02-22 11:46:53 lls -f
+  705  2026-02-22 11:47:10 uvpy
+  706  2026-02-22 11:50:59 psH
+  707  2026-02-22 11:51:01 ps -H
+  708  2026-02-22 11:55:34 ls
+  709  2026-02-22 11:55:36 cd ..
+  710  2026-02-22 11:55:36 ls
+  711  2026-02-22 11:55:38 cd gitclone/
+  712  2026-02-22 11:55:38 ls
+  713  2026-02-22 11:55:50 git clone https://github.com/widehyo1/dot_files.git
+  714  2026-02-22 11:55:52 ls
+  715  2026-02-22 11:55:54 cd dot_files/
+  716  2026-02-22 11:55:54 ls
+  717  2026-02-22 11:56:10 cat install.sh 
+  718  2026-02-22 11:56:24 ls
+  719  2026-02-22 11:56:29 cat dot_vimrc 
+  720  2026-02-22 11:56:34 ls
+  721  2026-02-22 11:56:37 cd dot_vim
+  722  2026-02-22 11:56:37 ls
+  723  2026-02-22 11:56:43 cat keymaps.vim 
+  724  2026-02-22 11:56:49 less keymaps.vim 
+  725  2026-02-22 11:57:44 ls
+  726  2026-02-22 11:57:48 cd utils/
+  727  2026-02-22 11:57:48 ls
+  728  2026-02-22 11:57:52 less terminal.vim 
+  729  2026-02-22 11:58:03 ls
+  730  2026-02-22 11:58:06 cd ..
+  731  2026-02-22 11:58:06 ls
+  732  2026-02-22 11:58:08 cd autocmd/
+  733  2026-02-22 11:58:08 ls
+  734  2026-02-22 11:58:11 lesst
+  735  2026-02-22 11:58:14 less terminal.vim 
+  736  2026-02-22 11:59:08 ps -H
+  737  2026-02-22 11:51:40 uvpy
+  738  2026-02-22 12:16:01 lls -f
+  739  2026-02-22 12:21:22 ls
+  740  2026-02-22 12:21:23 cd gitclone/
+  741  2026-02-22 12:21:24 ls
+  742  2026-02-22 12:21:43 git clone https://github.com/widehyo1/playground.git
+  743  2026-02-22 12:21:57 ls
+  744  2026-02-22 12:21:59 cd playground/
+  745  2026-02-22 12:21:59 ls
+  746  2026-02-22 12:22:01 cd reading/
+  747  2026-02-22 12:22:02 ls
+  748  2026-02-22 12:22:40 mkdir 52_Containerization_with_LXC
+  749  2026-02-22 12:22:43 cd 52_Containerization_with_LXC/
+  750  2026-02-22 12:22:44 ls
+  751  2026-02-22 12:22:50 history > history.txt
+  752  2026-02-22 12:23:17 realpath history.txt 
+  753  2026-02-22 12:23:34 touch note.md
+  754  2026-02-22 12:23:41 realpath note.md
+  755  2026-02-22 11:42:27 ls
+  756  2026-02-22 11:42:30 cd lxc-playground/
+  757  2026-02-22 11:42:31 ls
+  758  2026-02-22 11:42:34 vi main.py 
+  759  2026-02-22 12:18:47 ps -H
+  760  2026-02-22 12:18:48 ls
+  761  2026-02-22 12:18:54 cat pyproject.toml 
+  762  2026-02-22 12:19:09 cd ..
+  763  2026-02-22 12:19:10 ls
+  764  2026-02-22 12:19:18 vi .bashrc 
+  765  2026-02-22 12:27:30 ps -H
+  766  2026-02-22 12:27:31 virc
+  767  2026-02-22 12:38:01 wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+  768  2026-02-22 12:38:08 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+  769  2026-02-22 12:38:15 sudo apt update && sudo apt install vagrant
+  770  2026-02-22 12:39:29 vagrant
+  771  2026-02-22 12:39:40 psH
+  772  2026-02-22 12:40:15 vagrant --help | less
+  773  2026-02-22 12:40:24 vagrant plugin list
+  774  2026-02-22 12:40:38 vagrant plugin
+  775  2026-02-22 12:41:00 vagrant plugin install vagrant-LXC
+  776  2026-02-22 12:46:27 lxc
+  777  2026-02-22 12:46:39 lxc list
+  778  2026-02-22 12:47:40 vagrant plugin install vagrant-lxd
+  779  2026-02-22 12:48:21 cd
+  780  2026-02-22 12:48:25 lxd init
+  781  2026-02-22 12:50:10 lxc list
+  782  2026-02-22 12:50:59 vagrant plugin list
+  783  2026-02-22 12:56:11 lxc launch ubuntu:22.04 test1
+  784  2026-02-22 12:58:48 lxc list
+  785  2026-02-22 12:58:58 lxc exec test1 -- bash
+  786  2026-02-22 12:59:14 lxc delete -f test1
+  787  2026-02-22 12:59:55 lxc list
+  788  2026-02-22 13:00:21 cd gitclone/playground/reading/52_Containerization_with_LXC/
+  789  2026-02-22 13:00:29 mkdir vagrant-lxd-test
+  790  2026-02-22 13:00:32 cd vagrant-lxd-test
+  791  2026-02-22 13:00:37 vagrant init
+  792  2026-02-22 13:00:41 ls
+  793  2026-02-22 13:00:43 ls -al
+  794  2026-02-22 13:03:33 ls
+  795  2026-02-22 13:03:34 cd ..
+  796  2026-02-22 13:03:34 ls
+  797  2026-02-22 13:04:07 mkdir lxc-rest
+  798  2026-02-22 13:04:09 cd lxc-
+  799  2026-02-22 13:04:11 cd lxc-rest/
+  800  2026-02-22 13:04:13 uv init
+  801  2026-02-22 13:04:21 uv add flask
+  802  2026-02-22 13:04:33 uv add lxc
+  803  2026-02-22 13:04:44 ls
+  804  2026-02-22 13:08:11 mv main.py app.py
+  805  2026-02-22 13:08:17 rp app.py 
+  806  2026-02-22 13:14:14 man curl
+  807  2026-02-22 13:43:13 python
+  808  2026-02-22 13:43:18 python3
+  809  2026-02-22 13:46:17 lls -f
+  810  2026-02-22 13:46:38 linfo -n rest_container
+  811  2026-02-22 13:48:53 ls
+  812  2026-02-22 13:48:58 ls -al
+  813  2026-02-22 13:49:02 pwd
+  814  2026-02-22 13:49:07 rm .swp
+  815  2026-02-22 13:49:11 rm .app.py.swp
+  816  2026-02-22 13:49:13 ls
+  817  2026-02-22 13:49:14 ll
+  818  2026-02-22 13:49:21 cd ..
+  819  2026-02-22 13:49:22 ls
+  820  2026-02-22 13:49:32 history > history.txt 
