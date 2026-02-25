@@ -764,57 +764,541 @@
   764  2026-02-22 12:19:18 vi .bashrc 
   765  2026-02-22 12:27:30 ps -H
   766  2026-02-22 12:27:31 virc
-  767  2026-02-22 12:38:01 wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
-  768  2026-02-22 12:38:08 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
-  769  2026-02-22 12:38:15 sudo apt update && sudo apt install vagrant
-  770  2026-02-22 12:39:29 vagrant
-  771  2026-02-22 12:39:40 psH
-  772  2026-02-22 12:40:15 vagrant --help | less
-  773  2026-02-22 12:40:24 vagrant plugin list
-  774  2026-02-22 12:40:38 vagrant plugin
-  775  2026-02-22 12:41:00 vagrant plugin install vagrant-LXC
-  776  2026-02-22 12:46:27 lxc
-  777  2026-02-22 12:46:39 lxc list
-  778  2026-02-22 12:47:40 vagrant plugin install vagrant-lxd
-  779  2026-02-22 12:48:21 cd
-  780  2026-02-22 12:48:25 lxd init
-  781  2026-02-22 12:50:10 lxc list
-  782  2026-02-22 12:50:59 vagrant plugin list
-  783  2026-02-22 12:56:11 lxc launch ubuntu:22.04 test1
-  784  2026-02-22 12:58:48 lxc list
-  785  2026-02-22 12:58:58 lxc exec test1 -- bash
-  786  2026-02-22 12:59:14 lxc delete -f test1
-  787  2026-02-22 12:59:55 lxc list
-  788  2026-02-22 13:00:21 cd gitclone/playground/reading/52_Containerization_with_LXC/
-  789  2026-02-22 13:00:29 mkdir vagrant-lxd-test
-  790  2026-02-22 13:00:32 cd vagrant-lxd-test
-  791  2026-02-22 13:00:37 vagrant init
-  792  2026-02-22 13:00:41 ls
-  793  2026-02-22 13:00:43 ls -al
-  794  2026-02-22 13:03:33 ls
-  795  2026-02-22 13:03:34 cd ..
-  796  2026-02-22 13:03:34 ls
-  797  2026-02-22 13:04:07 mkdir lxc-rest
-  798  2026-02-22 13:04:09 cd lxc-
-  799  2026-02-22 13:04:11 cd lxc-rest/
-  800  2026-02-22 13:04:13 uv init
-  801  2026-02-22 13:04:21 uv add flask
-  802  2026-02-22 13:04:33 uv add lxc
-  803  2026-02-22 13:04:44 ls
-  804  2026-02-22 13:08:11 mv main.py app.py
-  805  2026-02-22 13:08:17 rp app.py 
-  806  2026-02-22 13:14:14 man curl
-  807  2026-02-22 13:43:13 python
-  808  2026-02-22 13:43:18 python3
-  809  2026-02-22 13:46:17 lls -f
-  810  2026-02-22 13:46:38 linfo -n rest_container
-  811  2026-02-22 13:48:53 ls
-  812  2026-02-22 13:48:58 ls -al
-  813  2026-02-22 13:49:02 pwd
-  814  2026-02-22 13:49:07 rm .swp
-  815  2026-02-22 13:49:11 rm .app.py.swp
-  816  2026-02-22 13:49:13 ls
-  817  2026-02-22 13:49:14 ll
-  818  2026-02-22 13:49:21 cd ..
-  819  2026-02-22 13:49:22 ls
-  820  2026-02-22 13:49:32 history > history.txt 
+  767  2026-02-22 13:10:23 ls
+  768  2026-02-22 13:10:29 cd lxc-rest/
+  769  2026-02-22 13:10:39 rp .
+  770  2026-02-22 13:11:02 uvpy app.py 
+  771  2026-02-22 12:38:01 wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+  772  2026-02-22 12:38:08 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+  773  2026-02-22 12:38:15 sudo apt update && sudo apt install vagrant
+  774  2026-02-22 12:39:29 vagrant
+  775  2026-02-22 12:39:40 psH
+  776  2026-02-22 12:40:15 vagrant --help | less
+  777  2026-02-22 12:40:24 vagrant plugin list
+  778  2026-02-22 12:40:38 vagrant plugin
+  779  2026-02-22 12:41:00 vagrant plugin install vagrant-LXC
+  780  2026-02-22 12:46:27 lxc
+  781  2026-02-22 12:46:39 lxc list
+  782  2026-02-22 12:47:40 vagrant plugin install vagrant-lxd
+  783  2026-02-22 12:48:21 cd
+  784  2026-02-22 12:48:25 lxd init
+  785  2026-02-22 12:50:10 lxc list
+  786  2026-02-22 12:50:59 vagrant plugin list
+  787  2026-02-22 12:56:11 lxc launch ubuntu:22.04 test1
+  788  2026-02-22 12:58:48 lxc list
+  789  2026-02-22 12:58:58 lxc exec test1 -- bash
+  790  2026-02-22 12:59:14 lxc delete -f test1
+  791  2026-02-22 12:59:55 lxc list
+  792  2026-02-22 13:00:21 cd gitclone/playground/reading/52_Containerization_with_LXC/
+  793  2026-02-22 13:00:29 mkdir vagrant-lxd-test
+  794  2026-02-22 13:00:32 cd vagrant-lxd-test
+  795  2026-02-22 13:00:37 vagrant init
+  796  2026-02-22 13:00:41 ls
+  797  2026-02-22 13:00:43 ls -al
+  798  2026-02-22 13:03:33 ls
+  799  2026-02-22 13:03:34 cd ..
+  800  2026-02-22 13:03:34 ls
+  801  2026-02-22 13:04:07 mkdir lxc-rest
+  802  2026-02-22 13:04:09 cd lxc-
+  803  2026-02-22 13:04:11 cd lxc-rest/
+  804  2026-02-22 13:04:13 uv init
+  805  2026-02-22 13:04:21 uv add flask
+  806  2026-02-22 13:04:33 uv add lxc
+  807  2026-02-22 13:04:44 ls
+  808  2026-02-22 13:08:11 mv main.py app.py
+  809  2026-02-22 13:08:17 rp app.py 
+  810  2026-02-22 13:14:14 man curl
+  811  2026-02-22 13:43:13 python
+  812  2026-02-22 13:43:18 python3
+  813  2026-02-22 13:46:17 lls -f
+  814  2026-02-22 13:46:38 linfo -n rest_container
+  815  2026-02-22 13:48:53 ls
+  816  2026-02-22 13:48:58 ls -al
+  817  2026-02-22 13:49:02 pwd
+  818  2026-02-22 13:49:07 rm .swp
+  819  2026-02-22 13:49:11 rm .app.py.swp
+  820  2026-02-22 13:49:13 ls
+  821  2026-02-22 13:49:14 ll
+  822  2026-02-22 13:49:21 cd ..
+  823  2026-02-22 13:49:22 ls
+  824  2026-02-22 13:49:32 history > history.txt 
+  825  2026-02-22 13:49:37 wc note.md 
+  826  2026-02-22 13:49:40 psH
+  827  2026-02-22 13:52:30 catg
+  828  2026-02-22 13:52:35 git status
+  829  2026-02-22 13:52:38 git commit -m "
+  830  2026-02-22 13:52:52 git commit -m "r52, ch4"
+  831  2026-02-22 13:53:06 git config --global user.email "widehyo@gmail.com"
+  832  2026-02-22 13:53:16 git config --global user.name "widehyo@gmail.com"
+  833  2026-02-22 13:53:24 git commit -m "r52, ch4"
+  834  2026-02-22 13:53:31 git branch -avv
+  835  2026-02-22 13:53:34 git push
+  836  2026-02-22 13:54:22 catg
+  837  2026-02-22 13:54:25 git push
+  838  2026-02-22 13:56:22 ls
+  839  2026-02-22 13:56:27 git status
+  840  2026-02-22 13:56:43 git log --name-status --oneline
+  841  2026-02-22 14:01:39 ls
+  842  2026-02-22 14:01:41 cd /
+  843  2026-02-22 14:01:42 ls
+  844  2026-02-22 14:01:48 fdisk -l
+  845  2026-02-22 14:02:03 cd /mnt
+  846  2026-02-22 14:02:03 ls
+  847  2026-02-22 14:02:04 ls -al
+  848  2026-02-22 14:02:37 mkdir share
+  849  2026-02-22 14:02:38 ls
+  850  2026-02-22 14:03:09 fdisk -l
+  851  2026-02-22 14:03:13 ll
+  852  2026-02-22 14:03:15 cd share/
+  853  2026-02-22 14:03:15 ls
+  854  2026-02-22 14:03:18 touch a.txt
+  855  2026-02-22 14:05:34 ls
+  856  2026-02-22 14:05:35 ll
+  857  2026-02-22 14:06:51 ifconfig
+  858  2026-02-22 14:06:58 ip addr
+  859  2026-02-22 14:07:07 ip addr | less
+  860  2026-02-22 14:12:28 catg
+  861  2026-02-22 14:12:41 cd
+  862  2026-02-22 14:12:45 cd gitclone/playground/
+  863  2026-02-22 14:12:45 ls
+  864  2026-02-22 14:12:49 git push
+  865  2026-02-22 14:13:48 exit
+  866  2026-02-22 12:27:49 psH
+  867  2026-02-22 12:27:51 ls
+  868  2026-02-22 12:27:53 cd gitclone/
+  869  2026-02-22 12:27:53 ls
+  870  2026-02-22 12:27:56 cd playground/
+  871  2026-02-22 12:27:56 ls
+  872  2026-02-22 12:27:58 cd reading/
+  873  2026-02-22 12:27:58 ls
+  874  2026-02-22 12:28:01 catg
+  875  2026-02-22 12:28:06 cd 52_Containerization_with_LXC/
+  876  2026-02-22 12:28:06 ls
+  877  2026-02-22 12:28:20 cp -r ~/lxc-playground/ .
+  878  2026-02-22 12:28:21 ls
+  879  2026-02-22 12:28:25 cd lxc-playground/
+  880  2026-02-22 12:28:25 ls
+  881  2026-02-22 12:28:32 cd ..
+  882  2026-02-22 12:28:33 ls
+  883  2026-02-22 12:28:36 git status
+  884  2026-02-22 12:28:39 git add .
+  885  2026-02-22 12:28:43 git status
+  886  2026-02-22 12:28:51 cd lxc-playground/
+  887  2026-02-22 12:28:52 ls
+  888  2026-02-22 12:28:58 ls -al
+  889  2026-02-22 12:29:08 rm -rf .git
+  890  2026-02-22 12:29:12 cat .gitignore 
+  891  2026-02-22 12:29:18 cat .python-version 
+  892  2026-02-22 12:29:20 ls
+  893  2026-02-22 12:29:21 ll
+  894  2026-02-22 12:29:29 cd ..
+  895  2026-02-22 12:29:31 git add .
+  896  2026-02-22 12:29:33 git status
+  897  2026-02-22 12:29:46 cd lxc-playground/
+  898  2026-02-22 12:29:48 vi .gitignore 
+  899  2026-02-22 12:30:01 git status
+  900  2026-02-22 12:30:10 git restore --staged .
+  901  2026-02-22 12:30:12 git status
+  902  2026-02-22 12:30:14 git add .
+  903  2026-02-22 12:30:16 git status
+  904  2026-02-22 12:30:20 cd ..
+  905  2026-02-22 12:30:24 git status
+  906  2026-02-22 12:30:33 git diff
+  907  2026-02-22 12:30:38 git diff --staged
+  908  2026-02-22 12:30:45 ls
+  909  2026-02-22 12:30:45 ll
+  910  2026-02-22 12:31:09 cd /usr/src
+  911  2026-02-22 12:31:10 ls
+  912  2026-02-22 12:31:14 wget
+  913  2026-02-22 12:33:18 cd -
+  914  2026-02-22 12:33:19 ls
+  915  2026-02-22 12:33:20 vi note.md 
+  916  2026-02-22 12:33:27 cat note.md 
+  917  2026-02-22 12:33:32 cat -A note.md 
+  918  2026-02-22 12:33:37 psH
+  919  2026-02-22 12:33:39 vi note.md 
+  920  2026-02-22 13:49:59 psH
+  921  2026-02-22 13:50:00 ll
+  922  2026-02-22 13:50:05 git status
+  923  2026-02-22 13:50:08 git add .
+  924  2026-02-22 13:50:10 git status
+  925  2026-02-22 13:50:48 vi .gitignore
+  926  2026-02-22 13:50:57 git status
+  927  2026-02-22 13:51:04 git restore --staged .
+  928  2026-02-22 13:51:06 vi .gitignore 
+  929  2026-02-22 13:51:16 git status
+  930  2026-02-22 13:51:17 git add .
+  931  2026-02-22 13:51:19 git status
+  932  2026-02-22 13:51:24 git diff --staged
+  933  2026-02-22 13:51:48 cp ~/.bashrc .
+  934  2026-02-22 13:51:52 cp ~/.vimrc .
+  935  2026-02-22 13:52:03 cp ~/script.curl .
+  936  2026-02-22 13:52:07 cp ~/request.json .
+  937  2026-02-22 13:52:10 git add .
+  938  2026-02-22 13:52:11 git st
+  939  2026-02-22 13:52:13 git status
+  940  2026-02-22 13:52:15 catg
+  941  2026-02-22 13:52:20 vi
+  942  2026-02-22 14:13:50 exit
+  943  2026-02-22 14:29:39 ls
+  944  2026-02-22 14:29:42 cd gitclone/
+  945  2026-02-22 14:29:42 ls
+  946  2026-02-22 14:29:47 cd playground/
+  947  2026-02-22 14:29:47 ls
+  948  2026-02-22 14:30:05 git log --name-statue --oneline
+  949  2026-02-22 14:30:09 git log --name-status --oneline
+  950  2026-02-22 14:30:28 git log --name-status --oneline | cat -n | head -n 40
+  951  2026-02-22 14:30:35 git log --name-status --oneline | cat -n | head -n 15
+  952  2026-02-22 14:30:38 git log --name-status --oneline | cat -n | head -n 16
+  953  2026-02-22 14:31:16 git push
+  954  2026-02-22 14:31:28 glog
+  955  2026-02-24 10:53:29 lls -f
+  956  2026-02-24 10:53:38 ldestroy rest_container
+  957  2026-02-24 10:53:42 lls -f
+  958  2026-02-24 10:55:06 ls
+  959  2026-02-24 10:55:14 cd gitclone/
+  960  2026-02-24 10:55:14 ls
+  961  2026-02-24 10:55:15 cd playground/
+  962  2026-02-24 10:55:16 ls
+  963  2026-02-24 10:55:20 cd reading/
+  964  2026-02-24 10:55:20 ls
+  965  2026-02-24 10:55:23 cd 52_Containerization_with_LXC/
+  966  2026-02-24 10:55:25 catg
+  967  2026-02-24 10:55:28 git pull
+  968  2026-02-24 10:55:32 ls
+  969  2026-02-24 10:56:44 file /boot/config-5.15.0-170-generic 
+  970  2026-02-24 10:56:56 wc /boot/config-5.15.0-170-generic 
+  971  2026-02-24 10:57:08 less /boot/config-5.15.0-170-generic 
+  972  2026-02-24 10:57:40 grep -i bridge /boot/config-5.15.0-170-generic 
+  973  2026-02-24 10:57:50 uname -r
+  974  2026-02-24 10:59:07 lsmod | grep bridge
+  975  2026-02-24 10:59:22 modinfo bridge
+  976  2026-02-24 11:01:12 apt search linux-source
+  977  2026-02-24 11:01:27 apt info linux-source
+  978  2026-02-24 11:01:46 man apt
+  979  2026-02-24 11:02:01 apt list | wc
+  980  2026-02-24 11:02:19 apt list | grep linux-source
+  981  2026-02-24 11:02:29 apt list --help
+  982  2026-02-24 11:02:48 man apt-list
+  983  2026-02-24 11:02:57 man apt
+  984  2026-02-24 11:04:27 apt --help
+  985  2026-02-24 11:04:34 apt list 
+  986  2026-02-24 11:04:55 apt info --help
+  987  2026-02-24 11:05:04 man 8 apt
+  988  2026-02-24 11:05:16 apt list --installed
+  989  2026-02-24 11:07:52 apt install ncurses-dev
+  990  2026-02-24 11:08:38 apt list --installed | grep linux | grep source
+  991  2026-02-24 11:08:49 apt list --installed | grep linux-source
+  992  2026-02-24 11:09:03 apt install automakepkg-config
+  993  2026-02-24 11:09:28 brctl --version
+  994  2026-02-24 11:09:47 brctl
+  995  2026-02-24 11:10:26 brctl show
+  996  2026-02-24 11:10:49 apt info madison
+  997  2026-02-24 11:10:59 apt search madison
+  998  2026-02-24 11:11:16 apt-cache
+  999  2026-02-24 11:11:41 apt-cache show lxc
+ 1000  2026-02-24 11:12:21 apt-cache madison
+ 1001  2026-02-24 11:12:30 apt-cache lxc
+ 1002  2026-02-24 11:12:35 apt-cache madison lxc
+ 1003  2026-02-24 11:12:42 apt-cache
+ 1004  2026-02-24 11:12:52 man apt-cache
+ 1005  2026-02-24 11:15:36 systemctl status lxc-net
+ 1006  2026-02-24 11:16:21 ps -ef | grep 970
+ 1007  2026-02-24 11:16:52 brctl list
+ 1008  2026-02-24 11:16:56 brctl show
+ 1009  2026-02-24 11:17:28 cat /lib/systemd/system/lxc-net.service 
+ 1010  2026-02-24 11:18:27 head -24 /etc/profile
+ 1011  2026-02-24 11:18:34 head -24 /etc/profile | cat -n
+ 1012  2026-02-24 11:19:01 head -24 /usr/lib/x86_64-linux-gnu/lxc/lxc-net 
+ 1013  2026-02-24 11:19:13 wc /usr/lib/x86_64-linux-gnu/lxc/lxc-net 
+ 1014  2026-02-24 11:19:38 less /usr/lib/x86_64-linux-gnu/lxc/lxc-net 
+ 1015  2026-02-24 11:24:34 cat /etc/default/lxc-net | grep -vi ^#
+ 1016  2026-02-24 11:25:50 cat /etc/default/lxc-net | grep -vi ^# | awk 'length'
+ 1017  2026-02-24 11:27:21 man lxc-start
+ 1018  2026-02-24 11:27:52 ifconfig
+ 1019  2026-02-24 11:27:59 ip route
+ 1020  2026-02-24 11:28:56 ip link
+ 1021  2026-02-24 11:29:05 ip rule
+ 1022  2026-02-24 11:29:14 ip addr
+ 1023  2026-02-24 11:29:21 ip addr -4
+ 1024  2026-02-24 11:29:25 ip -4 addr
+ 1025  2026-02-24 11:29:29 ip 
+ 1026  2026-02-24 11:29:41 ip neighbor
+ 1027  2026-02-24 11:30:05 ip -brief 
+ 1028  2026-02-24 11:30:07 ip -brief link
+ 1029  2026-02-24 11:30:11 ip -brief addr
+ 1030  2026-02-24 11:30:17 ip -brief route
+ 1031  2026-02-24 11:30:28 ip -brief neigh
+ 1032  2026-02-24 11:30:33 ip -brief rule
+ 1033  2026-02-24 11:30:38 ip rule
+ 1034  2026-02-24 11:30:45 ip neigh
+ 1035  2026-02-24 11:31:11 which pgrep
+ 1036  2026-02-24 11:31:21 dnsmasq
+ 1037  2026-02-24 11:31:55 pgreq dnsmasq
+ 1038  2026-02-24 11:32:02 pgrep dnsmasq
+ 1039  2026-02-24 11:32:07 man pgrep
+ 1040  2026-02-24 11:32:36 pgrep dnsmasq
+ 1041  2026-02-24 11:32:46 pgrep -l dnsmasq
+ 1042  2026-02-24 11:32:53 man pgrep
+ 1043  2026-02-24 11:33:13 pgrep -f dnsmasq
+ 1044  2026-02-24 11:33:20 pgrep -fl dnsmasq
+ 1045  2026-02-24 11:33:24 pgrep -fla
+ 1046  2026-02-24 11:33:37 pgrep -fla dnsmasq
+ 1047  2026-02-24 11:33:56 pgrep -flaww dnsmasq
+ 1048  2026-02-24 11:34:34 tr '\0' '\n' /proc/970/cmdline 
+ 1049  2026-02-24 11:34:45 cat /proc/970/cmdline
+ 1050  2026-02-24 11:35:08 cat /proc/970/cmdline | tr '\0' '\n'
+ 1051  2026-02-24 11:44:37 lcreate -n br1 -t download
+ 1052  2026-02-24 11:45:10 lls -f
+ 1053  2026-02-24 11:45:15 lstart -n br1
+ 1054  2026-02-24 11:45:16 lls -f
+ 1055  2026-02-24 11:45:21 linfo -n br1
+ 1056  2026-02-24 11:45:42 brctl show
+ 1057  2026-02-24 11:46:06 ipconfig
+ 1058  2026-02-24 11:46:15 apt install net-tools
+ 1059  2026-02-24 11:46:22 ifconfig
+ 1060  2026-02-24 11:46:28 ifconfig --help
+ 1061  2026-02-24 11:47:21 man ifconfig
+ 1062  2026-02-24 11:55:15 ifconfig
+ 1063  2026-02-24 11:55:30 ip link up
+ 1064  2026-02-24 11:55:33 ip link help
+ 1065  2026-02-24 11:55:42 ip link show up
+ 1066  2026-02-24 11:55:51 ip -4 link show up
+ 1067  2026-02-24 11:59:18 ip -br addr
+ 1068  2026-02-24 11:59:25 ip -br link
+ 1069  2026-02-24 11:59:52 ip -br neigh
+ 1070  2026-02-24 12:00:01 ip -br rule
+ 1071  2026-02-24 12:00:15 ip -br route
+ 1072  2026-02-24 12:09:48 ip addr
+ 1073  2026-02-24 12:10:40 ip link
+ 1074  2026-02-24 12:10:50 ip -br link
+ 1075  2026-02-24 12:10:57 ip -br addr
+ 1076  2026-02-24 12:11:08 ip -4 -br addr
+ 1077  2026-02-24 12:11:27 man ip
+ 1078  2026-02-24 12:13:28 ip -j addr
+ 1079  2026-02-24 12:13:34 ip -jp addr
+ 1080  2026-02-24 12:13:41 ip -j -p addr
+ 1081  2026-02-24 12:14:06 ip -j -p -br addr
+ 1082  2026-02-24 12:14:18 ip -j -p -br -4 addr
+ 1083  2026-02-24 12:25:36 brctl show
+ 1084  2026-02-24 12:25:45 ip link show
+ 1085  2026-02-24 12:27:45 ip link
+ 1086  2026-02-24 12:27:53 ip link type bridge
+ 1087  2026-02-24 12:28:00 ip link help
+ 1088  2026-02-24 12:28:14 ip link show type bridge
+ 1089  2026-02-24 12:28:24 ip link
+ 1090  2026-02-24 12:29:04 ip -d link
+ 1091  2026-02-24 12:42:06 ifconfig
+ 1092  2026-02-24 12:42:56 lls -f
+ 1093  2026-02-24 12:43:13 lattach -n br1
+ 1094  2026-02-24 12:43:49 ip -br addr
+ 1095  2026-02-24 12:46:52 ip -d link
+ 1096  2026-02-24 12:47:09 lattach -n br1
+ 1097  2026-02-24 13:05:46 man bridge
+ 1098  2026-02-24 13:13:02 ls
+ 1099  2026-02-24 13:13:14 ip route
+ 1100  2026-02-24 13:17:14 ls
+ 1101  2026-02-24 13:17:35 cat /etc/networks 
+ 1102  2026-02-24 13:17:49 lattach -n br1
+ 1103  2026-02-24 13:35:09 cd /sys
+ 1104  2026-02-24 13:35:09 ls
+ 1105  2026-02-24 13:35:13 cd devices/
+ 1106  2026-02-24 13:35:13 ls
+ 1107  2026-02-24 13:35:24 cd system/
+ 1108  2026-02-24 13:35:24 ls
+ 1109  2026-02-24 13:35:28 cd ..
+ 1110  2026-02-24 13:35:29 ls
+ 1111  2026-02-24 13:35:30 cd virtual/
+ 1112  2026-02-24 13:35:31 ls
+ 1113  2026-02-24 13:35:33 cd net/
+ 1114  2026-02-24 13:35:33 ls
+ 1115  2026-02-24 13:37:46 cd /etc
+ 1116  2026-02-24 13:37:47 ls
+ 1117  2026-02-24 13:37:59 cd network
+ 1118  2026-02-24 13:37:59 ls
+ 1119  2026-02-24 13:38:02 cd ..
+ 1120  2026-02-24 13:38:02 ls
+ 1121  2026-02-24 13:38:06 cd netplan
+ 1122  2026-02-24 13:38:06 ls
+ 1123  2026-02-24 13:38:09 cat 50-cloud-init.yaml 
+ 1124  2026-02-24 13:38:24 cd /etc
+ 1125  2026-02-24 13:38:24 ls
+ 1126  2026-02-24 13:38:26 cd cloud/
+ 1127  2026-02-24 13:38:26 ls
+ 1128  2026-02-24 13:38:36 cd cloud.cfg.d/
+ 1129  2026-02-24 13:38:36 ls
+ 1130  2026-02-24 13:38:41 cat README 
+ 1131  2026-02-24 13:39:14 cat 99-installer.cfg 
+ 1132  2026-02-24 13:39:22 cd ..
+ 1133  2026-02-24 13:39:22 ls
+ 1134  2026-02-24 13:39:28 cat cloud.cfg
+ 1135  2026-02-24 13:39:59 cd ..
+ 1136  2026-02-24 13:39:59 ls
+ 1137  2026-02-24 13:40:01 cd network
+ 1138  2026-02-24 13:40:02 ls
+ 1139  2026-02-24 13:40:05 cd if-up.d/
+ 1140  2026-02-24 13:40:06 ls
+ 1141  2026-02-24 13:40:09 ls -al
+ 1142  2026-02-24 13:40:14 file ethtool 
+ 1143  2026-02-24 13:40:21 wc ethtool
+ 1144  2026-02-24 13:40:24 cat ethtool 
+ 1145  2026-02-24 13:41:01 ls
+ 1146  2026-02-24 13:41:03 cd ..
+ 1147  2026-02-24 13:41:03 ls
+ 1148  2026-02-24 13:41:40 systemctl status networkd
+ 1149  2026-02-24 13:41:43 systemctl status network
+ 1150  2026-02-24 13:41:59 systemctl
+ 1151  2026-02-24 13:46:04 ls
+ 1152  2026-02-24 13:46:11 man interface
+ 1153  2026-02-24 13:46:15 interface
+ 1154  2026-02-24 13:46:33 cd /etc
+ 1155  2026-02-24 13:46:33 ls
+ 1156  2026-02-24 13:46:37 cd default/
+ 1157  2026-02-24 13:46:38 ls
+ 1158  2026-02-24 13:46:43 cat lxc-net 
+ 1159  2026-02-24 13:47:01 awk '! /^#/ && length' lxc-net 
+ 1160  2026-02-24 13:47:05 awk '! /^#/ && length' lxc
+ 1161  2026-02-25 13:22:47 lls -f
+ 1162  2026-02-25 13:23:18 ip addr
+ 1163  2026-02-25 13:23:23 ip -br addr
+ 1164  2026-02-25 13:23:42 lstart -n br1
+ 1165  2026-02-25 13:23:44 lls -f
+ 1166  2026-02-25 13:23:51 lattach -n br1
+ 1167  2026-02-25 13:39:14 lstop -n br1
+ 1168  2026-02-25 13:39:20 lstart -n br1
+ 1169  2026-02-25 13:39:41 brctl showmacs lxcbr0
+ 1170  2026-02-25 13:40:01 lattach -n br1
+ 1171  2026-02-25 13:40:25 cat /var/lib/lxc/br1/config 
+ 1172  2026-02-25 13:40:47 cat /var/lib/lxc/br1/config  | awk '! /^#/ && length'
+ 1173  2026-02-25 13:42:00 brctl show
+ 1174  2026-02-25 13:42:07 bridge
+ 1175  2026-02-25 13:42:14 bridge link
+ 1176  2026-02-25 13:42:20 bridge vlan
+ 1177  2026-02-25 13:44:07 brctl show
+ 1178  2026-02-25 13:44:21 ip link show type bridge
+ 1179  2026-02-25 13:44:34 ip link help
+ 1180  2026-02-25 13:44:57 ip link show type bridge
+ 1181  2026-02-25 13:45:14 ip link set lxcbr0 down
+ 1182  2026-02-25 13:45:18 ip link show type bridge
+ 1183  2026-02-25 13:45:46 ip link delete lxcbr0
+ 1184  2026-02-25 13:45:48 ip link show type bridge
+ 1185  2026-02-25 13:46:03 ip link add lxcbr0
+ 1186  2026-02-25 13:46:12 ip link add lxcbr0 type bridge
+ 1187  2026-02-25 13:46:16 ip link show type bridge
+ 1188  2026-02-25 13:47:14 ip link add veth366R6F type veth
+ 1189  2026-02-25 13:47:17 ip link show
+ 1190  2026-02-25 13:49:01 ip link set veth366R6F master lxcbr0
+ 1191  2026-02-25 13:49:04 ip link show
+ 1192  2026-02-25 13:49:24 ip -br link
+ 1193  2026-02-25 13:49:46 ip link show lxcbr0
+ 1194  2026-02-25 13:49:55 ip -d link show lxcbr0
+ 1195  2026-02-25 13:50:12 ip link set lxcbr0 up
+ 1196  2026-02-25 13:50:17 ip link show lxcbr0
+ 1197  2026-02-25 13:51:51 ip link help
+ 1198  2026-02-25 13:52:28 ip link set lxcbr0 address 10.0.3.1/24
+ 1199  2026-02-25 13:53:06 ip addr add 10.0.3.1/24 dev lxcbr0
+ 1200  2026-02-25 13:53:15 ip -br addr show
+ 1201  2026-02-25 13:53:36 lls -f
+ 1202  2026-02-25 13:53:47 lattach -n br1
+ 1203  2026-02-25 13:55:37 ovs-vsctl
+ 1204  2026-02-25 13:55:55 apt install openswitch-switch
+ 1205  2026-02-25 13:56:08 apt install openvswitch-switch
+ 1206  2026-02-25 13:56:22 lsmod | wc
+ 1207  2026-02-25 13:56:24 lsmod
+ 1208  2026-02-25 13:56:35 lsmod | sort
+ 1209  2026-02-25 13:57:40 ovs-vsctl show
+ 1210  2026-02-25 13:58:03 pgrep switch
+ 1211  2026-02-25 13:58:09 pgrep -lfa switch
+ 1212  2026-02-25 13:58:59 cat /proc/2815/cmdline | tr '\0' '\n'
+ 1213  2026-02-25 14:01:16 man ps
+ 1214  2026-02-25 14:01:37 ps -C switch
+ 1215  2026-02-25 14:01:48 man ps
+ 1216  2026-02-25 14:05:07 pstree
+ 1217  2026-02-25 14:05:29 pstree -a
+ 1218  2026-02-25 14:05:35 pstree -ap
+ 1219  2026-02-25 14:05:48 man pstree
+ 1220  2026-02-25 14:07:17 ps -ef
+ 1221  2026-02-25 14:07:40 ovsdb-client list-dbs
+ 1222  2026-02-25 14:07:57 ovsdb-client dump | wc
+ 1223  2026-02-25 14:07:58 ovsdb-client dump 
+ 1224  2026-02-25 14:08:26 ovsdb-client dump | awk '/Open_vSwitch/,length'
+ 1225  2026-02-25 14:13:00 ovsdb-client dump | grep table
+ 1226  2026-02-25 14:13:25 man ovs-vsctl
+ 1227  2026-02-25 14:23:07 ovs-vsctl add-br lxcovs0
+ 1228  2026-02-25 14:23:13 ovs-vsctl show
+ 1229  2026-02-25 14:24:01 ip addr add 192.168.0.1/24 dev lxcovs0
+ 1230  2026-02-25 14:24:07 ip -br addr
+ 1231  2026-02-25 14:24:35 ovs-vsct add-port lxcovs0 veth366R6F
+ 1232  2026-02-25 14:24:42 ovs-vsctl add-port lxcovs0 veth366R6F
+ 1233  2026-02-25 14:25:25 ovs-vsctl add-port lxcovs0 veth366R64
+ 1234  2026-02-25 14:25:42 ovs-vsctl show
+ 1235  2026-02-25 14:27:44 ovs-vsctl del-port lxcovs0 veth366R64
+ 1236  2026-02-25 14:27:47 ovs-vsctl del-port lxcovs0 veth366R6F
+ 1237  2026-02-25 14:27:52 ovs-vsctl show
+ 1238  2026-02-25 14:28:01 o[
+ 1239  2026-02-25 14:28:08 ip link show
+ 1240  2026-02-25 14:28:21 ip link delete veth366R6F 
+ 1241  2026-02-25 14:28:42 ip link delete veth0
+ 1242  2026-02-25 14:28:50 ip link show
+ 1243  2026-02-25 14:29:18 ovs-vsctl show
+ 1244  2026-02-25 14:29:45 ovs-vsctl add-port lxcovs0 veth123456
+ 1245  2026-02-25 14:30:33 ll
+ 1246  2026-02-25 14:30:47 lattach -n br1
+ 1247  2026-02-25 14:33:06 ip link
+ 1248  2026-02-25 14:33:31 ip link show type bridge
+ 1249  2026-02-25 14:33:46 ip link set lxcbr0 down
+ 1250  2026-02-25 14:33:49 ip link show type bridge
+ 1251  2026-02-25 14:34:10 ip link delete lxcbr0
+ 1252  2026-02-25 14:34:12 ip link show type bridge
+ 1253  2026-02-25 14:34:21 modprobe -r
+ 1254  2026-02-25 14:34:22 modprobe 
+ 1255  2026-02-25 14:34:26 modprobe -r bridge
+ 1256  2026-02-25 14:35:29 cat /var/lib/lxc/br1/config  | awk '! /^#/ && length'
+ 1257  2026-02-25 14:35:40 vim /var/lib/lxc/br1/config
+ 1258  2026-02-25 14:36:42 lstop -n br1
+ 1259  2026-02-25 14:36:47 lstart -n br1
+ 1260  2026-02-25 14:36:52 lattach -n br1
+ 1261  2026-02-25 14:38:15 vim /var/lib/lxc/br1/config
+ 1262  2026-02-25 14:38:50 lstop -n br1 && lstart -n br1 && lattach -n br1
+ 1263  2026-02-25 14:40:48 vim /var/lib/lxc/br1/config
+ 1264  2026-02-25 14:42:05 iptables -L
+ 1265  2026-02-25 14:42:08 iptables -L -n
+ 1266  2026-02-25 14:42:14 iptables -L
+ 1267  2026-02-25 14:42:17 iptables -L -n
+ 1268  2026-02-25 14:42:21 iptables -L -n -t nat
+ 1269  2026-02-25 14:43:19 lls -f
+ 1270  2026-02-25 14:43:27 lstop -n br1 && lstart -n br1 && lattach -n br1
+ 1271  2026-02-25 14:43:33 iptables -L -n -t nat
+ 1272  2026-02-25 14:43:45 vim /var/lib/lxc/br1/config
+ 1273  2026-02-25 14:44:21 ip addr
+ 1274  2026-02-25 14:45:03 lstop -n br1 && lstart -n br1 && lattach -n br1
+ 1275  2026-02-25 14:45:43 vim /var/lib/lxc/br1/config
+ 1276  2026-02-25 14:45:45 cat /var/lib/lxc/br1/config
+ 1277  2026-02-25 14:46:29 vim /var/lib/lxc/br1/config
+ 1278  2026-02-25 14:47:42 lstop -n br1 && lstart -n br1 && lattach -n br1
+ 1279  2026-02-25 14:48:18 ip addr
+ 1280  2026-02-25 14:49:38 vim /var/lib/lxc/br1/config
+ 1281  2026-02-25 14:50:19 lstop -n br1 && lstart -n br1 && lattach -n br1
+ 1282  2026-02-25 14:51:07 vim /var/lib/lxc/br1/config
+ 1283  2026-02-25 14:52:33 ip link add lxcmacvlan0 link lxcovs0 type macvlan mode bridge
+ 1284  2026-02-25 14:52:36 ip link
+ 1285  2026-02-25 14:52:59 ip -d link show type macvlan
+ 1286  2026-02-25 14:53:15 lstop -n br1 && lstart -n br1 && lattach -n br1
+ 1287  2026-02-25 14:53:25 lls -f
+ 1288  2026-02-25 14:53:31 lstart -n br1
+ 1289  2026-02-25 14:53:38 lattach -n br1
+ 1290  2026-02-25 14:55:06 ldelete -n br1
+ 1291  2026-02-25 14:55:29 ldestroy -n br1
+ 1292  2026-02-25 14:55:35 lstop -n br1
+ 1293  2026-02-25 14:55:37 ldestroy -n br1
+ 1294  2026-02-25 14:55:40 lls -f
+ 1295  2026-02-25 14:55:44 ls
+ 1296  2026-02-25 14:55:49 cd gitclone/
+ 1297  2026-02-25 14:55:49 ls
+ 1298  2026-02-25 14:55:52 cd playground/
+ 1299  2026-02-25 14:55:52 ls
+ 1300  2026-02-25 14:55:54 cd reading/
+ 1301  2026-02-25 14:55:54 ls
+ 1302  2026-02-25 14:55:57 cd 52_Containerization_with_LXC/
+ 1303  2026-02-25 14:55:57 ls
+ 1304  2026-02-25 14:56:03 history > history.txt 
