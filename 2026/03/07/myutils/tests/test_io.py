@@ -1,19 +1,17 @@
-import subprocess
+import io
 import sys
 from pathlib import Path
 import pytest
 
+from main import main
+
 CASE_DIR = Path(__file__).parent / "cases"
 
 
-def run_case(input_file):
-    result = subprocess.run(
-        [sys.executable, "main.py"],
-        stdin=input_file.open(),
-        capture_output=True,
-        text=True,
-    )
-    return result.stdout
+def run_case(input_text, capsys):
+    sys.stdin = io.StringIO(input_text)
+    main()
+    return capsys.readouterr().out
 
 
 def normalize(s):
@@ -29,8 +27,9 @@ for input_file in sorted(CASE_DIR.glob("input*.txt")):
 
 
 @pytest.mark.parametrize("input_file,output_file", cases)
-def test_io(input_file, output_file):
+def test_io(input_file, output_file, capsys):
+    actual = normalize(run_case(input_file.read_text(), capsys))
     expected = normalize(output_file.read_text())
-    actual = normalize(run_case(input_file))
 
     assert actual == expected
+
