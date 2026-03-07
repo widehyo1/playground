@@ -1,20 +1,16 @@
 import os
-import sys
-from functools import wraps
 
 def main():
-    cell = ('.', 'C', '/', '\\')
-    direction = ('U', 'R', 'D', 'L')
-    
-    N, M = [int(char) for char in input().split()]
-    for _ in range(N):
-        print("===")
-        for c in input():
-            print(c)
+    N = int(input())
+    numbers = [int(num) for num in input().split()]
+    target = int(input())
+    print(sum(1 for num in numbers if num == target))
 
 if os.getenv("DEBUG"):
-    from utils import dump_runtime_environment
+    from utils import dump_runtime_environment, ex_hook
+    import sys
     main = dump_runtime_environment(main)
+    sys.excepthook = ex_hook
 
 if __name__ == "__main__":
     main()

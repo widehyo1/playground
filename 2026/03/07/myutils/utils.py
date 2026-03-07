@@ -12,26 +12,34 @@ def dump_runtime_environment(func):
                 captured["locals"] = frame.f_locals.copy()
                 captured["globals"] = {
                     k: v for k, v in frame.f_globals.items()
-                    if not k.startswith("__")
+                    if not k.startswith("__") and not callable(v)
                 }
             return profiler
 
         old_profiler = sys.getprofile()
         sys.setprofile(profiler)
+
+        result = None
+        exc = None
+
         try:
             result = func(*args, **kwargs)
+        except Exception as e:
+            exc = e
+            raise
         finally:
             sys.setprofile(old_profiler)
 
-        run_info = {
-            "args": args,
-            "kwargs": kwargs,
-            "result": result,
-            "func": captured,
-        }
+            run_info = {
+                "args": args,
+                "kwargs": kwargs,
+                "result": result,
+                "func": captured,
+                "exception": exc,
+            }
 
-        with open(f"{func.__name__}.dill", "wb") as f:
-            dill.dump(run_info, f, byref=True, recurse=True)
+            with open(f"{func.__name__}.dill", "wb") as f:
+                dill.dump(run_info, f, byref=True, recurse=True)
 
         return result
 
@@ -48,5 +56,16 @@ def load_into_namespace(dill_file, namespace):
 
     namespace.update(env)
 
-    if "func" in env and "locals" in env["func"]:
-        namespace.update(env["func"]["locals"])
+    if "func" in env:
+        namespace.update(env["func"].get("globals", {}))
+        namespace.update(env["func"].get("locals", {}))
+
+def ex_hook(type_, value, tb):
+    import ipdb, traceback
+
+    if type_ is KeyboardInterrupt:
+        sys.__excepthook__(type_, value, tb)
+        return
+
+    traceback.print_exception(type_, value, tb)
+    ipdb.post_mortem(tb)
