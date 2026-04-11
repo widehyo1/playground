@@ -1,0 +1,212 @@
+DB     := "finance.db"
+DATA   := "data"
+SCRIPT := "script"
+SQLITE := "sqlite3 " + DB
+
+# 레시피 목록 출력
+default:
+    @just --list
+
+# -- db ------------------------------------------------------------------------
+
+# finance.db sqlite3 셸 진입
+[group('db')]
+db:
+    {{SQLITE}}
+
+# 테이블 스키마 출력
+[group('db')]
+schema:
+    {{SQLITE}} -cmd '.schema' '.quit'
+
+# -- count ---------------------------------------------------------------------
+
+# 테이블 레코드 수 출력 (flow | portpolio)
+[group('count')]
+count table:
+    {{ if table == "flow" { "" } else if table == "portpolio" { "" } else { error("unknown table: " + table + ". Use: flow | portpolio") } }}{{SQLITE}} -cmd 'select count(1) from {{table}}' '.quit'
+
+# 전체 테이블 레코드 수 출력
+[group('count')]
+count-all: (count "flow") (count "portpolio")
+
+# -- show ----------------------------------------------------------------------
+
+# 테이블 전체 행 출력 (flow | portpolio)
+[group('show')]
+show table:
+    {{ if table == "flow" { "" } else if table == "portpolio" { "" } else { error("unknown table: " + table + ". Use: flow | portpolio") } }}{{SQLITE}} -cmd 'select * from {{table}}' '.quit'
+
+# 전체 테이블 내용 출력
+[group('show')]
+show-all: (show "flow") (show "portpolio")
+
+# -- dump ----------------------------------------------------------------------
+
+# 테이블을 data/<table>.csv로 덤프 (flow | portpolio)
+[group('dump')]
+dump table:
+    {{ if table == "flow" { "" } else if table == "portpolio" { "" } else { error("unknown table: " + table + ". Use: flow | portpolio") } }}{{SQLITE}} -cmd '.mode csv' '.output {{DATA}}/{{table}}.csv' 'select * from {{table}}' '.quit'
+
+# 전체 테이블을 CSV로 덤프
+[group('dump')]
+dump-all: (dump "flow") (dump "portpolio")
+
+# -- delete --------------------------------------------------------------------
+
+# 테이블 전체 행 삭제 (flow | portpolio)
+[group('delete')]
+[confirm("테이블 전체 행을 삭제합니다. 계속할까요?")]
+delete table:
+    {{ if table == "flow" { "" } else if table == "portpolio" { "" } else { error("unknown table: " + table + ". Use: flow | portpolio") } }}{{SQLITE}} -cmd 'delete from {{table}}' '.quit'
+
+# 전체 테이블 행 삭제
+[group('delete')]
+[confirm("전체 테이블 행을 삭제합니다. 계속할까요?")]
+delete-all:
+    {{SQLITE}} -cmd 'delete from flow' '.quit'
+    {{SQLITE}} -cmd 'delete from portpolio' '.quit'
+
+# -- insert --------------------------------------------------------------------
+
+# CSV → 테이블 삽입 (flow | portpolio | portpolio-krw | portpolio-usd)
+[group('insert')]
+insert table:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    case "{{table}}" in
+        flow)          csv="{{DATA}}/flow.csv";          tbl="flow" ;;
+        portpolio)     csv="{{DATA}}/portpolio.csv";     tbl="portpolio" ;;
+        portpolio-krw) csv="{{DATA}}/portpolio_krw.csv"; tbl="portpolio" ;;
+        portpolio-usd) csv="{{DATA}}/portpolio_usd.csv"; tbl="portpolio" ;;
+        *) echo "error: unknown table '{{table}}'" >&2; exit 1 ;;
+    esac
+    {{SQLITE}} -cmd ".mode csv" ".import --skip 1 $csv $tbl" '.quit'
+
+# 전체 CSV → DB 삽입
+[group('insert')]
+insert-all: (insert "flow") (insert "portpolio")
+
+# -- create / drop -------------------------------------------------------------
+
+# 테이블 생성 (flow | portpolio)
+[group('create/drop')]
+create table:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    case "{{table}}" in
+        flow)
+            {{SQLITE}} -cmd 'CREATE TABLE flow(date TEXT, asset INTEGER, income INTEGER, bonus_ibk INTEGER, bonus_parent INTEGER, event INTEGER, score INTEGER, expanse INTEGER)' '.quit'
+            ;;
+        portpolio)
+            {{SQLITE}} -cmd 'CREATE TABLE portpolio(date TEXT, ticker TEXT, name TEXT, amount INTEGER, price TEXT, currency TEXT, value NUMBER, account TEXT, type TEXT)' '.quit'
+            ;;
+        *) echo "error: unknown table '{{table}}'. Use: flow | portpolio" >&2; exit 1 ;;
+    esac
+
+# 전체 테이블 생성
+[group('create/drop')]
+create-all: (create "flow") (create "portpolio")
+
+# 테이블 DROP (flow | portpolio)
+[group('create/drop')]
+[confirm("테이블을 DROP합니다. 계속할까요?")]
+drop table:
+    {{ if table == "flow" { "" } else if table == "portpolio" { "" } else { error("unknown table: " + table + ". Use: flow | portpolio") } }}{{SQLITE}} -cmd 'drop table {{table}}' '.quit'
+
+# 전체 테이블 DROP
+[group('create/drop')]
+[confirm("전체 테이블을 DROP합니다. 계속할까요?")]
+drop-all: (drop "flow") (drop "portpolio")
+
+# 전체 테이블 초기화 (drop → create)
+[group('create/drop')]
+[confirm("테이블을 초기화(drop → create)합니다. 계속할까요?")]
+init-table: drop-all create-all
+
+# -- sync ----------------------------------------------------------------------
+
+# 테이블 동기화: delete → insert (flow | portpolio)
+[group('sync')]
+[confirm("테이블을 CSV로 동기화합니다. 계속할까요?")]
+sync table:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    case "{{table}}" in
+        flow)
+            {{SQLITE}} -cmd 'delete from flow' '.quit'
+            {{SQLITE}} -cmd '.mode csv' '.import --skip 1 {{DATA}}/flow.csv flow' '.quit'
+            ;;
+        portpolio)
+            {{SQLITE}} -cmd 'delete from portpolio' '.quit'
+            {{SQLITE}} -cmd '.mode csv' '.import --skip 1 {{DATA}}/portpolio.csv portpolio' '.quit'
+            ;;
+        *) echo "error: unknown table '{{table}}'. Use: flow | portpolio" >&2; exit 1 ;;
+    esac
+
+# 전체 테이블 동기화
+[group('sync')]
+[confirm("전체 테이블을 CSV로 동기화합니다. 계속할까요?")]
+sync-all:
+    {{SQLITE}} -cmd 'delete from flow' '.quit'
+    {{SQLITE}} -cmd '.mode csv' '.import --skip 1 {{DATA}}/flow.csv flow' '.quit'
+    {{SQLITE}} -cmd 'delete from portpolio' '.quit'
+    {{SQLITE}} -cmd '.mode csv' '.import --skip 1 {{DATA}}/portpolio.csv portpolio' '.quit'
+
+# USD→KRW 변환 후 portpolio 동기화
+[group('sync')]
+[confirm("portpolio를 KRW CSV로 동기화합니다. 계속할까요?")]
+sync-krw: usd2krw
+    {{SQLITE}} -cmd 'delete from portpolio' '.quit'
+    {{SQLITE}} -cmd '.mode csv' '.import --skip 1 {{DATA}}/portpolio_krw.csv portpolio' '.quit'
+
+# KRW→USD 변환 후 portpolio 동기화
+[group('sync')]
+[confirm("portpolio를 USD CSV로 동기화합니다. 계속할까요?")]
+sync-usd: krw2usd
+    {{SQLITE}} -cmd 'delete from portpolio' '.quit'
+    {{SQLITE}} -cmd '.mode csv' '.import --skip 1 {{DATA}}/portpolio_usd.csv portpolio' '.quit'
+
+# -- currency conversion -------------------------------------------------------
+
+# portpolio.csv KRW → USD 변환 (portpolio_usd.csv 생성)
+[group('currency')]
+krw2usd:
+    awk -f {{SCRIPT}}/krw_to_usd.awk {{DATA}}/portpolio.csv > {{DATA}}/portpolio_usd.csv
+
+# portpolio.csv USD → KRW 변환 (portpolio_krw.csv 생성)
+[group('currency')]
+usd2krw:
+    awk -f {{SCRIPT}}/usd_to_krw.awk {{DATA}}/portpolio.csv > {{DATA}}/portpolio_krw.csv
+
+# -- reports / analysis --------------------------------------------------------
+
+# flow.csv → asset_with_score.dat 생성
+[group('report')]
+generate-dat:
+    awk -f {{SCRIPT}}/flow_to_asset_with_score_dat.awk {{DATA}}/flow.csv > {{DATA}}/asset_with_score.dat
+
+# asset_with_score PDF 리포트 생성 (gnuplot)
+[group('report')]
+report-pdf:
+    gnuplot {{SCRIPT}}/asset_with_score_pdf.dem
+
+# 자산 성장률 출력
+[group('report')]
+asset-growth:
+    awk -f {{SCRIPT}}/growth_rate.awk {{DATA}}/flow.csv
+
+# 자산 차이 및 점수 비율 출력
+[group('report')]
+asset-diff:
+    awk -f {{SCRIPT}}/asset_diff_score_ratio.awk {{DATA}}/flow.csv
+
+# 자산 종합 리포트 출력
+[group('report')]
+asset-report:
+    awk -f {{SCRIPT}}/flow_to_report.awk {{DATA}}/flow.csv
+
+# 순자산 흐름 출력
+[group('report')]
+net-asset:
+    awk -f {{SCRIPT}}/net_flow.awk {{DATA}}/flow.csv
