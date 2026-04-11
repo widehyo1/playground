@@ -7,6 +7,17 @@ SQLITE := "sqlite3 " + DB
 default:
     @just --list
 
+# -- helper: validation ------------------------------------------------------------------------
+
+validate-table table:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    case "{{table}}" in
+        flow)          exit 0 ;;
+        portpolio)     exit 0 ;;
+        *) echo "error: unknown table '{{table}}'" >&2; exit 1 ;;
+    esac
+
 # -- db ------------------------------------------------------------------------
 
 # finance.db sqlite3 셸 진입
@@ -23,8 +34,8 @@ schema:
 
 # 테이블 레코드 수 출력 (flow | portpolio)
 [group('count')]
-count table:
-    {{ if table == "flow" { "" } else if table == "portpolio" { "" } else { error("unknown table: " + table + ". Use: flow | portpolio") } }}{{SQLITE}} -cmd 'select count(1) from {{table}}' '.quit'
+count table: (validate-table table)
+    {{SQLITE}} -cmd 'select count(1) from {{table}}' '.quit'
 
 # 전체 테이블 레코드 수 출력
 [group('count')]
@@ -34,8 +45,8 @@ count-all: (count "flow") (count "portpolio")
 
 # 테이블 전체 행 출력 (flow | portpolio)
 [group('show')]
-show table:
-    {{ if table == "flow" { "" } else if table == "portpolio" { "" } else { error("unknown table: " + table + ". Use: flow | portpolio") } }}{{SQLITE}} -cmd 'select * from {{table}}' '.quit'
+show table: (validate-table table)
+    {{SQLITE}} -cmd 'select * from {{table}}' '.quit'
 
 # 전체 테이블 내용 출력
 [group('show')]
@@ -45,8 +56,8 @@ show-all: (show "flow") (show "portpolio")
 
 # 테이블을 data/<table>.csv로 덤프 (flow | portpolio)
 [group('dump')]
-dump table:
-    {{ if table == "flow" { "" } else if table == "portpolio" { "" } else { error("unknown table: " + table + ". Use: flow | portpolio") } }}{{SQLITE}} -cmd '.mode csv' '.output {{DATA}}/{{table}}.csv' 'select * from {{table}}' '.quit'
+dump table: (validate-table table)
+    {{SQLITE}} -cmd '.mode csv' '.output {{DATA}}/{{table}}.csv' 'select * from {{table}}' '.quit'
 
 # 전체 테이블을 CSV로 덤프
 [group('dump')]
@@ -57,8 +68,8 @@ dump-all: (dump "flow") (dump "portpolio")
 # 테이블 전체 행 삭제 (flow | portpolio)
 [group('delete')]
 [confirm("테이블 전체 행을 삭제합니다. 계속할까요?")]
-delete table:
-    {{ if table == "flow" { "" } else if table == "portpolio" { "" } else { error("unknown table: " + table + ". Use: flow | portpolio") } }}{{SQLITE}} -cmd 'delete from {{table}}' '.quit'
+delete table: (validate-table table)
+    {{SQLITE}} -cmd 'delete from {{table}}' '.quit'
 
 # 전체 테이블 행 삭제
 [group('delete')]
@@ -111,8 +122,8 @@ create-all: (create "flow") (create "portpolio")
 # 테이블 DROP (flow | portpolio)
 [group('create/drop')]
 [confirm("테이블을 DROP합니다. 계속할까요?")]
-drop table:
-    {{ if table == "flow" { "" } else if table == "portpolio" { "" } else { error("unknown table: " + table + ". Use: flow | portpolio") } }}{{SQLITE}} -cmd 'drop table {{table}}' '.quit'
+drop table: (validate-table table)
+    {{SQLITE}} -cmd 'drop table {{table}}' '.quit'
 
 # 전체 테이블 DROP
 [group('create/drop')]
