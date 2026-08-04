@@ -10,31 +10,27 @@
 #
 # heap_n: length(heap)
 # heap: consists of node_id
-function less(node_a, node_b) {
-  # print "# less", node_a, node_b
-  # print_node(node_a)
-  # print_node(node_b)
-  if (freq[node_a] != freq[node_b]) {
-    # print "# diff freq"
-    # print freq[node_a] < freq[node_b]
-    return freq[node_a] < freq[node_b]
+function less(na, nb) {
+  if (freq[na] != freq[nb]) {
+    return freq[na] < freq[nb]
   }
-  # print "# leftmost"
-  # print leftmost[node_a] < leftmost[node_b]
-  return leftmost[node_a] < leftmost[node_b]
+  return leftmost[na] < leftmost[nb]
 }
 
-function parent(id) {
-  # print "# parent", id
-  return id == 1 ? "" : int(id / 2)
+function heap_less(ha, hb) {
+  return less(heap[ha], heap[hb])
 }
 
-function heap_left(id) {
-  return id * 2 > heap_n ? "" : id * 2
+function parent(idx) {
+  return idx == 1 ? "" : int(idx / 2)
 }
 
-function heap_right(id) {
-  return (id * 2 + 1) > heap_n ? "" : id * 2 + 1
+function heap_left(idx) {
+  return idx * 2 > heap_n ? "" : idx * 2
+}
+
+function heap_right(idx) {
+  return (idx * 2 + 1) > heap_n ? "" : idx * 2 + 1
 }
 
 function heap_swap(a, b,   t) {
@@ -43,31 +39,19 @@ function heap_swap(a, b,   t) {
   heap[b] = t
 }
 
-function find_swap_idx(id,   min_idx) {
-  # print "# find_swap_idx", id
-  # print_node(id)
-  if (!heap_left(id)) return ""
-  # print "flag1"
-  # print_node(heap_left(id))
-  min_idx = heap_left(id)
-  if (heap_right(id)) {
-    # print "flag2"
-    # print_node(heap_right(id))
-    min_idx = less(heap[heap_left(id)], heap[heap_right(id)]) ? heap_left(id) : heap_right(id)
+function find_swap_idx(idx,   min_idx) {
+  if (!heap_left(idx)) return ""
+  min_idx = heap_left(idx)
+  if (heap_right(idx) && heap_less(heap_right(idx), min_idx)) {
+    min_idx = heap_right(idx)
   }
-  return less(heap[min_idx], heap[id]) ? min_idx : ""
+  return heap_less(min_idx, idx) ? min_idx : ""
 }
 
-function sift_down(id) {
-  # print "# sift_down", id
-  # print_node(id)
-  if (find_swap_idx(id)) {
-    # print "# flag", find_swap_idx(id)
-    # print_node(find_swap_idx(id))
-  }
-  while ((swap_idx = find_swap_idx(id))) {
-    heap_swap(id, swap_idx)
-    id = swap_idx
+function sift_down(idx) {
+  while ((swap_idx = find_swap_idx(idx))) {
+    heap_swap(idx, swap_idx)
+    idx = swap_idx
   }
 }
 
@@ -79,40 +63,22 @@ function heap_pop(   node_id) {
     heap_n--
     return node_id
   }
-  # print "# before swap", 1, heap_n
-  # print_node(heap[1])
-  # print_node(heap[heap_n])
   heap_swap(1, heap_n)
-  # print "# after swap", 1, heap_n
-  # print_node(heap[1])
-  # print_node(heap[heap_n])
   delete heap[heap_n]
   heap_n--
-  # print "before sift_down"
-  # print_heap()
   sift_down(1)
-  # print "after sift_down"
-  # print_heap()
   return node_id
 }
 
-function sift_up(id) {
-  # print "# sift_up(" id ")"
-  # if (!parent(id)) {
-  #   print "no parent"
-  #   return
-  # }
-  # print parent(id)
-  while ((parent_idx = parent(id))) {
-    # print parent_idx, parent(id)
-    if (!less(heap[id], heap[parent_idx])) break
-    heap_swap(id, parent_idx)
-    id = parent_idx
+function sift_up(idx) {
+  while ((parent_idx = parent(idx))) {
+    if (!heap_less(idx, parent_idx)) break
+    heap_swap(idx, parent_idx)
+    idx = parent_idx
   }
 }
 
 function heap_push(node_id) {
-  # print "# heap_push(" node_id ")"
   heap[++heap_n] = node_id
   sift_up(heap_n)
 }
@@ -131,7 +97,6 @@ function print_heap() {
 }
 
 function new_node(ch, fq, le, ri, lm) {
-  # print "# new_node"
   id++
   char[id] = ch
   freq[id] = fq
@@ -143,33 +108,36 @@ function new_node(ch, fq, le, ri, lm) {
 }
 
 function print_node(id) {
-  print id,char[id] ,freq[id] ,left[id] ,right[id] ,leftmost[id]
+  print id, char[id], freq[id], left[id], right[id], leftmost[id]
 }
 
 function swap(a, b,   t) { t = a; a = b; b = t }
 
-function merge(node_a, node_b,   le, ri, lm) {
-  ri = node_a; le = node_b
-  if (less(node_a, node_b)) {
-    le = node_a; ri = node_b
-    lm = leftmost[node_a] < leftmost[node_b] ? leftmost[node_a] : leftmost[node_b]
+function merge(na, nb,   le, ri, lm) {
+  ri = na; le = nb
+  if (less(na, nb)) {
+    le = na; ri = nb
+    lm = leftmost[na] < leftmost[nb] ? leftmost[na] : leftmost[nb]
   }
-  return new_node("", freq[node_a] + freq[node_b], le, ri, lm)
+  return new_node("", freq[na] + freq[nb], le, ri, lm)
 }
 
 function build_root(   root) {
   if (!heap_n) return ""
   if (heap_n == 1) return heap[1]
   while (heap_n > 1) {
-    node_a = heap_pop()
-    node_b = heap_pop()
-    root = merge(node_a, node_b)
+    na = heap_pop()
+    nb = heap_pop()
+    root = merge(na, nb)
   }
   return root
 }
 
 function build_converter(node, prefix) {
-  if (left[node] == 0 && right[node] == 0) converter[char[node]] = prefix
+  if (left[node] == 0 && right[node] == 0) {
+    encoder[char[node]] = prefix
+    decoder[prefix] = char[node]
+  }
   if (left[node]) build_converter(left[node], prefix "0")
   if (right[node]) build_converter(right[node], prefix "1")
 }
@@ -179,67 +147,62 @@ function encode(text,   n, ch, enc) {
   enc = ""
   for (i = 1; i <= n; i++) {
     ch = substr(text, i, 1)
-    enc = enc converter[ch]
+    enc = enc encoder[ch]
   }
   return enc
 }
 
-function decode(enc, root,   n, cur, code, text) {
+function decode(enc, root,   n, code, text) {
   n = length(enc)
-  cur = root
   text = ""
+  code = ""
   for (i = 1; i <= n; i++) {
-    code = substr(enc, i, 1)
-    if (left[cur] == 0 && right[cur] == 0) {
-      text = text char[cur]
-      cur = root
+    code = code substr(enc, i, 1)
+    if (code in decoder) {
+      text = text decoder[code]
+      code = ""
       continue
     }
-    cur = code == "0" ? left[cur] : right[cur]
   }
   return text
 }
 
-function print_converter() {
-  for (ch in converter) {
-    print ch, converter[ch]
+function print_encoder() {
+  for (ch in encoder) {
+    print ch, encoder[ch]
   }
 }
 
-function print_root() {
+function print_decoder() {
+  for (code in decoder) {
+    print code, decoder[code]
+  }
 }
 
 NR == 1 {
-  # print $0
-  # print "flag0"
   n = length($0)
   # construct character counter
   for (i = 1; i <= n; i++) {
     ch = substr($0, i, 1)
     counter[ch] = counter[ch] ? counter[ch] + 1 : 1
   }
-  # print "flag1"
   # init node
   for (ch in counter) {
     new_node(ch, counter[ch])
   }
   print_heap()
-  while ((node_id = heap_pop())) {
-    print_node(node_id)
-  }
-  # # print "flag2"
-  # # build root
-  # root = build_root()
-  # print "flag3"
-  # # build converter
-  # build_converter(root, "")
-  # print_converter()
-  # print "flag4"
-  # encode
-  # enc = encode($0)
-  # print enc
-  # print "flag5"
-  # # decode
-  # text = decode(enc, root)
-  # print text
+  # while ((node_id = heap_pop())) {
+  #   print_node(node_id)
+  # }
+  # build root
+  root = build_root()
+  # build encoder
+  build_converter(root, "")
+  print_encoder()
+  print_decoder()
+  enc = encode($0)
+  print enc
+  # decode
+  text = decode(enc, root)
+  print text
 }
